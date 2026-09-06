@@ -1,0 +1,33 @@
+# ===== Python =====
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# ===== Node =====
+node_modules/
+dist/
+
+# ===== 环境与密钥（严禁提交）=====
+.env
+.env.local
+pipeline/run_pipeline_env.bat
+
+# ===== 数据文件（体积大 / 本地生成，不入库）=====
+# 官方培养方案 PDF 与爬虫索引
+unpress_pdf/
+# 原始课程库与工作副本
+courses.db
+*.db
+backend/data/
+# 管线产物（可重新生成）
+pipeline/output/
+pipeline/reports/
+pipeline/cache/
+
+# ===== 日志 =====
+*.log
+.playwright-cli/
+
+# ===== 工具内部数据 =====
+.codebuddy/
