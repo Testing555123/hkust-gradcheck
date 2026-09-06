@@ -1,21 +1,73 @@
+import { useMemo } from "react";
 import { Card, CardContent, CardTitle, CardDescription } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { ProgressCard } from "@/components/business/ProgressCard";
+import { CCProgressCard } from "@/components/business/CCProgressCard";
 import { StatCard } from "@/components/business/StatCard";
 import { computeProgramAudit } from "@/lib/audit";
+import { computeCommonCoreAudit, type CommonCoreAudit } from "@/lib/common-core";
 import { useSelection } from "@/stores/selection";
-import { GraduationCap, ListChecks, Trash2, BookOpen, CheckCircle2, CalendarClock, AlertTriangle } from "lucide-react";
+import { useProfile } from "@/stores/profile";
+import {
+  GraduationCap,
+  ListChecks,
+  Trash2,
+  BookOpen,
+  CheckCircle2,
+  CalendarClock,
+  AlertTriangle,
+  Shapes,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import type { ProgramTreeData } from "@/types";
 
-/** 方案总览：缺口/进度双读数焦点 + 横向进度条 + 统计卡 + 各要求组进度 */
+/** 方案总览：毕业总进度 = 主修 + 通识核心 合并口径 */
 export function OverviewPage({ tree }: { tree: ProgramTreeData }) {
   const status = useSelection((s) => s.status);
   const clearAll = useSelection((s) => s.clearAll);
+  const profile = useProfile((s) => s.profile);
   const audit = computeProgramAudit(tree.groups, status);
+
+  // 通识核心审核：勾选记录 + profile（program/school/admissionYear）驱动
+  const cc = useMemo(
+    () =>
+      computeCommonCoreAudit({
+        courses: Object.entries(status).map(([code, s]) => ({ code, status: s })),
+        program: tree.program.code,
+        school: profile?.school ?? null,
+        admissionYear: profile?.admissionYear ?? null,
+      }),
+    [status, tree.program.code, profile?.school, profile?.admissionYear]
+  );
+
+  // 合并口径：主修 + 通识（一门课可同时计入两边，属官方允许的 credit reuse）
+  const merged = useMemo(() => {
+    const totalRequired = audit.totalRequired + cc.totalRequired;
+    const takenTotal = audit.totalTaken + cc.totalTaken;
+    const plannedTotal = audit.totalPlanned + cc.totalCompleted;
+    return {
+      totalRequired,
+      takenTotal,
+      plannedTotal,
+      remaining: Math.max(0, totalRequired - plannedTotal),
+      percentTaken: totalRequired ? Math.round((takenTotal / totalRequired) * 100) : 0,
+      percentPlanned: totalRequired ? Math.round((plannedTotal / totalRequired) * 100) : 0,
+    };
+  }, [audit, cc]);
+
+  // 通识三组 → 组卡数据（CCProgressCard 展示分桶明细）
+  const ccCards = useMemo(
+    () =>
+      cc.groups.map((g) => ({
+        group: g,
+        required: g.buckets.reduce((s, b) => s + b.required, 0),
+        taken: g.buckets.reduce((s, b) => s + b.takenCredits, 0),
+        completed: g.buckets.reduce((s, b) => s + b.completedCredits, 0),
+      })),
+    [cc]
+  );
   const selectedCount = Object.keys(status).length;
-  const percent = Math.round(audit.percentPlanned * 10) / 10;
 
   const handleClearAll = () => {
     const n = selectedCount;
@@ -25,7 +77,7 @@ export function OverviewPage({ tree }: { tree: ProgramTreeData }) {
 
   return (
     <div className="space-y-5">
-      {/* Hero：缺口 / 进度双读数 + 横向进度条（紧凑单列） */}
+      {/* Hero：合并口径的缺口 / 进度双读数 + 横向进度条 */}
       <Card className="border-primary/20 bg-gradient-to-br from-card to-accent">
         <CardContent className="space-y-4 p-6">
           <div className="flex items-start justify-between gap-3">
@@ -50,99 +102,126 @@ export function OverviewPage({ tree }: { tree: ProgramTreeData }) {
             )}
           </div>
 
-          {/* 焦点行：回答「毕业还差多少 / 走到哪了」 */}
           <div className="flex flex-wrap items-baseline gap-x-8 gap-y-2">
             <div className="flex items-baseline gap-2">
               <span
                 className={
                   "text-4xl font-semibold tabular-nums leading-none " +
-                  (audit.remaining > 0 ? "text-warning" : "text-success")
+                  (merged.remaining > 0 ? "text-warning" : "text-success")
                 }
               >
-                {audit.remaining}
+                {merged.remaining}
               </span>
               <span className="text-sm text-muted-foreground">
-                学分缺口{audit.remaining > 0 ? "（按当前计划）" : " · 已覆盖"}
+                学分缺口{merged.remaining > 0 ? "（按当前计划）" : " · 已覆盖"}
               </span>
             </div>
             <div className="flex items-baseline gap-2">
               <span className="text-4xl font-semibold tabular-nums leading-none text-primary">
-                {percent}%
+                {merged.percentPlanned}%
               </span>
-              <span className="text-sm text-muted-foreground">毕业进度（含计划）</span>
+              <span className="text-sm text-muted-foreground">毕业进度（主修 + 通识核心）</span>
             </div>
           </div>
 
           <div className="space-y-2.5">
             <MiniProgress
               label="已修"
-              caption={`${audit.totalTaken} / ${audit.totalRequired} 学分`}
-              value={audit.percentTaken}
+              caption={`${merged.takenTotal} / ${merged.totalRequired} 学分`}
+              value={merged.percentTaken}
               indicatorClassName="animate-progress-grow"
             />
             <MiniProgress
               label="含计划"
-              caption={`${audit.totalPlanned} / ${audit.totalRequired} 学分`}
-              value={audit.percentPlanned}
+              caption={`${merged.plannedTotal} / ${merged.totalRequired} 学分`}
+              value={merged.percentPlanned}
               indicatorClassName="bg-primary/45 animate-progress-grow"
             />
+            <p className="text-xs text-muted-foreground">
+              主修 {audit.totalPlanned}/{audit.totalRequired || "—"} · 通识核心 {cc.totalCompleted}/
+              {cc.totalRequired}
+              {cc.framework.susApplicable && "（2025-26 起含 SUS Area）"}
+            </p>
           </div>
         </CardContent>
       </Card>
 
-      {/* 统计卡 ×4（图标 + 语义色） */}
+      {/* 统计卡 ×4（合并口径，图标 + 语义色） */}
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
         <StatCard
           label="要求总学分"
-          value={audit.totalRequired}
+          value={merged.totalRequired}
           icon={BookOpen}
           tone="primary"
-          hint={tree.program.title}
+          hint={`主修 ${audit.totalRequired || "—"} + 通识 ${cc.totalRequired}`}
         />
         <StatCard
           label="已修学分"
-          value={audit.totalTaken}
+          value={merged.takenTotal}
           icon={CheckCircle2}
           tone="success"
-          hint={`已修进度 ${audit.percentTaken}%`}
+          hint={`已修进度 ${merged.percentTaken}%`}
         />
         <StatCard
           label="含计划学分"
-          value={audit.totalPlanned}
+          value={merged.plannedTotal}
           icon={CalendarClock}
           tone="primary"
-          hint={`计划后 ${audit.percentPlanned}%`}
+          hint={`计划后 ${merged.percentPlanned}%`}
         />
         <StatCard
           label="计划后缺口"
-          value={audit.remaining}
+          value={merged.remaining}
           icon={AlertTriangle}
-          tone={audit.remaining > 0 ? "warning" : "success"}
-          hint={audit.missingCount > 0 ? `涉及 ${audit.missingCount} 门课` : "无缺口课程"}
+          tone={merged.remaining > 0 ? "warning" : "success"}
+          hint={
+            cc.unmatched.length > 0
+              ? `另有 ${cc.unmatched.length} 门未匹配通识 Area`
+              : audit.missingCount > 0
+                ? `涉及 ${audit.missingCount} 门课`
+                : "无缺口课程"
+          }
         />
       </div>
 
       {audit.missingCount > 0 && (
         <p className="flex items-center gap-1.5 text-xs text-warning">
           <ListChecks className="h-3.5 w-3.5" />
-          按当前计划，仍有 {audit.missingCount} 门缺口课程待安排（见下方各组提示）
+          按当前计划，主修仍有 {audit.missingCount} 门缺口课程待安排（见下方各组提示）
         </p>
       )}
 
-      {/* 各要求组进度 */}
+      {/* 各要求组进度：主修 + 通识核心混排 */}
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {audit.groups.map((ga) => (
-          <ProgressCard key={ga.group.id} audit={ga} />
+          <ProgressCard key={`major-${ga.group.id}`} audit={ga} />
+        ))}
+        {ccCards.map(({ group, required, taken, completed }) => (
+          <CCProgressCard
+            key={`cc-${group.name}`}
+            group={group}
+            required={required}
+            taken={taken}
+            completed={completed}
+          />
         ))}
       </div>
 
+      {cc.unmatched.length > 0 && (
+        <p className="flex items-center gap-1.5 text-xs text-muted-foreground">
+          <Shapes className="h-3.5 w-3.5" />
+          {cc.unmatched.length} 门课程未匹配到通识 Area（不在官方课程清单内），不计入通识核心进度。
+        </p>
+      )}
+
       <p className="text-xs text-muted-foreground">
         学分进度由浏览器本地即时计算；勾选记录保存在本机（localStorage），不上传服务器。
-        毕业审核以教务处官方认定为准，本工具仅供参考。
+        通识核心替代规则以 AR 官网为准。毕业审核以教务处官方认定为准，本工具仅供参考。
       </p>
     </div>
   );
 }
+
 
 function MiniProgress({
   label,
@@ -165,3 +244,4 @@ function MiniProgress({
     </div>
   );
 }
+

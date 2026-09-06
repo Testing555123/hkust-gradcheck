@@ -36,6 +36,8 @@ export interface TranscriptImportResult {
   year: string;
   code: string;
   courses: Record<string, TranscriptCourseStatus>;
+  /** Admit Date 推导的入学学年（通识框架判定用） */
+  admissionYear?: string | null;
 }
 
 interface TranscriptImportDialogProps {
@@ -132,7 +134,7 @@ export function TranscriptImportDialog({
     if (!result || included.length === 0 || !year || !code) return;
     const courses: Record<string, TranscriptCourseStatus> = {};
     for (const c of included) courses[c.code] = c.status;
-    onConfirm({ year, code, courses });
+    onConfirm({ year, code, courses, admissionYear: result.admitYear ?? null });
   };
 
   return (

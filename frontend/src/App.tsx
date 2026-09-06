@@ -17,6 +17,7 @@ import { useProfile } from "@/stores/profile";
 import { useSelection } from "@/stores/selection";
 import { computeProgramAudit } from "@/lib/audit";
 import { needsOnboarding } from "@/lib/profile";
+import { schoolOf } from "@/lib/common-core";
 import { Moon, Sun, GraduationCap, LayoutDashboard, ListChecks, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -67,15 +68,19 @@ export default function App() {
   }, [profile]);
 
   const handleSubmit = (sel: { year: string; code: string }) => {
-    setProfileProgram(sel.year, sel.code);
+    // 手动选择时，所选年份即入学年份（通识框架判定用）
+    setProfileProgram(sel.year, sel.code, { admissionYear: sel.year });
     setProgram(sel.year, sel.code);
     closeOnboarding();
   };
 
-  // 成绩单导入：已修以成绩单覆盖，手动勾选的计划保留；profile 同步填充
+  // 成绩单导入：已修以成绩单覆盖，手动勾选的计划保留；profile 同步填充（含通识框架字段）
   const handleTranscriptConfirm = (r: TranscriptImportResult) => {
     setSelectionMany(r.courses);
-    setProfileProgram(r.year, r.code);
+    setProfileProgram(r.year, r.code, {
+      admissionYear: r.admissionYear ?? null,
+      school: schoolOf(r.code) || null,
+    });
     setProgram(r.year, r.code);
     closeTranscriptImport();
     const taken = Object.values(r.courses).filter((s) => s === "taken").length;

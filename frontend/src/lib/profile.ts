@@ -7,8 +7,10 @@ export interface Profile {
   year: string;
   /** 主修代码，如 "ECON" */
   code: string;
-  /** 学院：后端暂无数据，恒为 null（字段位已保留） */
+  /** 学院：用于通识核心 Home Area 判定；可由 program 反查 */
   school: string | null;
+  /** 通识框架判定的入学学年（Admit Date 推导，可能与 year 不同） */
+  admissionYear: string | null;
   /** 辅修 / Extended Major：暂未开放，恒为空数组（结构留数组便于以后放开多选） */
   minors: string[];
   /** 最近一次写入时间（ISO 字符串），未选择过为 null */
@@ -16,7 +18,7 @@ export interface Profile {
 }
 
 export function emptyProfile(): Profile {
-  return { year: "", code: "", school: null, minors: [], updatedAt: null };
+  return { year: "", code: "", school: null, admissionYear: null, minors: [], updatedAt: null };
 }
 
 /** 学年列表：去重 + 倒序（最新学年在前） */

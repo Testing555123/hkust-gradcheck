@@ -1,9 +1,10 @@
 import { RequirementTree } from "@/components/business/RequirementTree";
+import { CommonCoreSection } from "@/components/business/CommonCoreSection";
 import { Badge } from "@/components/ui/badge";
 import { FileText } from "lucide-react";
 import type { ProgramTreeData } from "@/types";
 
-/** 毕业要求明细页：完整要求树 + PDF 页码出处 */
+/** 毕业要求明细页：主修要求树 + 通识核心区块 */
 export function RequirementsPage({ tree }: { tree: ProgramTreeData }) {
   return (
     <div className="space-y-4">
@@ -18,6 +19,7 @@ export function RequirementsPage({ tree }: { tree: ProgramTreeData }) {
         <span>· 每项要求均标注原文页码，可回溯核对</span>
       </div>
       <RequirementTree tree={tree} />
+      <CommonCoreSection tree={tree} />
     </div>
   );
 }

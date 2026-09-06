@@ -1,0 +1,2905 @@
+{
+  "meta": {
+    "source": "Active_Course_List_30-credit.pdf (Last update: 16 July 2026)",
+    "framework": "30-credit Common Core (admitted 2022-23 onward)",
+    "generatedAt": "2026-09-06",
+    "courseCount": 264
+  },
+  "courses": {
+    "ACCT1010": {
+      "title": "Accounting, Business and Society",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "AISC1000": {
+      "title": "Foundations of AI Literacy: Human–AI Orchestration",
+      "credits": 3,
+      "areas": [
+        "HAIC"
+      ],
+      "area": "HAIC",
+      "group": "Broadening",
+      "effectiveFrom": "From 2026-27 Fall for 2026-27 cohort.",
+      "prevCode": ""
+    },
+    "AMCC2010": {
+      "title": "Digital Audio Workstation Composition",
+      "credits": 3,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2026-27 Fall.",
+      "prevCode": ""
+    },
+    "AMCC2020": {
+      "title": "Coding for Artistic Expression and Creation",
+      "credits": 3,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "BIEN1610": {
+      "title": "Engineering Life: Synthetic Biology and Innovations for Human Health",
+      "credits": 3,
+      "areas": [
+        "S",
+        "T"
+      ],
+      "area": "S",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Fall.",
+      "prevCode": ""
+    },
+    "BIEN1620": {
+      "title": "Revolutionizing Health: Biomedical Innovations in Everyday Life",
+      "credits": 3,
+      "areas": [
+        "S",
+        "T"
+      ],
+      "area": "S",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Summer.",
+      "prevCode": ""
+    },
+    "CENG1800": {
+      "title": "Introduction to Food Science and Technology",
+      "credits": 3,
+      "areas": [
+        "S",
+        "T"
+      ],
+      "area": "S",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "CHEM1002": {
+      "title": "Introduction to Chemistry of Cosmetics",
+      "credits": 3,
+      "areas": [
+        "S"
+      ],
+      "area": "S",
+      "group": "Broadening",
+      "effectiveFrom": "S",
+      "prevCode": "CORE1121"
+    },
+    "CHEM1004": {
+      "title": "Chemistry in Everyday Life",
+      "credits": 3,
+      "areas": [],
+      "area": "",
+      "group": "",
+      "effectiveFrom": "Course Cross-Listed in Foundations and Broadening Groups Courses in Broadening Group S",
+      "prevCode": "CORE1120"
+    },
+    "CIVL1140": {
+      "title": "Environment and Society: Sustainable Development Goals and Carbon Neutrality",
+      "credits": 3,
+      "areas": [],
+      "area": "",
+      "group": "",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "CIVL1180": {
+      "title": "Monitoring Changing Climate from Space",
+      "credits": 3,
+      "areas": [
+        "S",
+        "T"
+      ],
+      "area": "S",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "CIVL1190": {
+      "title": "Climate Change, Big History and Sustainability",
+      "credits": 3,
+      "areas": [],
+      "area": "",
+      "group": "",
+      "effectiveFrom": "SA",
+      "prevCode": "CORE1223"
+    },
+    "CIVL1220": {
+      "title": "Big Data for Smarter Cities",
+      "credits": 3,
+      "areas": [
+        "T"
+      ],
+      "area": "T",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "COMP1001": {
+      "title": "Exploring Multimedia and Internet Computing",
+      "credits": 3,
+      "areas": [
+        "T"
+      ],
+      "area": "T",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "COMP1942": {
+      "title": "Exploring and Visualizing Data",
+      "credits": 3,
+      "areas": [
+        "T"
+      ],
+      "area": "T",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "COMP1943": {
+      "title": "Creative Sound and Video Design",
+      "credits": 3,
+      "areas": [
+        "A",
+        "T"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "COMP1945": {
+      "title": "Artificial Intelligence for Everyone: From Data to Applications",
+      "credits": 3,
+      "areas": [
+        "T"
+      ],
+      "area": "T",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "CTDL1901": {
+      "title": "Cognitive Foundations of University Education: Critical Thinking and Data Literacy",
+      "credits": 3,
+      "areas": [
+        "CTDL"
+      ],
+      "area": "CTDL",
+      "group": "Foundations",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "CTDL1902": {
+      "title": "AI and Society: Ethics, Cognition, and Critical Analysis",
+      "credits": 3,
+      "areas": [
+        "CTDL"
+      ],
+      "area": "CTDL",
+      "group": "Foundations",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "CTDL1950": {
+      "title": "Decision – Inside Out: Empowering Interdisciplinary Thinking",
+      "credits": 3,
+      "areas": [
+        "CTDL"
+      ],
+      "area": "CTDL",
+      "group": "Foundations",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Fall.",
+      "prevCode": ""
+    },
+    "ECON1220": {
+      "title": "Thinking like an Economist I: Microeconomics",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "ECON1221": {
+      "title": "Thinking like an Economist II: Macroeconomics",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "ECON1222": {
+      "title": "What Economics Tells Us About Our Life and Social Policy",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "ELEC1010": {
+      "title": "Electronic and Information Technology",
+      "credits": 3,
+      "areas": [
+        "T"
+      ],
+      "area": "T",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "ELEC1150": {
+      "title": "Information Technology Revolution: Past, Present and Future",
+      "credits": 3,
+      "areas": [
+        "T"
+      ],
+      "area": "T",
+      "group": "Broadening",
+      "effectiveFrom": "The course code was ENGG 1150 on or before 2024-25 Summer.",
+      "prevCode": ""
+    },
+    "EMIA1901": {
+      "title": "Introduction to Smart City Development",
+      "credits": 3,
+      "areas": [
+        "T"
+      ],
+      "area": "T",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Fall.",
+      "prevCode": ""
+    },
+    "EMIA1902": {
+      "title": "Digital Information Governance in the AI Era",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "ENGG1110": {
+      "title": "Engineering Solutions to Grand Challenges of the 21st Century",
+      "credits": 3,
+      "areas": [
+        "T"
+      ],
+      "area": "T",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "ENGG1200": {
+      "title": "Engineering Team Design Experience",
+      "credits": 3,
+      "areas": [
+        "T"
+      ],
+      "area": "T",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "ENGG1300": {
+      "title": "Design Thinking for Health Innovation",
+      "credits": 3,
+      "areas": [
+        "T"
+      ],
+      "area": "T",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "ENGG1500": {
+      "title": "Technological Innovation: From Concept to Reality",
+      "credits": 3,
+      "areas": [
+        "S",
+        "T"
+      ],
+      "area": "S",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Summer.",
+      "prevCode": ""
+    },
+    "ENTR1001": {
+      "title": "Entrepreneurship 1001: Designing Your Future",
+      "credits": 3,
+      "areas": [
+        "T"
+      ],
+      "area": "T",
+      "group": "Broadening",
+      "effectiveFrom": "T",
+      "prevCode": ""
+    },
+    "ENVR1030": {
+      "title": "Environment and Health",
+      "credits": 3,
+      "areas": [],
+      "area": "",
+      "group": "",
+      "effectiveFrom": "",
+      "prevCode": "CORE1202"
+    },
+    "ENVR1080": {
+      "title": "The Smart Consumer - Uncovering the Hidden Story behind the Product Label",
+      "credits": 3,
+      "areas": [],
+      "area": "",
+      "group": "",
+      "effectiveFrom": "",
+      "prevCode": "CORE1943"
+    },
+    "ENVR1150": {
+      "title": "Climate Change Impacts and Extreme Weather Events",
+      "credits": 3,
+      "areas": [],
+      "area": "",
+      "group": "",
+      "effectiveFrom": "",
+      "prevCode": "CORE1941"
+    },
+    "ENVR2050": {
+      "title": "Sustainability Thinking",
+      "credits": 3,
+      "areas": [],
+      "area": "",
+      "group": "",
+      "effectiveFrom": "",
+      "prevCode": "CORE2942"
+    },
+    "ENVR2060": {
+      "title": "From Trash to Treasure: Transforming Waste into Resources",
+      "credits": 3,
+      "areas": [],
+      "area": "",
+      "group": "",
+      "effectiveFrom": "",
+      "prevCode": "CORE2943"
+    },
+    "ENVR2070": {
+      "title": "Smart Buildings for a Warming Planet",
+      "credits": 3,
+      "areas": [],
+      "area": "",
+      "group": "",
+      "effectiveFrom": "",
+      "prevCode": "CORE2944"
+    },
+    "HMAW1905": {
+      "title": "Behavioral Foundations of University Education: Habits, Mindsets, and Wellness",
+      "credits": 3,
+      "areas": [
+        "HMW"
+      ],
+      "area": "HMW",
+      "group": "Foundations",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA1010": {
+      "title": "Introduction to Language",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA1011": {
+      "title": "Linguistics in Life",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2026-27 Summer.",
+      "prevCode": ""
+    },
+    "HUMA1030": {
+      "title": "Structure of the Chinese Language",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE1503"
+    },
+    "HUMA1060": {
+      "title": "Introduction to Mandarin Chinese Grammar",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE1504"
+    },
+    "HUMA1100": {
+      "title": "Music of the World",
+      "credits": 3,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA1102": {
+      "title": "Enjoyment of Classical Music",
+      "credits": 3,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA1108": {
+      "title": "Expressive Sounds",
+      "credits": 3,
+      "areas": [
+        "A",
+        "H"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2024-25 Spring.",
+      "prevCode": ""
+    },
+    "HUMA1109": {
+      "title": "Understanding Music in Context",
+      "credits": 3,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2026-27 Fall.",
+      "prevCode": ""
+    },
+    "HUMA1110": {
+      "title": "Improvisational Artists Lab",
+      "credits": 3,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2026-27 Fall.",
+      "prevCode": ""
+    },
+    "HUMA1150": {
+      "title": "Exploration of Drawing",
+      "credits": 3,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA1154": {
+      "title": "Photography",
+      "credits": 3,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA1155": {
+      "title": "Video Art",
+      "credits": 3,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA1156": {
+      "title": "Exploration of Chinese Calligraphy",
+      "credits": 3,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA1157": {
+      "title": "Introduction to Acting and Public Speaking",
+      "credits": 3,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2024-25 Summer.",
+      "prevCode": ""
+    },
+    "HUMA1160": {
+      "title": "Weiqi and Chinese Culture",
+      "credits": 1,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA1210": {
+      "title": "Chinese Women on Screen",
+      "credits": 3,
+      "areas": [
+        "A",
+        "H"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE1601"
+    },
+    "HUMA1221": {
+      "title": "Introduction to Game Studies",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "HUMA1231": {
+      "title": "Popular Culture of East Asia",
+      "credits": 3,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE1602"
+    },
+    "HUMA1301": {
+      "title": "World Literature and Film",
+      "credits": 3,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA1302": {
+      "title": "World Literature in the 20th Century",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Summer.",
+      "prevCode": ""
+    },
+    "HUMA1411": {
+      "title": "Inside Chinese Documents and Archives: Methods and Perspectives",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": "CORE1603"
+    },
+    "HUMA1412": {
+      "title": "China Through Time and Space: Chinese Historical Geography",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "HUMA1430": {
+      "title": "History of P. R. China's Diplomacy, 1949-1989",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE1522"
+    },
+    "HUMA1520": {
+      "title": "Modern East Asia",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA1622": {
+      "title": "Science, Technology and Society: Historical and Cultural Approaches",
+      "credits": 3,
+      "areas": [
+        "H",
+        "SA"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA1639": {
+      "title": "Marriage, Family and Kinship in Cross-cultural Perspectives",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA1650": {
+      "title": "Appreciation of Western Art",
+      "credits": 3,
+      "areas": [
+        "A",
+        "H"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "A, H C-Comm From 2014-15 Fall to 2024-25 Summer",
+      "prevCode": ""
+    },
+    "HUMA1660": {
+      "title": "Introduction to Chinese Art",
+      "credits": 3,
+      "areas": [],
+      "area": "",
+      "group": "",
+      "effectiveFrom": "",
+      "prevCode": "CORE1651"
+    },
+    "HUMA1671": {
+      "title": "Cantonese Opera in Hong Kong Culture",
+      "credits": 3,
+      "areas": [
+        "A",
+        "H"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA1672": {
+      "title": "Studio Arts Workshops: Cantonese Opera",
+      "credits": 1,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA1673": {
+      "title": "Art and Digital Culture",
+      "credits": 3,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA1674": {
+      "title": "China in Historical Maps",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA1675": {
+      "title": "Global History of Explorations",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2024-25 Spring.",
+      "prevCode": ""
+    },
+    "HUMA1676": {
+      "title": "Marco Polo and His Book of Travels",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Fall.",
+      "prevCode": ""
+    },
+    "HUMA1677": {
+      "title": "East Asia and the West: From the Silk Road to The Belt and Road",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "HUMA1678": {
+      "title": "Introduction to Digital Humanities & AI",
+      "credits": 3,
+      "areas": [
+        "H",
+        "T"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "HUMA1679": {
+      "title": "Central and Eastern Europe from 1917 to the Present",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "HUMA1681": {
+      "title": "Cold War in Europe 1945-1989",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "HUMA1710": {
+      "title": "The Art of Thinking in the Hong Kong Context",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA1720": {
+      "title": "Logic",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE1572"
+    },
+    "HUMA1811": {
+      "title": "History of Chinese Philosophy",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA1920": {
+      "title": "Introduction to Moral Philosophy",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA1921": {
+      "title": "Philosophy of Science",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA1922": {
+      "title": "Introduction to Analytic Philosophy",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA1930": {
+      "title": "Introduction to the Ethics of Artificial Intelligence and Data Science",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2024-25 Spring.",
+      "prevCode": ""
+    },
+    "HUMA2010": {
+      "title": "Metaphors in English and Chinese",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE2501"
+    },
+    "HUMA2031": {
+      "title": "The Cantonese Language",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA2032": {
+      "title": "Language, Power and Identity",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA2033": {
+      "title": "Language and Intercultural Communication",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Fall.",
+      "prevCode": ""
+    },
+    "HUMA2034": {
+      "title": "Language Planning and Policy in Asian Contexts",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": "CORE2502"
+    },
+    "HUMA2035": {
+      "title": "Language in Action: Doing Discourse Analysis",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2026-27 Fall.",
+      "prevCode": ""
+    },
+    "HUMA2101": {
+      "title": "Enjoyment of Western Opera",
+      "credits": 3,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA2104": {
+      "title": "Music Theory I: Introduction to Tonal Music",
+      "credits": 3,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA2105": {
+      "title": "Music, Drama, and Theatre",
+      "credits": 3,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA2107": {
+      "title": "Introduction to Electronic Music Composition",
+      "credits": 3,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA2108": {
+      "title": "Music of China",
+      "credits": 3,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA2109": {
+      "title": "East Asian Popular Music",
+      "credits": 3,
+      "areas": [
+        "A",
+        "H"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA2110": {
+      "title": "Understanding Algorithms and Computation through Music",
+      "credits": 3,
+      "areas": [
+        "A",
+        "H"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2026-27 Fall.",
+      "prevCode": ""
+    },
+    "HUMA2202": {
+      "title": "The Japanese Novel",
+      "credits": 3,
+      "areas": [
+        "A",
+        "H"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "The course title was The Modern Japanese Novel before 2024-25 Spring.",
+      "prevCode": ""
+    },
+    "HUMA2203": {
+      "title": "Japanese Cinema",
+      "credits": 3,
+      "areas": [
+        "A",
+        "H"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2024-25 Fall.",
+      "prevCode": ""
+    },
+    "HUMA2204": {
+      "title": "Japanese Science Fiction",
+      "credits": 3,
+      "areas": [
+        "A",
+        "H"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Fall.",
+      "prevCode": ""
+    },
+    "HUMA2205": {
+      "title": "Asian Cinema, Global Cinema",
+      "credits": 3,
+      "areas": [
+        "A",
+        "H"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "HUMA2240": {
+      "title": "Reading Chinese Literature: Dreams of the Red Chamber",
+      "credits": 3,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA2250": {
+      "title": "Modern Chinese Fiction (1917-1949)",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA2260": {
+      "title": "Contemporary Chinese Fiction (1949-present)",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE2603"
+    },
+    "HUMA2300": {
+      "title": "Traditional Chinese Poetry: Early Chinese Poetry",
+      "credits": 3,
+      "areas": [
+        "A",
+        "H"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE2604"
+    },
+    "HUMA2310": {
+      "title": "Traditional Chinese Fiction",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE2605"
+    },
+    "HUMA2330": {
+      "title": "Anime",
+      "credits": 3,
+      "areas": [
+        "A",
+        "H"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA2331": {
+      "title": "Japanese Animation: Technology, Gender, and History",
+      "credits": 3,
+      "areas": [
+        "A",
+        "H"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "The course title was Media Theories of Japanese Animation before 2024-25 Spring.",
+      "prevCode": ""
+    },
+    "HUMA2340": {
+      "title": "Between Old and New: Chinese Stories and Their Reinventions",
+      "credits": 3,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA2401": {
+      "title": "Global Science Fiction: An Interdisciplinary Approach",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "HUMA2412": {
+      "title": "Exploring Text at Scale: Natural Language Processing and Digital Humanities",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "HUMA2420": {
+      "title": "Late Imperial China",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA2440": {
+      "title": "20th-Century China in Documentary Films",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA2470": {
+      "title": "From Fung Shui to Mao's Villages: City Plans, Urban Politics & the Unseen World of Chinese Villages",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA2520": {
+      "title": "History of Tea in East Asia",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE2525"
+    },
+    "HUMA2588": {
+      "title": "Nazism and German Society, 1914-1945",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE2526"
+    },
+    "HUMA2621": {
+      "title": "Culture and Environment",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA2632": {
+      "title": "Chinese Culture and Society in Anthropological Perspectives",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA2634": {
+      "title": "Global History: New Anthropological Perspectives",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2024-25 Spring.",
+      "prevCode": "CORE2553"
+    },
+    "HUMA2635": {
+      "title": "Cultural Diversity in China",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE2554"
+    },
+    "HUMA2636": {
+      "title": "Medical Anthropology",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "HUMA2638": {
+      "title": "Peoples and Cultures in Southeast Asia",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE2555"
+    },
+    "HUMA2640": {
+      "title": "Unofficial China: Social History 1800s-1930s",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "A, H C-Comm From 2014-15 Fall to 2024-25 Summer",
+      "prevCode": "CORE2529"
+    },
+    "HUMA2660": {
+      "title": "Introduction to Chinese Painting",
+      "credits": 3,
+      "areas": [],
+      "area": "",
+      "group": "",
+      "effectiveFrom": "T",
+      "prevCode": "CORE2651"
+    },
+    "HUMA2661": {
+      "title": "Chinese Oil Painting",
+      "credits": 3,
+      "areas": [
+        "A",
+        "H"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE2652"
+    },
+    "HUMA2670": {
+      "title": "Understanding Western Painting",
+      "credits": 3,
+      "areas": [
+        "A",
+        "H"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA2680": {
+      "title": "Understanding Western Architecture",
+      "credits": 3,
+      "areas": [
+        "A",
+        "H"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA2831": {
+      "title": "Metaphysics: Study of Reality and Existence",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2024-25 Spring.",
+      "prevCode": ""
+    },
+    "HUMA2832": {
+      "title": "Philosophy of Mind",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2024-25 Spring.",
+      "prevCode": ""
+    },
+    "HUMA2840": {
+      "title": "Buddhism and the Chinese Intellectual Tradition",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA2911": {
+      "title": "Buddhism: Origin and Growth",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA2921": {
+      "title": "Ethical Theories and Contemporary Issues",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA2930": {
+      "title": "What am I? Personal Identity and the Self from a Philosophical Perspective",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA3030": {
+      "title": "Language, Communication and Culture",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA3050": {
+      "title": "Psychology of Language",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE3502"
+    },
+    "HUMA3060": {
+      "title": "Language and Migration",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE3503"
+    },
+    "HUMA3201": {
+      "title": "Animation: A Global Perspective",
+      "credits": 3,
+      "areas": [
+        "A",
+        "H"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA3210": {
+      "title": "Traditional Chinese Poetry: Tang and Song Poetry",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA3220": {
+      "title": "Modern Chinese Poetry",
+      "credits": 3,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE3603"
+    },
+    "HUMA3250": {
+      "title": "Independent Cinema in Contemporary China",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE3604"
+    },
+    "HUMA3430": {
+      "title": "Reading Modern Chinese History Historically",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE3521"
+    },
+    "HUMA3630": {
+      "title": "Community and Cultural Identity",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA3660": {
+      "title": "Tradition & Modernity: Chinese Ink Painting in 20th Century",
+      "credits": 3,
+      "areas": [
+        "A",
+        "H"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA3680": {
+      "title": "Contemporary Architecture: The Pritzker Prize Winners",
+      "credits": 3,
+      "areas": [
+        "A",
+        "H"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "HUMA3800": {
+      "title": "Guided Studies in Chinese Philosophical Classics",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE3571"
+    },
+    "HUMA3810": {
+      "title": "Taoism and the Chinese Tradition",
+      "credits": 3,
+      "areas": [
+        "C-Comm",
+        "H"
+      ],
+      "area": "C-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "",
+      "prevCode": "CORE3572"
+    },
+    "HUMA3900": {
+      "title": "Philosophical Inquiry into the Modern World",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "IEDA1250": {
+      "title": "Optimizing Decisions for Personal and Business Development",
+      "credits": 3,
+      "areas": [
+        "S",
+        "T"
+      ],
+      "area": "S",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "IEDA1280": {
+      "title": "Decision Analytics for Modern Society",
+      "credits": 3,
+      "areas": [
+        "T"
+      ],
+      "area": "T",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "ISDN1120": {
+      "title": "Bring AI to Your Side",
+      "credits": 3,
+      "areas": [
+        "T"
+      ],
+      "area": "T",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Fall.",
+      "prevCode": ""
+    },
+    "ISDN1130": {
+      "title": "Introduction to Eco-Design",
+      "credits": 3,
+      "areas": [
+        "SUS"
+      ],
+      "area": "SUS",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Fall.",
+      "prevCode": ""
+    },
+    "ISDN1200": {
+      "title": "Design Thinking for Technological Innovations",
+      "credits": 3,
+      "areas": [
+        "T"
+      ],
+      "area": "T",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Fall.",
+      "prevCode": "CORE1251"
+    },
+    "ISDN2000": {
+      "title": "What is Design and Why Design?",
+      "credits": 3,
+      "areas": [],
+      "area": "",
+      "group": "",
+      "effectiveFrom": "",
+      "prevCode": "CORE2261"
+    },
+    "ISOM1090": {
+      "title": "Social Media: Collective Intelligence & Creativity",
+      "credits": 3,
+      "areas": [],
+      "area": "",
+      "group": "",
+      "effectiveFrom": "",
+      "prevCode": "CORE1341"
+    },
+    "ISOM1380": {
+      "title": "Technology and Innovation: Social and Business Perspectives",
+      "credits": 3,
+      "areas": [],
+      "area": "",
+      "group": "",
+      "effectiveFrom": "",
+      "prevCode": "CORE1340"
+    },
+    "ISOM1400": {
+      "title": "Digital Philanthropy: Harnessing Technology for Social Changes and Beyond",
+      "credits": 3,
+      "areas": [
+        "T",
+        "SA"
+      ],
+      "area": "T",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2024-25 Summer.",
+      "prevCode": ""
+    },
+    "ISOM1500": {
+      "title": "Insightful Decisions",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "SA",
+      "prevCode": ""
+    },
+    "ISOM1700": {
+      "title": "Critical Issues in Business Operations",
+      "credits": 3,
+      "areas": [],
+      "area": "",
+      "group": "",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "ISOM2310": {
+      "title": "Fundamentals of E-Commerce: Business, Technology, and the Society",
+      "credits": 3,
+      "areas": [],
+      "area": "",
+      "group": "",
+      "effectiveFrom": "",
+      "prevCode": "CORE1343"
+    },
+    "ISOM2400": {
+      "title": "Global Information Infrastructure and Policy",
+      "credits": 3,
+      "areas": [
+        "T",
+        "SA"
+      ],
+      "area": "T",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2023-24 Winter.",
+      "prevCode": ""
+    },
+    "LANG1402": {
+      "title": "English for University Studies",
+      "credits": 3,
+      "areas": [
+        "E-Comm"
+      ],
+      "area": "E-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "The course title was English Language for University Studies before 2024-25 Fall.",
+      "prevCode": ""
+    },
+    "LANG1403": {
+      "title": "Academic English for University Studies",
+      "credits": 3,
+      "areas": [
+        "E-Comm"
+      ],
+      "area": "E-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "LANG1404": {
+      "title": "Advanced Academic English for University Studies",
+      "credits": 3,
+      "areas": [
+        "E-Comm"
+      ],
+      "area": "E-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "LANG1405": {
+      "title": "Mediated Me: An Introduction to Digital Literacy",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "The course code was LANG 1004 on or before 2022-23 Winter.",
+      "prevCode": ""
+    },
+    "LANG1406": {
+      "title": "Academic English for Business Studies",
+      "credits": 3,
+      "areas": [
+        "E-Comm"
+      ],
+      "area": "E-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "This is a common core course with effect from 2024-25 Fall.",
+      "prevCode": ""
+    },
+    "LANG1407": {
+      "title": "Academic English for Engineering Studies",
+      "credits": 3,
+      "areas": [
+        "E-Comm"
+      ],
+      "area": "E-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "This is a common core course with effect from 2024-25 Fall.",
+      "prevCode": ""
+    },
+    "LANG1408": {
+      "title": "Academic English for Humanities and Social Science Studies",
+      "credits": 3,
+      "areas": [
+        "E-Comm"
+      ],
+      "area": "E-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "This is a common core course with effect from 2024-25 Fall.",
+      "prevCode": ""
+    },
+    "LANG1409": {
+      "title": "Academic English for Science Studies",
+      "credits": 3,
+      "areas": [
+        "E-Comm"
+      ],
+      "area": "E-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "This is a common core course with effect from 2024-25 Fall.",
+      "prevCode": ""
+    },
+    "LANG1411": {
+      "title": "Elementary Putonghua for Non-Chinese Language Background Students",
+      "credits": 3,
+      "areas": [
+        "C-Comm"
+      ],
+      "area": "C-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "LANG1412": {
+      "title": "Intermediate Putonghua for Non-Chinese Language Background Students",
+      "credits": 3,
+      "areas": [
+        "C-Comm"
+      ],
+      "area": "C-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "LANG1413": {
+      "title": "Advanced Putonghua for Non-Chinese Language Background Students",
+      "credits": 3,
+      "areas": [
+        "C-Comm"
+      ],
+      "area": "C-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "LANG1414": {
+      "title": "Elementary Reading and Writing for Non-Chinese Language Background Students",
+      "credits": 3,
+      "areas": [
+        "C-Comm"
+      ],
+      "area": "C-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "LANG1415": {
+      "title": "Intermediate Reading and Writing for Non-Chinese Language Background Students",
+      "credits": 3,
+      "areas": [
+        "C-Comm"
+      ],
+      "area": "C-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "LANG1416": {
+      "title": "Effective Chinese Communication",
+      "credits": 3,
+      "areas": [
+        "C-Comm"
+      ],
+      "area": "C-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "LANG1421": {
+      "title": "Chinese Communication in the Digital Era",
+      "credits": 3,
+      "areas": [
+        "C-Comm"
+      ],
+      "area": "C-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "LANG1422": {
+      "title": "Chinese for Workplace Applications",
+      "credits": 3,
+      "areas": [
+        "C-Comm"
+      ],
+      "area": "C-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "LANG1423": {
+      "title": "Chinese Communication in Global Context",
+      "credits": 3,
+      "areas": [
+        "C-Comm"
+      ],
+      "area": "C-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "LANG1424": {
+      "title": "Chinese Writing in Cultural Contexts",
+      "credits": 3,
+      "areas": [
+        "C-Comm"
+      ],
+      "area": "C-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "LANG1425": {
+      "title": "Chinese Communication in Interpersonal Relations",
+      "credits": 3,
+      "areas": [
+        "C-Comm"
+      ],
+      "area": "C-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "LANG1426": {
+      "title": "Chinese Communication in Film and Literary Contexts",
+      "credits": 3,
+      "areas": [
+        "C-Comm"
+      ],
+      "area": "C-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "LANG1511": {
+      "title": "Chinese for Non-Chinese Language Background Students I",
+      "credits": 3,
+      "areas": [
+        "C-Comm"
+      ],
+      "area": "C-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "LANG1512": {
+      "title": "Chinese for Non-Chinese Language Background Students II",
+      "credits": 3,
+      "areas": [
+        "C-Comm"
+      ],
+      "area": "C-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "LANG1513": {
+      "title": "Chinese for Non-Chinese Language Background Students III",
+      "credits": 3,
+      "areas": [
+        "C-Comm"
+      ],
+      "area": "C-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "LANG1514": {
+      "title": "Chinese for Non-Chinese Language Background Students IV",
+      "credits": 3,
+      "areas": [
+        "C-Comm"
+      ],
+      "area": "C-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "LANG1515": {
+      "title": "Chinese for Non-Chinese Language Background Students V",
+      "credits": 3,
+      "areas": [
+        "C-Comm"
+      ],
+      "area": "C-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring. Courses in Foundations Group",
+      "prevCode": "CORE1421"
+    },
+    "LANG2063": {
+      "title": "Writing for Workplace Success",
+      "credits": 3,
+      "areas": [
+        "E-Comm"
+      ],
+      "area": "E-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "This is a common core course with effect from 2024-25 Spring.",
+      "prevCode": ""
+    },
+    "LANG2064": {
+      "title": "Speaking for Workplace Success",
+      "credits": 3,
+      "areas": [
+        "E-Comm"
+      ],
+      "area": "E-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "This is a common core course with effect from 2024-25 Spring.",
+      "prevCode": ""
+    },
+    "LANG2065": {
+      "title": "Research Writing",
+      "credits": 3,
+      "areas": [
+        "E-Comm"
+      ],
+      "area": "E-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "This is a common core course with effect from 2024-25 Spring.",
+      "prevCode": ""
+    },
+    "LANG2066": {
+      "title": "Dynamic Communication for STEAM Topics",
+      "credits": 3,
+      "areas": [
+        "E-Comm"
+      ],
+      "area": "E-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Fall.",
+      "prevCode": ""
+    },
+    "LANG2067": {
+      "title": "Digital Communication: Expressing Your Perspective in Digital Spaces",
+      "credits": 3,
+      "areas": [
+        "E-Comm"
+      ],
+      "area": "E-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Fall.",
+      "prevCode": ""
+    },
+    "LANG2068": {
+      "title": "Speaking with Impact",
+      "credits": 3,
+      "areas": [
+        "E-Comm"
+      ],
+      "area": "E-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Fall.",
+      "prevCode": ""
+    },
+    "LANG2069": {
+      "title": "Supercommunication Offline and On: The Art of Connecting",
+      "credits": 3,
+      "areas": [
+        "E-Comm"
+      ],
+      "area": "E-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "LANG2071": {
+      "title": "From Proposal to Applause: Navigating the Academic Conference Journey",
+      "credits": 3,
+      "areas": [
+        "E-Comm"
+      ],
+      "area": "E-Comm",
+      "group": "Foundations",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "LANG2090": {
+      "title": "Exploring Language and Communication with Big Data",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2024-25 Spring.",
+      "prevCode": ""
+    },
+    "LANG2091": {
+      "title": "Phonetics and Speech Technology",
+      "credits": 3,
+      "areas": [
+        "H"
+      ],
+      "area": "H",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2024-25 Spring.",
+      "prevCode": ""
+    },
+    "LIFS1010": {
+      "title": "Introduction to Biological Sciences",
+      "credits": 3,
+      "areas": [
+        "S"
+      ],
+      "area": "S",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "LIFS1020": {
+      "title": "Biology of Human Health",
+      "credits": 3,
+      "areas": [
+        "S"
+      ],
+      "area": "S",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE1130"
+    },
+    "LIFS1088": {
+      "title": "Global Perspectives in Health and Disease",
+      "credits": 3,
+      "areas": [
+        "S"
+      ],
+      "area": "S",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2026-27 Spring. SA",
+      "prevCode": ""
+    },
+    "MARK1220": {
+      "title": "Marketing and Society",
+      "credits": 3,
+      "areas": [],
+      "area": "",
+      "group": "",
+      "effectiveFrom": "",
+      "prevCode": "CORE1360"
+    },
+    "MECH1908": {
+      "title": "Exploration of Mechanical Design and Engineering",
+      "credits": 3,
+      "areas": [
+        "T"
+      ],
+      "area": "T",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2024-25 Spring.",
+      "prevCode": ""
+    },
+    "MGMT1110": {
+      "title": "Introduction to Management",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "MGMT1120": {
+      "title": "Developing the Leader in You",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "MGMT1130": {
+      "title": "Traps and Pitfalls in Judgment and Decision Making",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "S",
+      "prevCode": ""
+    },
+    "PHYS1001": {
+      "title": "Physics and the Modern Society",
+      "credits": 3,
+      "areas": [
+        "S"
+      ],
+      "area": "S",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "PHYS1002": {
+      "title": "Introduction to Astrophysics and Astronomy",
+      "credits": 3,
+      "areas": [
+        "S"
+      ],
+      "area": "S",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "PHYS1003": {
+      "title": "Energy and Related Environmental Issues",
+      "credits": 3,
+      "areas": [
+        "S"
+      ],
+      "area": "S",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "PHYS1007": {
+      "title": "Quantum Information for Everyone",
+      "credits": 3,
+      "areas": [
+        "S"
+      ],
+      "area": "S",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "PHYS1101": {
+      "title": "Introductory Physics",
+      "credits": 4,
+      "areas": [
+        "S"
+      ],
+      "area": "S",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2026-27 Fall.",
+      "prevCode": ""
+    },
+    "PHYS1111": {
+      "title": "General Physics I",
+      "credits": 3,
+      "areas": [
+        "S"
+      ],
+      "area": "S",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2026-27 Fall.",
+      "prevCode": ""
+    },
+    "PPOL1110": {
+      "title": "Public Policy in Cases",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2024-25 Spring.",
+      "prevCode": ""
+    },
+    "PPOL1120": {
+      "title": "Public Policy for a Healthy Society",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "PPOL1130": {
+      "title": "Introduction to Global Public Policy Through Film",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "PPOL2110": {
+      "title": "Science, Technology and Society in China",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "PPOL2320": {
+      "title": "Experiments in Power: Why We Make the Rules We Make",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2026-27 Fall.",
+      "prevCode": ""
+    },
+    "RMBI1010": {
+      "title": "Risk Management in Financial Institutions",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "RMBI1020": {
+      "title": "Business Intelligence for Data-Driven Decisions",
+      "credits": 3,
+      "areas": [
+        "T"
+      ],
+      "area": "T",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "SCIE1120": {
+      "title": "Chemistry and Life",
+      "credits": 3,
+      "areas": [
+        "S"
+      ],
+      "area": "S",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "SOSC1190": {
+      "title": "China and the World: China’s Development in Historical and Comparative Perspectives",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "SOSC1270": {
+      "title": "International Law",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "SOSC1300": {
+      "title": "The World of Politics",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2026-27 Fall.",
+      "prevCode": ""
+    },
+    "SOSC1309": {
+      "title": "Making Sense of Government and Politics",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE1710"
+    },
+    "SOSC1350": {
+      "title": "Contemporary China: Continuity and Change",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2026-27 Fall.",
+      "prevCode": ""
+    },
+    "SOSC1359": {
+      "title": "China: Development and Transformations",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "SOSC1400": {
+      "title": "Hong Kong and the Greater Bay Area",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE1740"
+    },
+    "SOSC1420": {
+      "title": "Poverty",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "SOSC1449": {
+      "title": "Understanding Our Economy",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE1810"
+    },
+    "SOSC1470": {
+      "title": "The Economic and Political Development of Modern Japan",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "SOSC1662": {
+      "title": "Contemporary Hong Kong Society",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "SOSC1700": {
+      "title": "What Is Democracy?",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "SOSC1780": {
+      "title": "Population and Development in China",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE1780"
+    },
+    "SOSC1840": {
+      "title": "Government, Law and Society in China",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE1840"
+    },
+    "SOSC1859": {
+      "title": "Exploring Society",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "SOSC1860": {
+      "title": "Population and Society",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "SOSC1960": {
+      "title": "Introduction to Psychology",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2026-27 Fall.",
+      "prevCode": ""
+    },
+    "SOSC1969": {
+      "title": "Discovering Mind and Behavior",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE1850"
+    },
+    "SOSC1980": {
+      "title": "Psychology of Personal Growth",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2026-27 Fall.",
+      "prevCode": ""
+    },
+    "SOSC2130": {
+      "title": "Education and Society",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "SOSC2299": {
+      "title": "The Rise and Fall of Globalization",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "SOSC2330": {
+      "title": "Environmental Politics and Policy",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "SOSC2740": {
+      "title": "Gender and Society",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "SOSC3001": {
+      "title": "Understanding China, 1700-2000: A Data Analytic Approach",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE3701"
+    },
+    "SOSC3130": {
+      "title": "Hong Kong Culture",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "SOSC3240": {
+      "title": "Application of Geographical Information Systems",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE3740"
+    },
+    "SOSC3520": {
+      "title": "Understanding Comparative Politics",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "SOSC3630": {
+      "title": "Democracy and Democratization around the World",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": "CORE3863"
+    },
+    "SOSC3880": {
+      "title": "Social Inequality and Social Mobility",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "SUS1030": {
+      "title": "From 2025-26 Fall for 2025-26 and 2026-27 cohorts. T, SA From 2022-23 Spring to 2024-25 Summer. SUS From 2025-26 Fall for 2025-26 and 2026-27 cohorts. S From 2024-25 Spring to 2024-25 Summer. SUST Climate Change and Sustainability: An Interdisciplinary Perspective",
+      "credits": 3,
+      "areas": [
+        "SUS"
+      ],
+      "area": "SUS",
+      "group": "Broadening",
+      "effectiveFrom": "From 2025-26 Spring for 2025-26 and 2026-27 cohorts.",
+      "prevCode": ""
+    },
+    "SUS1100": {
+      "title": "From 2025-26 Fall for 2025-26 and 2026-27 cohorts. CIVL Discovering Civil and Environmental Engineering",
+      "credits": 3,
+      "areas": [
+        "T"
+      ],
+      "area": "T",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2026-27 Fall. T This is a common core course with effect from 2024-25 Spring.",
+      "prevCode": ""
+    },
+    "SUS1161": {
+      "title": "From 2025-26 Fall for 2025-26 and 2026-27 cohorts. S From 2024-25 Spring to 2024-25 Summer. CIVL Building the Future: Civil Engineering Challenges & Solutions",
+      "credits": 3,
+      "areas": [
+        "T"
+      ],
+      "area": "T",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
+      "prevCode": ""
+    },
+    "SUS1210": {
+      "title": "From 2025-26 Fall for 2025-26 and 2026-27 cohorts. T From 2022-23 Spring to 2024-25 Summer. CIVL Fundamental of Green Buildings",
+      "credits": 3,
+      "areas": [
+        "T",
+        "SUS"
+      ],
+      "area": "T",
+      "group": "Broadening",
+      "effectiveFrom": "- This is a common core course with effect from 2025-26 Spring. - SUS area is for 2025-26 and 2026-27 cohorts.",
+      "prevCode": ""
+    },
+    "SUS1303": {
+      "title": "From 2025-26 Fall for 2025-26 and 2026-27 cohorts. SA The course title was From Trash to Treasure: Managing Waste to Resources before 2024-25 Summer. SUS From 2025-26 Fall for 2025-26 and 2026-27 cohorts. T SUS From 2025-26 Fall for 2025-26 and 2026-27 cohorts. FINA Introduction to Financial Markets and Institutions",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "SUS1905": {
+      "title": "From 2025-26 Spring for 2025-26 and 2026-27 cohorts. MECH Buildings for Contemporary Living",
+      "credits": 3,
+      "areas": [
+        "S",
+        "T"
+      ],
+      "area": "S",
+      "group": "Broadening",
+      "effectiveFrom": "",
+      "prevCode": ""
+    },
+    "SUS2020": {
+      "title": "From 2025-26 Fall for 2025-26 and 2026-27 cohorts. SA SUS From 2025-26 Fall for 2025-26 and 2026-27 cohorts. S SUS From 2025-26 Fall for 2025-26 and 2026-27 cohorts. S SUS From 2025-26 Fall for 2025-26 and 2026-27 cohorts. ENVR Urban Air Pollution",
+      "credits": 3,
+      "areas": [],
+      "area": "",
+      "group": "",
+      "effectiveFrom": "",
+      "prevCode": "CORE2941"
+    },
+    "SUS2030": {
+      "title": "From 2025-26 Winter for 2025-26 and 2026-27 cohorts. ISOM Business Protections for Innovations",
+      "credits": 3,
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
+      "effectiveFrom": "SA T From 2025-26 Summer.",
+      "prevCode": ""
+    },
+    "SUS2110": {
+      "title": "From 2025-26 Fall for 2025-26 and 2026-27 cohorts. ISDN From Ideas to Assets: Practice of the Creative Economy System",
+      "credits": 3,
+      "areas": [
+        "A"
+      ],
+      "area": "A",
+      "group": "Broadening",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring. SA T From 2025-26 Summer. SA T From 2025-26 Summer.",
+      "prevCode": ""
+    },
+    "SUS3200": {
+      "title": "From 2025-26 Fall for 2025-26 and 2026-27 cohorts. SA From 2024-25 Spring to 2024-25 Summer. UCOP Design for Global Health",
+      "credits": 3,
+      "areas": [
+        "UxOP"
+      ],
+      "area": "UxOP",
+      "group": "Experiencing",
+      "effectiveFrom": "This is a common core course with effect from 2024-25 Spring.",
+      "prevCode": ""
+    },
+    "SUST1010": {
+      "title": "Introduction to Sustainability",
+      "credits": 3,
+      "areas": [],
+      "area": "",
+      "group": "",
+      "effectiveFrom": "1 2 HAIC: Human-AI Co-Creation and Data Literacy (for 2026-27 cohort ); CTDL: Critical Thinking and Data Literacy; HMW: Habits, Mindsets, and Wellness; E-Comm: English Communication; C-Comm: Chinese Communication; A: Arts; H: Humanities; S: Science; T: Technology; SA: Social Analysis; SUS: Sustainability (from 2025-26 cohort ); UxOP: Undergraduate experiential Opportunities Programs In 2022-23, all common core courses for the 30-credit Common Core Program were assigned a “CORE” prefix. Starting from 2023-24, this prefix has been removed, and common core courses have been coded according to their subject area code (e.g., “ACCT” for Accounting). Students should pay attention to the following for study plan and before enrolling in classes: For example, if students completed CORE 1240 Electronic and Information Technology in 2022-23, they can use it to fulfill the Technology (T) area requirement; but they cannot retake the same course using the subject area code ELEC 1010 Electronic and Information Technology in subsequent terms. For example, credits earned from SOSC 1850 Understanding Society in 2022-23 cannot count toward the Social Analysis (SA) area requirement. # The subject area codes are the alternate code of the CORE codes. For example, HUMA 1150 is the alternate code for CORE 1660. In 2022-23, students cannot use courses with subject area prefix (e.g., HUMA 1150) to fulfill any common core requirements. However, starting from 2023-24, students can use subject area-coded course (e.g., HUMA 1150) to fulfill EITHER the common core requirement OR the School/major requirement, but not both. It is important to note that certain major/minor programs may include common core courses as required or elective courses. While these courses can fulfill relevant major/minor requirements, students should be aware of the credit reuse rules specified by individual programs. Credits from some of these common core courses may only be used to fulfill EITHER the common core requirements OR the major/minor requirements, but not both. Please refer to the program catalog or consult your major/minor departments for details.",
+      "prevCode": "CORE2830"
+    },
+    "SUST1020": {
+      "title": "Climate Films and Sustainable Future",
+      "credits": 3,
+      "areas": [],
+      "area": "",
+      "group": "",
+      "effectiveFrom": "",
+      "prevCode": "CORE3880"
+    },
+    "SUST1101": {
+      "title": "Environmental, Social, and Governance Fundamentals",
+      "credits": 3,
+      "areas": [],
+      "area": "",
+      "group": "",
+      "effectiveFrom": "",
+      "prevCode": "CORE1940"
+    },
+    "UPOP2920": {
+      "title": "Undergraduate Practice Opportunities",
+      "credits": 2,
+      "areas": [
+        "UxOP"
+      ],
+      "area": "UxOP",
+      "group": "Experiencing",
+      "effectiveFrom": "This is a common core course with effect from 2024-25 Summer.",
+      "prevCode": ""
+    },
+    "UROP3200": {
+      "title": "Undergraduate Research Opportunities with Mini-conference Experience",
+      "credits": 1,
+      "areas": [
+        "UxOP"
+      ],
+      "area": "UxOP",
+      "group": "Experiencing",
+      "effectiveFrom": "This is a common core course with effect from 2024-25 Fall.",
+      "prevCode": ""
+    },
+    "UTOP2401": {
+      "title": "Language Teaching Service-Learning Internship",
+      "credits": 3,
+      "areas": [
+        "UxOP"
+      ],
+      "area": "UxOP",
+      "group": "Experiencing",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Summer.",
+      "prevCode": ""
+    },
+    "UTOP2910": {
+      "title": "Pathways to Teaching for Future Educators",
+      "credits": 3,
+      "areas": [
+        "UxOP"
+      ],
+      "area": "UxOP",
+      "group": "Experiencing",
+      "effectiveFrom": "This is a common core course with effect from 2024-25 Spring.",
+      "prevCode": ""
+    },
+    "UTOP3201": {
+      "title": "Practicum in STEAM Education",
+      "credits": 3,
+      "areas": [
+        "UxOP"
+      ],
+      "area": "UxOP",
+      "group": "Experiencing",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Fall. Courses in Experiencing Group",
+      "prevCode": ""
+    }
+  }
+}
