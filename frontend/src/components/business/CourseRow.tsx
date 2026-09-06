@@ -47,7 +47,13 @@ export function CourseRow({ course, groupName, sourceRef }: CourseRowProps) {
       </label>
 
       <div className="min-w-0 flex-1">
-        <p className={cn("text-sm font-medium truncate", isTaken && "line-through opacity-60")}>
+        {/* 已修划线：background-size 0→100% 过渡（200ms），替代瞬间 line-through */}
+        <p
+          className={cn(
+            "text-sm font-medium truncate bg-gradient-to-r from-current to-current bg-no-repeat bg-left-bottom bg-[length:0%_1px] pb-0.5 transition-[background-size] duration-200 ease-out",
+            isTaken && "bg-[length:100%_1px] opacity-60"
+          )}
+        >
           <span className="font-mono text-xs text-muted-foreground mr-2">{course.code}</span>
           {course.name}
         </p>

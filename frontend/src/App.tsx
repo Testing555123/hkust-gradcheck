@@ -1,23 +1,86 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import { toast } from "sonner";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { OnboardingDialog } from "@/components/business/OnboardingDialog";
+import { TranscriptImportDialog, type TranscriptImportResult } from "@/components/business/TranscriptImportDialog";
+import { ProfileBadge } from "@/components/business/ProfileBadge";
 import { ProgramPicker } from "@/components/business/ProgramPicker";
+import { EmptyState } from "@/components/ui/empty";
+import { PageSkeleton } from "@/components/ui/skeleton";
+import { Toaster } from "@/components/ui/sonner";
 import { OverviewPage } from "@/pages/OverviewPage";
 import { CoursesPage } from "@/pages/CoursesPage";
 import { RequirementsPage } from "@/pages/RequirementsPage";
 import { usePrograms, useProgramTree } from "@/hooks/queries";
 import { useUi } from "@/stores/ui";
-import { Moon, Sun, GraduationCap } from "lucide-react";
+import { useProfile } from "@/stores/profile";
+import { useSelection } from "@/stores/selection";
+import { computeProgramAudit } from "@/lib/audit";
+import { needsOnboarding } from "@/lib/profile";
+import { Moon, Sun, GraduationCap, LayoutDashboard, ListChecks, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function App() {
   const programs = usePrograms();
-  const { year, code, theme, toggleTheme } = useUi();
+  const {
+    year,
+    code,
+    theme,
+    toggleTheme,
+    setProgram,
+    onboardingOpen,
+    openOnboarding,
+    closeOnboarding,
+    transcriptImportOpen,
+    openTranscriptImport,
+    closeTranscriptImport,
+  } = useUi();
+  const profile = useProfile((s) => s.profile);
+  const setProfileProgram = useProfile((s) => s.setProgram);
+  const selectionStatus = useSelection((s) => s.status);
+  const setSelectionMany = useSelection((s) => s.setMany);
   const tree = useProgramTree(year, code);
+
+  const list = programs.data ?? [];
+  // 数据源为空时不弹（没得选）；profile 缺失或已失效时强制引导
+  const mustOnboard = !programs.isLoading && needsOnboarding(profile, list);
+  const dialogOpen = mustOnboard || onboardingOpen;
+
+  // Tab 计数徽标数据（与 OverviewPage 同源，计算成本可忽略）
+  const audit = tree.data ? computeProgramAudit(tree.data.groups, selectionStatus) : null;
 
   // 应用主题到 <html>
   useEffect(() => {
     document.documentElement.classList.toggle("dark", theme === "dark");
   }, [theme]);
+
+  // 切换培养方案的全局反馈（首次保存不提示，避免与引导弹窗重复）
+  const lastProfileKey = useRef<string | null>(
+    profile ? `${profile.year}/${profile.code}` : null
+  );
+  useEffect(() => {
+    const key = profile ? `${profile.year}/${profile.code}` : null;
+    if (key && profile && lastProfileKey.current && key !== lastProfileKey.current) {
+      toast.success(`已切换到 ${profile.year} ${profile.code}`);
+    }
+    lastProfileKey.current = key;
+  }, [profile]);
+
+  const handleSubmit = (sel: { year: string; code: string }) => {
+    setProfileProgram(sel.year, sel.code);
+    setProgram(sel.year, sel.code);
+    closeOnboarding();
+  };
+
+  // 成绩单导入：已修以成绩单覆盖，手动勾选的计划保留；profile 同步填充
+  const handleTranscriptConfirm = (r: TranscriptImportResult) => {
+    setSelectionMany(r.courses);
+    setProfileProgram(r.year, r.code);
+    setProgram(r.year, r.code);
+    closeTranscriptImport();
+    const taken = Object.values(r.courses).filter((s) => s === "taken").length;
+    toast.success(`已导入 ${taken} 门已修 / ${Object.keys(r.courses).length - taken} 门在读计划`);
+  };
 
   return (
     <div className="min-h-screen">
@@ -29,7 +92,13 @@ export default function App() {
             <h1 className="font-semibold text-sm sm:text-base truncate">畢業要求查詢與學分核查</h1>
           </div>
           <div className="flex items-center gap-2">
-            {programs.data && programs.data.length > 0 && <ProgramPicker programs={programs.data} />}
+            {/* 窄屏隐藏双下拉，只保留身份摘要入口，避免顶栏拥挤 */}
+            {programs.data && programs.data.length > 0 && (
+              <div className="hidden sm:block">
+                <ProgramPicker programs={programs.data} />
+              </div>
+            )}
+            {year && code && <ProfileBadge year={year} code={code} onClick={openOnboarding} />}
             <Button variant="ghost" size="icon" onClick={toggleTheme} aria-label="切换主题">
               {theme === "light" ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
             </Button>
@@ -39,7 +108,7 @@ export default function App() {
 
       {/* 主内容（预留顶栏高度） */}
       <main className="mx-auto max-w-6xl px-4 pt-[72px] pb-16">
-        {programs.isLoading && <Skeleton />}
+        {programs.isLoading && <PageSkeleton />}
         {programs.isError && (
           <div className="rounded-lg border border-destructive/30 bg-destructive/5 p-6 text-sm">
             无法加载培养方案列表：请确认后端服务已启动（uvicorn，端口 8000）。
@@ -49,12 +118,24 @@ export default function App() {
         )}
 
         {programs.data && programs.data.length === 0 && (
-          <EmptyHint />
+          <EmptyState
+            icon={<GraduationCap className="h-10 w-10 mx-auto text-muted-foreground" />}
+            title="数据库中还没有培养方案"
+            description={
+              <>
+                请先运行离线管线解析 PDF 并用 seed 导入：
+                <br />
+                <code className="text-xs font-mono">py -m run_pipeline --year 2026-27 --code COMP</code>
+                <br />
+                <code className="text-xs font-mono">python backend/scripts/seed.py</code>
+              </>
+            }
+          />
         )}
 
         {programs.data && programs.data.length > 0 && (
           <>
-            {tree.isLoading && <Skeleton />}
+            {tree.isLoading && <PageSkeleton />}
             {tree.isError && (
               <div className="rounded-lg border border-destructive/30 bg-destructive/5 p-6 text-sm">
                 加载培养方案失败：
@@ -64,9 +145,26 @@ export default function App() {
             {tree.data && (
               <Tabs defaultValue="overview">
                 <TabsList>
-                  <TabsTrigger value="overview">方案总览</TabsTrigger>
-                  <TabsTrigger value="courses">课程选择</TabsTrigger>
-                  <TabsTrigger value="requirements">要求明细</TabsTrigger>
+                  <TabsTrigger value="overview" className="gap-1.5">
+                    <LayoutDashboard className="h-3.5 w-3.5" />
+                    方案总览
+                  </TabsTrigger>
+                  <TabsTrigger value="courses" className="gap-1.5">
+                    <ListChecks className="h-3.5 w-3.5" />
+                    课程选择
+                    {audit && audit.missingCount > 0 && (
+                      <span className="rounded-full bg-warning/15 px-1.5 text-[10px] leading-4 text-warning tabular-nums">
+                        缺 {audit.missingCount}
+                      </span>
+                    )}
+                  </TabsTrigger>
+                  <TabsTrigger value="requirements" className="gap-1.5">
+                    <FileText className="h-3.5 w-3.5" />
+                    要求明细
+                    <span className="rounded-full bg-muted px-1.5 text-[10px] leading-4 text-muted-foreground tabular-nums">
+                      {tree.data.groups.length}
+                    </span>
+                  </TabsTrigger>
                 </TabsList>
                 <TabsContent value="overview">
                   <OverviewPage tree={tree.data} />
@@ -82,35 +180,27 @@ export default function App() {
           </>
         )}
       </main>
-    </div>
-  );
-}
 
-function Skeleton() {
-  return (
-    <div className="space-y-4 animate-pulse-soft">
-      <div className="h-40 rounded-lg bg-muted" />
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {[1, 2, 3].map((i) => (
-          <div key={i} className="h-36 rounded-lg bg-muted" />
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function EmptyHint() {
-  return (
-    <div className="rounded-lg border bg-card p-8 text-center space-y-2">
-      <GraduationCap className="h-10 w-10 mx-auto text-muted-foreground" />
-      <p className="font-medium">数据库中还没有培养方案</p>
-      <p className="text-sm text-muted-foreground">
-        请先运行离线管线解析 PDF 并用 seed 导入：
-        <br />
-        <code className="text-xs font-mono">py -m run_pipeline --year 2026-27 --code COMP</code>
-        <br />
-        <code className="text-xs font-mono">python backend/scripts/seed.py</code>
-      </p>
+      <OnboardingDialog
+        open={dialogOpen}
+        programs={list}
+        forced={mustOnboard}
+        initialYear={profile?.year}
+        initialCode={profile?.code}
+        onSubmit={handleSubmit}
+        onCancel={closeOnboarding}
+        onImportTranscript={() => {
+          closeOnboarding();
+          openTranscriptImport();
+        }}
+      />
+      <TranscriptImportDialog
+        open={transcriptImportOpen}
+        programs={list}
+        onClose={closeTranscriptImport}
+        onConfirm={handleTranscriptConfirm}
+      />
+      <Toaster />
     </div>
   );
 }

@@ -39,7 +39,7 @@ export function ProgressCard({ audit }: { audit: GroupAudit }) {
               {audit.takenCredits} / {audit.requiredCredits}
             </span>
           </div>
-          <Progress value={audit.percentTaken} />
+          <Progress value={audit.percentTaken} indicatorClassName="animate-progress-grow" />
         </div>
 
         {/* 含计划的进度（叠加浅色差值） */}
@@ -50,7 +50,10 @@ export function ProgressCard({ audit }: { audit: GroupAudit }) {
               {audit.plannedCredits} / {audit.requiredCredits}
             </span>
           </div>
-          <Progress value={audit.percentPlanned} indicatorClassName="bg-primary/45" />
+          <Progress
+            value={audit.percentPlanned}
+            indicatorClassName="bg-primary/45 animate-progress-grow"
+          />
         </div>
 
         {audit.missingCourses.length > 0 && (
@@ -58,7 +61,9 @@ export function ProgressCard({ audit }: { audit: GroupAudit }) {
             <AlertTriangle className="h-3.5 w-3.5 mt-0.5 shrink-0" />
             <span className="leading-snug">
               缺口 {audit.missingCourses.length} 门：
-              {audit.missingCourses.slice(0, 3).map((c) => c.code).join("、")}
+              <span className="font-mono">
+                {audit.missingCourses.slice(0, 3).map((c) => c.code).join("、")}
+              </span>
               {audit.missingCourses.length > 3 && " 等"}
             </span>
           </div>

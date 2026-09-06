@@ -66,10 +66,27 @@ export default {
           '0%, 100%': { opacity: '1' },
           '50%': { opacity: '0.6' },
         },
+        // 进度条指示器从左向右揭示（clip-path 动画，与指示器的 translateX 内联样式互不冲突）
+        'progress-grow': {
+          '0%': { 'clip-path': 'inset(0 100% 0 0)' },
+          '100%': { 'clip-path': 'inset(0 0 0 0)' },
+        },
+        // 已修行划线从左到右展开
+        strike: {
+          '0%': { 'background-size': '0% 1px' },
+          '100%': { 'background-size': '100% 1px' },
+        },
+        'row-in': {
+          '0%': { opacity: '0', transform: 'translateY(2px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
       },
       animation: {
         'fade-in-up': 'fade-in-up 0.25s ease-out',
         'pulse-soft': 'pulse-soft 2s ease-in-out infinite',
+        'progress-grow': 'progress-grow 0.6s cubic-bezier(0.22, 1, 0.36, 1)',
+        strike: 'strike 0.2s ease-out forwards',
+        'row-in': 'row-in 0.15s ease-out',
       },
     },
   },

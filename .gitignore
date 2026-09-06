@@ -7,15 +7,18 @@ __pycache__/
 # ===== Node =====
 node_modules/
 dist/
+*.tsbuildinfo
+coverage/
 
 # ===== 环境与密钥（严禁提交）=====
 .env
 .env.local
+.env.*.local
 pipeline/run_pipeline_env.bat
 
 # ===== 数据文件（体积大 / 本地生成，不入库）=====
-# 官方培养方案 PDF 与爬虫索引
-unpress_pdf/
+# 官方培养方案 PDF 与爬虫索引（注意：不带斜杠，软链也能命中）
+unpress_pdf
 # 原始课程库与工作副本
 courses.db
 *.db
@@ -31,3 +34,7 @@ pipeline/cache/
 
 # ===== 工具内部数据 =====
 .codebuddy/
+
+# ===== 操作系统杂项 =====
+.DS_Store
+Thumbs.db
