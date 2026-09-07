@@ -96,29 +96,37 @@ $env:PYTHONIOENCODING='utf-8'
 - `pipeline/output/requirements_*.json` — LLM 抽取结果（可 diff、可手工修订，seed 只认这个）
 - `pipeline/reports/crosscheck_*.md` — 与 courses.db 的学分差异报告
 
-## 公网部署（Render 免费档）
+## 公网部署（Koyeb 免费档）
 
 单容器方案：FastAPI 同源托管前端静态产物 + SQLite（构建时烘焙进镜像），数据更新 = git push 重新部署，无需持久卷、无运行时 LLM 成本。
 
-> 数据文件已强制入库（`git add -f courses.db pipeline/output/`），Render 从 git 构建镜像时可直接使用。
+> 数据文件已入库（`courses.db` 与 `pipeline/output/`），平台从 git 构建 Docker 镜像时可直接使用。
 
-### 部署步骤
+### 部署步骤（Koyeb，无需信用卡）
 
 1. 将本仓库 push 到 GitHub（private 仓库即可）
-2. 打开 https://dashboard.render.com → **New** → **Web Service** → 连接 GitHub（授权 GitHub App，可选 private repo）
-3. 选中本仓库，配置：
-   - **Runtime**: Docker（自动识别根目录 `Dockerfile`）
-   - **Instance Type**: Free
-   - **Health Check Path**: `/api/health`
+2. 打开 https://app.koyeb.com → 用 GitHub 账号登录
+3. **Create Service**（或 Overview → Create Web Service）→ 选择 **GitHub** 仓库源 → 选中本仓库
+4. 构建配置：
+   - **Builder**：自动识别根目录 `Dockerfile`（无需额外配置）
+   - **Port**：保持默认（容器内读取 `PORT` 环境变量；Koyeb 会自动注入）
+   - **Health Check**：新增 HTTP 探针，Path 填 `/api/health`
+   - **Instance**：Free（Nano）
    - 环境变量：无需任何配置（镜像内相对布局与仓库一致）
-4. Create Web Service → 首次构建约 3–5 分钟，完成后获得 `https://<服务名>.onrender.com`
+5. Deploy → 首次构建约 3–5 分钟，完成后获得 `https://<服务名>-<org>.koyeb.app`
 
 此后每次 `git push` 自动触发重新构建部署。
 
-### 免费档限制
+### 免费档说明
 
-- 15 分钟无流量自动休眠，下次访问冷启动约 30–60 秒
-- 512MB 内存 / 每月 750 小时实例时长（学生工具流量足够）
+- 免费 1 个实例（Nano：0.1 vCPU / 512MB），SQLite 毫秒级查询足够
+- 实例长期常驻但资源可被平台抢占回收（回收后下次访问自动重启，约 30 秒冷启动）
+- 注册用 GitHub 账号即可，正常使用不要求绑定信用卡（疑似滥用账号才可能被要求）
+
+### 其他免费平台备选
+
+- **Hugging Face Spaces**：最稳定，但免费档 Space 必须 Public（代码与数据公开），且需 GitHub Action 做自动同步
+- **ClawCloud Run**：额度慷慨，但每天最多运行 12 小时
 
 ### 本地容器验证（可选，需 Docker）
 
