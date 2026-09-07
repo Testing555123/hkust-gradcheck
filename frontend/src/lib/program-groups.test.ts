@@ -70,16 +70,26 @@ describe("matchProgramsByTitle", () => {
     p("EXTM-AI", "Extended Major Program in Artificial Intelligence"),
   ];
 
-  it("完整文本命中（含）", () => {
+  it("完整文本精确命中（含）", () => {
     expect(matchProgramsByTitle("Artificial Intelligence", candidates)).toEqual(["EXTM-AI"]);
   });
 
-  it("括号前主干词命中（多匹配全返回）", () => {
+  it("括号前主干词：仅限主修类时精确命中 MATH 而非 MAEC", () => {
+    // 关键回归：旧子串匹配会把 MAEC（标题也含 mathematics）误选为首项
+    expect(matchProgramsByTitle("Mathematics (Statistics Track)", candidates.filter(isMajor))).toEqual([
+      "MATH",
+    ]);
+  });
+
+  it("词元包含：不限定类别时 MAEC 被排除（economics 不在主修文本），MINOR 因同词根仍保留", () => {
     expect(matchProgramsByTitle("Mathematics (Statistics Track)", candidates)).toEqual([
       "MATH",
-      "MAEC",
       "MINOR-MATH",
     ]);
+  });
+
+  it("常规主修 Computer Science 命中 COMP", () => {
+    expect(matchProgramsByTitle("Computer Science", candidates)).toEqual(["COMP"]);
   });
 
   it("未命中返回空数组", () => {

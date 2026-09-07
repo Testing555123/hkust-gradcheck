@@ -23,7 +23,7 @@ import {
 import { useSelection } from "@/stores/selection";
 import { codesOf, yearsOf } from "@/lib/profile";
 import { selectableAttached } from "@/lib/attached";
-import { matchProgramsByTitle } from "@/lib/program-groups";
+import { isMajor, matchProgramsByTitle } from "@/lib/program-groups";
 import {
   extractTranscriptText,
   parseTranscript,
@@ -72,7 +72,10 @@ export function TranscriptImportDialog({
 
   const existing = useSelection((s) => s.status);
   const years = useMemo(() => yearsOf(programs), [programs]);
-  const majors = useMemo(() => codesOf(programs, year), [programs, year]);
+  const majors = useMemo(
+    () => codesOf(programs, year).filter(isMajor),
+    [programs, year]
+  );
   // 该学年可选副修 / EXTM（识别到的项预勾选）
   const selectable = useMemo(() => selectableAttached(year, programs), [year, programs]);
   const minorFiltered = useMemo(() => {
@@ -125,7 +128,7 @@ export function TranscriptImportDialog({
       setResult(info);
       setExcluded(new Set());
       setYear(y);
-      setCode(matchProgramsByTitle(info.major, codesOf(programs, y))[0] ?? "");
+      setCode(matchProgramsByTitle(info.major, codesOf(programs, y).filter(isMajor))[0] ?? "");
       setMinors(suggestedMinors);
       setMinorSearch("");
       setStep("preview");
