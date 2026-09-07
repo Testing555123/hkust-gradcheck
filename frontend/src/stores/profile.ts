@@ -15,6 +15,8 @@ interface ProfileState {
   profile: Profile | null;
   /** 写入/更新主修（同时刷新 updatedAt；extra 提供通识引擎所需字段） */
   setProgram: (year: string, code: string, extra?: ProfileExtras) => void;
+  /** 写入辅修 / Extended Major 多选（保留主修等其它字段） */
+  setMinors: (minors: string[]) => void;
   /** 清空（重新选择时用） */
   clear: () => void;
 }
@@ -34,6 +36,13 @@ export const useProfile = create<ProfileState>()(
             minors: prev?.minors ?? [],
             updatedAt: new Date().toISOString(),
           },
+        });
+      },
+      setMinors: (minors) => {
+        const prev = get().profile;
+        if (!prev) return;
+        set({
+          profile: { ...prev, minors, updatedAt: new Date().toISOString() },
         });
       },
       clear: () => set({ profile: null }),

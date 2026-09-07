@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import { toast } from "sonner";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { OnboardingDialog } from "@/components/business/OnboardingDialog";
@@ -11,13 +11,14 @@ import { Toaster } from "@/components/ui/sonner";
 import { OverviewPage } from "@/pages/OverviewPage";
 import { CoursesPage } from "@/pages/CoursesPage";
 import { RequirementsPage } from "@/pages/RequirementsPage";
-import { usePrograms, useProgramTree } from "@/hooks/queries";
+import { usePrograms, useProgramTree, useAttachedTrees } from "@/hooks/queries";
 import { useUi } from "@/stores/ui";
 import { useProfile } from "@/stores/profile";
 import { useSelection } from "@/stores/selection";
 import { computeProgramAudit } from "@/lib/audit";
 import { needsOnboarding } from "@/lib/profile";
 import { schoolOf } from "@/lib/common-core";
+import { resolveAttachedPrograms } from "@/lib/attached";
 import { Moon, Sun, GraduationCap, LayoutDashboard, ListChecks, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -43,6 +44,22 @@ export default function App() {
   const tree = useProgramTree(year, code);
 
   const list = programs.data ?? [];
+  // 附加方案：辅修（profile.minors 多选）+ 学院要求（schoolOf 自动匹配）
+  const attached = useMemo(
+    () => resolveAttachedPrograms(year, code, profile?.minors ?? [], list, profile?.school),
+    [year, code, profile?.minors, profile?.school, list]
+  );
+  const attachedTrees = useAttachedTrees(attached);
+
+  // 刷新后 useUi 的选择会重置（非持久化）：profile 有效时用它校准，
+  // 保证附加要求（辅修/学院）与主修保持在同一学年/专业
+  useEffect(() => {
+    if (programs.isLoading || list.length === 0) return;
+    if (year && code) return; // 已有有效选择（用户手动切换或已同步）
+    if (profile && list.some((p) => p.year === profile.year && p.code === profile.code)) {
+      setProgram(profile.year, profile.code);
+    }
+  }, [programs.isLoading, list, year, code, profile, setProgram]);
   // 数据源为空时不弹（没得选）；profile 缺失或已失效时强制引导
   const mustOnboard = !programs.isLoading && needsOnboarding(profile, list);
   const dialogOpen = mustOnboard || onboardingOpen;
@@ -67,11 +84,18 @@ export default function App() {
     lastProfileKey.current = key;
   }, [profile]);
 
-  const handleSubmit = (sel: { year: string; code: string }) => {
+  const handleSubmit = (sel: { year: string; code: string; minors: string[] }) => {
     // 手动选择时，所选年份即入学年份（通识框架判定用）
     setProfileProgram(sel.year, sel.code, { admissionYear: sel.year });
+    useProfile.getState().setMinors(sel.minors);
     setProgram(sel.year, sel.code);
     closeOnboarding();
+  };
+
+  const handleRemoveMinor = (minorCode: string) => {
+    const next = (profile?.minors ?? []).filter((c) => c !== minorCode);
+    useProfile.getState().setMinors(next);
+    toast.info(`已移除辅修 / Extended Major：${minorCode}`);
   };
 
   // 成绩单导入：已修以成绩单覆盖，手动勾选的计划保留；profile 同步填充（含通识框架字段）
@@ -172,13 +196,17 @@ export default function App() {
                   </TabsTrigger>
                 </TabsList>
                 <TabsContent value="overview">
-                  <OverviewPage tree={tree.data} />
+                  <OverviewPage
+                    tree={tree.data}
+                    attachedEntries={attachedTrees}
+                    onRemoveMinor={handleRemoveMinor}
+                  />
                 </TabsContent>
                 <TabsContent value="courses">
-                  <CoursesPage tree={tree.data} />
+                  <CoursesPage tree={tree.data} attachedEntries={attachedTrees} />
                 </TabsContent>
                 <TabsContent value="requirements">
-                  <RequirementsPage tree={tree.data} />
+                  <RequirementsPage tree={tree.data} attachedEntries={attachedTrees} />
                 </TabsContent>
               </Tabs>
             )}
@@ -192,6 +220,7 @@ export default function App() {
         forced={mustOnboard}
         initialYear={profile?.year}
         initialCode={profile?.code}
+        initialMinors={profile?.minors}
         onSubmit={handleSubmit}
         onCancel={closeOnboarding}
         onImportTranscript={() => {

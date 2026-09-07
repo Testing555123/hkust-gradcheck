@@ -6,6 +6,8 @@ import { CCProgressCard } from "@/components/business/CCProgressCard";
 import { StatCard } from "@/components/business/StatCard";
 import { computeProgramAudit } from "@/lib/audit";
 import { computeCommonCoreAudit, type CommonCoreAudit } from "@/lib/common-core";
+import type { AttachedProgram } from "@/lib/attached";
+import { AttachedAuditCard } from "@/components/business/AttachedAuditCard";
 import { useSelection } from "@/stores/selection";
 import { useProfile } from "@/stores/profile";
 import {
@@ -22,12 +24,39 @@ import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import type { ProgramTreeData } from "@/types";
 
-/** 方案总览：毕业总进度 = 主修 + 通识核心 合并口径 */
-export function OverviewPage({ tree }: { tree: ProgramTreeData }) {
+/** 附加要求（辅修/学院/EXTM）的视图条目：attached + 已加载树 */
+export interface AttachedEntryView {
+  attached: AttachedProgram;
+  tree?: ProgramTreeData;
+  isLoading: boolean;
+  isError: boolean;
+}
+
+/** 方案总览：毕业总进度 = 主修 + 通识核心 + 附加要求（辅修/学院）合并口径 */
+export function OverviewPage({
+  tree,
+  attachedEntries = [],
+  onRemoveMinor,
+}: {
+  tree: ProgramTreeData;
+  attachedEntries?: AttachedEntryView[];
+  onRemoveMinor?: (code: string) => void;
+}) {
   const status = useSelection((s) => s.status);
   const clearAll = useSelection((s) => s.clearAll);
   const profile = useProfile((s) => s.profile);
   const audit = computeProgramAudit(tree.groups, status);
+
+  // 附加要求审计：每个可用附加方案独立计算（勾选按课号共享，credit reuse）
+  const attachedAudits = useMemo(
+    () =>
+      attachedEntries.map((e) => ({
+        ...e,
+        audit: e.tree ? computeProgramAudit(e.tree.groups, status) : null,
+      })),
+    [attachedEntries, status]
+  );
+  const attachedUsable = attachedAudits.filter((a) => a.audit);
 
   // 通识核心审核：勾选记录 + profile（program/school/admissionYear）驱动
   const cc = useMemo(
@@ -41,11 +70,14 @@ export function OverviewPage({ tree }: { tree: ProgramTreeData }) {
     [status, tree.program.code, profile?.school, profile?.admissionYear]
   );
 
-  // 合并口径：主修 + 通识（一门课可同时计入两边，属官方允许的 credit reuse）
+  // 合并口径：主修 + 通识 + 附加要求（一门课可同时计入多个要求，属官方允许的 credit reuse）
+  const attachedReq = attachedUsable.reduce((s, a) => s + a.audit!.totalRequired, 0);
+  const attachedTaken = attachedUsable.reduce((s, a) => s + a.audit!.totalTaken, 0);
+  const attachedPlanned = attachedUsable.reduce((s, a) => s + a.audit!.totalPlanned, 0);
   const merged = useMemo(() => {
-    const totalRequired = audit.totalRequired + cc.totalRequired;
-    const takenTotal = audit.totalTaken + cc.totalTaken;
-    const plannedTotal = audit.totalPlanned + cc.totalCompleted;
+    const totalRequired = audit.totalRequired + cc.totalRequired + attachedReq;
+    const takenTotal = audit.totalTaken + cc.totalTaken + attachedTaken;
+    const plannedTotal = audit.totalPlanned + cc.totalCompleted + attachedPlanned;
     return {
       totalRequired,
       takenTotal,
@@ -54,7 +86,7 @@ export function OverviewPage({ tree }: { tree: ProgramTreeData }) {
       percentTaken: totalRequired ? Math.round((takenTotal / totalRequired) * 100) : 0,
       percentPlanned: totalRequired ? Math.round((plannedTotal / totalRequired) * 100) : 0,
     };
-  }, [audit, cc]);
+  }, [audit, cc, attachedReq, attachedTaken, attachedPlanned]);
 
   // 通识三组 → 组卡数据（CCProgressCard 展示分桶明细）
   const ccCards = useMemo(
@@ -140,6 +172,8 @@ export function OverviewPage({ tree }: { tree: ProgramTreeData }) {
             <p className="text-xs text-muted-foreground">
               主修 {audit.totalPlanned}/{audit.totalRequired || "—"} · 通识核心 {cc.totalCompleted}/
               {cc.totalRequired}
+              {attachedUsable.length > 0 &&
+                ` · 附加要求 ${attachedPlanned}/${attachedReq}（${attachedUsable.length} 项）`}
               {cc.framework.susApplicable && "（2025-26 起含 SUS Area）"}
             </p>
           </div>
@@ -206,6 +240,46 @@ export function OverviewPage({ tree }: { tree: ProgramTreeData }) {
           />
         ))}
       </div>
+
+      {/* 附加要求：辅修 / 学院要求 / EXTM（叠加区块） */}
+      {attachedEntries.length > 0 && (
+        <div className="space-y-3">
+          <p className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground">
+            <Shapes className="h-4 w-4" />
+            附加要求（辅修 / 学院）
+          </p>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {attachedAudits.map(({ attached, tree: at, isLoading, isError, audit: aa }) => (
+              <div key={attached.code} className="space-y-2">
+                {!attached.available && (
+                  <p className="rounded-lg border border-dashed bg-muted/30 px-3 py-2.5 text-xs text-muted-foreground">
+                    {attached.label}：{attached.year} 学年暂无此要求数据
+                  </p>
+                )}
+                {attached.available && isLoading && (
+                  <div className="h-36 animate-pulse-soft rounded-lg bg-muted" />
+                )}
+                {attached.available && isError && (
+                  <p className="rounded-lg border border-destructive/30 bg-destructive/5 px-3 py-2.5 text-xs text-destructive">
+                    {attached.label} 数据加载失败
+                  </p>
+                )}
+                {attached.available && at && aa && (
+                  <AttachedAuditCard
+                    attached={attached}
+                    tree={at}
+                    onRemove={
+                      attached.kind === "school"
+                        ? undefined
+                        : () => onRemoveMinor?.(attached.code)
+                    }
+                  />
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {cc.unmatched.length > 0 && (
         <p className="flex items-center gap-1.5 text-xs text-muted-foreground">

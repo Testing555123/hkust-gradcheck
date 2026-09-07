@@ -15,6 +15,8 @@ import {
   type CourseFilterState,
   type FlatCourseWithStatus,
 } from "@/lib/course-filter";
+import type { AttachedProgram } from "@/lib/attached";
+import type { AttachedEntryView } from "@/pages/OverviewPage";
 import type { ProgramTreeData } from "@/types";
 
 interface FlatCourse {
@@ -22,34 +24,54 @@ interface FlatCourse {
   name: string;
   credits: number;
   groupNames: string[];
+  areas?: string[];
   sourceRef?: string | null;
 }
 
 /** 课程浏览与勾选页：状态筛选 chips + 搜索，双状态勾选即时联动进度 */
-export function CoursesPage({ tree }: { tree: ProgramTreeData }) {
+export function CoursesPage({
+  tree,
+  attachedEntries = [],
+}: {
+  tree: ProgramTreeData;
+  attachedEntries?: AttachedEntryView[];
+}) {
   const status = useSelection((s) => s.status);
   const [keyword, setKeyword] = useState("");
   const [filter, setFilter] = useState<CourseFilterState>("all");
 
-  const courses = useMemo<FlatCourse[]>(() => {
-    const byCode = new Map<string, FlatCourse>();
-    for (const g of tree.groups) {
+  const collect = (
+    source: ProgramTreeData,
+    sourceLabel: string | null,
+    into: Map<string, FlatCourse>
+  ) => {
+    for (const g of source.groups) {
       for (const c of g.courses) {
-        const existing = byCode.get(c.code);
+        const prefix = sourceLabel ? `${sourceLabel} · ${g.name}` : g.name;
+        const existing = into.get(c.code);
         if (existing) {
-          if (!existing.groupNames.includes(g.name)) existing.groupNames.push(g.name);
+          if (!existing.groupNames.includes(prefix)) existing.groupNames.push(prefix);
         } else {
-          byCode.set(c.code, {
+          into.set(c.code, {
             code: c.code,
             name: c.name,
             credits: c.credits,
-            groupNames: [g.name],
+            groupNames: [prefix],
+            areas: c.areas,
           });
         }
       }
     }
+  };
+
+  const courses = useMemo<FlatCourse[]>(() => {
+    const byCode = new Map<string, FlatCourse>();
+    collect(tree, null, byCode);
+    for (const e of attachedEntries) {
+      if (e.tree) collect(e.tree, e.attached.label, byCode);
+    }
     return Array.from(byCode.values()).sort((a, b) => a.code.localeCompare(b.code));
-  }, [tree]);
+  }, [tree, attachedEntries]);
 
   // 状态附加与计数基于全量列表（计数不随搜索词变化，语义是"我有几门已修"）
   const withStatus = useMemo<FlatCourseWithStatus[]>(
