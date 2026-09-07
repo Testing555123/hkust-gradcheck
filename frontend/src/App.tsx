@@ -106,6 +106,8 @@ export default function App() {
       admissionYear: r.admissionYear ?? null,
       school: schoolOf(r.code) || null,
     });
+    // 写回识别到的副修 / Extended Major（与手动选填共用 profile.minors）
+    useProfile.getState().setMinors(r.minors ?? []);
     setProgram(r.year, r.code);
     closeTranscriptImport();
     const taken = Object.values(r.courses).filter((s) => s === "taken").length;

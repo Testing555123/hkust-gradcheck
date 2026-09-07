@@ -1,7 +1,7 @@
 import { useMemo } from "react";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle2, Shapes } from "lucide-react";
+import { CollapsibleGroup } from "@/components/business/CollapsibleGroup";
+import { Shapes } from "lucide-react";
 import { computeCommonCoreAudit } from "@/lib/common-core";
 import { useSelection } from "@/stores/selection";
 import { useProfile } from "@/stores/profile";
@@ -56,43 +56,37 @@ export function CommonCoreSection({ tree }: { tree: ProgramTreeData }) {
         const required = g.buckets.reduce((s, b) => s + b.required, 0);
         const completed = g.buckets.reduce((s, b) => s + b.completedCredits, 0);
         const allMet = g.buckets.every((b) => b.completedCredits >= b.required);
+        const done = allMet && required > 0;
         return (
-          <Card key={g.name}>
-            <CardHeader className="pb-3">
-              <div className="flex items-start justify-between gap-3">
-                <div className="min-w-0">
-                  <CardTitle className="text-base flex items-center gap-2">
-                    <span className="truncate">
-                      通识核心 · {GROUP_NAMES[g.name] ?? g.name}（{g.name}）
-                    </span>
-                    {allMet && required > 0 && (
-                      <CheckCircle2 className="h-4 w-4 text-success shrink-0" />
-                    )}
-                  </CardTitle>
-                  <CardDescription className="mt-1">
-                    要求 <strong className="text-foreground">{required}</strong> 学分 · 已计{" "}
-                    {completed} 学分
-                  </CardDescription>
-                </div>
-                <Badge variant="outline" className="shrink-0 tabular-nums">
-                  {required} credits
-                </Badge>
-              </div>
+          <CollapsibleGroup
+            key={`${tree.program.code}-${g.name}`}
+            title={
+              <span>
+                通识核心 · {GROUP_NAMES[g.name] ?? g.name}（{g.name}）
+              </span>
+            }
+            done={done}
+            summary={`已计 ${completed} / 要求 ${required} 学分`}
+            headerExtra={
+              <Badge variant="outline" className="shrink-0 tabular-nums">
+                {required} credits
+              </Badge>
+            }
+          >
+            <div className="space-y-4">
               {g.note && (
-                <div className="mt-2 rounded-md border-l-4 border-primary/40 bg-muted/60 px-3 py-2">
+                <div className="rounded-md border-l-4 border-primary/40 bg-muted/60 px-3 py-2">
                   <p className="text-xs leading-relaxed text-muted-foreground">
                     <span className="font-medium text-foreground/80">说明：</span>
                     {g.note}
                   </p>
                 </div>
               )}
-            </CardHeader>
-            <CardContent className="space-y-4">
               {g.buckets.map((b) => (
                 <CCBucketBlock key={b.label} bucket={b} notApplicableAreas={notApplicableAreas} />
               ))}
-            </CardContent>
-          </Card>
+            </div>
+          </CollapsibleGroup>
         );
       })}
 

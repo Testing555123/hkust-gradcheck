@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState, type DragEvent } from "react";
-import { FileText, FileUp, Loader2, TriangleAlert } from "lucide-react";
+import { FileText, FileUp, Loader2, Search, Sparkles, TriangleAlert } from "lucide-react";
 
 import {
   Dialog,
@@ -12,6 +12,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
+import { Input } from "@/components/ui/input";
 import {
   Select,
   SelectContent,
@@ -21,6 +22,8 @@ import {
 } from "@/components/ui/select";
 import { useSelection } from "@/stores/selection";
 import { codesOf, yearsOf } from "@/lib/profile";
+import { selectableAttached } from "@/lib/attached";
+import { matchProgramsByTitle } from "@/lib/program-groups";
 import {
   extractTranscriptText,
   parseTranscript,
@@ -37,6 +40,8 @@ export interface TranscriptImportResult {
   courses: Record<string, TranscriptCourseStatus>;
   /** Admit Date 推导的入学学年（通识框架判定用） */
   admissionYear?: string | null;
+  /** 识别并确认的副修 / Extended Major 代码（MINOR-/EXTM-） */
+  minors: string[];
 }
 
 interface TranscriptImportDialogProps {
@@ -61,11 +66,27 @@ export function TranscriptImportDialog({
   const [excluded, setExcluded] = useState<Set<string>>(new Set());
   const [year, setYear] = useState("");
   const [code, setCode] = useState("");
+  const [minors, setMinors] = useState<string[]>([]);
+  const [minorSearch, setMinorSearch] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
 
   const existing = useSelection((s) => s.status);
   const years = useMemo(() => yearsOf(programs), [programs]);
   const majors = useMemo(() => codesOf(programs, year), [programs, year]);
+  // 该学年可选副修 / EXTM（识别到的项预勾选）
+  const selectable = useMemo(() => selectableAttached(year, programs), [year, programs]);
+  const minorFiltered = useMemo(() => {
+    const kw = minorSearch.trim().toLowerCase();
+    if (!kw) return selectable;
+    return selectable.filter(
+      (x) => x.code.toLowerCase().includes(kw) || x.title.toLowerCase().includes(kw)
+    );
+  }, [selectable, minorSearch]);
+
+  const toggleMinor = (target: string) =>
+    setMinors((prev) =>
+      prev.includes(target) ? prev.filter((c) => c !== target) : [...prev, target]
+    );
 
   useEffect(() => {
     if (!open) {
@@ -74,6 +95,8 @@ export function TranscriptImportDialog({
       setError(null);
       setExcluded(new Set());
       setParsing(false);
+      setMinors([]);
+      setMinorSearch("");
     }
   }, [open]);
 
@@ -87,10 +110,24 @@ export function TranscriptImportDialog({
       const list = yearsOf(programs);
       const y =
         info.effectiveYear && list.includes(info.effectiveYear) ? info.effectiveYear : list[0] ?? "";
+      // 副修 / EXTM：从头部抽取的文本映射到库内代码，识别到的预勾选
+      const minorCode = matchProgramsByTitle(
+        info.minor,
+        selectableAttached(y, programs).filter((s) => s.kind === "minor")
+      )[0];
+      const extmCode = matchProgramsByTitle(
+        info.extendedMajor,
+        selectableAttached(y, programs).filter((s) => s.kind === "extm")
+      )[0];
+      const suggestedMinors = [minorCode, extmCode].filter(
+        (c): c is string => Boolean(c)
+      );
       setResult(info);
       setExcluded(new Set());
       setYear(y);
-      setCode(suggestMajorCode(info.major, codesOf(programs, y)));
+      setCode(matchProgramsByTitle(info.major, codesOf(programs, y))[0] ?? "");
+      setMinors(suggestedMinors);
+      setMinorSearch("");
       setStep("preview");
     } catch (e) {
       setError(e instanceof TranscriptParseError ? e.message : "解析失败，请重试，或继续使用手动勾选。");
@@ -133,7 +170,7 @@ export function TranscriptImportDialog({
     if (!result || included.length === 0 || !year || !code) return;
     const courses: Record<string, TranscriptCourseStatus> = {};
     for (const c of included) courses[c.code] = c.status;
-    onConfirm({ year, code, courses, admissionYear: result.admitYear ?? null });
+    onConfirm({ year, code, courses, admissionYear: result.admitYear ?? null, minors });
   };
 
   return (
@@ -246,6 +283,68 @@ export function TranscriptImportDialog({
                 </div>
               </div>
 
+                {/* 副修 / Extended Major：识别到的预勾选，可改 / 取消 / 补选 */}
+                <div className="rounded-md border border-dashed bg-muted/30 p-3">
+                  <p className="mb-2 flex items-center gap-1.5 text-xs font-medium text-muted-foreground">
+                    <Sparkles className="h-3.5 w-3.5" />
+                    副修 Minor / Extended Major（可多选）
+                  </p>
+                  {!year ? (
+                    <p className="text-xs text-muted-foreground">请先选择学年</p>
+                  ) : selectable.length === 0 ? (
+                    <p className="text-xs text-muted-foreground">
+                      {year} 学年暂无可选的副修 / Extended Major 数据
+                    </p>
+                  ) : (
+                    <div className="space-y-2">
+                      <div className="relative">
+                        <Search className="absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
+                        <Input
+                          value={minorSearch}
+                          onChange={(e) => setMinorSearch(e.target.value)}
+                          placeholder="搜索副修 / Extended Major…"
+                          className="h-8 pl-8 text-xs"
+                        />
+                      </div>
+                      <div className="max-h-40 space-y-1 overflow-y-auto pr-1">
+                        {minorFiltered.map((x) => {
+                          const checked = minors.includes(x.code);
+                          return (
+                            <label
+                              key={x.code}
+                              className={cn(
+                                "flex cursor-pointer items-center gap-2.5 rounded-md border px-2.5 py-1.5 text-xs transition-colors",
+                                checked
+                                  ? "border-primary/40 bg-primary/5"
+                                  : "hover:bg-accent/60"
+                              )}
+                            >
+                              <input
+                                type="checkbox"
+                                checked={checked}
+                                onChange={() => toggleMinor(x.code)}
+                                className="h-3.5 w-3.5 shrink-0 accent-[hsl(var(--primary))] cursor-pointer"
+                              />
+                              <span className="min-w-0 flex-1 truncate">
+                                <span className="font-mono text-[10px] text-muted-foreground mr-1.5">
+                                  {x.code}
+                                </span>
+                                {x.title}
+                              </span>
+                              <Badge variant="outline" className="shrink-0 font-normal text-[10px]">
+                                {x.kind === "extm" ? "EXTM" : "辅修"}
+                              </Badge>
+                            </label>
+                          );
+                        })}
+                      </div>
+                      <p className="text-[10px] leading-relaxed text-muted-foreground">
+                        已自动识别并勾选成绩单中的副修 / Extended Major，可手动调整。
+                      </p>
+                    </div>
+                  )}
+                </div>
+
               {result.warnings.length > 0 && (
                 <div className="space-y-1 rounded-md border border-warning/40 bg-warning/10 p-2.5 text-xs text-warning">
                   {result.warnings.map((w) => (
@@ -317,10 +416,3 @@ export function TranscriptImportDialog({
   );
 }
 
-/** 用 Major 原文对库里专业标题做最佳匹配（取括号前的主干词） */
-function suggestMajorCode(major: string | undefined, majors: ProgramInfo[]): string {
-  if (!major) return "";
-  const root = major.split("(")[0].trim().toLowerCase();
-  if (!root) return "";
-  return majors.find((p) => p.title.toLowerCase().includes(root))?.code ?? "";
-}

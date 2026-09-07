@@ -13,6 +13,7 @@ import type {
   ProgramInfo,
   ProgramTreeData,
 } from "@/types";
+import { resolveTree } from "@/lib/pools";
 
 /** 开发期开关：frontend/.env.local 里 VITE_USE_MOCK=1 时走假数据，不读静态文件 */
 const USE_MOCK =
@@ -47,11 +48,24 @@ export function usePrograms() {
 }
 
 export function useProgramTree(year: string, code: string) {
-  return useQuery({
+  const courses = useCourses();
+  const query = useQuery({
     queryKey: ["program-tree", year, code],
     enabled: Boolean(year && code),
     ...IMMUTABLE,
     queryFn: () => fetchTree(year, code),
+  });
+  // 池组（开放式层级选修）按 courses.json 解析出真实课程，使进度/缺口自动计入
+  const data = query.data ? resolveTree(query.data, courses.data) : query.data;
+  return { ...query, data };
+}
+
+/** 官方课程库 1144 门（全量一次加载，staleTime=Infinity 永久缓存，供层级池解析） */
+export function useCourses() {
+  return useQuery({
+    queryKey: ["courses-all"],
+    ...IMMUTABLE,
+    queryFn: fetchCourses,
   });
 }
 
@@ -65,6 +79,7 @@ export interface AttachedTreeEntry {
 
 /** 并行加载全部可用附加方案的树（不可用的直接标记降级，不发请求） */
 export function useAttachedTrees(entries: AttachedProgram[]): AttachedTreeEntry[] {
+  const courses = useCourses();
   const usable = entries.filter((e) => e.available);
 
   const queries = useQueries({
@@ -84,7 +99,7 @@ export function useAttachedTrees(entries: AttachedProgram[]): AttachedTreeEntry[
     const q = queries[idx];
     return {
       attached: e,
-      tree: q.data,
+      tree: q.data ? resolveTree(q.data, courses.data) : q.data,
       isLoading: q.isLoading,
       isError: q.isError,
     };

@@ -64,6 +64,12 @@ export interface RequirementGroup {
   note?: string | null;
   order_index: number;
   courses: CourseRef[];
+  /**
+   * 开放式层级池标记（单学科 "N000-level or above" 组由导出脚本写入）。
+   * subject = 4 字母学科前缀（如 MATH），minLevel = 最低层级（2000/3000/4000/5000）。
+   * 前端据此从 courses.json 过滤出真实可选课程；院/校级池（SB&M、SENG、SSCI 等）为 null。
+   */
+  pool?: { subject: string; minLevel: number } | null;
 }
 
 export interface ProgramTreeData {

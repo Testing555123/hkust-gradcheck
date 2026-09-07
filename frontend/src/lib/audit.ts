@@ -46,7 +46,8 @@ export function computeGroupAudit(
     percentTaken: required > 0 ? clampPct((cappedTaken / required) * 100) : takenCredits > 0 ? 100 : 0,
     percentPlanned: required > 0 ? clampPct((cappedPlanned / required) * 100) : 100,
     remaining: Math.max(0, required - plannedCredits),
-    missingCourses,
+    // 开放式层级池组不渲染逐課缺口（避免「还需 N 百门」噪声），仅显示进度摘要
+    missingCourses: group.pool ? [] : missingCourses,
     isDone: required > 0 && takenCredits >= required,
   };
 }

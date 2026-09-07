@@ -1,9 +1,13 @@
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { useMemo, useState } from "react";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { CourseRow } from "@/components/business/CourseRow";
+import { CollapsibleGroup } from "@/components/business/CollapsibleGroup";
 import { useSelection } from "@/stores/selection";
-import { CheckCircle2, FileText, Info, StickyNote } from "lucide-react";
-import type { CourseRef, ProgramTreeData } from "@/types";
+import { computeGroupAudit } from "@/lib/audit";
+import { sortTakenFirst } from "@/lib/pools";
+import { FileText, Info, StickyNote } from "lucide-react";
+import type { CourseRef, ProgramTreeData, RequirementGroup } from "@/types";
 
 /** 按课程行渲染一批课程（去重） */
 function CourseRows({ courses }: { courses: CourseRef[] }) {
@@ -62,75 +66,106 @@ function AreaBlocks({ courses }: { courses: CourseRef[] }) {
   );
 }
 
-/** 毕业要求明细树：按组展示课程清单、学分要求、Note 说明与 Area 分类 */
-export function RequirementTree({ tree }: { tree: ProgramTreeData }) {
+/** 单要求组：折叠卡 + 课程清单。开放式层级池组（pool）限顯示前 10 门、已讀優先、可「顯示全部」 */
+function RequirementGroupView({ group }: { group: RequirementGroup }) {
   const status = useSelection((s) => s.status);
+  const [showAll, setShowAll] = useState(false);
+  const audit = computeGroupAudit(group, status);
+  const isPool = !!group.pool;
+
+  const takenCount = group.courses.filter((c) => status[c.code] === "taken").length;
+  const plannedCount = group.courses.filter((c) => status[c.code] === "planned").length;
+  const hasAreas = group.courses.some((c) => c.areas && c.areas.length > 0);
+
+  // 池组：已讀優先排序，默认仅顯示前 10 门（不记忆，切方案/刷新重算）
+  const sorted = useMemo(
+    () => (isPool ? sortTakenFirst(group.courses, status) : group.courses),
+    [isPool, group.courses, status]
+  );
+  const visible = isPool && !showAll ? sorted.slice(0, 10) : sorted;
+
+  const summary =
+    audit.requiredCredits > 0
+      ? `已修 ${audit.takenCredits} / 要求 ${audit.requiredCredits} 学分`
+      : "开放选修";
 
   return (
-    <div className="space-y-4">
-      {tree.groups.map((g) => {
-        const takenCount = g.courses.filter((c) => status[c.code] === "taken").length;
-        const plannedCount = g.courses.filter((c) => status[c.code] === "planned").length;
-        const hasAreas = g.courses.some((c) => c.areas && c.areas.length > 0);
+    <CollapsibleGroup
+      title={group.name}
+      done={audit.isDone}
+      summary={summary}
+      headerExtra={
+        <>
+          {group.source_ref && (
+            <span className="inline-flex items-center gap-1 font-mono text-[11px] text-muted-foreground">
+              <FileText className="h-3 w-3" /> {group.source_ref}
+            </span>
+          )}
+          <Badge variant="outline" className="shrink-0 tabular-nums">
+            {group.required_credits} credits
+          </Badge>
+        </>
+      }
+    >
+      <div className="space-y-3">
+        <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground">
+          <span>
+            要求 <strong className="text-foreground">{group.required_credits}</strong> 学分
+          </span>
+          <span>共 {group.courses.length} 门课</span>
+          {takenCount > 0 && <span className="text-success">已修 {takenCount}</span>}
+          {plannedCount > 0 && <span className="text-primary">计划 {plannedCount}</span>}
+        </p>
+        {group.min_courses != null && (
+          <p className="text-xs text-muted-foreground flex items-center gap-1">
+            <Info className="h-3 w-3" /> 至少修读 {group.min_courses} 门
+          </p>
+        )}
+        {/* 官方 Note 说明（来自 PDF 原文） */}
+        {group.note && (
+          <div className="rounded-md border-l-4 border-primary/40 bg-muted/60 px-3 py-2">
+            <p className="text-xs leading-relaxed text-muted-foreground whitespace-pre-wrap break-words">
+              <StickyNote className="mr-1.5 inline h-3.5 w-3.5 align-[-2px] text-primary/70" />
+              <span className="font-medium text-foreground/80">官方说明：</span>
+              {group.note}
+            </p>
+          </div>
+        )}
+        {group.courses.length === 0 ? (
+          <p className="text-sm text-muted-foreground py-2">
+            该组未列出具体课程（请参考上方官方说明的选课规则）
+          </p>
+        ) : hasAreas ? (
+          <AreaBlocks courses={group.courses} />
+        ) : (
+          <>
+            {visible.map((c) => (
+              <CourseRow key={`${group.id}-${c.code}`} course={c} />
+            ))}
+            {isPool && sorted.length > 10 && (
+              <Button
+                variant="ghost"
+                size="sm"
+                className="mt-1 w-full text-muted-foreground"
+                onClick={() => setShowAll((v) => !v)}
+              >
+                {showAll ? "收起" : `顯示全部 ${sorted.length} 門`}
+              </Button>
+            )}
+          </>
+        )}
+      </div>
+    </CollapsibleGroup>
+  );
+}
 
-        return (
-          <Card key={g.id}>
-            <CardHeader className="pb-3">
-              <div className="flex items-start justify-between gap-3">
-                <div className="min-w-0">
-                  <CardTitle className="text-base flex items-center gap-2">
-                    <span className="truncate">{g.name}</span>
-                    {takenCount > 0 && <CheckCircle2 className="h-4 w-4 text-success shrink-0" />}
-                  </CardTitle>
-                  <CardDescription className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1">
-                    <span>
-                      要求 <strong className="text-foreground">{g.required_credits}</strong> 学分
-                    </span>
-                    <span>共 {g.courses.length} 门课</span>
-                    {takenCount > 0 && <span className="text-success">已修 {takenCount}</span>}
-                    {plannedCount > 0 && <span className="text-primary">计划 {plannedCount}</span>}
-                    {g.source_ref && (
-                      <span className="inline-flex items-center gap-1 font-mono text-[11px]">
-                        <FileText className="h-3 w-3" /> {g.source_ref}
-                      </span>
-                    )}
-                  </CardDescription>
-                </div>
-                <Badge variant="outline" className="shrink-0 tabular-nums">
-                  {g.required_credits} credits
-                </Badge>
-              </div>
-              {g.min_courses != null && (
-                <p className="text-xs text-muted-foreground flex items-center gap-1">
-                  <Info className="h-3 w-3" /> 至少修读 {g.min_courses} 门
-                </p>
-              )}
-              {/* 官方 Note 说明（来自 PDF 原文） */}
-              {g.note && (
-                <div className="mt-2 rounded-md border-l-4 border-primary/40 bg-muted/60 px-3 py-2">
-                  <p className="text-xs leading-relaxed text-muted-foreground whitespace-pre-wrap break-words">
-                    <StickyNote className="mr-1.5 inline h-3.5 w-3.5 align-[-2px] text-primary/70" />
-                    <span className="font-medium text-foreground/80">官方说明：</span>
-                    {g.note}
-                  </p>
-                </div>
-              )}
-            </CardHeader>
-            <CardContent className="space-y-2">
-              {g.courses.length === 0 && (
-                <p className="text-sm text-muted-foreground py-2">
-                  该组未列出具体课程（请参考上方官方说明的选课规则）
-                </p>
-              )}
-              {hasAreas ? (
-                <AreaBlocks courses={g.courses} />
-              ) : (
-                g.courses.map((c) => <CourseRow key={`${g.id}-${c.code}`} course={c} />)
-              )}
-            </CardContent>
-          </Card>
-        );
-      })}
+/** 毕业要求明细树：按组展示课程清单、学分要求、Note 说明与 Area 分类 */
+export function RequirementTree({ tree }: { tree: ProgramTreeData }) {
+  return (
+    <div className="space-y-4">
+      {tree.groups.map((g) => (
+        <RequirementGroupView key={`${tree.program.code}-${g.id}`} group={g} />
+      ))}
     </div>
   );
 }

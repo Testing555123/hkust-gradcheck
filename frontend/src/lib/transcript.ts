@@ -26,8 +26,12 @@ export interface TranscriptCourse {
 }
 
 export interface TranscriptInfo {
-  /** Major 原文（可能含 Extended Major 描述） */
+  /** Major 原文（已剥离内嵌 Extended Major / 后续 Minor 段） */
   major?: string;
+  /** 从头部 Minor: 标签抽取的原始副修文本 */
+  minor?: string;
+  /** 从主修行 (with Extended Major in X) 抽取的原始 EXTM 文本 */
+  extendedMajor?: string;
   /** Program Change 学年（如 "2025-26"） */
   programChangeYear?: string;
   /** Admit Date 推导学年（如 "2024-25"） */
@@ -121,7 +125,11 @@ export function parseTranscript(text: string): TranscriptInfo {
 
   const programChangeYear = matchProgramChangeYear(headerText);
   const admitYear = matchAdmitYear(headerText);
-  const major = captureAfterLabel(headerText, "Major");
+  // 主修：遇 Minor: 即停止，避免把副修文本吞入；再剥离内嵌的 Extended Major 段
+  const { major, extendedMajor } = extractExtendedMajor(
+    captureAfterLabel(headerText, "Major", ["Minor"])
+  );
+  const minor = captureAfterLabel(headerText, "Minor");
 
   // 1) 学期边界切分（保持出现顺序）
   const termMarks = Array.from(body.matchAll(TERM_RE));
@@ -179,6 +187,8 @@ export function parseTranscript(text: string): TranscriptInfo {
 
   return {
     major: major || undefined,
+    minor: minor || undefined,
+    extendedMajor,
     programChangeYear,
     admitYear,
     effectiveYear: programChangeYear ?? admitYear,
@@ -205,9 +215,24 @@ function matchAdmitYear(header: string): string | undefined {
   return `${year}-${String((year + 1) % 100).padStart(2, "0")}`;
 }
 
-/** 取 `Label:` 之后的剩余内容合并为一段（Major 是 header 的最后一个标签，取到结尾即可） */
-function captureAfterLabel(header: string, label: string): string {
-  const m = header.match(new RegExp(`${label}:\\s*([\\s\\S]*?)(?=\\bAcademic Records\\b|$)`));
+/**
+ * 取 `Label:` 之后的剩余内容合并为一段。
+ * stopLabels 给出额外终止边界（如 Major 在遇见 `Minor:` 时停止，避免把副修文本吞进主修）；
+ * 默认终止于 `Academic Records`。
+ */
+function captureAfterLabel(header: string, label: string, stopLabels: string[] = []): string {
+  const stops = [...stopLabels, "Academic Records"];
+  const stopAlt = stops.join("|");
+  const m = header.match(new RegExp(`${label}:\\s*([\\s\\S]*?)(?=\\b(?:${stopAlt})\\b|$)`, "i"));
   if (!m) return "";
   return m[1].split(/\r?\n/).map((l) => l.trim()).filter(Boolean).join(" ");
+}
+
+/** 抽取主修行内嵌的 Extended Major，如 "Mathematics (with Extended Major in Artificial Intelligence)" → "Artificial Intelligence" */
+function extractExtendedMajor(major: string): { major: string; extendedMajor?: string } {
+  const m = major.match(/with\s+Extended\s+Major\s+in\s+([^()]+)/i);
+  if (!m) return { major };
+  const extendedMajor = m[1].trim();
+  const cleaned = major.replace(/\(?\s*with\s+Extended\s+Major\s+in\s+[^()]+\)?/i, "").trim();
+  return { major: cleaned, extendedMajor: extendedMajor || undefined };
 }

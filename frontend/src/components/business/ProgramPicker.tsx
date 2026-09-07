@@ -9,6 +9,7 @@ import { SearchableProgramSelect } from "@/components/business/SearchableProgram
 import { useUi } from "@/stores/ui";
 import { useProfile } from "@/stores/profile";
 import { codesOf, resolveSelection } from "@/lib/profile";
+import { isMajor } from "@/lib/program-groups";
 import { useEffect } from "react";
 import type { ProgramInfo } from "@/types";
 
@@ -48,7 +49,9 @@ export function ProgramPicker({ programs }: ProgramPickerProps) {
       <Select
         value={year}
         onValueChange={(v) => {
-          const first = codesOf(programs, v)[0];
+          const inYear = codesOf(programs, v);
+          // 切换学年默认选中该学年首个主修，避免把 Minor/EXTM 误设为主修方案
+          const first = inYear.find(isMajor) ?? inYear[0];
           if (!first) return;
           // 顶栏切换即视为最近一次选择，回写 profile
           pick(first.year, first.code);
@@ -71,8 +74,9 @@ export function ProgramPicker({ programs }: ProgramPickerProps) {
         value={code}
         onChange={(v) => pick(year, v)}
         disabled={!year}
-        placeholder="培养方案"
-        ariaLabel="培养方案"
+        kinds={["major"]}
+        placeholder="主修"
+        ariaLabel="主修"
         triggerClassName={triggerClass}
       />
     </div>

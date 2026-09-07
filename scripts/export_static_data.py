@@ -25,10 +25,19 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sqlite3
 import sys
 from datetime import datetime
 from pathlib import Path
+
+# Windows 控制台默认 cp950 无法输出中文日志；将 stdout/stderr 重置为 utf-8（Python 3.7+）
+try:
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
+        sys.stderr.reconfigure(encoding="utf-8")
+except Exception:  # pragma: no cover - 仅防御性
+    pass
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_DIR = ROOT / "pipeline" / "output"
@@ -66,10 +75,82 @@ def _source_ref(pages: list | None, existing: str | None) -> str | None:
     return ", ".join(f"p.{p}" for p in pages)
 
 
+# ── 开放式层级池检测：单学科 "N000-level or above" 组 ────────────────────────────
+_LEVEL_RE = re.compile(r"(2000|3000|4000|5000)\s*-?\s*level or above", re.IGNORECASE)
+# 学科紧跟层级短语：<SUBJ> 2000-level or above（兼容 name 或 note 写法）
+_SUBJECT_LEVEL_RE = re.compile(
+    r"\b([A-Z]{4})\s*(?:/\s*[A-Z]{4}\s*)?(2000|3000|4000|5000)\s*-?\s*level or above",
+    re.IGNORECASE,
+)
+# note 写法："Any <SUBJ> course(s) at 3000-level or above"
+_ANY_COURSE_RE = re.compile(r"any\s+([A-Z]{4})\s+courses?", re.IGNORECASE)
+# 院/校级合成池（如 COMP/ELEC）不展开为单学科池
+_COMBINED_RE = re.compile(r"[A-Z]{4}\s*/\s*[A-Z]{4}")
+
+
+def _course_index_data() -> tuple[set[str], set[str]]:
+    """返回 (4 字母学科前缀集合, 全部真实课程码大写集合)，用于校验池学科是否真实存在。"""
+    conn = sqlite3.connect(f"file:{SOURCE_DB}?mode=ro", uri=True)
+    try:
+        rows = conn.execute("SELECT code FROM courses").fetchall()
+    finally:
+        conn.close()
+    prefixes: set[str] = set()
+    codes: set[str] = set()
+    for (code,) in rows:
+        if not code:
+            continue
+        codes.add(code.upper())
+        if code[:4].isalpha():
+            prefixes.add(code[:4])
+    return prefixes, codes
+
+
+def detect_pool(
+    name: str | None,
+    note: str | None,
+    existing_codes: list[str],
+    real_subjects: set[str],
+    real_codes: set[str],
+) -> dict | None:
+    """识别单学科「N000-level or above」开放选修组，返回 {subject, minLevel}；否则 None。
+
+    排除规则：
+    - 院/校级合成池（含 "COMP/ELEC" 之类）
+    - 已列出具体真实课程码的组（保留原指定清单，不改为开放池）
+    - 学科前缀不在课程库中（SB&M、SSCI、SENG 等无真实 4 字母前缀）
+    """
+    text = f"{name or ''}\n{note or ''}"
+    levels = _LEVEL_RE.findall(text)
+    if not levels:
+        return None
+    if _COMBINED_RE.search(text):
+        return None
+    if any(c.upper() in real_codes for c in existing_codes):
+        return None
+    min_level = min(int(l) for l in levels)
+
+    # 学科：优先「<SUBJ> N000-level or above」短语；其次 note 的 "Any <SUBJ> course(s)"
+    subject = None
+    m = _SUBJECT_LEVEL_RE.search(text)
+    if m and m.group(1) in real_subjects:
+        subject = m.group(1)
+    if not subject:
+        m2 = _ANY_COURSE_RE.search(text)
+        if m2 and m2.group(1) in real_subjects:
+            subject = m2.group(1)
+    if not subject:
+        return None
+    return {"subject": subject, "minLevel": min_level}
+
+
 def _load_programs() -> list[dict]:
     files = sorted(OUTPUT_DIR.glob("requirements_*.json"))
     if not files:
         raise RuntimeError(f"未找到管线产物：{OUTPUT_DIR}")
+
+    real_subjects, real_codes = _course_index_data()
+    pool_count = 0
 
     programs: list[dict] = []
     origins: dict[tuple[str, str], list[str]] = {}
@@ -82,6 +163,12 @@ def _load_programs() -> list[dict]:
 
         groups = []
         for order, g in enumerate(data.get("groups", [])):
+            existing_codes = [c.get("code", "") for c in g.get("courses", [])]
+            pool = detect_pool(
+                g.get("name"), g.get("note"), existing_codes, real_subjects, real_codes
+            )
+            if pool:
+                pool_count += 1
             groups.append(
                 {
                     "id": order,
@@ -91,7 +178,10 @@ def _load_programs() -> list[dict]:
                     "note": g.get("note"),
                     "source_ref": _source_ref(g.get("source_pages"), g.get("source_ref")),
                     "order_index": order,
-                    "courses": [
+                    # 池组清空 courses（前端按 pool 从 courses.json 解析真实课程）
+                    "courses": []
+                    if pool
+                    else [
                         {
                             "code": c.get("code", ""),
                             "name": c.get("name", ""),
@@ -100,6 +190,7 @@ def _load_programs() -> list[dict]:
                         }
                         for c in g.get("courses", [])
                     ],
+                    "pool": pool,
                 }
             )
 
@@ -220,6 +311,12 @@ def _years_of(programs: list[dict]) -> dict[str, int]:
 def export() -> int:
     programs = _load_programs()
     courses = _load_courses()
+
+    pool_total = sum(
+        1 for p in programs for g in p["groups"] if g.get("pool")
+    )
+    if pool_total:
+        print(f"[ok] 识别开放式层级池组 {pool_total} 个（单学科 N000-level or above）")
 
     if PROGRAMS_DIR.exists():
         for stale in PROGRAMS_DIR.glob("*.json"):

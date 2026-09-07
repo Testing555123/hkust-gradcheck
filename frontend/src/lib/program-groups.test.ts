@@ -1,6 +1,12 @@
 import { describe, expect, it } from "vitest";
 
-import { filterPrograms, groupPrograms, isMajor, kindOf } from "@/lib/program-groups";
+import {
+  filterPrograms,
+  groupPrograms,
+  isMajor,
+  kindOf,
+  matchProgramsByTitle,
+} from "@/lib/program-groups";
 import type { ProgramInfo } from "@/types";
 
 const p = (code: string, title = `Title ${code}`): ProgramInfo => ({
@@ -52,5 +58,36 @@ describe("filterPrograms", () => {
 
   it("可按类别中文名匹配", () => {
     expect(filterPrograms(list, "辅修").map((x) => x.code)).toEqual(["MINOR-MATH"]);
+  });
+});
+
+describe("matchProgramsByTitle", () => {
+  const candidates = [
+    p("MATH", "BSc in Mathematics"),
+    p("MAEC", "BSc in Mathematics and Economics"),
+    p("COMP", "BEng in Computer Science"),
+    p("MINOR-MATH", "Minor Program in Mathematics"),
+    p("EXTM-AI", "Extended Major Program in Artificial Intelligence"),
+  ];
+
+  it("完整文本命中（含）", () => {
+    expect(matchProgramsByTitle("Artificial Intelligence", candidates)).toEqual(["EXTM-AI"]);
+  });
+
+  it("括号前主干词命中（多匹配全返回）", () => {
+    expect(matchProgramsByTitle("Mathematics (Statistics Track)", candidates)).toEqual([
+      "MATH",
+      "MAEC",
+      "MINOR-MATH",
+    ]);
+  });
+
+  it("未命中返回空数组", () => {
+    expect(matchProgramsByTitle("Quantum Computing", candidates)).toEqual([]);
+  });
+
+  it("空/未定义输入返回空数组", () => {
+    expect(matchProgramsByTitle(undefined, candidates)).toEqual([]);
+    expect(matchProgramsByTitle("   ", candidates)).toEqual([]);
   });
 });

@@ -30,6 +30,28 @@ export function isMajor(p: ProgramInfo): boolean {
   return kindOf(p.code) === "major";
 }
 
+/**
+ * 把成绩单头部抽出的原始专业文本（可能含括号/Extended Major 描述）匹配到库内方案代码。
+ * 匹配规则：候选标题包含完整文本，或包含「括号前主干词」（如 "Mathematics (Statistics Track)" → "mathematics"）。
+ * 返回全部命中代码（主修取首项，副修/EXTM 取多项用于预勾选）。无法识别返回空数组。
+ */
+export function matchProgramsByTitle(
+  raw: string | undefined,
+  candidates: { code: string; title: string }[]
+): string[] {
+  if (!raw) return [];
+  const text = raw.trim().toLowerCase();
+  if (!text) return [];
+  const root = text.split("(")[0].trim();
+  if (!root) return [];
+  return candidates
+    .filter((p) => {
+      const t = p.title.toLowerCase();
+      return t.includes(text) || t.includes(root);
+    })
+    .map((p) => p.code);
+}
+
 /** 按代码/名称关键字过滤（大小写不敏感，空关键字原样返回） */
 export function filterPrograms(list: ProgramInfo[], keyword: string): ProgramInfo[] {
   const kw = keyword.trim().toLowerCase();

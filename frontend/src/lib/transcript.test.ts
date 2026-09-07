@@ -138,10 +138,10 @@ describe("parseTranscript / 头部字段", () => {
     expect(result.effectiveYear).toBe("2025-26");
   });
 
-  it("Major 多行合并为原文", () => {
-    expect(result.major).toBe(
-      "Mathematics (Statistics Track) (with Extended Major in Artificial Intelligence)"
-    );
+  it("Major 多行合并并剥离内嵌 Extended Major", () => {
+    expect(result.major).toBe("Mathematics (Statistics Track)");
+    expect(result.extendedMajor).toBe("Artificial Intelligence");
+    expect(result.minor).toBeUndefined();
   });
 });
 
@@ -187,6 +187,35 @@ describe("parseTranscript / 课程行", () => {
   });
 });
 
+/**
+ * 含 Minor: 行与内嵌 EXTM 的样本，验证主修/副修/EXTM 三项正确分离。
+ */
+const MINOR_FIXTURE = `Name:
+CHAN, Tai Man
+Student ID:
+20000000
+Admit Date:
+2 September 2024
+Major:
+Bachelor of Engineering in Computer Science (with Extended Major in Artificial
+Intelligence)
+Minor:
+Bachelor of Science in Mathematics
+Academic Records
+2024-25 Fall (Full-Time)
+COMP1021 Introduction to Computer Science 3.0 3.0 A
+- End of Transcript -`;
+
+const minorResult = parseTranscript(MINOR_FIXTURE);
+
+describe("parseTranscript / 含 Minor 与内嵌 EXTM", () => {
+  it("主修剥离 EXTM、副修独立抽取", () => {
+    expect(minorResult.major).toBe("Bachelor of Engineering in Computer Science");
+    expect(minorResult.extendedMajor).toBe("Artificial Intelligence");
+    expect(minorResult.minor).toBe("Bachelor of Science in Mathematics");
+  });
+});
+
 describe("parseTranscript / 失败校验", () => {
   it("非成绩单文本抛出可读错误", () => {
     expect(() => parseTranscript("Hello world\nThis is not a transcript")).toThrow(
@@ -227,11 +256,10 @@ MATH2033 Mathematical Analysis 4.0 - **
 const pdfjsResult = parseTranscript(PDFJS_FIXTURE);
 
 describe("parseTranscript / pdfjs 行式文本", () => {
-  it("头部字段与学期解析一致", () => {
+  it("头部字段与学期解析一致（主修剥离 EXTM）", () => {
     expect(pdfjsResult.effectiveYear).toBe("2025-26");
-    expect(pdfjsResult.major).toBe(
-      "Mathematics (Statistics Track) (with Extended Major in Artificial Intelligence)"
-    );
+    expect(pdfjsResult.major).toBe("Mathematics (Statistics Track)");
+    expect(pdfjsResult.extendedMajor).toBe("Artificial Intelligence");
     expect(pdfjsResult.terms).toEqual(["2024-25 Fall", "2025-26 Spring"]);
   });
 
