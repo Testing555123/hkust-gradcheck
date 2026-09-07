@@ -18,6 +18,7 @@ class RequirementGroupOut(BaseModel):
     name: str
     required_credits: float
     min_courses: Optional[int] = None
+    note: Optional[str] = None
     source_ref: Optional[str] = None
     order_index: int = 0
     courses: list[CourseRef] = []
@@ -39,6 +40,7 @@ class GroupInput(BaseModel):
     name: str
     required_credits: float
     min_courses: Optional[int] = None
+    note: Optional[str] = None
     source_ref: Optional[str] = None
     courses: list[CourseRef] = []
 

@@ -32,14 +32,17 @@ def init_db() -> None:
     _ensure_db_file()
     SQLModel.metadata.create_all(engine)
 
-    # 轻量迁移：旧库的 requirement_courses 缺少 area 列（create_all 不加列）
+    # 轻量迁移：旧库缺少新增列（create_all 不加列）
     with engine.connect() as conn:
-        cols = {row[1] for row in conn.exec_driver_sql("PRAGMA table_info(requirement_courses)")}
-        if "area" not in cols:
+        rc_cols = {row[1] for row in conn.exec_driver_sql("PRAGMA table_info(requirement_courses)")}
+        if "area" not in rc_cols:
             conn.exec_driver_sql(
                 "ALTER TABLE requirement_courses ADD COLUMN area VARCHAR(400)"
             )
-            conn.commit()
+        rg_cols = {row[1] for row in conn.exec_driver_sql("PRAGMA table_info(requirement_groups)")}
+        if "note" not in rg_cols:
+            conn.exec_driver_sql("ALTER TABLE requirement_groups ADD COLUMN note TEXT")
+        conn.commit()
 
 
 def get_session():

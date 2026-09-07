@@ -91,6 +91,7 @@ def seed_from_dict(data: dict, session: Session) -> int:
             name=g.name,
             required_credits=g.required_credits,
             min_courses=g.min_courses,
+            note=g.note,
             source_ref=g.source_ref,
             order_index=order,
         )

@@ -42,6 +42,7 @@ class RequirementGroup(SQLModel, table=True):
     name: str = Field(max_length=200)
     required_credits: float = Field(default=0.0)
     min_courses: Optional[int] = Field(default=None)
+    note: Optional[str] = Field(default=None)  # 官方 Note 说明原文（来自 PDF）
     source_ref: Optional[str] = Field(default=None, max_length=100)  # PDF 页码引用
     order_index: int = Field(default=0)
 
