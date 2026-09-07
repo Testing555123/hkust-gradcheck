@@ -4,6 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { OnboardingDialog } from "@/components/business/OnboardingDialog";
 import { TranscriptImportDialog, type TranscriptImportResult } from "@/components/business/TranscriptImportDialog";
 import { ProfileBadge } from "@/components/business/ProfileBadge";
+import { CourseDetailDialog } from "@/components/business/CourseDetailDialog";
 import { ProgramPicker } from "@/components/business/ProgramPicker";
 import { EmptyState } from "@/components/ui/empty";
 import { PageSkeleton } from "@/components/ui/skeleton";
@@ -234,6 +235,8 @@ export default function App() {
         onClose={closeTranscriptImport}
         onConfirm={handleTranscriptConfirm}
       />
+      {/* 课程详情：由任意课程行的 ⓘ 触发，全局单例 */}
+      <CourseDetailDialog />
       <Toaster />
     </div>
   );

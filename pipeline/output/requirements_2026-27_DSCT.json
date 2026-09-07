@@ -1,0 +1,802 @@
+{
+  "year": "2026-27",
+  "code": "DSCT",
+  "title": "BSc in Data Science and Technology",
+  "total_required_credits": 58.0,
+  "groups": [
+    {
+      "name": "Students MUST take the following courses prior to enrollment into the major",
+      "required_credits": 0.0,
+      "required_credits_raw": "",
+      "note": "",
+      "courses": [
+        {
+          "code": "MATH1012",
+          "name": "Calculus IA",
+          "credits": 4.0,
+          "credits_raw": "4-7",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1013",
+          "name": "Calculus IB",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1014",
+          "name": "Calculus II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1020",
+          "name": "Accelerated Calculus",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1023",
+          "name": "Honors Calculus I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1024",
+          "name": "Honors Calculus II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP1021",
+          "name": "Introduction to Computer Science",
+          "credits": 3.0,
+          "credits_raw": "3 3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP1022P",
+          "name": "Introduction to Computing with Java",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 49.0,
+      "required_credits_raw": "49",
+      "note": "",
+      "courses": [
+        {
+          "code": "DSCT4900",
+          "name": "Academic and Professional Development",
+          "credits": 0.0,
+          "credits_raw": "0",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH2023",
+          "name": "Multivariable Calculus",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH2121",
+          "name": "Linear Algebra",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH2131",
+          "name": "Honors in Linear and Abstract Algebra I",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH2411",
+          "name": "Applied Statistics",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH2421",
+          "name": "Probability",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH2431",
+          "name": "Honors Probability",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH3322",
+          "name": "Matrix Computation",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH3332",
+          "name": "Data Analytic Tools",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH3423",
+          "name": "Statistical Inference",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH3424",
+          "name": "Regression Analysis",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH4432",
+          "name": "Statistical Machine Learning",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP4211",
+          "name": "Machine Learning",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH4995",
+          "name": "Capstone Project for Data Science",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP4910",
+          "name": "Co-op Program",
+          "credits": 6.0,
+          "credits_raw": "6",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP4981",
+          "name": "Final Year Project",
+          "credits": 6.0,
+          "credits_raw": "6",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP4981H",
+          "name": "Final Year Thesis",
+          "credits": 6.0,
+          "credits_raw": "6",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP2011",
+          "name": "Programming with C++",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP2012",
+          "name": "Object-Oriented Programming and Data Structures",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP2012H",
+          "name": "Honors Object-Oriented Programming and Data Structures",
+          "credits": 5.0,
+          "credits_raw": "5",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP2711",
+          "name": "Discrete Mathematical Tools for Computer Science",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP2711H",
+          "name": "Honors Discrete Mathematical Tools for Computer Science",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP3711",
+          "name": "Design and Analysis of Algorithms",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP3711H",
+          "name": "Honors Design and Analysis of Algorithms",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LANG2010",
+          "name": "English for Science I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LANG2010H",
+          "name": "English for Science I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LANG2030",
+          "name": "Technical Communication I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LANG2030H",
+          "name": "Technical Communication I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LANG3021",
+          "name": "Science Communication in English (Mathematics)",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LANG4030",
+          "name": "Technical Communication II for CSE, CPEG & DSCT",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Elective(s)",
+      "required_credits": 9.0,
+      "required_credits_raw": "9-12",
+      "note": "MATH/COMP/ Data Science Electives [Students opting for MATH 4995 should    ELEC take a minimum of 4 courses (12 credits) from the specified elective list, of which at least 2 courses should be taken from COMP/ELEC; those opting for COMP 4910 or COMP 4981 or COMP 4981H should take a minimum of 3 courses (9 credits), of which at least 1 course should be taken from COMP/ELEC. Out of the total 4 (or 3) elective courses taken, at least 1 course but no more than 2 courses should be from MATH.]",
+      "courses": [
+        {
+          "code": "COMP2211",
+          "name": "Introduction to Artificial Intelligence",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP3211",
+          "name": "Learning, Reasoning, and Decision Making in Al",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP3311",
+          "name": "Database Management Systems",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP3631",
+          "name": "Cryptography",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4021",
+          "name": "Internet Computing",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4221",
+          "name": "Introduction to Natural Language Processing",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4222",
+          "name": "Machine Learning with Structured Data",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4331",
+          "name": "Data Mining",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4332",
+          "name": "Big Data Mining and Management",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4421",
+          "name": "Image Processing",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4462",
+          "name": "Data Visualization",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4471",
+          "name": "Deep Learning in Computer Vision",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4541",
+          "name": "Blockchain, Cryptocurrencies and Smart Contracts",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4634",
+          "name": "Cybersecurity",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4641",
+          "name": "Social Information Network Analysis and Engineering",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4651",
+          "name": "Cloud Computing and Big Data Systems",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "ELEC4240",
+          "name": "Deep Learning in Computer Vision",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MATH2033",
+          "name": "Mathematical Analysis",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MATH2043",
+          "name": "Honors Mathematical Analysis",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MATH2351",
+          "name": "Introduction to Differential Equations",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MATH2352",
+          "name": "Differential Equations",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MATH3033",
+          "name": "Real Analysis",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MATH3043",
+          "name": "Honors Real Analysis",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MATH3312",
+          "name": "Numerical Analysis",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MATH3425",
+          "name": "Stochastic Modeling",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MATH3427",
+          "name": "Bayesian Statistics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MATH3428",
+          "name": "Statistical Computing",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MATH4023",
+          "name": "Complex Analysis",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MATH4052",
+          "name": "Partial Differential Equations",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MATH4335",
+          "name": "Introduction to Optimization",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MATH4336",
+          "name": "Introduction to Mathematics of Image Processing",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MATH4343",
+          "name": "Introduction to Graph Theory",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "MATH4423",
+          "name": "Nonparametric Statistics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "MATH4424",
+          "name": "Multivariate Analysis",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "MATH4425",
+          "name": "Introductory Time Series",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "MATH4433",
+          "name": "Spatial Data Analysis",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "MATH4434",
+          "name": "Deep Learning",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        }
+      ],
+      "source_pages": [
+        3,
+        4
+      ]
+    }
+  ],
+  "uncertain": [
+    "The total required credits for the major is not explicitly stated in the PDF. It may be derived from the sum of required and elective credits, but this requires confirmation.",
+    "The note in the elective group contains formatting irregularities (e.g., 'MATH/COMP/ Data Science Electives [Students opting for MATH 4995 should    ELEC take...') that may affect interpretation. The spacing and line breaks in the original text suggest possible OCR errors.",
+    "The course 'COMP1021' has credits listed as '3 3' in the PDF, which is ambiguous. It was interpreted as 3 credits (lower bound), but this may be a formatting error.",
+    "The course 'ELEC4240' appears in the elective list but the subject 'ELEC' is not defined in the program title or major code. It may be a cross-listed course or an error.",
+    "The note in the required course group for MATH 2023 and others does not clarify whether the 'Note: MATH 2121 OR MATH 2131' applies to a single course selection or if both are required. It was treated as a note for group-level choice, but the exact requirement logic needs verification.",
+    "total_required_credits (58.0) is a computed value: the sum of the required_credits of all groups in this file. The PDF does not state a single overall minimum total for this program, so this figure is derived by summation and may double-count where optional tracks/options are listed as separate groups."
+  ],
+  "parser": "mineru_api",
+  "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\major\\2026-27\\DSCT_BSc_in_Data_Science_and_Technology.pdf"
+}

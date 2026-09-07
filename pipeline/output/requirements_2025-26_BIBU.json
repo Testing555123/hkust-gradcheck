@@ -1,0 +1,589 @@
+{
+  "year": "2025-26",
+  "code": "BIBU",
+  "title": "BSc in Biotechnology and Business",
+  "total_required_credits": 79.0,
+  "groups": [
+    {
+      "name": "Required Course(s)",
+      "required_credits": 7.0,
+      "required_credits_raw": "7",
+      "note": "",
+      "courses": [
+        {
+          "code": "BIBU1010",
+          "name": "Biotechnology and Business Seminar",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "BIBU4820",
+          "name": "Biotechnology Entrepreneurship and Business Operations",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "BIBU4830",
+          "name": "Biotechnology Management",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 3.0,
+      "required_credits_raw": "3-6",
+      "note": "Note: BIBU 4840 OR BIBU 4850",
+      "courses": [
+        {
+          "code": "BIBU4840",
+          "name": "Biotechnology and Business Capstone Project",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "BIBU4850",
+          "name": "Biotechnology and Business Project Research",
+          "credits": 6.0,
+          "credits_raw": "6",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 0.0,
+      "required_credits_raw": "0-3",
+      "note": "Note: Students with level 3 or above in HKDSE 1x Biology are exempted from taking LIFS 1901",
+      "courses": [
+        {
+          "code": "LIFS1901",
+          "name": "General Biology I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS1902",
+          "name": "General Biology II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 19.0,
+      "required_credits_raw": "19",
+      "note": "",
+      "courses": [
+        {
+          "code": "LIFS1904",
+          "name": "Laboratory for General Biology II",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS2040",
+          "name": "Cell Biology",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS2070",
+          "name": "Introduction to Biotechnology",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS2210",
+          "name": "Biochemistry I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS3110",
+          "name": "Biotechnological Application of Recombinant DNA Techniques",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS4200",
+          "name": "Concepts and Issues in Contemporary Biotechnology",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS4630",
+          "name": "Advanced Topics in Biotechnology",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 0.0,
+      "required_credits_raw": "0-3",
+      "note": "Note: Students with level 3 or above in HKDSE 1/2x or 1x Chemistry are exempted from taking CHEM 1008",
+      "courses": [
+        {
+          "code": "CHEM1008",
+          "name": "Introductory Chemistry",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 6.0,
+      "required_credits_raw": "6",
+      "note": "",
+      "courses": [
+        {
+          "code": "CHEM1011",
+          "name": "General Chemistry A: Reactions, Thermodynamics, and Reaction Kinetics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CHEM1012",
+          "name": "General Chemistry B: Atomic Structure, Molecules, and Bonding Theories",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 3.0,
+      "required_credits_raw": "3-4",
+      "note": "Note: MATH 1003 OR MATH 1005 OR MATH 1006 OR MATH 1013 OR MATH 1020 OR MATH 1023",
+      "courses": [
+        {
+          "code": "MATH1003",
+          "name": "Calculus and Linear Algebra",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MATH1005",
+          "name": "Calculus and Statistics",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MATH1006",
+          "name": "Calculus, Vectors, and Matrices",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MATH1013",
+          "name": "Calculus I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MATH1020",
+          "name": "Accelerated Calculus",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MATH1023",
+          "name": "Honors Calculus I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 3.0,
+      "required_credits_raw": "3-4",
+      "note": "Note: PHYS 1101 OR PHYS 1111 OR PHYS 1112 OR PHYS 1312",
+      "courses": [
+        {
+          "code": "PHYS1101",
+          "name": "Introductory Physics",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "PHYS1111",
+          "name": "General Physics I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "PHYS1112",
+          "name": "General Physics I with Calculus",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "PHYS1312",
+          "name": "Honors General Physics I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 3.0,
+      "required_credits_raw": "3",
+      "note": "",
+      "courses": [
+        {
+          "code": "ACCT2200",
+          "name": "Principles of Accounting II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 3.0,
+      "required_credits_raw": "3",
+      "note": "Note: ECON 2103 OR ECON 2113",
+      "courses": [
+        {
+          "code": "ECON2103",
+          "name": "Principles of Microeconomics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ECON2113",
+          "name": "Microeconomics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 23.0,
+      "required_credits_raw": "23",
+      "note": "",
+      "courses": [
+        {
+          "code": "ECON2123",
+          "name": "Macroeconomics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "FINA2203",
+          "name": "Fundamentals of Business Finance",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ISOM2010",
+          "name": "Introduction to Information Systems",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ISOM2500",
+          "name": "Business Statistics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ISOM2700",
+          "name": "Operations Management",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MARK2120",
+          "name": "Marketing Management",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MGMT2110",
+          "name": "Organizational Behavior",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MGMT2130",
+          "name": "Business Ethics and Social Responsibility",
+          "credits": 2.0,
+          "credits_raw": "2",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Elective(s)",
+      "required_credits": 9.0,
+      "required_credits_raw": "9",
+      "note": "Biotechnology and Business Electives (Courses from the specified elective list, of which at least 3 credits from each area in Biotechnology / Business. Courses taken as Major Required Courses may not be counted towards this elective requirement.) Biotechnology area: any LIFS courses at 3000/4000-level, or courses from the specified list. Business area: any ECON/FINA/ISOM/MARK/MGMT courses at 3000/4000-level. Prefixes in the PDF: SSCI/SBM.",
+      "courses": [
+        {
+          "code": "BTEC5340",
+          "name": "Biomarkers and Medical Devices",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "BTEC5380",
+          "name": "Drug Discovery and Development",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM2111",
+          "name": "Fundamentals of Organic Chemistry",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM2155",
+          "name": "Fundamental Organic Chemistry Laboratory",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM2311",
+          "name": "Analytical Chemistry",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM2355",
+          "name": "Fundamental Analytical Chemistry Laboratory",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        }
+      ],
+      "source_pages": [
+        3
+      ]
+    }
+  ],
+  "uncertain": [
+    "total_required_credits is a calculated value: the PDF does not state a fixed total for the major; it is the sum of the required_credits of all groups (using the lower bound for credit ranges such as 3-6, 0-3, 3-4).",
+    "Students taking the program as first major are exempted from the School Requirements (see PDF preamble).",
+    "Several blocks allow alternative course choices (e.g. BIBU 4840/4850, LIFS 1901 exemption, CHEM 1008 exemption, MATH block, PHYS block, ECON 2103/2113), so the actual credits taken by a student may differ from the calculated total.",
+    "The elective list also allows 'Any LIFS courses at 3000/4000-level' (Biotechnology area) and 'Any ECON/FINA/ISOM/MARK/MGMT courses at 3000/4000-level' (Business area), so the recorded elective course list is not exhaustive.",
+    "The PDF header/footer shows '2026-27 BIBU (4Y) (2025-26 intake)', i.e. the document is the 2025-26 intake curriculum rendered on a 2026-27 template; the year is recorded as 2025-26 per the intake year."
+  ],
+  "parser": "ai_read_pdfplumber_text",
+  "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\major\\2025-26\\BIBU_BSc_in_Biotechnology_and_Business.pdf"
+}

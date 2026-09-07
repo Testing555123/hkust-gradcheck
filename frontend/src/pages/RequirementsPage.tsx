@@ -1,5 +1,6 @@
 import { RequirementTree } from "@/components/business/RequirementTree";
 import { CommonCoreSection } from "@/components/business/CommonCoreSection";
+import { UncertainNotes } from "@/components/business/UncertainNotes";
 import { Badge } from "@/components/ui/badge";
 import { BookOpen, FileText, School } from "lucide-react";
 import type { AttachedEntryView } from "@/pages/OverviewPage";
@@ -24,6 +25,7 @@ export function RequirementsPage({
           </Badge>
         )}
         <span>· 每项要求均标注原文页码，可回溯核对</span>
+        <UncertainNotes notes={tree.program.uncertain} />
       </div>
       <RequirementTree tree={tree} />
       <CommonCoreSection tree={tree} />

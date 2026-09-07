@@ -1,0 +1,67 @@
+{
+  "year": "2024-25",
+  "code": "MINOR-ENTR",
+  "title": "Minor Program in Entrepreneurship",
+  "total_required_credits": 18.0,
+  "groups": [
+    {
+      "name": "Required Course(s)",
+      "required_credits": 3.0,
+      "required_credits_raw": "3",
+      "note": "Note: ENGG 1130 OR ISOM 1380",
+      "courses": [
+        { "code": "ENGG1130", "name": "The Impact and Value of Technology Innovation (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": [], "source_pages": [1] },
+        { "code": "ISOM1380", "name": "Technology and Innovation: Social and Business Perspectives", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [1] }
+      ],
+      "source_pages": [1]
+    },
+    {
+      "name": "Elective(s)",
+      "required_credits": 6.0,
+      "required_credits_raw": "6",
+      "note": "Entrepreneurship Electives - Fundamentals: courses from the specified elective list (6 credits). Students can use at most 6 credits they earned from ENTR 4901-4904 to count towards this elective requirement. The list for this group is 'Fundamentals'.",
+      "courses": [
+        { "code": "ENTR1001", "name": "Entrepreneurship 1001: Designing Your Future", "credits": 3.0, "credits_raw": "3", "areas": ["Fundamentals"], "source_pages": [1] },
+        { "code": "ENTR2010", "name": "Entrepreneurship Mentorship and Readings", "credits": 1.0, "credits_raw": "1", "areas": ["Fundamentals"], "source_pages": [1] },
+        { "code": "ENTR3030", "name": "Social Innovations and Entrepreneurship", "credits": 3.0, "credits_raw": "3", "areas": ["Fundamentals"], "source_pages": [1] },
+        { "code": "ENTR3100", "name": "Industrial Landscape: Understanding the Elements to Start a Business", "credits": 3.0, "credits_raw": "3", "areas": ["Fundamentals"], "source_pages": [2] },
+        { "code": "ENTR4901", "name": "Student-led Entrepreneurship Acceleration Project", "credits": 3.0, "credits_raw": "1-4", "areas": ["Fundamentals"], "source_pages": [2] }
+      ],
+      "source_pages": [1, 2]
+    },
+    {
+      "name": "Elective(s)",
+      "required_credits": 9.0,
+      "required_credits_raw": "9",
+      "note": "Entrepreneurship Electives - Skillsets: courses from the specified list (9 credits). The list for this group is 'Skillsets'.",
+      "courses": [
+        { "code": "ENTR3350", "name": "Global Product Development", "credits": 3.0, "credits_raw": "3", "areas": ["Skillsets"], "source_pages": [2] },
+        { "code": "ENTR3360", "name": "From Product Innovations to Successful Technology Startups", "credits": 3.0, "credits_raw": "3", "areas": ["Skillsets"], "source_pages": [2] },
+        { "code": "ENTR4911", "name": "IT Entrepreneurship", "credits": 3.0, "credits_raw": "3", "areas": ["Skillsets"], "source_pages": [2] },
+        { "code": "BIBU4820", "name": "Biotechnology Entrepreneurship and Business Operations", "credits": 3.0, "credits_raw": "3", "areas": ["Skillsets"], "source_pages": [2] },
+        { "code": "COMP4911", "name": "IT Entrepreneurship", "credits": 3.0, "credits_raw": "3", "areas": ["Skillsets"], "source_pages": [2] },
+        { "code": "FINA2203", "name": "Fundamentals of Business Finance", "credits": 3.0, "credits_raw": "3", "areas": ["Skillsets"], "source_pages": [2] },
+        { "code": "FINA2303", "name": "Financial Management", "credits": 3.0, "credits_raw": "3", "areas": ["Skillsets"], "source_pages": [2] },
+        { "code": "IEDA2150", "name": "Product Design (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["Skillsets"], "source_pages": [2] },
+        { "code": "IEDA2200", "name": "Engineering Management (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["Skillsets"], "source_pages": [2] },
+        { "code": "ISDN3350", "name": "Global Product Development", "credits": 3.0, "credits_raw": "3", "areas": ["Skillsets"], "source_pages": [2] },
+        { "code": "ISDN3360", "name": "From Product Innovations to Successful Technology Startups", "credits": 3.0, "credits_raw": "3", "areas": ["Skillsets"], "source_pages": [2] },
+        { "code": "ISOM2030", "name": "Business Protections for Innovations", "credits": 3.0, "credits_raw": "3", "areas": ["Skillsets"], "source_pages": [2] },
+        { "code": "ISOM4020", "name": "Innovation Management and Technology Entrepreneurship", "credits": 3.0, "credits_raw": "3", "areas": ["Skillsets"], "source_pages": [2] },
+        { "code": "LIFS4820", "name": "Entrepreneurship in Biotechnology", "credits": 3.0, "credits_raw": "3", "areas": ["Skillsets"], "source_pages": [2] },
+        { "code": "MARK2120", "name": "Marketing Management", "credits": 3.0, "credits_raw": "3", "areas": ["Skillsets"], "source_pages": [2] },
+        { "code": "MGMT3140", "name": "Negotiation", "credits": 4.0, "credits_raw": "4", "areas": ["Skillsets"], "source_pages": [2] },
+        { "code": "MGMT4220", "name": "Entrepreneurship and Innovation", "credits": 4.0, "credits_raw": "4", "areas": ["Skillsets"], "source_pages": [2] },
+        { "code": "OCES4301", "name": "Environmental Conservation", "credits": 3.0, "credits_raw": "3", "areas": ["Skillsets"], "source_pages": [2] },
+        { "code": "SCIE4860", "name": "Young Entrepreneurial Syndicate in Applied Sciences Project", "credits": 3.0, "credits_raw": "3", "areas": ["Skillsets"], "source_pages": [2] }
+      ],
+      "source_pages": [2]
+    }
+  ],
+  "uncertain": [
+    "total_required_credits (18.0) is the stated minimum total for the minor (PDF: 'completed a minimum total of 18 credits').",
+    "ENGG 1130, IEDA 2150 and IEDA 2200 were deleted but remain in the PDF list."
+  ],
+  "parser": "ai_read_pdfplumber_text",
+  "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\minor_sklrequire_extmajor\\2024-25\\minor\\MINOR-ENTR_Minor_Program_in_Entrepreneurship.pdf"
+}

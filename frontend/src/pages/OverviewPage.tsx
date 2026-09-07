@@ -5,7 +5,7 @@ import { ProgressCard } from "@/components/business/ProgressCard";
 import { CCProgressCard } from "@/components/business/CCProgressCard";
 import { StatCard } from "@/components/business/StatCard";
 import { computeProgramAudit } from "@/lib/audit";
-import { computeCommonCoreAudit, type CommonCoreAudit } from "@/lib/common-core";
+import { computeCommonCoreAudit } from "@/lib/common-core";
 import type { AttachedProgram } from "@/lib/attached";
 import { AttachedAuditCard } from "@/components/business/AttachedAuditCard";
 import { useSelection } from "@/stores/selection";

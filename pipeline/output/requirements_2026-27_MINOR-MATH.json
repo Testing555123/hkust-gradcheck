@@ -1,0 +1,24 @@
+{
+  "year": "2026-27",
+  "code": "MINOR-MATH",
+  "title": "Minor Program in Mathematics",
+  "total_required_credits": 18.0,
+  "groups": [
+    {
+      "name": "Elective(s)",
+      "required_credits": 18.0,
+      "required_credits_raw": "18",
+      "note": "MATH Mathematics Electives: courses from the specified elective list, of which at least 6 credits must be at 3000-level or above; and out of these 6 credits at 3000-level or above, at least 3 credits must be at 4000-level or above. The eligible pool is: MATH courses at 1000- and 2000-level (except courses coded from 1000 to 1600) AND MATH courses at 3000-level or above. The PDF provides no fixed course list (open-ended); the courses array is empty.",
+      "courses": [],
+      "source_pages": [
+        1
+      ]
+    }
+  ],
+  "uncertain": [
+    "total_required_credits (18.0) is the stated minimum total for the minor (PDF: 'complete a minimum total of 18 credits').",
+    "The elective requirement is open-ended (any qualifying MATH course); the PDF lists no specific course codes, so the courses array is empty."
+  ],
+  "parser": "ai_read_pdfplumber_text",
+  "source_pdf": "C:/Users/User/CodeBuddy/20260906005404/unpress_pdf/minor_sklrequire_extmajor/2026-27/minor/MINOR-MATH_Minor_Program_in_Mathematics.pdf"
+}

@@ -1,0 +1,671 @@
+{
+  "year": "2024-25",
+  "code": "BIEN",
+  "title": "BEng in Bioengineering",
+  "total_required_credits": 57.0,
+  "groups": [
+    {
+      "name": "Engineering Fundamental Course(s)",
+      "required_credits": 17.0,
+      "required_credits_raw": "17+",
+      "note": "Credit ranges resolved to lower bounds: COMP [COMP 1021] OR [(COMP 1022P OR COMP 2011 OR COMP 2012H) AND COMP 1029P] = 3-6 (min 3); CHEM 1012 (3) + CHEM 1052 (1) = 4; LIFS 1901 = 0-3 (min 0; students with HKDSE Biology level 3 or above are exempted); MATH [(MATH 1012 OR 1013 OR 1023) AND (MATH 1014 OR 1024)] OR [MATH 1020] = 4-7 (min 4); PHYS 1112 OR PHYS 1312 = 3; SENG Engineering Introduction course = 3-4 (min 3). Lower-bound total = 17. COMP 1021 is listed both as the COMP option and in the SENG Engineering Introduction list; it is included once under COMP.",
+      "courses": [
+        {
+          "code": "COMP1021",
+          "name": "Introduction to Computer Science",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "COMP"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP1022P",
+          "name": "Introduction to Computing with Java (deleted)",
+          "credits": 3.0,
+          "credits_raw": "3**",
+          "areas": [
+            "COMP"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP1029P",
+          "name": "Python Programming Bridging Course",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [
+            "COMP"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP2011",
+          "name": "Programming with C++",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [
+            "COMP"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP2012H",
+          "name": "Honors Object-Oriented Programming and Data Structures",
+          "credits": 5.0,
+          "credits_raw": "5",
+          "areas": [
+            "COMP"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM1012",
+          "name": "General Chemistry B: Atomic Structure, Molecules, and Bonding Theories",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "CHEM"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM1052",
+          "name": "Laboratory for General Chemistry B",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [
+            "CHEM"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS1901",
+          "name": "General Biology I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "LIFS"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1012",
+          "name": "Calculus IA (deleted)",
+          "credits": 4.0,
+          "credits_raw": "4**",
+          "areas": [
+            "MATH"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1013",
+          "name": "Calculus I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "MATH"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1014",
+          "name": "Calculus II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "MATH"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1020",
+          "name": "Accelerated Calculus",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [
+            "MATH"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1023",
+          "name": "Honors Calculus I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "MATH"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1024",
+          "name": "Honors Calculus II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "MATH"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "PHYS1112",
+          "name": "General Physics I with Calculus",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "PHYS"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "PHYS1312",
+          "name": "Honors General Physics I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "PHYS"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "BIEN1010",
+          "name": "Introduction to Biomedical Engineering",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "SENG Engineering Introduction"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CENG1000",
+          "name": "Foundations of Chemical and Biological Engineering",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "SENG Engineering Introduction"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CENG1500",
+          "name": "A First Course on Materials Science and Applications",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "SENG Engineering Introduction"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CENG1700",
+          "name": "Introduction to Environmental Engineering",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "SENG Engineering Introduction"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CIVL1100",
+          "name": "Discovering Civil and Environmental Engineering",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "SENG Engineering Introduction"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CIVL1210",
+          "name": "Fundamental of Green Buildings",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "SENG Engineering Introduction"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ELEC1100",
+          "name": "Introduction to Electro-Robot Design",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [
+            "SENG Engineering Introduction"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ELEC1200",
+          "name": "A System View of Communications: from Signals to Packets",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [
+            "SENG Engineering Introduction"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ENGG1100",
+          "name": "First Year Cornerstone Engineering Design Project Course",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "SENG Engineering Introduction"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "IEDA2010",
+          "name": "Introduction of Industrial Engineering and Decision Analytics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "SENG Engineering Introduction"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH1902",
+          "name": "Energy Systems in a Sustainable World",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "SENG Engineering Introduction"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH1906",
+          "name": "Mechanical Engineering for Modern Life",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "SENG Engineering Introduction"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH1907",
+          "name": "Introduction to Aerospace Engineering",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "SENG Engineering Introduction"
+          ],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 25.0,
+      "required_credits_raw": "25",
+      "note": "",
+      "courses": [
+        {
+          "code": "BIEN1010",
+          "name": "Introduction to Biomedical Engineering",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": []
+        },
+        {
+          "code": "BIEN1600",
+          "name": "Introduction to Bioengineering",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": []
+        },
+        {
+          "code": "CENG1000",
+          "name": "Foundations of Chemical and Biological Engineering",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": []
+        },
+        {
+          "code": "BIEN2310",
+          "name": "Modeling for Chemical and Biological Engineering",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": []
+        },
+        {
+          "code": "BIEN2410",
+          "name": "Cellular and Systems Physiology for Engineers",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": []
+        },
+        {
+          "code": "BIEN2610",
+          "name": "Chemical Biology for Engineers",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": []
+        },
+        {
+          "code": "BIEN2990",
+          "name": "Academic and Professional Development I",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": []
+        },
+        {
+          "code": "BIEN3250",
+          "name": "Rate and Transport Processes in Biological Systems",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": []
+        },
+        {
+          "code": "CENG2220",
+          "name": "Transport Phenomena I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": []
+        },
+        {
+          "code": "BIEN3300",
+          "name": "Data Science for Molecular Engineering",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": []
+        },
+        {
+          "code": "BIEN3310",
+          "name": "Data Science for Neural Engineering",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": []
+        },
+        {
+          "code": "BIEN3320",
+          "name": "Data Science for Biology and Medicine",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": []
+        },
+        {
+          "code": "BIEN3410",
+          "name": "Bioimaging and Image Analysis",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": []
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Elective(s)",
+      "required_credits": 15.0,
+      "required_credits_raw": "15",
+      "note": "Bioengineering Electives (5 courses from the specified elective list, of which at least 9 credits should be taken from a single specialty area (Area 1 or Area 2). Out of the 15 credits taken, at least 9 credits should be at 4000-level or above)",
+      "courses": [
+        {
+          "code": "BIEN3310",
+          "name": "Data Science for Neural Engineering",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "BIEN4310",
+          "name": "Statistical Signal Analysis and Applications in Neural Engineering",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "BIEN5040",
+          "name": "Introduction to Neural Engineering",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "BIEN5060",
+          "name": "Fundamentals and Applications of Sensing Technologies in Healthcare",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CENG5240",
+          "name": "Deep Learning for Chemical and Biological Engineering",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP2012",
+          "name": "Object-Oriented Programming and Data Structures",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP2012H",
+          "name": "Honors Object-Oriented Programming and Data Structures",
+          "credits": 5.0,
+          "credits_raw": "5",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP2211",
+          "name": "Introduction to Artificial Intelligence",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4211",
+          "name": "Machine Learning",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4331",
+          "name": "Data Mining",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4421",
+          "name": "Image Processing",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP5423",
+          "name": "Deep Learning in Medical Image Analysis",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "ELEC2100",
+          "name": "Signals and Systems",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "ELEC2420",
+          "name": "Basic Electronics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "ELEC4820",
+          "name": "Medical Imaging",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "EMIA4110",
+          "name": "Practical Machine Learning",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "LIFS3070",
+          "name": "Introduction to Biophysical Instrumentation",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        }
+      ],
+      "source_pages": [
+        3
+      ]
+    }
+  ],
+  "uncertain": [
+    "The Engineering Fundamental and Required Course(s) groups were empty in the original extraction; they have been filled from the PDF tables on pages 1-2 (lower-bound credit values used where the PDF gives a range).",
+    "total_required_credits (57.0) is a computed value: Engineering Fundamental (17) + Required (25) + Elective (15). The PDF does not state a single overall major total.",
+    "Remaining open question: the Area 1 elective courses referenced in the elective note were not resolved from the provided text; only Area 2 appears explicitly."
+  ],
+  "parser": "mineru_api",
+  "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\major\\2024-25\\BIEN_BEng_in_Bioengineering.pdf"
+}

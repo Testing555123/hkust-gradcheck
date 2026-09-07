@@ -1,0 +1,828 @@
+{
+  "year": "2026-27",
+  "code": "CHEM",
+  "title": "BSc in Chemistry",
+  "total_required_credits": 113.0,
+  "groups": [
+    {
+      "name": "Major Pre-requisite course(s)",
+      "required_credits": 6.0,
+      "required_credits_raw": "6",
+      "note": "Students MUST take the following courses prior to enrollment into the major.",
+      "courses": [
+        {
+          "code": "CHEM1011",
+          "name": "General Chemistry A: Reactions, Thermodynamics, and Reaction Kinetics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM1012",
+          "name": "General Chemistry B: Atomic Structure, Molecules, and Bonding Theories",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 26.0,
+      "required_credits_raw": "26",
+      "note": "",
+      "courses": [
+        {
+          "code": "CHEM1051",
+          "name": "Laboratory for General Chemistry A",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM1052",
+          "name": "Laboratory for General Chemistry B",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM2110",
+          "name": "Physical Chemistry I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM2210",
+          "name": "Inorganic Chemistry I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM2310",
+          "name": "Organic Chemistry I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM2550",
+          "name": "General Chemistry Laboratory",
+          "credits": 2.0,
+          "credits_raw": "2",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM2555",
+          "name": "Foundation Chemistry Laboratory",
+          "credits": 2.0,
+          "credits_raw": "2",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM3120",
+          "name": "Organic Chemistry II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM3220",
+          "name": "Physical Chemistry II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM3320",
+          "name": "Instrumental Analysis",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM3550",
+          "name": "Chemistry Laboratory I",
+          "credits": 2.0,
+          "credits_raw": "2",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Required Course(s) (Capstone)",
+      "required_credits": 3.0,
+      "required_credits_raw": "3-6",
+      "note": "Note: CHEM 4689 OR CHEM 4691 OR (SCIE 3500 AND SCIE 4500) (Students following IRE Track can only use (SCIE 3500 AND SCIE 4500) to fulfill the requirement.)",
+      "courses": [
+        {
+          "code": "CHEM4689",
+          "name": "Capstone Project",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CHEM4691",
+          "name": "Chemistry Research Project",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "SCIE3500",
+          "name": "IRE Research Project I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "SCIE4500",
+          "name": "IRE Research Project II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 3.0,
+      "required_credits_raw": "3-4",
+      "note": "Note: MATH 1005 OR MATH 1006 OR MATH 1013 OR MATH 1020 OR MATH 1023",
+      "courses": [
+        {
+          "code": "MATH1005",
+          "name": "Calculus and Statistics",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MATH1006",
+          "name": "Calculus, Vectors, and Matrices",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MATH1013",
+          "name": "Calculus I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MATH1020",
+          "name": "Accelerated Calculus",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MATH1023",
+          "name": "Honors Calculus I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Biomolecular Chemistry Track Required Course(s)",
+      "required_credits": 18.0,
+      "required_credits_raw": "18",
+      "note": "Students in the Biomolecular Chemistry Track should also take CHEM 2410 and CHEM 3420 and CHEM 3555 as specified under the Core Chemistry Track. Students who take a track MUST complete all requirements specified in addition to the major requirements.",
+      "courses": [
+        {
+          "code": "CHEM2401",
+          "name": "Introduction to Biochemistry",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CHEM4110",
+          "name": "Structural and Mechanistic Organic Chemistry",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CHEM4120",
+          "name": "Synthetic Organic Chemistry",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CHEM4130",
+          "name": "Biological Chemistry",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CHEM4150",
+          "name": "Laboratory in Organic Chemistry",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CHEM4155",
+          "name": "Laboratory in Biological Chemistry",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CHEM4340",
+          "name": "Biophysical Chemistry",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Core Chemistry Track Required Course(s)",
+      "required_credits": 8.0,
+      "required_credits_raw": "8",
+      "note": "CHEM 2410** (3), CHEM 3420** (3), CHEM 3555 (2). **effective from 2027-28 intake, CHEM 2410 and CHEM 3420 will be 4 credits each; the lower bound is used here per the 2026-27 printed value.",
+      "courses": [
+        {
+          "code": "CHEM2410",
+          "name": "Inorganic Chemistry II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CHEM3420",
+          "name": "Intermediate Inorganic Chemistry",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CHEM3555",
+          "name": "Chemistry Laboratory II",
+          "credits": 2.0,
+          "credits_raw": "2",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Core Chemistry Track Elective Course(s)",
+      "required_credits": 4.0,
+      "required_credits_raw": "4-7",
+      "note": "CHEM 3000-level or above Elective [Course(s) from the specified elective list] (Any 3000-/4000-level CHEM courses except CHEM 4990 and CHEM 4998).",
+      "courses": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Environmental and Analytical Chemistry Option Required Course(s)",
+      "required_credits": 2.0,
+      "required_credits_raw": "2",
+      "note": "Students in the Environmental and Analytical Chemistry Option should also take CHEM 2410, CHEM 3420, and CHEM 3555 as specified under the Core Chemistry Track. Students who take an option MUST complete all requirements specified in addition to the major requirements.",
+      "courses": [
+        {
+          "code": "CHEM4350",
+          "name": "Laboratory in Analytical Chemistry",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM4355",
+          "name": "Laboratory in Environmental Chemistry",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        }
+      ],
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "name": "Environmental and Analytical Chemistry Option Elective Course(s)",
+      "required_credits": 12.0,
+      "required_credits_raw": "12",
+      "note": "CHEM 3000-level or above Elective [Course(s) from the specified elective list] (Courses from the specified elective list: CHEM 3550/3555/4180/4200/4340/4350/4355/4450/4480/4490/4550/4555/4689/4691 and Any 3000-/4000-level CHEM courses except CHEM 4990 and CHEM 4998).",
+      "courses": [
+        {
+          "code": "CHEM3550",
+          "name": "Chemistry Laboratory I",
+          "credits": 2.0,
+          "credits_raw": "2",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM3555",
+          "name": "Chemistry Laboratory II",
+          "credits": 2.0,
+          "credits_raw": "2",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM4180",
+          "name": "Applied Spectroscopy",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM4200",
+          "name": "Environmental Chemistry",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM4340",
+          "name": "Biophysical Chemistry",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM4350",
+          "name": "Laboratory in Analytical Chemistry",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM4355",
+          "name": "Laboratory in Environmental Chemistry",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM4450",
+          "name": "Laboratory in Physical Chemistry",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM4480",
+          "name": "Laboratory in Inorganic Chemistry",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM4490",
+          "name": "Laboratory in Instrumental Analysis",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM4550",
+          "name": "Laboratory in Chemical Synthesis",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM4555",
+          "name": "Advanced Chemistry Laboratory",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM4689",
+          "name": "Capstone Project",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM4691",
+          "name": "Chemistry Research Project",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        }
+      ],
+      "source_pages": [
+        3
+      ]
+    },
+    {
+      "name": "Materials Chemistry Option Required Course(s)",
+      "required_credits": 2.0,
+      "required_credits_raw": "2",
+      "note": "Students in the Materials Chemistry Option should also take CHEM 2410, CHEM 3420, and CHEM 3555 as specified under the Core Chemistry Track. Students who take an option MUST complete all requirements specified in addition to the major requirements.",
+      "courses": [
+        {
+          "code": "CHEM4250",
+          "name": "Laboratory in Materials Chemistry",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "CHEM4255",
+          "name": "Laboratory in Physical Chemistry of Materials",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        }
+      ],
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "name": "Materials Chemistry Option Elective Course(s)",
+      "required_credits": 12.0,
+      "required_credits_raw": "12",
+      "note": "CHEM 3000-level or above Elective [Course(s) from the specified elective list] (Courses from the specified elective list: CHEM 3320/4150/4155/4250/4255/4280/4285/4480/4490/4550/4555/4689/4691 and Any 3000-/4000-level CHEM courses except CHEM 4990 and CHEM 4998).",
+      "courses": [
+        {
+          "code": "CHEM3320",
+          "name": "Instrumental Analysis",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "CHEM4150",
+          "name": "Laboratory in Organic Chemistry",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "CHEM4155",
+          "name": "Laboratory in Biological Chemistry",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "CHEM4250",
+          "name": "Laboratory in Materials Chemistry",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "CHEM4255",
+          "name": "Laboratory in Physical Chemistry of Materials",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "CHEM4280",
+          "name": "Laboratory in Polymer Chemistry",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "CHEM4285",
+          "name": "Laboratory in Materials Synthesis",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "CHEM4480",
+          "name": "Laboratory in Inorganic Chemistry",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "CHEM4490",
+          "name": "Laboratory in Instrumental Analysis",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "CHEM4550",
+          "name": "Laboratory in Chemical Synthesis",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "CHEM4555",
+          "name": "Advanced Chemistry Laboratory",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "CHEM4689",
+          "name": "Capstone Project",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "CHEM4691",
+          "name": "Chemistry Research Project",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        }
+      ],
+      "source_pages": [
+        4
+      ]
+    },
+    {
+      "name": "Pure Chemistry Option Required Course(s)",
+      "required_credits": 2.0,
+      "required_credits_raw": "2",
+      "note": "Students in the Pure Chemistry Option should also take CHEM 2410, CHEM 3420, and CHEM 3555 as specified under the Core Chemistry Track. Students who take an option MUST complete all requirements specified in addition to the major requirements.",
+      "courses": [
+        {
+          "code": "CHEM4550",
+          "name": "Laboratory in Chemical Synthesis",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            5
+          ]
+        },
+        {
+          "code": "CHEM4555",
+          "name": "Advanced Chemistry Laboratory",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            5
+          ]
+        }
+      ],
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "name": "Pure Chemistry Option Elective Course(s)",
+      "required_credits": 12.0,
+      "required_credits_raw": "12",
+      "note": "CHEM 3000-level or above Elective [Course(s) from the specified elective list] (Any 3000-/4000-level CHEM courses except CHEM 4990 and CHEM 4998).",
+      "courses": [],
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "name": "International Research Enrichment Track Required Course(s)",
+      "required_credits": 3.0,
+      "required_credits_raw": "3",
+      "note": "Students in the IRE Track should also take SCIE 4500 as specified in the major requirements. Students who take a track MUST complete all requirements specified in addition to the major requirements.",
+      "courses": [
+        {
+          "code": "CHEM4430",
+          "name": "Introduction to Machine Learning and Data Science for Chemists",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            6
+          ]
+        }
+      ],
+      "source_pages": [
+        6
+      ]
+    }
+  ],
+  "uncertain": [
+    "total_required_credits (113.0) is the sum of the required_credits of all groups. The program has a mandatory International Research Enrichment (IRE) Track plus three mutually exclusive Tracks/Options (Biomolecular Chemistry Track, Core Chemistry Track + Core Elective, and the Options: Environmental and Analytical / Materials / Pure Chemistry). The sum double-counts shared courses (e.g. CHEM 2410/3420/3555 appear in multiple tracks/options; CHEM 4689/4691 appear in multiple option electives). A realistic total is the core (pre-req 6 + required 26 + capstone 3 + MATH 3 = 38) plus a chosen Track/Option (≈8-18) plus electives (4-12) plus IRE (+3).",
+    "Several blocks allow alternative course choices with credit ranges (MATH 3-4, capstone 3-6, Core Elective 4-7), so actual credits may differ from the lower-bound calculation.",
+    "The PDF notes CHEM 2410 and CHEM 3420 will become 4 credits each from 2027-28; the 2026-27 printed values (3 each) are used.",
+    "The PDF header/footer shows '2026-27 CHEM (4Y) (2026-27 intake)', i.e. the document is the 2026-27 intake curriculum."
+  ],
+  "parser": "ai_read_pdfplumber_text",
+  "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\major\\2026-27\\CHEM_BSc_in_Chemistry.pdf"
+}

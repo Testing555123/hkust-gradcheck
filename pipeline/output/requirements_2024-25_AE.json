@@ -1,0 +1,520 @@
+{
+  "year": "2024-25",
+  "code": "AE",
+  "title": "BEng in Aerospace Engineering",
+  "total_required_credits": 12.0,
+  "groups": [
+    {
+      "name": "Engineering Fundamental Course(s)",
+      "required_credits": 0.0,
+      "required_credits_raw": "",
+      "note": "",
+      "courses": [
+        {
+          "code": "COMP1021",
+          "name": "Introduction to Computer Science",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP1022P",
+          "name": "Introduction to Computing with Java",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP2011",
+          "name": "Programming with C++",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP2012H",
+          "name": "Honors Object-Oriented Programming and Data Structures",
+          "credits": 5.0,
+          "credits_raw": "5",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LANG2030",
+          "name": "Technical Communication I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1012",
+          "name": "Calculus IA",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1013",
+          "name": "Calculus I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1014",
+          "name": "Calculus II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1020",
+          "name": "Accelerated Calculus",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1023",
+          "name": "Honors Calculus I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1024",
+          "name": "Honors Calculus II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH2011",
+          "name": "Introduction to Multivariable Calculus",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH2111",
+          "name": "Matrix Algebra and Applications",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH2350",
+          "name": "Applied Linear Algebra and Differential Equations",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH2351",
+          "name": "Introduction to Differential Equations",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "PHYS1112",
+          "name": "General Physics I with Calculus",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "PHYS1312",
+          "name": "Honors General Physics I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "PHYS1008",
+          "name": "Introductory Chemistry",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM1012",
+          "name": "General Chemistry B: Atomic Structure, Molecules, and Bonding",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS1901",
+          "name": "Theories General Biology I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "PHYS1101",
+          "name": "Introductory Physics",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 0.0,
+      "required_credits_raw": "",
+      "note": "",
+      "courses": [
+        {
+          "code": "MECH1907",
+          "name": "Introduction to Aerospace Engineering",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH1990",
+          "name": "Industrial Training",
+          "credits": 0.0,
+          "credits_raw": "0",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH2020",
+          "name": "Statics and Dynamics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH2040",
+          "name": "Solid Mechanics I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH2210",
+          "name": "Fluid Mechanics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH2310",
+          "name": "Thermodynamics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH2410",
+          "name": "Engineering Materials I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH3400",
+          "name": "Introduction to Engineering Composite Materials",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH3610",
+          "name": "Control Principles",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH3620",
+          "name": "Aircraft Design",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH3640",
+          "name": "Aerodynamics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH3650",
+          "name": "Aircraft Structural Analysis",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH3660",
+          "name": "Aircraft Propulsion",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH3670",
+          "name": "Aircraft Performance and Stability",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH3680",
+          "name": "Avionics Systems",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH3690",
+          "name": "Aerospace Engineering Laboratory",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH4980",
+          "name": "Final Year Aerospace Design Project",
+          "credits": 6.0,
+          "credits_raw": "6",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ELEC2420",
+          "name": "Basic Electronics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ENGG2010",
+          "name": "Engineering Seminar Series",
+          "credits": 0.0,
+          "credits_raw": "0",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "LANG4034",
+          "name": "Technical Communication Il for Mechanical and Aerospace",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Elective(s)",
+      "required_credits": 6.0,
+      "required_credits_raw": "6",
+      "note": "",
+      "courses": [
+        {
+          "code": "MECH2520",
+          "name": "Design and Manufacturing I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH3310",
+          "name": "Heat Transfer",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH3740",
+          "name": "Introduction to Aerospace Computational Fluid Dynamics (CFD)",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Research Option",
+      "required_credits": 6.0,
+      "required_credits_raw": "6",
+      "note": "",
+      "courses": [
+        {
+          "code": "MECH4990",
+          "name": "Aerospace Research Project",
+          "credits": 6.0,
+          "credits_raw": "6",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        }
+      ],
+      "source_pages": [
+        3
+      ]
+    }
+  ],
+  "uncertain": [
+    "The 'Engineering Fundamental Course(s)' group has no explicit 'Credit(s) attained' value in the header row; the column exists but no single number is given for the group total. Individual course credits are listed with ranges (e.g., 3-5, 4-7), but no aggregate required credits are stated for the group. Set to 0 as per rule.",
+    "The 'Required Course(s)' group has no explicit 'Credit(s) attained' value in the header row; the column exists but no single number is given for the group total. Individual course credits are listed, but no aggregate required credits are stated for the group. Set to 0 as per rule.",
+    "The 'Elective(s)' group header says 'Minimum credit(s) required' with value 6, which is interpreted as required_credits.",
+    "The 'Research Option' group header says 'Credit(s) attained' with value 6, which is interpreted as required_credits.",
+    "Courses under 'CHEM/LIFS/ list)' with note 'Science 1000-level course (1 course from the specified course' are incomplete; the course list appears cut off. Only the explicitly listed courses (PHYS1008, CHEM1012, LIFS1901, PHYS1101) are included.",
+    "The course 'MECH 4740' on page 3 appears as 'MECH 4740\\n3 Numerical Methods in Engineering 3' — likely a formatting error; course name is unclear and credits are ambiguous. Not included due to inability to parse confidently.",
+    "The course 'MECH 4890' on page 3 appears as 'MECH 4890\\n3 Introduction to Nanosatellite Engineering 3' — likely a formatting error; course name is unclear and credits are ambiguous. Not included due to inability to parse confidently.",
+    "The course 'MECH 5961' on page 3 appears as 'MECH 5961\\nAcoustics and Aeroacoustics 3' — likely a formatting error; course name is unclear and credits are ambiguous. Not included due to inability to parse confidently.",
+    "The course 'MECH 4100' on page 3 appears as 'MECH 4100\\nExperiential Projects in Aerospace Engineering' with no credits listed. Not included due to missing credits.",
+    "The note for MATH fundamental course: '[(MATH 1012 OR MATH 1013 OR MATH 1023) AND (MATH 1014 OR MATH 1024)] OR [MATH 1020]' is complex; only the individual courses are listed, not the logical structure. The group note field is empty as the note is attached to the MATH row, not the group.",
+    "The note for MATH 2011-level course: 'MATH 2111 OR MATH 2350 OR MATH 2351' is attached to that row, not the group.",
+    "The note for PHYS: 'PHYS 1112 OR PHYS 1312' is attached to that row, not the group.",
+    "The remark on COMP 1022P and MATH 1012 being deleted is not attached to any group or course as a formal note; it is listed as a remark and not part of the requirement structure.",
+    "total_required_credits (12.0) is a computed value: the sum of the required_credits of all groups in this file. The PDF does not state a single overall minimum total for this program, so this figure is derived by summation and may double-count where optional tracks/options are listed as separate groups."
+  ],
+  "parser": "mineru_api",
+  "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\major\\2024-25\\AE_BEng_in_Aerospace_Engineering.pdf"
+}

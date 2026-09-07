@@ -1,0 +1,95 @@
+{
+  "year": "2025-26",
+  "code": "SREQ-SSCI",
+  "title": "School Requirements - School of Science",
+  "total_required_credits": 21.0,
+  "groups": [
+    {
+      "name": "COMP (Computing foundation)",
+      "required_credits": 3.0,
+      "required_credits_raw": "3",
+      "note": "Note: COMP 1021 OR COMP 1022P OR COMP 1023",
+      "courses": [
+        { "code": "COMP1021", "name": "Introduction to Computer Science", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [1] },
+        { "code": "COMP1022P", "name": "Introduction to Computing with Java (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": [], "source_pages": [1] },
+        { "code": "COMP1023", "name": "Introduction to Python Programming", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [1] }
+      ],
+      "source_pages": [1]
+    },
+    {
+      "name": "SSCI Science Foundation courses",
+      "required_credits": 18.0,
+      "required_credits_raw": "6 courses",
+      "note": "6 courses from the specified elective list, including at least 1 lecture course, but no more than 3 courses (including lecture and laboratory courses) from each of the four disciplines: CHEM, LIFS/OCES, MATH/DASC and PHYS. required_credits shown (18) is the computed lower bound (6 courses at 3 cr each); the actual minimum depends on how many 1-credit laboratory courses are taken and may be lower.",
+      "courses": [
+        { "code": "CHEM1008", "name": "Introductory Chemistry", "credits": 3.0, "credits_raw": "3", "areas": ["CHEM"], "source_pages": [1] },
+        { "code": "CHEM1011", "name": "General Chemistry A: Reactions, Thermodynamics, and Reaction Kinetics", "credits": 3.0, "credits_raw": "3", "areas": ["CHEM"], "source_pages": [1] },
+        { "code": "CHEM1012", "name": "General Chemistry B: Atomic Structure, Molecules, and Bonding Theories", "credits": 3.0, "credits_raw": "3", "areas": ["CHEM"], "source_pages": [1] },
+        { "code": "CHEM1051", "name": "Laboratory for General Chemistry A", "credits": 1.0, "credits_raw": "1", "areas": ["CHEM-lab"], "source_pages": [1] },
+        { "code": "CHEM1052", "name": "Laboratory for General Chemistry B", "credits": 1.0, "credits_raw": "1", "areas": ["CHEM-lab"], "source_pages": [1] },
+        { "code": "DASC2010", "name": "Calculus for Data Analytics in Science", "credits": 3.0, "credits_raw": "3", "areas": ["MATH/DASC"], "source_pages": [1] },
+        { "code": "LIFS1030", "name": "Environmental Science (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["LIFS/OCES"], "source_pages": [1] },
+        { "code": "LIFS1901", "name": "General Biology I", "credits": 3.0, "credits_raw": "3", "areas": ["LIFS/OCES"], "source_pages": [1] },
+        { "code": "LIFS1902", "name": "General Biology II", "credits": 3.0, "credits_raw": "3", "areas": ["LIFS/OCES"], "source_pages": [1] },
+        { "code": "LIFS1903", "name": "Laboratory for General Biology I", "credits": 1.0, "credits_raw": "1", "areas": ["LIFS/OCES-lab"], "source_pages": [1] },
+        { "code": "LIFS1904", "name": "Laboratory for General Biology II", "credits": 1.0, "credits_raw": "1", "areas": ["LIFS/OCES-lab"], "source_pages": [1] },
+        { "code": "LIFS1930", "name": "Nature of Life Sciences", "credits": 3.0, "credits_raw": "3", "areas": ["LIFS/OCES"], "source_pages": [1] },
+        { "code": "LIFS2210", "name": "Biochemistry I", "credits": 3.0, "credits_raw": "3", "areas": ["LIFS/OCES"], "source_pages": [1] },
+        { "code": "MATH1005", "name": "Calculus and Statistics", "credits": 4.0, "credits_raw": "4", "areas": ["MATH/DASC"], "source_pages": [1] },
+        { "code": "MATH1006", "name": "Calculus, Vectors, and Matrices", "credits": 4.0, "credits_raw": "4", "areas": ["MATH/DASC"], "source_pages": [1] },
+        { "code": "MATH1013", "name": "Calculus I", "credits": 3.0, "credits_raw": "3", "areas": ["MATH/DASC"], "source_pages": [1] },
+        { "code": "MATH1014", "name": "Calculus II", "credits": 3.0, "credits_raw": "3", "areas": ["MATH/DASC"], "source_pages": [2] },
+        { "code": "MATH1020", "name": "Accelerated Calculus", "credits": 4.0, "credits_raw": "4", "areas": ["MATH/DASC"], "source_pages": [2] },
+        { "code": "MATH1023", "name": "Honors Calculus I", "credits": 3.0, "credits_raw": "3", "areas": ["MATH/DASC"], "source_pages": [2] },
+        { "code": "MATH1024", "name": "Honors Calculus II", "credits": 3.0, "credits_raw": "3", "areas": ["MATH/DASC"], "source_pages": [2] },
+        { "code": "MATH2011", "name": "Introduction to Multivariable Calculus", "credits": 3.0, "credits_raw": "3", "areas": ["MATH/DASC"], "source_pages": [2] },
+        { "code": "MATH2023", "name": "Multivariable Calculus", "credits": 4.0, "credits_raw": "4", "areas": ["MATH/DASC"], "source_pages": [2] },
+        { "code": "MATH2111", "name": "Matrix Algebra and Applications", "credits": 3.0, "credits_raw": "3", "areas": ["MATH/DASC"], "source_pages": [2] },
+        { "code": "MATH2121", "name": "Linear Algebra", "credits": 4.0, "credits_raw": "4", "areas": ["MATH/DASC"], "source_pages": [2] },
+        { "code": "MATH2131", "name": "Honors in Linear and Abstract Algebra I", "credits": 4.0, "credits_raw": "4", "areas": ["MATH/DASC"], "source_pages": [2] },
+        { "code": "OCES1001", "name": "The Earth as a Blue Planet", "credits": 3.0, "credits_raw": "3", "areas": ["LIFS/OCES"], "source_pages": [2] },
+        { "code": "OCES1010", "name": "Principles and Applications of Environmental Science", "credits": 3.0, "credits_raw": "3", "areas": ["LIFS/OCES"], "source_pages": [2] },
+        { "code": "PHYS1101", "name": "Introductory Physics", "credits": 4.0, "credits_raw": "4", "areas": ["PHYS"], "source_pages": [2] },
+        { "code": "PHYS1111", "name": "General Physics I", "credits": 3.0, "credits_raw": "3", "areas": ["PHYS"], "source_pages": [2] },
+        { "code": "PHYS1112", "name": "General Physics I with Calculus", "credits": 3.0, "credits_raw": "3", "areas": ["PHYS"], "source_pages": [2] },
+        { "code": "PHYS1113", "name": "Laboratory for General Physics I", "credits": 1.0, "credits_raw": "1", "areas": ["PHYS-lab"], "source_pages": [2] },
+        { "code": "PHYS1114", "name": "General Physics II", "credits": 3.0, "credits_raw": "3", "areas": ["PHYS"], "source_pages": [2] },
+        { "code": "PHYS1115", "name": "Laboratory for General Physics II", "credits": 1.0, "credits_raw": "1", "areas": ["PHYS-lab"], "source_pages": [2] },
+        { "code": "PHYS1312", "name": "Honors General Physics I", "credits": 3.0, "credits_raw": "3", "areas": ["PHYS"], "source_pages": [2] },
+        { "code": "PHYS1314", "name": "Honors General Physics II", "credits": 3.0, "credits_raw": "3", "areas": ["PHYS"], "source_pages": [2] }
+      ],
+      "source_pages": [1, 2]
+    },
+    {
+      "name": "SSCI Additional Required Courses for IRE Track",
+      "required_credits": 8.0,
+      "required_credits_raw": "8-9",
+      "note": "Note: SCIE 1500 AND SCIE 2500 AND SCIE 3900 AND LANG 3027 AND (UROP 1000 OR UROP 1100). For students in the International Research Enrichment (IRE) Track.",
+      "courses": [
+        { "code": "SCIE1500", "name": "Guided Study on Research I", "credits": 1.0, "credits_raw": "1", "areas": [], "source_pages": [2] },
+        { "code": "SCIE2500", "name": "Guided Study on Research II", "credits": 1.0, "credits_raw": "1", "areas": [], "source_pages": [2] },
+        { "code": "SCIE3900", "name": "International Research Experience", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] },
+        { "code": "LANG3027", "name": "Science Communication in English for Research Students", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] },
+        { "code": "UROP1000", "name": "Undergraduate Research Opportunities", "credits": 0.0, "credits_raw": "0", "areas": [], "source_pages": [2] },
+        { "code": "UROP1100", "name": "Undergraduate Research Opportunities Series 1", "credits": 1.0, "credits_raw": "1", "areas": [], "source_pages": [2] }
+      ],
+      "source_pages": [2]
+    },
+    {
+      "name": "SSCI Additional Science 2000-level or above Electives for IRE Track",
+      "required_credits": 6.0,
+      "required_credits_raw": "6",
+      "note": "Any 2 courses of the subject and level as specified and approved by advisor. For students in the IRE Track.",
+      "courses": [],
+      "source_pages": [2]
+    }
+  ],
+  "uncertain": [
+    "total_required_credits (21.0) is the computed sum of the base (non-IRE) school-requirement groups: COMP(3) + Science Foundation(18) = 21. The IRE Track adds ~14 more credits (groups 3 + 4).",
+    "Compared with 2024-25, the Science Foundation requirement changed from '8 courses' (22 cr) to '6 courses'; MATH 1012 was removed and MATH 1005 / MATH 1006 (4 cr each) were added to the list. The COMP group option remains COMP 1021/1022P/COMP 1023. The LANG 2010 group was already removed in 2024-25.",
+    "required_credits for the Science Foundation (18) is a computed lower bound (6 courses x 3 cr); the true minimum depends on the mix of 1-credit labs taken.",
+    "COMP 1022P, LIFS 1030 were deleted but remain in the PDF list."
+  ],
+  "parser": "ai_read_pdfplumber_text",
+  "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\minor_sklrequire_extmajor\\2025-26\\school\\SREQ-SSCI_School_Requirements__School_of_Science.pdf"
+}

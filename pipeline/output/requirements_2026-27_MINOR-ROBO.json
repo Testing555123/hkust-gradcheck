@@ -1,0 +1,194 @@
+{
+  "year": "2026-27",
+  "code": "MINOR-ROBO",
+  "title": "Minor Program in Robotics",
+  "total_required_credits": 18.0,
+  "groups": [
+    {
+      "name": "Elective(s)",
+      "required_credits": 18.0,
+      "required_credits_raw": "18",
+      "note": "Robotics Electives: 18 credits from the specified elective list, of which at least 7 credits must be taken from Group A Electives and include at least 1 COMP course; at least 2 courses from Group B; and at least 1 course from Group C. The group for each course is given in 'areas'. Subject to approval, a PG course (e.g. ELEC 5660, COMP 5421) may substitute a Group B elective. ENGG 4950F and ENGG 4950T may not count towards Group C.",
+      "courses": [
+        {
+          "code": "ELEC3300",
+          "name": "Introduction to Embedded Systems",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [
+            "A"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP1029C",
+          "name": "C Programming Bridging Course",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [
+            "A"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP2011",
+          "name": "Programming with C++",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [
+            "A"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MECH2520",
+          "name": "Design and Manufacturing I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "A"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "ELEC3200",
+          "name": "System Modeling, Analysis and Control",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [
+            "B"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "ELEC4220",
+          "name": "Robotics: Modeling, Control and Planning",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "B"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP4211",
+          "name": "Machine Learning",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "B"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP4421",
+          "name": "Image Processing",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "B"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "IEDA2100E",
+          "name": "Computing in Industrial Applications",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "B"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH3610",
+          "name": "Control Principles",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "B"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH4710",
+          "name": "Introduction to Robotics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "B"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ENGG3960",
+          "name": "Robotics Special Project",
+          "credits": 3.0,
+          "credits_raw": "1-4",
+          "areas": [
+            "C"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ENGG4950",
+          "name": "Engineering Special Project",
+          "credits": 3.0,
+          "credits_raw": "1-4",
+          "areas": [
+            "C"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH4000D",
+          "name": "Experiential Learning in Robotics Technologies",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "C"
+          ],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        1,
+        2
+      ]
+    }
+  ],
+  "uncertain": [
+    "total_required_credits (18.0) is the stated minimum total for the minor (PDF: 'complete a minimum total of 18 credits').",
+    "ENGG 3960-3962 and ENGG 4950 have variable credits 1-4 (taken as 3 for the lower-bound total); exact courses covered by the 'ENGG3960-3962' range are not individually enumerated in the PDF."
+  ],
+  "parser": "ai_read_pdfplumber_text",
+  "source_pdf": "C:/Users/User/CodeBuddy/20260906005404/unpress_pdf/minor_sklrequire_extmajor/2026-27/minor/MINOR-ROBO_Minor_Program_in_Robotics.pdf"
+}

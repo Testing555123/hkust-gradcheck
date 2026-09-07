@@ -32,7 +32,7 @@ $env:PYTHONIOENCODING='utf-8'
 - **选修课的 `areas` 字段**：每门选修课的 Area 归属（同课可属多 Area）；旧产物无此字段时前端优雅降级（不显示 Area 分块），可用 `--force` 重跑补齐
 - `uncertain` 数组中 LLM 自述不确定的条目
 
-直接编辑 JSON 保存即可——**seed 只认 output/ 下的 JSON，人工修订是流程的一部分**。
+直接编辑 JSON 保存即可——**导出脚本只认 output/ 下的 JSON，人工修订是流程的一部分**。
 
 ### 关于 Area 字段与旧产物兼容
 
@@ -49,7 +49,7 @@ $env:PYTHONIOENCODING='utf-8'
 （`GRAD_LLM_MODELS`），429 时自动切换下一个模型。若仍频繁 429，建议在网关管理界面
 为更多路由补配上游 API key（部分路由报 "no usable key configured"）。
 
-## 4. 批量处理与导入
+## 4. 批量处理与导出静态数据
 
 确认样本无误后：
 
@@ -57,21 +57,26 @@ $env:PYTHONIOENCODING='utf-8'
 # 批量（断点续跑，已完成的自动跳过）
 ..\ .venv\Scripts\python.exe -m run_pipeline --all
 
-# 全部校对完成后导入
-..\ .venv\Scripts\python.exe ..\backend\scripts\seed.py
+# 把 255 份产物 + courses.db 导出为前端静态数据（写入 frontend/public/data/）
+..\ .venv\Scripts\python.exe scripts\export_static_data.py
+
+# 只校验、不写文件（数量断言：255 份方案 / 1144 门课 / 四学年齐全）
+..\ .venv\Scripts\python.exe scripts\export_static_data.py --check
 ```
 
-`seed.py` 按 (year, code) 重建式写入：重复导入同一方案会先删旧记录，可放心多次执行。
+导出是**全量重建**：每次都会清空 `frontend/public/data/programs/` 再重写，
+`--check` 会逐份确认方案文件存在且要求树非空。产物需要随代码一起提交（Pages 构建时不再重算）。
 
 ## 5. 验证
 
 ```powershell
-# 接口抽查
-curl http://127.0.0.1:8000/api/programs
-curl http://127.0.0.1:8000/api/programs/<学年>/<代码>
+# 起前端（读的就是刚导出的 public/data）
+cd frontend
+npm run dev
 ```
 
-前端刷新后应能在选择器中看到新学年/专业。
+打开后确认：选择器里能看到新学年/专业，要求明细页能显示页码出处与「数据存疑」条目。
+CI 会再次跑 `--check` 并比对产物与 `pipeline/output` 是否一致，忘记导出会在 PR 上直接报红。
 
 ## 故障排查
 
@@ -79,5 +84,6 @@ curl http://127.0.0.1:8000/api/programs/<学年>/<代码>
 |------|------|
 | `缺少 MINERU_API_TOKEN` | 到 https://mineru.net 获取并设置环境变量；或先用 `--parser pymupdf --skip-llm` 验证链路 |
 | 大量 `missing_in_courses_db` | 新学年课程代码未收录进 courses.db，先更新课程库再重跑 crosscheck（`--crosscheck-only`） |
-| `courses.db` 更新后网站数据没变 | 删除 `backend/data/grad.db` 重启后端（启动时自动从原库重新复制） |
+| `courses.db` 更新后网站数据没变 | 重新跑 `scripts/export_static_data.py`（静态数据是一次性快照，不像旧版那样运行时读库） |
 | 批量中断 | 直接重跑同一命令，断点续跑会跳过已完成项 |
+| CI 报「静态数据未同步」 | 本机跑一次导出脚本，把 `frontend/public/data` 的改动一起提交 |

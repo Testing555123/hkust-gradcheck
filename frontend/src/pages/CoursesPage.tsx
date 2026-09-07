@@ -18,7 +18,6 @@ import {
   type CourseFilterState,
   type FlatCourseWithStatus,
 } from "@/lib/course-filter";
-import type { AttachedProgram } from "@/lib/attached";
 import type { AttachedEntryView } from "@/pages/OverviewPage";
 import type { ProgramTreeData } from "@/types";
 

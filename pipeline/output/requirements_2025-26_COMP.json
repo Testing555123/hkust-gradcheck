@@ -1,0 +1,1103 @@
+{
+  "year": "2025-26",
+  "code": "COMP",
+  "title": "BEng in Computer Science",
+  "total_required_credits": 60.0,
+  "groups": [
+    {
+      "name": "Engineering Fundamental Course(s)",
+      "required_credits": 3.0,
+      "required_credits_raw": "3",
+      "note": "",
+      "courses": [
+        {
+          "code": "COMP1023",
+          "name": "Introduction to Python Programming",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Engineering Fundamental Course(s)",
+      "required_credits": 4.0,
+      "required_credits_raw": "4-6",
+      "note": "Note: [(MATH 1013 OR MATH 1023) AND (MATH 1014 OR MATH 1024)] OR [MATH 1020]",
+      "courses": [
+        {
+          "code": "MATH1013",
+          "name": "Calculus I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1014",
+          "name": "Calculus II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1020",
+          "name": "Accelerated Calculus",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1023",
+          "name": "Honors Calculus I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1024",
+          "name": "Honors Calculus II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Engineering Fundamental Course(s)",
+      "required_credits": 3.0,
+      "required_credits_raw": "3-4",
+      "note": "Note: MATH 2111 OR MATH 2121 OR MATH 2131",
+      "courses": [
+        {
+          "code": "MATH2111",
+          "name": "Matrix Algebra and Applications",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH2121",
+          "name": "Linear Algebra",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH2131",
+          "name": "Honors in Linear and Abstract Algebra I",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 6.0,
+      "required_credits_raw": "6",
+      "note": "Note: [COMP 1991 AND (COMP 4981 OR COMP 4981H)] OR [COMP 4910]",
+      "courses": [
+        {
+          "code": "COMP1991",
+          "name": "Industrial Experience",
+          "credits": 0.0,
+          "credits_raw": "0",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP4910",
+          "name": "Co-op Program",
+          "credits": 6.0,
+          "credits_raw": "6",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP4981",
+          "name": "Final Year Project",
+          "credits": 6.0,
+          "credits_raw": "6",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP4981H",
+          "name": "Final Year Thesis",
+          "credits": 6.0,
+          "credits_raw": "6",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 5.0,
+      "required_credits_raw": "5-8",
+      "note": "Note: (COMP 2011 AND COMP 2012) OR COMP 2012H",
+      "courses": [
+        {
+          "code": "COMP2011",
+          "name": "Programming with C++",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP2012",
+          "name": "Object-Oriented Programming and Data Structures",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP2012H",
+          "name": "Honors Object-Oriented Programming and Data Structures",
+          "credits": 5.0,
+          "credits_raw": "5",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 4.0,
+      "required_credits_raw": "4",
+      "note": "",
+      "courses": [
+        {
+          "code": "COMP2611",
+          "name": "Computer Organization",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 4.0,
+      "required_credits_raw": "4",
+      "note": "Note: COMP 2711 OR COMP 2711H",
+      "courses": [
+        {
+          "code": "COMP2711",
+          "name": "Discrete Mathematical Tools for Computer Science",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP2711H",
+          "name": "Honors Discrete Mathematical Tools for Computer Science",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 4.0,
+      "required_credits_raw": "4",
+      "note": "Note: COMP 3111 OR COMP 3111H",
+      "courses": [
+        {
+          "code": "COMP3111",
+          "name": "Software Engineering",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP3111H",
+          "name": "Honors Software Engineering",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 3.0,
+      "required_credits_raw": "3",
+      "note": "",
+      "courses": [
+        {
+          "code": "COMP3511",
+          "name": "Operating Systems",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 3.0,
+      "required_credits_raw": "3-4",
+      "note": "Note: COMP 3711 OR COMP 3711H",
+      "courses": [
+        {
+          "code": "COMP3711",
+          "name": "Design and Analysis of Algorithms",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP3711H",
+          "name": "Honors Design and Analysis of Algorithms",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 0.0,
+      "required_credits_raw": "0",
+      "note": "Note: Students are required to take COMP 4900 for every regular term in which they are in residency at HKUST with major in COMP",
+      "courses": [
+        {
+          "code": "COMP4900",
+          "name": "Academic and Professional Development",
+          "credits": 0.0,
+          "credits_raw": "0",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 3.0,
+      "required_credits_raw": "3-4",
+      "note": "Note: ELEC 2600 OR ELEC 2600H OR IEDA 2520 OR IEDA 2540 OR MATH 2411 OR MATH 2421 OR MATH 2431",
+      "courses": [
+        {
+          "code": "ELEC2600",
+          "name": "Probability and Random Processes in Engineering",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ELEC2600H",
+          "name": "Honors Probability and Random Processes in Engineering",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "IEDA2520",
+          "name": "Probability for Engineers",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "IEDA2540",
+          "name": "Statistics for Engineers",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MATH2411",
+          "name": "Applied Statistics",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MATH2421",
+          "name": "Probability",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MATH2431",
+          "name": "Honors Probability",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Elective(s)",
+      "required_credits": 3.0,
+      "required_credits_raw": "3",
+      "note": "COMP 2000-level or above Elective (Any course(s) of the subject and level as specified)",
+      "courses": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Elective(s)",
+      "required_credits": 15.0,
+      "required_credits_raw": "15",
+      "note": "COMP Electives (5 courses from the specified elective list, of which at least 3 courses should be taken from 1 area and at least 2 courses outside that area (including course(s) in the Courses Without Associated Area). Students may use at most one course under Deep Learning Applications (COMP 4471 and COMP 5215) to count towards this elective requirement.) Areas: Artificial Intelligence / Theory; Vision & Graphics / Multimedia; Software / Database; Computer Systems / Networking; Courses Without Associated Area. Duplicate courses appearing in multiple areas are listed once.",
+      "courses": [
+        {
+          "code": "COMP3211",
+          "name": "Learning, Reasoning, and Decision Making in AI",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP3721",
+          "name": "Theory of Computation",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP4211",
+          "name": "Machine Learning",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP4212",
+          "name": "Reinforcement Learning",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4221",
+          "name": "Introduction to Natural Language Processing",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4222",
+          "name": "Machine Learning with Structured Data",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4331",
+          "name": "Data Mining",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4332",
+          "name": "Big Data Mining and Management",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4421",
+          "name": "Image Processing",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4471",
+          "name": "Deep Learning in Computer Vision",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4541",
+          "name": "Blockchain, Cryptocurrencies and Smart Contracts",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4551",
+          "name": "Large-Scale Machine Learning System for Foundation Models",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4901B",
+          "name": "Large Language Models",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4901D",
+          "name": "Embedded AI Systems",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4901L",
+          "name": "Foundations of Computer Vision",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4901R",
+          "name": "Algorithmic Game Theory",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4901T",
+          "name": "Introduction to Computer Vision",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4901V",
+          "name": "Large-Scale Deep Perception, Localization, and Planning for Autonomous Vehicles",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4901X",
+          "name": "Formal Reasoning about Programs",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP5211",
+          "name": "Advanced Artificial Intelligence",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP5212",
+          "name": "Machine Learning",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP5214",
+          "name": "Advanced Deep Learning Architectures",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP5215",
+          "name": "Perception and Information Processing for Robotics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP5221",
+          "name": "Natural Language Processing",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP5331",
+          "name": "Knowledge Discovery in Databases",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP5421",
+          "name": "Computer Vision",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP5711",
+          "name": "Introduction to Advanced Algorithmic Techniques",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP5712",
+          "name": "Introduction to Combinatorial Optimization",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP5713",
+          "name": "Computational Geometry",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4411",
+          "name": "Computer Graphics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4431",
+          "name": "Multimedia Computing",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4441",
+          "name": "Music Video Creation",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4451",
+          "name": "Game Programming",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4461",
+          "name": "Human-Computer Interaction",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4462",
+          "name": "Data Visualization",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP5411",
+          "name": "Advanced Computer Graphics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP3021",
+          "name": "Java Programming",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP3031",
+          "name": "Principles of Programming Languages",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP3311",
+          "name": "Database Management Systems",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4021",
+          "name": "Internet Computing",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4121",
+          "name": "Modern Compiler Construction",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4321",
+          "name": "Search Engines for Web and Enterprise Data",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "COMP4521",
+          "name": "Mobile Application Development",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "COMP4651",
+          "name": "Cloud Computing and Big Data Systems",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "COMP4901A",
+          "name": "Distributed Systems",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "COMP5111",
+          "name": "Fundamentals of Software Analysis",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "COMP5112",
+          "name": "Parallel Programming",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "COMP5311",
+          "name": "Database Architecture and Implementation",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "COMP3631",
+          "name": "Cryptography",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "COMP4511",
+          "name": "System and Kernel Programming in Linux",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "COMP4531",
+          "name": "IoT and Smart Sensing",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "COMP4611",
+          "name": "Design and Analysis of Computer Architectures",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "COMP4621",
+          "name": "Computer and Communication Networks",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "COMP4632",
+          "name": "Practicing Cybersecurity: Attacks and Counter-measures",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "COMP4634",
+          "name": "Cybersecurity",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "COMP4635",
+          "name": "Practical Cloud Computing Security",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "COMP4641",
+          "name": "Social Information Network Analysis and Engineering",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "COMP4901Q",
+          "name": "High Performance Computing",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "COMP5621",
+          "name": "Computer Networks",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "COMP5631",
+          "name": "Cryptography and Security",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "COMP4911",
+          "name": "IT Entrepreneurship",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        }
+      ],
+      "source_pages": [
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "uncertain": [
+    "total_required_credits is a calculated value: the PDF does not state a fixed total for the major; it is the sum of the required_credits of all groups (using the lower bound for credit ranges such as 4-6, 5-8, 3-4).",
+    "Several blocks allow alternative course choices (e.g. MATH blocks, FYP block, COMP 2011+2012/2012H, COMP 2711/2711H, COMP 3111/3111H, COMP 3711/3711H, probability block), so the actual credits taken by a student may differ from the calculated total.",
+    "The 'COMP 2000-level or above Elective' group (3 credits) does not have a specific course list in the PDF ('Any course(s) of the subject and level as specified'), so its courses array is empty.",
+    "Elective courses that appear in more than one area (e.g. COMP 4421, COMP 4471, COMP 5421, COMP 5331, COMP 4521, COMP 4651, COMP 4901A, COMP 4541) are listed once in the JSON although they appear in multiple areas in the PDF.",
+    "Remarks in the PDF note that COMP 4511 and ELEC 2600H were last offered in earlier years and subsequently deleted; they are kept in the lists as printed in the PDF.",
+    "The PDF header/footer shows '2026-27 COMP (4Y) (2025-26 intake)', i.e. the document is the 2025-26 intake curriculum rendered on a 2026-27 template; the year is recorded as 2025-26 per the intake year."
+  ],
+  "parser": "ai_read_pdfplumber_text",
+  "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\major\\2025-26\\COMP_BEng_in_Computer_Science.pdf"
+}

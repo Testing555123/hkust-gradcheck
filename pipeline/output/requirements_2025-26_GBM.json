@@ -1,0 +1,25 @@
+{
+  "year": "2025-26",
+  "code": "GBM",
+  "title": "BBA in General Business Management",
+  "total_required_credits": 29.0,
+  "groups": [
+    {
+      "name": "SB&M Electives",
+      "required_credits": 29.0,
+      "required_credits_raw": "29",
+      "note": "Any 9 courses offered by the departments under SB&M, of which at least 4 courses are of 3000-level or above.",
+      "courses": [],
+      "source_pages": [
+        1
+      ]
+    }
+  ],
+  "uncertain": [
+    "Total required credits for the major are not stated separately; 29 credits is the stated minimum of the single elective group (the PDF does not give an overall major total).",
+    "courses is intentionally empty: the PDF defines this requirement as an open-ended elective (any 9 courses offered by the departments under SB&M, at least 4 at 3000-level or above) and provides no specific course list.",
+    "Verified against the PDF: this program occupies a single page containing only this one requirement group (resolved - there are no additional groups on subsequent pages)."
+  ],
+  "parser": "ai_read_pdfplumber_text",
+  "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\major\\2025-26\\GBM_BBA_in_General_Business_Management.pdf"
+}

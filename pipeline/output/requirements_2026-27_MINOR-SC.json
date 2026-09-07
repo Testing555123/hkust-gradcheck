@@ -1,0 +1,323 @@
+{
+  "year": "2026-27",
+  "code": "MINOR-SC",
+  "title": "Minor Program in Smart City",
+  "total_required_credits": 18.0,
+  "groups": [
+    {
+      "name": "Required Course(s)",
+      "required_credits": 3.0,
+      "required_credits_raw": "3",
+      "note": "",
+      "courses": [
+        {
+          "code": "CIVL1210",
+          "name": "Fundamental of Green Buildings",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Elective(s)",
+      "required_credits": 15.0,
+      "required_credits_raw": "15",
+      "note": "Smart City Electives: 5 courses in at least 2 fields from the specified elective list. At least 2 courses at 4000-level. Course(s) taken as required course(s) of the major program may not be counted towards this elective requirement. The field for each course is given in 'areas'.",
+      "courses": [
+        {
+          "code": "CIVL4210",
+          "name": "Advanced Construction with AI and Robotics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "Building/Construction Automation"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CIVL4360",
+          "name": "Implementing Artificial Intelligence in Smart Buildings",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "Building/Construction Automation"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MECH4360",
+          "name": "Introduction to Intelligent Building Systems",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "Building/Construction Automation"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CIVL4640",
+          "name": "Introduction to Smart City Economics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "Economy/System Engineering"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ISOM3360",
+          "name": "Data Mining for Business Analytics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "Economy/System Engineering"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ISOM3370",
+          "name": "Big Data Technologies",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "Economy/System Engineering"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CIVL4310",
+          "name": "Energy System Modeling for Buildings and Cities",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "Energy"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "PPOL3210",
+          "name": "Energy Policy",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "Energy"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MECH4350",
+          "name": "Indoor Air Quality in Buildings",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "Environment"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ENVR2020",
+          "name": "Urban Air Pollution",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "Environment"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ENVR4330",
+          "name": "Environmental Geographical Information System",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "Environment"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CIVL4220",
+          "name": "Scientific Machine Learning for Infrastructure Systems",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "Internet of Things/Big Data"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP3311",
+          "name": "Database Management Systems",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "Internet of Things/Big Data"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP4211",
+          "name": "Machine Learning",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "Internet of Things/Big Data"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP4331",
+          "name": "Data Mining",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "Internet of Things/Big Data"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "EMIA1901",
+          "name": "Introduction to Smart City Development",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "Internet of Things/Big Data"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ISDN2602",
+          "name": "Internet of Things: Integrative System Design",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "Internet of Things/Big Data"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CIVL4450",
+          "name": "Carbon Footprint Analysis and Reduction",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "Sustainability"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ENVR3110",
+          "name": "Life Cycle Assessment for Sustainable Development",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "Sustainability"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "PPOL2110",
+          "name": "Science, Technology and Society in China",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "Sustainability"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CIVL4610",
+          "name": "Introduction to Data Analytics for Smart Transportation Systems",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "Transportation"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CIVL4650",
+          "name": "Multi-agent Decision Making in Smart Cities (deleted)",
+          "credits": 3.0,
+          "credits_raw": "3**",
+          "areas": [
+            "Transportation"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CIVL4660",
+          "name": "Geospatial Science and Technology for Smart City",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [
+            "Transportation"
+          ],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        1,
+        2
+      ]
+    }
+  ],
+  "uncertain": [
+    "total_required_credits (18.0) is the stated minimum total for the minor (PDF: 'complete a minimum total of 18 credits').",
+    "CIVL 4650 was deleted (last offered 2021-22) but remains in the PDF list."
+  ],
+  "parser": "ai_read_pdfplumber_text",
+  "source_pdf": "C:/Users/User/CodeBuddy/20260906005404/unpress_pdf/minor_sklrequire_extmajor/2026-27/minor/MINOR-SC_Minor_Program_in_Smart_City.pdf"
+}

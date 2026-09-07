@@ -1,0 +1,212 @@
+{
+  "year": "2023-24",
+  "code": "MGMT",
+  "title": "BBA in Management",
+  "total_required_credits": 29.0,
+  "groups": [
+    {
+      "name": "Required Course(s)",
+      "required_credits": 4.0,
+      "required_credits_raw": "4",
+      "note": "MGMT 3110 OR MGMT 3120 (Students in the Human Resources Option must take MGMT 3110 to fulfill this requirement. Students in the Consulting Option must take MGMT 3120 to fulfill this requirement.)",
+      "courses": [
+        {
+          "code": "MGMT3110",
+          "name": "Human Resources Management",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MGMT3120",
+          "name": "Managerial Leadership",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 4.0,
+      "required_credits_raw": "4",
+      "note": "MGMT 3130 OR MGMT 3140 (Students in the Consulting Option must take MGMT 3140 to fulfill this requirement.)",
+      "courses": [
+        {
+          "code": "MGMT3130",
+          "name": "Judgement and Decision Making in Organizations",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MGMT3140",
+          "name": "Negotiation",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 3.0,
+      "required_credits_raw": "3-4",
+      "note": "MGMT 4210 OR MGMT 4220 (Students in the Consulting Option or in the Corporate Social Responsibility and Sustainability Option must take MGMT 4210 to fulfill this requirement.)",
+      "courses": [
+        {
+          "code": "MGMT4210",
+          "name": "Corporate Strategy",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MGMT4220",
+          "name": "Entrepreneurship and Innovation",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Elective(s)",
+      "required_credits": 9.0,
+      "required_credits_raw": "9",
+      "note": "MGMT 3000-level or above Electives (Any 3 courses of the subject and level as specified. Courses taken as Option Required Courses may not be counted towards the elective requirement.)",
+      "courses": [],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 3.0,
+      "required_credits_raw": "3-4",
+      "note": "MGMT 3110 OR MGMT 3160 OR MGMT 4230",
+      "courses": [
+        {
+          "code": "MGMT3110",
+          "name": "Human Resources Management",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MGMT3160",
+          "name": "Environmental Business Strategies",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MGMT4230",
+          "name": "International Management",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 6.0,
+      "required_credits_raw": "6",
+      "note": "MGMT 4270 OR MGMT 4280 OR MGMT 4290 OR MGMT 4300 (2 courses out of 4)",
+      "courses": [
+        {
+          "code": "MGMT4270",
+          "name": "Training and Development",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MGMT4280",
+          "name": "Transnational Legal Issues and Dispute Settlement",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MGMT4290",
+          "name": "HR Analytics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MGMT4300",
+          "name": "Knowing and Managing Your Social Networks for Careers and Business",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        }
+      ],
+      "source_pages": [
+        3
+      ]
+    }
+  ],
+  "uncertain": [
+    "Total required credits for the major is not explicitly stated in the provided text; set to 0 as per instruction.",
+    "The elective group on page 2 lists no specific courses, only a description; no courses extracted for the elective group.",
+    "Course 'MGMT3160' appears on page 2 in a table fragment but its credit value is confirmed as 3 from the same row; however, the table structure is incomplete and requires human verification for context.",
+    "Course 'MGMT4250' is referenced in the Consulting Option table on page 2 as part of 'MGMT 4230 4250' but only 'MGMT4230' is listed as a course; 'MGMT4250' may be a typo or formatting error and requires human review.",
+    "total_required_credits (29.0) is a computed value: the sum of the required_credits of all groups in this file. The PDF does not state a single overall minimum total for this program, so this figure is derived by summation and may double-count where optional tracks/options are listed as separate groups."
+  ],
+  "parser": "mineru_api",
+  "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\major\\2023-24\\MGMT_BBA_in_Management.pdf"
+}

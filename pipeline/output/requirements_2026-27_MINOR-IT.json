@@ -1,0 +1,55 @@
+{
+  "year": "2026-27",
+  "code": "MINOR-IT",
+  "title": "Minor Program in Information Technology",
+  "total_required_credits": 18.0,
+  "groups": [
+    {
+      "name": "Required Course(s)",
+      "required_credits": 8.0,
+      "required_credits_raw": "8",
+      "note": "Note: COMP 2011 AND COMP 2012 (Students who took the 5-credit COMP 2012H in 2014-15 or after may request to use the course to replace both COMP 2011 and COMP 2012. In this case, students should take additional IT elective course(s) to make up the credits shortfall.)",
+      "courses": [
+        {
+          "code": "COMP2011",
+          "name": "Programming with C++",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP2012",
+          "name": "Object-Oriented Programming and Data Structures",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Elective(s)",
+      "required_credits": 10.0,
+      "required_credits_raw": "10",
+      "note": "Information Technology Electives: courses from the specified elective list, of which at least 6 credits must be at the 3000-level or above; out of these 6 credits at 3000-level or above, at least 3 credits must be at the 4000-level or above. The pool is open-ended: any COMP courses at 2000-level or above except COMP 3900, COMP 4900, COMP 4981-4995. Students may request to use up to 6 credits of courses listed under the department IT minor page. courses array is empty (open-ended).",
+      "courses": [],
+      "source_pages": [
+        2
+      ]
+    }
+  ],
+  "uncertain": [
+    "total_required_credits (18.0) is the stated minimum total for the minor (PDF: 'complete a minimum total of 18 credits').",
+    "The elective requirement is open-ended (any qualifying COMP course); the PDF lists no fixed course codes, so the courses array is empty."
+  ],
+  "parser": "ai_read_pdfplumber_text",
+  "source_pdf": "C:/Users/User/CodeBuddy/20260906005404/unpress_pdf/minor_sklrequire_extmajor/2026-27/minor/MINOR-IT_Minor_Program_in_Information_Technology.pdf"
+}

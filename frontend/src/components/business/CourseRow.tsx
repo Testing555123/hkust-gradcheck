@@ -1,6 +1,10 @@
+import { Info } from "lucide-react";
+
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useSelection } from "@/stores/selection";
+import { useUi } from "@/stores/ui";
 import { cn } from "@/lib/utils";
 import type { CourseRef } from "@/types";
 
@@ -14,6 +18,7 @@ interface CourseRowProps {
 export function CourseRow({ course, groupName, sourceRef }: CourseRowProps) {
   const current = useSelection((s) => s.status[course.code]);
   const toggle = useSelection((s) => s.toggle);
+  const openCourse = useUi((s) => s.openCourse);
 
   const isTaken = current === "taken";
   const isPlanned = current === "planned";
@@ -78,6 +83,16 @@ export function CourseRow({ course, groupName, sourceRef }: CourseRowProps) {
         <Badge variant="secondary" className="tabular-nums">
           {course.credits} 学分
         </Badge>
+        <Button
+          variant="ghost"
+          size="icon"
+          className="h-6 w-6 shrink-0 text-muted-foreground"
+          aria-label={`查看 ${course.code} 课程详情`}
+          data-testid="course-info"
+          onClick={() => openCourse(course.code)}
+        >
+          <Info className="h-3.5 w-3.5" />
+        </Button>
       </div>
     </div>
   );

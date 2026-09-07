@@ -1,0 +1,13 @@
+# Cloudflare Pages 静态资源缓存策略
+# 参考：https://developers.cloudflare.com/pages/platform/headers/
+
+# 构建产物带内容哈希，可长期 immutable
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# 数据文件：文件名稳定但内容会随管线更新，短缓存 + 重新校验
+/data/meta.json
+  Cache-Control: public, max-age=0, must-revalidate
+
+/data/*
+  Cache-Control: public, max-age=300, must-revalidate

@@ -1,0 +1,169 @@
+{
+  "year": "2025-26",
+  "code": "ACCT",
+  "title": "BBA in Professional Accounting",
+  "total_required_credits": 34.0,
+  "groups": [
+    {
+      "name": "Required Course(s)",
+      "required_credits": 19.0,
+      "required_credits_raw": "19",
+      "note": "",
+      "courses": [
+        {
+          "code": "ACCT3010",
+          "name": "Financial Accounting I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "ACCT3020",
+          "name": "Financial Accounting II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "ACCT3210",
+          "name": "Advanced Management Accounting",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "ACCT3610",
+          "name": "Business Law",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "ACCT3880",
+          "name": "Professional Excellence Program",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "ACCT4010",
+          "name": "Advanced Financial Accounting",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "ACCT4510",
+          "name": "Auditing",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Elective(s)",
+      "required_credits": 3.0,
+      "required_credits_raw": "3",
+      "note": "ACCT 3000-level or above Electives (Courses taken to fulfill the Option Requirements may not be reused to count towards this elective requirement). No specific course list is printed in the PDF.",
+      "courses": [],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Accounting Analytics Option Required Course(s)",
+      "required_credits": 6.0,
+      "required_credits_raw": "6",
+      "note": "Students may opt to graduate with or without an option. Students who take an option MUST complete all requirements specified in addition to the major requirements.",
+      "courses": [
+        {
+          "code": "ACCT4710",
+          "name": "Accounting Analytics for Professional Accountants",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ISOM3400",
+          "name": "Business Applications Development in Python",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Emerging Technologies in Accounting Option Required Course(s)",
+      "required_credits": 6.0,
+      "required_credits_raw": "6",
+      "note": "Students may opt to graduate with or without an option. Students who take an option MUST complete all requirements specified in addition to the major requirements.",
+      "courses": [
+        {
+          "code": "ACCT4801",
+          "name": "Cryptocurrency, blockchain and their business applications",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ACCT4803",
+          "name": "Artificial Intelligence for Accounting Practice and Analysis",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    }
+  ],
+  "uncertain": [
+    "total_required_credits is a calculated value: the PDF does not state a fixed total for the major; it is the sum of the required_credits of all groups.",
+    "Both options (Accounting Analytics, Emerging Technologies in Accounting) are optional ('Students may opt to graduate with or without an option'); the option credits (12 in total) are included in the calculated total, but a student graduating without an option would not take them.",
+    "The 'ACCT 3000-level or above Electives' group (3 credits) does not have a specific course list in the PDF, so its courses array is empty.",
+    "The PDF header/footer shows '2026-27 ACCT (4Y) (2025-26 intake)', i.e. the document is the 2025-26 intake curriculum rendered on a 2026-27 template; the year is recorded as 2025-26 per the intake year."
+  ],
+  "parser": "ai_read_pdfplumber_text",
+  "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\major\\2025-26\\ACCT_BBA_in_Professional_Accounting.pdf"
+}

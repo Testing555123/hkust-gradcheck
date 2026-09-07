@@ -25,7 +25,6 @@ import {
   extractTranscriptText,
   parseTranscript,
   TranscriptParseError,
-  type TranscriptCourse,
   type TranscriptCourseStatus,
   type TranscriptInfo,
 } from "@/lib/transcript";

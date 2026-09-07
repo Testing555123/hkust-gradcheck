@@ -1,0 +1,67 @@
+{
+  "year": "2024-25",
+  "code": "MARK",
+  "title": "BBA in Marketing",
+  "total_required_credits": 12.0,
+  "groups": [
+    {
+      "name": "Required Course(s)",
+      "required_credits": 12.0,
+      "required_credits_raw": "12",
+      "note": "",
+      "courses": [
+        {
+          "code": "MARK3220",
+          "name": "Marketing Research",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MARK3420",
+          "name": "Consumer Behavior",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MARK4210",
+          "name": "Strategic Marketing",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Elective(s)",
+      "required_credits": 0.0,
+      "required_credits_raw": "",
+      "note": "",
+      "courses": [],
+      "source_pages": [
+        1
+      ]
+    }
+  ],
+  "uncertain": [
+    "Total required credits for the major is not explicitly stated in the provided text; only required courses are listed with 12 credits, but elective requirements are missing.",
+    "The elective group has no specified credit requirement or course list in the provided text; it only shows a header 'Elective(s)' and a page footer.",
+    "The year '2024-25' is inferred from the file index, but the PDF content states 'For students admitted in 2023-24 under the 4-year degree' and references '2023-24 intake', so there may be a mismatch between the file index year and the actual admission cohort.",
+    "total_required_credits (12.0) is a computed value: the sum of the required_credits of all groups in this file. The PDF does not state a single overall minimum total for this program, so this figure is derived by summation and may double-count where optional tracks/options are listed as separate groups."
+  ],
+  "parser": "mineru_api",
+  "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\major\\2024-25\\MARK_BBA_in_Marketing.pdf"
+}

@@ -4,6 +4,8 @@
 
 > 毕业审核以教务处官方认定为准，本工具仅供参考。
 
+已覆盖 **4 个学年 · 255 份培养方案**（主修 / 辅修 / Extended Major / 学院要求），全部可在线浏览。
+
 ## 架构
 
 ```mermaid
@@ -16,50 +18,51 @@ flowchart LR
     LOCAL --> TX
     PYMUPDF --> TX
     TX --> LLM[LLM 结构化抽取 + 页码引用]
-    LLM --> J[requirements.json]
+    LLM --> J[requirements.json x255]
     J --> CK{crosscheck 学分核对}
     DB1[(courses.db)] --> CK
     CK -->|差异报告| HUMAN[人工审阅修订]
     CK --> J
-    J --> SEED[seed 导入]
-    SEED --> DB[(SQLite grad.db)]
-    DB --> API[FastAPI /api/*]
-    API <-->|OpenAPI 生成 TS 客户端| FE[React + shadcn/ui]
+    J --> EXP[export_static_data.py]
+    DB1 --> EXP
+    EXP --> IDX[data/index.json]
+    EXP --> PG[data/programs/学年_代码.json]
+    EXP --> CS[data/courses.json + 反向索引]
+    IDX --> FE[React + shadcn/ui]
+    PG --> FE
+    CS --> FE
     FE <--> LS[(localStorage 已修/计划选择)]
+    FE --> PAGES[Cloudflare Pages 静态托管]
 ```
 
-**核心设计**：LLM 只在离线管线中出现。网站运行时直接查结构化数据库——响应毫秒级、零 LLM 成本、结果稳定可测试。
+**核心设计**：LLM 只在离线管线中出现。管线产物在**构建前**被固化成静态 JSON，网站运行时直接 `fetch`——响应毫秒级、零 LLM 成本、零后端、结果稳定可测试。
 
 ## 技术栈
 
 | 层 | 技术 |
 |----|------|
-| 后端 | Python 3.11 + FastAPI + SQLModel + SQLite |
 | 前端 | React 18 + TypeScript + Vite 5 + Tailwind CSS + shadcn/ui + TanStack Query |
 | 状态 | zustand + persist（localStorage） |
-| 契约 | openapi-typescript + openapi-fetch（后端 OpenAPI 自动生成 TS 客户端） |
+| 数据 | 静态 JSON（`scripts/export_static_data.py` 从 `pipeline/output/` + `courses.db` 生成） |
 | 管线 | MinerU API（默认）/ MinerU 本地 / pymupdf + OpenAI 兼容 LLM + Pydantic Schema |
-| 测试 | pytest（后端 8 例）· vitest（前端 10 例）· playwright-cli（E2E） |
+| 部署 | Cloudflare Pages（Git 集成，push 即上线，免费档） |
+| 测试 | pytest（后端 8 例 · 管线）· vitest（前端 76 例）· GitHub Actions CI |
 
-## 快速开始
+> `backend/`（FastAPI + SQLite）与 `Dockerfile` 保留为本地/容器备选，不再是前端数据源。
 
-前置：`py` launcher（Python 3.11+）、Node 18+。
+## 快速开始（前端，无需后端）
+
+数据产物已随仓库提交，克隆即可跑：
 
 ```powershell
-# 1. Python 依赖（项目根 .venv，backend 与 pipeline 共用）
-py -m venv .venv
-.venv\Scripts\python.exe -m pip install fastapi "uvicorn[standard]" sqlmodel pydantic-settings pymupdf httpx openai pytest
-
-# 2. 启动后端（自动把 courses.db 复制为可写副本 backend/data/grad.db）
-.venv\Scripts\python.exe -m uvicorn app.main:app --port 8000 --app-dir backend
-
-# 3. 启动前端（另开终端，Vite 已配置 /api 代理）
 cd frontend
 npm install
 npm run dev    # http://localhost:5173
 ```
 
-## 数据管线（生成培养方案数据库）
+数据文件在 `frontend/public/data/`，本地 dev 与线上读的是同一份。
+
+## 数据管线（生成培养方案数据）
 
 ### 环境变量
 
@@ -73,8 +76,8 @@ npm run dev    # http://localhost:5173
 ### 使用流程
 
 ```powershell
-cd pipeline
 $env:PYTHONIOENCODING='utf-8'
+cd pipeline
 
 # 1. 单专业样本验证（先跑一个看效果）
 .venv\Scripts\python.exe -m run_pipeline --year 2026-27 --code COMP
@@ -87,83 +90,68 @@ $env:PYTHONIOENCODING='utf-8'
 
 # 4. 查看学分差异报告（pipeline/reports/crosscheck_*.md），人工校对 requirements_*.json
 
-# 5. 校对完成后导入数据库
-.venv\Scripts\python.exe ..\backend\scripts\seed.py
+# 5. 校对完成后导出静态数据（写入 frontend/public/data，需随代码提交）
+.venv\Scripts\python.exe scripts\export_static_data.py
 ```
 
 产物说明：
 - `pipeline/cache/` — PDF 解析缓存（同文件同后端只解析一次）
-- `pipeline/output/requirements_*.json` — LLM 抽取结果（可 diff、可手工修订，seed 只认这个）
+- `pipeline/output/requirements_*.json` — LLM 抽取结果（可 diff、可手工修订，导出脚本只认这个）
 - `pipeline/reports/crosscheck_*.md` — 与 courses.db 的学分差异报告
+- `frontend/public/data/` — 导出产物（入库）：`index.json` / `programs/*.json` / `courses.json` / `course_index.json`
 
-## 公网部署（Cloudflare Workers + D1，免费、无需信用卡）
+## 公网部署（Cloudflare Pages，免费、无需信用卡）
 
-架构：Cloudflare Worker（Python + FastAPI）同时提供 `/api/*` 与前端静态产物（Workers Static Assets，SPA fallback），数据存 D1（Cloudflare 的 serverless SQLite）。同源单域名、无冷启动休眠（Workers 按请求计费）、全球边缘节点。
+全站纯静态：预生成的 JSON + 前端构建产物，Git 集成 push 即上线，无冷启动、无服务器、无需任何 Token/Secret。
 
-```
-worker/     Cloudflare Worker（FastAPI + D1 数据访问层）
-  src/worker.py     5 个只读端点，与 backend/ 端点行为一致
-  wrangler.jsonc    D1 binding + 静态资产配置
-  db_init.sql       数据初始化 SQL（由 scripts/export_d1_sql.py 生成）
-.github/workflows/deploy.yml   git push 自动：测试 → 导出数据 → 构建前端 → 导入 D1 → 部署
-```
-
-### 一次性设置（约 10 分钟）
+### 一次性设置（约 5 分钟）
 
 1. 注册 Cloudflare 账号（免费版无需信用卡）：https://dash.cloudflare.com/sign-up
-2. 创建 D1 数据库并回填 ID：
+2. Workers & Pages → Create → **Pages** → **Connect to Git**，选择本仓库
+3. 构建配置：
 
-   ```bash
-   cd worker && npx wrangler d1 create grad-db
-   # 把输出中的 database_id 填入 wrangler.jsonc 的 d1_databases.database_id
-   ```
+   | 项 | 值 |
+   |----|----|
+   | Framework preset | `None`（或 Vite） |
+   | Root directory | `frontend` |
+   | Build command | `npm ci && npm run build` |
+   | Build output directory | `dist` |
 
-3. 创建 API Token：https://dash.cloudflare.com/profile/api-tokens → **Edit Cloudflare Workers** 模板（需额外勾选 **D1 Edit** 权限），记下 Token 与 Account ID
-4. GitHub 仓库 → Settings → Secrets and variables → Actions，添加两个 Secret：
-   - `CLOUDFLARE_API_TOKEN`：上一步的 Token
-   - `CLOUDFLARE_ACCOUNT_ID`：Dashboard 首页右侧或 Workers 页可查
+4. 保存并部署，完成后地址为 `https://<项目名>.pages.dev`；自定义域名可在 Pages 项目里免费绑定
 
-### 部署与更新
+### 数据与更新
 
-- push 到 `main` 即自动部署（GitHub Actions：跑 worker 单测 → 从 `courses.db` + `pipeline/output/` 重新导出数据并导入 D1 → 构建前端 → `wrangler deploy`）
-- 部署完成后地址形如 `https://grad-app.<你的子域>.workers.dev`（Actions 日志或 Workers 控制台可查）
-- 数据更新流程不变：管线产出 → 校对 `pipeline/output/requirements_*.json` → git push
+- 数据更新流程：跑管线 → 校对 `pipeline/output/requirements_*.json` → 跑 `scripts/export_static_data.py` → 提交 → push 自动上线
+- CI（`.github/workflows/ci.yml`）会跑 lint / 单测 / 构建，并断言 `programs == 255`、`courses == 1144`、四学年齐全、产物与 `pipeline/output` 一致；忘记导出会在 PR 上直接报红
 
 ### 免费档额度（对个人工具绰绰有余）
 
-- Workers：10 万请求/天；D1：500 万行读/天、5GB 存储
-- 无信用卡、无休眠冷启动；自定义域名可在 Workers 控制台免费绑定
-
-### 本地开发（两条路线并存）
-
-```bash
-# 路线 A：本地 FastAPI + SQLite 文件（无需 Cloudflare，与原先完全一致）
-.venv/bin/python -m uvicorn app.main:app --port 8000 --app-dir backend
-
-# 路线 B：本地 Workers 运行时（需 macOS 13.5+ / Linux；本机 macOS 12 不支持 workerd）
-cd worker && npx wrangler d1 execute grad-db --local --file db_init.sql
-npx wrangler dev   # http://localhost:8787
-
-# worker 数据层逻辑可用 Fake D1 单测验证（不依赖 workerd，任何平台可跑）
-.venv/bin/python -m pytest worker/tests -q
-```
+- Pages：无限请求、每月 500 次构建、单文件上限 20MB（本仓库最大产物约 1MB）
+- 无信用卡、无冷启动；`_headers` 已为 `/assets/*` 配置 immutable 长缓存
 
 ## 测试
 
 ```powershell
-# 后端 + 管线（跑在临时数据库上，不污染真实数据）
-.venv\Scripts\python.exe -m pytest backend/tests pipeline/tests -q
+# 前端（单测 + 规范）
+cd frontend
+npm test
+npm run lint
 
-# 前端
-cd frontend && npm test
+# 静态数据完整性断言
+python scripts/export_static_data.py --check
+
+# 后端 + 管线（保留的本地路线）
+.venv\Scripts\python.exe -m pytest backend/tests pipeline/tests -q
 ```
 
 ## 目录结构
 
 ```
-backend/     FastAPI API（复用 courses.db + 新增要求表，挂载可写副本 grad.db）
+frontend/    React SPA：三页面（方案总览 / 课程选择 / 要求明细）
+             public/data/ 静态数据（由导出脚本生成，入库）
 pipeline/    离线管线（parsers 可插拔 / llm_extract / crosscheck / run_pipeline CLI）
-frontend/    React SPA（shadcn/ui 三页面：方案总览 / 课程选择 / 要求明细）
+scripts/     export_static_data.py —— 管线产物 + courses.db → 前端静态数据
+backend/     FastAPI API（本地备选：uvicorn + SQLite，非前端数据源）
 unpress_pdf/ 官方培养方案 PDF 与爬虫索引（已有数据，勿改）
 courses.db   官方课程库 1144 门课（只读原始数据，勿改）
 docs/        数据更新指南

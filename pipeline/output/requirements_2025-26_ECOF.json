@@ -1,0 +1,127 @@
+{
+  "year": "2025-26",
+  "code": "ECOF",
+  "title": "BSc in Economics and Finance",
+  "total_required_credits": 40.0,
+  "groups": [
+    {
+      "name": "Required Course(s)",
+      "required_credits": 4.0,
+      "required_credits_raw": "4",
+      "note": "Note: ECON 2174 OR MATH 2023",
+      "courses": [
+        {
+          "code": "ECON2174",
+          "name": "Mathematics for Economists",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH2023",
+          "name": "Multivariable Calculus",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 19.0,
+      "required_credits_raw": "19",
+      "note": "",
+      "courses": [
+        {
+          "code": "ECON3113",
+          "name": "Microeconomic Theory I",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "ECON3133",
+          "name": "Microeconomic Theory II",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "ECON3143",
+          "name": "Macroeconomic Theory II",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "ECON3334",
+          "name": "Introduction to Econometrics",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "FINA3103",
+          "name": "Intermediate Investments",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Elective(s)",
+      "required_credits": 11.0,
+      "required_credits_raw": "11",
+      "note": "ECON 4000-level Electives (Any 3 courses of the subject and level as specified). No specific course list is printed in the PDF.",
+      "courses": [],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Elective(s)",
+      "required_credits": 6.0,
+      "required_credits_raw": "6",
+      "note": "FINA 3000-level or above Electives (Any 2 courses of the subject and level as specified). No specific course list is printed in the PDF.",
+      "courses": [],
+      "source_pages": [
+        1
+      ]
+    }
+  ],
+  "uncertain": [
+    "total_required_credits is a calculated value: the PDF does not state a fixed total for the major; it is the sum of the required_credits of all groups.",
+    "The ECON 4000-level Electives group lists 'Any 3 courses' (11 credits) and the FINA Electives group 'Any 2 courses' (6 credits); neither has a specific course list in the PDF, so their courses arrays are empty.",
+    "The PDF header/footer shows '2026-27 ECOF (4Y) (2025-26 intake)', i.e. the document is the 2025-26 intake curriculum rendered on a 2026-27 template; the year is recorded as 2025-26 per the intake year."
+  ],
+  "parser": "ai_read_pdfplumber_text",
+  "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\major\\2025-26\\ECOF_BSc_in_Economics_and_Finance.pdf"
+}

@@ -1,0 +1,475 @@
+{
+  "year": "2024-25",
+  "code": "BCB",
+  "title": "BSc in Biochemistry and Cell Biology",
+  "total_required_credits": 12.0,
+  "groups": [
+    {
+      "name": "Major Pre-requisite course(s)",
+      "required_credits": 0.0,
+      "required_credits_raw": "0-3",
+      "note": "Students with level 3 or above in HKDSE 1x Biology are exempted from taking LIFS 1901",
+      "courses": [
+        {
+          "code": "LIFS1901",
+          "name": "General Biology I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS1902",
+          "name": "General Biology II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 0.0,
+      "required_credits_raw": "0-1",
+      "note": "Students with level 3 or above in HKDSE 1x Biology are exempted from taking LIFS 1903",
+      "courses": [
+        {
+          "code": "LIFS1903",
+          "name": "Laboratory for General Biology I",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS1904",
+          "name": "Laboratory for General Biology II",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS2010",
+          "name": "Modern Approaches to Biochemical and Cell Biological Research",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS2040",
+          "name": "Cell Biology",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS2210",
+          "name": "Biochemistry I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS2220",
+          "name": "Biochemistry II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS2240",
+          "name": "Cell Biology Laboratory",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS2720",
+          "name": "Biochemistry Laboratory",
+          "credits": 2.0,
+          "credits_raw": "2",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS2820",
+          "name": "Biochemical Laboratory Techniques",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS3010",
+          "name": "Molecular and Cellular Biology I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS3020",
+          "name": "Molecular and Cellular Biology II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS3140",
+          "name": "General Genetics",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS4961",
+          "name": "Biochemistry and Cell Biology Capstone Project",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS4971",
+          "name": "Biochemistry and Cell Biology Project Research I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS4981",
+          "name": "Biochemistry and Cell Biology Project Research II",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "SCIE4500",
+          "name": "IRE Research Project II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM1011",
+          "name": "General Chemistry A: Reactions, Thermodynamics, and Reaction Kinetics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM1012",
+          "name": "General Chemistry B: Atomic Structure, Molecules, and Bonding Theories",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM1051",
+          "name": "Laboratory for General Chemistry A",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM1052",
+          "name": "Laboratory for General Chemistry B",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM2111",
+          "name": "Fundamentals of Organic Chemistry",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM2311",
+          "name": "Analytical Chemistry",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM2155",
+          "name": "Fundamental Organic Chemistry Laboratory",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM2355",
+          "name": "Fundamental Analytical Chemistry Laboratory",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LANG3024",
+          "name": "Science Communication in English (Life Science)",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LANG3027",
+          "name": "Science Communication in English for Research Students",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Elective(s)",
+      "required_credits": 12.0,
+      "required_credits_raw": "12-24",
+      "note": "Biochemistry and Cell Biology Electives (Courses from the specified elective list. Students following IRE Track are required to take a minimum of 12 credits; while others should either take a minimum of 20 credits (for those opting for LIFS 4971 &amp; LIFS 4981), or 24 credits (for those opting for LIFS 4961). Courses taken as Major/Track Required Courses may not be counted towards the elective requirement.)",
+      "courses": [
+        {
+          "code": "LIFS2060",
+          "name": "Any LIFS courses at 3000/4000-level",
+          "credits": 0.0,
+          "credits_raw": "",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS2070",
+          "name": "Biodiversity",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS2080",
+          "name": "Introduction to Biotechnology",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS2080",
+          "name": "Plant Biology",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "BIPH3010",
+          "name": "Advanced Biological Physics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "BIPH4010",
+          "name": "Principles of Quantitative Instrumentation",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM3120",
+          "name": "Organic Chemistry II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM3320",
+          "name": "Instrumental Analysis",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM4140",
+          "name": "Intermediate Organic Chemistry 3",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "OCES1010",
+          "name": "Principles and Applications of Environmental Science",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "PHYS2010",
+          "name": "Introductory Biological Physics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "LIFS3070",
+          "name": "Introduction to Biophysical Instrumentation",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "LIFS3110",
+          "name": "Biotechnological Application of Recombinant DNA Techniques",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "SCIE3500",
+          "name": "IRE Research Project I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        }
+      ],
+      "source_pages": [
+        1,
+        3
+      ]
+    }
+  ],
+  "uncertain": [
+    "The course 'LIFS2060' is listed as 'Any LIFS courses at 3000/4000-level' with no credit value specified; credits assumed 0 but may require confirmation.",
+    "The course 'LIFS2080' appears twice in the elective list with different names ('Introduction to Biotechnology' and 'Plant Biology'); this may be a data extraction error requiring manual review.",
+    "The course 'SCIE4500' is listed with 3 credits in the Required Course(s) group, but the raw text shows a formatting issue ('4 3') that may need verification.",
+    "The course 'LIFS4981' is listed with 4 credits, but the raw text shows '4 3' which may indicate ambiguity in credit value.",
+    "The course 'CHEM1052' is listed with 1 credit, but the raw text shows an empty cell in the PDF; this may require confirmation.",
+    "The course 'CHEM2311' is listed with 3 credits, but the raw text shows an empty cell in the PDF; this may require confirmation.",
+    "The course 'CHEM2355' is listed with 1 credit, but the raw text shows an empty cell in the PDF; this may require confirmation.",
+    "The course 'LANG3027' is listed with 3 credits, but the raw text shows an empty cell in the PDF; this may require confirmation.",
+    "total_required_credits (12.0) is a computed value: the sum of the required_credits of all groups in this file. The PDF does not state a single overall minimum total for this program, so this figure is derived by summation and may double-count where optional tracks/options are listed as separate groups."
+  ],
+  "parser": "mineru_api",
+  "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\major\\2024-25\\BCB_BSc_in_Biochemistry_and_Cell_Biology.pdf"
+}

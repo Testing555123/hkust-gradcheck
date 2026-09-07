@@ -1,0 +1,67 @@
+{
+  "year": "2024-25",
+  "code": "ECON",
+  "title": "BBA in Economics",
+  "total_required_credits": 23.0,
+  "groups": [
+    {
+      "name": "Required Course(s)",
+      "required_credits": 12.0,
+      "required_credits_raw": "12",
+      "note": "",
+      "courses": [
+        {
+          "code": "ECON3014",
+          "name": "Managerial Microeconomics",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "ECON3024",
+          "name": "Managerial Macroeconomics",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "ECON3334",
+          "name": "Introduction to Econometrics",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Elective(s)",
+      "required_credits": 11.0,
+      "required_credits_raw": "11",
+      "note": "ECON 4000-level Electives (Any 3 courses of the subject and level as specified)",
+      "courses": [],
+      "source_pages": [
+        1
+      ]
+    }
+  ],
+  "uncertain": [
+    "The elective group requires 'Any 3 courses of the subject and level as specified' but does not list specific courses. It is unclear which ECON 4000-level courses are eligible to fulfill this requirement.",
+    "Total required credits for the major is not explicitly stated in the text; it must be inferred as 12 (required) + 11 (elective) = 23, but this is not confirmed in the document.",
+    "The credit value for ECON3024 appears as '4 Managerial Macroeconomics 4' — the duplicate '4' may be a formatting error, but we have taken the first '4' as the credit value.",
+    "total_required_credits (23.0) is a computed value: the sum of the required_credits of all groups in this file. The PDF does not state a single overall minimum total for this program, so this figure is derived by summation and may double-count where optional tracks/options are listed as separate groups."
+  ],
+  "parser": "mineru_api",
+  "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\major\\2024-25\\ECON_BBA_in_Economics.pdf"
+}

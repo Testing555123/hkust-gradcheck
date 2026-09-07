@@ -12,6 +12,10 @@ interface UiState {
   transcriptImportOpen: boolean;
   openTranscriptImport: () => void;
   closeTranscriptImport: () => void;
+  /** 课程详情弹窗：任意课程行都可触发，null 表示关闭 */
+  courseCode: string | null;
+  openCourse: (code: string) => void;
+  closeCourse: () => void;
   /** 主题：light / dark；存 localStorage 由 App 应用到 <html> */
   theme: "light" | "dark";
   toggleTheme: () => void;
@@ -27,6 +31,9 @@ export const useUi = create<UiState>()((set, get) => ({
   transcriptImportOpen: false,
   openTranscriptImport: () => set({ transcriptImportOpen: true }),
   closeTranscriptImport: () => set({ transcriptImportOpen: false }),
+  courseCode: null,
+  openCourse: (code) => set({ courseCode: code }),
+  closeCourse: () => set({ courseCode: null }),
   theme: (localStorage.getItem("grad-theme") as "light" | "dark") || "light",
   toggleTheme: () => {
     const next = get().theme === "light" ? "dark" : "light";

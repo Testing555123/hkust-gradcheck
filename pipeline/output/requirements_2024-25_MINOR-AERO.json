@@ -1,0 +1,56 @@
+{
+  "year": "2024-25",
+  "code": "MINOR-AERO",
+  "title": "Minor Program in Aeronautical Engineering",
+  "total_required_credits": 18.0,
+  "groups": [
+    {
+      "name": "Required Course(s)",
+      "required_credits": 9.0,
+      "required_credits_raw": "9",
+      "note": "Note: MECH 3640 OR MECH 3650 OR MECH 3660 OR MECH 3670 - 3 courses out of 4.",
+      "courses": [
+        { "code": "MECH3640", "name": "Aerodynamics", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [1] },
+        { "code": "MECH3650", "name": "Aircraft Structural Analysis", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [1] },
+        { "code": "MECH3660", "name": "Aircraft Propulsion", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [1] },
+        { "code": "MECH3670", "name": "Aircraft Performance and Stability", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [1] }
+      ],
+      "source_pages": [1]
+    },
+    {
+      "name": "Elective(s)",
+      "required_credits": 9.0,
+      "required_credits_raw": "9",
+      "note": "Technical Electives: 9 credits from the specified elective list, of which students may only use at most 1 course from Group B to count toward this requirement. The group for each course is given in 'areas'.",
+      "courses": [
+        { "code": "MECH2007", "name": "Aerospace Engineering: Principles and Systems", "credits": 3.0, "credits_raw": "3", "areas": ["A"], "source_pages": [2] },
+        { "code": "MECH3740", "name": "Introduction to Aerospace Computational Fluid Dynamics (CFD)", "credits": 3.0, "credits_raw": "3", "areas": ["A"], "source_pages": [2] },
+        { "code": "MECH3750", "name": "Vibration, Control and Programming", "credits": 3.0, "credits_raw": "3", "areas": ["A"], "source_pages": [2] },
+        { "code": "MECH4100", "name": "Experiential Projects in Aerospace Engineering", "credits": 3.0, "credits_raw": "3", "areas": ["A"], "source_pages": [2] },
+        { "code": "MECH4350", "name": "Indoor Air Quality in Buildings", "credits": 3.0, "credits_raw": "3", "areas": ["A"], "source_pages": [2] },
+        { "code": "MECH4430", "name": "Materials Characterization", "credits": 3.0, "credits_raw": "3", "areas": ["A"], "source_pages": [2] },
+        { "code": "MECH4710", "name": "Introduction to Robotics", "credits": 3.0, "credits_raw": "3", "areas": ["A"], "source_pages": [2] },
+        { "code": "MECH4720", "name": "Introduction to Precision Engineering", "credits": 3.0, "credits_raw": "3", "areas": ["A"], "source_pages": [2] },
+        { "code": "MECH4740", "name": "Numerical Methods in Engineering", "credits": 3.0, "credits_raw": "3", "areas": ["A"], "source_pages": [2] },
+        { "code": "CIVL4370", "name": "Computer Methods of Structural Analysis", "credits": 3.0, "credits_raw": "3", "areas": ["A"], "source_pages": [2] },
+        { "code": "COMP3111", "name": "Software Engineering", "credits": 4.0, "credits_raw": "4", "areas": ["A"], "source_pages": [2] },
+        { "code": "COMP3511", "name": "Operating Systems", "credits": 3.0, "credits_raw": "3", "areas": ["A"], "source_pages": [2] },
+        { "code": "ELEC3200", "name": "System Modeling, Analysis and Control", "credits": 4.0, "credits_raw": "4", "areas": ["A"], "source_pages": [2] },
+        { "code": "IEDA2200", "name": "Engineering Management (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["A"], "source_pages": [2] },
+        { "code": "IEDA2410", "name": "Introduction to Modern Logistics", "credits": 3.0, "credits_raw": "3", "areas": ["A"], "source_pages": [2] },
+        { "code": "MECH1910", "name": "Foundations of Mechanical and Aerospace Engineering", "credits": 3.0, "credits_raw": "3", "areas": ["B"], "source_pages": [2] },
+        { "code": "CENG2210", "name": "Chemical and Biological Engineering Thermodynamics", "credits": 3.0, "credits_raw": "3", "areas": ["B"], "source_pages": [2] },
+        { "code": "CENG2220", "name": "Transport Phenomena I", "credits": 3.0, "credits_raw": "3", "areas": ["B"], "source_pages": [2] },
+        { "code": "CIVL2120", "name": "Mechanics of Materials", "credits": 3.0, "credits_raw": "3", "areas": ["B"], "source_pages": [2] },
+        { "code": "CIVL2510", "name": "Fluid Mechanics", "credits": 3.0, "credits_raw": "3", "areas": ["B"], "source_pages": [2] }
+      ],
+      "source_pages": [2]
+    }
+  ],
+  "uncertain": [
+    "total_required_credits (18.0) is the stated minimum total for the minor (PDF: 'complete a minimum total of 18 credits').",
+    "IEDA 2200 was deleted (last offered 2021-22) but remains in the PDF list."
+  ],
+  "parser": "ai_read_pdfplumber_text",
+  "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\minor_sklrequire_extmajor\\2024-25\\minor\\MINOR-AERO_Minor_Program_in_Aeronautical_Engineering.pdf"
+}

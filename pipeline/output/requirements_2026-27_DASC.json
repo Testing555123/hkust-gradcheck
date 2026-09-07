@@ -1,0 +1,564 @@
+{
+  "year": "2026-27",
+  "code": "DASC",
+  "title": "BSc in Data Analytics and Artificial Intelligence in Science",
+  "total_required_credits": 105.0,
+  "groups": [
+    {
+      "name": "Major Pre-requisite course(s)",
+      "required_credits": 4.0,
+      "required_credits_raw": "4-6",
+      "note": "Note: [(MATH 1013 OR MATH 1023) AND (MATH 1014 OR MATH 1024)] OR [MATH 1020]",
+      "courses": [
+        {
+          "code": "MATH1013",
+          "name": "Calculus I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1014",
+          "name": "Calculus II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1020",
+          "name": "Accelerated Calculus",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1023",
+          "name": "Honors Calculus I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1024",
+          "name": "Honors Calculus II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 25.0,
+      "required_credits_raw": "25",
+      "note": "",
+      "courses": [
+        {
+          "code": "DASC2010",
+          "name": "Calculus for Data Analytics in Science",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "DASC2020",
+          "name": "Applied Linear Algebra for Least Squares Optimization and Machine Learning",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "DASC2110",
+          "name": "Object-oriented Programming for Data Analytics in Science",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "DASC2210",
+          "name": "A Survey on Big Data in Science and Society",
+          "credits": 1.0,
+          "credits_raw": "1",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "DASC2220",
+          "name": "Statistics and Probability for Data Analytics in Science",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "DASC3120",
+          "name": "Data Structures for Data Analytics in Science",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "DASC3230",
+          "name": "Statistical Modeling and Machine Learning",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "DASC3240",
+          "name": "Data Visualization in Science",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "DASC3250",
+          "name": "Numerical Methods for Data Analytics in Science",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 6.0,
+      "required_credits_raw": "6",
+      "note": "",
+      "courses": [
+        {
+          "code": "DASC4010",
+          "name": "Practical Artificial Intelligence in Science",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "DASC4300",
+          "name": "Capstone Project for Data Analytics in Science",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 3.0,
+      "required_credits_raw": "3",
+      "note": "Note: COMP 1021 OR COMP 1023",
+      "courses": [
+        {
+          "code": "COMP1021",
+          "name": "Introduction to Computer Science",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP1023",
+          "name": "Introduction to Python Programming",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Applied Biosciences Track Required Course(s)",
+      "required_credits": 13.0,
+      "required_credits_raw": "13-16",
+      "note": "Note: LIFS 1901 OR LIFS 1902 (0-3, students with level 3+ HKDSE Biology exempted). Then LIFS 2040, LIFS 3140, LIFS 3580, LIFS 4320. Students should follow one of the tracks and complete all requirements; tracks are mutually exclusive.",
+      "courses": [
+        {
+          "code": "LIFS1901",
+          "name": "General Biology I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "LIFS1902",
+          "name": "General Biology II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "LIFS2040",
+          "name": "Cell Biology",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "LIFS3140",
+          "name": "General Genetics",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "LIFS3580",
+          "name": "Bioinformatics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "LIFS4320",
+          "name": "Data Science for Biology and Medicine",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Environmental Science Track Required Course(s)",
+      "required_credits": 18.0,
+      "required_credits_raw": "18",
+      "note": "Students should follow one of the tracks and complete all requirements; tracks are mutually exclusive.",
+      "courses": [
+        {
+          "code": "OCES1001",
+          "name": "The Earth as a Blue Planet",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "OCES1010",
+          "name": "Principles and Applications of Environmental Science",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "OCES2004",
+          "name": "Sustainable Ocean",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "OCES3001",
+          "name": "Coastal Environmental Monitoring",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "OCES3160",
+          "name": "Ecology",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "OCES3301",
+          "name": "Data Analysis in Ocean Science",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "Information Science Track Required Course(s)",
+      "required_credits": 18.0,
+      "required_credits_raw": "18",
+      "note": "Students should follow one of the tracks and complete all requirements; tracks are mutually exclusive.",
+      "courses": [
+        {
+          "code": "DASC4020",
+          "name": "Structured Query Language for Data Analytics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "PHYS1007",
+          "name": "Quantum Information for Everyone",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "PHYS1111",
+          "name": "General Physics I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "PHYS1112",
+          "name": "General Physics I with Calculus",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "PHYS1312",
+          "name": "Honors General Physics I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "PHYS1114",
+          "name": "General Physics II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "PHYS1314",
+          "name": "Honors General Physics II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "PHYS2022",
+          "name": "Modern Physics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "PHYS4058",
+          "name": "Information Physics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        }
+      ],
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "Molecular Science and Cheminformatics Track Required Course(s)",
+      "required_credits": 18.0,
+      "required_credits_raw": "18-19",
+      "note": "Note: CHEM 3030 OR CHEM 4420 (3-4). Students should follow one of the tracks and complete all requirements; tracks are mutually exclusive.",
+      "courses": [
+        {
+          "code": "CHEM1011",
+          "name": "General Chemistry A: Reactions, Thermodynamics, and Reaction Kinetics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM1012",
+          "name": "General Chemistry B: Atomic Structure, Molecules, and Bonding Theories",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM2111",
+          "name": "Fundamentals of Organic Chemistry",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM3030",
+          "name": "Introduction to AI for Chemistry",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM4420",
+          "name": "Statistical Machine Learning Methods for Chemical Data Analysis",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM4120",
+          "name": "Biomolecular Chemistry",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "CHEM4160",
+          "name": "Cheminformatics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        }
+      ],
+      "source_pages": [
+        3
+      ]
+    }
+  ],
+  "uncertain": [
+    "total_required_credits (105.0) is the sum of the required_credits of all groups. The program requires the student to follow ONE of four mutually exclusive Tracks (Applied Biosciences / Environmental Science / Information Science / Molecular Science and Cheminformatics); summing all four tracks double-counts. A realistic total is the core (pre-req 4 + required 25 + required 6 + COMP 3 = 38) plus one chosen track (Applied Biosciences 13-16, others 18-19) = ~51-57.",
+    "The MATH pre-requisite block has a 4-6 range, and the Applied Biosciences LIFS 1901/1902 block has a 0-3 range, so actual credits may differ from the lower-bound calculation.",
+    "The PDF header/footer shows '2026-27 DASC (4Y) (2026-27 intake)', i.e. the document is the 2026-27 intake curriculum."
+  ],
+  "parser": "ai_read_pdfplumber_text",
+  "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\major\\2026-27\\DASC_BSc_in_Data_Analytics_and_Artificial_Intelligence_in_Science.pdf"
+}

@@ -1,0 +1,128 @@
+{
+  "year": "2024-25",
+  "code": "ECOF",
+  "title": "BSc in Economics and Finance",
+  "total_required_credits": 21.0,
+  "groups": [
+    {
+      "name": "Required Course(s)",
+      "required_credits": 4.0,
+      "required_credits_raw": "4",
+      "note": "ECON 2174 OR MATH 2023",
+      "courses": [
+        {
+          "code": "ECON2174",
+          "name": "Mathematics for Economists",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH2023",
+          "name": "Multivariable Calculus",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "ECON3113",
+          "name": "Microeconomic Theory I",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "ECON3133",
+          "name": "Microeconomic Theory II",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "ECON3143",
+          "name": "Macroeconomic Theory II",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "ECON3334",
+          "name": "Introduction to Econometrics",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "FINA3103",
+          "name": "Intermediate Investments",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Elective(s)",
+      "required_credits": 17.0,
+      "required_credits_raw": "11 and 6",
+      "note": "",
+      "courses": [
+        {
+          "code": "ECON4000",
+          "name": "ECON 4000-level Electives (Any 3 courses of the subject and level as specified)",
+          "credits": 0.0,
+          "credits_raw": "",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "FINA3000",
+          "name": "FINA 3000-level or above Electives (Any 2 courses of the subject and level as specified)",
+          "credits": 0.0,
+          "credits_raw": "",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    }
+  ],
+  "uncertain": [
+    "The elective requirements are described as 'ECON 4000-level Electives (Any 3 courses of the subject and level as specified)' with 11 credits and 'FINA 3000-level or above Electives (Any 2 courses of the subject and level as specified)' with 6 credits, but no specific course codes are listed. The credit values for individual elective courses cannot be determined from the text, so placeholder 0 credits are used. The total elective credits (17) is derived from 11 + 6.",
+    "The total required credits for the major is not explicitly stated in the provided text, so it is set to 0. The sum of required (4) and elective (17) credits is 21, but this may not represent the full major requirement as other components (e.g., University/School requirements) are referenced but not detailed.",
+    "The course codes for the elective groupings (ECON4000, FINA3000) are constructed from the description but do not appear as actual course codes in the text. They are included as placeholders to represent the elective categories, but their validity as actual course codes is uncertain.",
+    "total_required_credits (21.0) is a computed value: the sum of the required_credits of all groups in this file. The PDF does not state a single overall minimum total for this program, so this figure is derived by summation and may double-count where optional tracks/options are listed as separate groups."
+  ],
+  "parser": "mineru_api",
+  "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\major\\2024-25\\ECOF_BSc_in_Economics_and_Finance.pdf"
+}

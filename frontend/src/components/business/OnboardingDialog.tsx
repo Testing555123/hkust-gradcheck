@@ -19,7 +19,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { SearchableProgramSelect } from "@/components/business/SearchableProgramSelect";
 import { codesOf, yearsOf } from "@/lib/profile";
+import { isMajor } from "@/lib/program-groups";
 import { resolveAttachedPrograms, selectableAttached } from "@/lib/attached";
 import { schoolOf } from "@/lib/common-core";
 import { cn } from "@/lib/utils";
@@ -87,7 +89,11 @@ export function OnboardingDialog({
     setOptionalOpen(Boolean(initialMinors && initialMinors.length));
   }, [open, programs, years, initialYear, initialCode, initialMinors]);
 
-  const majors = useMemo(() => codesOf(programs, year), [programs, year]);
+  // 主修只列主修：辅修 / EXTM 在下方「选填」里单独多选，避免把 MINOR-xxx 当成主修
+  const majors = useMemo(
+    () => codesOf(programs, year).filter(isMajor),
+    [programs, year]
+  );
   const canSubmit = Boolean(year && code);
 
   // 学院随主修自动推导（schoolOf 映射）；无映射的学院显示"未收录"
@@ -179,20 +185,16 @@ export function OnboardingDialog({
           </Field>
 
           <Field label="主修" hint="决定默认展示的培养方案">
-            <Select value={code} onValueChange={setCode} disabled={!year}>
-              <SelectTrigger aria-label="主修" className={cn(!year && "cursor-not-allowed")}>
-                <SelectValue
-                  placeholder={year ? "请选择主修专业" : "请先选择入学年份"}
-                />
-              </SelectTrigger>
-              <SelectContent>
-                {majors.map((p) => (
-                  <SelectItem key={p.code} value={p.code}>
-                    {p.code} · {p.title}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
+            <SearchableProgramSelect
+              programs={majors}
+              value={code}
+              onChange={setCode}
+              disabled={!year}
+              kinds={["major"]}
+              placeholder={year ? "请选择主修专业" : "请先选择入学年份"}
+              ariaLabel="主修"
+              triggerClassName={cn(!year && "cursor-not-allowed")}
+            />
           </Field>
 
           {/* 学院要求自动匹配提示（仅 SSCI / SBM 主修显示） */}
