@@ -18,6 +18,13 @@ import {
   type CourseFilterState,
   type FlatCourseWithStatus,
 } from "@/lib/course-filter";
+
+const COURSE_FILTER_OPTIONS: { value: CourseFilterState; label: string }[] = [
+  { value: "all", label: "全部" },
+  { value: "taken", label: "已修" },
+  { value: "planned", label: "计划" },
+  { value: "none", label: "未选" },
+];
 import type { AttachedEntryView } from "@/pages/OverviewPage";
 import type { ProgramTreeData } from "@/types";
 
@@ -133,7 +140,12 @@ export function CoursesPage({
         </Badge>
       </div>
 
-      <FilterChips value={filter} onChange={setFilter} counts={counts} />
+      <FilterChips
+        value={filter}
+        onChange={setFilter}
+        counts={counts}
+        options={COURSE_FILTER_OPTIONS}
+      />
 
       <div className="space-y-2">
         {filtered.map((c) => (

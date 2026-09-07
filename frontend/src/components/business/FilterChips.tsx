@@ -1,25 +1,30 @@
 import { cn } from "@/lib/utils";
-import type { CourseFilterState } from "@/lib/course-filter";
 
-interface FilterChipsProps {
-  value: CourseFilterState;
-  onChange: (next: CourseFilterState) => void;
-  counts: Record<CourseFilterState, number>;
+export interface FilterChipOption<T extends string> {
+  value: T;
+  label: string;
+}
+
+interface FilterChipsProps<T extends string> {
+  value: T;
+  onChange: (next: T) => void;
+  counts: Record<T, number>;
+  /** 选项由调用方传入，便于同时服务课程态与要求组态（视觉/交互不变） */
+  options: FilterChipOption<T>[];
   className?: string;
 }
 
-const OPTIONS: { value: CourseFilterState; label: string }[] = [
-  { value: "all", label: "全部" },
-  { value: "taken", label: "已修" },
-  { value: "planned", label: "计划" },
-  { value: "none", label: "未选" },
-];
-
-/** 课程状态筛选 chips（cal.com / dub 式）：选中实底 primary，其余 outline，带实时计数 */
-export function FilterChips({ value, onChange, counts, className }: FilterChipsProps) {
+/** 状态筛选 chips（cal.com / dub 式）：选中实底 primary，其余 outline，带实时计数 */
+export function FilterChips<T extends string>({
+  value,
+  onChange,
+  counts,
+  options,
+  className,
+}: FilterChipsProps<T>) {
   return (
     <div className={cn("flex flex-wrap items-center gap-1.5", className)} role="group" aria-label="按状态筛选">
-      {OPTIONS.map(({ value: v, label }) => {
+      {options.map(({ value: v, label }) => {
         const active = value === v;
         return (
           <button

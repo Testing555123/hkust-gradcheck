@@ -3,9 +3,11 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CourseRow } from "@/components/business/CourseRow";
 import { CollapsibleGroup } from "@/components/business/CollapsibleGroup";
+import { EmptyState } from "@/components/ui/empty";
 import { useSelection } from "@/stores/selection";
 import { computeGroupAudit } from "@/lib/audit";
 import { sortTakenFirst } from "@/lib/pools";
+import { computeGroupFilterState, matchesGroupFilter, type GroupFilterState } from "@/lib/group-filter";
 import { FileText, Info, StickyNote } from "lucide-react";
 import type { CourseRef, ProgramTreeData, RequirementGroup } from "@/types";
 
@@ -159,11 +161,32 @@ function RequirementGroupView({ group }: { group: RequirementGroup }) {
   );
 }
 
-/** 毕业要求明细树：按组展示课程清单、学分要求、Note 说明与 Area 分类 */
-export function RequirementTree({ tree }: { tree: ProgramTreeData }) {
+/** 毕业要求明细树：按组展示课程清单、学分要求、Note 说明与 Area 分类；按组状态筛选隐藏不匹配的组 */
+export function RequirementTree({
+  tree,
+  statusFilter = "all",
+}: {
+  tree: ProgramTreeData;
+  statusFilter?: GroupFilterState;
+}) {
+  const status = useSelection((s) => s.status);
+  const visible = tree.groups.filter((g) =>
+    matchesGroupFilter(computeGroupFilterState(g, status), statusFilter)
+  );
+
+  if (visible.length === 0) {
+    return (
+      <EmptyState
+        icon={<FileText className="h-8 w-8 mx-auto text-muted-foreground" />}
+        title="该分类下没有匹配的要求组"
+        description="试试切换上方筛选条件，或先去「课程选择」勾选已修课程"
+      />
+    );
+  }
+
   return (
     <div className="space-y-4">
-      {tree.groups.map((g) => (
+      {visible.map((g) => (
         <RequirementGroupView key={`${tree.program.code}-${g.id}`} group={g} />
       ))}
     </div>
