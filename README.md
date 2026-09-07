@@ -96,6 +96,37 @@ $env:PYTHONIOENCODING='utf-8'
 - `pipeline/output/requirements_*.json` — LLM 抽取结果（可 diff、可手工修订，seed 只认这个）
 - `pipeline/reports/crosscheck_*.md` — 与 courses.db 的学分差异报告
 
+## 公网部署（Render 免费档）
+
+单容器方案：FastAPI 同源托管前端静态产物 + SQLite（构建时烘焙进镜像），数据更新 = git push 重新部署，无需持久卷、无运行时 LLM 成本。
+
+> 数据文件已强制入库（`git add -f courses.db pipeline/output/`），Render 从 git 构建镜像时可直接使用。
+
+### 部署步骤
+
+1. 将本仓库 push 到 GitHub（private 仓库即可）
+2. 打开 https://dashboard.render.com → **New** → **Web Service** → 连接 GitHub（授权 GitHub App，可选 private repo）
+3. 选中本仓库，配置：
+   - **Runtime**: Docker（自动识别根目录 `Dockerfile`）
+   - **Instance Type**: Free
+   - **Health Check Path**: `/api/health`
+   - 环境变量：无需任何配置（镜像内相对布局与仓库一致）
+4. Create Web Service → 首次构建约 3–5 分钟，完成后获得 `https://<服务名>.onrender.com`
+
+此后每次 `git push` 自动触发重新构建部署。
+
+### 免费档限制
+
+- 15 分钟无流量自动休眠，下次访问冷启动约 30–60 秒
+- 512MB 内存 / 每月 750 小时实例时长（学生工具流量足够）
+
+### 本地容器验证（可选，需 Docker）
+
+```bash
+docker build -t grad-app .
+docker run --rm -p 8000:8000 grad-app   # http://localhost:8000
+```
+
 ## 测试
 
 ```powershell

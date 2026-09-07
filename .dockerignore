@@ -1,0 +1,32 @@
+# 构建上下文只保留 backend/、frontend/ 源码、pipeline/output/、courses.db
+# 注意：带前导 / 才是锚定根目录，否则会误伤 backend/scripts 等同名子目录
+
+# ==== 版本控制与工具 ====
+.git/
+.codebuddy/
+.playwright-cli/
+**/.DS_Store
+
+# ==== Python 本地产物 ====
+/.venv/
+**/__pycache__/
+**/*.pyc
+.pytest_cache/
+
+# ==== Node 本地产物 ====
+frontend/node_modules/
+frontend/dist/
+**/*.tsbuildinfo
+
+# ==== 数据与生成物（grad.db 构建时重新生成）====
+backend/data/
+pipeline/cache/
+pipeline/reports/
+
+# ==== 大体积原始数据（部署不需要）====
+/unpress_pdf/
+/downloads/
+
+# ==== 部署无关目录 ====
+/docs/
+/scripts/

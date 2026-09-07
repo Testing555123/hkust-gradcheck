@@ -16,15 +16,12 @@ coverage/
 .env.*.local
 pipeline/run_pipeline_env.bat
 
-# ===== 数据文件（体积大 / 本地生成，不入库）=====
+# ===== 数据文件 =====
 # 官方培养方案 PDF 与爬虫索引（注意：不带斜杠，软链也能命中）
 unpress_pdf
-# 原始课程库与工作副本
-courses.db
-*.db
+# 可写工作副本（运行时从 courses.db 复制生成，不入库）
 backend/data/
-# 管线产物（可重新生成）
-pipeline/output/
+# courses.db 与 pipeline/output/ 需入库：Render 从 git 构建 Docker 镜像时烘焙 grad.db
 pipeline/reports/
 pipeline/cache/
 

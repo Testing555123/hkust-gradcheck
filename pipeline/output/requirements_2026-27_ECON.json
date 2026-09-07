@@ -1,0 +1,75 @@
+{
+  "year": "2026-27",
+  "code": "ECON",
+  "title": "BBA in Economics",
+  "total_required_credits": 0.0,
+  "groups": [
+    {
+      "name": "Required Courses",
+      "required_credits": 12.0,
+      "required_credits_raw": "12",
+      "note": "",
+      "courses": [
+        {
+          "code": "ECON3014",
+          "name": "Managerial Microeconomics",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "ECON3024",
+          "name": "Managerial Macroeconomics",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "ECON3334",
+          "name": "Introduction to Econometrics",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Elective(s)",
+      "required_credits": 11.0,
+      "required_credits_raw": "11",
+      "note": "ECON 4000-level Electives (Any 3 courses of the subject and level as specified)",
+      "courses": [
+        {
+          "code": "ECON4000-level Electives",
+          "name": "ECON 4000-level Electives",
+          "credits": 0.0,
+          "credits_raw": "",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    }
+  ],
+  "uncertain": [
+    "The total number of required credits is not explicitly stated in the document. It is inferred from the sum of the required credits for the required courses (12) and the elective requirement (11), which equals 23. However, the document says 'minimum total of 8 credits from the Major Required Courses obtained at HKUST', which seems to refer to a different constraint rather than the total degree requirement."
+  ],
+  "parser": "pymupdf",
+  "source_pdf": "/Users/dongdong/Documents/GitHub/newone/unpress_pdf/major/2026-27/ECON_BBA_in_Economics.pdf"
+}

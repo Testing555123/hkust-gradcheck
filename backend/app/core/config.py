@@ -16,6 +16,7 @@ class Settings(BaseSettings):
 
     source_db_path: Path = PROJECT_ROOT / "courses.db"
     db_path: Path = BACKEND_DIR / "data" / "grad.db"
+    static_dir: Path = PROJECT_ROOT / "static"
     cors_origins: list[str] = [
         "http://localhost:5173",
         "http://127.0.0.1:5173",
