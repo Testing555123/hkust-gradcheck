@@ -1,6 +1,11 @@
 import { describe, expect, it } from "vitest";
 
-import { computeCommonCoreAudit } from "./common-core";
+import {
+  allCommonCoreCourses,
+  computeCommonCoreAudit,
+  coursesForArea,
+  coursesForElectiveSlot,
+} from "./common-core";
 
 const course = (code: string, status: "taken" | "planned" = "taken") => ({ code, status });
 
@@ -141,5 +146,96 @@ describe("computeCommonCoreAudit / UxOP 替代与未匹配", () => {
     expect(find(a, "Foundations", "E-Comm").completedCredits).toBe(3);
     expect(a.totalTaken).toBe(3);
     expect(a.totalCompleted).toBe(6);
+  });
+});
+
+describe("候选课程派生（勾选 UI 数据源）", () => {
+  it("按 Area 派生候选课程（HMW 桶含 HMAW1905）", () => {
+    const hmw = coursesForArea("HMW");
+    expect(hmw.length).toBeGreaterThan(0);
+    expect(hmw.some((c) => c.code === "HMAW1905")).toBe(true);
+    // 多 Area 课程出现在每个所属 Area 的列表中
+    const multi = hmw.find((c) => c.areas.length > 1);
+    if (multi) {
+      for (const a of multi.areas) {
+        expect(coursesForArea(a).some((c) => c.code === multi.code)).toBe(true);
+      }
+    }
+  });
+
+  it("选修槽候选为全量清单，且与 allCommonCoreCourses 等长", () => {
+    expect(coursesForElectiveSlot().length).toBe(allCommonCoreCourses().length);
+    expect(allCommonCoreCourses().length).toBeGreaterThan(200);
+  });
+
+  it("SUS* 幻影条目已修复为真实课程代码（SUST1030 等）", () => {
+    const codes = new Set(allCommonCoreCourses().map((c) => c.code));
+    expect(codes.has("SUST1030")).toBe(true);
+    expect(codes.has("CIVL1210")).toBe(true);
+    expect(codes.has("UCOP3200")).toBe(true);
+    expect(codes.has("SUS1030")).toBe(false);
+  });
+
+  it("Area 修复回归：官方清单恢复的条目带正确 Area（含 SUS）", () => {
+    const byCode = new Map(allCommonCoreCourses().map((c) => [c.code, c.areas]));
+    // SUS 补充清单（2025-11-19 官方口径）：基准 Area + SUS
+    expect(byCode.get("CHEM1004")).toEqual(["S", "SUS"]);
+    expect(byCode.get("ENVR1080")).toEqual(["SA", "SUS"]);
+    expect(byCode.get("ISOM1700")).toEqual(["SA", "SUS"]);
+    expect(byCode.get("SUST1010")).toEqual(["SUS"]);
+    // 2023 完整清单（Spring 2022-23 口径，无 SUS）
+    expect(byCode.get("ISOM1380")).toEqual(["SA"]);
+    // 仅 4 门待人工复核仍无 Area
+    expect(byCode.get("HUMA1660")).toEqual([]);
+    expect(byCode.get("ISOM2310")).toEqual([]);
+  });
+
+  it("上轮已修复的 11 个条目不回退（含 CIVL1190 证据校正 S,SUS）", () => {
+    const byCode = new Map(allCommonCoreCourses().map((c) => [c.code, c.areas]));
+    expect(byCode.get("SUST1030")).toEqual(["SUS"]);
+    expect(byCode.get("CIVL1100")).toEqual(["T"]);
+    expect(byCode.get("CIVL1161")).toEqual(["T"]);
+    expect(byCode.get("CIVL1210")).toEqual(["T", "SUS"]);
+    expect(byCode.get("FINA1303")).toEqual(["SA"]);
+    expect(byCode.get("MECH1905")).toEqual(["S", "T"]);
+    expect(byCode.get("ENVR2020")).toEqual(["S", "SUS"]);
+    expect(byCode.get("ISOM2030")).toEqual(["SA"]);
+    expect(byCode.get("ISDN2110")).toEqual(["A"]);
+    expect(byCode.get("UCOP3200")).toEqual(["UxOP"]);
+    expect(byCode.get("CIVL1190")).toEqual(["S", "SUS"]); // 官方校正：非 SA
+  });
+});
+
+describe("引擎计入课程追踪（counted / substitutedCredits）", () => {
+  it("普通桶记录实际计入的课程", () => {
+    const a = computeCommonCoreAudit({
+      courses: [course("HMAW1905"), course("LANG1402", "planned")],
+      ...base,
+    });
+    expect(find(a, "Foundations", "HMW").counted).toEqual([
+      { code: "HMAW1905", credits: 3 },
+    ]);
+    expect(find(a, "Foundations", "E-Comm").counted).toEqual([
+      { code: "LANG1402", credits: 3 },
+    ]);
+    expect(find(a, "Broadening", "A").counted ?? []).toEqual([]);
+  });
+
+  it("多 Area 课程只归一处桶（counted 不重复）", () => {
+    const a = computeCommonCoreAudit({ courses: [course("ISOM2400")], ...base });
+    const sa = find(a, "Broadening", "SA").counted ?? [];
+    expect(sa).toEqual([{ code: "ISOM2400", credits: 3 }]);
+    // COMP 的 Home T 不设桶
+    expect(a.groups[1].buckets.some((b) => b.label === "T")).toBe(false);
+  });
+
+  it("选修槽记录替代学分数（E-Comm 溢出替代 CTDL）", () => {
+    const a = computeCommonCoreAudit({
+      courses: [course("LANG1402"), course("LANG1403"), course("LANG1409")],
+      ...base,
+    });
+    const ctdl = find(a, "Foundations", "CTDL");
+    expect(ctdl.counted ?? []).toEqual([]); // 无 CTDL Area 直属课
+    expect(ctdl.substitutedCredits).toBe(3);
   });
 });

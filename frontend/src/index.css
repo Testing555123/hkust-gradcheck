@@ -67,3 +67,43 @@
     font-feature-settings: 'rlig' 1, 'calt' 1;
   }
 }
+
+/* ===== Dialog（弹窗）纯 CSS 样式定制 ===== */
+@layer components {
+  /* 遮罩：加深色调 + 更强模糊，突出弹窗层级 */
+  .app-dialog-overlay {
+    background-color: hsl(var(--foreground) / 0.4);
+    backdrop-filter: blur(4px) saturate(1.2);
+  }
+
+  /* 内容面板：更大圆角、悬浮阴影、描边高光 */
+  .app-dialog-content {
+    border-radius: calc(var(--radius) + 6px);
+    border-color: hsl(var(--border) / 0.8);
+    box-shadow:
+      0 24px 64px -12px hsl(var(--foreground) / 0.28),
+      0 0 0 1px hsl(var(--background) / 0.6) inset;
+  }
+
+  /* 内容面板滚动条（配合 max-h + overflow-y-auto 使用） */
+  .app-dialog-content::-webkit-scrollbar {
+    width: 8px;
+  }
+  .app-dialog-content::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: hsl(var(--muted-foreground) / 0.35);
+  }
+  .app-dialog-content::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(var(--muted-foreground) / 0.55);
+  }
+
+  /* 右上角关闭按钮：悬停加深背景，呼应可点击性 */
+  .app-dialog-content > [data-radix-collection-item],
+  .app-dialog-content button[class*='absolute'] {
+    transition: opacity 0.15s ease, background-color 0.15s ease, transform 0.15s ease;
+  }
+  .app-dialog-content button[class*='absolute']:hover {
+    opacity: 1;
+    background-color: hsl(var(--muted));
+  }
+}

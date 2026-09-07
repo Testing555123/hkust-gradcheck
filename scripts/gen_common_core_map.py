@@ -15,7 +15,7 @@ from pathlib import Path
 
 import pymupdf
 
-PDF_PATH = Path("/Users/dongdong/Documents/GitHub/common core/Active_Course_List_30-credit.pdf")
+PDF_PATH = Path(__file__).resolve().parents[1] / "pipeline/cache/Active_Course_List_30-credit.pdf"
 OUT_PATH = Path(__file__).resolve().parents[1] / "frontend/src/data/common-core-course-map.json"
 
 AREA_GROUP = {
@@ -56,11 +56,16 @@ SKIP_RE = [
     re.compile(r"^Remarks:"),
     re.compile(r"^\([abc]\)\s"),
 ]
-SUBJ_RE = re.compile(r"^([A-Z]{3,5})$")
+SUBJ_RE = re.compile(r"^(?!SUS$|HAIC$|CTDL$|HMW$)([A-Z]{3,5})$")
 SUBJ_NUM_RE = re.compile(r"^([A-Z]{3,5})\s+(\d{4}[A-Z]?)$")
 NUM_RE = re.compile(r"^(\d{4}[A-Z]?)$")
 CREDIT_RE = re.compile(r"^(\d)$")
 CORE_OLD_RE = re.compile(r"^(CORE\s+\d{4}[A-Z]?#?)$")
+# Area 单元格与备注粘连的行，如 "SUS From 2025-26 Fall ..." / "A, H C-Comm From 2014-15 ..."
+GLUED_AREA_RE = re.compile(
+    r"^((?:A|H|S|T|SA|SUS|HAIC|CTDL|HMW|E-Comm|C-Comm|UxOP)"
+    r"(?:\s*,\s*(?:A|H|S|T|SA|SUS|HAIC|CTDL|HMW|E-Comm|C-Comm|UxOP))*)\s+(\S.*)$"
+)
 
 
 def is_noise(line: str) -> bool:
@@ -157,6 +162,15 @@ def parse(lines):
                 area_lines.extend(areas)
                 in_remarks = True  # `--`（空列表）也算完成，进入备注态
                 continue
+            # Area 与备注粘连："SUS From 2025-26 ..." → Area 提取 + 余下进备注
+            glued = GLUED_AREA_RE.match(line)
+            if glued:
+                parsed = split_areas(glued.group(1))
+                if parsed is not None:
+                    area_lines.extend(parsed)
+                    in_remarks = True
+                    remarks.append(glued.group(2))
+                    continue
             warnings.append(f"学分后出现非 Area 行: {line!r}（课程 {subj}{num}）")
             area_lines.append("__UNKNOWN__")
             in_remarks = True

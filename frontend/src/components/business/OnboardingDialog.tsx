@@ -122,7 +122,13 @@ export function OnboardingDialog({
   };
 
   return (
-    <Dialog open={open}>
+    <Dialog
+      open={open}
+      onOpenChange={(next) => {
+        // forced（无有效 profile）时禁止任何途径关闭；否则 X / ESC / 点遮罩均视为取消
+        if (!next && !forced) onCancel?.();
+      }}
+    >
       <DialogContent
         showCloseButton={!forced}
         onEscapeKeyDown={(e) => {
@@ -134,9 +140,9 @@ export function OnboardingDialog({
         onInteractOutside={(e) => {
           if (forced) e.preventDefault();
         }}
-        className="max-h-[90vh] overflow-y-auto"
+        className="flex max-h-[90vh] flex-col overflow-hidden p-0"
       >
-        <DialogHeader>
+        <DialogHeader className="px-6 pb-2 pt-6">
           <DialogTitle className="flex items-center gap-2">
             <span className="flex h-8 w-8 items-center justify-center rounded-md bg-primary/10 text-primary">
               <GraduationCap className="h-4 w-4" />
@@ -148,7 +154,7 @@ export function OnboardingDialog({
           </DialogDescription>
         </DialogHeader>
 
-        <div className="space-y-4">
+        <div className="min-h-0 flex-1 space-y-4 overflow-y-auto px-6 py-4">
           <Field label="入学年份" hint="以录取通知书上的学年为准">
             {/* value 恒为字符串（未选时为空串），避免 Radix 在受控/非受控之间切换；空串同样会显示 placeholder */}
             <Select value={year} onValueChange={selectYear}>
@@ -302,7 +308,7 @@ export function OnboardingDialog({
           </div>
         </div>
 
-        <DialogFooter>
+        <DialogFooter className="shrink-0 border-t bg-card px-6 py-4">
           {onImportTranscript && (
             <Button variant="outline" className="mr-auto gap-1.5" onClick={onImportTranscript}>
               <FileUp className="h-3.5 w-3.5" />

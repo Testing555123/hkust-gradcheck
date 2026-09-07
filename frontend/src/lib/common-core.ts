@@ -69,6 +69,12 @@ const BROADENING_BASE = ["A", "H", "S", "T", "SA"];
 
 /* ---------- 产物类型 ---------- */
 
+export const CC_GROUP_NAMES: Record<string, string> = {
+  Foundations: "基础",
+  Broadening: "拓展",
+  Experiencing: "体验",
+};
+
 export interface CommonCoreBucket {
   label: string;
   fullName: string;
@@ -79,6 +85,10 @@ export interface CommonCoreBucket {
   completedCredits: number;
   isElective: boolean;
   note?: string;
+  /** 引擎实际计入本桶的课程（含计划口径；选修槽只含 Area 直属课） */
+  counted?: { code: string; credits: number }[];
+  /** 选修槽由溢出学分池替代的学分数（无法归属到具体课程） */
+  substitutedCredits?: number;
 }
 
 export interface CommonCoreGroup {
@@ -118,30 +128,41 @@ interface Assigned {
   [area: string]: number;
 }
 
+interface AssignDetail {
+  credits: Assigned;
+  /** 每个 Area 实际分到的课程（贪心分配结果，多 Area 课程只归一处） */
+  byArea: Record<string, { code: string; credits: number }[]>;
+}
+
 /** 把课程学分按 Area 分桶（多 Area 课程按「剩余需求最大」贪心归属，模拟学生自选） */
 function assign(
-  courses: { areas: string[]; credits: number }[],
+  courses: { code: string; areas: string[]; credits: number }[],
   requiredByArea: Record<string, number>
-): Assigned {
-  const assigned: Assigned = {};
+): AssignDetail {
+  const credits: Assigned = {};
+  const byArea: AssignDetail["byArea"] = {};
+  const put = (area: string, c: { code: string; credits: number }) => {
+    credits[area] = (credits[area] ?? 0) + c.credits;
+    (byArea[area] ??= []).push({ code: c.code, credits: c.credits });
+  };
   const single = courses.filter((c) => c.areas.length === 1);
   const multi = courses
     .filter((c) => c.areas.length > 1)
     .sort((a, b) => a.areas.length - b.areas.length);
-  for (const c of single) assigned[c.areas[0]] = (assigned[c.areas[0]] ?? 0) + c.credits;
+  for (const c of single) put(c.areas[0], c);
   for (const c of multi) {
     let best = c.areas[0];
     let bestRemain = -Infinity;
     for (const a of c.areas) {
-      const remain = (requiredByArea[a] ?? 0) - (assigned[a] ?? 0);
+      const remain = (requiredByArea[a] ?? 0) - (credits[a] ?? 0);
       if (remain > bestRemain) {
         bestRemain = remain;
         best = a;
       }
     }
-    assigned[best] = (assigned[best] ?? 0) + c.credits;
+    put(best, c);
   }
-  return assigned;
+  return { credits, byArea };
 }
 
 export function schoolOf(program: string): string {
@@ -173,8 +194,8 @@ export function computeCommonCoreAudit(input: CommonCoreInput): CommonCoreAudit 
 
   // 课程分类：已映射（含多 Area）/ 未匹配
   const unmatched: { code: string; status: CourseStatus }[] = [];
-  const takenCourses: { areas: string[]; credits: number }[] = [];
-  const plannedCourses: { areas: string[]; credits: number }[] = [];
+  const takenCourses: { code: string; areas: string[]; credits: number }[] = [];
+  const plannedCourses: { code: string; areas: string[]; credits: number }[] = [];
   const seen = new Set<string>();
   for (const { code, status } of input.courses) {
     if (seen.has(code)) continue;
@@ -184,7 +205,7 @@ export function computeCommonCoreAudit(input: CommonCoreInput): CommonCoreAudit 
       unmatched.push({ code, status });
       continue;
     }
-    const course = { areas: entry.areas, credits: entry.credits };
+    const course = { code, areas: entry.areas, credits: entry.credits };
     (status === "taken" ? takenCourses : plannedCourses).push(course);
   }
 
@@ -209,17 +230,18 @@ export function computeCommonCoreAudit(input: CommonCoreInput): CommonCoreAudit 
   const mkBucket = (
     label: string,
     required: number,
-    assignedTaken: Assigned,
-    assignedAll: Assigned,
+    assignedTaken: AssignDetail,
+    assignedAll: AssignDetail,
     opts?: { isElective?: boolean; note?: string }
   ): CommonCoreBucket => ({
     label,
     fullName: CC_AREA_NAMES[label] ?? label,
     required,
-    takenCredits: Math.min(required, assignedTaken[label] ?? 0),
-    completedCredits: Math.min(required, assignedAll[label] ?? 0),
+    takenCredits: Math.min(required, assignedTaken.credits[label] ?? 0),
+    completedCredits: Math.min(required, assignedAll.credits[label] ?? 0),
     isElective: opts?.isElective ?? false,
     note: opts?.note,
+    counted: assignedAll.byArea[label] ?? [],
   });
 
   const foundationBuckets = FOUNDATIONS.map((f) =>
@@ -239,20 +261,20 @@ export function computeCommonCoreAudit(input: CommonCoreInput): CommonCoreAudit 
       label: "ANY",
       fullName: "Any Broadening Area",
       required: 3,
-      takenCredits: Math.min(3, overflow(takenAssigned)),
-      completedCredits: Math.min(3, overflow(allAssigned)),
+      takenCredits: Math.min(3, overflow(takenAssigned.credits)),
+      completedCredits: Math.min(3, overflow(allAssigned.credits)),
       isElective: false,
       note: "任意非 Home Area 的未占用学分",
     });
   }
 
   // 选修替代：CTDL / UxOP 由未占用学分池顺序补足（先 CTDL 后 UxOP）
-  const takenPool = overflow(takenAssigned);
-  const allPool = overflow(allAssigned);
-  const ctdlTaken = drawPool(takenPool, takenAssigned.CTDL ?? 0, 3);
-  const ctdlAll = drawPool(allPool, allAssigned.CTDL ?? 0, 3);
-  const uxopTaken = drawPool(ctdlTaken.remaining, takenAssigned.UxOP ?? 0, 3);
-  const uxopAll = drawPool(ctdlAll.remaining, allAssigned.UxOP ?? 0, 3);
+  const takenPool = overflow(takenAssigned.credits);
+  const allPool = overflow(allAssigned.credits);
+  const ctdlTaken = drawPool(takenPool, takenAssigned.credits.CTDL ?? 0, 3);
+  const ctdlAll = drawPool(allPool, allAssigned.credits.CTDL ?? 0, 3);
+  const uxopTaken = drawPool(ctdlTaken.remaining, takenAssigned.credits.UxOP ?? 0, 3);
+  const uxopAll = drawPool(ctdlAll.remaining, allAssigned.credits.UxOP ?? 0, 3);
   const ctdlBucket: CommonCoreBucket = {
     label: "CTDL",
     fullName: CC_AREA_NAMES.CTDL,
@@ -261,6 +283,8 @@ export function computeCommonCoreAudit(input: CommonCoreInput): CommonCoreAudit 
     completedCredits: ctdlAll.completed,
     isElective: true,
     note: "选修槽：不足部分可由 E-Comm(高级)/C-Comm/A/H/S/T/SA/UxOP 未占用学分替代",
+    counted: allAssigned.byArea.CTDL ?? [],
+    substitutedCredits: ctdlAll.completed - (allAssigned.credits.CTDL ?? 0),
   };
   const uxopBucket: CommonCoreBucket = {
     label: "UxOP",
@@ -270,6 +294,8 @@ export function computeCommonCoreAudit(input: CommonCoreInput): CommonCoreAudit 
     completedCredits: uxopAll.completed,
     isElective: true,
     note: "选修槽：不足部分可由 CTDL/E-Comm(高级)/C-Comm/A/H/S/T/SA 未占用学分替代",
+    counted: allAssigned.byArea.UxOP ?? [],
+    substitutedCredits: uxopAll.completed - (allAssigned.credits.UxOP ?? 0),
   };
 
   const groups: CommonCoreGroup[] = [
@@ -310,5 +336,34 @@ export function computeCommonCoreAudit(input: CommonCoreInput): CommonCoreAudit 
     school: school || undefined,
     unmatched,
   };
+}
+
+/* ---------- 候选课程派生（供勾选 UI 使用） ---------- */
+
+export interface CommonCoreCourseInfo {
+  code: string;
+  name: string;
+  credits: number;
+  areas: string[];
+}
+
+const CC_COURSES: CommonCoreCourseInfo[] = (
+  Object.entries(courseMapJson.courses as Record<string, { title: string; credits: number; areas: string[] }>)
+    .map(([code, e]) => ({ code, name: e.title, credits: e.credits, areas: e.areas ?? [] }))
+).sort((a, b) => a.code.localeCompare(b.code));
+
+/** 官方清单全部通识课程（含未归 Area 的条目） */
+export function allCommonCoreCourses(): CommonCoreCourseInfo[] {
+  return CC_COURSES;
+}
+
+/** 指定 Area 的候选课程（多 Area 课程会出现在每个所属 Area 的列表中） */
+export function coursesForArea(area: string): CommonCoreCourseInfo[] {
+  return CC_COURSES.filter((c) => c.areas.includes(area));
+}
+
+/** 选修槽（CTDL* / UxOP*）候选：全部通识课程（任何未占用学分均可替代） */
+export function coursesForElectiveSlot(): CommonCoreCourseInfo[] {
+  return CC_COURSES;
 }
 

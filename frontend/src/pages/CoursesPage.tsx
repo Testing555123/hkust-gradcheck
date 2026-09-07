@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { Search, SearchX } from "lucide-react";
+import { Search, SearchX, Shapes } from "lucide-react";
 
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
@@ -7,7 +7,10 @@ import { Button } from "@/components/ui/button";
 import { EmptyState } from "@/components/ui/empty";
 import { CourseRow } from "@/components/business/CourseRow";
 import { FilterChips } from "@/components/business/FilterChips";
+import { CCGroupPanel } from "@/components/business/CommonCoreCourses";
+import { computeCommonCoreAudit } from "@/lib/common-core";
 import { useSelection } from "@/stores/selection";
+import { useProfile } from "@/stores/profile";
 import {
   applyFilter,
   attachStatus,
@@ -37,8 +40,27 @@ export function CoursesPage({
   attachedEntries?: AttachedEntryView[];
 }) {
   const status = useSelection((s) => s.status);
+  const profile = useProfile((s) => s.profile);
   const [keyword, setKeyword] = useState("");
   const [filter, setFilter] = useState<CourseFilterState>("all");
+
+  // 通识核心审核（与要求明细页同源）：勾选即联动进度
+  const cc = useMemo(
+    () =>
+      computeCommonCoreAudit({
+        courses: Object.entries(status).map(([code, s]) => ({ code, status: s })),
+        program: tree.program.code,
+        school: profile?.school ?? null,
+        admissionYear: profile?.admissionYear ?? null,
+      }),
+    [status, tree.program.code, profile?.school, profile?.admissionYear]
+  );
+  const notApplicableAreas = useMemo(() => {
+    const areas: string[] = [];
+    if (!cc.framework.susApplicable) areas.push("SUS");
+    if (!cc.framework.haicApplicable) areas.push("HAIC");
+    return areas;
+  }, [cc.framework.susApplicable, cc.framework.haicApplicable]);
 
   const collect = (
     source: ProgramTreeData,
@@ -147,6 +169,22 @@ export function CoursesPage({
             }
           />
         )}
+      </div>
+
+      {/* 通识核心：按基础 / 拓展 / 体验三组折叠，勾选与进度联动（不参与顶部主修搜索） */}
+      <div className="space-y-2 pt-2">
+        <div className="flex flex-wrap items-center gap-2 text-sm font-medium text-muted-foreground">
+          <Shapes className="h-4 w-4" />
+          通识核心 Common Core
+          {notApplicableAreas.length > 0 && (
+            <span className="text-xs font-normal text-muted-foreground">
+              （你的入学学年不设 {notApplicableAreas.join(" / ")} 桶）
+            </span>
+          )}
+        </div>
+        {cc.groups.map((g) => (
+          <CCGroupPanel key={g.name} group={g} notApplicableAreas={notApplicableAreas} />
+        ))}
       </div>
     </div>
   );

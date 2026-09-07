@@ -5,7 +5,7 @@ import { CheckCircle2, Shapes } from "lucide-react";
 import { computeCommonCoreAudit } from "@/lib/common-core";
 import { useSelection } from "@/stores/selection";
 import { useProfile } from "@/stores/profile";
-import { CCBucketRow } from "@/components/business/CCProgressCard";
+import { CCBucketBlock } from "@/components/business/CommonCoreCourses";
 import type { ProgramTreeData } from "@/types";
 
 const GROUP_NAMES: Record<string, string> = {
@@ -28,6 +28,14 @@ export function CommonCoreSection({ tree }: { tree: ProgramTreeData }) {
       }),
     [status, tree.program.code, profile?.school, profile?.admissionYear]
   );
+
+  // 入学学年不设桶的 Area（Q6b）：课程仍列出并标注说明
+  const notApplicableAreas = useMemo(() => {
+    const areas: string[] = [];
+    if (!cc.framework.susApplicable) areas.push("SUS");
+    if (!cc.framework.haicApplicable) areas.push("HAIC");
+    return areas;
+  }, [cc.framework.susApplicable, cc.framework.haicApplicable]);
 
   return (
     <div className="space-y-4">
@@ -79,9 +87,9 @@ export function CommonCoreSection({ tree }: { tree: ProgramTreeData }) {
                 </div>
               )}
             </CardHeader>
-            <CardContent className="space-y-2.5">
+            <CardContent className="space-y-4">
               {g.buckets.map((b) => (
-                <CCBucketRow key={b.label} bucket={b} />
+                <CCBucketBlock key={b.label} bucket={b} notApplicableAreas={notApplicableAreas} />
               ))}
             </CardContent>
           </Card>

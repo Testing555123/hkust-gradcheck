@@ -4,13 +4,7 @@ import { Progress } from "@/components/ui/progress";
 import { CheckCircle2 } from "lucide-react";
 
 import type { CommonCoreBucket, CommonCoreGroup } from "@/lib/common-core";
-import { CC_AREA_NAMES } from "@/lib/common-core";
-
-const CC_GROUP_NAMES: Record<string, string> = {
-  Foundations: "基础",
-  Broadening: "拓展",
-  Experiencing: "体验",
-};
+import { CC_AREA_NAMES, CC_GROUP_NAMES } from "@/lib/common-core";
 
 interface CCProgressCardProps {
   group: CommonCoreGroup;

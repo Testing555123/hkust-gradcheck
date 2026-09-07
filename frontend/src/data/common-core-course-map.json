@@ -100,18 +100,24 @@
     "CHEM1004": {
       "title": "Chemistry in Everyday Life",
       "credits": 3,
-      "areas": [],
-      "area": "",
-      "group": "",
+      "areas": [
+        "S",
+        "SUS"
+      ],
+      "area": "S",
+      "group": "Broadening",
       "effectiveFrom": "Course Cross-Listed in Foundations and Broadening Groups Courses in Broadening Group S",
       "prevCode": "CORE1120"
     },
     "CIVL1140": {
       "title": "Environment and Society: Sustainable Development Goals and Carbon Neutrality",
       "credits": 3,
-      "areas": [],
-      "area": "",
-      "group": "",
+      "areas": [
+        "T",
+        "SUS"
+      ],
+      "area": "T",
+      "group": "Broadening",
       "effectiveFrom": "",
       "prevCode": ""
     },
@@ -130,10 +136,13 @@
     "CIVL1190": {
       "title": "Climate Change, Big History and Sustainability",
       "credits": 3,
-      "areas": [],
-      "area": "",
-      "group": "",
-      "effectiveFrom": "SA",
+      "areas": [
+        "S",
+        "SUS"
+      ],
+      "area": "S",
+      "group": "Broadening",
+      "effectiveFrom": "SUS From 2025-26 Fall for 2025-26 and 2026-27 cohorts.",
       "prevCode": "CORE1223"
     },
     "CIVL1220": {
@@ -361,54 +370,72 @@
     "ENVR1030": {
       "title": "Environment and Health",
       "credits": 3,
-      "areas": [],
-      "area": "",
-      "group": "",
+      "areas": [
+        "T",
+        "SUS"
+      ],
+      "area": "T",
+      "group": "Broadening",
       "effectiveFrom": "",
       "prevCode": "CORE1202"
     },
     "ENVR1080": {
       "title": "The Smart Consumer - Uncovering the Hidden Story behind the Product Label",
       "credits": 3,
-      "areas": [],
-      "area": "",
-      "group": "",
+      "areas": [
+        "SA",
+        "SUS"
+      ],
+      "area": "SA",
+      "group": "Broadening",
       "effectiveFrom": "",
       "prevCode": "CORE1943"
     },
     "ENVR1150": {
       "title": "Climate Change Impacts and Extreme Weather Events",
       "credits": 3,
-      "areas": [],
-      "area": "",
-      "group": "",
+      "areas": [
+        "S",
+        "SUS"
+      ],
+      "area": "S",
+      "group": "Broadening",
       "effectiveFrom": "",
       "prevCode": "CORE1941"
     },
     "ENVR2050": {
       "title": "Sustainability Thinking",
       "credits": 3,
-      "areas": [],
-      "area": "",
-      "group": "",
+      "areas": [
+        "SA",
+        "SUS"
+      ],
+      "area": "SA",
+      "group": "Broadening",
       "effectiveFrom": "",
       "prevCode": "CORE2942"
     },
     "ENVR2060": {
       "title": "From Trash to Treasure: Transforming Waste into Resources",
       "credits": 3,
-      "areas": [],
-      "area": "",
-      "group": "",
+      "areas": [
+        "SA",
+        "SUS"
+      ],
+      "area": "SA",
+      "group": "Broadening",
       "effectiveFrom": "",
       "prevCode": "CORE2943"
     },
     "ENVR2070": {
       "title": "Smart Buildings for a Warming Planet",
       "credits": 3,
-      "areas": [],
-      "area": "",
-      "group": "",
+      "areas": [
+        "T",
+        "SUS"
+      ],
+      "area": "T",
+      "group": "Broadening",
       "effectiveFrom": "",
       "prevCode": "CORE2944"
     },
@@ -1688,9 +1715,12 @@
     "ISDN2000": {
       "title": "What is Design and Why Design?",
       "credits": 3,
-      "areas": [],
-      "area": "",
-      "group": "",
+      "areas": [
+        "T",
+        "SUS"
+      ],
+      "area": "T",
+      "group": "Broadening",
       "effectiveFrom": "",
       "prevCode": "CORE2261"
     },
@@ -1706,9 +1736,11 @@
     "ISOM1380": {
       "title": "Technology and Innovation: Social and Business Perspectives",
       "credits": 3,
-      "areas": [],
-      "area": "",
-      "group": "",
+      "areas": [
+        "SA"
+      ],
+      "area": "SA",
+      "group": "Broadening",
       "effectiveFrom": "",
       "prevCode": "CORE1340"
     },
@@ -1738,9 +1770,12 @@
     "ISOM1700": {
       "title": "Critical Issues in Business Operations",
       "credits": 3,
-      "areas": [],
-      "area": "",
-      "group": "",
+      "areas": [
+        "SA",
+        "SUS"
+      ],
+      "area": "SA",
+      "group": "Broadening",
       "effectiveFrom": "",
       "prevCode": ""
     },
@@ -2186,9 +2221,12 @@
     "MARK1220": {
       "title": "Marketing and Society",
       "credits": 3,
-      "areas": [],
-      "area": "",
-      "group": "",
+      "areas": [
+        "SA",
+        "SUS"
+      ],
+      "area": "SA",
+      "group": "Broadening",
       "effectiveFrom": "",
       "prevCode": "CORE1360"
     },
@@ -2709,8 +2747,8 @@
       "effectiveFrom": "",
       "prevCode": ""
     },
-    "SUS1030": {
-      "title": "From 2025-26 Fall for 2025-26 and 2026-27 cohorts. T, SA From 2022-23 Spring to 2024-25 Summer. SUS From 2025-26 Fall for 2025-26 and 2026-27 cohorts. S From 2024-25 Spring to 2024-25 Summer. SUST Climate Change and Sustainability: An Interdisciplinary Perspective",
+    "SUST1030": {
+      "title": "Climate Change and Sustainability: An Interdisciplinary Perspective",
       "credits": 3,
       "areas": [
         "SUS"
@@ -2720,19 +2758,19 @@
       "effectiveFrom": "From 2025-26 Spring for 2025-26 and 2026-27 cohorts.",
       "prevCode": ""
     },
-    "SUS1100": {
-      "title": "From 2025-26 Fall for 2025-26 and 2026-27 cohorts. CIVL Discovering Civil and Environmental Engineering",
+    "CIVL1100": {
+      "title": "Discovering Civil and Environmental Engineering",
       "credits": 3,
       "areas": [
         "T"
       ],
       "area": "T",
       "group": "Broadening",
-      "effectiveFrom": "This is a common core course with effect from 2026-27 Fall. T This is a common core course with effect from 2024-25 Spring.",
+      "effectiveFrom": "This is a common core course with effect from 2026-27 Fall.",
       "prevCode": ""
     },
-    "SUS1161": {
-      "title": "From 2025-26 Fall for 2025-26 and 2026-27 cohorts. S From 2024-25 Spring to 2024-25 Summer. CIVL Building the Future: Civil Engineering Challenges & Solutions",
+    "CIVL1161": {
+      "title": "Building the Future: Civil Engineering Challenges & Solutions",
       "credits": 3,
       "areas": [
         "T"
@@ -2742,8 +2780,8 @@
       "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
       "prevCode": ""
     },
-    "SUS1210": {
-      "title": "From 2025-26 Fall for 2025-26 and 2026-27 cohorts. T From 2022-23 Spring to 2024-25 Summer. CIVL Fundamental of Green Buildings",
+    "CIVL1210": {
+      "title": "Fundamental of Green Buildings",
       "credits": 3,
       "areas": [
         "T",
@@ -2751,11 +2789,11 @@
       ],
       "area": "T",
       "group": "Broadening",
-      "effectiveFrom": "- This is a common core course with effect from 2025-26 Spring. - SUS area is for 2025-26 and 2026-27 cohorts.",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring. SUS area is for 2025-26 and 2026-27 cohorts.",
       "prevCode": ""
     },
-    "SUS1303": {
-      "title": "From 2025-26 Fall for 2025-26 and 2026-27 cohorts. SA The course title was From Trash to Treasure: Managing Waste to Resources before 2024-25 Summer. SUS From 2025-26 Fall for 2025-26 and 2026-27 cohorts. T SUS From 2025-26 Fall for 2025-26 and 2026-27 cohorts. FINA Introduction to Financial Markets and Institutions",
+    "FINA1303": {
+      "title": "Introduction to Financial Markets and Institutions",
       "credits": 3,
       "areas": [
         "SA"
@@ -2765,8 +2803,8 @@
       "effectiveFrom": "",
       "prevCode": ""
     },
-    "SUS1905": {
-      "title": "From 2025-26 Spring for 2025-26 and 2026-27 cohorts. MECH Buildings for Contemporary Living",
+    "MECH1905": {
+      "title": "Buildings for Contemporary Living",
       "credits": 3,
       "areas": [
         "S",
@@ -2777,39 +2815,42 @@
       "effectiveFrom": "",
       "prevCode": ""
     },
-    "SUS2020": {
-      "title": "From 2025-26 Fall for 2025-26 and 2026-27 cohorts. SA SUS From 2025-26 Fall for 2025-26 and 2026-27 cohorts. S SUS From 2025-26 Fall for 2025-26 and 2026-27 cohorts. S SUS From 2025-26 Fall for 2025-26 and 2026-27 cohorts. ENVR Urban Air Pollution",
+    "ENVR2020": {
+      "title": "Urban Air Pollution",
       "credits": 3,
-      "areas": [],
-      "area": "",
-      "group": "",
-      "effectiveFrom": "",
+      "areas": [
+        "S",
+        "SUS"
+      ],
+      "area": "S",
+      "group": "Broadening",
+      "effectiveFrom": "SUS From 2025-26 Fall for 2025-26 and 2026-27 cohorts.",
       "prevCode": "CORE2941"
     },
-    "SUS2030": {
-      "title": "From 2025-26 Winter for 2025-26 and 2026-27 cohorts. ISOM Business Protections for Innovations",
+    "ISOM2030": {
+      "title": "Business Protections for Innovations",
       "credits": 3,
       "areas": [
         "SA"
       ],
       "area": "SA",
       "group": "Broadening",
-      "effectiveFrom": "SA T From 2025-26 Summer.",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Winter.",
       "prevCode": ""
     },
-    "SUS2110": {
-      "title": "From 2025-26 Fall for 2025-26 and 2026-27 cohorts. ISDN From Ideas to Assets: Practice of the Creative Economy System",
+    "ISDN2110": {
+      "title": "From Ideas to Assets: Practice of the Creative Economy System",
       "credits": 3,
       "areas": [
         "A"
       ],
       "area": "A",
       "group": "Broadening",
-      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring. SA T From 2025-26 Summer. SA T From 2025-26 Summer.",
+      "effectiveFrom": "This is a common core course with effect from 2025-26 Spring.",
       "prevCode": ""
     },
-    "SUS3200": {
-      "title": "From 2025-26 Fall for 2025-26 and 2026-27 cohorts. SA From 2024-25 Spring to 2024-25 Summer. UCOP Design for Global Health",
+    "UCOP3200": {
+      "title": "Design for Global Health",
       "credits": 3,
       "areas": [
         "UxOP"
@@ -2822,27 +2863,33 @@
     "SUST1010": {
       "title": "Introduction to Sustainability",
       "credits": 3,
-      "areas": [],
-      "area": "",
-      "group": "",
+      "areas": [
+        "SUS"
+      ],
+      "area": "SUS",
+      "group": "Broadening",
       "effectiveFrom": "1 2 HAIC: Human-AI Co-Creation and Data Literacy (for 2026-27 cohort ); CTDL: Critical Thinking and Data Literacy; HMW: Habits, Mindsets, and Wellness; E-Comm: English Communication; C-Comm: Chinese Communication; A: Arts; H: Humanities; S: Science; T: Technology; SA: Social Analysis; SUS: Sustainability (from 2025-26 cohort ); UxOP: Undergraduate experiential Opportunities Programs In 2022-23, all common core courses for the 30-credit Common Core Program were assigned a “CORE” prefix. Starting from 2023-24, this prefix has been removed, and common core courses have been coded according to their subject area code (e.g., “ACCT” for Accounting). Students should pay attention to the following for study plan and before enrolling in classes: For example, if students completed CORE 1240 Electronic and Information Technology in 2022-23, they can use it to fulfill the Technology (T) area requirement; but they cannot retake the same course using the subject area code ELEC 1010 Electronic and Information Technology in subsequent terms. For example, credits earned from SOSC 1850 Understanding Society in 2022-23 cannot count toward the Social Analysis (SA) area requirement. # The subject area codes are the alternate code of the CORE codes. For example, HUMA 1150 is the alternate code for CORE 1660. In 2022-23, students cannot use courses with subject area prefix (e.g., HUMA 1150) to fulfill any common core requirements. However, starting from 2023-24, students can use subject area-coded course (e.g., HUMA 1150) to fulfill EITHER the common core requirement OR the School/major requirement, but not both. It is important to note that certain major/minor programs may include common core courses as required or elective courses. While these courses can fulfill relevant major/minor requirements, students should be aware of the credit reuse rules specified by individual programs. Credits from some of these common core courses may only be used to fulfill EITHER the common core requirements OR the major/minor requirements, but not both. Please refer to the program catalog or consult your major/minor departments for details.",
       "prevCode": "CORE2830"
     },
     "SUST1020": {
       "title": "Climate Films and Sustainable Future",
       "credits": 3,
-      "areas": [],
-      "area": "",
-      "group": "",
+      "areas": [
+        "SUS"
+      ],
+      "area": "SUS",
+      "group": "Broadening",
       "effectiveFrom": "",
       "prevCode": "CORE3880"
     },
     "SUST1101": {
       "title": "Environmental, Social, and Governance Fundamentals",
       "credits": 3,
-      "areas": [],
-      "area": "",
-      "group": "",
+      "areas": [
+        "SUS"
+      ],
+      "area": "SUS",
+      "group": "Broadening",
       "effectiveFrom": "",
       "prevCode": "CORE1940"
     },
