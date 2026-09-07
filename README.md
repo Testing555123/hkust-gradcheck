@@ -96,43 +96,56 @@ $env:PYTHONIOENCODING='utf-8'
 - `pipeline/output/requirements_*.json` — LLM 抽取结果（可 diff、可手工修订，seed 只认这个）
 - `pipeline/reports/crosscheck_*.md` — 与 courses.db 的学分差异报告
 
-## 公网部署（Koyeb 免费档）
+## 公网部署（Cloudflare Workers + D1，免费、无需信用卡）
 
-单容器方案：FastAPI 同源托管前端静态产物 + SQLite（构建时烘焙进镜像），数据更新 = git push 重新部署，无需持久卷、无运行时 LLM 成本。
+架构：Cloudflare Worker（Python + FastAPI）同时提供 `/api/*` 与前端静态产物（Workers Static Assets，SPA fallback），数据存 D1（Cloudflare 的 serverless SQLite）。同源单域名、无冷启动休眠（Workers 按请求计费）、全球边缘节点。
 
-> 数据文件已入库（`courses.db` 与 `pipeline/output/`），平台从 git 构建 Docker 镜像时可直接使用。
+```
+worker/     Cloudflare Worker（FastAPI + D1 数据访问层）
+  src/worker.py     5 个只读端点，与 backend/ 端点行为一致
+  wrangler.jsonc    D1 binding + 静态资产配置
+  db_init.sql       数据初始化 SQL（由 scripts/export_d1_sql.py 生成）
+.github/workflows/deploy.yml   git push 自动：测试 → 导出数据 → 构建前端 → 导入 D1 → 部署
+```
 
-### 部署步骤（Koyeb，无需信用卡）
+### 一次性设置（约 10 分钟）
 
-1. 将本仓库 push 到 GitHub（private 仓库即可）
-2. 打开 https://app.koyeb.com → 用 GitHub 账号登录
-3. **Create Service**（或 Overview → Create Web Service）→ 选择 **GitHub** 仓库源 → 选中本仓库
-4. 构建配置：
-   - **Builder**：自动识别根目录 `Dockerfile`（无需额外配置）
-   - **Port**：保持默认（容器内读取 `PORT` 环境变量；Koyeb 会自动注入）
-   - **Health Check**：新增 HTTP 探针，Path 填 `/api/health`
-   - **Instance**：Free（Nano）
-   - 环境变量：无需任何配置（镜像内相对布局与仓库一致）
-5. Deploy → 首次构建约 3–5 分钟，完成后获得 `https://<服务名>-<org>.koyeb.app`
+1. 注册 Cloudflare 账号（免费版无需信用卡）：https://dash.cloudflare.com/sign-up
+2. 创建 D1 数据库并回填 ID：
 
-此后每次 `git push` 自动触发重新构建部署。
+   ```bash
+   cd worker && npx wrangler d1 create grad-db
+   # 把输出中的 database_id 填入 wrangler.jsonc 的 d1_databases.database_id
+   ```
 
-### 免费档说明
+3. 创建 API Token：https://dash.cloudflare.com/profile/api-tokens → **Edit Cloudflare Workers** 模板（需额外勾选 **D1 Edit** 权限），记下 Token 与 Account ID
+4. GitHub 仓库 → Settings → Secrets and variables → Actions，添加两个 Secret：
+   - `CLOUDFLARE_API_TOKEN`：上一步的 Token
+   - `CLOUDFLARE_ACCOUNT_ID`：Dashboard 首页右侧或 Workers 页可查
 
-- 免费 1 个实例（Nano：0.1 vCPU / 512MB），SQLite 毫秒级查询足够
-- 实例长期常驻但资源可被平台抢占回收（回收后下次访问自动重启，约 30 秒冷启动）
-- 注册用 GitHub 账号即可，正常使用不要求绑定信用卡（疑似滥用账号才可能被要求）
+### 部署与更新
 
-### 其他免费平台备选
+- push 到 `main` 即自动部署（GitHub Actions：跑 worker 单测 → 从 `courses.db` + `pipeline/output/` 重新导出数据并导入 D1 → 构建前端 → `wrangler deploy`）
+- 部署完成后地址形如 `https://grad-app.<你的子域>.workers.dev`（Actions 日志或 Workers 控制台可查）
+- 数据更新流程不变：管线产出 → 校对 `pipeline/output/requirements_*.json` → git push
 
-- **Hugging Face Spaces**：最稳定，但免费档 Space 必须 Public（代码与数据公开），且需 GitHub Action 做自动同步
-- **ClawCloud Run**：额度慷慨，但每天最多运行 12 小时
+### 免费档额度（对个人工具绰绰有余）
 
-### 本地容器验证（可选，需 Docker）
+- Workers：10 万请求/天；D1：500 万行读/天、5GB 存储
+- 无信用卡、无休眠冷启动；自定义域名可在 Workers 控制台免费绑定
+
+### 本地开发（两条路线并存）
 
 ```bash
-docker build -t grad-app .
-docker run --rm -p 8000:8000 grad-app   # http://localhost:8000
+# 路线 A：本地 FastAPI + SQLite 文件（无需 Cloudflare，与原先完全一致）
+.venv/bin/python -m uvicorn app.main:app --port 8000 --app-dir backend
+
+# 路线 B：本地 Workers 运行时（需 macOS 13.5+ / Linux；本机 macOS 12 不支持 workerd）
+cd worker && npx wrangler d1 execute grad-db --local --file db_init.sql
+npx wrangler dev   # http://localhost:8787
+
+# worker 数据层逻辑可用 Fake D1 单测验证（不依赖 workerd，任何平台可跑）
+.venv/bin/python -m pytest worker/tests -q
 ```
 
 ## 测试

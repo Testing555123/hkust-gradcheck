@@ -1,0 +1,15 @@
+[project]
+name = "grad-worker"
+version = "0.1.0"
+description = "毕业要求查询与学分核查系统 - Cloudflare Workers 版（FastAPI + D1）"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+]
+
+[dependency-groups]
+dev = [
+    "workers-py",
+    "workers-runtime-sdk",
+]

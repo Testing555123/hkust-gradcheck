@@ -10,6 +10,9 @@ dist/
 *.tsbuildinfo
 coverage/
 
+# ===== Cloudflare Workers 本地产物 =====
+.wrangler/
+
 # ===== 环境与密钥（严禁提交）=====
 .env
 .env.local
