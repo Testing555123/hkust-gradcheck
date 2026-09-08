@@ -125,27 +125,30 @@ export function CoursesPage({
 
   return (
     <div className="space-y-4">
-      <div className="flex flex-wrap items-center gap-3">
-        <div className="relative min-w-0 flex-1 max-w-md">
-          <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-          <Input
-            value={keyword}
-            onChange={(e) => setKeyword(e.target.value)}
-            placeholder="搜索课号、课程名或要求组…"
-            className="pl-8"
-          />
+      {/* 搜索与筛选吸顶：移动端滚动时保持可达（顶栏 56px） */}
+      <div className="sticky top-14 z-30 -mx-3 space-y-2 bg-background/85 px-3 py-2 backdrop-blur supports-[backdrop-filter]:bg-background/70 sm:mx-0 sm:px-0">
+        <div className="flex flex-wrap items-center gap-3">
+          <div className="relative min-w-0 flex-1 max-w-md">
+            <Search className="absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+            <Input
+              value={keyword}
+              onChange={(e) => setKeyword(e.target.value)}
+              placeholder="搜索课号、课程名或要求组…"
+              className="h-10 pl-8 md:h-9"
+            />
+          </div>
+          <Badge variant="secondary" className="tabular-nums">
+            {filtered.length} / {courses.length} 门
+          </Badge>
         </div>
-        <Badge variant="secondary" className="tabular-nums">
-          {filtered.length} / {courses.length} 门
-        </Badge>
-      </div>
 
-      <FilterChips
-        value={filter}
-        onChange={setFilter}
-        counts={counts}
-        options={COURSE_FILTER_OPTIONS}
-      />
+        <FilterChips
+          value={filter}
+          onChange={setFilter}
+          counts={counts}
+          options={COURSE_FILTER_OPTIONS}
+        />
+      </div>
 
       <div className="space-y-2">
         {filtered.map((c) => (
@@ -157,7 +160,9 @@ export function CoursesPage({
         ))}
         {filtered.length === 0 && (
           <EmptyState
-            icon={<SearchX className="h-10 w-10 mx-auto text-muted-foreground" />}
+            size="sm"
+            variant={keyword.trim() ? "search" : "filter"}
+            icon={<SearchX className="mx-auto h-10 w-10 text-muted-foreground" />}
             title="没有匹配的课程"
             description={
               keyword.trim()

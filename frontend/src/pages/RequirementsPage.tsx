@@ -82,7 +82,7 @@ export function RequirementsPage({
       </div>
 
       {/* 顶部 sticky 状态筛选条：长列表滚动常驻，一键只看缺口 */}
-      <div className="sticky top-[72px] z-30 -mx-4 bg-background/80 px-4 py-2 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="sticky top-14 z-30 -mx-3 bg-background/85 px-3 py-2 backdrop-blur supports-[backdrop-filter]:bg-background/70 sm:mx-0 sm:px-0">
         <FilterChips value={filter} onChange={setFilter} counts={counts} options={GROUP_FILTER_OPTIONS} />
       </div>
 

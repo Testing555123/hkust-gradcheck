@@ -16,6 +16,10 @@ export interface CollapsibleGroupProps {
   /** 展开后显示的正文内容 */
   children: React.ReactNode;
   className?: string;
+  /** 显式指定初始开合（不传则按 done 推断：已完成折叠，其余展开） */
+  defaultOpen?: boolean;
+  /** 组进度百分比（0-100）：在标题栏下方以细条呈现，折叠时也能看到完成度 */
+  progress?: number;
 }
 
 /**
@@ -29,21 +33,23 @@ export function CollapsibleGroup({
   headerExtra,
   children,
   className,
+  defaultOpen,
+  progress,
 }: CollapsibleGroupProps) {
-  const [open, setOpen] = React.useState(!done);
+  const [open, setOpen] = React.useState(() => defaultOpen ?? !done);
 
   return (
-    <Card className={className}>
+    <Card className={cn("overflow-hidden", className)}>
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
-        className="flex w-full items-center justify-between gap-3 rounded-lg px-6 py-4 text-left transition-colors hover:bg-muted/50"
+        className="flex w-full items-center justify-between gap-3 rounded-lg px-4 py-4 text-left transition-colors hover:bg-muted/50 sm:px-6"
       >
         <span className="flex min-w-0 items-center gap-2">
           <ChevronDown
             className={cn(
-              "h-4 w-4 shrink-0 text-muted-foreground transition-transform",
+              "h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-150",
               !open && "-rotate-90"
             )}
           />
@@ -57,11 +63,34 @@ export function CollapsibleGroup({
         <span className="flex shrink-0 items-center gap-2">
           {headerExtra}
           {summary != null && (
-            <span className="text-xs text-muted-foreground tabular-nums">{summary}</span>
+            <span className="hidden text-xs text-muted-foreground tabular-nums sm:inline">
+              {summary}
+            </span>
           )}
         </span>
       </button>
-      {open && <div className="border-t px-6 pb-5 pt-4">{children}</div>}
+
+      {/* 组进度细条：折叠时也能扫读完成度 */}
+      {typeof progress === "number" && (
+        <div
+          className="mx-4 mb-3 h-1 overflow-hidden rounded-full bg-secondary sm:mx-6"
+          role="progressbar"
+          aria-label="该组完成度"
+          aria-valuemin={0}
+          aria-valuemax={100}
+          aria-valuenow={Math.round(progress)}
+        >
+          <div
+            className={cn(
+              "h-full origin-left transition-transform duration-200 ease-out",
+              done ? "bg-success" : "bg-chart-1"
+            )}
+            style={{ transform: `scaleX(${Math.min(100, Math.max(0, progress)) / 100})` }}
+          />
+        </div>
+      )}
+
+      {open && <div className="border-t px-4 pb-5 pt-4 sm:px-6">{children}</div>}
     </Card>
   );
 }

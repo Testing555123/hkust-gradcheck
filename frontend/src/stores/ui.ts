@@ -1,9 +1,20 @@
 import { create } from "zustand";
 
+export type AppView = "overview" | "courses" | "requirements";
+
 interface UiState {
   year: string;
   code: string;
   setProgram: (year: string, code: string) => void;
+  /**
+   * 当前视图。刻意不引入客户端路由：静态托管已配置 SPA fallback，
+   * 用状态切换可保持部署配置与页面挂载方式不变。
+   */
+  activeView: AppView;
+  setView: (view: AppView) => void;
+  /** 小屏侧栏抽屉开合（桌面侧栏常驻，不使用该状态） */
+  sidebarOpen: boolean;
+  setSidebarOpen: (open: boolean) => void;
   /** 用户主动打开引导弹窗（顶栏摘要点击）；自动弹窗不经过这个状态 */
   onboardingOpen: boolean;
   openOnboarding: () => void;
@@ -25,6 +36,10 @@ export const useUi = create<UiState>()((set, get) => ({
   year: "",
   code: "",
   setProgram: (year, code) => set({ year, code }),
+  activeView: "overview",
+  setView: (view) => set({ activeView: view, sidebarOpen: false }),
+  sidebarOpen: false,
+  setSidebarOpen: (open) => set({ sidebarOpen: open }),
   onboardingOpen: false,
   openOnboarding: () => set({ onboardingOpen: true }),
   closeOnboarding: () => set({ onboardingOpen: false }),

@@ -14,7 +14,13 @@ interface CourseRowProps {
   sourceRef?: string | null;
 }
 
-/** 单行课程：已修（绿勾）/ 计划（蓝标）互斥勾选，勾选即时联动进度 */
+/**
+ * 课程行：已修（绿）/ 计划（蓝）互斥勾选，勾选即时联动进度。
+ *
+ * 双形态：
+ * - 桌面（md+）：单行表格密度，勾选为内联小控件
+ * - 移动（<md）：卡片流，课号课名置顶、勾选为两块等宽大按钮（点击区 ≥44px）
+ */
 export function CourseRow({ course, groupName, sourceRef }: CourseRowProps) {
   const current = useSelection((s) => s.status[course.code]);
   const toggle = useSelection((s) => s.toggle);
@@ -23,60 +29,86 @@ export function CourseRow({ course, groupName, sourceRef }: CourseRowProps) {
   const isTaken = current === "taken";
   const isPlanned = current === "planned";
 
+  const chipBase =
+    "flex min-h-[44px] flex-1 cursor-pointer select-none items-center justify-center gap-1.5 rounded-md border text-xs transition-colors " +
+    "md:min-h-0 md:flex-none md:justify-start md:border-0 md:bg-transparent md:p-0";
+
   return (
     <div
       className={cn(
-        "flex items-center gap-3 rounded-lg border bg-card px-3 py-2.5 transition-all hover:shadow-sm hover:border-primary/40",
-        isTaken && "bg-success/5 border-success/30",
-        isPlanned && "bg-primary/5 border-primary/30"
+        "flex flex-col gap-2.5 rounded-lg border bg-card p-3 transition-all hover:border-primary/40 hover:shadow-sm md:flex-row md:items-center md:gap-3 md:py-2.5",
+        isTaken && "border-success/30 bg-success/5",
+        isPlanned && "border-primary/30 bg-primary/5"
       )}
     >
-      {/* 已修 */}
-      <label className="flex items-center gap-1.5 cursor-pointer select-none shrink-0" title="标记为已修读">
-        <Checkbox
-          checked={isTaken}
-          onCheckedChange={() => toggle(course.code, "taken")}
-          className={cn(isTaken && "bg-success border-success")}
-        />
-        <span className={cn("text-xs", isTaken ? "text-success font-medium" : "text-muted-foreground")}>
-          已修
-        </span>
-      </label>
+      {/* 勾选区：移动端为两块大按钮，桌面通过 md:contents 还原为内联排列 */}
+      <div className="flex gap-2 md:contents">
+        <label
+          className={cn(
+            chipBase,
+            "border-border bg-surface-2 md:bg-transparent",
+            isTaken && "border-success/40 bg-success/10 text-success md:bg-transparent"
+          )}
+          title="标记为已修读"
+        >
+          <Checkbox
+            checked={isTaken}
+            onCheckedChange={() => toggle(course.code, "taken")}
+            className={cn(isTaken && "border-success bg-success")}
+          />
+          <span className={cn(isTaken ? "font-medium text-success" : "text-muted-foreground")}>
+            已修
+          </span>
+        </label>
 
-      {/* 计划 */}
-      <label className="flex items-center gap-1.5 cursor-pointer select-none shrink-0" title="加入修读计划">
-        <Checkbox checked={isPlanned} onCheckedChange={() => toggle(course.code, "planned")} />
-        <span className={cn("text-xs", isPlanned ? "text-primary font-medium" : "text-muted-foreground")}>
-          计划
-        </span>
-      </label>
+        <label
+          className={cn(
+            chipBase,
+            "border-border bg-surface-2 md:bg-transparent",
+            isPlanned && "border-primary/40 bg-primary/10 text-primary md:bg-transparent"
+          )}
+          title="加入修读计划"
+        >
+          <Checkbox checked={isPlanned} onCheckedChange={() => toggle(course.code, "planned")} />
+          <span className={cn(isPlanned ? "font-medium text-primary" : "text-muted-foreground")}>
+            计划
+          </span>
+        </label>
+      </div>
 
-      <div className="min-w-0 flex-1">
+      {/* 课程信息（移动端置顶） */}
+      <div className="order-first min-w-0 flex-1 md:order-none">
         {/* 已修划线：background-size 0→100% 过渡（200ms），替代瞬间 line-through */}
         <p
           className={cn(
-            "text-sm font-medium truncate bg-gradient-to-r from-current to-current bg-no-repeat bg-left-bottom bg-[length:0%_1px] pb-0.5 transition-[background-size] duration-200 ease-out",
+            "truncate bg-gradient-to-r from-current to-current bg-left-bottom bg-no-repeat bg-[length:0%_1px] pb-0.5 text-sm font-medium transition-[background-size] duration-200 ease-out",
             isTaken && "bg-[length:100%_1px] opacity-60"
           )}
         >
-          <span className="font-mono text-xs text-muted-foreground mr-2">{course.code}</span>
+          <span className="mr-2 font-mono text-xs text-muted-foreground">{course.code}</span>
           {course.name}
         </p>
-        {groupName && <p className="text-xs text-muted-foreground mt-0.5 truncate">{groupName}</p>}
+        {groupName && (
+          <p className="mt-0.5 truncate text-xs text-muted-foreground">{groupName}</p>
+        )}
       </div>
 
-      <div className="flex items-center gap-1.5 shrink-0">
+      {/* 元信息：学分 / Area / 页码 / 详情入口 */}
+      <div className="flex shrink-0 items-center gap-1.5">
         {course.areas && course.areas.length > 0 && (
           <Badge
             variant="outline"
-            className="hidden md:inline-flex max-w-[200px] truncate text-[10px] text-primary border-primary/30"
+            className="hidden max-w-[200px] truncate border-primary/30 text-[10px] text-primary md:inline-flex"
             title={course.areas.join(" / ")}
           >
             {course.areas.join(" / ")}
           </Badge>
         )}
         {sourceRef && (
-          <Badge variant="outline" className="hidden sm:inline-flex font-mono text-[10px] text-muted-foreground">
+          <Badge
+            variant="outline"
+            className="hidden font-mono text-[10px] text-muted-foreground sm:inline-flex"
+          >
             {sourceRef}
           </Badge>
         )}
@@ -86,7 +118,7 @@ export function CourseRow({ course, groupName, sourceRef }: CourseRowProps) {
         <Button
           variant="ghost"
           size="icon"
-          className="h-6 w-6 shrink-0 text-muted-foreground"
+          className="h-8 w-8 shrink-0 text-muted-foreground md:h-6 md:w-6"
           aria-label={`查看 ${course.code} 课程详情`}
           data-testid="course-info"
           onClick={() => openCourse(course.code)}
