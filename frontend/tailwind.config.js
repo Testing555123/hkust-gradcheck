@@ -7,10 +7,32 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Noto Sans SC', 'system-ui', 'sans-serif'],
+        // 港澳优先：系统字体（PingFang HK / 微軟正黑體）命中时零网络请求，Noto Sans TC 仅兜底
+        sans: [
+          '"Noto Sans TC"',
+          '"PingFang HK"',
+          '"Microsoft JhengHei"',
+          'system-ui',
+          'sans-serif',
+        ],
+      },
+      // 4 级字阶：display / title / body / caption（禁止 text-[10px] 这类魔法值）
+      fontSize: {
+        display: ['1.875rem', { lineHeight: '2.25rem', letterSpacing: '-0.02em' }],
+        title: ['1.125rem', { lineHeight: '1.5rem', letterSpacing: '-0.01em' }],
+        body: ['0.875rem', { lineHeight: '1.4rem' }],
+        caption: ['0.75rem', { lineHeight: '1rem' }],
+      },
+      // 4 级间距：页面分区一律 lg，卡内一律 md
+      spacing: {
+        xs: '0.5rem', // 8
+        sm: '0.75rem', // 12
+        md: '1rem', // 16
+        lg: '1.5rem', // 24
       },
       colors: {
         border: 'hsl(var(--border))',
+        'border-strong': 'hsl(var(--border-strong))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
         background: 'hsl(var(--background))',
@@ -35,6 +57,11 @@ export default {
           DEFAULT: 'hsl(var(--accent))',
           foreground: 'hsl(var(--accent-foreground))',
         },
+        'brand-soft': {
+          DEFAULT: 'hsl(var(--brand-soft))',
+          foreground: 'hsl(var(--brand-soft-foreground))',
+        },
+        'surface-2': 'hsl(var(--surface-2))',
         popover: {
           DEFAULT: 'hsl(var(--popover))',
           foreground: 'hsl(var(--popover-foreground))',
@@ -51,11 +78,31 @@ export default {
           DEFAULT: 'hsl(var(--warning))',
           foreground: 'hsl(var(--warning-foreground))',
         },
+        info: {
+          DEFAULT: 'hsl(var(--info))',
+          foreground: 'hsl(var(--info-foreground))',
+        },
       },
+      // 3 级圆角：卡片 12 / 控件 6 / 小元素 4（rounded-full 仅用于徽标）
       borderRadius: {
         lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
+        md: 'var(--radius-sm)',
+        sm: 'calc(var(--radius-sm) - 2px)',
+      },
+      // 3 层 elevation（暗色下 --elevation-1 归零，层级交给描边）
+      boxShadow: {
+        flat: 'var(--elevation-1)',
+        raised: 'var(--elevation-2)',
+        overlay: 'var(--elevation-3)',
+      },
+      transitionDuration: {
+        fast: 'var(--dur-fast)',
+        base: 'var(--dur-base)',
+      },
+      zIndex: {
+        header: 'var(--z-header)',
+        overlay: 'var(--z-overlay)',
+        toast: 'var(--z-toast)',
       },
       keyframes: {
         'fade-in-up': {

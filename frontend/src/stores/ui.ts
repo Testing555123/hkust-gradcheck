@@ -16,9 +16,22 @@ interface UiState {
   courseCode: string | null;
   openCourse: (code: string) => void;
   closeCourse: () => void;
-  /** 主题：light / dark；存 localStorage 由 App 应用到 <html> */
+  /** 主题：light / dark。首屏由 index.html 的 inline 脚本同步应用，避免白闪 */
   theme: "light" | "dark";
+  /** persist=false 用于跟随系统变化，不覆盖用户已做出的明确选择 */
+  setTheme: (theme: "light" | "dark", persist?: boolean) => void;
   toggleTheme: () => void;
+}
+
+/** 用户已选择则用其选择，否则跟随系统 prefers-color-scheme */
+function resolveInitialTheme(): "light" | "dark" {
+  try {
+    const saved = localStorage.getItem("grad-theme");
+    if (saved === "light" || saved === "dark") return saved;
+  } catch {
+    /* localStorage 不可用时回退到系统偏好 */
+  }
+  return window.matchMedia?.("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 }
 
 export const useUi = create<UiState>()((set, get) => ({
@@ -34,10 +47,18 @@ export const useUi = create<UiState>()((set, get) => ({
   courseCode: null,
   openCourse: (code) => set({ courseCode: code }),
   closeCourse: () => set({ courseCode: null }),
-  theme: (localStorage.getItem("grad-theme") as "light" | "dark") || "light",
-  toggleTheme: () => {
-    const next = get().theme === "light" ? "dark" : "light";
-    localStorage.setItem("grad-theme", next);
+  theme: resolveInitialTheme(),
+  setTheme: (next, persist = true) => {
+    if (persist) {
+      try {
+        localStorage.setItem("grad-theme", next);
+      } catch {
+        /* 隐私模式下写入失败：仍允许切换，只是下次访问回到系统偏好 */
+      }
+    }
     set({ theme: next });
+  },
+  toggleTheme: () => {
+    get().setTheme(get().theme === "light" ? "dark" : "light");
   },
 }));

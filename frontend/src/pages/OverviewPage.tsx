@@ -110,7 +110,7 @@ export function OverviewPage({
   return (
     <div className="space-y-5">
       {/* Hero：合并口径的缺口 / 进度双读数 + 横向进度条 */}
-      <Card className="border-primary/20 bg-gradient-to-br from-card to-accent">
+      <Card className="border-primary/20 bg-gradient-to-br from-card to-brand-soft">
         <CardContent className="space-y-4 p-6">
           <div className="flex items-start justify-between gap-3">
             <div>

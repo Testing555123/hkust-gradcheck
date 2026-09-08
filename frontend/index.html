@@ -1,13 +1,30 @@
 <!doctype html>
-<html lang="zh-Hant">
+<html lang="zh-Hant-HK">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
     <title>畢業要求查詢與學分核查</title>
+    <script>
+      // 必须在首帧前同步执行：先读用户选择，否则回退到系统偏好。
+      // 放到 React 的 useEffect 里做会导致深色用户每次刷新闪一屏白底。
+      (function () {
+        try {
+          var saved = localStorage.getItem('grad-theme');
+          var dark =
+            saved === 'dark' ||
+            (saved !== 'light' &&
+              window.matchMedia('(prefers-color-scheme: dark)').matches);
+          document.documentElement.classList.toggle('dark', dark);
+        } catch (e) {
+          /* localStorage 不可用时保持浅色 */
+        }
+      })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>

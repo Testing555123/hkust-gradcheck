@@ -29,6 +29,7 @@ export default function App() {
     year,
     code,
     theme,
+    setTheme,
     toggleTheme,
     setProgram,
     onboardingOpen,
@@ -68,10 +69,27 @@ export default function App() {
   // Tab 计数徽标数据（与 OverviewPage 同源，计算成本可忽略）
   const audit = tree.data ? computeProgramAudit(tree.data.groups, selectionStatus) : null;
 
-  // 应用主题到 <html>
+  // 应用主题到 <html>（首屏由 index.html 的 inline 脚本抢先执行，这里只管后续变更）
   useEffect(() => {
     document.documentElement.classList.toggle("dark", theme === "dark");
   }, [theme]);
+
+  // 用户尚未手动选择时跟随系统主题变化；判断放在事件回调里，手动切换过就不再打扰
+  useEffect(() => {
+    const mq = window.matchMedia("(prefers-color-scheme: dark)");
+    const onChange = (e: MediaQueryListEvent) => {
+      let saved: string | null = null;
+      try {
+        saved = localStorage.getItem("grad-theme");
+      } catch {
+        /* 读不到就当作未选择 */
+      }
+      if (saved === "light" || saved === "dark") return;
+      setTheme(e.matches ? "dark" : "light", false);
+    };
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  }, [setTheme]);
 
   // 切换培养方案的全局反馈（首次保存不提示，避免与引导弹窗重复）
   const lastProfileKey = useRef<string | null>(
@@ -131,7 +149,7 @@ export default function App() {
               </div>
             )}
             {year && code && <ProfileBadge year={year} code={code} onClick={openOnboarding} />}
-            <Button variant="ghost" size="icon" onClick={toggleTheme} aria-label="切换主题">
+            <Button variant="ghost" size="icon" onClick={toggleTheme} aria-label="切換主題">
               {theme === "light" ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
             </Button>
           </div>
