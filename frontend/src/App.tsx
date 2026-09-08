@@ -1,12 +1,14 @@
 import { useEffect, useMemo, useRef } from "react";
 import { toast } from "sonner";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { FileText, GraduationCap, LayoutDashboard, ListChecks } from "lucide-react";
+
+import { AppShell } from "@/components/layout/AppShell";
+import type { NavItem } from "@/components/layout/SideNav";
 import { OnboardingDialog } from "@/components/business/OnboardingDialog";
 import { TranscriptImportDialog, type TranscriptImportResult } from "@/components/business/TranscriptImportDialog";
-import { ProfileBadge } from "@/components/business/ProfileBadge";
 import { CourseDetailDialog } from "@/components/business/CourseDetailDialog";
-import { ProgramPicker } from "@/components/business/ProgramPicker";
 import { EmptyState } from "@/components/ui/empty";
+import { ErrorState } from "@/components/ui/error-state";
 import { PageSkeleton } from "@/components/ui/skeleton";
 import { Toaster } from "@/components/ui/sonner";
 import { OverviewPage } from "@/pages/OverviewPage";
@@ -20,8 +22,6 @@ import { computeProgramAudit } from "@/lib/audit";
 import { needsOnboarding } from "@/lib/profile";
 import { schoolOf } from "@/lib/common-core";
 import { resolveAttachedPrograms } from "@/lib/attached";
-import { Moon, Sun, GraduationCap, LayoutDashboard, ListChecks, FileText } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 export default function App() {
   const programs = usePrograms();
@@ -31,9 +31,9 @@ export default function App() {
     theme,
     setTheme,
     toggleTheme,
+    activeView,
     setProgram,
     onboardingOpen,
-    openOnboarding,
     closeOnboarding,
     transcriptImportOpen,
     openTranscriptImport,
@@ -53,21 +53,37 @@ export default function App() {
   );
   const attachedTrees = useAttachedTrees(attached);
 
-  // 刷新后 useUi 的选择会重置（非持久化）：profile 有效时用它校准，
-  // 保证附加要求（辅修/学院）与主修保持在同一学年/专业
+  // 刷新后 useUi 的选择会重置（非持久化）：profile 有效时用它校准
   useEffect(() => {
     if (programs.isLoading || list.length === 0) return;
-    if (year && code) return; // 已有有效选择（用户手动切换或已同步）
+    if (year && code) return;
     if (profile && list.some((p) => p.year === profile.year && p.code === profile.code)) {
       setProgram(profile.year, profile.code);
     }
   }, [programs.isLoading, list, year, code, profile, setProgram]);
-  // 数据源为空时不弹（没得选）；profile 缺失或已失效时强制引导
+
   const mustOnboard = !programs.isLoading && needsOnboarding(profile, list);
   const dialogOpen = mustOnboard || onboardingOpen;
 
-  // Tab 计数徽标数据（与 OverviewPage 同源，计算成本可忽略）
+  // 侧栏计数徽标（与 OverviewPage 同源，计算成本可忽略）
   const audit = tree.data ? computeProgramAudit(tree.data.groups, selectionStatus) : null;
+  const navItems: NavItem[] = [
+    { key: "overview", label: "方案总览", icon: LayoutDashboard },
+    {
+      key: "courses",
+      label: "课程选择",
+      icon: ListChecks,
+      count: audit?.missingCount ?? 0,
+      countTone: "warning",
+    },
+    {
+      key: "requirements",
+      label: "要求明细",
+      icon: FileText,
+      count: tree.data?.groups.length ?? 0,
+      countTone: "muted",
+    },
+  ];
 
   // 应用主题到 <html>（首屏由 index.html 的 inline 脚本抢先执行，这里只管后续变更）
   useEffect(() => {
@@ -104,7 +120,6 @@ export default function App() {
   }, [profile]);
 
   const handleSubmit = (sel: { year: string; code: string; minors: string[] }) => {
-    // 手动选择时，所选年份即入学年份（通识框架判定用）
     setProfileProgram(sel.year, sel.code, { admissionYear: sel.year });
     useProfile.getState().setMinors(sel.minors);
     setProgram(sel.year, sel.code);
@@ -117,19 +132,79 @@ export default function App() {
     toast.info(`已移除辅修 / Extended Major：${minorCode}`);
   };
 
-  // 成绩单导入：已修以成绩单覆盖，手动勾选的计划保留；profile 同步填充（含通识框架字段）
+  // 成绩单导入：已修以成绩单覆盖，手动勾选的计划保留
   const handleTranscriptConfirm = (r: TranscriptImportResult) => {
     setSelectionMany(r.courses);
     setProfileProgram(r.year, r.code, {
       admissionYear: r.admissionYear ?? null,
       school: schoolOf(r.code) || null,
     });
-    // 写回识别到的副修 / Extended Major（与手动选填共用 profile.minors）
     useProfile.getState().setMinors(r.minors ?? []);
     setProgram(r.year, r.code);
     closeTranscriptImport();
     const taken = Object.values(r.courses).filter((s) => s === "taken").length;
     toast.success(`已导入 ${taken} 门已修 / ${Object.keys(r.courses).length - taken} 门在读计划`);
+  };
+
+  // 骨架与当前视图同构，避免加载完成时布局跳动
+  const skeletonVariant =
+    activeView === "courses"
+      ? "courses"
+      : activeView === "requirements"
+        ? "requirements"
+        : "overview";
+
+  const renderContent = () => {
+    if (programs.isLoading) return <PageSkeleton variant={skeletonVariant} />;
+    if (programs.isError)
+      return (
+        <ErrorState
+          title="无法加载培养方案列表"
+          description="请确认后端服务已启动（uvicorn，端口 8000）"
+          error={programs.error}
+          onRetry={() => programs.refetch()}
+        />
+      );
+    if (programs.data && programs.data.length === 0)
+      return (
+        <EmptyState
+          icon={<GraduationCap className="mx-auto h-10 w-10 text-muted-foreground" />}
+          title="数据库中还没有培养方案"
+          description={
+            <>
+              请先运行离线管线解析 PDF 并用 seed 导入：
+              <br />
+              <code className="font-mono text-xs">py -m run_pipeline --year 2026-27 --code COMP</code>
+              <br />
+              <code className="font-mono text-xs">python backend/scripts/seed.py</code>
+            </>
+          }
+        />
+      );
+    if (!programs.data || programs.data.length === 0) return null;
+
+    if (tree.isLoading) return <PageSkeleton variant={skeletonVariant} />;
+    if (tree.isError)
+      return (
+        <ErrorState
+          title="培养方案加载失败"
+          error={tree.error}
+          onRetry={() => tree.refetch()}
+        />
+      );
+    if (!tree.data) return null;
+
+    if (activeView === "overview")
+      return (
+        <OverviewPage
+          tree={tree.data}
+          attachedEntries={attachedTrees}
+          onRemoveMinor={handleRemoveMinor}
+        />
+      );
+    if (activeView === "courses")
+      return <CoursesPage tree={tree.data} attachedEntries={attachedTrees} />;
+    return <RequirementsPage tree={tree.data} attachedEntries={attachedTrees} />;
   };
 
   return (
@@ -258,6 +333,6 @@ export default function App() {
       {/* 课程详情：由任意课程行的 ⓘ 触发，全局单例 */}
       <CourseDetailDialog />
       <Toaster />
-    </div>
+    </>
   );
 }

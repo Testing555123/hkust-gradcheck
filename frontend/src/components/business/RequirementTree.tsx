@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { CourseRow } from "@/components/business/CourseRow";
 import { CollapsibleGroup } from "@/components/business/CollapsibleGroup";
 import { EmptyState } from "@/components/ui/empty";
+import { useIsDesktop } from "@/hooks/useMediaQuery";
 import { useSelection } from "@/stores/selection";
 import { computeGroupAudit } from "@/lib/audit";
 import { sortTakenFirst } from "@/lib/pools";
@@ -69,7 +70,14 @@ function AreaBlocks({ courses }: { courses: CourseRef[] }) {
 }
 
 /** 单要求组：折叠卡 + 课程清单。开放式层级池组（pool）限顯示前 10 门、已讀優先、可「顯示全部」 */
-function RequirementGroupView({ group }: { group: RequirementGroup }) {
+function RequirementGroupView({
+  group,
+  defaultOpen,
+}: {
+  group: RequirementGroup;
+  /** 初始开合：移动端默认折叠（只扫组进度），桌面展开 */
+  defaultOpen?: boolean;
+}) {
   const status = useSelection((s) => s.status);
   const [showAll, setShowAll] = useState(false);
   const audit = computeGroupAudit(group, status);
@@ -96,6 +104,8 @@ function RequirementGroupView({ group }: { group: RequirementGroup }) {
       title={group.name}
       done={audit.isDone}
       summary={summary}
+      defaultOpen={defaultOpen}
+      progress={audit.percentTaken}
       headerExtra={
         <>
           {group.source_ref && (
@@ -170,6 +180,7 @@ export function RequirementTree({
   statusFilter?: GroupFilterState;
 }) {
   const status = useSelection((s) => s.status);
+  const isDesktop = useIsDesktop();
   const visible = tree.groups.filter((g) =>
     matchesGroupFilter(computeGroupFilterState(g, status), statusFilter)
   );
@@ -187,7 +198,12 @@ export function RequirementTree({
   return (
     <div className="space-y-4">
       {visible.map((g) => (
-        <RequirementGroupView key={`${tree.program.code}-${g.id}`} group={g} />
+        <RequirementGroupView
+          key={`${tree.program.code}-${g.id}`}
+          group={g}
+          // 移动端默认折叠：先让用户纵向扫读各组进度，再按需展开
+          defaultOpen={isDesktop ? undefined : false}
+        />
       ))}
     </div>
   );

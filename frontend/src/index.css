@@ -57,13 +57,34 @@
     /* ===== 動效 ===== */
     --dur-fast: 150ms;
     --dur-base: 200ms;
+    --dur: 200ms;
+    --ease: cubic-bezier(0.4, 0, 0.2, 1);
 
     /* ===== 層級 ===== */
     --z-header: 40;
     --z-overlay: 50;
     --z-toast: 60;
 
-    color-scheme: light;
+    /* ===== 本轮新增：计划口径色（双口径进度条的第二段） ===== */
+    --planned: 217 91% 60%;
+    --planned-foreground: 210 40% 98%;
+
+    /* ===== 本轮新增：表面层级（侧栏 / 嵌套面板 / 悬浮层） ===== */
+    --sidebar: 0 0% 100%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-muted: 215 16% 47%;
+    --sidebar-accent: 226 100% 97%;
+    --sidebar-accent-foreground: 243 75% 59%;
+    --sidebar-border: 214 32% 91%;
+    --surface-2: 210 40% 96%;
+    --surface-3: 210 40% 93%;
+    --overlay: 222 47% 11%;
+
+    /* ===== 本轮新增：图表语义色（占比条 / 分布图，替代图表库配色） ===== */
+    --chart-1: 243 75% 59%;
+    --chart-2: 217 91% 60%;
+    --chart-3: 142 72% 36%;
+    --chart-4: 38 92% 50%;
   }
 
   .dark {
@@ -102,6 +123,27 @@
     --input: 217 33% 20%;
     --ring: 239 84% 67%;
 
+    /* 计划口径色 */
+    --planned: 217 91% 65%;
+    --planned-foreground: 222 47% 11%;
+
+    /* 表面层级 */
+    --sidebar: 222 47% 9%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-muted: 215 20% 65%;
+    --sidebar-accent: 222 47% 16%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 33% 18%;
+    --surface-2: 217 33% 13%;
+    --surface-3: 217 33% 17%;
+    --overlay: 0 0% 0%;
+
+    /* 图表语义色 */
+    --chart-1: 239 84% 67%;
+    --chart-2: 217 91% 65%;
+    --chart-3: 142 69% 45%;
+    --chart-4: 38 92% 55%;
+
     --shadow-color: 0 0% 0%;
     --elevation-1: 0 0 0 0 hsl(var(--shadow-color) / 0);
     --elevation-2: 0 4px 12px -2px hsl(var(--shadow-color) / 0.45);
@@ -115,9 +157,58 @@
   * {
     @apply border-border;
   }
+  html {
+    font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB',
+      'Microsoft YaHei', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
   body {
     @apply bg-background text-foreground antialiased;
+    font-size: 14px;
     font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+
+  /* 统一键盘焦点环：只作用于键盘导航，不干扰鼠标点击 */
+  :where(a, button, [role='button'], input, select, textarea, summary, [tabindex]:not([tabindex='-1'])):focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+  }
+
+  /* 数字统一等宽，避免进度跳动 */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* ===== 跳转至主内容（键盘用户Skip Link） ===== */
+@layer components {
+  .skip-link {
+    position: fixed;
+    left: 0.75rem;
+    top: 0.75rem;
+    z-index: 100;
+    transform: translateY(-200%);
+    border-radius: calc(var(--radius) + 2px);
+    background-color: hsl(var(--primary));
+    padding: 0.5rem 0.875rem;
+    font-size: 13px;
+    font-weight: 500;
+    color: hsl(var(--primary-foreground));
+    transition: transform var(--dur-fast) var(--ease);
+  }
+  .skip-link:focus-visible {
+    transform: translateY(0);
+  }
+}
+
+/* ===== 尊重系统「减少动态效果」偏好：关闭装饰性动画，保留状态变化的即时反馈 ===== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 

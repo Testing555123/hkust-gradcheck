@@ -146,9 +146,9 @@ export function OnboardingDialog({
         onInteractOutside={(e) => {
           if (forced) e.preventDefault();
         }}
-        className="flex max-h-[90vh] flex-col overflow-hidden p-0"
+        className="flex h-[92dvh] max-h-[92dvh] w-[calc(100vw-16px)] flex-col overflow-hidden rounded-2xl p-0 sm:h-auto sm:max-h-[90vh] sm:w-[calc(100vw-32px)] sm:rounded-lg"
       >
-        <DialogHeader className="px-6 pb-2 pt-6">
+        <DialogHeader className="px-4 pb-2 pt-6 sm:px-6">
           <DialogTitle className="flex items-center gap-2">
             <span className="flex h-8 w-8 items-center justify-center rounded-md bg-primary/10 text-primary">
               <GraduationCap className="h-4 w-4" />

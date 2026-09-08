@@ -78,10 +78,37 @@ export default {
           DEFAULT: 'hsl(var(--warning))',
           foreground: 'hsl(var(--warning-foreground))',
         },
+        planned: {
+          DEFAULT: 'hsl(var(--planned))',
+          foreground: 'hsl(var(--planned-foreground))',
+        },
+        sidebar: {
+          DEFAULT: 'hsl(var(--sidebar))',
+          foreground: 'hsl(var(--sidebar-foreground))',
+          muted: 'hsl(var(--sidebar-muted))',
+          accent: 'hsl(var(--sidebar-accent))',
+          'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
+          border: 'hsl(var(--sidebar-border))',
+        },
+        surface: {
+          2: 'hsl(var(--surface-2))',
+          3: 'hsl(var(--surface-3))',
+        },
+        chart: {
+          1: 'hsl(var(--chart-1))',
+          2: 'hsl(var(--chart-2))',
+          3: 'hsl(var(--chart-3))',
+          4: 'hsl(var(--chart-4))',
+        },
+        overlay: 'hsl(var(--overlay))',
         info: {
           DEFAULT: 'hsl(var(--info))',
           foreground: 'hsl(var(--info-foreground))',
         },
+      },
+      boxShadow: {
+        card: '0 1px 2px 0 hsl(var(--foreground) / 0.04), 0 1px 3px 0 hsl(var(--foreground) / 0.06)',
+        pop: '0 12px 32px -8px hsl(var(--foreground) / 0.18), 0 0 0 1px hsl(var(--border) / 0.6)',
       },
       // 3 级圆角：卡片 12 / 控件 6 / 小元素 4（rounded-full 仅用于徽标）
       borderRadius: {

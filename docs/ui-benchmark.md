@@ -49,3 +49,36 @@
 - **动效克制**：只动 transform/opacity，150-200ms；动效服务状态变化（勾选、达标），不做装饰性动画。
 - **反馈分层**：局部状态变化用行内动效（划线、进度条 grow），全局/破坏性操作才用 toast。
 - **单焦点优先于信息平铺**：仪表盘第一屏回答一个问题，其余数据降级为卡片网格。
+
+## 6. 第二轮迭代（2026-09-08）：架构与移动优先
+
+> 背景：功能性已完备，本轮只做体验层。新增参考：[shadcn-ui/ui](https://github.com/shadcn-ui/ui) 123k（blocks 结构）、[tremorlabs/tremor-npm](https://github.com/tremorlabs/tremor-npm) 16.5k（BarList/CategoryBar 视觉）、[coursetable/coursetable](https://github.com/coursetable/coursetable) 72（Yale 选课站，领域同构：搜索 + 多维筛选 + 列表密度 + 详情抽屉）。
+
+### 落地
+
+| 项 | 内容 | 借鉴来源 |
+|---|---|---|
+| 侧栏架构 | 三 Tab → Sidebar（桌面常驻 240px / 小屏收进抽屉），导航项带计数徽标与 `aria-current`，底部预留「规划中」分组 | shadcn sidebar block |
+| 总览页单焦点 | `ProgressHero`：巨型缺口数字 + 双口径分段进度条（已修实色 / 计划半透明，纯 `scaleX` 动画） | Vercel / Linear |
+| 组完成度占比条 | `GroupBarList`（纯 CSS 复刻 Tremor BarList）：组名 + 右对齐学分 + 双口径细条 + 缺口课程代码，替代原等高 `ProgressCard` 网格 | Tremor |
+| 移动端重排 | 课程行改为卡片流（课号课名置顶、已修/计划大按钮 ≥44px）、要求树小屏默认折叠 + 组进度条、底栏导航 + 安全区适配 | CourseTable / iOS HIG |
+| 底部抽屉 | `vaul` 实现：小屏课程详情与导航菜单从底部升起，替代被挤压的居中弹窗 | CourseTable 抽屉 |
+| 状态统一 | `EmptyState` 扩尺寸与三态变体、新增 `ErrorState`（含重试）、`PageSkeleton` 三种密度与最终布局同构 | dub / cal.com |
+| 可访问性 | Skip Link、全局 `focus-visible` 焦点环、`role="progressbar"` + `aria-valuetext`、`prefers-reduced-motion` 降级 | WAI-ARIA |
+
+依赖增量：仅 `vaul`（约 30KB，主包 489KB → 531KB）。`cmdk` 本轮未装（⌘K 不在范围内），图表继续纯 CSS，未引 recharts / Tremor。
+
+### 验证
+
+- 单测 83 例全过；`tsc -b` 与 `eslint` 0 error；`npm run build` 通过
+- playwright 截图（桌面/移动 × 浅色/深色，共 8 张）见 `docs/ui/2026-09-redesign/`；控制台 0 报错
+
+### 新一轮 backlog
+
+| 优先级 | 项 | 说明 | 前置条件 |
+|---|---|---|---|
+| P1 | ⌘K 命令面板 | 搜课 / 切方案 / 切视图一处直达（`cmdk`，已在侧栏预留分组位） | 页面与数据量再涨一些后收益更明显 |
+| P1 | 侧栏「规划中」落地 | 主修+辅修双进度、学期时间线（分组位与折叠态已就绪） | 后端接入辅修/学期数据 |
+| P2 | 课程列表虚拟滚动 | 当前 ≤2000 条无压力；若放开全量课程库再评估 | 数据量增长 |
+| P2 | 图表语义化 | 若需趋势/分布图，优先纯 SVG，避免再引图表库 | 有明确图表需求时 |
+| P3 | 骨架屏自动化 | 把三种 `PageSkeleton` 与真实布局做像素级对齐检查 | 视觉回归测试基建 |
