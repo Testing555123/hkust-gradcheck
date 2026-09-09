@@ -42,7 +42,7 @@ export function ProgressHero({
   const extraPct = Math.min(100 - takenPct, Math.max(0, percentPlanned - percentTaken));
 
   return (
-    <Card className="overflow-hidden border-primary/20 bg-gradient-to-br from-card to-accent shadow-pop">
+    <Card className="overflow-hidden border-primary/20 bg-gradient-to-br from-card to-brand-soft shadow-pop">
       <CardContent className="space-y-5 p-5 sm:p-6">
         <div className="flex items-start justify-between gap-3">
           <div className="min-w-0">

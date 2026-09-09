@@ -268,7 +268,11 @@
       ],
       "source_pages": [
         2
-      ]
+      ],
+      "branch": "Applied Mathematics Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Applied Mathematics Track Elective Course(s)",
@@ -460,7 +464,11 @@
       "source_pages": [
         2,
         3
-      ]
+      ],
+      "branch": "Applied Mathematics Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Computer Science Track Required Course(s)",
@@ -611,7 +619,11 @@
       ],
       "source_pages": [
         3
-      ]
+      ],
+      "branch": "Computer Science Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Computer Science Track Elective Course(s)",
@@ -813,7 +825,11 @@
       "source_pages": [
         3,
         4
-      ]
+      ],
+      "branch": "Computer Science Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Financial and Actuarial Mathematics Track Required Course(s)",
@@ -954,7 +970,11 @@
       ],
       "source_pages": [
         4
-      ]
+      ],
+      "branch": "Financial and Actuarial Mathematics Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Financial and Actuarial Mathematics Track Elective Course(s)",
@@ -1146,7 +1166,11 @@
       "source_pages": [
         4,
         5
-      ]
+      ],
+      "branch": "Financial and Actuarial Mathematics Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "General Mathematics Track Required Course(s)",
@@ -1197,7 +1221,11 @@
       ],
       "source_pages": [
         5
-      ]
+      ],
+      "branch": "General Mathematics Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "General Mathematics Track Elective Course(s)",
@@ -1207,7 +1235,11 @@
       "courses": [],
       "source_pages": [
         5
-      ]
+      ],
+      "branch": "General Mathematics Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "International Research Enrichment Track Required Course(s)",
@@ -1238,7 +1270,11 @@
       ],
       "source_pages": [
         5
-      ]
+      ],
+      "branch": "International Research Enrichment Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "International Research Enrichment Track Other(s)",
@@ -1248,7 +1284,11 @@
       "courses": [],
       "source_pages": [
         6
-      ]
+      ],
+      "branch": "International Research Enrichment Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Pure Mathematics (Advanced) Track Required Course(s)",
@@ -1299,7 +1339,11 @@
       ],
       "source_pages": [
         6
-      ]
+      ],
+      "branch": "Pure Mathematics (Advanced) Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Pure Mathematics (Advanced) Track Elective Course(s)",
@@ -1491,7 +1535,11 @@
       "source_pages": [
         6,
         7
-      ]
+      ],
+      "branch": "Pure Mathematics (Advanced) Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Pure Mathematics Track Required Course(s)",
@@ -1552,7 +1600,11 @@
       ],
       "source_pages": [
         7
-      ]
+      ],
+      "branch": "Pure Mathematics Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Pure Mathematics Track Elective Course(s)",
@@ -1734,7 +1786,11 @@
       "source_pages": [
         7,
         8
-      ]
+      ],
+      "branch": "Pure Mathematics Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Statistics Track Required Course(s)",
@@ -1865,7 +1921,11 @@
       ],
       "source_pages": [
         8
-      ]
+      ],
+      "branch": "Statistics Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Statistics Track Elective Course(s)",
@@ -2007,7 +2067,11 @@
       "source_pages": [
         8,
         9
-      ]
+      ],
+      "branch": "Statistics Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     }
   ],
   "uncertain": [

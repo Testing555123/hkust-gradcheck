@@ -124,7 +124,11 @@
       ],
       "source_pages": [
         2
-      ]
+      ],
+      "branch": "Consulting Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Corporate Social Responsibility and Sustainability Option",
@@ -155,7 +159,11 @@
       ],
       "source_pages": [
         2
-      ]
+      ],
+      "branch": "Corporate Social Responsibility and Sustainability Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Human Resources Option",
@@ -206,7 +214,11 @@
       ],
       "source_pages": [
         3
-      ]
+      ],
+      "branch": "Human Resources Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     }
   ],
   "uncertain": [

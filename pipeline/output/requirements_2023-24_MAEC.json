@@ -2,7 +2,7 @@
   "year": "2023-24",
   "code": "MAEC",
   "title": "BSc in Mathematics and Economics",
-  "total_required_credits": 24.0,
+  "total_required_credits": 0.0,
   "groups": [
     {
       "name": "Required Course(s)",
@@ -149,7 +149,18 @@
           "source_pages": [
             1
           ]
-        },
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "MATH/ECON",
+      "required_credits": 0.0,
+      "required_credits_raw": "0-3",
+      "note": "MATH 4994 OR MATH 4999 OR ECON 4670",
+      "courses": [
         {
           "code": "MATH4994",
           "name": "Capstone Project in Mathematics and Economics",
@@ -157,7 +168,7 @@
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
-            1
+            2
           ]
         },
         {
@@ -167,7 +178,7 @@
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
-            1
+            2
           ]
         },
         {
@@ -177,9 +188,20 @@
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
-            1
+            2
           ]
-        },
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "ECON",
+      "required_credits": 3.0,
+      "required_credits_raw": "3",
+      "note": "ECON 2103 OR ECON 2113",
+      "courses": [
         {
           "code": "ECON2103",
           "name": "Principles of Microeconomics",
@@ -187,7 +209,7 @@
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
-            1
+            2
           ]
         },
         {
@@ -197,9 +219,20 @@
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
-            1
+            2
           ]
-        },
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "ECON",
+      "required_credits": 4.0,
+      "required_credits_raw": "4",
+      "note": "",
+      "courses": [
         {
           "code": "ECON3113",
           "name": "Microeconomic Theory I",
@@ -207,9 +240,20 @@
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
-            1
+            2
           ]
-        },
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "ECON",
+      "required_credits": 3.0,
+      "required_credits_raw": "3",
+      "note": "",
+      "courses": [
         {
           "code": "ECON3123",
           "name": "Macroeconomic Theory I",
@@ -217,9 +261,20 @@
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
-            1
+            2
           ]
-        },
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "ECON",
+      "required_credits": 4.0,
+      "required_credits_raw": "4",
+      "note": "",
+      "courses": [
         {
           "code": "ECON3133",
           "name": "Microeconomic Theory II",
@@ -227,9 +282,20 @@
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
-            1
+            2
           ]
-        },
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "ECON",
+      "required_credits": 4.0,
+      "required_credits_raw": "4",
+      "note": "",
+      "courses": [
         {
           "code": "ECON3143",
           "name": "Macroeconomic Theory II",
@@ -237,9 +303,20 @@
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
-            1
+            2
           ]
-        },
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "ECON",
+      "required_credits": 4.0,
+      "required_credits_raw": "4",
+      "note": "",
+      "courses": [
         {
           "code": "ECON3334",
           "name": "Introduction to Econometrics",
@@ -247,9 +324,20 @@
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
-            1
+            2
           ]
-        },
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "ECON/LANG",
+      "required_credits": 3.0,
+      "required_credits_raw": "3",
+      "note": "ECON 3700 OR LANG 2061 OR LANG 3060",
+      "courses": [
         {
           "code": "ECON3700",
           "name": "Writing as an Economist",
@@ -257,7 +345,7 @@
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
-            1
+            2
           ]
         },
         {
@@ -267,7 +355,7 @@
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
-            1
+            2
           ]
         },
         {
@@ -277,9 +365,20 @@
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
-            1
+            2
           ]
-        },
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "ACCT",
+      "required_credits": 3.0,
+      "required_credits_raw": "3",
+      "note": "",
+      "courses": [
         {
           "code": "ACCT2010",
           "name": "Principles of Accounting I",
@@ -287,9 +386,20 @@
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
-            1
+            2
           ]
-        },
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "FINA",
+      "required_credits": 3.0,
+      "required_credits_raw": "3",
+      "note": "",
+      "courses": [
         {
           "code": "FINA2203",
           "name": "Fundamentals of Business Finance",
@@ -297,9 +407,20 @@
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
-            1
+            2
           ]
-        },
+        }
+      ],
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "name": "COMP",
+      "required_credits": 3.0,
+      "required_credits_raw": "3",
+      "note": "COMP 1021 OR COMP 1022P",
+      "courses": [
         {
           "code": "COMP1021",
           "name": "Introduction to Computer Science",
@@ -307,7 +428,7 @@
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
-            1
+            2
           ]
         },
         {
@@ -317,36 +438,28 @@
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
-            1
-          ]
-        },
-        {
-          "code": "LANG2062",
-          "name": "Professional Speaking for the Workplace",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            1
+            2
           ]
         }
       ],
       "source_pages": [
-        1
+        2
       ]
     },
     {
       "name": "Elective(s)",
       "required_credits": 6.0,
       "required_credits_raw": "6",
-      "note": "MATH Depth Electives (2 courses from the specified elective list. Courses taken as Major Required Courses may not be counted towards this elective requirement.)",
+      "note": "MATH Depth Electives (2 courses from the specified elective list.  Courses taken as Major Required Courses may not be  counted towards this elective requirement.)",
       "courses": [
         {
           "code": "MATH3423",
           "name": "Statistical Inference",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Mathematics courses at 4000-level or above"
+          ],
           "source_pages": [
             2
           ]
@@ -356,7 +469,9 @@
           "name": "Stochastic Modeling",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Mathematics courses at 4000-level or above"
+          ],
           "source_pages": [
             2
           ]
@@ -366,7 +481,9 @@
           "name": "Sampling",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Mathematics courses at 4000-level or above"
+          ],
           "source_pages": [
             2
           ]
@@ -377,20 +494,20 @@
       ]
     },
     {
-      "name": "Elective(s)",
+      "name": "ECON",
       "required_credits": 8.0,
       "required_credits_raw": "8",
-      "note": "ECON 4000-level or above Electives (At least 2 courses of the subject and level as specified)",
+      "note": "ECON 4000-level or above Electives (At least 2 courses of the  subject and level as specified)",
       "courses": [],
       "source_pages": [
         2
       ]
     },
     {
-      "name": "Elective(s)",
+      "name": "SSCI",
       "required_credits": 6.0,
       "required_credits_raw": "6",
-      "note": "Science Foundation course (2 courses from the specified elective list)",
+      "note": "Science Foundation course (2 courses from the specified  elective list)",
       "courses": [
         {
           "code": "CHEM1008",
@@ -404,7 +521,7 @@
         },
         {
           "code": "CHEM1011",
-          "name": "General Chemistry A: Reactions, Thermodynamics, and Reaction Kinetics",
+          "name": "General Chemistry A: Reactions, Thermodynamics, and Reaction  Kinetics",
           "credits": 3.0,
           "credits_raw": "3",
           "areas": [],
@@ -414,7 +531,7 @@
         },
         {
           "code": "CHEM1012",
-          "name": "General Chemistry B: Atomic Structure, Molecules, and Bonding",
+          "name": "General Chemistry B: Atomic Structure, Molecules, and Bonding  Theories",
           "credits": 3.0,
           "credits_raw": "3",
           "areas": [],
@@ -424,12 +541,13 @@
         },
         {
           "code": "LIFS1030",
-          "name": "Theories Environmental Science",
+          "name": "Environmental Science",
           "credits": 3.0,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
-            2
+            2,
+            3
           ]
         },
         {
@@ -550,11 +668,12 @@
     }
   ],
   "uncertain": [
-    "The 'Required Course(s)' group contains multiple sub-notes (e.g., for MATH 2033/2043, MATH 2121/2131, etc.). The schema only allows one 'note' per group. I have placed the first complex note in the group note field. The other notes are implicit in the course listings or lost in the single-note constraint. Human review is needed to decide if these should be split into separate groups or if the note field should concatenate them.",
-    "The 'ECON 4000-level or above Electives' group lists no specific courses in the PDF, only a requirement description. I have included it as a group with an empty courses list.",
-    "The 'Science Foundation course' elective list continues from Page 2 to Page 3. I have combined them into one group.",
-    "total_required_credits (24.0) is a computed value: the sum of the required_credits of all groups in this file. The PDF does not state a single overall minimum total for this program, so this figure is derived by summation and may double-count where optional tracks/options are listed as separate groups."
+    "Total required credits for the major is not explicitly stated in the PDF; it must be calculated by summing all required and elective credits, but some groups like ECON 4000-level electives have no listed courses, making total uncertain.",
+    "The group 'ECON 4000-level or above Electives' has a required credit of 8 but no specific courses listed in the text; it is unclear which courses qualify.",
+    "The note for Required Course(s) contains complex logic: [(MATH 1012 OR MATH 1013 OR MATH 1023) AND (MATH 1014 OR MATH 1024)] OR [MATH 1020]. It is unclear if this means students must complete one course from each bracket or if it's a choice between two paths.",
+    "The credit value for MATH/ECON group is listed as '0-3' but it's unclear if students must take exactly one course (0 or 3 credits) or if 0 credits is valid (e.g., ECON4670).",
+    "Courses marked with ** (e.g., MATH 1012**, COMP 1022P**, LIFS 1030**) are noted as deleted in recent years, but it's unclear if they are still valid for the 2023-24 cohort."
   ],
-  "parser": "mineru_api",
+  "parser": "pymupdf",
   "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\major\\2023-24\\MAEC_BSc_in_Mathematics_and_Economics.pdf"
 }

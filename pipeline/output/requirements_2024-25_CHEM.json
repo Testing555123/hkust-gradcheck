@@ -338,7 +338,11 @@
       ],
       "source_pages": [
         3
-      ]
+      ],
+      "branch": "International Research Enrichment Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Biomolecular Chemistry Option Required Course(s)",
@@ -369,7 +373,11 @@
       ],
       "source_pages": [
         3
-      ]
+      ],
+      "branch": "Biomolecular Chemistry Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Biomolecular Chemistry Option Elective Course(s)",
@@ -611,7 +619,11 @@
       "source_pages": [
         3,
         4
-      ]
+      ],
+      "branch": "Biomolecular Chemistry Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Environmental and Analytical Chemistry Option Required Course(s)",
@@ -642,7 +654,11 @@
       ],
       "source_pages": [
         4
-      ]
+      ],
+      "branch": "Environmental and Analytical Chemistry Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Environmental and Analytical Chemistry Option Elective Course(s)",
@@ -884,7 +900,11 @@
       "source_pages": [
         4,
         5
-      ]
+      ],
+      "branch": "Environmental and Analytical Chemistry Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Materials Chemistry Option Required Course(s)",
@@ -915,7 +935,11 @@
       ],
       "source_pages": [
         5
-      ]
+      ],
+      "branch": "Materials Chemistry Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Materials Chemistry Option Elective Course(s)",
@@ -1157,7 +1181,11 @@
       "source_pages": [
         5,
         6
-      ]
+      ],
+      "branch": "Materials Chemistry Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Pure Chemistry Option Required Course(s)",
@@ -1188,7 +1216,11 @@
       ],
       "source_pages": [
         6
-      ]
+      ],
+      "branch": "Pure Chemistry Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Pure Chemistry Option Elective Course(s)",
@@ -1429,7 +1461,11 @@
       ],
       "source_pages": [
         6
-      ]
+      ],
+      "branch": "Pure Chemistry Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     }
   ],
   "uncertain": [

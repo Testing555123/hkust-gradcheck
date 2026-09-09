@@ -663,7 +663,11 @@
       ],
       "source_pages": [
         3
-      ]
+      ],
+      "branch": "Financial Engineering Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Financial Engineering Option Elective(s)",
@@ -714,7 +718,11 @@
       ],
       "source_pages": [
         3
-      ]
+      ],
+      "branch": "Financial Engineering Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Research Option Elective(s)",
@@ -755,7 +763,11 @@
       ],
       "source_pages": [
         3
-      ]
+      ],
+      "branch": "Research Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     }
   ],
   "uncertain": [

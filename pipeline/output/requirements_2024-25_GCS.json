@@ -135,7 +135,11 @@
       ],
       "source_pages": [
         1
-      ]
+      ],
+      "branch": "Integrated Humanities and Social Science Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Integrated Humanities and Social Science Track Elective Course(s)",
@@ -386,7 +390,11 @@
       ],
       "source_pages": [
         2
-      ]
+      ],
+      "branch": "Integrated Humanities and Social Science Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Applied Economics Research Option Elective Course(s)",
@@ -437,7 +445,11 @@
       ],
       "source_pages": [
         3
-      ]
+      ],
+      "branch": "Applied Economics Research Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": "Integrated Humanities and Social Science Track"
     },
     {
       "name": "Environment and Technology Research Option Elective Course(s)",
@@ -508,7 +520,11 @@
       ],
       "source_pages": [
         3
-      ]
+      ],
+      "branch": "Environment and Technology Research Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": "Integrated Humanities and Social Science Track"
     },
     {
       "name": "Heritage and Cultural Sustainability Research Option Elective Course(s)",
@@ -739,7 +755,11 @@
       ],
       "source_pages": [
         4
-      ]
+      ],
+      "branch": "Heritage and Cultural Sustainability Research Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": "Integrated Humanities and Social Science Track"
     },
     {
       "name": "History Research Option Elective Course(s)",
@@ -910,7 +930,11 @@
       ],
       "source_pages": [
         5
-      ]
+      ],
+      "branch": "History Research Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": "Integrated Humanities and Social Science Track"
     },
     {
       "name": "Language and Literature Research Option Elective Course(s)",
@@ -1102,7 +1126,11 @@
       "source_pages": [
         5,
         6
-      ]
+      ],
+      "branch": "Language and Literature Research Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": "Integrated Humanities and Social Science Track"
     },
     {
       "name": "Politics Research Option Elective Course(s)",
@@ -1223,7 +1251,11 @@
       ],
       "source_pages": [
         6
-      ]
+      ],
+      "branch": "Politics Research Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": "Integrated Humanities and Social Science Track"
     },
     {
       "name": "Sociology Research Option Elective Course(s)",
@@ -1304,7 +1336,11 @@
       ],
       "source_pages": [
         7
-      ]
+      ],
+      "branch": "Sociology Research Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": "Integrated Humanities and Social Science Track"
     },
     {
       "name": "Social Science Track Required Course(s)",
@@ -1365,7 +1401,11 @@
       ],
       "source_pages": [
         7
-      ]
+      ],
+      "branch": "Social Science Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Social Science Track Elective Course(s)",
@@ -1557,7 +1597,11 @@
       "source_pages": [
         7,
         8
-      ]
+      ],
+      "branch": "Social Science Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     }
   ],
   "uncertain": [

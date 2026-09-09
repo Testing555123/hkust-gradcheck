@@ -2,13 +2,13 @@
   "year": "2023-24",
   "code": "DA",
   "title": "BEng in Decision Analytics",
-  "total_required_credits": 61.0,
+  "total_required_credits": 0.0,
   "groups": [
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
-      "required_credits_raw": "3-5",
-      "note": "Note: COMP 1021 OR COMP 1022P OR COMP 2011 OR COMP 2012H",
+      "required_credits": 16.0,
+      "required_credits_raw": "16",
+      "note": "",
       "courses": [
         {
           "code": "COMP1021",
@@ -49,18 +49,7 @@
           "source_pages": [
             1
           ]
-        }
-      ],
-      "source_pages": [
-        1
-      ]
-    },
-    {
-      "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
-      "required_credits_raw": "3",
-      "note": "Note: CHEM 1012 OR PHYS 1112 OR PHYS 1312",
-      "courses": [
+        },
         {
           "code": "CHEM1012",
           "name": "General Chemistry B: Atomic Structure, Molecules, and Bonding Theories",
@@ -90,18 +79,17 @@
           "source_pages": [
             1
           ]
-        }
-      ],
-      "source_pages": [
-        1
-      ]
-    },
-    {
-      "name": "Engineering Fundamental Course(s)",
-      "required_credits": 4.0,
-      "required_credits_raw": "4-7",
-      "note": "Note: [(MATH 1012 OR MATH 1013 OR MATH 1023) AND (MATH 1014 OR MATH 1024)] OR [MATH 1020]",
-      "courses": [
+        },
+        {
+          "code": "LANG2030",
+          "name": "Technical Communication I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
         {
           "code": "MATH1012",
           "name": "Calculus IA",
@@ -188,190 +176,9 @@
       ]
     },
     {
-      "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
-      "required_credits_raw": "3-4",
-      "note": "Engineering Introduction course (If the students take an introduction course included in their major, this course can be counted towards their major requirement.)",
-      "courses": [
-        {
-          "code": "IEDA2010",
-          "name": "Introduction of Industrial Engineering and Decision Analytics",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            1
-          ]
-        },
-        {
-          "code": "BIEN1010",
-          "name": "Introduction to Biomedical Engineering",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            1
-          ]
-        },
-        {
-          "code": "CENG1000",
-          "name": "Foundations of Chemical and Biological Engineering",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            1
-          ]
-        },
-        {
-          "code": "CENG1500",
-          "name": "A First Course on Materials Science and Applications",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            1
-          ]
-        },
-        {
-          "code": "CENG1700",
-          "name": "Introduction to Environmental Engineering",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            1
-          ]
-        },
-        {
-          "code": "CIVL1100",
-          "name": "Discovering Civil and Environmental Engineering",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            1
-          ]
-        },
-        {
-          "code": "CIVL1210",
-          "name": "Fundamental of Green Buildings",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            1
-          ]
-        },
-        {
-          "code": "COMP1021",
-          "name": "Introduction to Computer Science",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            1
-          ]
-        },
-        {
-          "code": "ELEC1100",
-          "name": "Introduction to Electro-Robot Design",
-          "credits": 4.0,
-          "credits_raw": "4",
-          "areas": [],
-          "source_pages": [
-            1
-          ]
-        },
-        {
-          "code": "ELEC1200",
-          "name": "A System View of Communications: from Signals to Packets",
-          "credits": 4.0,
-          "credits_raw": "4",
-          "areas": [],
-          "source_pages": [
-            1
-          ]
-        },
-        {
-          "code": "ENGG1100",
-          "name": "First Year Cornerstone Engineering Design Project Course",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            1
-          ]
-        },
-        {
-          "code": "ISDN1001",
-          "name": "Introduction to Integrative Systems and Design",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            1
-          ]
-        },
-        {
-          "code": "ISDN1002",
-          "name": "Redefining Problems for the Real Needs",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            1
-          ]
-        },
-        {
-          "code": "ISDN1006",
-          "name": "Human-centered Innovation",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            1
-          ]
-        },
-        {
-          "code": "MECH1902",
-          "name": "Energy Systems in a Sustainable World",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            1
-          ]
-        },
-        {
-          "code": "MECH1906",
-          "name": "Mechanical Engineering for Modern Life",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            1
-          ]
-        },
-        {
-          "code": "MECH1907",
-          "name": "Introduction to Aerospace Engineering",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            1
-          ]
-        }
-      ],
-      "source_pages": [
-        1
-      ]
-    },
-    {
       "name": "Required Course(s)",
-      "required_credits": 0.0,
-      "required_credits_raw": "0",
+      "required_credits": 21.0,
+      "required_credits_raw": "21",
       "note": "",
       "courses": [
         {
@@ -403,18 +210,7 @@
           "source_pages": [
             2
           ]
-        }
-      ],
-      "source_pages": [
-        2
-      ]
-    },
-    {
-      "name": "Required Course(s)",
-      "required_credits": 3.0,
-      "required_credits_raw": "3",
-      "note": "",
-      "courses": [
+        },
         {
           "code": "IEDA2520",
           "name": "Probability for Engineers",
@@ -424,18 +220,7 @@
           "source_pages": [
             2
           ]
-        }
-      ],
-      "source_pages": [
-        2
-      ]
-    },
-    {
-      "name": "Required Course(s)",
-      "required_credits": 3.0,
-      "required_credits_raw": "3",
-      "note": "",
-      "courses": [
+        },
         {
           "code": "IEDA2540",
           "name": "Statistics for Engineers",
@@ -445,18 +230,7 @@
           "source_pages": [
             2
           ]
-        }
-      ],
-      "source_pages": [
-        2
-      ]
-    },
-    {
-      "name": "Required Course(s)",
-      "required_credits": 3.0,
-      "required_credits_raw": "3",
-      "note": "",
-      "courses": [
+        },
         {
           "code": "IEDA3010",
           "name": "Prescriptive Analytics",
@@ -466,18 +240,7 @@
           "source_pages": [
             2
           ]
-        }
-      ],
-      "source_pages": [
-        2
-      ]
-    },
-    {
-      "name": "Required Course(s)",
-      "required_credits": 3.0,
-      "required_credits_raw": "3",
-      "note": "",
-      "courses": [
+        },
         {
           "code": "IEDA3230",
           "name": "Engineering Economics and Accounting",
@@ -487,18 +250,7 @@
           "source_pages": [
             2
           ]
-        }
-      ],
-      "source_pages": [
-        2
-      ]
-    },
-    {
-      "name": "Required Course(s)",
-      "required_credits": 3.0,
-      "required_credits_raw": "3",
-      "note": "",
-      "courses": [
+        },
         {
           "code": "IEDA3250",
           "name": "Stochastic Models",
@@ -508,18 +260,7 @@
           "source_pages": [
             2
           ]
-        }
-      ],
-      "source_pages": [
-        2
-      ]
-    },
-    {
-      "name": "Required Course(s)",
-      "required_credits": 3.0,
-      "required_credits_raw": "3",
-      "note": "",
-      "courses": [
+        },
         {
           "code": "IEDA3300",
           "name": "Industrial Data Systems",
@@ -529,18 +270,7 @@
           "source_pages": [
             2
           ]
-        }
-      ],
-      "source_pages": [
-        2
-      ]
-    },
-    {
-      "name": "Required Course(s)",
-      "required_credits": 3.0,
-      "required_credits_raw": "3",
-      "note": "",
-      "courses": [
+        },
         {
           "code": "IEDA3560",
           "name": "Predictive Analytics",
@@ -550,18 +280,7 @@
           "source_pages": [
             2
           ]
-        }
-      ],
-      "source_pages": [
-        2
-      ]
-    },
-    {
-      "name": "Required Course(s)",
-      "required_credits": 6.0,
-      "required_credits_raw": "6",
-      "note": "Note: IEDA 4901 OR IEDA 4920",
-      "courses": [
+        },
         {
           "code": "IEDA4901",
           "name": "Final Year Thesis",
@@ -581,18 +300,7 @@
           "source_pages": [
             2
           ]
-        }
-      ],
-      "source_pages": [
-        2
-      ]
-    },
-    {
-      "name": "Required Course(s)",
-      "required_credits": 0.0,
-      "required_credits_raw": "0",
-      "note": "",
-      "courses": [
+        },
         {
           "code": "ENGG2010",
           "name": "Engineering Seminar Series",
@@ -602,18 +310,7 @@
           "source_pages": [
             2
           ]
-        }
-      ],
-      "source_pages": [
-        2
-      ]
-    },
-    {
-      "name": "Required Course(s)",
-      "required_credits": 3.0,
-      "required_credits_raw": "3",
-      "note": "Note: ECON 2103 OR ECON 2113",
-      "courses": [
+        },
         {
           "code": "ECON2103",
           "name": "Principles of Microeconomics",
@@ -633,21 +330,10 @@
           "source_pages": [
             2
           ]
-        }
-      ],
-      "source_pages": [
-        2
-      ]
-    },
-    {
-      "name": "Required Course(s)",
-      "required_credits": 3.0,
-      "required_credits_raw": "3",
-      "note": "",
-      "courses": [
+        },
         {
           "code": "LANG4032",
-          "name": "Technical Communication Il for IEDA and ISDN",
+          "name": "Technical Communication II for IEDA and ISDN",
           "credits": 3.0,
           "credits_raw": "3",
           "areas": [],
@@ -830,11 +516,10 @@
     }
   ],
   "uncertain": [
-    "Total required credits for the major is not explicitly stated in the document; it is set to 0 as per instruction when not stated.",
-    "The course LANG4032 appears with a typo in the name ('Il' instead of 'II'), but it is retained as per the source text.",
-    "The course IEDA4510 appears under both Financial Engineering and Consulting Services areas in the elective list; this is retained as per the source text.",
-    "total_required_credits (61.0) is a computed value: the sum of the required_credits of all groups in this file. The PDF does not state a single overall minimum total for this program, so this figure is derived by summation and may double-count where optional tracks/options are listed as separate groups."
+    "Total required credits for the major is not explicitly stated in the document; it must be inferred by summing group requirements (16 + 21 + 15 = 52), but other university-wide requirements may apply.",
+    "The note for IEDA 6 (thesis/project option) on page 2 says 'Note: IEDA 4901 OR IEDA 4920' but this appears to be attached to a 6-credit placeholder; both thesis and project courses are listed separately as 6-credit options, so the group already accounts for choosing one.",
+    "Some courses have ** in the PDF (e.g., COMP 1022P**, IEDA 3180**, MATH 1012**) indicating deletions or last offerings; these are retained as they appear in the requirement list unless officially removed."
   ],
-  "parser": "mineru_api",
+  "parser": "pymupdf",
   "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\major\\2023-24\\DA_BEng_in_Decision_Analytics.pdf"
 }

@@ -347,7 +347,11 @@
       ],
       "source_pages": [
         2
-      ]
+      ],
+      "branch": "Biomolecular Chemistry Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Core Chemistry Track Required Course(s)",
@@ -388,7 +392,11 @@
       ],
       "source_pages": [
         2
-      ]
+      ],
+      "branch": "Core Chemistry Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Core Chemistry Track Elective Course(s)",
@@ -398,7 +406,11 @@
       "courses": [],
       "source_pages": [
         2
-      ]
+      ],
+      "branch": "Core Chemistry Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Environmental and Analytical Chemistry Option Required Course(s)",
@@ -429,7 +441,11 @@
       ],
       "source_pages": [
         3
-      ]
+      ],
+      "branch": "Environmental and Analytical Chemistry Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": "Core Chemistry Track"
     },
     {
       "name": "Environmental and Analytical Chemistry Option Elective Course(s)",
@@ -580,7 +596,11 @@
       ],
       "source_pages": [
         3
-      ]
+      ],
+      "branch": "Environmental and Analytical Chemistry Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": "Core Chemistry Track"
     },
     {
       "name": "Materials Chemistry Option Required Course(s)",
@@ -611,7 +631,11 @@
       ],
       "source_pages": [
         4
-      ]
+      ],
+      "branch": "Materials Chemistry Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": "Core Chemistry Track"
     },
     {
       "name": "Materials Chemistry Option Elective Course(s)",
@@ -752,7 +776,11 @@
       ],
       "source_pages": [
         4
-      ]
+      ],
+      "branch": "Materials Chemistry Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": "Core Chemistry Track"
     },
     {
       "name": "Pure Chemistry Option Required Course(s)",
@@ -783,7 +811,11 @@
       ],
       "source_pages": [
         5
-      ]
+      ],
+      "branch": "Pure Chemistry Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": "Core Chemistry Track"
     },
     {
       "name": "Pure Chemistry Option Elective Course(s)",
@@ -793,7 +825,11 @@
       "courses": [],
       "source_pages": [
         5
-      ]
+      ],
+      "branch": "Pure Chemistry Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": "Core Chemistry Track"
     },
     {
       "name": "International Research Enrichment Track Required Course(s)",
@@ -814,7 +850,11 @@
       ],
       "source_pages": [
         6
-      ]
+      ],
+      "branch": "International Research Enrichment Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     }
   ],
   "uncertain": [

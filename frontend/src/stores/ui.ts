@@ -15,6 +15,9 @@ interface UiState {
   /** 小屏侧栏抽屉开合（桌面侧栏常驻，不使用该状态） */
   sidebarOpen: boolean;
   setSidebarOpen: (open: boolean) => void;
+  /** 桌面侧栏折叠为图标条（持久化）；小屏走抽屉，不使用该状态 */
+  sidebarCollapsed: boolean;
+  toggleSidebarCollapsed: () => void;
   /** 用户主动打开引导弹窗（顶栏摘要点击）；自动弹窗不经过这个状态 */
   onboardingOpen: boolean;
   openOnboarding: () => void;
@@ -45,6 +48,15 @@ function resolveInitialTheme(): "light" | "dark" {
   return window.matchMedia?.("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 }
 
+/** 侧栏折叠状态持久化；默认展开，避免首次访问就藏起导航 */
+function resolveInitialSidebarCollapsed(): boolean {
+  try {
+    return localStorage.getItem("grad-sidebar-collapsed") === "1";
+  } catch {
+    return false;
+  }
+}
+
 export const useUi = create<UiState>()((set, get) => ({
   year: "",
   code: "",
@@ -53,6 +65,16 @@ export const useUi = create<UiState>()((set, get) => ({
   setView: (view) => set({ activeView: view, sidebarOpen: false }),
   sidebarOpen: false,
   setSidebarOpen: (open) => set({ sidebarOpen: open }),
+  sidebarCollapsed: resolveInitialSidebarCollapsed(),
+  toggleSidebarCollapsed: () => {
+    const next = !get().sidebarCollapsed;
+    try {
+      localStorage.setItem("grad-sidebar-collapsed", next ? "1" : "0");
+    } catch {
+      /* 隐私模式下写入失败：仅本次会话不记忆 */
+    }
+    set({ sidebarCollapsed: next });
+  },
   onboardingOpen: false,
   openOnboarding: () => set({ onboardingOpen: true }),
   closeOnboarding: () => set({ onboardingOpen: false }),

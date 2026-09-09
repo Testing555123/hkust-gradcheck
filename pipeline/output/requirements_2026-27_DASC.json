@@ -297,7 +297,11 @@
       ],
       "source_pages": [
         2
-      ]
+      ],
+      "branch": "Applied Biosciences Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Environmental Science Track Required Course(s)",
@@ -368,7 +372,11 @@
       ],
       "source_pages": [
         2
-      ]
+      ],
+      "branch": "Environmental Science Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Information Science Track Required Course(s)",
@@ -470,7 +478,11 @@
       "source_pages": [
         2,
         3
-      ]
+      ],
+      "branch": "Information Science Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Molecular Science and Cheminformatics Track Required Course(s)",
@@ -551,7 +563,11 @@
       ],
       "source_pages": [
         3
-      ]
+      ],
+      "branch": "Molecular Science and Cheminformatics Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     }
   ],
   "uncertain": [

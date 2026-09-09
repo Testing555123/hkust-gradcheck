@@ -5,19 +5,13 @@ import {
   fetchProgramIndex,
   fetchProgramTree,
 } from "@/lib/static-data";
-import { MOCK_PROGRAMS, mockTreeFor } from "@/mocks/programs";
 import type { AttachedProgram } from "@/lib/attached";
 import type {
   CourseDetail,
   CourseIndexEntry,
-  ProgramInfo,
   ProgramTreeData,
 } from "@/types";
 import { resolveTree } from "@/lib/pools";
-
-/** 开发期开关：frontend/.env.local 里 VITE_USE_MOCK=1 时走假数据，不读静态文件 */
-const USE_MOCK =
-  import.meta.env.VITE_USE_MOCK === "1" || import.meta.env.VITE_USE_MOCK === "true";
 
 /**
  * 静态资源内容不可变（随构建产物一起发布），故 staleTime 设为 Infinity：
@@ -26,11 +20,6 @@ const USE_MOCK =
 const IMMUTABLE = { staleTime: Infinity, gcTime: Infinity } as const;
 
 function fetchTree(year: string, code: string): Promise<ProgramTreeData> {
-  if (USE_MOCK) {
-    const tree = mockTreeFor(year, code);
-    if (!tree) throw new Error(`无法加载 ${year} ${code} 的培养方案`);
-    return Promise.resolve(tree);
-  }
   return fetchProgramTree(year, code).catch(() => {
     throw new Error(`无法加载 ${year} ${code} 的培养方案`);
   });
@@ -40,10 +29,7 @@ export function usePrograms() {
   return useQuery({
     queryKey: ["programs"],
     ...IMMUTABLE,
-    queryFn: async (): Promise<ProgramInfo[]> => {
-      if (USE_MOCK) return MOCK_PROGRAMS;
-      return fetchProgramIndex();
-    },
+    queryFn: fetchProgramIndex,
   });
 }
 

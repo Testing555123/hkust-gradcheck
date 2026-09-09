@@ -12,6 +12,11 @@ interface CourseRowProps {
   course: CourseRef;
   groupName?: string;
   sourceRef?: string | null;
+  /**
+   * 该课所属分支不是当前已选方向时传入分支名：
+   * 行整体降透明度并标注「属于 XXX Track（非当前方向）」，勾选状态保留但不计入主修进度。
+   */
+  offBranch?: string | null;
 }
 
 /**
@@ -21,7 +26,7 @@ interface CourseRowProps {
  * - 桌面（md+）：单行表格密度，勾选为内联小控件
  * - 移动（<md）：卡片流，课号课名置顶、勾选为两块等宽大按钮（点击区 ≥44px）
  */
-export function CourseRow({ course, groupName, sourceRef }: CourseRowProps) {
+export function CourseRow({ course, groupName, sourceRef, offBranch }: CourseRowProps) {
   const current = useSelection((s) => s.status[course.code]);
   const toggle = useSelection((s) => s.toggle);
   const openCourse = useUi((s) => s.openCourse);
@@ -38,7 +43,8 @@ export function CourseRow({ course, groupName, sourceRef }: CourseRowProps) {
       className={cn(
         "flex flex-col gap-2.5 rounded-lg border bg-card p-3 transition-all hover:border-primary/40 hover:shadow-sm md:flex-row md:items-center md:gap-3 md:py-2.5",
         isTaken && "border-success/30 bg-success/5",
-        isPlanned && "border-primary/30 bg-primary/5"
+        isPlanned && "border-primary/30 bg-primary/5",
+        offBranch && "opacity-60"
       )}
     >
       {/* 勾选区：移动端为两块大按钮，桌面通过 md:contents 还原为内联排列 */}
@@ -90,6 +96,11 @@ export function CourseRow({ course, groupName, sourceRef }: CourseRowProps) {
         </p>
         {groupName && (
           <p className="mt-0.5 truncate text-xs text-muted-foreground">{groupName}</p>
+        )}
+        {offBranch && (
+          <p className="mt-0.5 truncate text-caption text-muted-foreground">
+            属于 {offBranch}（非当前方向）
+          </p>
         )}
       </div>
 

@@ -571,7 +571,11 @@
       "source_pages": [
         2,
         3
-      ]
+      ],
+      "branch": "Energy Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Engineering Design Option Elective Course(s)",
@@ -642,7 +646,11 @@
       ],
       "source_pages": [
         3
-      ]
+      ],
+      "branch": "Engineering Design Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Materials Option Elective Course(s)",
@@ -723,7 +731,11 @@
       ],
       "source_pages": [
         3
-      ]
+      ],
+      "branch": "Materials Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Research Option Required Course(s)",
@@ -744,7 +756,11 @@
       ],
       "source_pages": [
         3
-      ]
+      ],
+      "branch": "Research Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     }
   ],
   "uncertain": [

@@ -2,13 +2,13 @@
   "year": "2023-24",
   "code": "BIEN",
   "title": "BEng in Bioengineering",
-  "total_required_credits": 80.0,
+  "total_required_credits": 0.0,
   "groups": [
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
-      "required_credits_raw": "3-6",
-      "note": "Note: [COMP 1021] OR [(COMP 1022P OR COMP 2011 OR COMP 2012H) AND COMP 1029P]",
+      "required_credits": 0.0,
+      "required_credits_raw": "",
+      "note": "",
       "courses": [
         {
           "code": "COMP1021",
@@ -59,18 +59,7 @@
           "source_pages": [
             1
           ]
-        }
-      ],
-      "source_pages": [
-        1
-      ]
-    },
-    {
-      "name": "Engineering Fundamental Course(s)",
-      "required_credits": 7.0,
-      "required_credits_raw": "7",
-      "note": "",
-      "courses": [
+        },
         {
           "code": "CHEM1012",
           "name": "General Chemistry B: Atomic Structure, Molecules, and Bonding Theories",
@@ -100,18 +89,7 @@
           "source_pages": [
             1
           ]
-        }
-      ],
-      "source_pages": [
-        1
-      ]
-    },
-    {
-      "name": "Engineering Fundamental Course(s)",
-      "required_credits": 0.0,
-      "required_credits_raw": "0-3",
-      "note": "Note: Students with level 3 or above in HKDSE 1x Biology are exempted from taking LIFS 1901",
-      "courses": [
+        },
         {
           "code": "LIFS1901",
           "name": "General Biology I",
@@ -121,18 +99,7 @@
           "source_pages": [
             1
           ]
-        }
-      ],
-      "source_pages": [
-        1
-      ]
-    },
-    {
-      "name": "Engineering Fundamental Course(s)",
-      "required_credits": 4.0,
-      "required_credits_raw": "4-7",
-      "note": "Note: [(MATH 1012 OR MATH 1013 OR MATH 1023) AND (MATH 1014 OR MATH 1024)] OR [MATH 1020]",
-      "courses": [
+        },
         {
           "code": "MATH1012",
           "name": "Calculus IA",
@@ -192,18 +159,7 @@
           "source_pages": [
             1
           ]
-        }
-      ],
-      "source_pages": [
-        1
-      ]
-    },
-    {
-      "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
-      "required_credits_raw": "3",
-      "note": "Note: PHYS 1112 OR PHYS 1312",
-      "courses": [
+        },
         {
           "code": "PHYS1112",
           "name": "General Physics I with Calculus",
@@ -226,195 +182,15 @@
         }
       ],
       "source_pages": [
-        2
-      ]
-    },
-    {
-      "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
-      "required_credits_raw": "3-4",
-      "note": "SENG Engineering Introduction course (If the students take an introduction course included in their major, this course can be counted towards their major requirement.)",
-      "courses": [
-        {
-          "code": "BIEN1010",
-          "name": "Introduction to Biomedical Engineering",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            2
-          ]
-        },
-        {
-          "code": "CENG1000",
-          "name": "Foundations of Chemical and Biological Engineering",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            2
-          ]
-        },
-        {
-          "code": "CENG1500",
-          "name": "A First Course on Materials Science and Applications",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            2
-          ]
-        },
-        {
-          "code": "CENG1700",
-          "name": "Introduction to Environmental Engineering",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            2
-          ]
-        },
-        {
-          "code": "CIVL1100",
-          "name": "Discovering Civil and Environmental Engineering",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            2
-          ]
-        },
-        {
-          "code": "CIVL1210",
-          "name": "Fundamental of Green Buildings",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            2
-          ]
-        },
-        {
-          "code": "COMP1021",
-          "name": "Introduction to Computer Science",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            2
-          ]
-        },
-        {
-          "code": "ELEC1100",
-          "name": "Introduction to Electro-Robot Design",
-          "credits": 4.0,
-          "credits_raw": "4",
-          "areas": [],
-          "source_pages": [
-            2
-          ]
-        },
-        {
-          "code": "ELEC1200",
-          "name": "A System View of Communications: from Signals to Packets",
-          "credits": 4.0,
-          "credits_raw": "4",
-          "areas": [],
-          "source_pages": [
-            2
-          ]
-        },
-        {
-          "code": "ENGG1100",
-          "name": "First Year Cornerstone Engineering Design Project Course",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            2
-          ]
-        },
-        {
-          "code": "IEDA2010",
-          "name": "Introduction of Industrial Engineering and Decision Analytics",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            2
-          ]
-        },
-        {
-          "code": "ISDN1001",
-          "name": "Introduction to Integrative Systems and Design",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            2
-          ]
-        },
-        {
-          "code": "ISDN1002",
-          "name": "Redefining Problems for the Real Needs",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            2
-          ]
-        },
-        {
-          "code": "ISDN1006",
-          "name": "Human-centered Innovation",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            2
-          ]
-        },
-        {
-          "code": "MECH1902",
-          "name": "Energy Systems in a Sustainable World",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            2
-          ]
-        },
-        {
-          "code": "MECH1906",
-          "name": "Mechanical Engineering for Modern Life",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            2
-          ]
-        },
-        {
-          "code": "MECH1907",
-          "name": "Introduction to Aerospace Engineering",
-          "credits": 3.0,
-          "credits_raw": "3",
-          "areas": [],
-          "source_pages": [
-            2
-          ]
-        }
-      ],
-      "source_pages": [
+        1,
         2
       ]
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
-      "required_credits_raw": "3",
-      "note": "Note: BIEN 1010 OR BIEN 1600 OR CENG 1000",
+      "required_credits": 0.0,
+      "required_credits_raw": "",
+      "note": "",
       "courses": [
         {
           "code": "BIEN1010",
@@ -445,18 +221,7 @@
           "source_pages": [
             2
           ]
-        }
-      ],
-      "source_pages": [
-        2
-      ]
-    },
-    {
-      "name": "Required Course(s)",
-      "required_credits": 10.0,
-      "required_credits_raw": "10",
-      "note": "",
-      "courses": [
+        },
         {
           "code": "BIEN2310",
           "name": "Modeling for Chemical and Biological Engineering",
@@ -496,18 +261,7 @@
           "source_pages": [
             2
           ]
-        }
-      ],
-      "source_pages": [
-        2
-      ]
-    },
-    {
-      "name": "Required Course(s)",
-      "required_credits": 3.0,
-      "required_credits_raw": "3",
-      "note": "Note: BIEN 3250 OR CENG 2220",
-      "courses": [
+        },
         {
           "code": "BIEN3250",
           "name": "Rate and Transport Processes in Biological Systems",
@@ -527,18 +281,7 @@
           "source_pages": [
             2
           ]
-        }
-      ],
-      "source_pages": [
-        2
-      ]
-    },
-    {
-      "name": "Required Course(s)",
-      "required_credits": 3.0,
-      "required_credits_raw": "3",
-      "note": "",
-      "courses": [
+        },
         {
           "code": "BIEN3300",
           "name": "Data Science for Molecular Engineering",
@@ -548,18 +291,7 @@
           "source_pages": [
             2
           ]
-        }
-      ],
-      "source_pages": [
-        2
-      ]
-    },
-    {
-      "name": "Required Course(s)",
-      "required_credits": 3.0,
-      "required_credits_raw": "3",
-      "note": "Note: BIEN 3310 OR BIEN 3320",
-      "courses": [
+        },
         {
           "code": "BIEN3310",
           "name": "Data Science for Neural Engineering",
@@ -567,7 +299,8 @@
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
-            2
+            2,
+            3
           ]
         },
         {
@@ -579,18 +312,7 @@
           "source_pages": [
             2
           ]
-        }
-      ],
-      "source_pages": [
-        2
-      ]
-    },
-    {
-      "name": "Required Course(s)",
-      "required_credits": 3.0,
-      "required_credits_raw": "3",
-      "note": "",
-      "courses": [
+        },
         {
           "code": "BIEN3410",
           "name": "Bioimaging and Image Analysis",
@@ -600,18 +322,7 @@
           "source_pages": [
             3
           ]
-        }
-      ],
-      "source_pages": [
-        3
-      ]
-    },
-    {
-      "name": "Required Course(s)",
-      "required_credits": 3.0,
-      "required_credits_raw": "3",
-      "note": "Note: BIEN 3420 OR CENG 3230",
-      "courses": [
+        },
         {
           "code": "BIEN3420",
           "name": "Biosensors and Bioinstrumentation for Healthcare",
@@ -631,18 +342,7 @@
           "source_pages": [
             3
           ]
-        }
-      ],
-      "source_pages": [
-        3
-      ]
-    },
-    {
-      "name": "Required Course(s)",
-      "required_credits": 4.0,
-      "required_credits_raw": "4",
-      "note": "",
-      "courses": [
+        },
         {
           "code": "BIEN3910",
           "name": "Bioengineering Laboratory",
@@ -652,18 +352,7 @@
           "source_pages": [
             3
           ]
-        }
-      ],
-      "source_pages": [
-        3
-      ]
-    },
-    {
-      "name": "Required Course(s)",
-      "required_credits": 6.0,
-      "required_credits_raw": "6",
-      "note": "Note: BIEN 4920 OR BIEN 4930 OR BIEN 4940",
-      "courses": [
+        },
         {
           "code": "BIEN4920",
           "name": "Bioengineering Capstone Design",
@@ -693,18 +382,7 @@
           "source_pages": [
             3
           ]
-        }
-      ],
-      "source_pages": [
-        3
-      ]
-    },
-    {
-      "name": "Required Course(s)",
-      "required_credits": 7.0,
-      "required_credits_raw": "7",
-      "note": "",
-      "courses": [
+        },
         {
           "code": "BIEN4990",
           "name": "Academic and Professional Development II",
@@ -747,6 +425,7 @@
         }
       ],
       "source_pages": [
+        2,
         3
       ]
     },
@@ -754,14 +433,16 @@
       "name": "Elective(s)",
       "required_credits": 15.0,
       "required_credits_raw": "15",
-      "note": "Bioengineering Electives (5 courses from the specified elective list, of which at least 9 credits should be taken from a single specialty area (Area 1 or Area 2). Out of the 15 credits taken, at least 9 credits should be at 4000-level or above). Courses taken as Major Required Courses may not be counted towards this elective requirement. Area 1: Biomedical Data Acquisition and Analytics; Area 2: Bioprocesses, Biomaterials and Bioanalysis; Other electives.",
+      "note": "Bioengineering Electives (5 courses from the specified elective list, of which at least 9 credits should be taken from a single specialty area (Area 1 or Area 2). Out of the 15 credits taken, at least 9 credits should be at 4000-level or above). Courses taken as Major Required Courses may not be counted towards this elective requirement.",
       "courses": [
         {
           "code": "BIEN3310",
           "name": "Data Science for Neural Engineering",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Biomedical Data Acquisition and Analytics"
+          ],
           "source_pages": [
             3
           ]
@@ -771,7 +452,9 @@
           "name": "Statistical Signal Analysis and Applications in Neural Engineering",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Biomedical Data Acquisition and Analytics"
+          ],
           "source_pages": [
             3
           ]
@@ -781,7 +464,9 @@
           "name": "Introduction to Neural Engineering",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Biomedical Data Acquisition and Analytics"
+          ],
           "source_pages": [
             3
           ]
@@ -791,7 +476,9 @@
           "name": "Fundamentals and Applications of Sensing Technologies in Healthcare",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Biomedical Data Acquisition and Analytics"
+          ],
           "source_pages": [
             3
           ]
@@ -801,7 +488,9 @@
           "name": "Deep Learning for Chemical and Biological Engineering",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Biomedical Data Acquisition and Analytics"
+          ],
           "source_pages": [
             3
           ]
@@ -811,7 +500,9 @@
           "name": "Object-Oriented Programming and Data Structures",
           "credits": 4.0,
           "credits_raw": "4",
-          "areas": [],
+          "areas": [
+            "Biomedical Data Acquisition and Analytics"
+          ],
           "source_pages": [
             3
           ]
@@ -821,7 +512,9 @@
           "name": "Honors Object-Oriented Programming and Data Structures",
           "credits": 5.0,
           "credits_raw": "5",
-          "areas": [],
+          "areas": [
+            "Biomedical Data Acquisition and Analytics"
+          ],
           "source_pages": [
             3
           ]
@@ -831,7 +524,9 @@
           "name": "Introduction to Artificial Intelligence",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Biomedical Data Acquisition and Analytics"
+          ],
           "source_pages": [
             3
           ]
@@ -841,7 +536,9 @@
           "name": "Machine Learning",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Biomedical Data Acquisition and Analytics"
+          ],
           "source_pages": [
             3
           ]
@@ -851,7 +548,9 @@
           "name": "Data Mining",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Biomedical Data Acquisition and Analytics"
+          ],
           "source_pages": [
             3
           ]
@@ -861,7 +560,9 @@
           "name": "Image Processing",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Biomedical Data Acquisition and Analytics"
+          ],
           "source_pages": [
             3
           ]
@@ -871,7 +572,9 @@
           "name": "Deep Learning in Medical Image Analysis",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Biomedical Data Acquisition and Analytics"
+          ],
           "source_pages": [
             3
           ]
@@ -881,7 +584,9 @@
           "name": "Signals and Systems",
           "credits": 4.0,
           "credits_raw": "4",
-          "areas": [],
+          "areas": [
+            "Biomedical Data Acquisition and Analytics"
+          ],
           "source_pages": [
             3
           ]
@@ -891,7 +596,9 @@
           "name": "Basic Electronics",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Biomedical Data Acquisition and Analytics"
+          ],
           "source_pages": [
             3
           ]
@@ -901,7 +608,9 @@
           "name": "Medical Imaging",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Biomedical Data Acquisition and Analytics"
+          ],
           "source_pages": [
             3
           ]
@@ -911,7 +620,9 @@
           "name": "Practical Machine Learning",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Biomedical Data Acquisition and Analytics"
+          ],
           "source_pages": [
             3
           ]
@@ -921,7 +632,9 @@
           "name": "Introduction to Biophysical Instrumentation",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Biomedical Data Acquisition and Analytics"
+          ],
           "source_pages": [
             3
           ]
@@ -931,7 +644,9 @@
           "name": "Regulatory Affairs in the Healthcare Industry",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Bioprocesses, Biomaterials and Bioanalysis"
+          ],
           "source_pages": [
             4
           ]
@@ -941,7 +656,9 @@
           "name": "Synthetic Biology",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Bioprocesses, Biomaterials and Bioanalysis"
+          ],
           "source_pages": [
             4
           ]
@@ -951,7 +668,9 @@
           "name": "Integrated Chemical Process and Product Design",
           "credits": 5.0,
           "credits_raw": "5",
-          "areas": [],
+          "areas": [
+            "Bioprocesses, Biomaterials and Bioanalysis"
+          ],
           "source_pages": [
             4
           ]
@@ -961,7 +680,9 @@
           "name": "Nature Engineering and DNA Nanotechnology",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Bioprocesses, Biomaterials and Bioanalysis"
+          ],
           "source_pages": [
             4
           ]
@@ -971,7 +692,9 @@
           "name": "Bioproducts and Processing",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Bioprocesses, Biomaterials and Bioanalysis"
+          ],
           "source_pages": [
             4
           ]
@@ -981,7 +704,9 @@
           "name": "Food Processing Technology",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Bioprocesses, Biomaterials and Bioanalysis"
+          ],
           "source_pages": [
             4
           ]
@@ -991,7 +716,9 @@
           "name": "Biomolecular Engineering",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Bioprocesses, Biomaterials and Bioanalysis"
+          ],
           "source_pages": [
             4
           ]
@@ -1001,7 +728,9 @@
           "name": "Biomaterials and Drug Delivery",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Bioprocesses, Biomaterials and Bioanalysis"
+          ],
           "source_pages": [
             4
           ]
@@ -1011,7 +740,9 @@
           "name": "Pharmaceutical Engineering",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Bioprocesses, Biomaterials and Bioanalysis"
+          ],
           "source_pages": [
             4
           ]
@@ -1021,7 +752,9 @@
           "name": "Protein Engineering",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Bioprocesses, Biomaterials and Bioanalysis"
+          ],
           "source_pages": [
             4
           ]
@@ -1031,7 +764,9 @@
           "name": "Fundamentals of Organic Chemistry",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Bioprocesses, Biomaterials and Bioanalysis"
+          ],
           "source_pages": [
             4
           ]
@@ -1041,7 +776,9 @@
           "name": "Analytical Chemistry",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Bioprocesses, Biomaterials and Bioanalysis"
+          ],
           "source_pages": [
             4
           ]
@@ -1051,7 +788,9 @@
           "name": "Microbiology",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Bioprocesses, Biomaterials and Bioanalysis"
+          ],
           "source_pages": [
             4
           ]
@@ -1061,7 +800,9 @@
           "name": "Development and Registration of Pharmaceutical Products",
           "credits": 3.0,
           "credits_raw": "3",
-          "areas": [],
+          "areas": [
+            "Bioprocesses, Biomaterials and Bioanalysis"
+          ],
           "source_pages": [
             4
           ]
@@ -1134,11 +875,14 @@
     }
   ],
   "uncertain": [
-    "total_required_credits is a calculated value: the PDF does not state a fixed total for the major; it is the sum of the required_credits of all groups (using the lower bound for credit ranges such as 3-6, 0-3, 4-7, 3-4).",
-    "Several blocks allow alternative course choices (e.g. COMP block 3-6, MATH block 4-7, SENG Engineering Introduction 3-4, BIEN/CENG alternatives), so the actual credits taken by a student may differ from the calculated total.",
-    "Remarks in the PDF note that BIEN 4310, CENG 4160, COMP 1022P and MATH 1012 were last offered in earlier years and subsequently deleted; they are kept in the elective/fundamental lists as printed in the PDF.",
-    "The PDF header/footer shows '2026-27 BIEN (4Y) (2023-24 intake)', i.e. the document is the 2023-24 intake curriculum rendered on a 2026-27 template; the year is recorded as 2023-24 per the intake year."
+    "The 'Engineering Fundamental Course(s)' group does not have a clear credit requirement stated in the 'Credit(s) attained' column; it appears to be a list of options with notes, but no explicit required credit value is given in the table header. The total required credits for the major cannot be determined from the provided text.",
+    "The 'Required Course(s)' group similarly lacks a clear credit requirement in the 'Credit(s) attained' column; it contains courses with OR notes but no numeric credit requirement is specified in the table.",
+    "The 'Credit(s) attained' column for groups like 'Engineering Fundamental Course(s)' and 'Required Course(s)' seems to be missing or not clearly presented as a single number; instead, individual courses have credits listed, but the group-level requirement is not explicitly stated in the table format expected by the parser.",
+    "The note for BIEN/CENG on page 2 says 'BIEN 1010 OR BIEN 1600 OR CENG 1000' but it's unclear if this is meant to be a group requirement (choose one) or if all are required; however, based on context and the presence of individual course listings elsewhere, it appears to be an OR condition for fulfilling a requirement, but the exact credit value for this sub-requirement is not stated.",
+    "Similarly, the note 'BIEN 3250 OR CENG 2220' and 'BIEN 3310 OR BIEN 3320' and 'BIEN 3420 OR CENG 3230' and 'BIEN 4920 OR BIEN 4930 OR BIEN 4940' are treated as notes attached to the group, but the actual credit value these OR groups contribute to the total is not specified in the 'Credit(s) attained' column for the group.",
+    "The courses marked with ** (e.g., COMP 1022P**, MATH 1012**, BIEN 4310**, CENG 4160**) have remarks indicating they were deleted in certain years, but it is unclear if they are still valid for the 2023-24 intake; the remarks say 'last offered in 2024-25' or '2022-23', which may imply they are not available, but this requires human review to confirm eligibility for the cohort.",
+    "The course BIEN 4000 has a credit range of 1-4; the lower bound (1) is used as per rules, but the actual credit value may depend on the specific offering, which introduces uncertainty."
   ],
-  "parser": "ai_read_pdfplumber_text",
+  "parser": "pymupdf",
   "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\major\\2023-24\\BIEN_BEng_in_Bioengineering.pdf"
 }

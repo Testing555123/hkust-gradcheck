@@ -86,7 +86,11 @@
       ],
       "source_pages": [
         2
-      ]
+      ],
+      "branch": "Business Analytics Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Supply Chain Management Option Required Course(s)",
@@ -117,7 +121,11 @@
       ],
       "source_pages": [
         2
-      ]
+      ],
+      "branch": "Supply Chain Management Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     }
   ],
   "uncertain": [

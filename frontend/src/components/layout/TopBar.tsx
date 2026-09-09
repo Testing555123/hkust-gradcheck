@@ -1,4 +1,4 @@
-import { GraduationCap, Menu, Moon, Sun } from "lucide-react";
+import { GraduationCap, Menu, Moon, PanelLeftClose, PanelLeftOpen, Sun } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { ProgramPicker } from "@/components/business/ProgramPicker";
@@ -13,6 +13,9 @@ interface TopBarProps {
   onToggleTheme: () => void;
   onEditProfile: () => void;
   onOpenSidebar: () => void;
+  /** 桌面侧栏折叠开关；小屏走抽屉，不使用 */
+  sidebarCollapsed: boolean;
+  onToggleSidebar: () => void;
 }
 
 /**
@@ -27,6 +30,8 @@ export function TopBar({
   onToggleTheme,
   onEditProfile,
   onOpenSidebar,
+  sidebarCollapsed,
+  onToggleSidebar,
 }: TopBarProps) {
   return (
     <header className="fixed inset-x-0 top-0 z-40 h-14 border-b border-border bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -39,6 +44,23 @@ export function TopBar({
           aria-label="打开导航菜单"
         >
           <Menu className="h-5 w-5" />
+        </Button>
+
+        {/* 桌面：与移动菜单按钮同一个位置，按断点互斥显示 */}
+        <Button
+          variant="ghost"
+          size="icon"
+          className="hidden md:inline-flex"
+          onClick={onToggleSidebar}
+          aria-controls="app-sidebar"
+          aria-expanded={!sidebarCollapsed}
+          aria-label={sidebarCollapsed ? "展开側邊導航" : "收起側邊導航"}
+        >
+          {sidebarCollapsed ? (
+            <PanelLeftOpen className="h-4 w-4" />
+          ) : (
+            <PanelLeftClose className="h-4 w-4" />
+          )}
         </Button>
 
         <div className="flex min-w-0 items-center gap-2">

@@ -650,7 +650,11 @@
       ],
       "source_pages": [
         3
-      ]
+      ],
+      "branch": "International Research Enrichment Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "International Research Enrichment Track Required Course(s)",
@@ -691,7 +695,11 @@
       ],
       "source_pages": [
         3
-      ]
+      ],
+      "branch": "International Research Enrichment Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "International Research Enrichment Track Elective Course(s)",
@@ -714,7 +722,11 @@
       "source_pages": [
         3,
         4
-      ]
+      ],
+      "branch": "International Research Enrichment Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Computational Physics with Artificial Intelligence Option Required Course(s)",
@@ -755,7 +767,11 @@
       ],
       "source_pages": [
         4
-      ]
+      ],
+      "branch": "Computational Physics with Artificial Intelligence Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Honors Physics Option Required Course(s)",
@@ -796,7 +812,11 @@
       ],
       "source_pages": [
         4
-      ]
+      ],
+      "branch": "Honors Physics Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Honors Physics Option Required Course(s)",
@@ -827,7 +847,11 @@
       ],
       "source_pages": [
         4
-      ]
+      ],
+      "branch": "Honors Physics Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Honors Physics Option Elective Course(s)",
@@ -848,7 +872,11 @@
       ],
       "source_pages": [
         4
-      ]
+      ],
+      "branch": "Honors Physics Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Physics and Mathematics Option Required Course(s)",
@@ -879,7 +907,11 @@
       ],
       "source_pages": [
         5
-      ]
+      ],
+      "branch": "Physics and Mathematics Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Physics and Mathematics Option Required Course(s)",
@@ -960,7 +992,11 @@
       ],
       "source_pages": [
         5
-      ]
+      ],
+      "branch": "Physics and Mathematics Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     }
   ],
   "uncertain": [

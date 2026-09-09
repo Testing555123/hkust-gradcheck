@@ -533,7 +533,11 @@
       ],
       "source_pages": [
         3
-      ]
+      ],
+      "branch": "Research Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Research Option Elective Course(s)",
@@ -543,7 +547,11 @@
       "courses": [],
       "source_pages": [
         3
-          ]
+      ],
+      "branch": "Research Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     }
   ],
   "uncertain": [

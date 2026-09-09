@@ -22,15 +22,9 @@ pipeline/run_pipeline_env.bat
 # ===== 数据文件 =====
 # 官方培养方案 PDF 与爬虫索引（注意：不带斜杠，软链也能命中）
 unpress_pdf
-# 可写工作副本（运行时从 courses.db 复制生成，不入库）
-backend/data/
 # courses.db 与 pipeline/output/ 需入库：导出脚本从它们生成前端静态数据
 pipeline/reports/
 pipeline/cache/
-# 管线调试用的一次性脚本（diag_step / e2e_attached / verify_final）
-pipeline/diag_step.js
-pipeline/e2e_attached.js
-pipeline/verify_final.js
 
 # ===== 日志 =====
 *.log

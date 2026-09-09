@@ -4,11 +4,14 @@ import { ProgressHero } from "@/components/business/ProgressHero";
 import { GroupBarList, type GroupBarItem } from "@/components/business/GroupBarList";
 import { StatCard } from "@/components/business/StatCard";
 import { AttachedAuditCard } from "@/components/business/AttachedAuditCard";
+import { BranchNotice } from "@/components/business/BranchSelector";
 import { computeProgramAudit } from "@/lib/audit";
+import { collectBranches } from "@/lib/branch";
 import { computeCommonCoreAudit } from "@/lib/common-core";
 import type { AttachedProgram } from "@/lib/attached";
 import { useSelection } from "@/stores/selection";
 import { useProfile } from "@/stores/profile";
+import { useUi } from "@/stores/ui";
 import { AlertTriangle, BookOpen, CalendarClock, CheckCircle2, Shapes, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
@@ -58,7 +61,20 @@ export function OverviewPage({
   const status = useSelection((s) => s.status);
   const clearAll = useSelection((s) => s.clearAll);
   const profile = useProfile((s) => s.profile);
-  const audit = computeProgramAudit(tree.groups, status);
+  const setView = useUi((s) => s.setView);
+
+  // 互斥分支（Track / Option）：分母 = 公共核心 + 已选分支，未选时只计核心
+  const summary = useMemo(() => collectBranches(tree.groups), [tree.groups]);
+  const selectedBranch =
+    profile?.branch && summary.byName[profile.branch] ? profile.branch : null;
+  const selectedSubBranch =
+    selectedBranch && profile?.subBranch && summary.byName[profile.subBranch]
+      ? profile.subBranch
+      : null;
+  const audit = useMemo(
+    () => computeProgramAudit(tree.groups, status, { selectedBranch, selectedSubBranch }),
+    [tree.groups, status, selectedBranch, selectedSubBranch]
+  );
 
   // 附加要求审计：每个可用附加方案独立计算（勾选按课号共享，credit reuse）
   const attachedAudits = useMemo(
@@ -131,6 +147,13 @@ export function OverviewPage({
 
   return (
     <div className="space-y-5">
+      {summary.hasBranches && !selectedBranch && (
+        <BranchNotice
+          branchCount={summary.branches.length}
+          coreCredits={summary.coreCredits}
+          onPick={() => setView("requirements")}
+        />
+      )}
       <ProgressHero
         title={tree.program.title}
         subtitle={`${tree.program.year} 学年入学 · 主修代码 ${tree.program.code}`}
@@ -145,6 +168,7 @@ export function OverviewPage({
             合并口径：主修 {audit.totalPlanned}/{audit.totalRequired || "—"} · 通识核心 {cc.totalCompleted}/{cc.totalRequired}
             {attachedUsable.length > 0 &&
               ` · 附加要求 ${attachedPlanned}/${attachedReq}（${attachedUsable.length} 项）`}
+            {selectedBranch && ` · 方向 ${selectedBranch}`}
             {cc.framework.susApplicable && "（2025-26 起含 SUS Area）"}
           </>
         }

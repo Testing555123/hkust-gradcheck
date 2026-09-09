@@ -13,12 +13,28 @@ export interface Profile {
   admissionYear: string | null;
   /** 辅修 / Extended Major：暂未开放，恒为空数组（结构留数组便于以后放开多选） */
   minors: string[];
+  /**
+   * 已选主修内部分支方向（Track / Option），如 "Applied Mathematics Track"。
+   * 互斥分支的学分下限不同，未选时分母只计公共核心。
+   */
+  branch: string | null;
+  /** 已选二级分支（如 CHEM Core Chemistry Track 下的 Option），无则 null */
+  subBranch: string | null;
   /** 最近一次写入时间（ISO 字符串），未选择过为 null */
   updatedAt: string | null;
 }
 
 export function emptyProfile(): Profile {
-  return { year: "", code: "", school: null, admissionYear: null, minors: [], updatedAt: null };
+  return {
+    year: "",
+    code: "",
+    school: null,
+    admissionYear: null,
+    minors: [],
+    branch: null,
+    subBranch: null,
+    updatedAt: null,
+  };
 }
 
 /** 学年列表：去重 + 倒序（最新学年在前） */

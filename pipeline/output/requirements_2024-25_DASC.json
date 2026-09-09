@@ -422,7 +422,11 @@
       ],
       "source_pages": [
         2
-      ]
+      ],
+      "branch": "Applied Biosciences Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Environmental Science Track",
@@ -503,7 +507,11 @@
       ],
       "source_pages": [
         3
-      ]
+      ],
+      "branch": "Environmental Science Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Information Science Track",
@@ -614,7 +622,11 @@
       ],
       "source_pages": [
         3
-      ]
+      ],
+      "branch": "Information Science Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Molecular Science and Cheminformatics Track",
@@ -675,7 +687,11 @@
       ],
       "source_pages": [
         4
-      ]
+      ],
+      "branch": "Molecular Science and Cheminformatics Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     }
   ],
   "uncertain": [

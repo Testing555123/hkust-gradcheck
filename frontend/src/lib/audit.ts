@@ -5,6 +5,7 @@ import type {
   ProgramAudit,
   RequirementGroup,
 } from "@/types";
+import { filterGroupsByBranch } from "@/lib/branch";
 
 const clampPct = (n: number) => Math.max(0, Math.min(100, n));
 
@@ -52,11 +53,28 @@ export function computeGroupAudit(
   };
 }
 
+/** 分支口径：不传则保持「全部组累加」的旧行为 */
+export interface ProgramAuditOptions {
+  /** 已选一级分支名（如 "Applied Mathematics Track"） */
+  selectedBranch?: string | null;
+  /** 已选二级分支名（如 CHEM Core Chemistry Track 下的 "Materials Chemistry Option"） */
+  selectedSubBranch?: string | null;
+}
+
+/**
+ * 方案级核算。传入 opts 时先把组收窄到「公共核心 + 已选分支」再求和——
+ * 互斥分支（Track / Option）若全部并列累加，分母会被放大到真实值的数倍。
+ * 不传 opts 时行为与历史一致（供附加要求等无分支口径复用）。
+ */
 export function computeProgramAudit(
   groups: RequirementGroup[],
-  status: Record<string, CourseStatus>
+  status: Record<string, CourseStatus>,
+  opts?: ProgramAuditOptions
 ): ProgramAudit {
-  const groupAudits = groups.map((g) => computeGroupAudit(g, status));
+  const scoped = opts
+    ? filterGroupsByBranch(groups, opts.selectedBranch ?? null, opts.selectedSubBranch ?? null)
+    : groups;
+  const groupAudits = scoped.map((g) => computeGroupAudit(g, status));
 
   const totalRequired = groupAudits.reduce((a, g) => a + g.requiredCredits, 0);
   const totalTaken = groupAudits.reduce((a, g) => a + Math.min(g.takenCredits, g.requiredCredits), 0);

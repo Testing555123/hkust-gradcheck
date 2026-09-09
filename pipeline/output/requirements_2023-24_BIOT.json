@@ -467,7 +467,11 @@
       ],
       "source_pages": [
         3
-      ]
+      ],
+      "branch": "Applied Bioscience Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Applied Bioscience Elective",
@@ -619,7 +623,11 @@
       ],
       "source_pages": [
         3
-      ]
+      ],
+      "branch": "Entrepreneurship Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "IRE Track",
@@ -650,7 +658,11 @@
       ],
       "source_pages": [
         4
-      ]
+      ],
+      "branch": "IRE Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     }
   ],
   "uncertain": [

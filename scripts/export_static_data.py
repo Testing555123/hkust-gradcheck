@@ -169,30 +169,36 @@ def _load_programs() -> list[dict]:
             )
             if pool:
                 pool_count += 1
-            groups.append(
-                {
-                    "id": order,
-                    "name": g.get("name", ""),
-                    "required_credits": float(g.get("required_credits") or 0.0),
-                    "min_courses": g.get("min_courses"),
-                    "note": g.get("note"),
-                    "source_ref": _source_ref(g.get("source_pages"), g.get("source_ref")),
-                    "order_index": order,
-                    # 池组清空 courses（前端按 pool 从 courses.json 解析真实课程）
-                    "courses": []
-                    if pool
-                    else [
-                        {
-                            "code": c.get("code", ""),
-                            "name": c.get("name", ""),
-                            "credits": float(c.get("credits") or 0.0),
-                            "areas": c.get("areas", []) or [],
-                        }
-                        for c in g.get("courses", [])
-                    ],
-                    "pool": pool,
-                }
-            )
+            group = {
+                "id": order,
+                "name": g.get("name", ""),
+                "required_credits": float(g.get("required_credits") or 0.0),
+                "min_courses": g.get("min_courses"),
+                "note": g.get("note"),
+                "source_ref": _source_ref(g.get("source_pages"), g.get("source_ref")),
+                "order_index": order,
+                # 池组清空 courses（前端按 pool 从 courses.json 解析真实课程）
+                "courses": []
+                if pool
+                else [
+                    {
+                        "code": c.get("code", ""),
+                        "name": c.get("name", ""),
+                        "credits": float(c.get("credits") or 0.0),
+                        "areas": c.get("areas", []) or [],
+                    }
+                    for c in g.get("courses", [])
+                ],
+                "pool": pool,
+            }
+            # 互斥分支（Track / Option）标记：由 pipeline/apply_branches.py 事后补写，
+            # 非分支组不带这四个键（保持 JSON 体积与 diff 干净）
+            if g.get("branch"):
+                group["branch"] = g["branch"]
+                group["branch_kind"] = g.get("branch_kind")
+                group["branch_optional"] = bool(g.get("branch_optional", True))
+                group["parent_branch"] = g.get("parent_branch")
+            groups.append(group)
 
         programs.append(
             {
@@ -239,21 +245,37 @@ def _load_courses() -> list[dict]:
     ]
 
 
+def _branches_of(program: dict) -> list[str]:
+    """该方案的一级分支名（去重、按出现顺序）。"""
+    names: list[str] = []
+    for g in program["groups"]:
+        name = g.get("branch")
+        if name and name not in names:
+            names.append(name)
+    return names
+
+
 def _build_index(programs: list[dict]) -> list[dict]:
     """首屏元信息：不含 groups / uncertain 全文，控制在几十 KB。"""
-    return [
-        {
-            "year": p["year"],
-            "code": p["code"],
-            "title": p["title"],
-            "total_required_credits": p["total_required_credits"],
-            "source_pdf": p["source_pdf"],
-            "group_count": len(p["groups"]),
-            "course_count": sum(len(g["courses"]) for g in p["groups"]),
-            "uncertain_count": len(p["uncertain"]),
-        }
-        for p in programs
-    ]
+    out = []
+    for p in programs:
+        branches = _branches_of(p)
+        out.append(
+            {
+                "year": p["year"],
+                "code": p["code"],
+                "title": p["title"],
+                "total_required_credits": p["total_required_credits"],
+                "source_pdf": p["source_pdf"],
+                "group_count": len(p["groups"]),
+                "course_count": sum(len(g["courses"]) for g in p["groups"]),
+                "uncertain_count": len(p["uncertain"]),
+                # 含互斥分支（Track / Option）的方案需要先让用户选方向，否则学分口径失真
+                "has_branches": bool(branches),
+                "branch_count": len(branches),
+            }
+        )
+    return out
 
 
 def _build_course_index(programs: list[dict]) -> dict[str, dict]:
@@ -273,14 +295,16 @@ def _build_course_index(programs: list[dict]) -> dict[str, dict]:
                 totals[code] = totals.get(code, 0) + 1
                 bucket = items.setdefault(code, [])
                 if len(bucket) < MAX_INDEX_PER_COURSE:
-                    bucket.append(
-                        {
-                            "year": p["year"],
-                            "code": p["code"],
-                            "group": g["name"],
-                            "credits": c["credits"],
-                        }
-                    )
+                    item = {
+                        "year": p["year"],
+                        "code": p["code"],
+                        "group": g["name"],
+                        "credits": c["credits"],
+                    }
+                    # 只在该课属于某个互斥分支时带上 branch，非分支组不写（省体积）
+                    if g.get("branch"):
+                        item["branch"] = g["branch"]
+                    bucket.append(item)
     truncated = [c for c, n in totals.items() if n > MAX_INDEX_PER_COURSE]
     if truncated:
         print(
@@ -367,6 +391,24 @@ def export() -> int:
     return 0
 
 
+def _check_branches(p: dict, groups: list[dict], errors: list[str]) -> None:
+    """分支（Track / Option）归属完整性：每个分支至少一组、父分支必须存在、层级不自环。"""
+    names = {g.get("branch") for g in groups if g.get("branch")}
+    for g in groups:
+        branch = g.get("branch")
+        if not branch:
+            continue
+        if g.get("branch_kind") not in ("track", "option"):
+            errors.append(f"{p['year']} {p['code']} 组「{g['name']}」branch_kind 非法：{g.get('branch_kind')}")
+        parent = g.get("parent_branch")
+        if parent and parent not in names:
+            errors.append(f"{p['year']} {p['code']} 组「{g['name']}」的父分支「{parent}」本方案不存在")
+        if parent and parent == branch:
+            errors.append(f"{p['year']} {p['code']} 分支「{branch}」的父分支指向自身")
+    if p.get("has_branches") != bool(names):
+        errors.append(f"{p['year']} {p['code']} index.has_branches 与要求树不一致")
+
+
 def check() -> int:
     """校验已导出的产物：数量断言 + 抽样完整性（CI 用，任一不符非零退出）。"""
     errors: list[str] = []
@@ -415,8 +457,11 @@ def check() -> int:
                 missing.append(path.name)
                 continue
             tree = json.loads(path.read_text(encoding="utf-8"))
-            if not isinstance(tree.get("groups"), list) or not tree["groups"]:
+            groups = tree.get("groups")
+            if not isinstance(groups, list) or not groups:
                 warnings.append(f"{p['year']} {p['code']} 要求树为空")
+                continue
+            _check_branches(p, groups, errors)
         if missing:
             errors.append(f"缺少 {len(missing)} 份方案产物，例如 {missing[:3]}")
 
@@ -429,6 +474,10 @@ def check() -> int:
             f"programs={meta.get('program_count')} · courses={meta.get('course_count')} · "
             f"years={meta.get('years')}"
         )
+
+    if index is not None:
+        branch_programs = sum(1 for p in index if p.get("has_branches"))
+        print(f"[info] 含互斥分支（Track / Option）的方案 {branch_programs} 份")
 
     for w in warnings:
         print(f"[warn] {w}")

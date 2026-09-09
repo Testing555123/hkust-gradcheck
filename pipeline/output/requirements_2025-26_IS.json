@@ -105,7 +105,11 @@
       ],
       "source_pages": [
         2
-      ]
+      ],
+      "branch": "Artificial Intelligence Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Business Analytics Option Required Course(s)",
@@ -136,7 +140,11 @@
       ],
       "source_pages": [
         2
-      ]
+      ],
+      "branch": "Business Analytics Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Information Systems Auditing Option Required Course(s)",
@@ -167,7 +175,11 @@
       ],
       "source_pages": [
         2
-      ]
+      ],
+      "branch": "Information Systems Auditing Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     }
   ],
   "uncertain": [

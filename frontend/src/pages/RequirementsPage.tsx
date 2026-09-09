@@ -6,9 +6,11 @@ import { RequirementSection } from "@/components/business/RequirementSection";
 import { FilterChips } from "@/components/business/FilterChips";
 import { UncertainNotes } from "@/components/business/UncertainNotes";
 import { BookOpen, FileText, GraduationCap, School, Shapes } from "lucide-react";
+import { BranchNotice, BranchSelector } from "@/components/business/BranchSelector";
 import type { AttachedEntryView } from "@/pages/OverviewPage";
 import type { ProgramTreeData } from "@/types";
 import { computeProgramAudit } from "@/lib/audit";
+import { collectBranches, filterGroupsByBranch } from "@/lib/branch";
 import { computeCommonCoreAudit } from "@/lib/common-core";
 import {
   computeCcGroupFilterState,
@@ -33,7 +35,21 @@ export function RequirementsPage({
 }) {
   const status = useSelection((s) => s.status);
   const profile = useProfile((s) => s.profile);
+  const setBranch = useProfile((s) => s.setBranch);
   const [filter, setFilter] = useState<GroupFilterState>("all");
+
+  // 互斥分支（Track / Option）：分支名可能来自上一个方案（换专业后残留），不存在则按未选处理
+  const summary = useMemo(() => collectBranches(tree.groups), [tree.groups]);
+  const selectedBranch =
+    profile?.branch && summary.byName[profile.branch] ? profile.branch : null;
+  const selectedSubBranch =
+    selectedBranch && profile?.subBranch && summary.byName[profile.subBranch]
+      ? profile.subBranch
+      : null;
+  const activeGroups = useMemo(
+    () => filterGroupsByBranch(tree.groups, selectedBranch, selectedSubBranch),
+    [tree.groups, selectedBranch, selectedSubBranch]
+  );
 
   const cc = useMemo(
     () =>
@@ -46,23 +62,30 @@ export function RequirementsPage({
     [status, tree.program.code, profile?.school, profile?.admissionYear]
   );
 
-  const majorAudit = useMemo(() => computeProgramAudit(tree.groups, status), [tree.groups, status]);
+  const majorAudit = useMemo(
+    () =>
+      computeProgramAudit(tree.groups, status, {
+        selectedBranch,
+        selectedSubBranch,
+      }),
+    [tree.groups, status, selectedBranch, selectedSubBranch]
+  );
   const majorDone = useMemo(
-    () => tree.groups.filter((g) => computeGroupFilterState(g, status) === "done").length,
-    [tree.groups, status]
+    () => activeGroups.filter((g) => computeGroupFilterState(g, status) === "done").length,
+    [activeGroups, status]
   );
 
   // 全局组状态计数（跨三类汇总），让用户一眼看到「还差多少」
   const counts = useMemo(() => {
     const states: GroupFilterState[] = [
-      ...tree.groups.map((g) => computeGroupFilterState(g, status)),
+      ...activeGroups.map((g) => computeGroupFilterState(g, status)),
       ...cc.groups.map(computeCcGroupFilterState),
       ...attachedEntries.flatMap((e) =>
         e.tree ? e.tree.groups.map((g) => computeGroupFilterState(g, status)) : []
       ),
     ];
     return countByGroupStatus(states);
-  }, [tree.groups, cc.groups, attachedEntries, status]);
+  }, [activeGroups, cc.groups, attachedEntries, status]);
 
   const hasAttached = attachedEntries.some((e) => e.attached.available && e.tree);
 
@@ -81,6 +104,29 @@ export function RequirementsPage({
         <UncertainNotes notes={tree.program.uncertain} />
       </div>
 
+      {/* 互斥分支选择条：先定方向，再看下面的要求明细（未选时学分口径只含公共核心） */}
+      {summary.hasBranches && (
+        <div className="space-y-3">
+          <BranchSelector
+            id="branch-selector"
+            branches={summary.branches}
+            coreCredits={summary.coreCredits}
+            selectedBranch={selectedBranch}
+            selectedSubBranch={selectedSubBranch}
+            onChange={setBranch}
+          />
+          {!selectedBranch && (
+            <BranchNotice
+              branchCount={summary.branches.length}
+              coreCredits={summary.coreCredits}
+              onPick={() =>
+                document.getElementById("branch-selector")?.scrollIntoView({ behavior: "smooth" })
+              }
+            />
+          )}
+        </div>
+      )}
+
       {/* 顶部 sticky 状态筛选条：长列表滚动常驻，一键只看缺口 */}
       <div className="sticky top-14 z-30 -mx-3 bg-background/85 px-3 py-2 backdrop-blur supports-[backdrop-filter]:bg-background/70 sm:mx-0 sm:px-0">
         <FilterChips value={filter} onChange={setFilter} counts={counts} options={GROUP_FILTER_OPTIONS} />
@@ -95,11 +141,16 @@ export function RequirementsPage({
           summary={
             <>
               已修 {majorAudit.totalTaken} / 要求 {majorAudit.totalRequired} 学分 ·{" "}
-              {majorDone}/{tree.groups.length} 组达标
+              {majorDone}/{activeGroups.length} 组达标
             </>
           }
         >
-          <RequirementTree tree={tree} statusFilter={filter} />
+          <RequirementTree
+            tree={tree}
+            statusFilter={filter}
+            selectedBranch={selectedBranch}
+            selectedSubBranch={selectedSubBranch}
+          />
         </RequirementSection>
 
         {/* 通识核心区 */}

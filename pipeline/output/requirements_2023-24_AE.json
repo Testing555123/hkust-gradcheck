@@ -2,7 +2,7 @@
   "year": "2023-24",
   "code": "AE",
   "title": "BEng in Aerospace Engineering",
-  "total_required_credits": 12.0,
+  "total_required_credits": 0.0,
   "groups": [
     {
       "name": "Engineering Fundamental Course(s)",
@@ -167,7 +167,7 @@
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
-            1
+            2
           ]
         },
         {
@@ -177,37 +177,37 @@
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
-            1
+            2
           ]
         },
         {
-          "code": "PHYS1008",
+          "code": "CHEM1008",
           "name": "Introductory Chemistry",
           "credits": 3.0,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
-            1
+            2
           ]
         },
         {
           "code": "CHEM1012",
-          "name": "General Chemistry B: Atomic Structure, Molecules, and Bonding",
+          "name": "General Chemistry B: Atomic Structure, Molecules, and Bonding Theories",
           "credits": 3.0,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
-            1
+            2
           ]
         },
         {
           "code": "LIFS1901",
-          "name": "Theories General Biology I",
+          "name": "General Biology I",
           "credits": 3.0,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
-            1
+            2
           ]
         },
         {
@@ -217,12 +217,13 @@
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
-            1
+            2
           ]
         }
       ],
       "source_pages": [
-        1
+        1,
+        2
       ]
     },
     {
@@ -423,7 +424,7 @@
         },
         {
           "code": "LANG4034",
-          "name": "Technical Communication Il for Mechanical and Aerospace",
+          "name": "Technical Communication II for Mechanical and Aerospace Engineering",
           "credits": 3.0,
           "credits_raw": "3",
           "areas": [],
@@ -440,7 +441,7 @@
       "name": "Elective(s)",
       "required_credits": 6.0,
       "required_credits_raw": "6",
-      "note": "",
+      "note": "MECH Electives in Aerospace (2 courses from the specified elective list)",
       "courses": [
         {
           "code": "MECH2520",
@@ -471,10 +472,61 @@
           "source_pages": [
             2
           ]
+        },
+        {
+          "code": "MECH4100",
+          "name": "Experiential Projects in Aerospace Engineering",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MECH4740",
+          "name": "Numerical Methods in Engineering",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MECH4810",
+          "name": "Unmanned Aviation Vehicle",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MECH4890",
+          "name": "Introduction to Nanosatellite Engineering",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MECH5961",
+          "name": "Acoustics and Aeroacoustics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
         }
       ],
       "source_pages": [
-        2
+        2,
+        3
       ]
     },
     {
@@ -500,13 +552,13 @@
     }
   ],
   "uncertain": [
-    "The 'Engineering Fundamental Course(s)' group has no explicit required credits in the 'Credit(s) attained' column header; the values appear in individual course rows but no group total is specified. The total_required_credits for the major is not stated in the document.",
-    "The course 'LANG4034' has a name that appears as 'Technical Communication Il' (with 'Il' possibly a typo for 'II') but is kept as in the source.",
-    "In the 'Engineering Fundamental Course(s)' table, the row for 'CHEM/LIFS/' appears to be a header for a list of science courses, but the actual course entries are listed under it without clear separation; all listed courses (PHYS1008, CHEM1012, LIFS1901, PHYS1101) are included as separate course entries.",
-    "The 'Elective(s)' group has a header 'Minimum credit(s) required' with value 6 under MECH, but it is unclear if this applies to the list that follows or is a general requirement; it is treated as the group's required_credits.",
-    "The 'Research Option' group is listed under 'Option(s)' and appears to be an optional add-on; it is included as a group since it is part of the major requirements structure, but its mandatory status for graduation is uncertain without an option selection.",
-    "total_required_credits (12.0) is a computed value: the sum of the required_credits of all groups in this file. The PDF does not state a single overall minimum total for this program, so this figure is derived by summation and may double-count where optional tracks/options are listed as separate groups."
+    "The 'Engineering Fundamental Course(s)' group does not have a clear 'Credit(s) attained' value in the header; it appears the credit requirements are embedded in notes (e.g., COMP 3-5, MATH 4-7, etc.), but the group-level required credits are not explicitly stated as a single number. This may require human review to determine if a total or range should be inferred.",
+    "The 'Required Course(s)' group similarly lacks a clear 'Credit(s) attained' header value; credits are listed per course but no group total is given.",
+    "The 'Science 1000-level course (1 course from the specified course list)' requirement under Engineering Fundamental Course(s) is described in text but not listed as a formal course entry with a code — it refers to a selection from CHEM 1008, CHEM 1012, LIFS 1901, PHYS 1101. These courses are already included, but the rule itself (pick one) is not captured in the structure.",
+    "The note for MATH courses: '[(MATH 1012 OR MATH 1013 OR MATH 1023) AND (MATH 1014 OR MATH 1024)] OR [MATH 1020]' and 'MATH 2111 OR MATH 2350 OR MATH 2351' are captured as individual courses but the logical structure (AND/OR) is only in the note — this is preserved per rule 4, but the actual constraint may need interpretation.",
+    "The note for PHYS: 'PHYS 1112 OR PHYS 1312' is preserved in the group note, but the group 'Engineering Fundamental Course(s)' does not have a note field populated — this is an oversight; the note should be attached to the group.",
+    "Remarks on deleted courses (COMP 1022P, MATH 1012) are provided but not integrated into the requirement logic — they are listed as available courses but marked as deleted; unclear if they can still be used."
   ],
-  "parser": "mineru_api",
+  "parser": "pymupdf",
   "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\major\\2023-24\\AE_BEng_in_Aerospace_Engineering.pdf"
 }

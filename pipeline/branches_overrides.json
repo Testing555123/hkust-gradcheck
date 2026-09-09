@@ -1,0 +1,70 @@
+{
+  "_comment": "人工补回表。key 用 \"<学年>/<专业代码>\" 表示仅该学年生效，用 \"<专业代码>\" 表示所有学年生效；两者可同时存在，学年级优先。ranges/indexes 用于「组名丢失分支词」的产物按组下标强制指定（产物中组顺序稳定）；parents 声明两级分支（如 CHEM 的 Core Chemistry Track 下挂三个 Option）；optional 声明某个分支是否为必修（缺省 true = 可不选）；ignore_indexes 用于压制误判。",
+  "needs_reprocess": [
+    {
+      "year": "2026-27",
+      "code": "MATH",
+      "reason": "8 个 Track 的组名全部丢失（退化为泛型 Required Course(s)/Elective Course(s)），total_required_credits 被算成 174.0；已用 ranges 补回，待 prompt 加入 track 规则后重跑该 PDF 覆盖"
+    },
+    {
+      "year": "2024-25",
+      "code": "MATH",
+      "reason": "产物几乎为空（5.57 KB），无法补回，需重跑"
+    },
+    {
+      "year": "2026-27",
+      "code": "ACCT",
+      "reason": "Option 组名丢失，仅 note 残留 \"…Option Requirements…\"；产物只剩 3 组且看不出 Option 边界，未做 ranges 补回（学分未被放大：19+3+6=28），需重跑该 PDF"
+    },
+    {
+      "year": "2026-27",
+      "code": "GCS",
+      "reason": "缺少 History Research Option（2025-26 有）"
+    },
+    {
+      "year": "2025-26",
+      "code": "ELEC",
+      "reason": "Research Option 组未被抽出（2023-24 与 2026-27 均有独立组），仅 group#7 note 提到 \"Students taking the Research Option…\"；缺组无法用 ranges 补回，需重跑该 PDF"
+    }
+  ],
+  "programs": {
+    "2023-24/MECH": {
+      "_basis": "该学年三个 Option 组名全部退化为泛型 Elective Course(s) / Required Course(s)，但课程清单与 2025-26 的 Energy / Engineering Design / Materials / Research Option 逐门一致（MECH1902… / MECH3510… / MECH3750… / MECH4995），uncertain 亦写明 \"only one option needs to be completed\"，故按组下标补回。",
+      "indexes": [
+        {"index": 7, "branch": "Energy Option", "kind": "option"},
+        {"index": 8, "branch": "Engineering Design Option", "kind": "option"},
+        {"index": 9, "branch": "Materials Option", "kind": "option"},
+        {"index": 10, "branch": "Research Option", "kind": "option"}
+      ]
+    },
+    "2026-27/MATH": {
+      "_basis": "组名全部丢失（退化为泛型 Required/Elective Course(s)），按下述证据用 order_index 区间补回：#2 课程清单与 2025-26 Applied Mathematics Track Elective 完全一致；#3-12 含 MATH2343/COMP2711、COMP2011/2012、COMP3711 与 COMP 选修；#13-24 含 MATH2511/4427/4511-4515/4996（金融精算）；#25-35 含 MATH3423-3428/4424-4425/4993（统计）；#36-41 含 MATH3131（Honors 进阶代数，即 Advanced）；#42-51 含 MATH3121（普通抽象代数）。General Mathematics Track 与 IRE Track 在 2026-27 产物中不存在。",
+      "ranges": [
+        {"from": 2, "to": 2, "branch": "Applied Mathematics Track", "kind": "track"},
+        {"from": 3, "to": 12, "branch": "Computer Science Track", "kind": "track"},
+        {"from": 13, "to": 24, "branch": "Financial and Actuarial Mathematics Track", "kind": "track"},
+        {"from": 25, "to": 35, "branch": "Statistics Track", "kind": "track"},
+        {"from": 36, "to": 41, "branch": "Pure Mathematics (Advanced) Track", "kind": "track"},
+        {"from": 42, "to": 51, "branch": "Pure Mathematics Track", "kind": "track"}
+      ]
+    },
+    "CHEM": {
+      "parents": {
+        "Environmental and Analytical Chemistry Option": "Core Chemistry Track",
+        "Materials Chemistry Option": "Core Chemistry Track",
+        "Pure Chemistry Option": "Core Chemistry Track"
+      }
+    },
+    "GCS": {
+      "parents": {
+        "Applied Economics Research Option": "Integrated Humanities and Social Science Track",
+        "Environment and Technology Research Option": "Integrated Humanities and Social Science Track",
+        "Heritage and Cultural Sustainability Research Option": "Integrated Humanities and Social Science Track",
+        "History Research Option": "Integrated Humanities and Social Science Track",
+        "Language and Literature Research Option": "Integrated Humanities and Social Science Track",
+        "Politics Research Option": "Integrated Humanities and Social Science Track",
+        "Sociology Research Option": "Integrated Humanities and Social Science Track"
+      }
+    }
+  }
+}

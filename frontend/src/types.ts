@@ -2,7 +2,7 @@
  * 前端业务类型（唯一契约源）。
  *
  * 数据由 scripts/export_static_data.py 从 pipeline/output/ + courses.db 预生成，
- * 见 lib/static-data.ts。后端 backend/ 仅为本地备选，不再是前端数据源。
+ * 见 lib/static-data.ts。站点无后端，运行时只读这些静态 JSON。
  */
 
 export interface ProgramInfo {
@@ -18,6 +18,10 @@ export interface ProgramInfo {
   group_count?: number;
   course_count?: number;
   uncertain_count?: number;
+  /** 该方案是否含互斥分支（Track / Option）：含分支时须先选方向，学分口径才准确 */
+  has_branches?: boolean;
+  /** 一级分支数量 */
+  branch_count?: number;
 }
 
 /** courses.json 单条：官方课程库详情 */
@@ -70,6 +74,33 @@ export interface RequirementGroup {
    * 前端据此从 courses.json 过滤出真实可选课程；院/校级池（SB&M、SENG、SSCI 等）为 null。
    */
   pool?: { subject: string; minLevel: number } | null;
+  /**
+   * 所属互斥分支名（如 "Applied Mathematics Track"）。
+   * 同一主修内学生只能择一分支修读，各分支学分下限不同；
+   * 非分支组不带这四个字段（导出脚本只在识别出分支时写入，见 pipeline/apply_branches.py）。
+   */
+  branch?: string | null;
+  /** 分支官方叫法 */
+  branch_kind?: "track" | "option" | null;
+  /** true = 可不选（不选则不计入进度分母） */
+  branch_optional?: boolean;
+  /** 二级分支的父分支名（如 CHEM Core Chemistry Track 下的 Option） */
+  parent_branch?: string | null;
+}
+
+/** 从 groups 聚合出的分支选项，供选择器与分组渲染使用 */
+export interface BranchOption {
+  name: string;
+  kind: "track" | "option";
+  /** true = 可不选（不选则不计入分母） */
+  optional: boolean;
+  /** 二级分支的父分支名；一级分支为 null */
+  parent: string | null;
+  /** 该分支各组 required_credits 之和 */
+  credits: number;
+  groupIds: number[];
+  /** 二级子分支（如 CHEM Core Chemistry Track 下的三个 Option） */
+  children: BranchOption[];
 }
 
 export interface ProgramTreeData {

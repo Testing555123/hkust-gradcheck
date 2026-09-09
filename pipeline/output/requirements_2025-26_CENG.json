@@ -712,7 +712,11 @@
       ],
       "source_pages": [
         4
-      ]
+      ],
+      "branch": "Environment Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Environment Option Elective Course(s)",
@@ -773,7 +777,11 @@
       ],
       "source_pages": [
         4
-      ]
+      ],
+      "branch": "Environment Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     }
   ],
   "uncertain": [

@@ -1039,7 +1039,11 @@
       ],
       "source_pages": [
         4
-      ]
+      ],
+      "branch": "Financial Technology Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Financial Technology Option Elective Course(s)",
@@ -1230,7 +1234,11 @@
       ],
       "source_pages": [
         4
-      ]
+      ],
+      "branch": "Financial Technology Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     }
   ],
   "uncertain": [

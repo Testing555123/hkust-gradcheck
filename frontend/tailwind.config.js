@@ -106,10 +106,6 @@ export default {
           foreground: 'hsl(var(--info-foreground))',
         },
       },
-      boxShadow: {
-        card: '0 1px 2px 0 hsl(var(--foreground) / 0.04), 0 1px 3px 0 hsl(var(--foreground) / 0.06)',
-        pop: '0 12px 32px -8px hsl(var(--foreground) / 0.18), 0 0 0 1px hsl(var(--border) / 0.6)',
-      },
       // 3 级圆角：卡片 12 / 控件 6 / 小元素 4（rounded-full 仅用于徽标）
       borderRadius: {
         lg: 'var(--radius)',
@@ -121,6 +117,10 @@ export default {
         flat: 'var(--elevation-1)',
         raised: 'var(--elevation-2)',
         overlay: 'var(--elevation-3)',
+        // 侧栏分支引入：必须与 elevation 写在同一个 boxShadow 里，
+        // 重复定义 boxShadow 键会让后者整体覆盖前者，导致 shadow-pop 静默失效
+        card: '0 1px 2px 0 hsl(var(--foreground) / 0.04), 0 1px 3px 0 hsl(var(--foreground) / 0.06)',
+        pop: '0 12px 32px -8px hsl(var(--foreground) / 0.18), 0 0 0 1px hsl(var(--border) / 0.6)',
       },
       transitionDuration: {
         fast: 'var(--dur-fast)',

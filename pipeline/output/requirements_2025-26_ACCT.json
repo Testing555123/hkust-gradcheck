@@ -124,7 +124,11 @@
       ],
       "source_pages": [
         2
-      ]
+      ],
+      "branch": "Accounting Analytics Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Emerging Technologies in Accounting Option Required Course(s)",
@@ -155,7 +159,11 @@
       ],
       "source_pages": [
         2
-      ]
+      ],
+      "branch": "Emerging Technologies in Accounting Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     }
   ],
   "uncertain": [

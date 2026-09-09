@@ -30,7 +30,6 @@ export default function App() {
     code,
     theme,
     setTheme,
-    toggleTheme,
     activeView,
     setProgram,
     onboardingOpen,
@@ -160,7 +159,7 @@ export default function App() {
       return (
         <ErrorState
           title="无法加载培养方案列表"
-          description="请确认后端服务已启动（uvicorn，端口 8000）"
+          description="静态数据可能缺失或格式异常，请检查 frontend/public/data/ 是否随仓库一起发布"
           error={programs.error}
           onRetry={() => programs.refetch()}
         />
@@ -169,14 +168,16 @@ export default function App() {
       return (
         <EmptyState
           icon={<GraduationCap className="mx-auto h-10 w-10 text-muted-foreground" />}
-          title="数据库中还没有培养方案"
+          title="还没有培养方案数据"
           description={
             <>
-              请先运行离线管线解析 PDF 并用 seed 导入：
+              静态数据由离线管线产物导出，请先生成：
               <br />
-              <code className="font-mono text-xs">py -m run_pipeline --year 2026-27 --code COMP</code>
+              <code className="font-mono text-xs">
+                py -m run_pipeline --year 2026-27 --code COMP
+              </code>
               <br />
-              <code className="font-mono text-xs">python backend/scripts/seed.py</code>
+              <code className="font-mono text-xs">python scripts/export_static_data.py</code>
             </>
           }
         />
@@ -208,107 +209,10 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen">
-      {/* 固定顶栏 */}
-      <header className="fixed top-0 inset-x-0 z-40 h-14 border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="mx-auto max-w-6xl h-full px-4 flex items-center justify-between gap-3">
-          <div className="flex items-center gap-2 min-w-0">
-            <GraduationCap className="h-5 w-5 text-primary shrink-0" />
-            <h1 className="font-semibold text-sm sm:text-base truncate">畢業要求查詢與學分核查</h1>
-          </div>
-          <div className="flex items-center gap-2">
-            {/* 窄屏隐藏双下拉，只保留身份摘要入口，避免顶栏拥挤 */}
-            {programs.data && programs.data.length > 0 && (
-              <div className="hidden sm:block">
-                <ProgramPicker programs={programs.data} />
-              </div>
-            )}
-            {year && code && <ProfileBadge year={year} code={code} onClick={openOnboarding} />}
-            <Button variant="ghost" size="icon" onClick={toggleTheme} aria-label="切換主題">
-              {theme === "light" ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
-            </Button>
-          </div>
-        </div>
-      </header>
-
-      {/* 主内容（预留顶栏高度） */}
-      <main className="mx-auto max-w-6xl px-4 pt-[72px] pb-16">
-        {programs.isLoading && <PageSkeleton />}
-        {programs.isError && (
-          <div className="rounded-lg border border-destructive/30 bg-destructive/5 p-6 text-sm">
-            无法加载培养方案列表：请确认后端服务已启动（uvicorn，端口 8000）。
-            <br />
-            <span className="text-muted-foreground">{String(programs.error)}</span>
-          </div>
-        )}
-
-        {programs.data && programs.data.length === 0 && (
-          <EmptyState
-            icon={<GraduationCap className="h-10 w-10 mx-auto text-muted-foreground" />}
-            title="数据库中还没有培养方案"
-            description={
-              <>
-                请先运行离线管线解析 PDF 并用 seed 导入：
-                <br />
-                <code className="text-xs font-mono">py -m run_pipeline --year 2026-27 --code COMP</code>
-                <br />
-                <code className="text-xs font-mono">python backend/scripts/seed.py</code>
-              </>
-            }
-          />
-        )}
-
-        {programs.data && programs.data.length > 0 && (
-          <>
-            {tree.isLoading && <PageSkeleton />}
-            {tree.isError && (
-              <div className="rounded-lg border border-destructive/30 bg-destructive/5 p-6 text-sm">
-                加载培养方案失败：
-                <span className="text-muted-foreground">{String(tree.error)}</span>
-              </div>
-            )}
-            {tree.data && (
-              <Tabs defaultValue="overview">
-                <TabsList>
-                  <TabsTrigger value="overview" className="gap-1.5">
-                    <LayoutDashboard className="h-3.5 w-3.5" />
-                    方案总览
-                  </TabsTrigger>
-                  <TabsTrigger value="courses" className="gap-1.5">
-                    <ListChecks className="h-3.5 w-3.5" />
-                    课程选择
-                    {audit && audit.missingCount > 0 && (
-                      <span className="rounded-full bg-warning/15 px-1.5 text-[10px] leading-4 text-warning tabular-nums">
-                        缺 {audit.missingCount}
-                      </span>
-                    )}
-                  </TabsTrigger>
-                  <TabsTrigger value="requirements" className="gap-1.5">
-                    <FileText className="h-3.5 w-3.5" />
-                    要求明细
-                    <span className="rounded-full bg-muted px-1.5 text-[10px] leading-4 text-muted-foreground tabular-nums">
-                      {tree.data.groups.length}
-                    </span>
-                  </TabsTrigger>
-                </TabsList>
-                <TabsContent value="overview">
-                  <OverviewPage
-                    tree={tree.data}
-                    attachedEntries={attachedTrees}
-                    onRemoveMinor={handleRemoveMinor}
-                  />
-                </TabsContent>
-                <TabsContent value="courses">
-                  <CoursesPage tree={tree.data} attachedEntries={attachedTrees} />
-                </TabsContent>
-                <TabsContent value="requirements">
-                  <RequirementsPage tree={tree.data} attachedEntries={attachedTrees} />
-                </TabsContent>
-              </Tabs>
-            )}
-          </>
-        )}
-      </main>
+    <>
+      <AppShell programs={list} navItems={navItems}>
+        {renderContent()}
+      </AppShell>
 
       <OnboardingDialog
         open={dialogOpen}

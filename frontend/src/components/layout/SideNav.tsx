@@ -21,6 +21,8 @@ interface SideNavProps {
   /** 是否显示「规划中」分组（为后续功能预留位置） */
   showPlanned?: boolean;
   plannedItems?: { label: string }[];
+  /** 收起为图标条（桌面可开关）；小屏抽屉一律传 false */
+  collapsed?: boolean;
 }
 
 /**
@@ -33,6 +35,7 @@ export function SideNav({
   onNavigate,
   showPlanned = true,
   plannedItems = [],
+  collapsed = false,
 }: SideNavProps) {
   const activeView = useUi((s) => s.activeView);
   const setView = useUi((s) => s.setView);
@@ -40,12 +43,18 @@ export function SideNav({
   return (
     <nav
       aria-label="主导航"
-      className={cn("flex h-full flex-col gap-6 overflow-y-auto px-3 py-4", className)}
+      className={cn(
+        "flex h-full flex-col overflow-y-auto py-4",
+        collapsed ? "items-center gap-4 px-2" : "gap-6 px-3",
+        className
+      )}
     >
-      <div className="space-y-1">
-        <p className="px-3 pb-1 text-[11px] font-medium uppercase tracking-wider text-sidebar-muted">
-          学业进度
-        </p>
+      <div className={cn("w-full space-y-1", collapsed && "flex flex-col items-center")}>
+        {!collapsed && (
+          <p className="px-3 pb-1 text-[11px] font-medium uppercase tracking-wider text-sidebar-muted">
+            学业进度
+          </p>
+        )}
         {items.map((item) => {
           const active = activeView === item.key;
           const Icon = item.icon;
@@ -54,12 +63,14 @@ export function SideNav({
               key={item.key}
               type="button"
               aria-current={active ? "page" : undefined}
+              title={collapsed ? item.label : undefined}
               onClick={() => {
                 setView(item.key);
                 onNavigate?.();
               }}
               className={cn(
-                "group relative flex w-full items-center gap-2.5 rounded-lg px-3 py-2 text-sm transition-colors duration-150",
+                "group relative flex items-center rounded-lg transition-colors duration-fast motion-reduce:transition-none",
+                collapsed ? "h-10 w-10 justify-center" : "w-full gap-2.5 px-3 py-2 text-sm",
                 active
                   ? "bg-sidebar-accent font-medium text-sidebar-accent-foreground"
                   : "text-sidebar-foreground/80 hover:bg-sidebar-accent/60 hover:text-sidebar-foreground"
@@ -69,18 +80,31 @@ export function SideNav({
               <span
                 aria-hidden
                 className={cn(
-                  "absolute left-0 top-1/2 h-5 w-0.5 -translate-y-1/2 rounded-full bg-primary transition-opacity duration-150",
+                  "absolute left-0 top-1/2 h-5 w-0.5 -translate-y-1/2 rounded-full bg-primary transition-opacity duration-fast motion-reduce:transition-none",
                   active ? "opacity-100" : "opacity-0"
                 )}
               />
-              <Icon
-                className={cn(
-                  "h-4 w-4 shrink-0",
-                  active ? "text-primary" : "text-sidebar-muted"
+              <span className="relative shrink-0">
+                <Icon
+                  className={cn("h-4 w-4", active ? "text-primary" : "text-sidebar-muted")}
+                />
+                {/* 收起时计数改为图标角标，与移动端底栏保持一致 */}
+                {collapsed && typeof item.count === "number" && item.count > 0 && (
+                  <span
+                    className={cn(
+                      "absolute -right-1.5 -top-1.5 min-w-[15px] rounded-full px-1 text-[9px] leading-[15px] tabular-nums",
+                      item.countTone === "warning"
+                        ? "bg-warning text-white"
+                        : "bg-surface-3 text-muted-foreground"
+                    )}
+                  >
+                    {item.count}
+                  </span>
                 )}
-              />
-              <span className="truncate">{item.label}</span>
-              {typeof item.count === "number" && item.count > 0 && (
+              </span>
+              {/* 收起时文字转为 sr-only：视觉隐藏但读屏仍可读 */}
+              <span className={cn("truncate", collapsed && "sr-only")}>{item.label}</span>
+              {!collapsed && typeof item.count === "number" && item.count > 0 && (
                 <span
                   className={cn(
                     "ml-auto rounded-full px-1.5 text-[10px] leading-4 tabular-nums",
@@ -97,7 +121,7 @@ export function SideNav({
         })}
       </div>
 
-      {showPlanned && plannedItems.length > 0 && (
+      {!collapsed && showPlanned && plannedItems.length > 0 && (
         <div className="space-y-1">
           <p className="px-3 pb-1 text-[11px] font-medium uppercase tracking-wider text-sidebar-muted">
             规划中
@@ -115,11 +139,13 @@ export function SideNav({
         </div>
       )}
 
-      <div className="mt-auto px-3 pt-4 text-[11px] leading-relaxed text-sidebar-muted">
-        勾选记录保存在本机浏览器，不上传服务器。
-        <br />
-        毕业审核以教务处官方认定为准。
-      </div>
+      {!collapsed && (
+        <div className="mt-auto px-3 pt-4 text-[11px] leading-relaxed text-sidebar-muted">
+          勾选记录保存在本机浏览器，不上传服务器。
+          <br />
+          毕业审核以教务处官方认定为准。
+        </div>
+      )}
     </nav>
   );
 }

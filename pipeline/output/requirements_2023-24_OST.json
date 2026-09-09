@@ -545,7 +545,11 @@
       ],
       "source_pages": [
         3
-      ]
+      ],
+      "branch": "International Research Enrichment Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Marine Ecology Option Elective Course(s)",
@@ -596,7 +600,11 @@
       ],
       "source_pages": [
         3
-      ]
+      ],
+      "branch": "Marine Ecology Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "Oceanography Option Elective Course(s)",
@@ -647,7 +655,11 @@
       ],
       "source_pages": [
         4
-      ]
+      ],
+      "branch": "Oceanography Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
     }
   ],
   "uncertain": [

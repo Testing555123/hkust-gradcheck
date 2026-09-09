@@ -534,7 +534,11 @@
       ],
       "source_pages": [
         2
-      ]
+      ],
+      "branch": "IRE Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     },
     {
       "name": "SSCI Additional Science 2000-level or above Electives for IRE Track",
@@ -544,7 +548,11 @@
       "courses": [],
       "source_pages": [
         2
-      ]
+      ],
+      "branch": "IRE Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
     }
   ],
   "uncertain": [
