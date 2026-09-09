@@ -16,15 +16,16 @@ export interface CollapsibleGroupProps {
   /** 展开后显示的正文内容 */
   children: React.ReactNode;
   className?: string;
-  /** 显式指定初始开合（不传则按 done 推断：已完成折叠，其余展开） */
+  /** 显式指定初始开合（不传则默认折叠；个别组如需初始展开，调用方传 true） */
   defaultOpen?: boolean;
   /** 组进度百分比（0-100）：在标题栏下方以细条呈现，折叠时也能看到完成度 */
   progress?: number;
 }
 
 /**
- * 可折叠要求组容器：默认开合由 done 决定（done=true 折叠，否则展开），
- * 不记忆状态——组件因 key 变化（切方案/刷新）重挂载时按 done 重新初始化。
+ * 可折叠要求组容器：默认折叠（defaultOpen 未传时），
+ * 不记忆状态——组件因 key 变化（切方案/刷新）重挂载时按默认重新初始化；
+ * 个别组如需初始展开，由调用方显式传入 defaultOpen={true} 覆盖。
  */
 export function CollapsibleGroup({
   title,
@@ -36,7 +37,7 @@ export function CollapsibleGroup({
   defaultOpen,
   progress,
 }: CollapsibleGroupProps) {
-  const [open, setOpen] = React.useState(() => defaultOpen ?? !done);
+  const [open, setOpen] = React.useState(() => defaultOpen ?? false);
 
   return (
     <Card className={cn("overflow-hidden", className)}>

@@ -8,7 +8,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { cn } from "@/lib/utils";
-import { Info, Sparkles } from "lucide-react";
+import { Info, Sparkles, X } from "lucide-react";
 import type { BranchOption } from "@/types";
 
 interface BranchSelectorProps {
@@ -89,15 +89,26 @@ export function BranchSelector({
           </Select>
 
           {current && (
-            <p className="text-xs tabular-nums text-muted-foreground">
-              核心 {coreCredits} + {current.name} {current.credits} ={" "}
-              <strong className="text-foreground">
-                {coreCredits + current.credits + (selectedSubBranch
-                  ? (children.find((c) => c.name === selectedSubBranch)?.credits ?? 0)
-                  : 0)}
-              </strong>{" "}
-              学分
-            </p>
+            <div className="flex items-center gap-2">
+              <p className="text-xs tabular-nums text-muted-foreground">
+                核心 {coreCredits} + {current.name} {current.credits} ={" "}
+                <strong className="text-foreground">
+                  {coreCredits + current.credits + (selectedSubBranch
+                    ? (children.find((c) => c.name === selectedSubBranch)?.credits ?? 0)
+                    : 0)}
+                </strong>{" "}
+                学分
+              </p>
+              <button
+                type="button"
+                onClick={() => onChange(null)}
+                title="清除方向选择（仅计公共核心）"
+                className="inline-flex h-7 shrink-0 items-center gap-1 rounded-md border border-border px-2 text-xs text-muted-foreground transition-colors hover:border-destructive/40 hover:text-destructive focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              >
+                <X className="h-3.5 w-3.5" />
+                清除
+              </button>
+            </div>
           )}
         </div>
       </div>

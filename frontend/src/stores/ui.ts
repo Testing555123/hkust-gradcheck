@@ -48,13 +48,16 @@ function resolveInitialTheme(): "light" | "dark" {
   return window.matchMedia?.("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 }
 
-/** 侧栏折叠状态持久化；默认展开，避免首次访问就藏起导航 */
+/** 侧栏折叠状态持久化；首次访问默认折叠为图标条，腾出横向空间；用户曾手动选择则记住 */
 function resolveInitialSidebarCollapsed(): boolean {
   try {
-    return localStorage.getItem("grad-sidebar-collapsed") === "1";
+    const saved = localStorage.getItem("grad-sidebar-collapsed");
+    if (saved === "0") return false; // 用户曾明确展开 -> 保持展开
+    if (saved === "1") return true; // 用户曾明确折叠 -> 保持折叠
   } catch {
-    return false;
+    /* localStorage 不可用时回退到默认折叠 */
   }
+  return true; // 首次访问默认折叠（图标条）
 }
 
 export const useUi = create<UiState>()((set, get) => ({

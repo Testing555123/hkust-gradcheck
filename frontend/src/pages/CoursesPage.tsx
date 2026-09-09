@@ -11,10 +11,12 @@ import { CCGroupPanel } from "@/components/business/CommonCoreCourses";
 import { computeCommonCoreAudit } from "@/lib/common-core";
 import { useSelection } from "@/stores/selection";
 import { useProfile } from "@/stores/profile";
+import { useCourses } from "@/hooks/queries";
 import {
   applyFilter,
   attachStatus,
   countByStatus,
+  extractSubjectPrefixes,
   type CourseFilterState,
   type FlatCourseWithStatus,
 } from "@/lib/course-filter";
@@ -49,6 +51,14 @@ export function CoursesPage({
   const profile = useProfile((s) => s.profile);
   const [keyword, setKeyword] = useState("");
   const [filter, setFilter] = useState<CourseFilterState>("all");
+  const [subjectPrefix, setSubjectPrefix] = useState<string | null>(null);
+
+  // 全校课程库（已缓存，由方案树加载时触发）：提取全部学科前缀供网格筛选
+  const coursesAll = useCourses();
+  const prefixes = useMemo(
+    () => extractSubjectPrefixes(coursesAll.data ?? []),
+    [coursesAll.data]
+  );
 
   // 通识核心审核（与要求明细页同源）：勾选即联动进度
   const cc = useMemo(
@@ -101,16 +111,39 @@ export function CoursesPage({
     return Array.from(byCode.values()).sort((a, b) => a.code.localeCompare(b.code));
   }, [tree, attachedEntries]);
 
-  // 状态附加与计数基于全量列表（计数不随搜索词变化，语义是"我有几门已修"）
+  // 全校课程目录（已缓存）与方案课合并：方案课优先（保留 groupNames/areas），
+  // 目录里不在方案的课（学科/方向外课程）也进入候选，使任意课都可勾选。
+  const fullCourses = useMemo<FlatCourse[]>(() => {
+    const byCode = new Map<string, FlatCourse>();
+    for (const c of courses) byCode.set(c.code, c);
+    for (const d of coursesAll.data ?? []) {
+      if (!byCode.has(d.code)) {
+        byCode.set(d.code, {
+          code: d.code,
+          name: d.title,
+          credits: parseFloat(d.credits ?? "") || 0,
+          groupNames: [],
+        });
+      }
+    }
+    return Array.from(byCode.values()).sort((a, b) => a.code.localeCompare(b.code));
+  }, [courses, coursesAll.data]);
+
+  // 未搜索/未选学科时只显示方案课（保持页面短）；一旦选了学科或输入搜索词，
+  // 切换到「方案课 + 全校目录」合并集，以便勾选任意学科/方案外的课程。
+  const searching = keyword.trim() !== "" || subjectPrefix != null;
+  const source = searching ? fullCourses : courses;
+
+  // 状态附加与计数：基于当前展示集合（计数不随搜索词变化，语义是"我有几门已修"）
   const withStatus = useMemo<FlatCourseWithStatus[]>(
-    () => attachStatus(courses, status),
-    [courses, status]
+    () => attachStatus(source, status),
+    [source, status]
   );
   const counts = useMemo(() => countByStatus(withStatus), [withStatus]);
 
   const filtered = useMemo(() => {
     const kw = keyword.trim().toLowerCase();
-    const byKeyword = kw
+    let list = kw
       ? withStatus.filter(
           (c) =>
             c.code.toLowerCase().includes(kw) ||
@@ -118,10 +151,14 @@ export function CoursesPage({
             c.groupNames.some((g) => g.toLowerCase().includes(kw))
         )
       : withStatus;
-    return applyFilter(byKeyword, filter);
-  }, [withStatus, keyword, filter]);
+    if (subjectPrefix) {
+      const p = subjectPrefix.toUpperCase();
+      list = list.filter((c) => c.code.toUpperCase().startsWith(p));
+    }
+    return applyFilter(list, filter);
+  }, [withStatus, keyword, filter, subjectPrefix]);
 
-  const hasActiveConstraint = keyword.trim() !== "" || filter !== "all";
+  const hasActiveConstraint = keyword.trim() !== "" || filter !== "all" || subjectPrefix != null;
 
   return (
     <div className="space-y-4">
@@ -138,7 +175,7 @@ export function CoursesPage({
             />
           </div>
           <Badge variant="secondary" className="tabular-nums">
-            {filtered.length} / {courses.length} 门
+            {filtered.length} / {source.length} 门
           </Badge>
         </div>
 
@@ -149,6 +186,43 @@ export function CoursesPage({
           options={COURSE_FILTER_OPTIONS}
         />
       </div>
+
+      {/* 学科代码筛选：多列紧凑网格，参考 Class Schedule & Quota 风格，仅显示学科代码、无数量 */}
+      {prefixes.length > 0 && (
+        <div className="space-y-2">
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-medium text-muted-foreground">按学科筛选</span>
+            <Button
+              type="button"
+              size="sm"
+              variant={subjectPrefix === null ? "default" : "outline"}
+              className="h-7 px-2 text-xs"
+              aria-pressed={subjectPrefix === null}
+              onClick={() => setSubjectPrefix(null)}
+            >
+              全部
+            </Button>
+          </div>
+          <div className="grid grid-cols-4 gap-1.5 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10">
+            {prefixes.map((p) => {
+              const active = subjectPrefix === p.code;
+              return (
+                <Button
+                  key={p.code}
+                  type="button"
+                  size="sm"
+                  variant={active ? "default" : "outline"}
+                  className="h-7 w-full px-1 text-xs font-medium"
+                  aria-pressed={active}
+                  onClick={() => setSubjectPrefix(active ? null : p.code)}
+                >
+                  {p.code}
+                </Button>
+              );
+            })}
+          </div>
+        </div>
+      )}
 
       <div className="space-y-2">
         {filtered.map((c) => (
@@ -177,6 +251,7 @@ export function CoursesPage({
                   onClick={() => {
                     setKeyword("");
                     setFilter("all");
+                    setSubjectPrefix(null);
                   }}
                 >
                   清除搜索与筛选
@@ -199,7 +274,12 @@ export function CoursesPage({
           )}
         </div>
         {cc.groups.map((g) => (
-          <CCGroupPanel key={g.name} group={g} notApplicableAreas={notApplicableAreas} />
+          <CCGroupPanel
+            key={g.name}
+            group={g}
+            notApplicableAreas={notApplicableAreas}
+            subjectPrefix={subjectPrefix}
+          />
         ))}
       </div>
     </div>

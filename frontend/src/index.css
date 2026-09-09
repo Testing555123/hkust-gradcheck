@@ -4,43 +4,43 @@
 
 @layer base {
   :root {
-    /* ===== 色彩 · 學術清爽（Indigo 主色 #4F46E5） ===== */
-    --background: 210 40% 98%;
-    --foreground: 222 47% 11%;
+    /* ===== 色彩 · Catppuccin Latte（Mauve 主色 #8839ef） ===== */
+    --background: 220 20% 96%;
+    --foreground: 233 16% 35%;
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 233 16% 35%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
-    --primary: 243 75% 59%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222 47% 11%;
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --popover-foreground: 233 16% 35%;
+    --primary: 266 84% 58%;
+    --primary-foreground: 220 20% 96%;
+    --secondary: 223 16% 84%;
+    --secondary-foreground: 233 16% 35%;
+    --muted: 220 14% 90%;
+    --muted-foreground: 233 10% 47%;
 
-    /* accent = shadcn 官方語義：hover / focus 的強調底。勿當淺主色底用，請用 --brand-soft */
-    --accent: 210 40% 93%;
-    --accent-foreground: 222 47% 11%;
-    /* brand-soft = 淺主色底，供 hero 漸層與語義色塊使用 */
-    --brand-soft: 226 100% 97%;
-    --brand-soft-foreground: 243 75% 59%;
+    /* accent = Catppuccin Surface1 系，hover / focus 的強調底 */
+    --accent: 228 16% 90%;
+    --accent-foreground: 266 84% 58%;
+    /* brand-soft = 淺主色底（Mauve 淡），供 hero 漸層與語義色塊使用 */
+    --brand-soft: 266 100% 96%;
+    --brand-soft-foreground: 266 84% 58%;
 
-    --destructive: 0 72% 51%;
-    --destructive-foreground: 210 40% 98%;
-    --success: 142 72% 29%;
-    --success-foreground: 210 40% 98%;
-    --warning: 38 92% 50%;
-    --warning-foreground: 222 47% 11%;
-    --info: 199 89% 48%;
-    --info-foreground: 210 40% 98%;
+    --destructive: 347 87% 44%;
+    --destructive-foreground: 220 20% 96%;
+    --success: 110 58% 40%;
+    --success-foreground: 220 20% 96%;
+    --warning: 35 77% 49%;
+    --warning-foreground: 233 16% 35%;
+    --info: 197 97% 46%;
+    --info-foreground: 220 20% 96%;
 
     /* 表面分層：卡片內嵌區塊 / 表頭 / 程式碼 */
-    --surface-2: 210 40% 96%;
+    --surface-2: 223 16% 86%;
 
-    --border: 214 32% 91%;
-    --border-strong: 214 32% 82%;
-    --input: 214 32% 91%;
-    --ring: 243 75% 59%;
+    --border: 223 16% 86%;
+    --border-strong: 223 16% 76%;
+    --input: 223 16% 86%;
+    --ring: 266 84% 58%;
 
     /* ===== 圓角 ===== */
     --radius: 0.75rem; /* 12px · 卡片 / Dialog */
@@ -48,7 +48,7 @@
     --radius-overlay: 1.125rem; /* 18px · 彈窗 */
 
     /* ===== 陰影（淺色：層級靠陰影） ===== */
-    --shadow-color: 222 47% 11%;
+    --shadow-color: 233 16% 35%;
     --elevation-1: 0 1px 2px 0 hsl(var(--shadow-color) / 0.06);
     --elevation-2:
       0 4px 12px -2px hsl(var(--shadow-color) / 0.1), 0 2px 4px -2px hsl(var(--shadow-color) / 0.06);
@@ -65,84 +65,84 @@
     --z-overlay: 50;
     --z-toast: 60;
 
-    /* ===== 本轮新增：计划口径色（双口径进度条的第二段） ===== */
-    --planned: 217 91% 60%;
-    --planned-foreground: 210 40% 98%;
+    /* ===== 計劃口徑色（雙口徑進度條的第二段） ===== */
+    --planned: 221 91% 54%;
+    --planned-foreground: 220 20% 96%;
 
-    /* ===== 本轮新增：表面层级（侧栏 / 嵌套面板 / 悬浮层） ===== */
-    --sidebar: 0 0% 100%;
-    --sidebar-foreground: 222 47% 11%;
-    --sidebar-muted: 215 16% 47%;
-    --sidebar-accent: 226 100% 97%;
-    --sidebar-accent-foreground: 243 75% 59%;
-    --sidebar-border: 214 32% 91%;
-    --surface-2: 210 40% 96%;
-    --surface-3: 210 40% 93%;
-    --overlay: 222 47% 11%;
+    /* ===== 表面層級（側欄 / 嵌套面板 / 懸浮層） ===== */
+    --sidebar: 220 20% 96%;
+    --sidebar-foreground: 233 16% 35%;
+    --sidebar-muted: 233 10% 47%;
+    --sidebar-accent: 228 16% 90%;
+    --sidebar-accent-foreground: 266 84% 58%;
+    --sidebar-border: 223 16% 86%;
+    --surface-2: 223 16% 86%;
+    --surface-3: 223 16% 82%;
+    --overlay: 240 21% 15%;
 
-    /* ===== 本轮新增：图表语义色（占比条 / 分布图，替代图表库配色） ===== */
-    --chart-1: 243 75% 59%;
-    --chart-2: 217 91% 60%;
-    --chart-3: 142 72% 36%;
-    --chart-4: 38 92% 50%;
+    /* ===== 圖表語義色（佔比條 / 分佈圖，替代圖表庫配色） ===== */
+    --chart-1: 266 84% 58%;
+    --chart-2: 221 91% 54%;
+    --chart-3: 110 58% 40%;
+    --chart-4: 35 77% 49%;
   }
 
   .dark {
-    --background: 222 47% 7%;
-    --foreground: 210 40% 98%;
-    --card: 222 47% 10%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222 47% 10%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 239 84% 67%;
-    --primary-foreground: 222 47% 11%;
-    --secondary: 217 33% 17%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217 33% 17%;
-    --muted-foreground: 215 20% 65%;
+    --background: 240 21% 15%;
+    --foreground: 226 64% 88%;
+    --card: 237 16% 23%;
+    --card-foreground: 226 64% 88%;
+    --popover: 237 16% 23%;
+    --popover-foreground: 226 64% 88%;
+    --primary: 267 83% 81%;
+    --primary-foreground: 240 21% 15%;
+    --secondary: 233 13% 31%;
+    --secondary-foreground: 226 64% 88%;
+    --muted: 235 14% 28%;
+    --muted-foreground: 227 24% 72%;
 
-    --accent: 217 33% 22%;
-    --accent-foreground: 210 40% 98%;
-    --brand-soft: 222 47% 16%;
-    --brand-soft-foreground: 239 84% 67%;
+    --accent: 233 12% 39%;
+    --accent-foreground: 267 83% 81%;
+    --brand-soft: 267 40% 26%;
+    --brand-soft-foreground: 267 83% 81%;
 
-    --destructive: 0 62% 50%;
-    --destructive-foreground: 210 40% 98%;
-    --success: 142 69% 45%;
-    --success-foreground: 222 47% 11%;
-    --warning: 38 92% 55%;
-    --warning-foreground: 222 47% 11%;
-    --info: 199 89% 58%;
-    --info-foreground: 222 47% 11%;
+    --destructive: 343 81% 75%;
+    --destructive-foreground: 240 21% 15%;
+    --success: 116 54% 76%;
+    --success-foreground: 240 21% 15%;
+    --warning: 43 86% 83%;
+    --warning-foreground: 240 21% 15%;
+    --info: 190 71% 73%;
+    --info-foreground: 240 21% 15%;
 
-    --surface-2: 217 33% 14%;
+    --surface-2: 233 13% 37%;
 
-    /* 暗色：加陰影是無效功，層級交給更亮的描邊（--border-strong）與表面 */
-    --border: 217 33% 20%;
-    --border-strong: 217 33% 30%;
-    --input: 217 33% 20%;
-    --ring: 239 84% 67%;
+    /* 暗色：層級交給更亮的描邊（--border-strong）與表面 */
+    --border: 233 14% 30%;
+    --border-strong: 233 14% 42%;
+    --input: 233 14% 30%;
+    --ring: 267 83% 81%;
 
-    /* 计划口径色 */
-    --planned: 217 91% 65%;
-    --planned-foreground: 222 47% 11%;
+    /* 計劃口徑色 */
+    --planned: 217 92% 76%;
+    --planned-foreground: 240 21% 15%;
 
-    /* 表面层级 */
-    --sidebar: 222 47% 9%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-muted: 215 20% 65%;
-    --sidebar-accent: 222 47% 16%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 217 33% 18%;
-    --surface-2: 217 33% 13%;
-    --surface-3: 217 33% 17%;
+    /* 表面層級 */
+    --sidebar: 240 21% 12%;
+    --sidebar-foreground: 226 64% 88%;
+    --sidebar-muted: 227 24% 72%;
+    --sidebar-accent: 233 12% 39%;
+    --sidebar-accent-foreground: 267 83% 81%;
+    --sidebar-border: 233 14% 30%;
+    --surface-2: 233 13% 37%;
+    --surface-3: 233 12% 44%;
     --overlay: 0 0% 0%;
 
-    /* 图表语义色 */
-    --chart-1: 239 84% 67%;
-    --chart-2: 217 91% 65%;
-    --chart-3: 142 69% 45%;
-    --chart-4: 38 92% 55%;
+    /* 圖表語義色 */
+    --chart-1: 267 83% 81%;
+    --chart-2: 217 92% 76%;
+    --chart-3: 116 54% 76%;
+    --chart-4: 43 86% 83%;
 
     --shadow-color: 0 0% 0%;
     --elevation-1: 0 0 0 0 hsl(var(--shadow-color) / 0);

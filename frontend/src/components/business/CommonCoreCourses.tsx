@@ -60,21 +60,32 @@ interface CCPickerProps {
   defaultOpen?: boolean;
   /** 入学学年不设桶的 Area（如未达 SUS/HAIC 适用年），命中课程标注说明 */
   notApplicableAreas?: string[];
+  /** 顶部学科网格选中的前缀：收窄候选课展示（不影响进度计算） */
+  subjectPrefix?: string | null;
 }
 
 /** 可折叠候选课程列表（>12 门时显示搜索框；多 Area 课程标注「计入以引擎为准」） */
-export function CCoursePicker({ candidates, defaultOpen = true, notApplicableAreas = [] }: CCPickerProps) {
+export function CCoursePicker({
+  candidates,
+  defaultOpen = true,
+  notApplicableAreas = [],
+  subjectPrefix,
+}: CCPickerProps) {
   const [open, setOpen] = useState(defaultOpen);
   const [keyword, setKeyword] = useState("");
 
   const searchable = candidates.length > 12;
   const filtered = useMemo(() => {
-    if (!keyword.trim()) return candidates;
+    const prefix = subjectPrefix ? subjectPrefix.toUpperCase() : null;
+    const base = prefix
+      ? candidates.filter((c) => c.code.toUpperCase().startsWith(prefix))
+      : candidates;
+    if (!keyword.trim()) return base;
     const kw = keyword.trim().toLowerCase();
-    return candidates.filter(
+    return base.filter(
       (c) => c.code.toLowerCase().includes(kw) || c.name.toLowerCase().includes(kw)
     );
-  }, [candidates, keyword]);
+  }, [candidates, keyword, subjectPrefix]);
 
   const hasMultiArea = candidates.some((c) => c.areas.length > 1);
   const isNotApplicable = (c: CommonCoreCourseInfo) =>
@@ -90,7 +101,7 @@ export function CCoursePicker({ candidates, defaultOpen = true, notApplicableAre
       >
         <span className="flex items-center gap-1.5">
           <ListChecks className="h-3.5 w-3.5" />
-          候选课程（{candidates.length} 门）—— 勾选即计入上方进度
+          候选课程（{filtered.length} 门）—— 勾选即计入上方进度
         </span>
         <ChevronDown className={cn("h-3.5 w-3.5 transition-transform", open && "rotate-180")} />
       </button>
@@ -135,32 +146,67 @@ export function CCoursePicker({ candidates, defaultOpen = true, notApplicableAre
   );
 }
 
-/** 单个桶 = 进度行 + 计入 chips + 候选课程 */
+/** 单个桶 = 可折叠的进度行 + 计入 chips + 候选课程（默认收起，点击桶头展开） */
 export function CCBucketBlock({
   bucket,
   notApplicableAreas,
+  subjectPrefix,
+  defaultOpen = false,
 }: {
   bucket: CommonCoreBucket;
   notApplicableAreas?: string[];
+  subjectPrefix?: string | null;
+  /** 桶初始是否展开（默认收起，保持页面紧凑） */
+  defaultOpen?: boolean;
 }) {
   const candidates = useMemo(() => candidatesForBucket(bucket.label), [bucket.label]);
+  const [open, setOpen] = useState(defaultOpen);
+  const hasBody = bucket.counted?.length || (bucket.substitutedCredits ?? 0) > 0 || candidates.length > 0;
   return (
     <div className="space-y-1.5">
-      <CCBucketRow bucket={bucket} />
-      <CCCountedChips bucket={bucket} />
-      {candidates.length > 0 && (
-        <CCoursePicker
-          candidates={candidates}
-          defaultOpen={!bucket.isElective}
-          notApplicableAreas={notApplicableAreas}
-        />
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+        disabled={!hasBody}
+        className="flex w-full items-center gap-2 rounded-md text-left transition-colors hover:bg-muted/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-default disabled:hover:bg-transparent"
+      >
+        <div className="min-w-0 flex-1">
+          <CCBucketRow bucket={bucket} />
+        </div>
+        {hasBody && (
+          <ChevronDown
+            className={cn("h-3.5 w-3.5 shrink-0 text-muted-foreground transition-transform", open && "rotate-180")}
+          />
+        )}
+      </button>
+      {open && hasBody && (
+        <div className="space-y-1.5">
+          <CCCountedChips bucket={bucket} />
+          {candidates.length > 0 && (
+            <CCoursePicker
+              candidates={candidates}
+              defaultOpen={!bucket.isElective}
+              notApplicableAreas={notApplicableAreas}
+              subjectPrefix={subjectPrefix}
+            />
+          )}
+        </div>
       )}
     </div>
   );
 }
 
 /** 课程选择页用：组级折叠面板（默认展开），内含各桶 */
-export function CCGroupPanel({ group, notApplicableAreas = [] }: { group: CommonCoreGroup; notApplicableAreas?: string[] }) {
+export function CCGroupPanel({
+  group,
+  notApplicableAreas = [],
+  subjectPrefix,
+}: {
+  group: CommonCoreGroup;
+  notApplicableAreas?: string[];
+  subjectPrefix?: string | null;
+}) {
   const [open, setOpen] = useState(true);
   const required = group.buckets.reduce((s, b) => s + b.required, 0);
   const completed = group.buckets.reduce((s, b) => s + b.completedCredits, 0);
@@ -185,7 +231,12 @@ export function CCGroupPanel({ group, notApplicableAreas = [] }: { group: Common
       {open && (
         <div className="space-y-4 border-t px-4 py-3">
           {group.buckets.map((b) => (
-            <CCBucketBlock key={b.label} bucket={b} notApplicableAreas={notApplicableAreas} />
+            <CCBucketBlock
+              key={b.label}
+              bucket={b}
+              notApplicableAreas={notApplicableAreas}
+              subjectPrefix={subjectPrefix}
+            />
           ))}
           {group.note && <p className="text-[11px] leading-snug text-muted-foreground">{group.note}</p>}
         </div>
