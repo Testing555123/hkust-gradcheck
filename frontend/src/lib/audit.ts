@@ -6,6 +6,7 @@ import type {
   RequirementGroup,
 } from "@/types";
 import { filterGroupsByBranch } from "@/lib/branch";
+import { effectiveCourses } from "@/lib/combos";
 
 const clampPct = (n: number) => Math.max(0, Math.min(100, n));
 
@@ -18,16 +19,21 @@ function sumCredits(courses: CourseRef[], predicate: (c: CourseRef) => boolean):
  * - taken：已修课程学分和
  * - planned：已修 + 计划学分和（计划建立在已修之上）
  * - 缺口：计划后仍未覆盖的课程（按组内顺序保留）
+ *
+ * 口径说明：组内若含 OR 组合（二选一 / 多选一），备选项不重复累加——
+ * 每个组合只按代表课计一门（已修 > 计划 > 学分最高，见 lib/combos.ts）。
  */
 export function computeGroupAudit(
   group: RequirementGroup,
   status: Record<string, CourseStatus>
 ): GroupAudit {
   const required = group.required_credits;
+  // 有效课程：非组合课 + 每个 OR 组一个代表课
+  const courses = effectiveCourses(group, status);
 
-  const takenCredits = sumCredits(group.courses, (c) => status[c.code] === "taken");
+  const takenCredits = sumCredits(courses, (c) => status[c.code] === "taken");
   const plannedCredits = sumCredits(
-    group.courses,
+    courses,
     (c) => status[c.code] === "taken" || status[c.code] === "planned"
   );
 
@@ -35,7 +41,7 @@ export function computeGroupAudit(
   const cappedPlanned = Math.min(plannedCredits, required);
 
   // 缺口课程：未被已修或计划覆盖的课程，按学分从大到小排（优先补大课）
-  const missingCourses = group.courses
+  const missingCourses = courses
     .filter((c) => status[c.code] === undefined)
     .sort((a, b) => b.credits - a.credits);
 

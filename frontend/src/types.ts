@@ -57,6 +57,40 @@ export interface CourseRef {
   areas?: string[];
 }
 
+/** 组合中的一门备选课程（导出层已用本组课程或课程库补齐 name / credits） */
+export interface ComboOption {
+  code: string;
+  name: string;
+  credits: number;
+}
+
+/** part：一组「选一门」的备选（如 MATH1013 / MATH1023） */
+export interface ComboPart {
+  courses: ComboOption[];
+}
+
+/** OR 组合中的一个互斥选项：若干 part 都要（part 之间为 AND） */
+export interface ComboAlternative {
+  parts: ComboPart[];
+}
+
+/** 互斥组合：官方 Note 中的「二选一 / 多选一 / 捆绑择一」 */
+export interface OrCombo {
+  kind: "or";
+  options: ComboAlternative[];
+  /** Note 提到但课程库也不存在的课号：仅显示文本，不可勾选、不计入学分 */
+  unresolved?: string[];
+}
+
+/** 纯捆绑：官方 Note 中的「A AND B」，各 part 都要修（学分口径与平铺一致） */
+export interface AndCombo {
+  kind: "and";
+  parts: ComboPart[];
+  unresolved?: string[];
+}
+
+export type ComboGroup = OrCombo | AndCombo;
+
 export interface RequirementGroup {
   /** 组内序号（导出脚本生成，等于 order_index），仅用于 React key */
   id: number;
@@ -68,6 +102,11 @@ export interface RequirementGroup {
   note?: string | null;
   order_index: number;
   courses: CourseRef[];
+  /**
+   * 互斥组合（二选一 / 多选一）：非组合组不带该字段。
+   * 组合内的课同时也在 courses 中平铺存在，渲染时需用 comboCodes 过滤，避免重复显示。
+   */
+  combos?: ComboGroup[];
   /**
    * 开放式层级池标记（单学科 "N000-level or above" 组由导出脚本写入）。
    * subject = 4 字母学科前缀（如 MATH），minLevel = 最低层级（2000/3000/4000/5000）。

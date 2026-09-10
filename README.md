@@ -48,8 +48,8 @@ flowchart LR
 | 状态 | zustand + persist（localStorage） |
 | 数据 | 静态 JSON（`scripts/export_static_data.py` 从 `pipeline/output/` + `courses.db` 生成） |
 | 管线 | Python 3.12 + Pydantic Schema + 可插拔 parser（MinerU API / MinerU 本地 / pymupdf）+ OpenAI 兼容 LLM |
-| 测试 | vitest（前端 92 例 / 8 文件）· pytest（管线 5 例 / 2 文件）· `export_static_data.py --check`（数据断言） |
-| CI / 部署 | GitHub Actions（lint / 单测 / 构建 / 数据一致性 / 管线单测）+ Cloudflare Pages（Git 集成） |
+| 测试 | vitest（前端 112 例 / 9 文件）· pytest（管线 5 例 + 导出脚本 28 例）· `export_static_data.py --check`（数据断言） |
+| CI / 部署 | GitHub Actions（lint / 单测 / 构建 / 数据一致性 / 管线与导出脚本单测）+ Cloudflare Pages（Git 集成） |
 
 ---
 
@@ -67,6 +67,10 @@ flowchart LR
 - **分支（Track / Option）**：`lib/branch.ts` 收集互斥分支，`filterGroupsByBranch` 过滤后交给核算函数，避免把整棵树的互斥课全部计入。
 - **开放式层级池**：形如「MATH 2000-level or above」的组在导出时只存 `{subject, minLevel}`，运行时由 `lib/pools.ts` 用 `courses.json` 展开成真实课程清单，进度自动计入。
 - **附加方案**：`lib/attached.ts` 识别辅修 / 学院要求 / Extended Major，`useAttachedTrees` 并行加载其要求树并合并统计。
+- **组合规则（OR / AND）**：官方 Note 里的 `MATH 2421 OR MATH 2431`、捆绑 `(COMP 2011 AND COMP 2012) OR COMP 2012H`、以及 `[(MATH 1013 OR MATH 1023) AND (MATH 1014 OR MATH 1024)] OR [MATH 1020]` 这类规则，在数据里都是平铺课程。`lib/combos.ts` 把它们折叠为「有效课程」后再核算：
+  - `part` = 一组「选一门」的备选（`/`），`option` = 若干 part 都要（`+`），OR 组合 = 若干互斥 option（`OR`），AND 组合 = 各 part 都要；
+  - 已选课程优先，未选的 part 按组内学分最高预估；option **全部 part 已选才计满、部分完成计 0**（AND 意味着都要）；OR 组合取代表选项的优先级为 **已完成 > 部分完成 > 未选预估**，同级比学分；
+  - `RequirementTree` 用 `comboCodes` 剔除已归入组合的平铺行，改由 `ComboRow` 合并成一行（各课程仍可单独勾选）。当前全站识别 **600 个组合组**，未识别清单已清零。
 - **Common Core**：`lib/common-core.ts` 依据固化的 `src/data/common-core-course-map.json` 判定 30 学分通识分布（含学院 Home Area 规则）。
 - **成绩单导入**：`lib/transcript.ts` 解析 pdfjs-dist（动态 `import()`，避免拖大首屏包）抽出的线性文本，识别学期 / 课号 / 学分 / 成绩，`**` 或缺失成绩记为「在读」；自动推导入学学年并回填主修、辅修、EXTM。
 - **状态持久化**：三个 zustand store —— `profile`（主修/辅修/分支，`grad-profile-v1`，带 migrate）、`selection`（勾选状态）、`ui`（视图与弹窗）。全部 localStorage，免登录、无服务端。
@@ -80,7 +84,8 @@ flowchart LR
 | `src/pages/CoursesPage.tsx` | 课程选择：搜索 + 状态筛选（全部/已修/计划/未选） |
 | `src/pages/RequirementsPage.tsx` | 要求明细：要求树、官方 Note 引用、页码出处、存疑条目 |
 | `src/hooks/queries.ts` | 全部数据查询 Hook（唯一数据出入口） |
-| `src/lib/audit.ts` `branch.ts` `pools.ts` `attached.ts` `common-core.ts` `transcript.ts` | 六块领域逻辑，均配套 `*.test.ts` |
+| `src/lib/audit.ts` `branch.ts` `pools.ts` `attached.ts` `common-core.ts` `transcript.ts` `combos.ts` | 七块领域逻辑，均配套 `*.test.ts` |
+| `src/components/business/ComboRow.tsx` | OR 组合行（二选一），与 `CourseRow` 视觉同构 |
 | `src/types.ts` | 与静态 JSON 契约一致的 TypeScript 类型 |
 
 **常用命令**
@@ -106,9 +111,14 @@ npm run data:check   # 调用 ../scripts/export_static_data.py --check
 - 全量重建：每次清空 `programs/` 重写，避免残留脏文件。
 - 隐私与稳定：`source_pdf` 归一化为仓库相对路径（截取 `unpress_pdf/` 之后），防止本机绝对路径上公网；要求组 id 用组内序号 `order_index`，保证 React key 稳定。
 - 反向索引单课程上限 50 条，超出截断但保留真实总数，防止通识类课程撑爆文件。
+- **组合规则解析（后处理）**：`combo_rules.py` 用递归下降解析两套语法族，产出 `combos` 字段（`option.parts`：`part` 内选一门、part 之间为 AND）：
+  - **关键字族**（官方 PDF 原文）：`expr := term (OR term)*`、`term := factor (AND factor)*`、`factor := 括号表达式 | 课号`；小写 `and` 视为英文散文（Electives 描述里的连接词）；
+  - **符号族**（部分产物由抽取阶段写成）：`+` = 且、`/` = 或、`one of A / B / C` = 择一（绑定优先于 `+`）、相邻课号间的小写 `or` = 或；句首散文会被跳过（`Core required (lower-bound): EMIA 2010A (0) + ...`），表达式中间遇到英文单词即停止截断，课号后的括号学分 `(3)` / `(4-5)` 剥离不参与结构；
+  - 斜杠链与小写 `or` 要求 token **真正相邻**（间隔只有空白），避免 `ECON 2103/2113/2123; FINA 2203/2303` 这种「被跳过的裸数字」把互不相干的链并成一个择一；
+  - 组内缺失的课号从 `courses.db` 补齐，库里也没有的进 `unresolved`（前端只显示文本、不可勾选）。无法判定的句式**一律降级**，原文保留并在 `pipeline/reports/combos_unparsed.md` 出人工校对清单（CI 只 warning 不 fail）；符号族识别结果另出 `pipeline/reports/combos_parsed.md` 供抽查误判。这是与层级池 `pool`、分支 `branch` 同类的确定性后处理，不调用 LLM、不改 `pipeline/output/`。
 - `--check` 只校验不写盘：断言 255 份方案 / 1144 门课 / 四学年齐全。
 
-**关键文件**：`scripts/export_static_data.py`（唯一脚本，无其它依赖入口）
+**关键文件**：`scripts/export_static_data.py`（主脚本）、`scripts/combo_rules.py`（OR 组合解析规则，纯函数）
 
 **常用命令**
 
@@ -197,7 +207,7 @@ cd pipeline
 | job | 做什么 |
 |-----|--------|
 | `frontend` | Node 20 + `npm ci` → lint → vitest → build（均在 `frontend/` 下） |
-| `pipeline` | Python 3.12 + 装管线依赖 → `pytest tests -q`（在 `pipeline/` 下） |
+| `pipeline` | Python 3.12 + 装管线依赖 → `pytest tests -q`（在 `pipeline/` 下）→ `pytest scripts/tests -q`（OR 组合解析规则） |
 | `data` | `export_static_data.py --check`（255/1144/四学年断言）→ 重新导出后 `git diff --quiet` 断言 `frontend/public/data` 与 `pipeline/output` 一致；忘记导出会在 PR 上直接报红 |
 
 ## 7. 部署（Cloudflare Pages）
@@ -251,11 +261,12 @@ npm run dev    # http://localhost:5173
 # 测试
 
 ```powershell
-# 前端（92 例 / 8 文件）
+# 前端（112 例 / 9 文件）
 cd frontend; npm test; npm run lint
 
-# 管线（5 例 / 2 文件）
+# 管线 + 导出脚本（5 例 + 28 例）
 cd pipeline; ..\.venv\Scripts\python.exe -m pytest tests -q
+..\.venv\Scripts\python.exe -m pytest scripts/tests -q
 
 # 静态数据完整性断言
 python scripts/export_static_data.py --check
@@ -299,6 +310,8 @@ pipeline/          离线管线：parsers（可插拔解析）/ llm_extract / cr
                    cache/    解析缓存（gitignore）
                    reports/  学分差异与分支审核报告（gitignore）
 scripts/           export_static_data.py —— 管线产物 + courses.db → 前端静态数据
+                   combo_rules.py —— 官方 Note 的 OR 组合确定性解析（纯函数）
+                   tests/ —— 解析规则单测
 courses.db         官方课程库 1144 门课（只读原始数据）
 unpress_pdf/       官方培养方案 PDF 与爬虫索引（本地独有，已 gitignore）
 .github/workflows/ CI：frontend / pipeline / data 三个门禁
@@ -310,3 +323,6 @@ unpress_pdf/       官方培养方案 PDF 与爬虫索引（本地独有，已 g
 - **`src/data/common-core-course-map.json` 是已固化产物**：由一次性脚本从本地 Common Core PDF 生成，原始输入未入库，生成脚本已移除；如需更新只能重新解析官方 PDF 后手工维护该文件。
 - **课程库覆盖不完整**：crosscheck 会报部分 `missing_in_courses_db`（课程库只收录部分课程），这不等同于 LLM 抽取错误；该清单正好是课程库的补全清单。
 - **LLM 产物必须人工校对**：管线只保证结构合法与学分可核对，规则语义（OR/AND 组合、互斥分支）依赖人工审阅。
+- **组合解析的边界**：散文体（`... level 3 or above ... exempted`、`Courses from the specified list, of which at least 2 courses ...`）一律降级为官方说明原文，当前 `combos_unparsed.md` 已清零；但符号族（`+` `/` `one of` / 相邻小写 `or`）覆盖面更广、误判风险也更高，**26 条识别结果列在 `pipeline/reports/combos_parsed.md` 供抽查**（两份报告均需在本机跑一次导出生成，`pipeline/reports/` 未入库）。误判成组合会直接算错学分，比漏识别严重——新增句式请先补 `scripts/tests/test_combo_rules.py` 的用例再改规则。
+- **符号族解析会在一行中部截断**：表达式中间遇到英文单词（如 `... + capstone EMIA 4990 (0) or EMIA 4991 (3) + ...` 里的 `capstone`）即停止，只取前半段（这是刻意的保守设计）。因此 EXTM 系的「核心要求」行目前只解析到第一个散文词为止，后续 `one of` 段仍按平铺展示。
+- **总览页与附加要求卡的「门数」仍是平铺口径**：只有要求明细页改用有效门数（组合按 1 门计），`OverviewPage` / `AttachedAuditCard` 的门数暂按 `group.courses.length` 显示，后续可统一为 `effectiveCourseCount`。

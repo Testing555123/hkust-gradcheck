@@ -44,6 +44,11 @@ OUTPUT_DIR = ROOT / "pipeline" / "output"
 SOURCE_DB = ROOT / "courses.db"
 DATA_DIR = ROOT / "frontend" / "public" / "data"
 PROGRAMS_DIR = DATA_DIR / "programs"
+REPORTS_DIR = ROOT / "pipeline" / "reports"
+
+# 组合规则解析器与本脚本同目录：保证以任意 cwd 运行都能导入
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from combo_rules import parse_lines  # noqa: E402
 
 # 期望值：CI 用它们断言「网站能看到全部内容」
 EXPECTED_PROGRAMS = 255
@@ -51,6 +56,10 @@ EXPECTED_COURSES = 1144
 EXPECTED_YEARS = ["2023-24", "2024-25", "2025-26", "2026-27"]
 # 单个课程码的反向索引条目上限（超出截断并记录真实总数，避免通识类课程撑爆文件）
 MAX_INDEX_PER_COURSE = 50
+# 导出过程中收集到的「未识别 OR 句式」（导出层填充，报告输出用）
+UNRESOLVED_COMBOS: list[dict] = []
+# 由符号语法（+ / one of / 小写 or）识别出的组合：抽样人工校对用
+SYMBOL_COMBOS: list[dict] = []
 
 
 def _normalize_source_pdf(raw: str | None) -> str | None:
@@ -106,6 +115,31 @@ def _course_index_data() -> tuple[set[str], set[str]]:
     return prefixes, codes
 
 
+def _parse_credits(raw) -> float | None:
+    """学分字符串容错解析：'3 Credit(s)' -> 3.0，'4-6 Credit(s)' -> 4.0（取下限）。"""
+    if not raw:
+        return None
+    m = re.search(r"(\d+(?:\.\d+)?)", str(raw))
+    return float(m.group(1)) if m else None
+
+
+def _course_lookup() -> dict[str, dict]:
+    """课程库索引：code(大写) -> {name, credits}，用于补齐 Note 里提到但组内缺失的课。"""
+    conn = sqlite3.connect(f"file:{SOURCE_DB}?mode=ro", uri=True)
+    try:
+        rows = conn.execute("SELECT code, title, credits FROM courses").fetchall()
+    finally:
+        conn.close()
+    return {
+        (code or "").upper().strip(): {
+            "name": title or "",
+            "credits": _parse_credits(credits) or 0.0,
+        }
+        for code, title, credits in rows
+        if code
+    }
+
+
 def detect_pool(
     name: str | None,
     note: str | None,
@@ -144,7 +178,94 @@ def detect_pool(
     return {"subject": subject, "minLevel": min_level}
 
 
-def _load_programs() -> list[dict]:
+def _build_combos(
+    note: str | None,
+    own_courses: list[dict],
+    course_lookup: dict[str, dict],
+    group_name: str,
+    unresolved_sink: list[dict] | None,
+    year: str,
+    code: str,
+) -> list[dict]:
+    """把官方 Note 里的 OR 组合解析成前端可渲染的结构。
+
+    - 备选课优先取本组 courses（学分与别名一致），组内缺失时回退课程库；
+    - 课程库也没有的课号进 unresolved，前端只显示文本、不可勾选、不计入学分；
+    - 无法判定的句式（含 AND / 散文体 or）写入 unresolved_sink，供人工校对报告使用。
+    """
+    raw_combos: list[dict] = []
+    for record in parse_lines(note):
+        for line in record["unresolved"]:
+            if unresolved_sink is not None:
+                unresolved_sink.append(
+                    {"year": year, "code": code, "group": group_name, "note": line}
+                )
+        if record["combos"]:
+            # 符号语法（+ / one of / 小写 or）识别结果单独记一份，供人工抽查误判
+            if record["syntax"] == "symbol":
+                SYMBOL_COMBOS.append(
+                    {"year": year, "code": code, "group": group_name, "note": record["line"]}
+                )
+            raw_combos.extend(record["combos"])
+    if not raw_combos:
+        return []
+
+    own = {(c["code"] or "").upper(): c for c in own_courses}
+
+    def resolve(raw_code: str) -> dict | None:
+        """课号 → {code,name,credits}：组内课程优先，其次课程库，都没有返回 None。"""
+        src = own.get(raw_code)
+        if src:
+            return {
+                "code": src["code"],
+                "name": src["name"],
+                "credits": float(src["credits"] or 0.0),
+            }
+        lib = course_lookup.get(raw_code)
+        if lib:
+            return {"code": raw_code, "name": lib["name"], "credits": lib["credits"]}
+        return None
+
+    def build_part(codes: list[str], missing: list[str]) -> dict | None:
+        """part：一组「选一门」的备选；全是无法解析的课号时返回 None。"""
+        courses = []
+        for raw_code in codes:
+            item = resolve(raw_code)
+            if item:
+                courses.append(item)
+            elif raw_code not in missing:
+                missing.append(raw_code)
+        return {"courses": courses} if courses else None
+
+    out: list[dict] = []
+    for combo in raw_combos:
+        missing: list[str] = []
+        if combo["kind"] == "or":
+            options: list[dict] = []
+            for raw_option in combo["options"]:
+                parts = [p for p in (build_part(codes, missing) for codes in raw_option["parts"]) if p]
+                if parts:
+                    options.append({"parts": parts})
+            # 至少需要两个互斥选项才构成「二选一」
+            if len(options) < 2:
+                continue
+            entry: dict = {"kind": "or", "options": options}
+        else:
+            parts = [p for p in (build_part(codes, missing) for codes in combo["parts"]) if p]
+            # 捆绑至少需要两门课
+            if len(parts) < 2:
+                continue
+            entry = {"kind": "and", "parts": parts}
+        if missing:
+            entry["unresolved"] = missing
+        out.append(entry)
+    return out
+
+
+def _load_programs(
+    course_lookup: dict[str, dict] | None = None,
+    unresolved_sink: list[dict] | None = None,
+) -> list[dict]:
     files = sorted(OUTPUT_DIR.glob("requirements_*.json"))
     if not files:
         raise RuntimeError(f"未找到管线产物：{OUTPUT_DIR}")
@@ -198,6 +319,18 @@ def _load_programs() -> list[dict]:
                 group["branch_kind"] = g.get("branch_kind")
                 group["branch_optional"] = bool(g.get("branch_optional", True))
                 group["parent_branch"] = g.get("parent_branch")
+            # OR 组合（二选一 / 多选一）：由官方 Note 确定性解析，非组合组不写该键
+            combos = _build_combos(
+                g.get("note"),
+                group["courses"],
+                course_lookup or {},
+                group["name"],
+                unresolved_sink,
+                data["year"],
+                data["code"],
+            )
+            if combos:
+                group["combos"] = combos
             groups.append(group)
 
         programs.append(
@@ -332,8 +465,51 @@ def _years_of(programs: list[dict]) -> dict[str, int]:
     return dict(sorted(counts.items()))
 
 
+def _write_combo_report(unresolved: list[dict]) -> None:
+    """把未被识别的 OR 句式写成人工校对清单（CI 只 warning，不阻塞）。"""
+    REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+    lines = [
+        "# 未识别的 OR 组合句式（人工校对）",
+        "",
+        f"共 {len(unresolved)} 条。以下 Note 含 OR 但解析器判定为语义不明",
+        "（含 AND 组合 / 散文体 or / 句式不规整），已保留官方说明原文，未参与学分核算。",
+        "如需纳入二选一口径，请人工确认后扩展 scripts/combo_rules.py 的规则表。",
+        "",
+    ]
+    for item in unresolved:
+        lines.append(f"## {item['year']} {item['code']} — {item['group']}")
+        lines.append("")
+        lines.append("```")
+        lines.append(item["note"])
+        lines.append("```")
+        lines.append("")
+    (REPORTS_DIR / "combos_unparsed.md").write_text("\n".join(lines), encoding="utf-8")
+
+
+def _write_symbol_report() -> None:
+    """符号语法（`+` / `/` / one of / 小写 or）识别结果抽样清单：便于人工抽查误判。"""
+    REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+    lines = [
+        "# 符号语法识别出的组合（人工抽查）",
+        "",
+        f"共 {len(SYMBOL_COMBOS)} 条。这些组合不是用官方常见的大写 `OR` / `AND` 写成，",
+        "而是 `+`（且）、`/`（或）、`one of`（择一）或相邻课号间的小写 `or`。",
+        "该语法族覆盖面更广、误判风险也更高，建议抽查下方清单；",
+        "确认有误时请扩展 scripts/combo_rules.py 的散文黑名单或其单测用例。",
+        "",
+    ]
+    for item in SYMBOL_COMBOS:
+        lines.append(f"## {item['year']} {item['code']} — {item['group']}")
+        lines.append("")
+        lines.append("```")
+        lines.append(item["note"])
+        lines.append("```")
+        lines.append("")
+    (REPORTS_DIR / "combos_parsed.md").write_text("\n".join(lines), encoding="utf-8")
+
+
 def export() -> int:
-    programs = _load_programs()
+    programs = _load_programs(_course_lookup(), UNRESOLVED_COMBOS)
     courses = _load_courses()
 
     pool_total = sum(
@@ -341,6 +517,27 @@ def export() -> int:
     )
     if pool_total:
         print(f"[ok] 识别开放式层级池组 {pool_total} 个（单学科 N000-level or above）")
+
+    combo_total = sum(1 for p in programs for g in p["groups"] if g.get("combos"))
+    if combo_total:
+        print(f"[ok] 识别 OR 组合（二选一）组 {combo_total} 个")
+    # 两份报告都无条件下写：否则上一轮的旧报告会残留，误导人工校对
+    _write_combo_report(UNRESOLVED_COMBOS)
+    _write_symbol_report()
+    if UNRESOLVED_COMBOS:
+        print(
+            f"[warn] {len(UNRESOLVED_COMBOS)} 条 OR 句式未识别，"
+            f"已写入 pipeline/reports/combos_unparsed.md（保留官方说明原文）"
+        )
+        # GitHub Actions 注解：提示但不阻断（未识别只影响展示，不影响正确性）
+        print(f"::warning::{len(UNRESOLVED_COMBOS)} 条 OR 组合句式未识别，见 combos_unparsed.md")
+    else:
+        print("[ok] 所有含组合运算符的 Note 均已解析（combos_unparsed.md 为空）")
+
+    print(
+        f"[info] {len(SYMBOL_COMBOS)} 条组合来自符号语法（+ / one of / 小写 or），"
+        f"已写入 pipeline/reports/combos_parsed.md 供抽查"
+    )
 
     if PROGRAMS_DIR.exists():
         for stale in PROGRAMS_DIR.glob("*.json"):

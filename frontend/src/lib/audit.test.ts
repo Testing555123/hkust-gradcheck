@@ -84,6 +84,72 @@ describe("computeGroupAudit", () => {
     const b = computeGroupAudit(free, { X1: "taken" });
     expect(b.percentTaken).toBe(100);
   });
+
+  describe("OR 组合（二选一）口径", () => {
+    // 官方 Note: MATH 2421 OR MATH 2431 / MATH 4424 OR MATH 4425
+    const combo: RequirementGroup["combos"] = [
+      {
+        kind: "or",
+        options: [
+          { parts: [{ courses: [{ code: "MATH2421", name: "Probability", credits: 4 }] }] },
+          {
+            parts: [
+              { courses: [{ code: "MATH2431", name: "Honors Probability", credits: 4 }] },
+            ],
+          },
+        ],
+      },
+      {
+        kind: "or",
+        options: [
+          {
+            parts: [
+              { courses: [{ code: "MATH4424", name: "Multivariate Analysis", credits: 3 }] },
+            ],
+          },
+          {
+            parts: [
+              {
+                courses: [
+                  { code: "MATH4425", name: "Introductory Time Series", credits: 3 },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+    ];
+    const orGroup: RequirementGroup = {
+      ...group("or", "Track Required", 29, [
+        course("MATH2411", 4),
+        course("MATH2421", 4),
+        course("MATH2431", 4),
+        course("MATH4424", 3),
+        course("MATH4425", 3),
+      ]),
+      combos: combo,
+    };
+
+    it("备选项不重复累加：未选时按每个组合的最高学分计一门", () => {
+      const a = computeGroupAudit(orGroup, {});
+      // 平铺累加为 18，组合口径只应算 4 + 4 + 3
+      expect(a.takenCredits).toBe(0);
+      expect(a.missingCourses).toHaveLength(3);
+      expect(a.missingCourses.reduce((s, c) => s + c.credits, 0)).toBe(11);
+    });
+
+    it("勾选备选中的一门即按该门计入学分", () => {
+      const a = computeGroupAudit(orGroup, { MATH2421: "taken" });
+      expect(a.takenCredits).toBe(4);
+      expect(a.missingCourses.map((c) => c.code)).toContain("MATH4424");
+      expect(a.missingCourses).toHaveLength(2);
+    });
+
+    it("同一组合内勾选两门也只算一门", () => {
+      const a = computeGroupAudit(orGroup, { MATH2421: "taken", MATH2431: "taken" });
+      expect(a.takenCredits).toBe(4);
+    });
+  });
 });
 
 describe("computeProgramAudit", () => {

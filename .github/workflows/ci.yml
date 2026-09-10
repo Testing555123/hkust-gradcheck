@@ -55,6 +55,9 @@ jobs:
         run: python -m pytest tests -q
         working-directory: pipeline
 
+      - name: 导出脚本单测（OR 组合解析规则）
+        run: python -m pytest scripts/tests -q
+
   data:
     runs-on: ubuntu-latest
     steps:

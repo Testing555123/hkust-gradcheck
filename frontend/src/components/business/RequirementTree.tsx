@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CourseRow } from "@/components/business/CourseRow";
+import { ComboRow } from "@/components/business/ComboRow";
 import { CollapsibleGroup } from "@/components/business/CollapsibleGroup";
 import { BranchKindBadge } from "@/components/business/BranchSelector";
 import { EmptyState } from "@/components/ui/empty";
@@ -9,6 +10,7 @@ import { useIsDesktop } from "@/hooks/useMediaQuery";
 import { useSelection } from "@/stores/selection";
 import { computeGroupAudit } from "@/lib/audit";
 import { collectBranches } from "@/lib/branch";
+import { comboCodes, effectiveCourseCount, effectiveCourses } from "@/lib/combos";
 import { sortTakenFirst } from "@/lib/pools";
 import { computeGroupFilterState, matchesGroupFilter, type GroupFilterState } from "@/lib/group-filter";
 import { cn } from "@/lib/utils";
@@ -97,14 +99,24 @@ function RequirementGroupView({
   const kind: BranchOption["kind"] | null =
     group.branch_kind === "option" ? "option" : group.branch ? "track" : null;
 
-  const takenCount = group.courses.filter((c) => status[c.code] === "taken").length;
-  const plannedCount = group.courses.filter((c) => status[c.code] === "planned").length;
-  const hasAreas = group.courses.some((c) => c.areas && c.areas.length > 0);
+  // OR 组合（二选一）：组合内的课同时平铺在 courses 中，渲染前先剔除，避免重复显示
+  const combos = group.combos ?? [];
+  const inCombo = useMemo(() => comboCodes(group), [group]);
+  const plain = useMemo(
+    () => group.courses.filter((c) => !inCombo.has(c.code)),
+    [group.courses, inCombo]
+  );
+
+  // 门数与已修/计划计数一律走「有效课程」口径：组合按 1 门计
+  const effective = useMemo(() => effectiveCourses(group, status), [group, status]);
+  const takenCount = effective.filter((c) => status[c.code] === "taken").length;
+  const plannedCount = effective.filter((c) => status[c.code] === "planned").length;
+  const hasAreas = plain.some((c) => c.areas && c.areas.length > 0);
 
   // 池组：已讀優先排序，默认仅顯示前 10 门（不记忆，切方案/刷新重算）
   const sorted = useMemo(
-    () => (isPool ? sortTakenFirst(group.courses, status) : group.courses),
-    [isPool, group.courses, status]
+    () => (isPool ? sortTakenFirst(plain, status) : plain),
+    [isPool, plain, status]
   );
   const visible = isPool && !showAll ? sorted.slice(0, 10) : sorted;
 
@@ -140,7 +152,7 @@ function RequirementGroupView({
           <span>
             要求 <strong className="text-foreground">{group.required_credits}</strong> 学分
           </span>
-          <span>共 {group.courses.length} 门课</span>
+          <span>共 {effectiveCourseCount(group)} 门课</span>
           {takenCount > 0 && <span className="text-success">已修 {takenCount}</span>}
           {plannedCount > 0 && <span className="text-primary">计划 {plannedCount}</span>}
         </p>
@@ -159,12 +171,25 @@ function RequirementGroupView({
             </p>
           </div>
         )}
-        {group.courses.length === 0 ? (
+        {/* OR 组合（二选一 / 多选一）：整组只按一门计入学分，故优先于课程清单渲染 */}
+        {combos.length > 0 && (
+          <div className="space-y-2">
+            {combos.map((combo, index) => (
+              <ComboRow
+                key={`${group.id}-combo-${index}`}
+                combo={combo}
+                offBranch={offBranch}
+                sourceRef={group.source_ref}
+              />
+            ))}
+          </div>
+        )}
+        {combos.length === 0 && plain.length === 0 ? (
           <p className="text-sm text-muted-foreground py-2">
             该组未列出具体课程（请参考上方官方说明的选课规则）
           </p>
         ) : hasAreas ? (
-          <AreaBlocks courses={group.courses} offBranch={offBranch} />
+          <AreaBlocks courses={visible} offBranch={offBranch} />
         ) : (
           <>
             {visible.map((c) => (
