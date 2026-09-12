@@ -22,6 +22,8 @@ pipeline/run_pipeline_env.bat
 # ===== 数据文件 =====
 # 官方培养方案 PDF 与爬虫索引（注意：不带斜杠，软链也能命中）
 unpress_pdf
+# downloads/ 为官方 PDF 本地缓存（未跟踪、不被任何管线代码消费，按时按代码归并存于本地）
+downloads/
 # courses.db 与 pipeline/output/ 需入库：导出脚本从它们生成前端静态数据
 pipeline/reports/
 pipeline/cache/
@@ -42,3 +44,4 @@ Thumbs.db
 # 避免被 `git add .` 误带；子目录（如 docs/ui、各模块资源）不受影响。
 /*.png
 /*.yaml
+/package-lock.json

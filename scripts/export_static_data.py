@@ -123,6 +123,29 @@ def _parse_credits(raw) -> float | None:
     return float(m.group(1)) if m else None
 
 
+def _course_ref(course: dict, course_lookup: dict[str, dict]) -> dict:
+    """单门课导出：`credits` 缺失时按 `credits_raw` 取下限，`name` 占位（空/等于课号）时回退课程库。
+
+    产物里偶见 `credits: null` 或 `name == code`（手工补录未填全），直接透传会让前端显示 0 学分 /
+    课号，故在此兜底；两者都取不到时保持原值（由 `check()` 断言兜底提示）。
+    """
+    code = course.get("code", "") or ""
+    credits = course.get("credits")
+    if credits is None:
+        credits = _parse_credits(course.get("credits_raw"))
+    name = (course.get("name") or "").strip()
+    if not name or name == code:
+        lib = course_lookup.get(code.upper().strip())
+        if lib and lib.get("name"):
+            name = lib["name"]
+    return {
+        "code": code,
+        "name": name,
+        "credits": float(credits or 0.0),
+        "areas": course.get("areas", []) or [],
+    }
+
+
 def _course_lookup() -> dict[str, dict]:
     """课程库索引：code(大写) -> {name, credits}，用于补齐 Note 里提到但组内缺失的课。"""
     conn = sqlite3.connect(f"file:{SOURCE_DB}?mode=ro", uri=True)
@@ -266,7 +289,7 @@ def _load_programs(
     course_lookup: dict[str, dict] | None = None,
     unresolved_sink: list[dict] | None = None,
 ) -> list[dict]:
-    files = sorted(OUTPUT_DIR.glob("requirements_*.json"))
+    files = sorted(OUTPUT_DIR.rglob("requirements_*.json"))
     if not files:
         raise RuntimeError(f"未找到管线产物：{OUTPUT_DIR}")
 
@@ -301,15 +324,7 @@ def _load_programs(
                 # 池组清空 courses（前端按 pool 从 courses.json 解析真实课程）
                 "courses": []
                 if pool
-                else [
-                    {
-                        "code": c.get("code", ""),
-                        "name": c.get("name", ""),
-                        "credits": float(c.get("credits") or 0.0),
-                        "areas": c.get("areas", []) or [],
-                    }
-                    for c in g.get("courses", [])
-                ],
+                else [_course_ref(c, course_lookup or {}) for c in g.get("courses", [])],
                 "pool": pool,
             }
             # 互斥分支（Track / Option）标记：由 pipeline/apply_branches.py 事后补写，
@@ -623,9 +638,35 @@ def check() -> int:
     course_index = load("course_index.json")
     meta = load("meta.json")
 
-    sources = sorted(OUTPUT_DIR.glob("requirements_*.json"))
+    sources = sorted(OUTPUT_DIR.rglob("requirements_*.json"))
     if len(sources) != EXPECTED_PROGRAMS:
         errors.append(f"管线产物 {len(sources)} 份，期望 {EXPECTED_PROGRAMS} 份")
+
+    # 产物完整性断言：源头不得有 credits 缺失 / name 占位（空或等于课号）。
+    # 导出层虽有兜底（见 _course_ref），但源头残缺会让「0 学分」「课号当课名」静默流入前端，
+    # 故在此硬门禁，防止人工补录再次漏填。
+    missing_credits: list[str] = []
+    placeholder_names: list[str] = []
+    for src in sources:
+        data = json.loads(src.read_text(encoding="utf-8"))
+        if data.get("_skipped_llm"):
+            continue
+        for g in data.get("groups", []):
+            for c in g.get("courses", []):
+                code = c.get("code", "")
+                if c.get("credits") is None:
+                    missing_credits.append(f"{src.name} {code}")
+                name = (c.get("name") or "").strip()
+                if not name or name == code:
+                    placeholder_names.append(f"{src.name} {code}")
+    if missing_credits:
+        errors.append(
+            f"{len(missing_credits)} 门课 credits 缺失，例如 {missing_credits[:3]}"
+        )
+    if placeholder_names:
+        errors.append(
+            f"{len(placeholder_names)} 门课 name 占位（空/等于课号），例如 {placeholder_names[:3]}"
+        )
 
     if index is not None:
         if len(index) != EXPECTED_PROGRAMS:

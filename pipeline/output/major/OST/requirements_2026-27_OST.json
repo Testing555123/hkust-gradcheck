@@ -1,0 +1,686 @@
+{
+  "year": "2026-27",
+  "code": "OST",
+  "title": "BSc in Ocean Science and Technology",
+  "total_required_credits": 21.0,
+  "groups": [
+    {
+      "name": "Major Pre-requisite course(s)",
+      "required_credits": 3.0,
+      "required_credits_raw": "3",
+      "note": "",
+      "courses": [
+        {
+          "code": "OCES1001",
+          "name": "The Earth as a Blue Planet",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "OCES1010",
+          "name": "Principles and Applications of Environmental Science",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Required Course(s)",
+      "required_credits": 3.0,
+      "required_credits_raw": "3-6",
+      "note": "OCES 4964 OR (OCES 4974 AND OCES 4984) OR (SCIE 3500 AND SCIE 4500) (Students following IRE Track can only use (SCIE 3500 AND SCIE 4500) to fulfill the requirement.)",
+      "courses": [
+        {
+          "code": "OCES2001",
+          "name": "Survey of Ocean Science",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "OCES2002",
+          "name": "Marine Chemistry",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "OCES2003",
+          "name": "Descriptive Physical Oceanography",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "OCES2130",
+          "name": "Marine Biology",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "OCES3001",
+          "name": "Coastal Environmental Monitoring",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "OCES3003",
+          "name": "Field Methods in Marine Studies",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "OCES3160",
+          "name": "Ecology",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "OCES4001",
+          "name": "Ocean and Climate Change",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "OCES4964",
+          "name": "Ocean Science and Technology Capstone Project Research",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "OCES4974",
+          "name": "Ocean Science and Technology Research Project I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "OCES4984",
+          "name": "Ocean Science and Technology Research Project II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "SCIE3500",
+          "name": "IRE Research Project I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "SCIE4500",
+          "name": "IRE Research Project II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM1011",
+          "name": "General Chemistry A: Reactions, Thermodynamics, and Reaction Kinetics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM1012",
+          "name": "General Chemistry B: Atomic Structure, Molecules, and Bonding Theories",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS1901",
+          "name": "General Biology I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS1902",
+          "name": "General Biology II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1012",
+          "name": "Calculus IA",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1013",
+          "name": "Calculus I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1020",
+          "name": "Accelerated Calculus",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1023",
+          "name": "Honors Calculus I",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "PHYS1111",
+          "name": "General Physics I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "PHYS1112",
+          "name": "General Physics I with Calculus",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "PHYS1312",
+          "name": "Honors General Physics I",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP1021",
+          "name": "Introduction to Computer Science",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LANG3025",
+          "name": "Science Communication in English (Environmental Science)",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LANG3027",
+          "name": "Science Communication in English for Research Students",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "COMP1023",
+          "name": "Introduction to Python Programming",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "LANG4010",
+          "name": "From Report to Presentation: Mastering Effective Communication in Environmental Impact Assessments",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MATH1005",
+          "name": "Calculus and Statistics",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MATH1006",
+          "name": "Calculus, Vectors, and Matrices",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "OCES2004",
+          "name": "Sustainable Ocean",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "OCES2005",
+          "name": "Coastal Marine Habitats",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "OCES4203",
+          "name": "Environmental Impact and Risk Assessment",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "OCES4303",
+          "name": "AI and Machine Learning in Marine Science",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "PHYS1101",
+          "name": "Introductory Physics",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "name": "Elective(s)",
+      "required_credits": 0.0,
+      "required_credits_raw": "",
+      "note": "Any OCES courses at 3000/4000-level. Students taking the Marine Ecology Option must use OCES 4203 and OCES 4301 to count towards this elective requirement, while those taking the Oceanography Option must use MATH 1014 and OCES 3301. Courses taken to fulfill the Track/Option requirements may not be counted towards this elective requirement.",
+      "courses": [
+        {
+          "code": "OCES2201",
+          "name": "Internship",
+          "credits": 2.0,
+          "credits_raw": "2-4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "OCES2330",
+          "name": "Marine Biology Laboratory",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CHEM2311",
+          "name": "Analytical Chemistry",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS2011",
+          "name": "A Practicum on Wetland Conservation",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS2060",
+          "name": "Biodiversity",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS3150",
+          "name": "Biostatistics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "MATH1014",
+          "name": "Calculus II",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MATH2350",
+          "name": "Applied Linear Algebra and Differential Equations",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MATH2411",
+          "name": "Applied Statistics",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MATH4326",
+          "name": "Introduction to Fluid Dynamics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        }
+      ],
+      "source_pages": [
+        1,
+        3
+      ]
+    },
+    {
+      "name": "International Research Enrichment Track",
+      "required_credits": 3.0,
+      "required_credits_raw": "3-4",
+      "note": "LIFS 3150 OR MATH 2411",
+      "courses": [
+        {
+          "code": "OCES3301",
+          "name": "Data Analysis in Ocean Science",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "LIFS3150",
+          "name": "Biostatistics",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "MATH2411",
+          "name": "Applied Statistics",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        }
+      ],
+      "source_pages": [
+        3
+      ],
+      "branch": "International Research Enrichment Track",
+      "branch_kind": "track",
+      "branch_optional": true,
+      "parent_branch": null
+    },
+    {
+      "name": "Marine Ecology Option",
+      "required_credits": 6.0,
+      "required_credits_raw": "6",
+      "note": "Marine Ecology Electives (2 courses from the specified elective list)",
+      "courses": [
+        {
+          "code": "OCES3302",
+          "name": "Marine Pollution Tracking",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "OCES4201",
+          "name": "Environmental Microbiology",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "OCES4204",
+          "name": "Coral Reef Ecosystem Science",
+          "credits": 4.0,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "OCES4320",
+          "name": "Marine Toxicology",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            3
+          ]
+        }
+      ],
+      "source_pages": [
+        3
+      ],
+      "branch": "Marine Ecology Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
+    },
+    {
+      "name": "Oceanography Option",
+      "required_credits": 6.0,
+      "required_credits_raw": "6",
+      "note": "Oceanography Electives (2 courses from the specified elective list)",
+      "courses": [
+        {
+          "code": "OCES3201",
+          "name": "Biological Oceanography",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "OCES3203",
+          "name": "Physical Oceanography",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "OCES4205",
+          "name": "Chemical Oceanography",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "MATH2350",
+          "name": "Applied Linear Algebra and Differential Equations",
+          "credits": 3.0,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            4
+          ]
+        }
+      ],
+      "source_pages": [
+        4
+      ],
+      "branch": "Oceanography Option",
+      "branch_kind": "option",
+      "branch_optional": true,
+      "parent_branch": null
+    }
+  ],
+  "uncertain": [
+    "The 'Required Course(s)' group contains multiple distinct requirement blocks (Core courses, Capstone/Research options, Chemistry, Biology, Math, Physics, CS, Language). The 'required_credits' field is set to 3 (from the Capstone note row) because the table structure merges these disparate requirements under one header without a total sum row. The actual total credits for this group is the sum of all individual course credits listed.",
+    "The 'Elective(s)' group lists specific courses (OCES 2201, etc.) but the note says 'Any OCES courses at 3000/4000-level'. The listed courses are likely examples or specific electives allowed, but the requirement is open-ended. The 'required_credits' is 0 as no minimum credit total is explicitly stated in the 'Minimum credit' column for this specific group header, though options imply specific counts.",
+    "MATH 1012, OCES 2001, OCES 3201, OCES 3203, and OCES 4205 are marked as deleted in the remarks but still appear in the requirement lists. They are included in the JSON as they appear in the text, but users should note they may not be available.",
+    "The 'International Research Enrichment Track' is presented as a 'Track Study' with its own 'Required Course(s)' table. It is treated as a separate group. The note 'Students in the IRE Track should also take SCIE 3500 and SCIE 4500' refers back to the main Required Courses group.",
+    "total_required_credits (21.0) is a computed value: the sum of the required_credits of all groups in this file. The PDF does not state a single overall minimum total for this program, so this figure is derived by summation and may double-count where optional tracks/options are listed as separate groups."
+  ],
+  "parser": "mineru_api",
+  "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\major\\2026-27\\OST_BSc_in_Ocean_Science_and_Technology.pdf"
+}

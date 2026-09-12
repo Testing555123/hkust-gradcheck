@@ -271,7 +271,7 @@ def main() -> int:
     ap.add_argument("--code", default=None, help="只处理指定专业代码，如 MATH")
     args = ap.parse_args()
 
-    files = sorted(OUTPUT_DIR.glob("requirements_*.json"))
+    files = sorted(OUTPUT_DIR.rglob("requirements_*.json"))
     if not files:
         print(f"[error] 未找到产物：{OUTPUT_DIR}")
         return 1

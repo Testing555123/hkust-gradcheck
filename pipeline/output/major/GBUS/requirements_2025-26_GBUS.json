@@ -1,0 +1,492 @@
+{
+ "year": "2025-26",
+ "code": "GBUS",
+ "title": "BBA in Global Business",
+ "total_required_credits": 38.0,
+ "groups": [
+  {
+   "name": "Required Course(s)",
+   "required_credits": 7.0,
+   "required_credits_raw": "7",
+   "note": "",
+   "courses": [
+    {
+     "code": "GBUS1000",
+     "name": "Global Leadership Development",
+     "credits": 0.0,
+     "credits_raw": "0",
+     "areas": [],
+     "source_pages": [
+      1
+     ]
+    },
+    {
+     "code": "GBUS2010",
+     "name": "Global Business Analysis",
+     "credits": 3.0,
+     "credits_raw": "3",
+     "areas": [],
+     "source_pages": [
+      1
+     ]
+    },
+    {
+     "code": "GBUS4910",
+     "name": "Capstone Project",
+     "credits": 4.0,
+     "credits_raw": "4",
+     "areas": [],
+     "source_pages": [
+      1
+     ]
+    }
+   ],
+   "source_pages": [
+    1
+   ]
+  },
+  {
+   "name": "Required Course(s)",
+   "required_credits": 1.0,
+   "required_credits_raw": "1-4",
+   "note": "Note: GBUS 2040 OR SMBT 2100-2110",
+   "courses": [
+    {
+     "code": "GBUS2040",
+     "name": "Environmental, Social, and Governance (ESG) Corporate Project",
+     "credits": 1.0,
+     "credits_raw": "1",
+     "areas": [],
+     "source_pages": [
+      1
+     ]
+    },
+    {
+     "code": "SBMT2100",
+     "name": "Community Services Project",
+     "credits": 1.0,
+     "credits_raw": "1-4",
+     "areas": [],
+     "source_pages": [
+      1
+     ]
+    }
+   ],
+   "source_pages": [
+    1
+   ]
+  },
+  {
+   "name": "Required Course(s)",
+   "required_credits": 3.0,
+   "required_credits_raw": "3-4",
+   "note": "Note: GBUS 3030 OR ISOM 4780",
+   "courses": [
+    {
+     "code": "GBUS3030",
+     "name": "Global Business Case Studies",
+     "credits": 4.0,
+     "credits_raw": "4",
+     "areas": [],
+     "source_pages": [
+      1
+     ]
+    },
+    {
+     "code": "ISOM4780",
+     "name": "Integrated Planning and Execution",
+     "credits": 3.0,
+     "credits_raw": "3",
+     "areas": [],
+     "source_pages": [
+      1
+     ]
+    }
+   ],
+   "source_pages": [
+    1
+   ]
+  },
+  {
+   "name": "Elective(s)",
+   "required_credits": 15.0,
+   "required_credits_raw": "15-24",
+   "note": "Global Business Electives (Courses from the specified elective list, of which at least 6 credits from Area A, and at least 1 course from Area B and Area C, respectively. With approval of the program office, students may replace the requirement of completing one Additional Major/Extended Major/Minor (see 'Others' below) by taking additional 9 credits at 3000-level or above from this elective list, with at least 1 course from Area A out of the additional 9 credits.) Areas: A: Global Business; B: Global and Societal Perspective; C: Business Strategy and Innovation.",
+   "courses": [
+    {
+     "code": "GBUS2030",
+     "name": "From Zero to Exit - Journey of A Start-up",
+     "credits": 2.0,
+     "credits_raw": "2",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "GBUS2050",
+     "name": "Blue Ocean Strategy Innovation and Execution",
+     "credits": 2.0,
+     "credits_raw": "2",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "GBUS3010",
+     "name": "Global Perspectives on Contemporary Issues",
+     "credits": 3.0,
+     "credits_raw": "3",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "GBUS3040",
+     "name": "Business and ESG Management for Asia and Emerging Markets",
+     "credits": 3.0,
+     "credits_raw": "3",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "GBUS3050",
+     "name": "Deal Making in Asia and Emerging Markets",
+     "credits": 3.0,
+     "credits_raw": "3",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "GBUS3060",
+     "name": "Value Investing in Global Markets",
+     "credits": 3.0,
+     "credits_raw": "3",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "ACCT3610",
+     "name": "Business Law",
+     "credits": 3.0,
+     "credits_raw": "3",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "ECON4364",
+     "name": "International Trade and Investment",
+     "credits": 4.0,
+     "credits_raw": "4",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "ECON4474",
+     "name": "Hong Kong's Economy",
+     "credits": 4.0,
+     "credits_raw": "4",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "MARK3430",
+     "name": "Global Marketing",
+     "credits": 4.0,
+     "credits_raw": "4",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "MGMT3120",
+     "name": "Managerial Leadership",
+     "credits": 4.0,
+     "credits_raw": "4",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "MGMT3170",
+     "name": "Managing CSR (Corporate Social Responsibility)",
+     "credits": 3.0,
+     "credits_raw": "3",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "MGMT4230",
+     "name": "International Management",
+     "credits": 4.0,
+     "credits_raw": "4",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "MGMT4240",
+     "name": "Strategic Management in China",
+     "credits": 4.0,
+     "credits_raw": "4",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "MGMT4250",
+     "name": "Management Consulting",
+     "credits": 3.0,
+     "credits_raw": "3",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "SOSC4260",
+     "name": "China's Economic Transformation",
+     "credits": 3.0,
+     "credits_raw": "3",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "ECON4264",
+     "name": "Economics of Innovation and Entrepreneurship",
+     "credits": 4.0,
+     "credits_raw": "4",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "ISOM3900",
+     "name": "Decision Analytics",
+     "credits": 3.0,
+     "credits_raw": "3",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "ISOM4020",
+     "name": "Innovation Management and Technology Entrepreneurship",
+     "credits": 3.0,
+     "credits_raw": "3",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "ISOM4040",
+     "name": "Digital Strategy and Transformation",
+     "credits": 3.0,
+     "credits_raw": "3",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "ISOM4750",
+     "name": "Business Project Management",
+     "credits": 3.0,
+     "credits_raw": "3",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "ISOM4780",
+     "name": "Integrated Planning and Execution",
+     "credits": 3.0,
+     "credits_raw": "3",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "MARK3220",
+     "name": "Marketing Research",
+     "credits": 4.0,
+     "credits_raw": "4",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "MARK3480",
+     "name": "Pricing Strategy",
+     "credits": 4.0,
+     "credits_raw": "4",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "MARK3610",
+     "name": "Digital Marketing",
+     "credits": 4.0,
+     "credits_raw": "4",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "MARK4450",
+     "name": "Brand Management",
+     "credits": 4.0,
+     "credits_raw": "4",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "MGMT3140",
+     "name": "Negotiation",
+     "credits": 4.0,
+     "credits_raw": "4",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "MGMT3160",
+     "name": "Environmental Business Strategies",
+     "credits": 3.0,
+     "credits_raw": "3",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "MGMT4210",
+     "name": "Corporate Strategy",
+     "credits": 3.0,
+     "credits_raw": "3",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    },
+    {
+     "code": "MGMT4220",
+     "name": "Entrepreneurship and Innovation",
+     "credits": 4.0,
+     "credits_raw": "4",
+     "areas": [],
+     "source_pages": [
+      2
+     ]
+    }
+   ],
+   "source_pages": [
+    2
+   ]
+  },
+  {
+   "name": "Other(s)",
+   "required_credits": 0.0,
+   "required_credits_raw": "0",
+   "note": "Complete one Additional Major, Minor or Extended Major Program (Students pursuing Dual Degree Program in Technology and Management are exempted from this requirement); One regular term of study abroad.",
+   "courses": [],
+   "source_pages": [
+    3
+   ]
+  },
+  {
+   "name": "Required Course(s)",
+   "required_credits": 12.0,
+   "required_credits_raw": "12",
+   "note": "",
+   "courses": [
+    {
+     "code": "ENTR3030",
+     "name": "Social Innovations and Entrepreneurship",
+     "credits": 3.0,
+     "credits_raw": "3",
+     "areas": [],
+     "source_pages": [
+      3
+     ]
+    },
+    {
+     "code": "ENTR3360",
+     "name": "From Product Innovations to Successful Technology Startups",
+     "credits": 3.0,
+     "credits_raw": "3",
+     "areas": [],
+     "source_pages": [
+      3
+     ]
+    },
+    {
+     "code": "ENVR3310",
+     "name": "Green Business Strategy",
+     "credits": 3.0,
+     "credits_raw": "3",
+     "areas": [],
+     "source_pages": [
+      3
+     ]
+    },
+    {
+     "code": "ISDN4200",
+     "name": "Product Management",
+     "credits": 3.0,
+     "credits_raw": "3",
+     "areas": [],
+     "source_pages": [
+      3
+     ]
+    }
+   ],
+   "source_pages": [
+    3
+   ]
+  }
+ ],
+ "uncertain": [
+  "total_required_credits is a calculated value: the PDF does not state a fixed total for the major; it is the sum of the required_credits of all groups (using the lower bound for credit ranges such as 1-4, 3-4 and 15-24).",
+  "The Global Business Electives group requires 15-24 credits depending on whether the student replaces the Additional Major/Minor/Extended Major requirement with 9 additional elective credits.",
+  "The 'Other(s)' requirements (one Additional Major/Minor/Extended Major Program and one regular term of study abroad) carry no course credits in the PDF.",
+  "SBMT 2100-2110 is a course series; the JSON records it as SBMT2100 with credits_raw '1-4'.",
+  "The PDF header/footer shows '2026-27 GBUS (4Y) (2025-26 intake)', i.e. the document is the 2025-26 intake curriculum rendered on a 2026-27 template; the year is recorded as 2025-26 per the intake year."
+ ],
+ "parser": "ai_read_pdfplumber_text",
+ "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\major\\2025-26\\GBUS_BBA_in_Global_Business.pdf"
+}

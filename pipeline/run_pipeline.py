@@ -34,6 +34,22 @@ REPORTS_DIR = PIPELINE_DIR / "reports"
 SOURCE_DB = PROJECT_ROOT / "courses.db"
 
 
+def classify_type(code: str) -> str:
+    """按培养方案代码前缀判定 output 子目录。
+
+    MINOR-* → minor, EXTM-* → extended, SREQ-* → school, 其余 → major。
+    供 run_pipeline 写回路由与搬运脚本共用，需与导出/分支读取（rglob）解耦。
+    """
+    c = code.upper()
+    if c.startswith("MINOR-"):
+        return "minor"
+    if c.startswith("EXTM-"):
+        return "extended"
+    if c.startswith("SREQ-"):
+        return "school"
+    return "major"
+
+
 def load_index() -> list[dict]:
     data = json.loads(INDEX_JSON.read_text(encoding="utf-8"))
     return [d for d in data if d.get("status") == "downloaded"]
@@ -61,7 +77,8 @@ def run_one(target: dict, parser_name: str, force: bool, skip_llm: bool) -> Path
         print(f"[skip] PDF 不存在: {pdf_path}")
         return None
 
-    out_file = OUTPUT_DIR / f"requirements_{year}_{code}.json"
+    type_dir = classify_type(code)
+    out_file = OUTPUT_DIR / type_dir / code / f"requirements_{year}_{code}.json"
     if out_file.exists() and not force:
         print(f"[skip] 产物已存在（断点续跑）: {out_file.name}，--force 可覆盖")
         return out_file
@@ -86,7 +103,7 @@ def run_one(target: dict, parser_name: str, force: bool, skip_llm: bool) -> Path
         result_json["parser"] = doc.parser_name
         result_json["source_pdf"] = str(pdf_path)
 
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    (OUTPUT_DIR / type_dir / code).mkdir(parents=True, exist_ok=True)
     out_file.write_text(json.dumps(result_json, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"   -> {out_file.relative_to(PROJECT_ROOT)}")
     return out_file
@@ -95,7 +112,7 @@ def run_one(target: dict, parser_name: str, force: bool, skip_llm: bool) -> Path
 def run_crosscheck_all() -> None:
     from schemas import ExtractionResult
 
-    files = sorted(OUTPUT_DIR.glob("requirements_*.json"))
+    files = sorted(OUTPUT_DIR.rglob("requirements_*.json"))
     if not files:
         print("output/ 下没有 requirements_*.json，先运行抽取。")
         return
