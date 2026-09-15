@@ -225,6 +225,33 @@ cd pipeline
 
 `frontend/public/_headers` 为 `/assets/*` 配置 immutable 长缓存。免费档额度：无限请求、每月 500 次构建、单文件上限 20 MB（本项目最大产物约 1 MB）。
 
+## 8. MongoDB Atlas 同步（`scripts/sync_to_atlas.py`）
+
+**职责**：把 `frontend/public/data/` 的导出产物（255 份方案 + 1144 门课程 + 资料版本）幂等同步进 MongoDB，供新前端（Nuxt + NestJS）读取。本仓库自此的角色是「管线与数据源」。
+
+**实现原理**：
+
+1. **读导出产物而非 `pipeline/output/`**：`public/data/` 才是完成组合规则（`combos`）、层级池（`pool`）、分支（`branch`）后处理的成品，同步层因此**零领域逻辑**。
+2. **无损搬运**：`combos` / `pool` / `branch` / `note` / `source_ref` 原样入库，不在数据库端重算 —— 未来任何规则要启用都不需要重新抽取（抽取有真实 API 费用）。
+3. **幂等**：以 `(year, code)` 与 `code` 为键 `bulk_write` upsert，可安全重跑；`--prune` 才删除已下线方案/课程（默认关闭）。
+4. **不变量即闸门**：写入前先跑 `check_invariants`（数量、组数、`meta.years` 总和、组合结构）与共用 JSON Schema（`../grad-check-web/packages/shared/schema/`，存在时才校验），任一失败即退出且**不写入任何数据**。
+5. **无 Secret 即跳过**：未设置 `MONGODB_URI` 时输出 `::notice::` 并以 0 退出，Atlas 尚未建好不会让 CI 变红。
+
+```powershell
+# 只建構與校验，不连数据库
+python scripts/sync_to_atlas.py --dry-run
+
+# 实际同步（本机 Mongo 容器或 Atlas）
+$env:MONGODB_URI = "mongodb://localhost:27017"; python scripts/sync_to_atlas.py
+
+# 同步并清理已下线资料
+python scripts/sync_to_atlas.py --prune
+```
+
+`data_version` 取「排序后（档名 + 内容哈希）的聚合哈希」前 16 位，供前端标记资料新鲜度与快取失效。
+
+**关键文件**：`scripts/sync_to_atlas.py`（同步主脚本）、`scripts/requirements-sync.txt`（仅 `pymongo` + `jsonschema`，不与管线依赖混用）、`.github/workflows/sync-atlas.yml`（定时 + 产物变更自动触发）
+
 ---
 
 # 快速开始（前端，无需后端）
@@ -264,12 +291,15 @@ npm run dev    # http://localhost:5173
 # 前端（112 例 / 9 文件）
 cd frontend; npm test; npm run lint
 
-# 管线 + 导出脚本（5 例 + 28 例）
+# 管线 + 脚本（5 例 + 47 例：组合解析 28 + Atlas 同步 19）
 cd pipeline; ..\.venv\Scripts\python.exe -m pytest tests -q
 ..\.venv\Scripts\python.exe -m pytest scripts/tests -q
 
 # 静态数据完整性断言
 python scripts/export_static_data.py --check
+
+# 同步前的完整校验（不连数据库）
+python scripts/sync_to_atlas.py --dry-run
 ```
 
 # 故障排查
@@ -311,11 +341,19 @@ pipeline/          离线管线：parsers（可插拔解析）/ llm_extract / cr
                    reports/  学分差异与分支审核报告（gitignore）
 scripts/           export_static_data.py —— 管线产物 + courses.db → 前端静态数据
                    combo_rules.py —— 官方 Note 的 OR 组合确定性解析（纯函数）
-                   tests/ —— 解析规则单测
+                   sync_to_atlas.py —— 导出产物 → MongoDB（幂等 upsert + 不变量闸门）
+                   requirements-sync.txt —— 同步用途的 Python 依赖
+                   tests/ —— 解析规则与同步逻辑单测
 courses.db         官方课程库 1144 门课（只读原始数据）
 unpress_pdf/       官方培养方案 PDF 与爬虫索引（本地独有，已 gitignore）
 .github/workflows/ CI：frontend / pipeline / data 三个门禁
+                   sync-atlas.yml：产物 → MongoDB Atlas 同步（定时 / 产物变更触发）
 ```
+
+> **与主站的关系**：前后端分离的新站（Nuxt + NestJS + MongoDB）位于同级目录 `../grad-check-web/`，
+> 它只透过 MongoDB 与共用的 JSON Schema 与本仓库耦合。本仓库的产物是唯一事实来源，
+> 新站不含任何管线代码。跨语言契约（`program/course/meta.schema.json`）定义在新仓库的
+> `packages/shared/schema/`，由本仓库的同步脚本在校验时消费。
 
 # 已知约束
 
@@ -326,3 +364,6 @@ unpress_pdf/       官方培养方案 PDF 与爬虫索引（本地独有，已 g
 - **组合解析的边界**：散文体（`... level 3 or above ... exempted`、`Courses from the specified list, of which at least 2 courses ...`）一律降级为官方说明原文，当前 `combos_unparsed.md` 已清零；但符号族（`+` `/` `one of` / 相邻小写 `or`）覆盖面更广、误判风险也更高，**26 条识别结果列在 `pipeline/reports/combos_parsed.md` 供抽查**（两份报告均需在本机跑一次导出生成，`pipeline/reports/` 未入库）。误判成组合会直接算错学分，比漏识别严重——新增句式请先补 `scripts/tests/test_combo_rules.py` 的用例再改规则。
 - **符号族解析会在一行中部截断**：表达式中间遇到英文单词（如 `... + capstone EMIA 4990 (0) or EMIA 4991 (3) + ...` 里的 `capstone`）即停止，只取前半段（这是刻意的保守设计）。因此 EXTM 系的「核心要求」行目前只解析到第一个散文词为止，后续 `one of` 段仍按平铺展示。
 - **总览页与附加要求卡的「门数」仍是平铺口径**：只有要求明细页改用有效门数（组合按 1 门计），`OverviewPage` / `AttachedAuditCard` 的门数暂按 `group.courses.length` 显示，后续可统一为 `effectiveCourseCount`。
+- **同步脚本不建索引**：MongoDB 索引由 API 端（Mongoose `autoIndex`）建立，避免索引定义分散两处产生漂移。若日後改为在资料库端建索引，请同时移除 API 的 `autoIndex`。
+- **`jsonschema` 校验是可选加强项**：新仓库不在预期路径时（例如本仓库单独 checkout 的 CI）会自动略过，不视为失败；不变量校验（数量/组数/组合结构）则永远执行。
+- **官方课程库存在范围课号**（`ENGG2991-2993`、`SBMT2100-2110`、`HUMA2000-2001` 等 6 个）：同步时取其起首课号的学科与级别（`ENGG2991-2993` → `ENGG` / 2991），否则这些课会从学科与级别筛选中消失。
