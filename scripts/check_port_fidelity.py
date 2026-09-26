@@ -106,16 +106,31 @@ def main() -> int:
             bad.append((name, len(a), len(b), a[i:i + 1], b[i:i + 1]))
 
     for name, la, lb, x, y in bad:
-        print(f"[FAIL] {name}: 逻辑行 {la}->{lb} 首个差异 @\n  HEAD: {x}\n  现在: {y}", file=sys.stderr)
+        print(f"[FAIL] {name}: 逻辑行 {la}->{lb} 首个差异 @\n  基准: {x}\n  现在: {y}", file=sys.stderr)
     if missing:
         print(f"[warn] 未参与比对：{missing}", file=sys.stderr)
-    # 空转防线：一个都没比到就是闸门失效，不是通过。
-    if checked < len(pairs):
-        print(f"[FAIL] 应比对 {len(pairs)} 个文件，实际只比到 {checked} 个 —— 基准 ref 或路径已失效", file=sys.stderr)
+    # 空转防线：期望数必须来自**基准树**，不能来自"当前存在哪些文件"的自指计数
+    # （否则藏起一个文件，期望与实到一起变小，闸门照样绿 —— 上一版就是这样）。
+    # 期望数来自「基准树里这些模块确实存在」逐一探测：
+    # 不能扫目录 —— frontend/src/lib 下还有 utils.ts / static-data.ts 两个本就不该移动的文件，
+    # 把它们算进期望会造成假失败（实测踩过）。也不能用当前目录的自指计数（会随藏文件一起变小）。
+    expected = 0
+    for stem in MODULES + ["types"]:
+        sub = "lib/" if stem != "types" else ""
+        for suffix in ("", ".test"):
+            if git_show(f"{ref}:{OLD_PREFIX}{sub}{stem}{suffix}.ts") is not None:
+                expected += 1
+    if not expected:
+        print(f"[FAIL] 基准 {ref[:7]} 下找不到任何待比对文件 —— 基准或路径已失效", file=sys.stderr)
+        return 1
+    if checked < expected:
+        print(f"[FAIL] 基准有 {expected} 个待比对文件，实际只比到 {checked} 个 —— "
+              "有文件被藏起/改名/丢失，闸门不得判绿", file=sys.stderr)
         return 1
     if bad:
         return 1
-    print(f"[ok] {checked} 个文件的非 import 逻辑行与基准 {ref[:7]} 逐字一致 —— 领域层口径未被平移改动")
+    print(f"[ok] {checked}/{expected} 个文件的非 import 逻辑行与基准 {ref[:7]} 逐字一致"
+          " —— 领域层口径未被平移改动")
     return 0
 
 

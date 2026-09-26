@@ -13,6 +13,15 @@ const payload = await getPayload({ config })
 const one = await payload.find({ collection: 'programs', limit: 1, depth: 0 })
 const base = one.docs[0] as unknown as Record<string, unknown>
 
+// 自测不得污染真实记录：借一份真实文档的形状当模板，但所有写入都落在
+// 独立的 scratch 文档上，结束时销毁。（上一版直接改真实方案，把
+// 2026-27 SREQ-SSCI 的 title 改成了「自测-...」并被评审抓到。）
+const scratch = await payload.create({
+  collection: 'programs',
+  data: { year: '0000-00', code: 'ZZZ-SELFTEST', category: 'major', source: base.source },
+})
+const docId = scratch.id as string
+
 type Case = { name: string; mode: 'create' | 'update'; data: Record<string, unknown>; expect: string | null }
 const CASES: Case[] = [
   {
@@ -65,7 +74,7 @@ for (const c of CASES) {
   let caught: string | null = null
   try {
     if (c.mode === 'create') await payload.create({ collection: 'programs', data: c.data })
-    else await payload.update({ collection: 'programs', id: base.id as string, data: c.data })
+    else await payload.update({ collection: 'programs', id: docId, data: c.data })
   } catch (err) {
     caught = (err as Error).message
   }
@@ -85,14 +94,13 @@ for (const c of CASES) {
 // 反向确认：闸门没有误伤正常数据
 const ok = await payload.update({
   collection: 'programs',
-  id: base.id as string,
+  id: docId,
   data: { ...base, revision: Number(base.revision ?? 1) + 1 },
 })
 console.log(`  ${ok?.id ? '✅ 未误伤' : '❌ 误伤'}  正常改写应当通过（revision -> ${(ok as any).revision}）`)
 
 // ---- 版本与回滚：选 Payload 而非 PocketBase 的唯一理由，必须实证 ----
 console.log('\n[版本/回滚]')
-const docId = base.id as string
 const stamp = '自测-' + Date.now()
 await payload.update({ collection: 'programs', id: docId, data: { title: stamp + ' A' } })
 await payload.update({ collection: 'programs', id: docId, data: { title: stamp + ' B' } })
@@ -121,6 +129,11 @@ if (!okRestore) failed++
 console.log(`  ${okRestore ? '✅' : '❌'} restoreVersion 回滚到最早版本: 得到 ${JSON.stringify(reverted)}，期望 ${JSON.stringify(wantA)}`)
 const whoChanged = versions[0]?.updatedBy ?? null
 console.log(`  ℹ️ 版本记录里的改动者字段: ${JSON.stringify(whoChanged)}（null = 本地 API 无用户上下文，浏览器改动才会带 user）`)
+
+// 清理：自测不得在权威数据里留下痕迹
+await payload.delete({ collection: 'programs', id: docId })
+const left = await payload.findVersions({ collection: 'programs', where: { parent: { equals: docId } }, limit: 5, depth: 0 })
+console.log(`  🧹 scratch 文档已销毁；其残留版本记录 ${left.docs.length} 条（parent 已删，不影响真实方案）`)
 
 console.log(failed ? `\n[FAIL] ${failed} 项未达预期` : '\n[ok] 全部闸门按 §5 语义拦住、未误伤正常数据，且版本回滚可用')
 process.exit(failed ? 1 : 0)

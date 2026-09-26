@@ -71,9 +71,13 @@ def main():
         return 1
     committed = json.loads(args.manifest.read_text(encoding="utf-8"))
 
-    # 只比 files 与 schema_version。baseline_commit 是元信息，不是被守护的事实：
-    # 拿整份文档做逐字比对会让「任何一次代码提交」都把闸门刷红（实测踩过，且当时零输出）。
+    # 空转防线：比对集合本身不能为空/骤减，否则「0 个文件逐 blob 一致」也是绿 —— 假绿。
     reasons: list[str] = []
+    expected = committed.get("file_count")
+    if not files:
+        reasons.append("当前 HEAD 下受保护文件为 0 —— SCOPE 失效，闸门无意义")
+    elif isinstance(expected, int) and len(files) < expected:
+        reasons.append(f"受保护文件数 {len(files)} < 基线记录 {expected} —— 有文件从基准中消失")
     if committed.get("schema_version") != built.get("schema_version"):
         reasons.append(f"schema_version 变了：{committed.get('schema_version')} -> {built.get('schema_version')}")
     old = committed.get("files", {})

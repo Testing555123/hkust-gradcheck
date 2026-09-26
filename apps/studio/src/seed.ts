@@ -100,8 +100,10 @@ async function main() {
   const all = await payload.find({ collection: 'programs', limit: 0, depth: 0 })
   const docs = all.docs as unknown as { source: SourceDoc }[]
   let groups = 0
-  let withSourcePages = 0
-  let withRawCredits = 0
+  let spKey = 0
+  let spNonEmpty = 0
+  let rawKey = 0
+  let rawNonEmpty = 0
   let branchDocs = 0
   let courseRefs = 0
   let absLeaks = 0
@@ -112,8 +114,10 @@ async function main() {
     for (const g of gs) {
       groups++
       courseRefs += g.courses?.length ?? 0
-      if (g.source_pages) withSourcePages++
-      if ((g as Record<string, unknown>).required_credits_raw !== undefined) withRawCredits++
+      // 注意：空数组在 JS 里是 truthy，`if (g.source_pages)` 会把"有键但为空"算成覆盖。
+      if ('source_pages' in g) { spKey++; if (Array.isArray(g.source_pages) && g.source_pages.length) spNonEmpty++ }
+      const raw = (g as Record<string, unknown>).required_credits_raw
+      if ('required_credits_raw' in g) { rawKey++; if (typeof raw === 'string' && raw.trim()) rawNonEmpty++ }
       if (g.branch_kind) branched = true
     }
     if (branched) branchDocs++
@@ -127,12 +131,14 @@ async function main() {
     if (!ok) bad++
     console.log(`  ${ok ? '✅' : '❌'} ${name}: ${actual} (期望 ${want})`)
   }
-  console.log(`  ${withSourcePages === groups ? '✅' : '❌'} source_pages 覆盖率: ${withSourcePages}/${groups}`)
-  console.log(`  ${withRawCredits === groups ? '✅' : '❌'} required_credits_raw 覆盖率: ${withRawCredits}/${groups}`)
+  console.log(`  ${spKey === groups ? '✅' : '❌'} source_pages 键存在率: ${spKey}/${groups}（其中值非空 ${spNonEmpty}）`)
+  // 诚实口径：键存在 != 有内容。实测 1753 组里 required_credits_raw 键全在，
+  // 但**值非空只有 1678**（75 组是空串）。只报"覆盖率 1753/1753"会高估数据完整度。
+  console.log(`  ℹ️ required_credits_raw 键存在 ${rawKey}/${groups}，其中值非空 ${rawNonEmpty}`)
   console.log(`  ℹ️ 课程引用数: ${courseRefs}`)
   console.log(`  ${absLeaks === 0 ? '✅' : '❌'} DB 内含绝对路径的 source_pdf: ${absLeaks} 份（必须为 0）`)
-  if (withSourcePages !== groups) bad++
-  if (withRawCredits !== groups) bad++
+  if (spKey !== groups) bad++
+  if (rawKey !== groups) bad++
   if (absLeaks !== 0) bad++
 
   const secretOk = existsSync(path.join(REPO, 'apps/studio/.env'))
