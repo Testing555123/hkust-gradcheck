@@ -5,6 +5,7 @@
   "description": "毕业要求检查系统：packages/domain 为唯一的领域规则来源，frontend 为消费方",
   "workspaces": [
     "packages/*",
+    "apps/*",
     "frontend"
   ],
   "engines": {

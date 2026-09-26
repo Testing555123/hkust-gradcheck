@@ -43,12 +43,23 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("mode", choices=("gen", "check"))
     ap.add_argument("--manifest", type=Path, default=ROOT / "baseline" / "manifest.json")
+    ap.add_argument("--allow-dirty", action="store_true",
+                    help="gen 时允许工作树存在未提交的权威数据改动（默认拒绝）")
     args = ap.parse_args()
     head, files, payload = build()
+    built = json.loads(payload)
     dirty = {ln[3:].strip() for ln in git("status", "--porcelain", "--", *SCOPE).splitlines()}
     drift = sorted(p for p in dirty if p in files)
 
     if args.mode == "gen":
+        # 关键防线：gen 会重钉 baseline_commit。若权威数据此刻是脏的，一次 gen
+        # 就会把坏数据悄悄升格成新基线（本仓库当前就有 58 个未提交数据改动，真风险）。
+        if drift and not args.allow_dirty:
+            print(f"[FAIL] 工作树有 {len(drift)} 个权威数据文件未提交，拒绝把脏状态钉成新基线。"
+                  f"\n  先提交或还原它们；确有必要则加 --allow-dirty", file=sys.stderr)
+            for p in drift[:5]:
+                print(f"    {p}", file=sys.stderr)
+            return 1
         args.manifest.parent.mkdir(parents=True, exist_ok=True)
         args.manifest.write_text(payload, encoding="utf-8")
         print(f"[gen] {head[:7]} · 钉死 {len(files)} 个权威数据文件；"
@@ -58,15 +69,30 @@ def main():
     if not args.manifest.exists():
         print("[FAIL] 基准清单不存在", file=sys.stderr)
         return 1
-    if args.manifest.read_text(encoding="utf-8") != payload:
-        old = json.loads(args.manifest.read_text(encoding="utf-8")).get("files", {})
-        for p in sorted(set(old) ^ set(files)):
-            print(f"[FAIL] 基准外的文件出现/消失：{p}", file=sys.stderr)
-        for p in sorted(set(old) & set(files)):
-            if old[p] != files[p]:
-                print(f"[FAIL] 内容已变：{p}  {old[p][:8]} -> {files[p][:8]}", file=sys.stderr)
+    committed = json.loads(args.manifest.read_text(encoding="utf-8"))
+
+    # 只比 files 与 schema_version。baseline_commit 是元信息，不是被守护的事实：
+    # 拿整份文档做逐字比对会让「任何一次代码提交」都把闸门刷红（实测踩过，且当时零输出）。
+    reasons: list[str] = []
+    if committed.get("schema_version") != built.get("schema_version"):
+        reasons.append(f"schema_version 变了：{committed.get('schema_version')} -> {built.get('schema_version')}")
+    old = committed.get("files", {})
+    for p in sorted(set(old) ^ set(files)):
+        reasons.append(f"基准外的文件出现/消失：{p}")
+    for p in sorted(set(old) & set(files)):
+        if old[p] != files[p]:
+            reasons.append(f"内容已变：{p}  {old[p][:8]} -> {files[p][:8]}")
+    if committed.get("baseline_commit") != head:
+        print(f"[info] 基线钉在 {committed.get('baseline_commit','?')[:7]}，当前 HEAD 是 {head[:7]}"
+              "（正常：基线不随代码提交移动）")
+    if reasons:
+        for r in reasons[:40]:
+            print(f"[FAIL] {r}", file=sys.stderr)
+        if len(reasons) > 40:
+            print(f"[FAIL] …另有 {len(reasons) - 40} 条", file=sys.stderr)
+        print(f"[FAIL] 基准校验未通过，共 {len(reasons)} 条 —— 需重新 gen 才算有意推进基线", file=sys.stderr)
         return 1
-    print(f"[ok] 基准校验通过：{head[:7]} · {len(files)} 个文件逐 blob 一致")
+    print(f"[ok] 基准校验通过：{committed.get('baseline_commit','?')[:7]} · {len(files)} 个文件逐 blob 一致")
     if drift:
         print(f"[warn] 工作树有 {len(drift)} 个未提交改动尚未进基准，例：{drift[:3]}")
     return 0
