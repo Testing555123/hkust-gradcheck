@@ -6,8 +6,8 @@ import {
   isMajor,
   kindOf,
   matchProgramsByTitle,
-} from "@/lib/program-groups";
-import type { ProgramInfo } from "@/types";
+} from "./program-groups";
+import type { ProgramInfo } from "../types";
 
 const p = (code: string, title = `Title ${code}`): ProgramInfo => ({
   year: "2026-27",

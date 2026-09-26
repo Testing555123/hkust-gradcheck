@@ -4,7 +4,7 @@ import type {
   CourseStatus,
   ProgramTreeData,
   RequirementGroup,
-} from "@/types";
+} from "../types";
 
 /** 从课程码抽取层级（4 位数字）：MATH2010 → 2010；无数字返回 0 */
 export function courseLevel(code: string): number {

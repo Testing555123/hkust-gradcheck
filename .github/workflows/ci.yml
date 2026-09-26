@@ -18,23 +18,24 @@ jobs:
         with:
           node-version: "20"
           cache: npm
-          cache-dependency-path: frontend/package-lock.json
+          cache-dependency-path: package-lock.json
 
+      # 领域层在 packages/domain、消费方在 frontend/，二者同属一个 npm workspace，
+      # 因此安装与脚本一律在仓库根跑（`npm -w <pkg> run …`）。
       - name: Install deps
         run: npm ci
-        working-directory: frontend
 
       - name: Lint
         run: npm run lint
-        working-directory: frontend
+
+      - name: 黄金基准与平移忠诚度校验
+        run: npm run baseline:check && npm run fidelity:check
 
       - name: Test
         run: npm test
-        working-directory: frontend
 
       - name: Build
         run: npm run build
-        working-directory: frontend
 
   pipeline:
     runs-on: ubuntu-latest

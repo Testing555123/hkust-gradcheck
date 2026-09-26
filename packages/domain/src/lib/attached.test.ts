@@ -4,7 +4,7 @@ import {
   schoolReqCode,
   selectableAttached,
 } from "./attached";
-import type { ProgramInfo } from "@/types";
+import type { ProgramInfo } from "../types";
 
 function program(year: string, code: string, title?: string): ProgramInfo {
   return { year, code, title: title ?? code, total_required_credits: 0 };

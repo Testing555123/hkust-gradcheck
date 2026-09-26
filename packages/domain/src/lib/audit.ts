@@ -4,9 +4,9 @@ import type {
   GroupAudit,
   ProgramAudit,
   RequirementGroup,
-} from "@/types";
-import { filterGroupsByBranch } from "@/lib/branch";
-import { effectiveCourses } from "@/lib/combos";
+} from "../types";
+import { filterGroupsByBranch } from "./branch";
+import { effectiveCourses } from "./combos";
 
 const clampPct = (n: number) => Math.max(0, Math.min(100, n));
 

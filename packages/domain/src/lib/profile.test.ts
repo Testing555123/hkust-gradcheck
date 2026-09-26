@@ -8,7 +8,7 @@ import {
   resolveSelection,
   yearsOf,
 } from "./profile";
-import type { ProgramInfo } from "@/types";
+import type { ProgramInfo } from "../types";
 
 const P = (year: string, code: string, title = `${code} Program`): ProgramInfo => ({
   year,

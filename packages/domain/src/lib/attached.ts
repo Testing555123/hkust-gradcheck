@@ -5,8 +5,8 @@
  * 输出应叠加展示的附加方案清单（含可用性降级标记）。
  */
 
-import { schoolOf } from "@/lib/common-core";
-import type { ProgramInfo } from "@/types";
+import { schoolOf } from "./common-core";
+import type { ProgramInfo } from "../types";
 
 export type AttachedKind = "minor" | "school" | "extm";
 

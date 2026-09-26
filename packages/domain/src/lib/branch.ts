@@ -1,4 +1,4 @@
-import type { BranchOption, RequirementGroup } from "@/types";
+import type { BranchOption, RequirementGroup } from "../types";
 
 /**
  * 互斥分支（Track / Option）聚合与过滤：纯函数，O(n) 单次遍历，无副作用。

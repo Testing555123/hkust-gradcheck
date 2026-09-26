@@ -8,8 +8,8 @@ import {
   effectiveCourseCount,
   effectiveCourses,
   isComboComplete,
-} from "@/lib/combos";
-import type { ComboGroup, CourseStatus, RequirementGroup } from "@/types";
+} from "./combos";
+import type { ComboGroup, CourseStatus, RequirementGroup } from "../types";
 
 function course(code: string, credits: number) {
   return { code, name: `Course ${code}`, credits };

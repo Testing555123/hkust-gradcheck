@@ -5,7 +5,7 @@
  * 选择器需要按类别分组展示，否则 60+ 条目里主修与辅修无法区分。
  */
 
-import type { ProgramInfo } from "@/types";
+import type { ProgramInfo } from "../types";
 
 export type ProgramKind = "major" | "extm" | "minor" | "school";
 

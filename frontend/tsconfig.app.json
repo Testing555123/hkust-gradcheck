@@ -22,9 +22,21 @@
     "noFallthroughCasesInSwitch": true,
     "verbatimModuleSyntax": false,
 
-    /* Paths */
+    /* Paths —— 领域层在 ../packages/domain（唯一规则定义处），与 vite.config.ts 的 alias 一一对应 */
     "baseUrl": ".",
     "paths": {
+      "@/types": ["../packages/domain/src/types"],
+      "@/lib/attached": ["../packages/domain/src/lib/attached"],
+      "@/lib/audit": ["../packages/domain/src/lib/audit"],
+      "@/lib/branch": ["../packages/domain/src/lib/branch"],
+      "@/lib/combos": ["../packages/domain/src/lib/combos"],
+      "@/lib/common-core": ["../packages/domain/src/lib/common-core"],
+      "@/lib/course-filter": ["../packages/domain/src/lib/course-filter"],
+      "@/lib/group-filter": ["../packages/domain/src/lib/group-filter"],
+      "@/lib/pools": ["../packages/domain/src/lib/pools"],
+      "@/lib/profile": ["../packages/domain/src/lib/profile"],
+      "@/lib/program-groups": ["../packages/domain/src/lib/program-groups"],
+      "@/lib/transcript": ["../packages/domain/src/lib/transcript"],
       "@/*": ["./src/*"]
     }
   },

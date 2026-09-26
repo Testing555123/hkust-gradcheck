@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { computeProgramAudit } from "./audit";
 import { collectBranches, filterGroupsByBranch, isGroupActive, totalCreditsWithBranch } from "./branch";
-import type { RequirementGroup } from "@/types";
+import type { RequirementGroup } from "../types";
 
 /**
  * 2025-26 MATH：公共核心 20 学分 + 8 个互斥 Track，

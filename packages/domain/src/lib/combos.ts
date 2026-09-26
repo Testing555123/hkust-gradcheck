@@ -5,7 +5,7 @@ import type {
   CourseRef,
   CourseStatus,
   RequirementGroup,
-} from "@/types";
+} from "../types";
 
 /**
  * 组合规则（OR / AND）口径：把组内课程折叠成「有效课程」用于学分核算。

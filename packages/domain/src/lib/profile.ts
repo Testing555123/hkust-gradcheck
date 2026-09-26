@@ -1,6 +1,6 @@
 /** 用户身份（入学信息）相关纯逻辑：不依赖 React，便于单测。 */
 
-import type { ProgramInfo } from "@/types";
+import type { ProgramInfo } from "../types";
 
 export interface Profile {
   /** 入学学年，如 "2026-27" */

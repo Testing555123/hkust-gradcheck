@@ -1,0 +1,25 @@
+{
+  "name": "newone",
+  "private": true,
+  "version": "0.0.0",
+  "description": "毕业要求检查系统：packages/domain 为唯一的领域规则来源，frontend 为消费方",
+  "workspaces": [
+    "packages/*",
+    "frontend"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "npm -w frontend run test",
+    "test:domain": "npm -w @newone/domain run test",
+    "build": "npm -w frontend run build",
+    "lint": "npm -w frontend run lint",
+    "typecheck:domain": "npm -w @newone/domain run typecheck",
+    "baseline": "python scripts/baseline_manifest.py gen",
+    "baseline:check": "python scripts/baseline_manifest.py check",
+    "fidelity:check": "python scripts/check_port_fidelity.py",
+    "data:check": "python scripts/export_static_data.py --check",
+    "verify": "npm run baseline:check && npm run fidelity:check && npm run data:check && npm run typecheck:domain && npm test && npm run build"
+  }
+}

@@ -9,9 +9,9 @@
  * - pending（未达标）：已开始修读但未完成
  * - untouched（未开始）：尚未修读任何学分
  */
-import type { CourseStatus, RequirementGroup } from "@/types";
-import type { CommonCoreGroup } from "@/lib/common-core";
-import { computeGroupAudit } from "@/lib/audit";
+import type { CourseStatus, RequirementGroup } from "../types";
+import type { CommonCoreGroup } from "./common-core";
+import { computeGroupAudit } from "./audit";
 
 export type GroupFilterState = "all" | "done" | "pending" | "untouched";
 

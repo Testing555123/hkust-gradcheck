@@ -10,8 +10,8 @@
  * 的对齐方式以 AR 官网为准（UI 已注明）。
  */
 
-import courseMapJson from "@/data/common-core-course-map.json";
-import type { CourseStatus } from "@/types";
+import courseMapJson from "../data/common-core-course-map.json";
+import type { CourseStatus } from "../types";
 
 /* ---------- 规则表 ---------- */
 

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { computeGroupAudit, computeProgramAudit } from "./audit";
-import type { CourseRef, RequirementGroup } from "@/types";
+import type { CourseRef, RequirementGroup } from "../types";
 
 function course(code: string, credits: number): CourseRef {
   return { code, name: `Course ${code}`, credits };
