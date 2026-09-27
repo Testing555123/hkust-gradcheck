@@ -9,9 +9,7 @@
     "typecheck": "tsc --noEmit -p tsconfig.json"
   },
   "devDependencies": {
-    "pdfjs-dist": "^6.3.289",
     "typescript": "~5.6.2",
-    "vite": "^5.4.10",
     "vitest": "^2.1.9"
   }
 }

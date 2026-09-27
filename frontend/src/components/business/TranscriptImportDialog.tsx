@@ -24,8 +24,8 @@ import { useSelection } from "@/stores/selection";
 import { codesOf, yearsOf } from "@/lib/profile";
 import { selectableAttached } from "@/lib/attached";
 import { isMajor, matchProgramsByTitle } from "@/lib/program-groups";
+import { extractTranscriptText } from "@/lib/pdf-text";
 import {
-  extractTranscriptText,
   parseTranscript,
   TranscriptParseError,
   type TranscriptCourseStatus,

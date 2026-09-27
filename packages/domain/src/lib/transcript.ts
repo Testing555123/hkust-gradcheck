@@ -72,42 +72,7 @@ const TABLE_HEADER_RE =
   /Course\s+Code\s+Course\s+Title\s+Credit\s+Attempted\s+Credit\s+Earned\s+Grade/g;
 const NOISE_RE =
   /\b(TGA:\s*[\d.*]+|CGA:\s*[\d.*]+|Cumulative\s+Credits\s+Earned:\s*[\d.]+|- End of Transcript -|Page \d+ of \d+)/g;
-const MIN_TEXT_LENGTH = 50;
-
-/* ---------- PDF 抽文本（浏览器端，动态加载 pdfjs 保持主包干净） ---------- */
-
-export async function extractTranscriptText(file: File): Promise<string> {
-  let text = "";
-  try {
-    const [pdfjs, worker] = await Promise.all([
-      import("pdfjs-dist"),
-      import("pdfjs-dist/build/pdf.worker.min.mjs?url"),
-    ]);
-    pdfjs.GlobalWorkerOptions.workerSrc = worker.default;
-    const data = new Uint8Array(await file.arrayBuffer());
-    const doc = await pdfjs.getDocument({ data }).promise;
-    for (let i = 1; i <= doc.numPages; i++) {
-      const page = await doc.getPage(i);
-      const content = await page.getTextContent();
-      for (const item of content.items) {
-        const it = item as { str?: string; hasEOL?: boolean };
-        if (typeof it.str === "string") text += it.str;
-        if (it.hasEOL) text += "\n";
-      }
-      text += "\n";
-    }
-  } catch (error) {
-    console.error("transcript: PDF 文本抽取失败", error);
-    if (error instanceof TranscriptParseError) throw error;
-    throw new TranscriptParseError("无法读取该 PDF，请确认文件未损坏且为 unofficial transcript。");
-  }
-  if (text.trim().length < MIN_TEXT_LENGTH) {
-    throw new TranscriptParseError(
-      "该 PDF 没有文本层（可能是扫描件）。请从 SIS 重新下载 unofficial transcript，或改用手动勾选。"
-    );
-  }
-  return text;
-}
+export const MIN_TEXT_LENGTH = 50;
 
 /* ---------- 解析 ---------- */
 

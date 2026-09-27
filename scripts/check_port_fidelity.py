@@ -12,6 +12,7 @@ import argparse
 import json
 import subprocess
 import sys
+from collections import Counter
 from pathlib import Path
 
 if hasattr(sys.stdout, "reconfigure"):
@@ -23,6 +24,11 @@ MODULES = ["attached", "audit", "branch", "combos", "common-core", "course-filte
            "group-filter", "pools", "profile", "program-groups", "transcript"]
 OLD_PREFIX = "frontend/src/"
 NEW_PREFIX = "packages/domain/src/"
+# 被拆分的文件：一个旧文件 = 若干新文件之和。transcript 的浏览器 IO 段（File API +
+# Vite 专有 ?url）移到 frontend/src/lib/pdf-text.ts —— 留在领域层，后端一 import 就炸。
+SPLITS: dict[str, list[str]] = {
+    "transcript": ["packages/domain/src/lib/transcript.ts", "frontend/src/lib/pdf-text.ts"],
+}
 
 
 def git_show(rev_path: str) -> str | None:
@@ -46,6 +52,14 @@ def logic_lines(src: str) -> list[str]:
             continue
         if s.startswith("} from") or s.startswith("export * from"):
             continue
+        # 注释不是口径：闸门主张的是「逻辑行未变」，说明性注释允许增删。
+        # 被注释掉的代码仍会被抓到 —— 那属于代码行变化。
+        if s.startswith(("//", "/*", "*/", "*")):
+            continue
+        # 剥掉可见性关键字：T2b 为跨包复用把 MIN_TEXT_LENGTH 改成导出，
+        # 可见性变化不是口径变化。
+        if s.startswith("export ") and not s.startswith("export default"):
+            s = s[len("export "):]
         keep.append(s)
     return keep
 
@@ -82,31 +96,41 @@ def main() -> int:
         sub = "lib/" if stem != "types" else ""
         for suffix in ("", ".test"):
             rel = f"{sub}{stem}{suffix}.ts"
-            if (ROOT / NEW_PREFIX / rel).exists():
-                pairs.append((f"{stem}{suffix}", NEW_PREFIX + rel, OLD_PREFIX + rel))
+            news = SPLITS.get(f"{stem}{suffix}", [NEW_PREFIX + rel])
+            if all((ROOT / n).exists() for n in news):
+                pairs.append((f"{stem}{suffix}", news, OLD_PREFIX + rel))
     if args.list:
-        for name, new, old in pairs:
-            print(f"{name:26} {old}  ->  {new}")
+        for name, news, old in pairs:
+            print(f"{name:26} {old}  ->  {' + '.join(news)}")
         return 0
 
     checked, bad, missing = 0, [], []
-    for name, new, old in pairs:
-        path = ROOT / new
-        if not path.exists():
-            missing.append(name)
-            continue
+    for name, news, old in pairs:
         before = git_show(f"{ref}:{old}")
         if before is None:
             missing.append(f"{name}({ref[:7]} 无 {old})")
             continue
         checked += 1
-        a, b = logic_lines(before), logic_lines(path.read_text(encoding="utf-8"))
-        if a != b:
+        a = logic_lines(before)
+        parts = [logic_lines((ROOT / n).read_text(encoding="utf-8")) for n in news]
+        if len(parts) == 1:
+            b = parts[0]
+            same = a == b
             i = next((k for k, (x, y) in enumerate(zip(a, b)) if x != y), min(len(a), len(b)))
-            bad.append((name, len(a), len(b), a[i:i + 1], b[i:i + 1]))
+            xa, xb = a[i:i + 1], b[i:i + 1]
+        else:
+            # 拆分文件：整块搬移后顺序会变，故比**多重集**（少一行或多一行都会红）
+            ca, cb = Counter(a), Counter(sum(parts, []))
+            same = ca == cb
+            only_a = list((ca - cb).elements())[:2]
+            only_b = list((cb - ca).elements())[:2]
+            xa, xb = only_a or ["(无缺失)"], only_b or ["(无多余)"]
+        if not same:
+            bad.append((name, len(a), sum(len(p) for p in parts), xa, xb))
 
     for name, la, lb, x, y in bad:
-        print(f"[FAIL] {name}: 逻辑行 {la}->{lb} 首个差异 @\n  基准: {x}\n  现在: {y}", file=sys.stderr)
+        print(f"[FAIL] {name}: 逻辑行 {la}->{lb}\n  基准里有、现在没有: {x}\n  现在有、基准里没有: {y}",
+              file=sys.stderr)
     if missing:
         print(f"[warn] 未参与比对：{missing}", file=sys.stderr)
     # 空转防线：期望数必须来自**基准树**，不能来自"当前存在哪些文件"的自指计数
