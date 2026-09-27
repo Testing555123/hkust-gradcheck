@@ -2,114 +2,1089 @@
   "year": "2024-25",
   "code": "EXTM-DMCA",
   "title": "Extended Major Program in Digital Media and Creative Arts",
-  "total_required_credits": 21.0,
+  "total_required_credits": 21,
   "groups": [
     {
       "name": "Required Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "Core required: EMIA 2010B (0 cr), EMIA 2020 (3 cr), EMIA 2200 (3 cr). In addition, the capstone EMIA 4990 (0 cr) OR EMIA 4991 (3 cr) is required. required_credits shown is the fixed core (6); adding the capstone yields 6 (EMIA 4990) or 9 (EMIA 4991).",
       "courses": [
-        { "code": "EMIA2010B", "name": "Cross-disciplinary Seminar: Digital Media and Creative Arts", "credits": 0.0, "credits_raw": "0", "areas": [], "source_pages": [1] },
-        { "code": "EMIA2020", "name": "Cross-disciplinary Design Thinking", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [1] },
-        { "code": "EMIA2200", "name": "Introduction to Digital Media and Culture", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [1] },
-        { "code": "EMIA4990", "name": "Interdisciplinary Capstone Design", "credits": 0.0, "credits_raw": "0", "areas": [], "source_pages": [1] },
-        { "code": "EMIA4991", "name": "Interdisciplinary Capstone Project", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [1] }
+        {
+          "code": "EMIA2010B",
+          "name": "Cross-disciplinary Seminar: Digital Media and Creative Arts",
+          "credits": 0,
+          "credits_raw": "0",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "EMIA2020",
+          "name": "Cross-disciplinary Design Thinking",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "EMIA2200",
+          "name": "Introduction to Digital Media and Culture",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "EMIA4990",
+          "name": "Interdisciplinary Capstone Design",
+          "credits": 0,
+          "credits_raw": "0",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "EMIA4991",
+          "name": "Interdisciplinary Capstone Project",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
       ],
-      "source_pages": [1]
+      "source_pages": [
+        1
+      ]
     },
     {
       "name": "Elective(s)",
-      "required_credits": 12.0,
+      "required_credits": 12,
       "required_credits_raw": "12-15",
       "note": "DMCA Electives: courses from the specified elective list. Students opting for EMIA 4990 are required to take a minimum of 15 credits; those opting for EMIA 4991 a minimum of 12 credits. Out of the electives taken, at least 6 credits should be at 3000-level or above, of which at least 3 credits must be taken from each Course Group. Students are also required to take at least one course from Area 1 in Group 2. The group/area for each course is given in 'areas'.",
       "courses": [
-        { "code": "AMCC5110", "name": "Programming for Arts and Creativity", "credits": 3.0, "credits_raw": "3", "areas": ["1-Digital Media"], "source_pages": [2] },
-        { "code": "AMCC6500A", "name": "Composing with Sound", "credits": 3.0, "credits_raw": "3", "areas": ["1-Digital Media"], "source_pages": [2] },
-        { "code": "EMIA6500Q", "name": "Human-AI Interaction in the Age of Generative Media", "credits": 3.0, "credits_raw": "3", "areas": ["1-Digital Media"], "source_pages": [2] },
-        { "code": "ISDN2300", "name": "Introduction to 3D Design", "credits": 3.0, "credits_raw": "3", "areas": ["1-Digital Media"], "source_pages": [2] },
-        { "code": "ISDN2400", "name": "Physical Prototyping", "credits": 3.0, "credits_raw": "3", "areas": ["1-Digital Media"], "source_pages": [2] },
-        { "code": "ISDN3200", "name": "Graphic Communication", "credits": 2.0, "credits_raw": "2", "areas": ["1-Digital Media"], "source_pages": [2] },
-        { "code": "ISDN3300", "name": "Interaction Design", "credits": 3.0, "credits_raw": "3", "areas": ["1-Digital Media"], "source_pages": [2] },
-        { "code": "COMP4411", "name": "Computer Graphics", "credits": 3.0, "credits_raw": "3", "areas": ["1-Digital Media"], "source_pages": [2] },
-        { "code": "COMP4421", "name": "Image Processing", "credits": 3.0, "credits_raw": "3", "areas": ["1-Digital Media"], "source_pages": [2] },
-        { "code": "COMP4431", "name": "Multimedia Computing", "credits": 3.0, "credits_raw": "3", "areas": ["1-Digital Media"], "source_pages": [2] },
-        { "code": "COMP4441", "name": "Music Video Creation", "credits": 3.0, "credits_raw": "3", "areas": ["1-Digital Media"], "source_pages": [2] },
-        { "code": "COMP4451", "name": "Game Programming", "credits": 3.0, "credits_raw": "3", "areas": ["1-Digital Media"], "source_pages": [2] },
-        { "code": "COMP4461", "name": "Human-Computer Interaction", "credits": 3.0, "credits_raw": "3", "areas": ["1-Digital Media"], "source_pages": [2] },
-        { "code": "COMP4462", "name": "Data Visualization", "credits": 3.0, "credits_raw": "3", "areas": ["1-Digital Media"], "source_pages": [2] },
-        { "code": "COMP4471", "name": "Deep Learning in Computer Vision", "credits": 3.0, "credits_raw": "3", "areas": ["1-Digital Media"], "source_pages": [2] },
-        { "code": "COMP5411", "name": "Advanced Computer Graphics", "credits": 3.0, "credits_raw": "3", "areas": ["1-Digital Media"], "source_pages": [2] },
-        { "code": "COMP5421", "name": "Computer Vision", "credits": 3.0, "credits_raw": "3", "areas": ["1-Digital Media"], "source_pages": [2] },
-        { "code": "DASC3240", "name": "Data Visualization in Science", "credits": 3.0, "credits_raw": "3", "areas": ["1-Digital Media"], "source_pages": [2] },
-        { "code": "ELEC1020", "name": "Media Production: Technology and Design (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["1-Digital Media"], "source_pages": [2] },
-        { "code": "ELEC3130", "name": "Digital Image Processing", "credits": 3.0, "credits_raw": "3", "areas": ["1-Digital Media"], "source_pages": [2] },
-        { "code": "MATH4336", "name": "Introduction to Mathematics of Image Processing", "credits": 3.0, "credits_raw": "3", "areas": ["1-Digital Media"], "source_pages": [2] },
-        { "code": "SOSC3000L", "name": "Social Media & Society: Theory and Analysis", "credits": 3.0, "credits_raw": "3", "areas": ["1-Digital Media"], "source_pages": [2] },
-        { "code": "HUMA1100", "name": "Music of the World", "credits": 3.0, "credits_raw": "3", "areas": ["2-Fundamental"], "source_pages": [2] },
-        { "code": "HUMA1102", "name": "Enjoyment of Classical Music", "credits": 3.0, "credits_raw": "3", "areas": ["2-Fundamental"], "source_pages": [2] },
-        { "code": "HUMA1650", "name": "Appreciation of Western Art", "credits": 3.0, "credits_raw": "3", "areas": ["2-Fundamental"], "source_pages": [2] },
-        { "code": "HUMA1660", "name": "Introduction to Chinese Art", "credits": 3.0, "credits_raw": "3", "areas": ["2-Fundamental"], "source_pages": [2] },
-        { "code": "HUMA1107", "name": "Music and Film", "credits": 3.0, "credits_raw": "3", "areas": ["2-Music"], "source_pages": [2] },
-        { "code": "HUMA2103", "name": "Introduction to Music Composition", "credits": 3.0, "credits_raw": "3", "areas": ["2-Music"], "source_pages": [2] },
-        { "code": "HUMA2104", "name": "Music Theory I: Introduction to Tonal Music", "credits": 3.0, "credits_raw": "3", "areas": ["2-Music"], "source_pages": [3] },
-        { "code": "HUMA2107", "name": "Introduction to Electronic Music Composition", "credits": 3.0, "credits_raw": "3", "areas": ["2-Music"], "source_pages": [3] },
-        { "code": "HUMA2109", "name": "East Asian Popular Music", "credits": 3.0, "credits_raw": "3", "areas": ["2-Music"], "source_pages": [3] },
-        { "code": "HUMA3102", "name": "Making Chamber Music A", "credits": 2.0, "credits_raw": "2", "areas": ["2-Music"], "source_pages": [3] },
-        { "code": "HUMA3103", "name": "Making Chamber Music B", "credits": 2.0, "credits_raw": "2", "areas": ["2-Music"], "source_pages": [3] },
-        { "code": "HUMA3104", "name": "Music Theory IIA -Fundamentals of Harmony and Counterpoint", "credits": 3.0, "credits_raw": "3", "areas": ["2-Music"], "source_pages": [3] },
-        { "code": "HUMA3105", "name": "Making Choral Music (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["2-Music"], "source_pages": [3] },
-        { "code": "HUMA3106", "name": "Music Theory IIB -Tonal and Post-Tonal Music Analysis", "credits": 3.0, "credits_raw": "3", "areas": ["2-Music"], "source_pages": [3] },
-        { "code": "HUMA3107", "name": "Electronic Music Composition II", "credits": 3.0, "credits_raw": "3", "areas": ["2-Music"], "source_pages": [3] },
-        { "code": "HUMA4000D", "name": "Hollywood Goes to Asia: Transnational Asian Media", "credits": 4.0, "credits_raw": "4", "areas": ["2-Music"], "source_pages": [3] },
-        { "code": "EMIA2210", "name": "Sci-Fi Storytelling", "credits": 3.0, "credits_raw": "3", "areas": ["2-Literature and Film"], "source_pages": [3] },
-        { "code": "EMIA2500B", "name": "Film Script Analysis and Scriptwriting", "credits": 3.0, "credits_raw": "3", "areas": ["2-Literature and Film"], "source_pages": [3] },
-        { "code": "HUMA1210", "name": "Chinese Women on Screen", "credits": 3.0, "credits_raw": "3", "areas": ["2-Literature and Film"], "source_pages": [3] },
-        { "code": "HUMA1300", "name": "Introduction to Western Literature (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["2-Literature and Film"], "source_pages": [3] },
-        { "code": "HUMA2203", "name": "Japanese Cinema", "credits": 3.0, "credits_raw": "3", "areas": ["2-Literature and Film"], "source_pages": [3] },
-        { "code": "HUMA2240", "name": "Reading Chinese Literature: Dreams of the Red Chamber", "credits": 3.0, "credits_raw": "3", "areas": ["2-Literature and Film"], "source_pages": [3] },
-        { "code": "HUMA2250", "name": "Modern Chinese Fiction (1917-1949)", "credits": 3.0, "credits_raw": "3", "areas": ["2-Literature and Film"], "source_pages": [3] },
-        { "code": "HUMA2260", "name": "Contemporary Chinese Fiction (1949-present)", "credits": 3.0, "credits_raw": "3", "areas": ["2-Literature and Film"], "source_pages": [3] },
-        { "code": "HUMA2300", "name": "Traditional Chinese Poetry: Early Chinese Poetry", "credits": 3.0, "credits_raw": "3", "areas": ["2-Literature and Film"], "source_pages": [3] },
-        { "code": "HUMA2310", "name": "Traditional Chinese Fiction", "credits": 3.0, "credits_raw": "3", "areas": ["2-Literature and Film"], "source_pages": [3] },
-        { "code": "HUMA2400", "name": "Approaches to Humanities in China Studies", "credits": 3.0, "credits_raw": "3", "areas": ["2-Literature and Film"], "source_pages": [3] },
-        { "code": "HUMA3000C", "name": "Entering the World of Art Films, Independent Films, and Documentary Films", "credits": 3.0, "credits_raw": "3", "areas": ["2-Literature and Film"], "source_pages": [3] },
-        { "code": "HUMA3202", "name": "Chinese Creative Writing: Reading Literary Classics and Writing Essays", "credits": 3.0, "credits_raw": "3", "areas": ["2-Literature and Film"], "source_pages": [3] },
-        { "code": "HUMA3203", "name": "Chinese Creative Writing: Reading Literary Classics and Writing Novels", "credits": 3.0, "credits_raw": "3", "areas": ["2-Literature and Film"], "source_pages": [3] },
-        { "code": "HUMA3210", "name": "Traditional Chinese Poetry: Tang and Song Poetry", "credits": 3.0, "credits_raw": "3", "areas": ["2-Literature and Film"], "source_pages": [3] },
-        { "code": "HUMA3220", "name": "Modern Chinese Poetry", "credits": 3.0, "credits_raw": "3", "areas": ["2-Literature and Film"], "source_pages": [3] },
-        { "code": "HUMA3250", "name": "Independent Cinema in Contemporary China", "credits": 3.0, "credits_raw": "3", "areas": ["2-Literature and Film"], "source_pages": [3] },
-        { "code": "HUMA4000G", "name": "Global Hong Kong in Literature and Film", "credits": 4.0, "credits_raw": "4", "areas": ["2-Literature and Film"], "source_pages": [3] },
-        { "code": "HUMA4250", "name": "Masterpieces of Modern Literature", "credits": 3.0, "credits_raw": "3", "areas": ["2-Literature and Film"], "source_pages": [3] },
-        { "code": "ISDN1002", "name": "Redefining Problems for the Real Needs", "credits": 3.0, "credits_raw": "3", "areas": ["2-Design"], "source_pages": [3] },
-        { "code": "ISDN1004", "name": "Sketching", "credits": 1.0, "credits_raw": "1", "areas": ["2-Design"], "source_pages": [3] },
-        { "code": "ISDN1006", "name": "Human-centered Innovation", "credits": 3.0, "credits_raw": "3", "areas": ["2-Design"], "source_pages": [3] },
-        { "code": "ISDN1100", "name": "Experiencing Design (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["2-Design"], "source_pages": [3] },
-        { "code": "ISDN1130", "name": "Introduction to Eco-Design", "credits": 3.0, "credits_raw": "3", "areas": ["2-Design"], "source_pages": [3] },
-        { "code": "ISDN2000", "name": "What is Design and Why Design?", "credits": 3.0, "credits_raw": "3", "areas": ["2-Design"], "source_pages": [3] },
-        { "code": "ISDN3000A", "name": "From Ideas to Assets: Practice of the Creative Economy System", "credits": 3.0, "credits_raw": "3", "areas": ["2-Design"], "source_pages": [3] },
-        { "code": "ISDN3000D", "name": "Maker", "credits": 3.0, "credits_raw": "3", "areas": ["2-Design"], "source_pages": [3] },
-        { "code": "HUMA2660", "name": "Introduction to Chinese Painting", "credits": 3.0, "credits_raw": "3", "areas": ["2-Design"], "source_pages": [3] },
-        { "code": "HUMA2661", "name": "Chinese Oil Painting", "credits": 3.0, "credits_raw": "3", "areas": ["2-Design"], "source_pages": [3] },
-        { "code": "HUMA2670", "name": "Understanding Western Painting", "credits": 3.0, "credits_raw": "3", "areas": ["2-Design"], "source_pages": [3] },
-        { "code": "HUMA3660", "name": "Tradition & Modernity: Chinese Ink Painting in 20th Century", "credits": 3.0, "credits_raw": "3", "areas": ["2-Design"], "source_pages": [3] },
-        { "code": "EMIA2220", "name": "Technical Theater Arts", "credits": 3.0, "credits_raw": "3", "areas": ["2-Studio/Performing"], "source_pages": [4] },
-        { "code": "HUMA1671", "name": "Cantonese Opera in Hong Kong Culture", "credits": 3.0, "credits_raw": "3", "areas": ["2-Studio/Performing"], "source_pages": [4] },
-        { "code": "HUMA1672", "name": "Studio Arts Workshops: Cantonese Opera", "credits": 1.0, "credits_raw": "1", "areas": ["2-Studio/Performing"], "source_pages": [4] },
-        { "code": "HUMA2101", "name": "Enjoyment of Western Opera", "credits": 3.0, "credits_raw": "3", "areas": ["2-Studio/Performing"], "source_pages": [4] },
-        { "code": "HUMA2105", "name": "Music, Drama, and Theatre", "credits": 3.0, "credits_raw": "3", "areas": ["2-Studio/Performing"], "source_pages": [4] },
-        { "code": "HUMA2320", "name": "Chinese Drama", "credits": 3.0, "credits_raw": "3", "areas": ["2-Studio/Performing"], "source_pages": [4] },
-        { "code": "HART", "name": "Any HART courses", "credits": 3.0, "credits_raw": "var", "areas": ["2-Studio/Performing"], "source_pages": [4] },
-        { "code": "HUMA2680", "name": "Understanding Western Architecture", "credits": 3.0, "credits_raw": "3", "areas": ["2-Others"], "source_pages": [4] },
-        { "code": "HUMA3150", "name": "Independent Study in Creative Arts", "credits": 1.5, "credits_raw": "1-2", "areas": ["2-Others"], "source_pages": [4] },
-        { "code": "HUMA3201", "name": "Animation: A Global Perspective", "credits": 3.0, "credits_raw": "3", "areas": ["2-Others"], "source_pages": [4] },
-        { "code": "HUMA3680", "name": "Contemporary Architecture: The Pritzker Prize Winners", "credits": 3.0, "credits_raw": "3", "areas": ["2-Others"], "source_pages": [4] },
-        { "code": "HUMA4000E", "name": "The Foreigners' Look at China", "credits": 3.0, "credits_raw": "3", "areas": ["2-Others"], "source_pages": [4] },
-        { "code": "HUMA4000J", "name": "The Search for Identity: On Self and Community", "credits": 3.0, "credits_raw": "3", "areas": ["2-Others"], "source_pages": [4] },
-        { "code": "HUMA4220", "name": "Verbal and Visual Representation of China", "credits": 3.0, "credits_raw": "3", "areas": ["2-Others"], "source_pages": [4] },
-        { "code": "ISOM2030", "name": "Business Protections for Innovations", "credits": 3.0, "credits_raw": "3", "areas": ["2-Others"], "source_pages": [4] }
+        {
+          "code": "AMCC5110",
+          "name": "Programming for Arts and Creativity",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "1-Digital Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "AMCC6500A",
+          "name": "Composing with Sound",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "1-Digital Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "EMIA6500Q",
+          "name": "Human-AI Interaction in the Age of Generative Media",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "1-Digital Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ISDN2300",
+          "name": "Introduction to 3D Design",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "1-Digital Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ISDN2400",
+          "name": "Physical Prototyping",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "1-Digital Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ISDN3200",
+          "name": "Graphic Communication",
+          "credits": 2,
+          "credits_raw": "2",
+          "areas": [
+            "1-Digital Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ISDN3300",
+          "name": "Interaction Design",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "1-Digital Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP4411",
+          "name": "Computer Graphics",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "1-Digital Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP4421",
+          "name": "Image Processing",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "1-Digital Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP4431",
+          "name": "Multimedia Computing",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "1-Digital Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP4441",
+          "name": "Music Video Creation",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "1-Digital Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP4451",
+          "name": "Game Programming",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "1-Digital Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP4461",
+          "name": "Human-Computer Interaction",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "1-Digital Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP4462",
+          "name": "Data Visualization",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "1-Digital Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP4471",
+          "name": "Deep Learning in Computer Vision",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "1-Digital Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP5411",
+          "name": "Advanced Computer Graphics",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "1-Digital Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP5421",
+          "name": "Computer Vision",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "1-Digital Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "DASC3240",
+          "name": "Data Visualization in Science",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "1-Digital Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ELEC1020",
+          "name": "Media Production: Technology and Design (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [
+            "1-Digital Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ELEC3130",
+          "name": "Digital Image Processing",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "1-Digital Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MATH4336",
+          "name": "Introduction to Mathematics of Image Processing",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "1-Digital Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "SOSC3000L",
+          "name": "Social Media & Society: Theory and Analysis",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "1-Digital Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA1100",
+          "name": "Music of the World",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Fundamental"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA1102",
+          "name": "Enjoyment of Classical Music",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Fundamental"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA1650",
+          "name": "Appreciation of Western Art",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Fundamental"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA1660",
+          "name": "Introduction to Chinese Art",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Fundamental"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA1107",
+          "name": "Music and Film",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Music"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA2103",
+          "name": "Introduction to Music Composition",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Music"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA2104",
+          "name": "Music Theory I: Introduction to Tonal Music",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Music"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2107",
+          "name": "Introduction to Electronic Music Composition",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Music"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2109",
+          "name": "East Asian Popular Music",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Music"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA3102",
+          "name": "Making Chamber Music A",
+          "credits": 2,
+          "credits_raw": "2",
+          "areas": [
+            "2-Music"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA3103",
+          "name": "Making Chamber Music B",
+          "credits": 2,
+          "credits_raw": "2",
+          "areas": [
+            "2-Music"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA3104",
+          "name": "Music Theory IIA -Fundamentals of Harmony and Counterpoint",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Music"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA3105",
+          "name": "Making Choral Music (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [
+            "2-Music"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA3106",
+          "name": "Music Theory IIB -Tonal and Post-Tonal Music Analysis",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Music"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA3107",
+          "name": "Electronic Music Composition II",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Music"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA4000D",
+          "name": "Hollywood Goes to Asia: Transnational Asian Media",
+          "credits": 4,
+          "credits_raw": "4",
+          "areas": [
+            "2-Music"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "EMIA2210",
+          "name": "Sci-Fi Storytelling",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Literature and Film"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "EMIA2500B",
+          "name": "Film Script Analysis and Scriptwriting",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Literature and Film"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA1210",
+          "name": "Chinese Women on Screen",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Literature and Film"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA1300",
+          "name": "Introduction to Western Literature (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [
+            "2-Literature and Film"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2203",
+          "name": "Japanese Cinema",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Literature and Film"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2240",
+          "name": "Reading Chinese Literature: Dreams of the Red Chamber",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Literature and Film"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2250",
+          "name": "Modern Chinese Fiction (1917-1949)",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Literature and Film"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2260",
+          "name": "Contemporary Chinese Fiction (1949-present)",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Literature and Film"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2300",
+          "name": "Traditional Chinese Poetry: Early Chinese Poetry",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Literature and Film"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2310",
+          "name": "Traditional Chinese Fiction",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Literature and Film"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2400",
+          "name": "Approaches to Humanities in China Studies",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Literature and Film"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA3000C",
+          "name": "Entering the World of Art Films, Independent Films, and Documentary Films",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Literature and Film"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA3202",
+          "name": "Chinese Creative Writing: Reading Literary Classics and Writing Essays",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Literature and Film"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA3203",
+          "name": "Chinese Creative Writing: Reading Literary Classics and Writing Novels",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Literature and Film"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA3210",
+          "name": "Traditional Chinese Poetry: Tang and Song Poetry",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Literature and Film"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA3220",
+          "name": "Modern Chinese Poetry",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Literature and Film"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA3250",
+          "name": "Independent Cinema in Contemporary China",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Literature and Film"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA4000G",
+          "name": "Global Hong Kong in Literature and Film",
+          "credits": 4,
+          "credits_raw": "4",
+          "areas": [
+            "2-Literature and Film"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA4250",
+          "name": "Masterpieces of Modern Literature",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Literature and Film"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "ISDN1002",
+          "name": "Redefining Problems for the Real Needs",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Design"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "ISDN1004",
+          "name": "Sketching",
+          "credits": 1,
+          "credits_raw": "1",
+          "areas": [
+            "2-Design"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "ISDN1006",
+          "name": "Human-centered Innovation",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Design"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "ISDN1100",
+          "name": "Experiencing Design (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [
+            "2-Design"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "ISDN1130",
+          "name": "Introduction to Eco-Design",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Design"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "ISDN2000",
+          "name": "What is Design and Why Design?",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Design"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "ISDN3000A",
+          "name": "From Ideas to Assets: Practice of the Creative Economy System",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Design"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "ISDN3000D",
+          "name": "Maker",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Design"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2660",
+          "name": "Introduction to Chinese Painting",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Design"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2661",
+          "name": "Chinese Oil Painting",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Design"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2670",
+          "name": "Understanding Western Painting",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Design"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA3660",
+          "name": "Tradition & Modernity: Chinese Ink Painting in 20th Century",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Design"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "EMIA2220",
+          "name": "Technical Theater Arts",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Studio/Performing"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA1671",
+          "name": "Cantonese Opera in Hong Kong Culture",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Studio/Performing"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA1672",
+          "name": "Studio Arts Workshops: Cantonese Opera",
+          "credits": 1,
+          "credits_raw": "1",
+          "areas": [
+            "2-Studio/Performing"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA2101",
+          "name": "Enjoyment of Western Opera",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Studio/Performing"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA2105",
+          "name": "Music, Drama, and Theatre",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Studio/Performing"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA2320",
+          "name": "Chinese Drama",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Studio/Performing"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HART",
+          "name": "Any HART courses",
+          "credits": 3,
+          "credits_raw": "var",
+          "areas": [
+            "2-Studio/Performing"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA2680",
+          "name": "Understanding Western Architecture",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Others"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA3150",
+          "name": "Independent Study in Creative Arts",
+          "credits": 1.5,
+          "credits_raw": "1-2",
+          "areas": [
+            "2-Others"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA3201",
+          "name": "Animation: A Global Perspective",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Others"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA3680",
+          "name": "Contemporary Architecture: The Pritzker Prize Winners",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Others"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA4000E",
+          "name": "The Foreigners' Look at China",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Others"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA4000J",
+          "name": "The Search for Identity: On Self and Community",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Others"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA4220",
+          "name": "Verbal and Visual Representation of China",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Others"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "ISOM2030",
+          "name": "Business Protections for Innovations",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Others"
+          ],
+          "source_pages": [
+            4
+          ]
+        }
       ],
-      "source_pages": [2, 3, 4]
+      "source_pages": [
+        2,
+        3,
+        4
+      ]
     }
   ],
   "uncertain": [

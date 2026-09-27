@@ -2,18 +2,18 @@
   "year": "2023-24",
   "code": "IEEM",
   "title": "BEng in Industrial Engineering and Engineering Management",
-  "total_required_credits": 91.0,
+  "total_required_credits": 91,
   "groups": [
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-5",
       "note": "Note: COMP 1021 OR COMP 1022P OR COMP 2011 OR COMP 2012H",
       "courses": [
         {
           "code": "COMP1021",
           "name": "Introduction to Computer Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "COMP1022P",
           "name": "Introduction to Computing with Java",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "COMP2011",
           "name": "Programming with C++",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -43,7 +43,7 @@
         {
           "code": "COMP2012H",
           "name": "Honors Object-Oriented Programming and Data Structures",
-          "credits": 5.0,
+          "credits": 5,
           "credits_raw": "5",
           "areas": [],
           "source_pages": [
@@ -57,14 +57,14 @@
     },
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: CHEM 1012 OR PHYS 1112 OR PHYS 1312",
       "courses": [
         {
           "code": "CHEM1012",
           "name": "General Chemistry B: Atomic Structure, Molecules, and Bonding Theories",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -74,7 +74,7 @@
         {
           "code": "PHYS1112",
           "name": "General Physics I with Calculus",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -84,7 +84,7 @@
         {
           "code": "PHYS1312",
           "name": "Honors General Physics I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -98,14 +98,14 @@
     },
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "",
       "courses": [
         {
           "code": "LANG2030",
           "name": "Technical Communication I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -119,14 +119,14 @@
     },
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 4.0,
+      "required_credits": 4,
       "required_credits_raw": "4-7",
       "note": "Note: [(MATH 1012 OR MATH 1013 OR MATH 1023) AND (MATH 1014 OR MATH 1024)] OR [MATH 1020]",
       "courses": [
         {
           "code": "MATH1012",
           "name": "Calculus IA",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -136,7 +136,7 @@
         {
           "code": "MATH1013",
           "name": "Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -146,7 +146,7 @@
         {
           "code": "MATH1014",
           "name": "Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -156,7 +156,7 @@
         {
           "code": "MATH1020",
           "name": "Accelerated Calculus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -166,7 +166,7 @@
         {
           "code": "MATH1023",
           "name": "Honors Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -176,7 +176,7 @@
         {
           "code": "MATH1024",
           "name": "Honors Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -190,14 +190,14 @@
     },
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "",
       "courses": [
         {
           "code": "MATH2011",
           "name": "Introduction to Multivariable Calculus",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -207,7 +207,7 @@
         {
           "code": "MATH2111",
           "name": "Matrix Algebra and Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -221,14 +221,14 @@
     },
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-4",
       "note": "SENG Engineering Introduction course (If the students take an introduction course included in their major, this course can be counted towards their major requirement.)",
       "courses": [
         {
           "code": "IEDA2010",
           "name": "Introduction of Industrial Engineering and Decision Analytics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -238,7 +238,7 @@
         {
           "code": "BIEN1010",
           "name": "Introduction to Biomedical Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -248,7 +248,7 @@
         {
           "code": "CENG1000",
           "name": "Foundations of Chemical and Biological Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -258,7 +258,7 @@
         {
           "code": "CENG1500",
           "name": "A First Course on Materials Science and Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -268,7 +268,7 @@
         {
           "code": "CENG1700",
           "name": "Introduction to Environmental Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -278,7 +278,7 @@
         {
           "code": "CIVL1100",
           "name": "Discovering Civil and Environmental Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -288,7 +288,7 @@
         {
           "code": "CIVL1210",
           "name": "Fundamental of Green Buildings",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -298,7 +298,7 @@
         {
           "code": "COMP1021",
           "name": "Introduction to Computer Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -308,7 +308,7 @@
         {
           "code": "ELEC1100",
           "name": "Introduction to Electro-Robot Design",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -318,7 +318,7 @@
         {
           "code": "ELEC1200",
           "name": "A System View of Communications: from Signals to Packets",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -328,7 +328,7 @@
         {
           "code": "ENGG1100",
           "name": "First Year Cornerstone Engineering Design Project Course",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -338,7 +338,7 @@
         {
           "code": "ISDN1001",
           "name": "Introduction to Integrative Systems and Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -348,7 +348,7 @@
         {
           "code": "ISDN1002",
           "name": "Redefining Problems for the Real Needs",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -358,7 +358,7 @@
         {
           "code": "ISDN1006",
           "name": "Human-centered Innovation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -368,7 +368,7 @@
         {
           "code": "MECH1902",
           "name": "Energy Systems in a Sustainable World",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -378,7 +378,7 @@
         {
           "code": "MECH1906",
           "name": "Mechanical Engineering for Modern Life",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -388,7 +388,7 @@
         {
           "code": "MECH1907",
           "name": "Introduction to Aerospace Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -402,14 +402,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 21.0,
+      "required_credits": 21,
       "required_credits_raw": "21",
       "note": "",
       "courses": [
         {
           "code": "IEDA1010",
           "name": "Academic and Professional Development I",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -419,7 +419,7 @@
         {
           "code": "IEDA1020",
           "name": "Academic and Professional Development II",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -429,7 +429,7 @@
         {
           "code": "IEDA1901",
           "name": "Industrial Training and Experience",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -439,7 +439,7 @@
         {
           "code": "IEDA2520",
           "name": "Probability for Engineers",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -449,7 +449,7 @@
         {
           "code": "IEDA2540",
           "name": "Statistics for Engineers",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -459,7 +459,7 @@
         {
           "code": "IEDA3010",
           "name": "Prescriptive Analytics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -469,7 +469,7 @@
         {
           "code": "IEDA3230",
           "name": "Engineering Economics and Accounting",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -479,7 +479,7 @@
         {
           "code": "IEDA3250",
           "name": "Stochastic Models",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -489,7 +489,7 @@
         {
           "code": "IEDA3300",
           "name": "Industrial Data Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -499,7 +499,7 @@
         {
           "code": "IEDA4100",
           "name": "Integrated Production Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -509,7 +509,7 @@
         {
           "code": "IEDA4130",
           "name": "System Simulation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -523,14 +523,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "Note: IEDA 4901 OR IEDA 4960 (Students taking the Research Option must take IEDA 4901)",
       "courses": [
         {
           "code": "IEDA4901",
           "name": "Final Year Thesis",
-          "credits": 6.0,
+          "credits": 6,
           "credits_raw": "6",
           "areas": [],
           "source_pages": [
@@ -540,7 +540,7 @@
         {
           "code": "IEDA4960",
           "name": "Industrial Engineering and Engineering Management Final Year Project",
-          "credits": 6.0,
+          "credits": 6,
           "credits_raw": "6",
           "areas": [],
           "source_pages": [
@@ -554,14 +554,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: ECON 2103 OR ECON 2113",
       "courses": [
         {
           "code": "ECON2103",
           "name": "Principles of Microeconomics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -571,7 +571,7 @@
         {
           "code": "ECON2113",
           "name": "Microeconomics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -585,14 +585,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "",
       "courses": [
         {
           "code": "ENGG2010",
           "name": "Engineering Seminar Series",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -602,7 +602,7 @@
         {
           "code": "LANG4032",
           "name": "Technical Communication II for IEDA and ISDN",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -616,14 +616,14 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 21.0,
+      "required_credits": 21,
       "required_credits_raw": "21",
       "note": "Industrial Engineering Electives (Courses from the specified elective list)",
       "courses": [
         {
           "code": "IEDA2100",
           "name": "Computing in Industrial Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -633,7 +633,7 @@
         {
           "code": "IEDA2410",
           "name": "Introduction to Modern Logistics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -643,7 +643,7 @@
         {
           "code": "IEDA3130",
           "name": "Ergonomics and Safety Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -653,7 +653,7 @@
         {
           "code": "IEDA3270",
           "name": "Data-Driven Quality Technology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -663,7 +663,7 @@
         {
           "code": "IEDA3302",
           "name": "E-Commerce Technology and Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -673,7 +673,7 @@
         {
           "code": "IEDA3410",
           "name": "Routing and Fleet Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -683,7 +683,7 @@
         {
           "code": "IEDA3460",
           "name": "Demand and Supply Analytics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -693,7 +693,7 @@
         {
           "code": "IEDA3901",
           "name": "Transportation Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -703,7 +703,7 @@
         {
           "code": "IEDA4000",
           "name": "Special Topics",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1-3",
           "areas": [],
           "source_pages": [
@@ -713,7 +713,7 @@
         {
           "code": "IEDA4180",
           "name": "Service Engineering and Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -723,7 +723,7 @@
         {
           "code": "IEDA4200",
           "name": "Design of Logistics and Manufacturing Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -733,7 +733,7 @@
         {
           "code": "IEDA4410",
           "name": "Data Driven Supply Chain Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -747,14 +747,14 @@
     },
     {
       "name": "Financial Engineering Option Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Students with CGA of 3.0 or above may apply for enrollment in the Financial Engineering Option. Students who take an option MUST complete all requirements specified in addition to the major requirements.",
       "courses": [
         {
           "code": "IEDA3330",
           "name": "Introduction to Financial Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -772,14 +772,14 @@
     },
     {
       "name": "Financial Engineering Option Elective Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "Financial Engineering Electives (2 courses from the specified elective list). Prefixes in the PDF: IEDA/FINA/ISOM/RMBI.",
       "courses": [
         {
           "code": "IEDA3180",
           "name": "Data-Driven Portfolio Optimization",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -789,7 +789,7 @@
         {
           "code": "FINA3103",
           "name": "Intermediate Investments",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -799,7 +799,7 @@
         {
           "code": "ISOM4530",
           "name": "Statistical Analysis of Financial Data in R/S-plus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -809,7 +809,7 @@
         {
           "code": "RMBI4210",
           "name": "Quantitative Methods for Risk Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -827,14 +827,14 @@
     },
     {
       "name": "Research Option Elective Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "IEEM Advanced Electives (2 courses from the specified elective list. Students should seek approval of their advisor for the choices of courses.) Students in the Research Option should also take IEDA 4901 as specified in the major requirements.",
       "courses": [
         {
           "code": "IEDA4900",
           "name": "Independent Study in Industrial Engineering and Decision Analytics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -844,7 +844,7 @@
         {
           "code": "IEDA5170",
           "name": "Advanced Production Planning and Control",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -854,7 +854,7 @@
         {
           "code": "IEDA5230",
           "name": "Deterministic Models in Operations Research",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -864,7 +864,7 @@
         {
           "code": "IEDA5260",
           "name": "Design and Analysis of Engineering Experiments",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [

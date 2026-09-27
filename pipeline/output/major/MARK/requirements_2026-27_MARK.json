@@ -2,18 +2,18 @@
   "year": "2026-27",
   "code": "MARK",
   "title": "BBA in Marketing",
-  "total_required_credits": 24.0,
+  "total_required_credits": 24,
   "groups": [
     {
       "name": "Required Course(s)",
-      "required_credits": 12.0,
+      "required_credits": 12,
       "required_credits_raw": "12",
       "note": "",
       "courses": [
         {
           "code": "MARK3220",
           "name": "Marketing Research",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "MARK3420",
           "name": "Consumer Behavior",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "MARK4210",
           "name": "Strategic Marketing",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -47,7 +47,7 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 12.0,
+      "required_credits": 12,
       "required_credits_raw": "12",
       "note": "MARK 3000-level or above Electives: Any 3 courses of the subject and level as specified. The PDF does not list specific courses; courses array is empty.",
       "courses": [],

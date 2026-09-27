@@ -2,18 +2,18 @@
   "year": "2023-24",
   "code": "MINOR-PBS",
   "title": "Minor Program in Psychological and Behavioral Science",
-  "total_required_credits": 18.0,
+  "total_required_credits": 18,
   "groups": [
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: SOSC 1960 OR SOSC 1969 OR SOSC 1980",
       "courses": [
         {
           "code": "SOSC1960",
           "name": "Introduction to Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "SOSC1969",
           "name": "Discovering Mind and Behavior",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "SOSC1980",
           "name": "Psychology of Personal Growth",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -47,14 +47,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "SOSC 1990 Research Methods in Psychological Science",
       "courses": [
         {
           "code": "SOSC1990",
           "name": "Research Methods in Psychological Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -68,14 +68,14 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 12.0,
+      "required_credits": 12,
       "required_credits_raw": "12",
       "note": "Psychological and Behavioral Science Electives: courses from the two specified elective lists (12 credits), of which at least two courses from List A, and at least one from List B, with no more than one 1000-level course in total. Courses taken as Required courses may not be counted toward the elective requirement. The list for each course is given in 'areas'.",
       "courses": [
         {
           "code": "SOSC2210",
           "name": "Social Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "A"
@@ -87,7 +87,7 @@
         {
           "code": "SOSC2240",
           "name": "Biological Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "A"
@@ -99,7 +99,7 @@
         {
           "code": "SOSC2250",
           "name": "Cognitive Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "A"
@@ -111,7 +111,7 @@
         {
           "code": "SOSC2260",
           "name": "Counselling Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "A"
@@ -123,7 +123,7 @@
         {
           "code": "SOSC2800",
           "name": "Cognitive Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "A"
@@ -135,7 +135,7 @@
         {
           "code": "SOSC2888",
           "name": "Special Topics in Psychology",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1-4 Credit(s)",
           "areas": [
             "A"
@@ -147,7 +147,7 @@
         {
           "code": "SOSC2980",
           "name": "Personality Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "A"
@@ -159,7 +159,7 @@
         {
           "code": "SOSC2990",
           "name": "Developmental Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "A"
@@ -171,7 +171,7 @@
         {
           "code": "SOSC3540",
           "name": "Environmental Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "A"
@@ -183,7 +183,7 @@
         {
           "code": "SOSC3550",
           "name": "Educational Psychology (deleted)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3**",
           "areas": [
             "A"
@@ -195,7 +195,7 @@
         {
           "code": "SOSC3888",
           "name": "Special Topics in Psychology",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1-4 Credit(s)",
           "areas": [
             "A"
@@ -207,7 +207,7 @@
         {
           "code": "SOSC3900",
           "name": "Abnormal Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "A"
@@ -219,7 +219,7 @@
         {
           "code": "SOSC3990",
           "name": "Health Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "A"
@@ -231,7 +231,7 @@
         {
           "code": "MARK1220",
           "name": "Marketing and Society",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "B"
@@ -243,7 +243,7 @@
         {
           "code": "MARK1230",
           "name": "Consumerism and Happiness (deleted)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3**",
           "areas": [
             "B"
@@ -255,7 +255,7 @@
         {
           "code": "MARK2120",
           "name": "Marketing Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "B"
@@ -267,7 +267,7 @@
         {
           "code": "MARK3220",
           "name": "Marketing Research",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "B"
@@ -279,7 +279,7 @@
         {
           "code": "MARK3410",
           "name": "Promotion and Advertising Management",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "B"
@@ -291,7 +291,7 @@
         {
           "code": "MARK3420",
           "name": "Consumer Behavior",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "B"
@@ -303,7 +303,7 @@
         {
           "code": "MGMT1120",
           "name": "Developing the Leader in You",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "B"
@@ -315,7 +315,7 @@
         {
           "code": "MGMT1130",
           "name": "Traps and Pitfalls in Judgment and Decision Making",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "B"
@@ -327,7 +327,7 @@
         {
           "code": "MGMT2110",
           "name": "Organizational Behavior",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "B"
@@ -339,7 +339,7 @@
         {
           "code": "MGMT3110",
           "name": "Human Resources Management",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "B"
@@ -351,7 +351,7 @@
         {
           "code": "MGMT3120",
           "name": "Managerial Leadership",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "B"
@@ -363,7 +363,7 @@
         {
           "code": "MGMT3130",
           "name": "Judgement and Decision Making in Organizations",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "B"
@@ -375,7 +375,7 @@
         {
           "code": "MGMT3140",
           "name": "Negotiation",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "B"

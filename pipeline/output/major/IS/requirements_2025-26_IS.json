@@ -2,18 +2,18 @@
   "year": "2025-26",
   "code": "IS",
   "title": "BBA in Information Systems",
-  "total_required_credits": 38.0,
+  "total_required_credits": 38,
   "groups": [
     {
       "name": "Required Course(s)",
-      "required_credits": 7.0,
+      "required_credits": 7,
       "required_credits_raw": "7",
       "note": "",
       "courses": [
         {
           "code": "ISOM3210",
           "name": "Information Systems Analysis and Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "ISOM3260",
           "name": "Database Design and Administration",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -37,14 +37,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: ISOM 3320 OR ISOM 3400 (Students who have taken COMP 1022P must take ISOM 3400; students who have taken COMP 1021 must take ISOM 3320 to fulfill the IS program requirements.)",
       "courses": [
         {
           "code": "ISOM3320",
           "name": "Business Applications Development in Java",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -54,7 +54,7 @@
         {
           "code": "ISOM3400",
           "name": "Business Applications Development in Python",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -68,7 +68,7 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 10.0,
+      "required_credits": 10,
       "required_credits_raw": "10",
       "note": "IS Electives (At least 3 ISOM courses totaling 10 credits coded between 3000 and 3499; 4000 and 4499. For students who have taken the 6-credit course ISOM 4400 to fulfill the IS elective requirement, the minimum number of courses for this requirement may be reduced by one. Courses taken as Option Required Courses may not be counted towards this elective requirement.) No specific course list is printed in the PDF.",
       "courses": [],
@@ -78,14 +78,14 @@
     },
     {
       "name": "Artificial Intelligence Option Required Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "Students may opt to graduate with or without an option. Students who take an option MUST complete all requirements specified in addition to the major requirements.",
       "courses": [
         {
           "code": "ISOM4030",
           "name": "Deep Learning for Business Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -95,7 +95,7 @@
         {
           "code": "ISOM4110",
           "name": "Large Language Models and AI Agents",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -113,14 +113,14 @@
     },
     {
       "name": "Business Analytics Option Required Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "Students may opt to graduate with or without an option. Students who take an option MUST complete all requirements specified in addition to the major requirements.",
       "courses": [
         {
           "code": "ISOM3360",
           "name": "Data Mining for Business Analytics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -130,7 +130,7 @@
         {
           "code": "ISOM3900",
           "name": "Decision Analytics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -148,14 +148,14 @@
     },
     {
       "name": "Information Systems Auditing Option Required Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "Students may opt to graduate with or without an option. Students who take an option MUST complete all requirements specified in addition to the major requirements.",
       "courses": [
         {
           "code": "ISOM4100",
           "name": "Information Systems Auditing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -165,7 +165,7 @@
         {
           "code": "ISOM4300",
           "name": "Information Systems Control and Assurance",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [

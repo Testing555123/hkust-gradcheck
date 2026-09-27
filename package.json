@@ -19,8 +19,10 @@
     "typecheck:domain": "npm -w @newone/domain run typecheck",
     "baseline": "python scripts/baseline_manifest.py gen",
     "baseline:check": "python scripts/baseline_manifest.py check",
+    "normalize:check": "python scripts/normalize_source_format.py --check",
+    "normalize:apply": "python scripts/normalize_source_format.py --apply",
     "fidelity:check": "python scripts/check_port_fidelity.py",
     "data:check": "python scripts/export_static_data.py --check",
-    "verify": "npm run baseline:check && npm run fidelity:check && npm run data:check && npm run typecheck:domain && npm test && npm run build"
+    "verify": "npm run baseline:check && npm run fidelity:check && npm run normalize:check && npm run data:check && npm run typecheck:domain && npm test && npm run build"
   }
 }

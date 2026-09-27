@@ -2,18 +2,18 @@
   "year": "2025-26",
   "code": "MGMT",
   "title": "BBA in Management",
-  "total_required_credits": 35.0,
+  "total_required_credits": 35,
   "groups": [
     {
       "name": "Required Course(s)",
-      "required_credits": 4.0,
+      "required_credits": 4,
       "required_credits_raw": "4",
       "note": "Note: MGMT 3110 OR MGMT 3120 (Students in the Human Resources Option must take MGMT 3110 to fulfill this requirement. Students in the Consulting Option must take MGMT 3120 to fulfill this requirement.)",
       "courses": [
         {
           "code": "MGMT3110",
           "name": "Human Resources Management",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "MGMT3120",
           "name": "Managerial Leadership",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -37,14 +37,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 4.0,
+      "required_credits": 4,
       "required_credits_raw": "4",
       "note": "Note: MGMT 3130 OR MGMT 3140 (Students in the Consulting Option must take MGMT 3140 to fulfill this requirement.)",
       "courses": [
         {
           "code": "MGMT3130",
           "name": "Judgement and Decision Making in Organizations",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -54,7 +54,7 @@
         {
           "code": "MGMT3140",
           "name": "Negotiation",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -68,14 +68,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-4",
       "note": "Note: MGMT 4210 OR MGMT 4220 (Students in the Consulting Option or in the Corporate Social Responsibility and Sustainability Option must take MGMT 4210 to fulfill this requirement.)",
       "courses": [
         {
           "code": "MGMT4210",
           "name": "Corporate Strategy",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -85,7 +85,7 @@
         {
           "code": "MGMT4220",
           "name": "Entrepreneurship and Innovation",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -99,7 +99,7 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 9.0,
+      "required_credits": 9,
       "required_credits_raw": "9",
       "note": "MGMT 3000-level or above Electives (Any 3 courses of the subject and level as specified. Courses taken as Option Required Courses may not be counted towards the elective requirement.)",
       "courses": [],
@@ -109,14 +109,14 @@
     },
     {
       "name": "Consulting Option Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-4",
       "note": "Note: MGMT 3110 OR MGMT 3160 OR MGMT 4230. Students in the Consulting Option should also take MGMT 3120, MGMT 3140, and MGMT 4210 as specified in the major requirements. Courses used to fulfill the requirements of another option under MGMT cannot be reused to count towards this Option. Students who take an option MUST complete all requirements specified in addition to the major requirements.",
       "courses": [
         {
           "code": "MGMT3110",
           "name": "Human Resources Management",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -126,7 +126,7 @@
         {
           "code": "MGMT3160",
           "name": "Environmental Business Strategies",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -136,7 +136,7 @@
         {
           "code": "MGMT4230",
           "name": "International Management",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -146,7 +146,7 @@
         {
           "code": "MGMT4250",
           "name": "Management Consulting",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -164,14 +164,14 @@
     },
     {
       "name": "Corporate Social Responsibility and Sustainability Option Required Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "Students in the Corporate Social Responsibility and Sustainability Option should also take MGMT 4210 as specified in the major requirements. Courses used to fulfill the requirements of another option under MGMT cannot be reused to count towards this Option. Students who take an option MUST complete all requirements specified in addition to the major requirements.",
       "courses": [
         {
           "code": "MGMT3160",
           "name": "Environmental Business Strategies",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -181,7 +181,7 @@
         {
           "code": "MGMT3170",
           "name": "Managing CSR (Corporate Social Responsibility)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -199,14 +199,14 @@
     },
     {
       "name": "Human Resources Option Required Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "Note: MGMT 4270 OR MGMT 4280 OR MGMT 4290 OR MGMT 4300 (2 courses out of 4). Students in the Human Resources Option should also take MGMT 3110 as specified in the major requirements. Courses used to fulfill the requirements of another option under MGMT cannot be reused to count towards this Option. Students who take an option MUST complete all requirements specified in addition to the major requirements.",
       "courses": [
         {
           "code": "MGMT4270",
           "name": "Training and Development",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -216,7 +216,7 @@
         {
           "code": "MGMT4280",
           "name": "Transnational Legal Issues and Dispute Settlement",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -226,7 +226,7 @@
         {
           "code": "MGMT4290",
           "name": "HR Analytics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -236,7 +236,7 @@
         {
           "code": "MGMT4300",
           "name": "Knowing and Managing Your Social Networks for Careers and Business",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [

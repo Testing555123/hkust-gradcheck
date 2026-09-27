@@ -2,18 +2,18 @@
   "year": "2024-25",
   "code": "DASC",
   "title": "BSc in Data Analytics in Science",
-  "total_required_credits": 73.0,
+  "total_required_credits": 73,
   "groups": [
     {
       "name": "Students MuST take the following courses prior to enrollment into the major",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "",
       "note": "",
       "courses": [
         {
           "code": "MATH1012",
           "name": "Calculus IA",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4-7",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "MATH1013",
           "name": "Calculus I",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "MATH1014",
           "name": "Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3 3",
           "areas": [],
           "source_pages": [
@@ -43,7 +43,7 @@
         {
           "code": "MATH1020",
           "name": "Accelerated Calculus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -53,7 +53,7 @@
         {
           "code": "MATH1023",
           "name": "Honors Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -63,7 +63,7 @@
         {
           "code": "MATH1024",
           "name": "Honors Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -77,14 +77,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 19.0,
+      "required_credits": 19,
       "required_credits_raw": "",
       "note": "",
       "courses": [
         {
           "code": "DASC2010",
           "name": "Calculus for Data Analytics in Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -94,7 +94,7 @@
         {
           "code": "DASC2020",
           "name": "Applied Linear Algebra for Least Squares Optimization and Machine Learning",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -104,7 +104,7 @@
         {
           "code": "DASC2110",
           "name": "Object-oriented Programming for Data Analytics in Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -114,7 +114,7 @@
         {
           "code": "DASC2210",
           "name": "A Survey on Big Data in Science and Society",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -124,7 +124,7 @@
         {
           "code": "DASC2220",
           "name": "Statistics and Probability for Data Analytics in Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -134,7 +134,7 @@
         {
           "code": "DASC3120",
           "name": "Data Structures for Data Analytics in Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -144,7 +144,7 @@
         {
           "code": "DASC3230",
           "name": "Statistical Modeling and Machine Learning",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -154,7 +154,7 @@
         {
           "code": "CHEM1011",
           "name": "General Chemistry A: Reactions, Thermodynamics, and Reaction Kinetics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -164,7 +164,7 @@
         {
           "code": "CHEM1012",
           "name": "General Chemistry B: Atomic Structure, Molecules, and Bonding Theories",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -174,7 +174,7 @@
         {
           "code": "CHEM2111",
           "name": "Fundamentals of Organic Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -184,7 +184,7 @@
         {
           "code": "COMP1021",
           "name": "Introduction to Computer Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -194,7 +194,7 @@
         {
           "code": "COMP1023",
           "name": "Introduction to Python Programming",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -204,7 +204,7 @@
         {
           "code": "DASC3240",
           "name": "Data Visualization in Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -214,7 +214,7 @@
         {
           "code": "DASC3250",
           "name": "Numerical Methods for Data Analytics in Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -224,7 +224,7 @@
         {
           "code": "DASC4300",
           "name": "Capstone Project for Data Analytics in Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -234,7 +234,7 @@
         {
           "code": "LIFS3140",
           "name": "General Genetics",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -244,7 +244,7 @@
         {
           "code": "LIFS3580",
           "name": "Bioinformatics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -254,7 +254,7 @@
         {
           "code": "LIFS4320",
           "name": "Data Science for Biology and Medicine",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -268,14 +268,14 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "Minimum credit(s) required 6",
       "note": "Social Science Electives (2 courses from the specified elective list, of which 1 course should be taken from Group 1 and 1",
       "courses": [
         {
           "code": "SOSC1300",
           "name": "The World of Politics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Group 1"
@@ -287,7 +287,7 @@
         {
           "code": "SOSC1420",
           "name": "Poverty",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Group 1"
@@ -299,7 +299,7 @@
         {
           "code": "SOSC1440",
           "name": "Introduction to Economics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Group 1"
@@ -311,7 +311,7 @@
         {
           "code": "SOSC1510",
           "name": "Politics Through Film",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Group 1"
@@ -323,7 +323,7 @@
         {
           "code": "SOSC1850",
           "name": "Understanding Society",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Group 1"
@@ -335,7 +335,7 @@
         {
           "code": "SOSC1860",
           "name": "Population and Society",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Group 1"
@@ -347,7 +347,7 @@
         {
           "code": "SOSC1960",
           "name": "Introduction to Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Group 1"
@@ -359,7 +359,7 @@
         {
           "code": "SOSC1980",
           "name": "Psychology of Personal Growth",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Group 1"
@@ -371,7 +371,7 @@
         {
           "code": "SOSC2140",
           "name": "Research Methods in the Social Sciences",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Group 2"
@@ -383,7 +383,7 @@
         {
           "code": "SOSC2310",
           "name": "Introductory Environmental and Health Economics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Group 2"
@@ -395,7 +395,7 @@
         {
           "code": "SOSC2400",
           "name": "Quantitative Data Analysis for Social Research II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Group 2"
@@ -407,7 +407,7 @@
         {
           "code": "SOSC3001",
           "name": "Understanding China, 1700-2000: A Data Analytic Approach",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Group 2"
@@ -419,7 +419,7 @@
         {
           "code": "SOSC3240",
           "name": "Application of Geographical Information Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Group 2"
@@ -431,7 +431,7 @@
         {
           "code": "SOSC3260",
           "name": "Sustainability Science: Policy Problems and Perspectives",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Group 2"
@@ -443,7 +443,7 @@
         {
           "code": "SOSC3540",
           "name": "Environmental Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Group 2"
@@ -455,7 +455,7 @@
         {
           "code": "SOSC3600",
           "name": "Public Policy Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Group 2"
@@ -467,7 +467,7 @@
         {
           "code": "SOSC3720",
           "name": "Introduction to Social Network Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Group 2"
@@ -479,7 +479,7 @@
         {
           "code": "SOSC4300",
           "name": "Computational Social Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Group 2"
@@ -495,14 +495,14 @@
     },
     {
       "name": "Applied Biosciences Track",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "",
       "note": "",
       "courses": [
         {
           "code": "LIFS1901",
           "name": "General Biology I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -512,7 +512,7 @@
         {
           "code": "LIFS1902",
           "name": "General Biology II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -522,7 +522,7 @@
         {
           "code": "LIFS2040",
           "name": "Cell Biology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -540,14 +540,14 @@
     },
     {
       "name": "Environmental Science Track",
-      "required_credits": 21.0,
+      "required_credits": 21,
       "required_credits_raw": "",
       "note": "",
       "courses": [
         {
           "code": "OCES1001",
           "name": "The Earth as a Blue Planet",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -557,7 +557,7 @@
         {
           "code": "OCES1010",
           "name": "Principles and Applications of Environmental Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -567,7 +567,7 @@
         {
           "code": "OCES2004",
           "name": "Sustainable Ocean",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -577,7 +577,7 @@
         {
           "code": "OCES3001",
           "name": "Coastal Environmental Monitoring",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -587,7 +587,7 @@
         {
           "code": "OCES3160",
           "name": "Ecology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -597,7 +597,7 @@
         {
           "code": "OCES3301",
           "name": "Data Analysis in Ocean Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -607,7 +607,7 @@
         {
           "code": "LANG3025",
           "name": "Science Communication in English (Environmental Science)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -625,14 +625,14 @@
     },
     {
       "name": "Information Science Track",
-      "required_credits": 27.0,
+      "required_credits": 27,
       "required_credits_raw": "",
       "note": "",
       "courses": [
         {
           "code": "DASC4020",
           "name": "Structured Query Language for Data Analytics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -642,7 +642,7 @@
         {
           "code": "PHYS1007",
           "name": "Quantum Information for Everyone",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -652,7 +652,7 @@
         {
           "code": "PHYS1111",
           "name": "General Physics I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -662,7 +662,7 @@
         {
           "code": "PHYS1112",
           "name": "General Physics I with Calculus",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -672,7 +672,7 @@
         {
           "code": "PHYS1312",
           "name": "Honors General Physics I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -682,7 +682,7 @@
         {
           "code": "PHYS1114",
           "name": "General Physics II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -692,7 +692,7 @@
         {
           "code": "PHYS1314",
           "name": "Honors General Physics II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -702,7 +702,7 @@
         {
           "code": "PHYS2022",
           "name": "Modern Physics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -712,7 +712,7 @@
         {
           "code": "PHYS4058",
           "name": "Information Physics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -722,7 +722,7 @@
         {
           "code": "LANG3023",
           "name": "Science Communication in English (Physics)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -740,14 +740,14 @@
     },
     {
       "name": "Molecular Science and Cheminformatics Track",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "",
       "note": "",
       "courses": [
         {
           "code": "CHEM3030",
           "name": "Introduction to Al for Chemistry",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -757,7 +757,7 @@
         {
           "code": "CHEM4420",
           "name": "Statistical Machine Learning Methods for Chemical Data Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -767,7 +767,7 @@
         {
           "code": "CHEM4120",
           "name": "Biomolecular Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -777,7 +777,7 @@
         {
           "code": "CHEM4160",
           "name": "Cheminformatics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -787,7 +787,7 @@
         {
           "code": "LANG3022",
           "name": "Science Communication in English (Chemistry)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [

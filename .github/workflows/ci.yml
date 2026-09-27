@@ -28,8 +28,11 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: 黄金基准与平移忠诚度校验
-        run: npm run baseline:check && npm run fidelity:check
+      - name: 黄金基准、平移忠诚度与源格式规范校验
+        run: |
+          npm run baseline:check
+          npm run fidelity:check
+          npm run normalize:check
 
       - name: Test
         run: npm test

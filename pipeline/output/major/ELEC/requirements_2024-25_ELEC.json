@@ -2,18 +2,18 @@
   "year": "2024-25",
   "code": "ELEC",
   "title": "BEng in Electronic Engineering",
-  "total_required_credits": 85.0,
+  "total_required_credits": 85,
   "groups": [
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 9.0,
+      "required_credits": 9,
       "required_credits_raw": "9-10",
       "note": "Note: (ELEC 2600 OR ELEC 2600H) OR MATH 2011 OR MATH 2111 OR MATH 2350 OR MATH 2351 (3 courses out of 6)",
       "courses": [
         {
           "code": "ELEC2600",
           "name": "Probability and Random Processes in Engineering",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "ELEC2600H",
           "name": "Honors Probability and Random Processes in Engineering",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "MATH2011",
           "name": "Introduction to Multivariable Calculus",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -43,7 +43,7 @@
         {
           "code": "MATH2111",
           "name": "Matrix Algebra and Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -53,7 +53,7 @@
         {
           "code": "MATH2350",
           "name": "Applied Linear Algebra and Differential Equations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -63,7 +63,7 @@
         {
           "code": "MATH2351",
           "name": "Introduction to Differential Equations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -77,14 +77,14 @@
     },
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: COMP 1021 OR COMP 1022P",
       "courses": [
         {
           "code": "COMP1021",
           "name": "Introduction to Computer Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -94,7 +94,7 @@
         {
           "code": "COMP1022P",
           "name": "Introduction to Computing with Java",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -108,14 +108,14 @@
     },
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 4.0,
+      "required_credits": 4,
       "required_credits_raw": "4-5",
       "note": "Note: COMP 2011 OR COMP 2012H",
       "courses": [
         {
           "code": "COMP2011",
           "name": "Programming with C++",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -125,7 +125,7 @@
         {
           "code": "COMP2012H",
           "name": "Honors Object-Oriented Programming and Data Structures",
-          "credits": 5.0,
+          "credits": 5,
           "credits_raw": "5",
           "areas": [],
           "source_pages": [
@@ -139,14 +139,14 @@
     },
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 4.0,
+      "required_credits": 4,
       "required_credits_raw": "4-7",
       "note": "Note: [(MATH 1012 OR MATH 1013 OR MATH 1023) AND (MATH 1014 OR MATH 1024)] OR [MATH 1020]",
       "courses": [
         {
           "code": "MATH1012",
           "name": "Calculus IA",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -156,7 +156,7 @@
         {
           "code": "MATH1013",
           "name": "Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -166,7 +166,7 @@
         {
           "code": "MATH1014",
           "name": "Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -176,7 +176,7 @@
         {
           "code": "MATH1020",
           "name": "Accelerated Calculus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -186,7 +186,7 @@
         {
           "code": "MATH1023",
           "name": "Honors Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -196,7 +196,7 @@
         {
           "code": "MATH1024",
           "name": "Honors Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -210,14 +210,14 @@
     },
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: PHYS 1112 OR PHYS 1312",
       "courses": [
         {
           "code": "PHYS1112",
           "name": "General Physics I with Calculus",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -227,7 +227,7 @@
         {
           "code": "PHYS1312",
           "name": "Honors General Physics I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -241,14 +241,14 @@
     },
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: PHYS 1114 OR PHYS 1314",
       "courses": [
         {
           "code": "PHYS1114",
           "name": "General Physics II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -258,7 +258,7 @@
         {
           "code": "PHYS1314",
           "name": "Honors General Physics II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -272,14 +272,14 @@
     },
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-4",
       "note": "SENG Engineering Introduction course (If the students take an introduction course included in their major, this course can be counted towards their major requirement.)",
       "courses": [
         {
           "code": "ELEC1100",
           "name": "Introduction to Electro-Robot Design",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -289,7 +289,7 @@
         {
           "code": "ELEC1200",
           "name": "A System View of Communications: from Signals to Packets",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -299,7 +299,7 @@
         {
           "code": "BIEN1010",
           "name": "Introduction to Biomedical Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -309,7 +309,7 @@
         {
           "code": "CENG1000",
           "name": "Foundations of Chemical and Biological Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -319,7 +319,7 @@
         {
           "code": "CENG1500",
           "name": "A First Course on Materials Science and Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -329,7 +329,7 @@
         {
           "code": "CENG1700",
           "name": "Introduction to Environmental Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -339,7 +339,7 @@
         {
           "code": "CIVL1100",
           "name": "Discovering Civil and Environmental Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -349,7 +349,7 @@
         {
           "code": "CIVL1210",
           "name": "Fundamental of Green Buildings",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -359,7 +359,7 @@
         {
           "code": "COMP1021",
           "name": "Introduction to Computer Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -369,7 +369,7 @@
         {
           "code": "ENGG1100",
           "name": "First Year Cornerstone Engineering Design Project Course",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -379,7 +379,7 @@
         {
           "code": "IEDA2010",
           "name": "Introduction of Industrial Engineering and Decision Analytics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -389,7 +389,7 @@
         {
           "code": "MECH1902",
           "name": "Energy Systems in a Sustainable World",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -399,7 +399,7 @@
         {
           "code": "MECH1906",
           "name": "Mechanical Engineering for Modern Life",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -409,7 +409,7 @@
         {
           "code": "MECH1907",
           "name": "Introduction to Aerospace Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -423,14 +423,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 20.0,
+      "required_credits": 20,
       "required_credits_raw": "20",
       "note": "",
       "courses": [
         {
           "code": "ELEC1100",
           "name": "Introduction to Electro-Robot Design",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -440,7 +440,7 @@
         {
           "code": "ELEC1200",
           "name": "A System View of Communications: from Signals to Packets",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -450,7 +450,7 @@
         {
           "code": "ELEC2100",
           "name": "Signals and Systems",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -460,7 +460,7 @@
         {
           "code": "ELEC2350",
           "name": "Introduction to Computer Organization and Design",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -470,7 +470,7 @@
         {
           "code": "ELEC2400",
           "name": "Electronic Circuits",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -480,7 +480,7 @@
         {
           "code": "ELEC2910",
           "name": "Academic and Professional Development II",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -494,14 +494,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "Note: [ELEC 2991 AND (ELEC 4900 OR ELEC 4901)] OR [ELEC 4910] (Students taking the Research Option must take ELEC 4901)",
       "courses": [
         {
           "code": "ELEC2991",
           "name": "Industrial Experience (Electronic Engineering)",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -511,7 +511,7 @@
         {
           "code": "ELEC4900",
           "name": "Final Year Design Project",
-          "credits": 6.0,
+          "credits": 6,
           "credits_raw": "6",
           "areas": [],
           "source_pages": [
@@ -521,7 +521,7 @@
         {
           "code": "ELEC4901",
           "name": "Final Year Thesis",
-          "credits": 6.0,
+          "credits": 6,
           "credits_raw": "6",
           "areas": [],
           "source_pages": [
@@ -531,7 +531,7 @@
         {
           "code": "ELEC4910",
           "name": "Co-op Program",
-          "credits": 6.0,
+          "credits": 6,
           "credits_raw": "6",
           "areas": [],
           "source_pages": [
@@ -545,14 +545,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "0",
       "note": "",
       "courses": [
         {
           "code": "ELEC3910",
           "name": "Academic and Professional Development III",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -562,7 +562,7 @@
         {
           "code": "ENGG2010",
           "name": "Engineering Seminar Series",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -576,7 +576,7 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 21.0,
+      "required_credits": 21,
       "required_credits_raw": "21",
       "note": "ELEC 3000-level or above Electives (Courses of the subject and level as specified, out of which at least 2 courses must be at 4000-level. ELEC 4940 cannot be used to count towards this elective requirement)",
       "courses": [],
@@ -586,14 +586,14 @@
     },
     {
       "name": "Research Option Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Students in the Research Option should also take ELEC 4901 as specified in the major requirements. Students who take an option MUST complete all requirements specified in addition to the major requirements.",
       "courses": [
         {
           "code": "ELEC5900",
           "name": "Modern Engineering Research Methodologies",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -611,14 +611,14 @@
     },
     {
       "name": "Research Option Elective Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "Advanced Elective Courses approved by advisor (at least one UROP course taken prior to the commencement of Final Year Thesis, and one PG-level course)",
       "courses": [
         {
           "code": "UROP1000",
           "name": "Undergraduate Research Opportunities",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -628,7 +628,7 @@
         {
           "code": "UROP1100",
           "name": "Undergraduate Research Opportunities Series 1",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -638,7 +638,7 @@
         {
           "code": "UROP2100",
           "name": "Undergraduate Research Opportunities Series 2",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -648,7 +648,7 @@
         {
           "code": "UROP3100",
           "name": "Undergraduate Research Opportunities Series 3",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [

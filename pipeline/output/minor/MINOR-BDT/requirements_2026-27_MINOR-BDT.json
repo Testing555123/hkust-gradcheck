@@ -2,18 +2,18 @@
   "year": "2026-27",
   "code": "MINOR-BDT",
   "title": "Minor Program in Big Data Technology",
-  "total_required_credits": 19.0,
+  "total_required_credits": 19,
   "groups": [
     {
       "name": "Required Course(s)",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "0",
       "note": "Note: Students are expected to take a 6-week internship (COMP 1991) in the Summer or Winter term. For CSE students who have taken COMP 1991 as major required course, they may seek approval from the Minor Program Coordinator to reuse the course for fulfilling the requirement of this Minor Program. (0 credits)",
       "courses": [
         {
           "code": "COMP1991",
           "name": "Industrial Experience",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -27,14 +27,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 4.0,
+      "required_credits": 4,
       "required_credits_raw": "4-5",
       "note": "Note: COMP 2011 OR COMP 2012H",
       "courses": [
         {
           "code": "COMP2011",
           "name": "Programming with C++",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -44,7 +44,7 @@
         {
           "code": "COMP2012H",
           "name": "Honors Object-Oriented Programming and Data Structures",
-          "credits": 5.0,
+          "credits": 5,
           "credits_raw": "5",
           "areas": [],
           "source_pages": [
@@ -58,14 +58,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: COMP 4211 OR COMP 4331",
       "courses": [
         {
           "code": "COMP4211",
           "name": "Machine Learning",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -75,7 +75,7 @@
         {
           "code": "COMP4331",
           "name": "Data Mining",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -89,14 +89,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "",
       "courses": [
         {
           "code": "COMP4651",
           "name": "Cloud Computing and Big Data Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -110,14 +110,14 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 9.0,
+      "required_credits": 9,
       "required_credits_raw": "9",
       "note": "Big Data Technology Electives: 3 courses from the specified elective list. Students may request to use up to 3 credits of courses listed under the department BDT minor page to count towards this requirement.",
       "courses": [
         {
           "code": "COMP4221",
           "name": "Introduction to Natural Language Processing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -127,7 +127,7 @@
         {
           "code": "COMP4222",
           "name": "Machine Learning with Structured Data",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -137,7 +137,7 @@
         {
           "code": "COMP4321",
           "name": "Search Engines for Web and Enterprise Data",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -147,7 +147,7 @@
         {
           "code": "COMP4332",
           "name": "Big Data Mining and Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -157,7 +157,7 @@
         {
           "code": "COMP4421",
           "name": "Image Processing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -167,7 +167,7 @@
         {
           "code": "COMP4462",
           "name": "Data Visualization",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -177,7 +177,7 @@
         {
           "code": "COMP4471",
           "name": "Deep Learning in Computer Vision",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -187,7 +187,7 @@
         {
           "code": "COMP4632",
           "name": "Practicing Cybersecurity: Attacks and Counter-measures",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -197,7 +197,7 @@
         {
           "code": "COMP4641",
           "name": "Social Information Network Analysis and Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [

@@ -2,18 +2,18 @@
   "year": "2023-24",
   "code": "PHYS",
   "title": "BSc in Physics",
-  "total_required_credits": 101.0,
+  "total_required_credits": 101,
   "groups": [
     {
       "name": "Major Pre-requisite course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "Note: PHYS 1111 OR PHYS 1112 OR PHYS 1312 (Students taking IRE Track can only use PHYS 1312); PHYS 1114 OR PHYS 1314 (Students taking IRE Track can only use PHYS 1314). Students MUST take the following courses prior to enrollment into the major.",
       "courses": [
         {
           "code": "PHYS1111",
           "name": "General Physics I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "PHYS1112",
           "name": "General Physics I with Calculus",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "PHYS1312",
           "name": "Honors General Physics I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -43,7 +43,7 @@
         {
           "code": "PHYS1114",
           "name": "General Physics II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -53,7 +53,7 @@
         {
           "code": "PHYS1314",
           "name": "Honors General Physics II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -67,14 +67,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 7.0,
+      "required_credits": 7,
       "required_credits_raw": "7",
       "note": "",
       "courses": [
         {
           "code": "PHYS1113",
           "name": "Laboratory for General Physics I",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -84,7 +84,7 @@
         {
           "code": "PHYS1115",
           "name": "Laboratory for General Physics II",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -94,7 +94,7 @@
         {
           "code": "PHYS2022",
           "name": "Modern Physics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -104,7 +104,7 @@
         {
           "code": "PHYS2023",
           "name": "Modern Physics Laboratory",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -114,7 +114,7 @@
         {
           "code": "PHYS2080",
           "name": "Physics Seminar and Tutorial I",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -128,14 +128,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-4",
       "note": "Note: PHYS 2124 OR MATH 2352 (Students taking the Physics and Mathematics Option may take either MATH 2352 or PHYS 2124. Other students can only take PHYS 2124 to fulfill the requirement.)",
       "courses": [
         {
           "code": "PHYS2124",
           "name": "Mathematical Methods in Physics I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -145,7 +145,7 @@
         {
           "code": "MATH2352",
           "name": "Differential Equations",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -159,14 +159,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "",
       "courses": [
         {
           "code": "PHYS3032",
           "name": "Classical Mechanics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -180,14 +180,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-4",
       "note": "Note: PHYS 3033 OR PHYS 3053 (Students taking IRE Track or Honors Physics Option can only use PHYS 3053 to fulfill the requirement.)",
       "courses": [
         {
           "code": "PHYS3033",
           "name": "Electricity and Magnetism I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -197,7 +197,7 @@
         {
           "code": "PHYS3053",
           "name": "Honors Electricity and Magnetism I",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -211,14 +211,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-4",
       "note": "Note: PHYS 3036 OR PHYS 3037 (Students taking IRE Track or Honors Physics Option can only use PHYS 3037 to fulfill the requirement.)",
       "courses": [
         {
           "code": "PHYS3036",
           "name": "Quantum Mechanics I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -228,7 +228,7 @@
         {
           "code": "PHYS3037",
           "name": "Honors Quantum Mechanics I",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -242,14 +242,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: PHYS 3142 OR MATH 3312 (Students taking the Physics and Mathematics Option may take either MATH 3312 or PHYS 3142. Other students can only take PHYS 3142 to fulfill the requirement.)",
       "courses": [
         {
           "code": "PHYS3142",
           "name": "Computational Methods in Physics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -259,7 +259,7 @@
         {
           "code": "MATH3312",
           "name": "Numerical Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -273,14 +273,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 10.0,
+      "required_credits": 10,
       "required_credits_raw": "10",
       "note": "",
       "courses": [
         {
           "code": "PHYS3152",
           "name": "Methods of Experimental Physics I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -290,7 +290,7 @@
         {
           "code": "PHYS3153",
           "name": "Methods of Experimental Physics II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -300,7 +300,7 @@
         {
           "code": "PHYS4050",
           "name": "Thermodynamics and Statistical Physics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -310,7 +310,7 @@
         {
           "code": "PHYS4080",
           "name": "Physics Seminar and Tutorial II",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -324,14 +324,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 4.0,
+      "required_credits": 4,
       "required_credits_raw": "4-6",
       "note": "Note: PHYS 4191 OR PHYS 4291 OR (SCIE 3500 AND SCIE 4500) (Students taking IRE Track can only use (SCIE 3500 AND SCIE 4500) to fulfill the requirement; those taking Honors Physics Option can only use PHYS 4291 to fulfill the requirement.)",
       "courses": [
         {
           "code": "PHYS4191",
           "name": "Capstone Project",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -341,7 +341,7 @@
         {
           "code": "PHYS4291",
           "name": "Capstone Research",
-          "credits": 6.0,
+          "credits": 6,
           "credits_raw": "6",
           "areas": [],
           "source_pages": [
@@ -351,7 +351,7 @@
         {
           "code": "SCIE3500",
           "name": "IRE Research Project I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -361,7 +361,7 @@
         {
           "code": "SCIE4500",
           "name": "IRE Research Project II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -375,14 +375,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 2.0,
+      "required_credits": 2,
       "required_credits_raw": "2",
       "note": "Note: PHYS 4811 OR PHYS 4812 OR PHYS 4813 OR PHYS 4814 OR PHYS 4815 (2 courses out of 5)",
       "courses": [
         {
           "code": "PHYS4811",
           "name": "Contemporary Applications of Physics: Machine Learning in Physics",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -392,7 +392,7 @@
         {
           "code": "PHYS4812",
           "name": "Contemporary Applications of Physics: Quantum Information Technology",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -402,7 +402,7 @@
         {
           "code": "PHYS4813",
           "name": "Contemporary Applications of Physics: Atmospheric Physics - Making Sense of Weather and Climate",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -412,7 +412,7 @@
         {
           "code": "PHYS4814",
           "name": "Contemporary Applications of Physics: Medical Physics",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -422,7 +422,7 @@
         {
           "code": "PHYS4815",
           "name": "Contemporary Applications of Physics: Physics of Radiation Therapy",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -436,14 +436,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 4.0,
+      "required_credits": 4,
       "required_credits_raw": "4-7",
       "note": "Note: [(MATH 1012 OR MATH 1013 OR MATH 1023) AND (MATH 1014 OR MATH 1024)] OR [MATH 1020]",
       "courses": [
         {
           "code": "MATH1012",
           "name": "Calculus IA",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -454,7 +454,7 @@
         {
           "code": "MATH1013",
           "name": "Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -464,7 +464,7 @@
         {
           "code": "MATH1014",
           "name": "Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -474,7 +474,7 @@
         {
           "code": "MATH1020",
           "name": "Accelerated Calculus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -484,7 +484,7 @@
         {
           "code": "MATH1023",
           "name": "Honors Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -494,7 +494,7 @@
         {
           "code": "MATH1024",
           "name": "Honors Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -509,14 +509,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-4",
       "note": "Note: MATH 2011 OR MATH 2023 (Students in Honors Physics Option, Physics and Mathematics Option and IRE Track can only use MATH 2023 to fulfill the requirement)",
       "courses": [
         {
           "code": "MATH2011",
           "name": "Introduction to Multivariable Calculus",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -526,7 +526,7 @@
         {
           "code": "MATH2023",
           "name": "Multivariable Calculus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -540,14 +540,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-4",
       "note": "Note: MATH 2111 OR MATH 2121 OR MATH 2131 (Students in Honors Physics Option, Physics and Mathematics Option and IRE Track can only use MATH 2121 OR MATH 2131 to fulfill the requirement)",
       "courses": [
         {
           "code": "MATH2111",
           "name": "Matrix Algebra and Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -557,7 +557,7 @@
         {
           "code": "MATH2121",
           "name": "Linear Algebra",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -567,7 +567,7 @@
         {
           "code": "MATH2131",
           "name": "Honors in Linear and Abstract Algebra I",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -581,14 +581,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: LANG 3023 OR LANG 3027 (Students following IRE Track should take LANG 3027 to fulfill the requirement.)",
       "courses": [
         {
           "code": "LANG3023",
           "name": "Science Communication in English (Physics)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -598,7 +598,7 @@
         {
           "code": "LANG3027",
           "name": "Science Communication in English for Research Students",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -612,14 +612,14 @@
     },
     {
       "name": "International Research Enrichment Track Required Course(s)",
-      "required_credits": 13.0,
+      "required_credits": 13,
       "required_credits_raw": "13",
       "note": "Students in the IRE Track should also take PHYS 3053, PHYS 3037, SCIE 3500, and SCIE 4500 as specified in the major requirements. Subject to approval of the program office, students may reuse MATH 4023, MATH 4052, and/or PHYS 3034 to count towards the requirements of Physics and Mathematics Option. Includes: PHYS 3031 OR (MATH 4023 AND MATH 4052) (3-6); PHYS 3034 (3); PHYS 3090 (1); PHYS 4051 (3).",
       "courses": [
         {
           "code": "PHYS3031",
           "name": "Mathematical Methods in Physics II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -629,7 +629,7 @@
         {
           "code": "MATH4023",
           "name": "Complex Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -639,7 +639,7 @@
         {
           "code": "MATH4052",
           "name": "Partial Differential Equations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -649,7 +649,7 @@
         {
           "code": "PHYS3034",
           "name": "Electricity and Magnetism II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -659,7 +659,7 @@
         {
           "code": "PHYS3090",
           "name": "Directed Studies in Physics II",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -669,7 +669,7 @@
         {
           "code": "PHYS4051",
           "name": "Quantum Mechanics II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -687,14 +687,14 @@
     },
     {
       "name": "International Research Enrichment Track Elective Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Physics Electives [Course(s) from the specified elective list] Any PHYS courses at 3000-level or above.",
       "courses": [
         {
           "code": "PHYS2010",
           "name": "Introductory Biological Physics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -704,7 +704,7 @@
         {
           "code": "PHYS2021",
           "name": "Black Holes and the Early Universe",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -714,7 +714,7 @@
         {
           "code": "PHYS2090",
           "name": "Directed Studies in Physics I",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -732,14 +732,14 @@
     },
     {
       "name": "Honors Physics Option Required Course(s)",
-      "required_credits": 9.0,
+      "required_credits": 9,
       "required_credits_raw": "9",
       "note": "Students in the Honors Physics Option should also take PHYS 3053, PHYS 3037, and PHYS 4291 as specified in the major requirements. Includes: PHYS 3031 OR (MATH 4023 AND MATH 4052) (3-6); PHYS 3034 (3); PHYS 4051 (3). Students who take an option MUST complete all requirements specified in addition to the major requirements.",
       "courses": [
         {
           "code": "PHYS3031",
           "name": "Mathematical Methods in Physics II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -749,7 +749,7 @@
         {
           "code": "MATH4023",
           "name": "Complex Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -759,7 +759,7 @@
         {
           "code": "MATH4052",
           "name": "Partial Differential Equations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -769,7 +769,7 @@
         {
           "code": "PHYS3034",
           "name": "Electricity and Magnetism II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -779,7 +779,7 @@
         {
           "code": "PHYS4051",
           "name": "Quantum Mechanics II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -797,14 +797,14 @@
     },
     {
       "name": "Honors Physics Option Elective Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Physics Electives [Course(s) from the specified elective list] Any PHYS courses at 3000-level or above.",
       "courses": [
         {
           "code": "PHYS2010",
           "name": "Introductory Biological Physics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -814,7 +814,7 @@
         {
           "code": "PHYS2021",
           "name": "Black Holes and the Early Universe",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -824,7 +824,7 @@
         {
           "code": "PHYS2090",
           "name": "Directed Studies in Physics I",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -842,14 +842,14 @@
     },
     {
       "name": "Physics and Mathematics Option Required Course(s)",
-      "required_credits": 16.0,
+      "required_credits": 16,
       "required_credits_raw": "16",
       "note": "Includes: PHYS 3034 OR PHYS 4051 (3); MATH 2033 (4); MATH 3033 OR MATH 3121 OR MATH 3131 OR MATH 4223 (3-4); MATH 4023 (3); MATH 4052 (3). Students who take an option MUST complete all requirements specified in addition to the major requirements.",
       "courses": [
         {
           "code": "PHYS3034",
           "name": "Electricity and Magnetism II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -859,7 +859,7 @@
         {
           "code": "PHYS4051",
           "name": "Quantum Mechanics II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -869,7 +869,7 @@
         {
           "code": "MATH2033",
           "name": "Mathematical Analysis",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -879,7 +879,7 @@
         {
           "code": "MATH3033",
           "name": "Real Analysis",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -889,7 +889,7 @@
         {
           "code": "MATH3121",
           "name": "Abstract Algebra",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -899,7 +899,7 @@
         {
           "code": "MATH3131",
           "name": "Honors in Linear and Abstract Algebra II",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -909,7 +909,7 @@
         {
           "code": "MATH4223",
           "name": "Differential Geometry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -919,7 +919,7 @@
         {
           "code": "MATH4023",
           "name": "Complex Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -929,7 +929,7 @@
         {
           "code": "MATH4052",
           "name": "Partial Differential Equations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [

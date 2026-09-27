@@ -2,69 +2,311 @@
   "year": "2023-24",
   "code": "MINOR-BIEN",
   "title": "Minor Program in Bioengineering",
-  "total_required_credits": 18.0,
+  "total_required_credits": 18,
   "groups": [
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: BIEN 1010 OR CENG 1600",
       "courses": [
-        { "code": "BIEN1010", "name": "Introduction to Biomedical Engineering", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [1] },
-        { "code": "CENG1600", "name": "Biotechnology and Its Business Opportunities", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [1] }
+        {
+          "code": "BIEN1010",
+          "name": "Introduction to Biomedical Engineering",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "CENG1600",
+          "name": "Biotechnology and Its Business Opportunities",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
       ],
-      "source_pages": [1]
+      "source_pages": [
+        1
+      ]
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-4",
       "note": "Note: BIEN 2310 OR BIEN 3320 OR BIEN 3410 OR ELEC 4810 OR LIFS 4320",
       "courses": [
-        { "code": "BIEN2310", "name": "Modeling for Chemical and Biological Engineering", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [1] },
-        { "code": "BIEN3320", "name": "Data Science for Biology and Medicine", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [1] },
-        { "code": "BIEN3410", "name": "Bioimaging and Image Analysis", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [1] },
-        { "code": "ELEC4810", "name": "Introduction to Biosensors and Bioinstrumentation", "credits": 4.0, "credits_raw": "4", "areas": [], "source_pages": [1] },
-        { "code": "LIFS4320", "name": "Data Science for Biology and Medicine", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [1] }
+        {
+          "code": "BIEN2310",
+          "name": "Modeling for Chemical and Biological Engineering",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "BIEN3320",
+          "name": "Data Science for Biology and Medicine",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "BIEN3410",
+          "name": "Bioimaging and Image Analysis",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "ELEC4810",
+          "name": "Introduction to Biosensors and Bioinstrumentation",
+          "credits": 4,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "LIFS4320",
+          "name": "Data Science for Biology and Medicine",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
       ],
-      "source_pages": [1]
+      "source_pages": [
+        1
+      ]
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: BIEN 2410 OR BIEN 2610 OR LIFS 3040",
       "courses": [
-        { "code": "BIEN2410", "name": "Cellular and Systems Physiology for Engineers", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] },
-        { "code": "BIEN2610", "name": "Chemical Biology for Engineers", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] },
-        { "code": "LIFS3040", "name": "Animal Physiology", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] }
+        {
+          "code": "BIEN2410",
+          "name": "Cellular and Systems Physiology for Engineers",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "BIEN2610",
+          "name": "Chemical Biology for Engineers",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "LIFS3040",
+          "name": "Animal Physiology",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
       ],
-      "source_pages": [2]
+      "source_pages": [
+        2
+      ]
     },
     {
       "name": "Elective(s)",
-      "required_credits": 9.0,
+      "required_credits": 9,
       "required_credits_raw": "9",
       "note": "Bioengineering Electives: 3 courses from the specified elective list, of which at least one course must be at 4000-level.",
       "courses": [
-        { "code": "BIEN4110", "name": "Regulatory Affairs in the Healthcare Industry", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] },
-        { "code": "BIEN4310", "name": "Statistical Signal Analysis and Applications in Neural Engineering (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": [], "source_pages": [2] },
-        { "code": "CENG1110", "name": "Introduction to Chemical Engineering", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] },
-        { "code": "CENG4620", "name": "Bioproducts and Processing", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] },
-        { "code": "CENG4640", "name": "Biomolecular Engineering", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] },
-        { "code": "CENG4650", "name": "Biomaterials and Drug Delivery", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] },
-        { "code": "CENG4670", "name": "Pharmaceutical Engineering", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] },
-        { "code": "COMP4211", "name": "Machine Learning", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] },
-        { "code": "COMP4331", "name": "Data Mining", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] },
-        { "code": "COMP4421", "name": "Image Processing", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] },
-        { "code": "ELEC4820", "name": "Medical Imaging", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] },
-        { "code": "ELEC4830", "name": "Statistical Signal Analysis and Applications in Neural Engineering (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": [], "source_pages": [2] },
-        { "code": "ENGG1300", "name": "Design Thinking for Health Innovation", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] },
-        { "code": "UCOP3200", "name": "Design for Global Health", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] },
-        { "code": "LIFS4370", "name": "Human Genetics and Personalized Medicine", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] },
-        { "code": "LIFS4760", "name": "Biochemistry of Diseases", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] }
+        {
+          "code": "BIEN4110",
+          "name": "Regulatory Affairs in the Healthcare Industry",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "BIEN4310",
+          "name": "Statistical Signal Analysis and Applications in Neural Engineering (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CENG1110",
+          "name": "Introduction to Chemical Engineering",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CENG4620",
+          "name": "Bioproducts and Processing",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CENG4640",
+          "name": "Biomolecular Engineering",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CENG4650",
+          "name": "Biomaterials and Drug Delivery",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "CENG4670",
+          "name": "Pharmaceutical Engineering",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP4211",
+          "name": "Machine Learning",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP4331",
+          "name": "Data Mining",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "COMP4421",
+          "name": "Image Processing",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ELEC4820",
+          "name": "Medical Imaging",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ELEC4830",
+          "name": "Statistical Signal Analysis and Applications in Neural Engineering (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "ENGG1300",
+          "name": "Design Thinking for Health Innovation",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "UCOP3200",
+          "name": "Design for Global Health",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "LIFS4370",
+          "name": "Human Genetics and Personalized Medicine",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "LIFS4760",
+          "name": "Biochemistry of Diseases",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
       ],
-      "source_pages": [2]
+      "source_pages": [
+        2
+      ]
     }
   ],
   "uncertain": [

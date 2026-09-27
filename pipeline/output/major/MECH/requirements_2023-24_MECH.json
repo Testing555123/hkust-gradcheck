@@ -2,18 +2,18 @@
   "year": "2023-24",
   "code": "MECH",
   "title": "BEng in Mechanical Engineering",
-  "total_required_credits": 55.0,
+  "total_required_credits": 55,
   "groups": [
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-5",
       "note": "Note: COMP 1021 OR COMP 1022P OR COMP 2011 OR COMP 2012H",
       "courses": [
         {
           "code": "COMP1021",
           "name": "Introduction to Computer Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "COMP1022P",
           "name": "Introduction to Computing with Java",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "COMP2011",
           "name": "Programming with C++",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -43,7 +43,7 @@
         {
           "code": "COMP2012H",
           "name": "Honors Object-Oriented Programming and Data Structures",
-          "credits": 5.0,
+          "credits": 5,
           "credits_raw": "5",
           "areas": [],
           "source_pages": [
@@ -57,14 +57,14 @@
     },
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 4.0,
+      "required_credits": 4,
       "required_credits_raw": "4-7",
       "note": "Note: [(MATH 1012 OR MATH 1013 OR MATH 1023) AND (MATH 1014 OR MATH 1024)] OR [MATH 1020]",
       "courses": [
         {
           "code": "MATH1012",
           "name": "Calculus IA",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -74,7 +74,7 @@
         {
           "code": "MATH1013",
           "name": "Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -84,7 +84,7 @@
         {
           "code": "MATH1014",
           "name": "Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -94,7 +94,7 @@
         {
           "code": "MATH1020",
           "name": "Accelerated Calculus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -104,7 +104,7 @@
         {
           "code": "MATH1023",
           "name": "Honors Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -114,7 +114,7 @@
         {
           "code": "MATH1024",
           "name": "Honors Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -124,7 +124,7 @@
         {
           "code": "MATH2011",
           "name": "Introduction to Multivariable Calculus",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -138,14 +138,14 @@
     },
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: MATH 2111 OR MATH 2350 OR MATH 2351",
       "courses": [
         {
           "code": "MATH2111",
           "name": "Matrix Algebra and Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -155,7 +155,7 @@
         {
           "code": "MATH2350",
           "name": "Applied Linear Algebra and Differential Equations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -165,7 +165,7 @@
         {
           "code": "MATH2351",
           "name": "Introduction to Differential Equations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -179,14 +179,14 @@
     },
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: PHYS 1112 OR PHYS 1312",
       "courses": [
         {
           "code": "PHYS1112",
           "name": "General Physics I with Calculus",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -196,7 +196,7 @@
         {
           "code": "PHYS1312",
           "name": "Honors General Physics I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -210,14 +210,14 @@
     },
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "",
       "courses": [
         {
           "code": "LANG2030",
           "name": "Technical Communication I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -231,14 +231,14 @@
     },
     {
       "name": "CHEM/LIFS/ Science 1000-level course (1 course from the specified course PHYS list)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-4",
       "note": "",
       "courses": [
         {
           "code": "CHEM1008",
           "name": "Introductory Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -248,7 +248,7 @@
         {
           "code": "CHEM1012",
           "name": "General Chemistry B: Atomic Structure, Molecules, and Bonding",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -258,7 +258,7 @@
         {
           "code": "LIFS1901",
           "name": "General Biology I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -268,7 +268,7 @@
         {
           "code": "PHYS1101",
           "name": "Introductory Physics",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -282,14 +282,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "",
       "courses": [
         {
           "code": "MECH1906",
           "name": "Mechanical Engineering for Modern Life",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -299,7 +299,7 @@
         {
           "code": "MECH1990",
           "name": "Industrial Training",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -309,7 +309,7 @@
         {
           "code": "MECH2020",
           "name": "Statics and Dynamics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -319,7 +319,7 @@
         {
           "code": "MECH2040",
           "name": "Solid Mechanics I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -329,7 +329,7 @@
         {
           "code": "MECH2210",
           "name": "Fluid Mechanics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -339,7 +339,7 @@
         {
           "code": "MECH2310",
           "name": "Thermodynamics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -349,7 +349,7 @@
         {
           "code": "MECH2410",
           "name": "Engineering Materials I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -359,7 +359,7 @@
         {
           "code": "MECH2520",
           "name": "Design and Manufacturing I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -369,7 +369,7 @@
         {
           "code": "MECH3030",
           "name": "Mechanisms of Machinery",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -379,7 +379,7 @@
         {
           "code": "MECH3300",
           "name": "Energy Conversion",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -389,7 +389,7 @@
         {
           "code": "MECH3420",
           "name": "Engineering Materials II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -399,7 +399,7 @@
         {
           "code": "MECH3520",
           "name": "Design and Manufacturing II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -409,7 +409,7 @@
         {
           "code": "MECH3710",
           "name": "Manufacturing Processes and Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -419,7 +419,7 @@
         {
           "code": "MECH3310",
           "name": "Heat Transfer",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -429,7 +429,7 @@
         {
           "code": "MECH3610",
           "name": "Control Principles",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -439,7 +439,7 @@
         {
           "code": "MECH3630",
           "name": "Electrical Technology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -449,7 +449,7 @@
         {
           "code": "MECH3830",
           "name": "Laboratory",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -459,7 +459,7 @@
         {
           "code": "MECH3907",
           "name": "Mechatronic Design and Prototyping",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -469,7 +469,7 @@
         {
           "code": "MECH4900",
           "name": "Final Year Design Project",
-          "credits": 6.0,
+          "credits": 6,
           "credits_raw": "6",
           "areas": [],
           "source_pages": [
@@ -479,7 +479,7 @@
         {
           "code": "ELEC2420",
           "name": "Basic Electronics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -489,7 +489,7 @@
         {
           "code": "ENGG2010",
           "name": "Engineering Seminar Series",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -499,7 +499,7 @@
         {
           "code": "LANG4034",
           "name": "Technical Communication Il for Mechanical and Aerospace",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -513,14 +513,14 @@
     },
     {
       "name": "Elective Course(s)",
-      "required_credits": 9.0,
+      "required_credits": 9,
       "required_credits_raw": "9",
       "note": "MECH Electives in Energy (3 courses from the specified elective list. Courses taken as Major Required Courses or Elective Courses of other MECH Options may not be counted towards this elective requirement.)",
       "courses": [
         {
           "code": "MECH1902",
           "name": "Energy Systems in a Sustainable World",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -530,7 +530,7 @@
         {
           "code": "MECH3110",
           "name": "Materials for Energy Technologies",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -540,7 +540,7 @@
         {
           "code": "MECH3300",
           "name": "Energy Conversion",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -550,7 +550,7 @@
         {
           "code": "MECH3420",
           "name": "Engineering Materials II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -560,7 +560,7 @@
         {
           "code": "MECH4010",
           "name": "Materials Failure in Mechanical Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -570,7 +570,7 @@
         {
           "code": "MECH4340",
           "name": "Air Conditioning Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -580,7 +580,7 @@
         {
           "code": "MECH4350",
           "name": "Indoor Air Quality in Buildings",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -590,7 +590,7 @@
         {
           "code": "MECH4360",
           "name": "Introduction to Intelligent Building Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -600,7 +600,7 @@
         {
           "code": "MECH4430",
           "name": "Materials Characterization",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -610,7 +610,7 @@
         {
           "code": "MECH4912",
           "name": "Green Technologies for Buildings, Energy and Water",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -628,14 +628,14 @@
     },
     {
       "name": "Elective Course(s)",
-      "required_credits": 9.0,
+      "required_credits": 9,
       "required_credits_raw": "9",
       "note": "MECH Electives in Engineering Design (3 courses from the specified elective list. Courses taken as Major Required Courses or Elective Courses of other MECH Options may not be counted towards this elective requirement.)",
       "courses": [
         {
           "code": "MECH3510",
           "name": "Computer-Aided Design and Manufacturing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -645,7 +645,7 @@
         {
           "code": "MECH3520",
           "name": "Design and Manufacturing II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -655,7 +655,7 @@
         {
           "code": "MECH3710",
           "name": "Manufacturing Processes and Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -665,7 +665,7 @@
         {
           "code": "MECH4450",
           "name": "Introduction to Finite Element Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -675,7 +675,7 @@
         {
           "code": "MECH4710",
           "name": "Introduction to Robotics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -685,7 +685,7 @@
         {
           "code": "MECH4720",
           "name": "Introduction to Precision Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -695,7 +695,7 @@
         {
           "code": "MECH4740",
           "name": "Numerical Methods in Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -713,14 +713,14 @@
     },
     {
       "name": "Elective Course(s)",
-      "required_credits": 9.0,
+      "required_credits": 9,
       "required_credits_raw": "9",
       "note": "",
       "courses": [
         {
           "code": "MECH3020",
           "name": "Solid Mechanics II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -730,7 +730,7 @@
         {
           "code": "MECH3400",
           "name": "Introduction to Engineering Composite Materials",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -740,7 +740,7 @@
         {
           "code": "MECH3420",
           "name": "Engineering Materials II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -750,7 +750,7 @@
         {
           "code": "MECH3750",
           "name": "Vibration, Control and Programming",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -760,7 +760,7 @@
         {
           "code": "MECH4010",
           "name": "Materials Failure in Mechanical Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -770,7 +770,7 @@
         {
           "code": "MECH4430",
           "name": "Materials Characterization",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -780,7 +780,7 @@
         {
           "code": "MECH4450",
           "name": "Introduction to Finite Element Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -798,14 +798,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "",
       "courses": [
         {
           "code": "MECH4995",
           "name": "Research Project",
-          "credits": 6.0,
+          "credits": 6,
           "credits_raw": "6",
           "areas": [],
           "source_pages": [

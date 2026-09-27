@@ -2,18 +2,18 @@
   "year": "2025-26",
   "code": "OM",
   "title": "BBA in Operations Management",
-  "total_required_credits": 32.0,
+  "total_required_credits": 32,
   "groups": [
     {
       "name": "Required Course(s)",
-      "required_credits": 8.0,
+      "required_credits": 8,
       "required_credits_raw": "8",
       "note": "",
       "courses": [
         {
           "code": "ISOM3710",
           "name": "Business Modeling and Optimization",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "ISOM3770",
           "name": "Global Supply Chain Management",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -37,14 +37,14 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 12.0,
+      "required_credits": 12,
       "required_credits_raw": "12",
       "note": "OM Electives (Any 4 ISOM courses coded between 3500 and 3999 (except ISOM 3780); 4500 and 4999. Students taking the Business Analytics Option can only use courses in the specified elective list to fulfill this requirement. Courses taken as Option Required Courses may not be counted towards this elective requirement.) The specified elective list (restricted list for students taking the Business Analytics Option) is listed below; for students without an option, any eligible ISOM 3000-/4000-level courses may be used.",
       "courses": [
         {
           "code": "ISOM3530",
           "name": "Business Data Analytics",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -54,7 +54,7 @@
         {
           "code": "ISOM3540",
           "name": "Introduction to Probability Models",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -64,7 +64,7 @@
         {
           "code": "ISOM4520",
           "name": "Statistics for Financial Risk Management",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -74,7 +74,7 @@
         {
           "code": "ISOM4530",
           "name": "Statistical Analysis of Financial Data in R/S-plus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -84,7 +84,7 @@
         {
           "code": "ISOM4540",
           "name": "Time Series Analysis and Forecasting",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -94,7 +94,7 @@
         {
           "code": "ISOM4720",
           "name": "Simulation in Business and Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -104,7 +104,7 @@
         {
           "code": "ISOM4740",
           "name": "Enterprise Resource Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -114,7 +114,7 @@
         {
           "code": "ISOM4780",
           "name": "Integrated Planning and Execution",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -124,7 +124,7 @@
         {
           "code": "ISOM4810",
           "name": "OM Best Practices",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -134,7 +134,7 @@
         {
           "code": "ISOM4830",
           "name": "Analytics for Service Operations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -144,7 +144,7 @@
         {
           "code": "ISOM4860",
           "name": "Decision and Data Analytics in Financial Markets",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -154,7 +154,7 @@
         {
           "code": "ISOM4880",
           "name": "Operations Management Project",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -168,14 +168,14 @@
     },
     {
       "name": "Business Analytics Option Required Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "Students in the Business Analytics Option should also take 4 courses out of ISOM 3530, ISOM 3540, ISOM 4520, ISOM 4530, ISOM 4540, ISOM 4720, ISOM 4740, ISOM 4780, ISOM 4810, ISOM 4830, ISOM 4860 and ISOM 4880 to fulfill the OM Electives as specified under the Major Requirements. Students who take an option MUST complete all requirements specified in addition to the major requirements.",
       "courses": [
         {
           "code": "ISOM3360",
           "name": "Data Mining for Business Analytics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -185,7 +185,7 @@
         {
           "code": "ISOM3900",
           "name": "Decision Analytics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -203,14 +203,14 @@
     },
     {
       "name": "Supply Chain Management Option Required Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "Note: ISOM 3730 OR ISOM 4740 OR ISOM 4750 OR ISOM 4780 (one course, 3 credits); plus ISOM 3760 Logistics Management (3 credits). Students who take an option MUST complete all requirements specified in addition to the major requirements.",
       "courses": [
         {
           "code": "ISOM3730",
           "name": "Quality and Process Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -220,7 +220,7 @@
         {
           "code": "ISOM4740",
           "name": "Enterprise Resource Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -230,7 +230,7 @@
         {
           "code": "ISOM4750",
           "name": "Business Project Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -240,7 +240,7 @@
         {
           "code": "ISOM4780",
           "name": "Integrated Planning and Execution",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -250,7 +250,7 @@
         {
           "code": "ISOM3760",
           "name": "Logistics Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [

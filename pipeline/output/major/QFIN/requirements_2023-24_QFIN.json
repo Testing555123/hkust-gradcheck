@@ -2,18 +2,18 @@
   "year": "2023-24",
   "code": "QFIN",
   "title": "BSc in Quantitative Finance",
-  "total_required_credits": 18.0,
+  "total_required_credits": 18,
   "groups": [
     {
       "name": "Required Course(s)",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "",
       "note": "",
       "courses": [
         {
           "code": "FINA3103",
           "name": "Intermediate Investments",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "FINA3203",
           "name": "Derivative Securities",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "FINA3303",
           "name": "Intermediate Corporate Finance",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -43,7 +43,7 @@
         {
           "code": "FINA3810",
           "name": "Bloomberg Market Concepts Certification",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -53,7 +53,7 @@
         {
           "code": "FINA4803",
           "name": "Quantitative Trading",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -63,7 +63,7 @@
         {
           "code": "ECON3334",
           "name": "Introduction to Econometrics",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -73,7 +73,7 @@
         {
           "code": "ISOM3230",
           "name": "Business Programming in VBA",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -83,7 +83,7 @@
         {
           "code": "MATH1014",
           "name": "Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -93,7 +93,7 @@
         {
           "code": "MATH1024",
           "name": "Honors Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -103,7 +103,7 @@
         {
           "code": "MATH2011",
           "name": "Introduction to Multivariable Calculus",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -113,7 +113,7 @@
         {
           "code": "MATH2023",
           "name": "Multivariable Calculus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -127,14 +127,14 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 18.0,
+      "required_credits": 18,
       "required_credits_raw": "18",
       "note": "Restricted Electives (Courses from the specified elective list, of QFIN which at least 3 credits from Area A, at least 6 credits from Area B, and at least 9 credits from Area C)",
       "courses": [
         {
           "code": "ISOM3360",
           "name": "Data Mining for Business Analytics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Programming and Data Analysis"
@@ -146,7 +146,7 @@
         {
           "code": "ISOM3370",
           "name": "Big Data Technologies",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Programming and Data Analysis"
@@ -158,7 +158,7 @@
         {
           "code": "COMP2011",
           "name": "Programming with C++",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Programming and Data Analysis"
@@ -170,7 +170,7 @@
         {
           "code": "COMP2012",
           "name": "Object-Oriented Programming and Data Structures",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Programming and Data Analysis"
@@ -182,7 +182,7 @@
         {
           "code": "COMP2012H",
           "name": "Honors Object-Oriented Programming and Data Structures",
-          "credits": 5.0,
+          "credits": 5,
           "credits_raw": "5",
           "areas": [
             "Programming and Data Analysis"
@@ -194,7 +194,7 @@
         {
           "code": "COMP3211",
           "name": "Learning, Reasoning, and Decision Making in Al",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Programming and Data Analysis"
@@ -206,7 +206,7 @@
         {
           "code": "COMP4211",
           "name": "Machine Learning",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Programming and Data Analysis"
@@ -218,7 +218,7 @@
         {
           "code": "COMP4221",
           "name": "Introduction to Natural Language Processing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Programming and Data Analysis"
@@ -230,7 +230,7 @@
         {
           "code": "COMP4331",
           "name": "Data Mining",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Programming and Data Analysis"
@@ -242,7 +242,7 @@
         {
           "code": "COMP4332",
           "name": "Big Data Mining and Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Programming and Data Analysis"
@@ -254,7 +254,7 @@
         {
           "code": "COMP4471",
           "name": "Deep Learning in Computer Vision",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Programming and Data Analysis"
@@ -266,7 +266,7 @@
         {
           "code": "RMBI4310",
           "name": "Advanced Data Mining for Risk Management and Business Intelligence",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Programming and Data Analysis"
@@ -278,7 +278,7 @@
         {
           "code": "ECON4304",
           "name": "Time Series Econometrics and Business Forecasting",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Quantitative Skills"
@@ -290,7 +290,7 @@
         {
           "code": "ISOM3540",
           "name": "Introduction to Probability Models",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Quantitative Skills"
@@ -302,7 +302,7 @@
         {
           "code": "ISOM4520",
           "name": "Statistics for Financial Risk Management",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Quantitative Skills"
@@ -314,7 +314,7 @@
         {
           "code": "ISOM4530",
           "name": "Statistical Analysis of Financial Data in R/S-plus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Quantitative Skills"
@@ -326,7 +326,7 @@
         {
           "code": "ISOM4540",
           "name": "Time Series Analysis and Forecasting",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Quantitative Skills"
@@ -338,7 +338,7 @@
         {
           "code": "MATH2111",
           "name": "Matrix Algebra and Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Quantitative Skills"
@@ -350,7 +350,7 @@
         {
           "code": "MATH2121",
           "name": "Linear Algebra",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Quantitative Skills"
@@ -362,7 +362,7 @@
         {
           "code": "MATH2131",
           "name": "Honors in Linear and Abstract Algebra I",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Quantitative Skills"
@@ -374,7 +374,7 @@
         {
           "code": "MATH2350",
           "name": "Applied Linear Algebra and Differential Equations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Quantitative Skills"
@@ -386,7 +386,7 @@
         {
           "code": "MATH2351",
           "name": "Introduction to Differential Equations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3 Credit(s)",
           "areas": [
             "Quantitative Skills"
@@ -398,7 +398,7 @@
         {
           "code": "MATH2352",
           "name": "Differential Equations",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4 Credit(s)",
           "areas": [
             "Quantitative Skills"
@@ -410,7 +410,7 @@
         {
           "code": "MATH2421",
           "name": "Probability",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Quantitative Skills"
@@ -422,7 +422,7 @@
         {
           "code": "MATH2431",
           "name": "Honors Probability",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Quantitative Skills"
@@ -434,7 +434,7 @@
         {
           "code": "MATH3423",
           "name": "Statistical Inference",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Quantitative Skills"
@@ -446,7 +446,7 @@
         {
           "code": "MATH4511",
           "name": "Quantitative Methods for Fixed Income Derivatives",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Quantitative Skills"
@@ -458,7 +458,7 @@
         {
           "code": "MATH4512",
           "name": "Fundamentals of Mathematical Finance",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Quantitative Skills"
@@ -470,7 +470,7 @@
         {
           "code": "RMBI4210",
           "name": "Quantitative Methods for Risk Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Quantitative Skills"

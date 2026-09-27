@@ -2,86 +2,244 @@
   "year": "2024-25",
   "code": "MINOR-ASCO",
   "title": "Minor Program in Astrophysics and Cosmology",
-  "total_required_credits": 21.0,
+  "total_required_credits": 21,
   "groups": [
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: PHYS 1002 OR PHYS 1006 (Subject to approval by program office, students completed both PHYS 4055 and PHYS 4071 may be exempted from this requirement)",
       "courses": [
-        { "code": "PHYS1002", "name": "Introduction to Astrophysics and Astronomy", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [1] },
-        { "code": "PHYS1006", "name": "Astronomy for Beginners", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [1] }
+        {
+          "code": "PHYS1002",
+          "name": "Introduction to Astrophysics and Astronomy",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "PHYS1006",
+          "name": "Astronomy for Beginners",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
       ],
-      "source_pages": [1]
+      "source_pages": [
+        1
+      ]
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: PHYS 1111 OR PHYS 1112 OR PHYS 1312",
       "courses": [
-        { "code": "PHYS1111", "name": "General Physics I", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [1] },
-        { "code": "PHYS1112", "name": "General Physics I with Calculus", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [1] },
-        { "code": "PHYS1312", "name": "Honors General Physics I", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [1] }
+        {
+          "code": "PHYS1111",
+          "name": "General Physics I",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "PHYS1112",
+          "name": "General Physics I with Calculus",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "PHYS1312",
+          "name": "Honors General Physics I",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
       ],
-      "source_pages": [1]
+      "source_pages": [
+        1
+      ]
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: PHYS 1114 OR PHYS 1314",
       "courses": [
-        { "code": "PHYS1114", "name": "General Physics II", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [1] },
-        { "code": "PHYS1314", "name": "Honors General Physics II", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [1] }
+        {
+          "code": "PHYS1114",
+          "name": "General Physics II",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "PHYS1314",
+          "name": "Honors General Physics II",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
       ],
-      "source_pages": [1]
+      "source_pages": [
+        1
+      ]
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "",
       "courses": [
-        { "code": "PHYS2022", "name": "Modern Physics", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [1] }
+        {
+          "code": "PHYS2022",
+          "name": "Modern Physics",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            1
+          ]
+        }
       ],
-      "source_pages": [1]
+      "source_pages": [
+        1
+      ]
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-4",
       "note": "Note: PHYS 2124 OR PHYS 3036 OR PHYS 3037 OR MATH 2351 OR MATH 2352",
       "courses": [
-        { "code": "PHYS2124", "name": "Mathematical Methods in Physics I", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] },
-        { "code": "PHYS3036", "name": "Quantum Mechanics I", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] },
-        { "code": "PHYS3037", "name": "Honors Quantum Mechanics I", "credits": 4.0, "credits_raw": "4", "areas": [], "source_pages": [2] },
-        { "code": "MATH2351", "name": "Introduction to Differential Equations", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] },
-        { "code": "MATH2352", "name": "Differential Equations", "credits": 4.0, "credits_raw": "4", "areas": [], "source_pages": [2] }
+        {
+          "code": "PHYS2124",
+          "name": "Mathematical Methods in Physics I",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "PHYS3036",
+          "name": "Quantum Mechanics I",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "PHYS3037",
+          "name": "Honors Quantum Mechanics I",
+          "credits": 4,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MATH2351",
+          "name": "Introduction to Differential Equations",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "MATH2352",
+          "name": "Differential Equations",
+          "credits": 4,
+          "credits_raw": "4",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
       ],
-      "source_pages": [2]
+      "source_pages": [
+        2
+      ]
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "",
       "courses": [
-        { "code": "PHYS3071", "name": "Introduction to Stellar Astrophysics", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] }
+        {
+          "code": "PHYS3071",
+          "name": "Introduction to Stellar Astrophysics",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
       ],
-      "source_pages": [2]
+      "source_pages": [
+        2
+      ]
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: PHYS 4055 OR PHYS 4071",
       "courses": [
-        { "code": "PHYS4055", "name": "Particle Physics and the Universe", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] },
-        { "code": "PHYS4071", "name": "Big Bang Cosmology and Inflation", "credits": 3.0, "credits_raw": "3", "areas": [], "source_pages": [2] }
+        {
+          "code": "PHYS4055",
+          "name": "Particle Physics and the Universe",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "PHYS4071",
+          "name": "Big Bang Cosmology and Inflation",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [],
+          "source_pages": [
+            2
+          ]
+        }
       ],
-      "source_pages": [2]
+      "source_pages": [
+        2
+      ]
     }
   ],
   "uncertain": [

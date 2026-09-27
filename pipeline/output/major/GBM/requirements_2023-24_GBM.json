@@ -2,11 +2,11 @@
   "year": "2023-24",
   "code": "GBM",
   "title": "BBA in General Business Management",
-  "total_required_credits": 29.0,
+  "total_required_credits": 29,
   "groups": [
     {
       "name": "SB&M Electives",
-      "required_credits": 29.0,
+      "required_credits": 29,
       "required_credits_raw": "29",
       "note": "Any 9 courses offered by the departments under SB&M, of which at least 4 courses are of 3000-level or above.",
       "courses": [],

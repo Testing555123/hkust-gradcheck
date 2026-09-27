@@ -2,18 +2,18 @@
   "year": "2025-26",
   "code": "SGFN",
   "title": "BSc in Sustainable and Green Finance",
-  "total_required_credits": 76.0,
+  "total_required_credits": 76,
   "groups": [
     {
       "name": "Required Course(s)",
-      "required_credits": 67.0,
+      "required_credits": 67,
       "required_credits_raw": "67",
       "note": "Students taking the BSc Program in Sustainable and Green Finance as their first major are exempted from the School Requirements.",
       "courses": [
         {
           "code": "SGFN4733",
           "name": "Green Finance Case Analyses",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "SUST1000",
           "name": "Sustainability Fundamentals",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "ACCT2010",
           "name": "Principles of Accounting I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -43,7 +43,7 @@
         {
           "code": "FINA2303",
           "name": "Financial Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -53,7 +53,7 @@
         {
           "code": "FINA3103",
           "name": "Intermediate Investments",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -63,7 +63,7 @@
         {
           "code": "FINA3203",
           "name": "Derivative Securities",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -73,7 +73,7 @@
         {
           "code": "FINA3810",
           "name": "Bloomberg Market Concepts Certification",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -83,7 +83,7 @@
         {
           "code": "FINA4303",
           "name": "Fixed Income Securities",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -93,7 +93,7 @@
         {
           "code": "FINA4513",
           "name": "Risk Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -103,7 +103,7 @@
         {
           "code": "FINA4703",
           "name": "ESG Investing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -113,7 +113,7 @@
         {
           "code": "ISOM2020",
           "name": "Coding for Business",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -123,7 +123,7 @@
         {
           "code": "ISOM2500",
           "name": "Business Statistics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -133,7 +133,7 @@
         {
           "code": "ISOM2600",
           "name": "Introduction to Business Analytics",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -143,7 +143,7 @@
         {
           "code": "ISOM2700",
           "name": "Operations Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -153,7 +153,7 @@
         {
           "code": "ISOM3780",
           "name": "Sustainable Supply Chain Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -163,7 +163,7 @@
         {
           "code": "MGMT2130",
           "name": "Business Ethics and Social Responsibility",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "2",
           "areas": [],
           "source_pages": [
@@ -173,7 +173,7 @@
         {
           "code": "ENVR1170",
           "name": "Science, Environment and Society - From Big Bang to Big Data",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -183,7 +183,7 @@
         {
           "code": "ENVR2080",
           "name": "Circular Economy and Life Cycle Assessment",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -193,7 +193,7 @@
         {
           "code": "ENVR3005",
           "name": "Environmental Risks: Principles and Practices",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -203,7 +203,7 @@
         {
           "code": "ENVR3110",
           "name": "Life Cycle Assessment for Sustainable Development",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -213,7 +213,7 @@
         {
           "code": "ENVR3310",
           "name": "Green Business Strategy",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -223,7 +223,7 @@
         {
           "code": "ENVR4320",
           "name": "ESG Management and Reporting",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -233,7 +233,7 @@
         {
           "code": "ENVR4340",
           "name": "Social Sustainability: Risks and Challenges",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -243,7 +243,7 @@
         {
           "code": "ENVR4350",
           "name": "Governing Green Finance: National and International Perspectives and Approaches",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -258,14 +258,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-4",
       "note": "Note: MATH 1003 OR MATH 1013 OR MATH 1020 OR MATH 1023",
       "courses": [
         {
           "code": "MATH1003",
           "name": "Calculus and Linear Algebra",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -275,7 +275,7 @@
         {
           "code": "MATH1013",
           "name": "Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -285,7 +285,7 @@
         {
           "code": "MATH1020",
           "name": "Accelerated Calculus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -295,7 +295,7 @@
         {
           "code": "MATH1023",
           "name": "Honors Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -309,7 +309,7 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "FINA 3000-/4000-level Electives (Any course(s) of the subject and level as specified)",
       "courses": [],
@@ -319,14 +319,14 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "ENVR Sustainability Electives (1 course from the specified elective list)",
       "courses": [
         {
           "code": "ENVR3220",
           "name": "Energy Sources and Usage",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -336,7 +336,7 @@
         {
           "code": "ENVR3410",
           "name": "Economics for Environmental Policy and Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -346,7 +346,7 @@
         {
           "code": "ENVR3420",
           "name": "Environmental Law and Regulations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -356,7 +356,7 @@
         {
           "code": "ENVR4480",
           "name": "Climate Modeling and Risk Assessment",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [

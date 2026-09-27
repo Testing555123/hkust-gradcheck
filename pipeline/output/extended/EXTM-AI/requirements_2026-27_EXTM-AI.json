@@ -2,18 +2,18 @@
   "year": "2026-27",
   "code": "EXTM-AI",
   "title": "Extended Major Program in Artificial Intelligence",
-  "total_required_credits": 22.0,
+  "total_required_credits": 22,
   "groups": [
     {
       "name": "Required Course(s)",
-      "required_credits": 12.0,
+      "required_credits": 12,
       "required_credits_raw": "12-15",
       "note": "Core required (lower bound): EMIA 2010A (0) + EMIA 2020 (3) + one of EMIA 4110 / COMP 4211 / MATH 4432 (3) + capstone EMIA 4990 (0) or EMIA 4991 (3) + COMP 1023 (3) + COMP 2211 (3). Lower bound uses EMIA 4990 (0), giving 12; with EMIA 4991 (3) the required core is 15.",
       "courses": [
         {
           "code": "EMIA2010A",
           "name": "Cross-disciplinary Seminar: Artificial Intelligence",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "EMIA2020",
           "name": "Cross-disciplinary Design Thinking",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "EMIA4110",
           "name": "Practical Machine Learning",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -43,7 +43,7 @@
         {
           "code": "COMP4211",
           "name": "Machine Learning",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -53,7 +53,7 @@
         {
           "code": "MATH4432",
           "name": "Statistical Machine Learning",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -63,7 +63,7 @@
         {
           "code": "EMIA4990",
           "name": "Interdisciplinary Capstone Design",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -73,7 +73,7 @@
         {
           "code": "EMIA4991",
           "name": "Interdisciplinary Capstone Project",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -83,7 +83,7 @@
         {
           "code": "COMP2211",
           "name": "Introduction to Artificial Intelligence",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -93,7 +93,7 @@
         {
           "code": "COMP1023",
           "name": "Introduction to Python Programming",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -108,14 +108,14 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6-9",
       "note": "Artificial Intelligence Electives: courses from the specified elective list. Students may use at most one course from the same course groups of COMP 1944/CTDL 1902/HUMA 1930, COMP 4462/DASC 3240 and IEDA 3250/MATH 3425. Students taking EMIA 4990 should take a minimum of 9 credits; students taking EMIA 4991 should take a minimum of 6 credits.",
       "courses": [
         {
           "code": "CTDL1902",
           "name": "AI and Society: Ethics, Cognition, and Critical Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -125,7 +125,7 @@
         {
           "code": "EMIA1901",
           "name": "Introduction to Smart City Development",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -135,7 +135,7 @@
         {
           "code": "EMIA3500A",
           "name": "AI and Design in Sci-Fi",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "2",
           "areas": [],
           "source_pages": [
@@ -145,7 +145,7 @@
         {
           "code": "ACCT4720",
           "name": "Equity Investment with Machine Learning",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -155,7 +155,7 @@
         {
           "code": "BIEN3300",
           "name": "Data Science for Molecular Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -165,7 +165,7 @@
         {
           "code": "BIEN3310",
           "name": "Data Science for Neural Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -175,7 +175,7 @@
         {
           "code": "BIEN3320",
           "name": "Data Science for Biology and Medicine",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -185,7 +185,7 @@
         {
           "code": "CENG3300",
           "name": "Data Science for Molecular Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -195,7 +195,7 @@
         {
           "code": "CHEM3030",
           "name": "Introduction to AI for Chemistry",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -205,7 +205,7 @@
         {
           "code": "CIVL4100T",
           "name": "Applications of Artificial Intelligence in Remote Sensing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -215,7 +215,7 @@
         {
           "code": "CIVL4210",
           "name": "Advanced Construction with AI and Robotics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -225,7 +225,7 @@
         {
           "code": "CIVL4220",
           "name": "Scientific Machine Learning for Infrastructure Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -235,7 +235,7 @@
         {
           "code": "CIVL4360",
           "name": "Implementing Artificial Intelligence in Smart Buildings",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -245,7 +245,7 @@
         {
           "code": "COMP1944",
           "name": "Artificial Intelligence Ethics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -255,7 +255,7 @@
         {
           "code": "COMP4212",
           "name": "Reinforcement Learning",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -265,7 +265,7 @@
         {
           "code": "COMP4221",
           "name": "Introduction to Natural Language Processing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -275,7 +275,7 @@
         {
           "code": "COMP4222",
           "name": "Machine Learning with Structured Data",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -285,7 +285,7 @@
         {
           "code": "COMP4321",
           "name": "Search Engines for Web and Enterprise Data",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -295,7 +295,7 @@
         {
           "code": "COMP4331",
           "name": "Data Mining",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -305,7 +305,7 @@
         {
           "code": "COMP4332",
           "name": "Big Data Mining and Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -315,7 +315,7 @@
         {
           "code": "COMP4421",
           "name": "Image Processing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -325,7 +325,7 @@
         {
           "code": "COMP4441",
           "name": "Music Video Creation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -335,7 +335,7 @@
         {
           "code": "COMP4451",
           "name": "Game Programming",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -345,7 +345,7 @@
         {
           "code": "COMP4461",
           "name": "Human-Computer Interaction",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -355,7 +355,7 @@
         {
           "code": "COMP4462",
           "name": "Data Visualization",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -365,7 +365,7 @@
         {
           "code": "COMP4471",
           "name": "Deep Learning in Computer Vision",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -375,7 +375,7 @@
         {
           "code": "COMP4531",
           "name": "IoT and Smart Sensing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -385,7 +385,7 @@
         {
           "code": "COMP4551",
           "name": "Large-Scale Machine Learning System for Foundation Models",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -395,7 +395,7 @@
         {
           "code": "COMP4641",
           "name": "Social Information Network Analysis and Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -405,7 +405,7 @@
         {
           "code": "COMP4651",
           "name": "Cloud Computing and Big Data Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -415,7 +415,7 @@
         {
           "code": "COMP4901B",
           "name": "Large Language Models",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -425,7 +425,7 @@
         {
           "code": "COMP4901L",
           "name": "Foundations of Computer Vision",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -435,7 +435,7 @@
         {
           "code": "COMP5211",
           "name": "Advanced Artificial Intelligence",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -445,7 +445,7 @@
         {
           "code": "COMP5214",
           "name": "Advanced Deep Learning Architectures",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -455,7 +455,7 @@
         {
           "code": "DASC3240",
           "name": "Data Visualization in Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -465,7 +465,7 @@
         {
           "code": "DASC3250",
           "name": "Numerical Methods for Data Analytics in Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -475,7 +475,7 @@
         {
           "code": "DASC4010",
           "name": "Practical Artificial Intelligence in Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -485,7 +485,7 @@
         {
           "code": "DASC4400",
           "name": "Data Analytics in Information Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -495,7 +495,7 @@
         {
           "code": "ECON4305",
           "name": "Applied Machine Learning for Economic and Financial Analysis",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -505,7 +505,7 @@
         {
           "code": "ELEC3130",
           "name": "Digital Image Processing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -515,7 +515,7 @@
         {
           "code": "ELEC3350",
           "name": "Principles of Machine Learning",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -525,7 +525,7 @@
         {
           "code": "ELEC3810",
           "name": "Data Science for Neural Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -535,7 +535,7 @@
         {
           "code": "ELEC4240",
           "name": "Deep Learning in Computer Vision",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -545,7 +545,7 @@
         {
           "code": "ELEC4350",
           "name": "AI Processor Architecture",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -555,7 +555,7 @@
         {
           "code": "FINA4713",
           "name": "Introduction to Artificial Intelligence and Big Data in Finance",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -565,7 +565,7 @@
         {
           "code": "HUMA1930",
           "name": "Introduction to the Ethics of Artificial Intelligence and Data Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -575,7 +575,7 @@
         {
           "code": "IEDA3010",
           "name": "Prescriptive Analytics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -585,7 +585,7 @@
         {
           "code": "IEDA3250",
           "name": "Stochastic Models",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -595,7 +595,7 @@
         {
           "code": "IEDA3560",
           "name": "Predictive Analytics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -605,7 +605,7 @@
         {
           "code": "ISDN3150",
           "name": "AI for Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -615,7 +615,7 @@
         {
           "code": "ISDN4000S",
           "name": "Applied Generative AI for Interdisciplinary Projects",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -625,7 +625,7 @@
         {
           "code": "ISOM3340",
           "name": "Developing AI Applications",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -635,7 +635,7 @@
         {
           "code": "ISOM3360",
           "name": "Data Mining for Business Analytics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -645,7 +645,7 @@
         {
           "code": "ISOM3390",
           "name": "Business Programming in R",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -655,7 +655,7 @@
         {
           "code": "LIFS4320",
           "name": "Data Science for Biology and Medicine",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -665,7 +665,7 @@
         {
           "code": "MATH3425",
           "name": "Stochastic Modeling",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -675,7 +675,7 @@
         {
           "code": "MATH4335",
           "name": "Introduction to Optimization",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -685,7 +685,7 @@
         {
           "code": "MATH4336",
           "name": "Introduction to Mathematics of Image Processing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -695,7 +695,7 @@
         {
           "code": "MECH3510",
           "name": "Computer-Aided Design and Manufacturing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -705,7 +705,7 @@
         {
           "code": "MECH4000P",
           "name": "AI in Mechanical Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -715,7 +715,7 @@
         {
           "code": "MECH4000S",
           "name": "Intelligent Control and Data-Driven Modeling of Dynamic Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -725,7 +725,7 @@
         {
           "code": "PHYS4058",
           "name": "Information Physics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -735,7 +735,7 @@
         {
           "code": "PHYS4811",
           "name": "Contemporary Applications of Physics: Machine Learning in Physics",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -745,7 +745,7 @@
         {
           "code": "TEMG4950N",
           "name": "T&M Corporate Consulting Project: Meta LLM for Digital Transformation of Viu International",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -755,7 +755,7 @@
         {
           "code": "COMP3211",
           "name": "Learning, Reasoning, and Decision Making in AI",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [

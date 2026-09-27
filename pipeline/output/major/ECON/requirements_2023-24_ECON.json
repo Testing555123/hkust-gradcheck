@@ -2,18 +2,18 @@
   "year": "2023-24",
   "code": "ECON",
   "title": "BBA in Economics",
-  "total_required_credits": 23.0,
+  "total_required_credits": 23,
   "groups": [
     {
       "name": "Required Course(s)",
-      "required_credits": 12.0,
+      "required_credits": 12,
       "required_credits_raw": "12",
       "note": "",
       "courses": [
         {
           "code": "ECON3014",
           "name": "Managerial Microeconomics",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "ECON3024",
           "name": "Managerial Macroeconomics",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "ECON3334",
           "name": "Introduction to Econometrics",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -47,14 +47,14 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 11.0,
+      "required_credits": 11,
       "required_credits_raw": "11",
       "note": "",
       "courses": [
         {
           "code": "ECON4000",
           "name": "ECON 4000-level Electives (Any 3 courses of the subject and level as specified)",
-          "credits": 11.0,
+          "credits": 11,
           "credits_raw": "11",
           "areas": [],
           "source_pages": [

@@ -2,18 +2,18 @@
   "year": "2024-25",
   "code": "MARK",
   "title": "BBA in Marketing",
-  "total_required_credits": 12.0,
+  "total_required_credits": 12,
   "groups": [
     {
       "name": "Required Course(s)",
-      "required_credits": 12.0,
+      "required_credits": 12,
       "required_credits_raw": "12",
       "note": "",
       "courses": [
         {
           "code": "MARK3220",
           "name": "Marketing Research",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "MARK3420",
           "name": "Consumer Behavior",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "MARK4210",
           "name": "Strategic Marketing",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -47,7 +47,7 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "",
       "note": "",
       "courses": [],

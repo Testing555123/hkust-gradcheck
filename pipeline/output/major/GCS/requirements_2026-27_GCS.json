@@ -2,18 +2,18 @@
   "year": "2026-27",
   "code": "GCS",
   "title": "BSc in Global China Studies",
-  "total_required_credits": 69.0,
+  "total_required_credits": 69,
   "groups": [
     {
       "name": "Major Required Course(s)",
-      "required_credits": 15.0,
+      "required_credits": 15,
       "required_credits_raw": "15",
       "note": "",
       "courses": [
         {
           "code": "HUMA1440",
           "name": "Modern China",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "HUMA2590",
           "name": "The Making of the Modern World: Renaissance to the Present",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "SOSC1350",
           "name": "Contemporary China: Continuity and Change",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -43,7 +43,7 @@
         {
           "code": "SOSC2290",
           "name": "Understanding Globalization",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -53,7 +53,7 @@
         {
           "code": "LANG2170",
           "name": "Chinese Communication Skills for Humanities & Social Science Studies",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -67,14 +67,14 @@
     },
     {
       "name": "Major Required Course(s) - Capstone",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-6",
       "note": "Note: SHSS 4991 OR SHSS 4992 OR (SHSS 4991 AND SHSS 4993). [For students taking one of the Research Options, they should take SHSS 4992 OR (SHSS 4991 AND SHSS 4993)]",
       "courses": [
         {
           "code": "SHSS4991",
           "name": "Capstone Project",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -84,7 +84,7 @@
         {
           "code": "SHSS4992",
           "name": "Honors Thesis",
-          "credits": 6.0,
+          "credits": 6,
           "credits_raw": "6",
           "areas": [],
           "source_pages": [
@@ -94,7 +94,7 @@
         {
           "code": "SHSS4993",
           "name": "Honors Research",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -108,14 +108,14 @@
     },
     {
       "name": "Integrated Humanities and Social Science Track Required Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "Students should follow ONE of the two tracks (Integrated Humanities and Social Science Track OR Social Science Track). This group belongs to the Integrated Track.",
       "courses": [
         {
           "code": "HUMA2400",
           "name": "Approaches to Humanities in China Studies",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -125,7 +125,7 @@
         {
           "code": "SOSC2140",
           "name": "Research Methods in the Social Sciences",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -143,14 +143,14 @@
     },
     {
       "name": "Integrated Humanities and Social Science Track Restricted Electives",
-      "required_credits": 18.0,
+      "required_credits": 18,
       "required_credits_raw": "18",
       "note": "HUMA/SOSC Restricted Electives: 6 courses (18 credits), which should include three 3000-level and three 4000-level courses taken from at least 3 different areas. Areas: Environment, Economy & Globalization; Heritage, Community & Identity; Political & Social Change; Literature, Communication & Media. This group belongs to the Integrated Track. Remarks: SOSC 4290 last offered 2023-24 and deleted; kept as printed.",
       "courses": [
         {
           "code": "SOSC3120",
           "name": "Economic Development",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -161,7 +161,7 @@
         {
           "code": "SOSC3540",
           "name": "Environmental Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -172,7 +172,7 @@
         {
           "code": "SOSC4260",
           "name": "China's Economic Transformation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -183,7 +183,7 @@
         {
           "code": "SOSC4280",
           "name": "China in the Global Political Economy",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -194,7 +194,7 @@
         {
           "code": "SOSC4290",
           "name": "China's Sustainable Development",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -205,7 +205,7 @@
         {
           "code": "HUMA3630",
           "name": "Community and Cultural Identity",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -215,7 +215,7 @@
         {
           "code": "HUMA3900",
           "name": "Philosophical Inquiry into the Modern World",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -225,7 +225,7 @@
         {
           "code": "HUMA4610",
           "name": "Heritage in Cross-cultural Perspective",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -235,7 +235,7 @@
         {
           "code": "HUMA4700",
           "name": "Confucianism in a Global Context",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -245,7 +245,7 @@
         {
           "code": "HUMA4801",
           "name": "Classical Chinese Philosophy",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -255,7 +255,7 @@
         {
           "code": "SOSC3520",
           "name": "Understanding Comparative Politics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -266,7 +266,7 @@
         {
           "code": "SOSC3630",
           "name": "Democracy and Democratization around the World",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -277,7 +277,7 @@
         {
           "code": "SOSC3880",
           "name": "Social Inequality and Social Mobility",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -288,7 +288,7 @@
         {
           "code": "SOSC4310",
           "name": "Chinese Capitalism: Historical and Comparative Perspectives",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -299,7 +299,7 @@
         {
           "code": "SOSC4600",
           "name": "Understanding Chinese Politics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -310,7 +310,7 @@
         {
           "code": "HUMA3030",
           "name": "Language, Communication and Culture",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -320,7 +320,7 @@
         {
           "code": "HUMA3201",
           "name": "Animation: A Global Perspective",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -330,7 +330,7 @@
         {
           "code": "HUMA4020",
           "name": "Language and Literature in Modern China",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -340,7 +340,7 @@
         {
           "code": "HUMA4220",
           "name": "Verbal and Visual Representation of China",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -350,7 +350,7 @@
         {
           "code": "HUMA4221",
           "name": "Chinese Classics and Their Reworking in Various Media Around the Globe",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -368,7 +368,7 @@
     },
     {
       "name": "Integrated Humanities and Social Science Track HUMA/SOSC/SHSS Electives",
-      "required_credits": 24.0,
+      "required_credits": 24,
       "required_credits_raw": "24-27",
       "note": "HUMA/SOSC/SHSS Electives: students opting for SHSS 4992 OR (SHSS 4991 AND SHSS 4993) take min 8 courses (24 credits), 2 at 3000-/4000-level; students opting for SHSS 4991 take min 9 courses (27 credits), 3 at 3000-/4000-level. This is an open-ended elective (any HUMA/SOSC/SHSS courses); the PDF provides no fixed course list, so courses array is empty. Combined with the capstone, the Integrated Track flexible-elective portion always equals 30 credits (6+24 or 3+27). This group belongs to the Integrated Track.",
       "courses": [],
@@ -382,14 +382,14 @@
     },
     {
       "name": "Social Science Track Required Course(s)",
-      "required_credits": 15.0,
+      "required_credits": 15,
       "required_credits_raw": "15",
       "note": "Students should follow ONE of the two tracks (Integrated Humanities and Social Science Track OR Social Science Track). This group belongs to the Social Science Track (mutually exclusive with the Integrated Track).",
       "courses": [
         {
           "code": "SOSC1100",
           "name": "Quantitative Data Analysis for Social Research I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -399,7 +399,7 @@
         {
           "code": "SOSC1300",
           "name": "The World of Politics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -409,7 +409,7 @@
         {
           "code": "SOSC1440",
           "name": "Introduction to Economics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -419,7 +419,7 @@
         {
           "code": "SOSC1850",
           "name": "Understanding Society",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -429,7 +429,7 @@
         {
           "code": "SOSC2140",
           "name": "Research Methods in the Social Sciences",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -447,14 +447,14 @@
     },
     {
       "name": "Social Science Track Disciplinary Foundation Electives",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "SOSC Disciplinary Foundation Electives: 2 courses from the specified elective list, of which the courses should be taken from different areas (Introductory Demography: SOSC 1780, SOSC 1860; Introductory Psychology: SOSC 1960, SOSC 1980). This group belongs to the Social Science Track.",
       "courses": [
         {
           "code": "SOSC1780",
           "name": "Population and Development in China",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -464,7 +464,7 @@
         {
           "code": "SOSC1860",
           "name": "Population and Society",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -474,7 +474,7 @@
         {
           "code": "SOSC1960",
           "name": "Introduction to Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -484,7 +484,7 @@
         {
           "code": "SOSC1980",
           "name": "Psychology of Personal Growth",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -502,14 +502,14 @@
     },
     {
       "name": "Social Science Track SOSC Electives",
-      "required_credits": 27.0,
+      "required_credits": 27,
       "required_credits_raw": "27",
       "note": "SOSC Electives: 9 courses (27 credits), of which at least 4 courses must come from the 'Restricted Electives' list (SOSC 3120, 3520, 3540, 3630, 3880, 4260, 4280, 4290, 4310, 4600); the remaining may be any SOSC courses (open-ended). This group belongs to the Social Science Track.",
       "courses": [
         {
           "code": "SOSC3120",
           "name": "Economic Development",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -519,7 +519,7 @@
         {
           "code": "SOSC3520",
           "name": "Understanding Comparative Politics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -529,7 +529,7 @@
         {
           "code": "SOSC3540",
           "name": "Environmental Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -539,7 +539,7 @@
         {
           "code": "SOSC3630",
           "name": "Democracy and Democratization around the World",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -549,7 +549,7 @@
         {
           "code": "SOSC3880",
           "name": "Social Inequality and Social Mobility",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -559,7 +559,7 @@
         {
           "code": "SOSC4260",
           "name": "China's Economic Transformation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -569,7 +569,7 @@
         {
           "code": "SOSC4280",
           "name": "China in the Global Political Economy",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -579,7 +579,7 @@
         {
           "code": "SOSC4290",
           "name": "China's Sustainable Development",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -589,7 +589,7 @@
         {
           "code": "SOSC4310",
           "name": "Chinese Capitalism: Historical and Comparative Perspectives",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -599,7 +599,7 @@
         {
           "code": "SOSC4600",
           "name": "Understanding Chinese Politics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -617,14 +617,14 @@
     },
     {
       "name": "Applied Economics Research Option Elective(s)",
-      "required_credits": 9.0,
+      "required_credits": 9,
       "required_credits_raw": "9",
       "note": "OPTIONAL. Only for Integrated Track students with CGA 3.3+, and they must take Honors Thesis/Honors Research with applied economics focus. 3 courses (9 credits, two at 3000-level or above). 'ECON Any ECON courses' is open-ended. Not counted in total_required_credits.",
       "courses": [
         {
           "code": "SOSC1420",
           "name": "Poverty",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -634,7 +634,7 @@
         {
           "code": "SOSC3120",
           "name": "Economic Development",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -644,7 +644,7 @@
         {
           "code": "SOSC4260",
           "name": "China's Economic Transformation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -662,14 +662,14 @@
     },
     {
       "name": "Environment and Technology Research Option Elective(s)",
-      "required_credits": 9.0,
+      "required_credits": 9,
       "required_credits_raw": "9",
       "note": "OPTIONAL (Integrated Track, CGA 3.3+). 3 courses (9 credits, two at 3000-level or above). Not counted in total_required_credits.",
       "courses": [
         {
           "code": "HUMA2621",
           "name": "Culture and Environment",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -679,7 +679,7 @@
         {
           "code": "SOSC4290",
           "name": "China's Sustainable Development",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -689,7 +689,7 @@
         {
           "code": "ENVR3210",
           "name": "Environmental Technology for Impact Assessment",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -699,7 +699,7 @@
         {
           "code": "ENVR3310",
           "name": "Green Business Strategy",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -709,7 +709,7 @@
         {
           "code": "ENVR3410",
           "name": "Economics for Environmental Policy and Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -728,14 +728,14 @@
     },
     {
       "name": "Heritage and Cultural Sustainability Research Option Elective(s)",
-      "required_credits": 9.0,
+      "required_credits": 9,
       "required_credits_raw": "9",
       "note": "OPTIONAL (Integrated Track, CGA 3.3+). 3 courses (9 credits, two at 3000-level or above). Not counted in total_required_credits.",
       "courses": [
         {
           "code": "HUMA1100",
           "name": "Music of the World",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -745,7 +745,7 @@
         {
           "code": "HUMA1639",
           "name": "Marriage, Family and Kinship in Cross-cultural Perspectives",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -755,7 +755,7 @@
         {
           "code": "HUMA1650",
           "name": "Appreciation of Western Art",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -765,7 +765,7 @@
         {
           "code": "HUMA1660",
           "name": "Introduction to Chinese Art",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -775,7 +775,7 @@
         {
           "code": "HUMA2240",
           "name": "Reading Chinese Literature: Dreams of the Red Chamber",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -785,7 +785,7 @@
         {
           "code": "HUMA2320",
           "name": "Chinese Drama",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -795,7 +795,7 @@
         {
           "code": "HUMA2621",
           "name": "Culture and Environment",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -805,7 +805,7 @@
         {
           "code": "HUMA2632",
           "name": "Chinese Culture and Society in Anthropological Perspectives",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -815,7 +815,7 @@
         {
           "code": "HUMA2635",
           "name": "Cultural Diversity in China",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -825,7 +825,7 @@
         {
           "code": "HUMA2660",
           "name": "Introduction to Chinese Painting",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -835,7 +835,7 @@
         {
           "code": "HUMA2661",
           "name": "Chinese Oil Painting",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -845,7 +845,7 @@
         {
           "code": "HUMA2670",
           "name": "Understanding Western Painting",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -855,7 +855,7 @@
         {
           "code": "HUMA2680",
           "name": "Understanding Western Architecture",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -865,7 +865,7 @@
         {
           "code": "HUMA2840",
           "name": "Buddhism and the Chinese Intellectual Tradition",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -875,7 +875,7 @@
         {
           "code": "HUMA3630",
           "name": "Community and Cultural Identity",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -885,7 +885,7 @@
         {
           "code": "HUMA3660",
           "name": "Tradition & Modernity: Chinese Ink Painting in 20th Century",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -895,7 +895,7 @@
         {
           "code": "HUMA3680",
           "name": "Contemporary Architecture: The Pritzker Prize Winners",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -905,7 +905,7 @@
         {
           "code": "HUMA3810",
           "name": "Taoism and the Chinese Tradition",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -915,7 +915,7 @@
         {
           "code": "HUMA4610",
           "name": "Heritage in Cross-cultural Perspective",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -925,7 +925,7 @@
         {
           "code": "HUMA4700",
           "name": "Confucianism in a Global Context",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -935,7 +935,7 @@
         {
           "code": "SOSC3130",
           "name": "Hong Kong Culture",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -953,14 +953,14 @@
     },
     {
       "name": "Language and Literature Research Option Elective(s)",
-      "required_credits": 9.0,
+      "required_credits": 9,
       "required_credits_raw": "9",
       "note": "OPTIONAL (Integrated Track, CGA 3.3+). 3 courses (9 credits, two at 3000-level or above). Not counted in total_required_credits.",
       "courses": [
         {
           "code": "HUMA1030",
           "name": "Structure of the Chinese Language",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -970,7 +970,7 @@
         {
           "code": "HUMA1060",
           "name": "Introduction to Mandarin Chinese Grammar",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -980,7 +980,7 @@
         {
           "code": "HUMA2010",
           "name": "Metaphors in English and Chinese",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -990,7 +990,7 @@
         {
           "code": "HUMA2031",
           "name": "The Cantonese Language",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1000,7 +1000,7 @@
         {
           "code": "HUMA2050",
           "name": "Classical Chinese",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1010,7 +1010,7 @@
         {
           "code": "HUMA2240",
           "name": "Reading Chinese Literature: Dreams of the Red Chamber",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1020,7 +1020,7 @@
         {
           "code": "HUMA2250",
           "name": "Modern Chinese Fiction (1917-1949)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1030,7 +1030,7 @@
         {
           "code": "HUMA2260",
           "name": "Contemporary Chinese Fiction (1949-present)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1040,7 +1040,7 @@
         {
           "code": "HUMA2300",
           "name": "Traditional Chinese Poetry: Early Chinese Poetry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1050,7 +1050,7 @@
         {
           "code": "HUMA2310",
           "name": "Traditional Chinese Fiction",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1060,7 +1060,7 @@
         {
           "code": "HUMA2320",
           "name": "Chinese Drama",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1070,7 +1070,7 @@
         {
           "code": "HUMA3030",
           "name": "Language, Communication and Culture",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1080,7 +1080,7 @@
         {
           "code": "HUMA3201",
           "name": "Animation: A Global Perspective",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1090,7 +1090,7 @@
         {
           "code": "HUMA3210",
           "name": "Traditional Chinese Poetry: Tang and Song Poetry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1100,7 +1100,7 @@
         {
           "code": "HUMA3220",
           "name": "Modern Chinese Poetry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1110,7 +1110,7 @@
         {
           "code": "HUMA4020",
           "name": "Language and Literature in Modern China",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1120,7 +1120,7 @@
         {
           "code": "HUMA4220",
           "name": "Verbal and Visual Representation of China",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1138,14 +1138,14 @@
     },
     {
       "name": "Politics Research Option Elective(s)",
-      "required_credits": 9.0,
+      "required_credits": 9,
       "required_credits_raw": "9",
       "note": "OPTIONAL (Integrated Track, CGA 3.3+). 3 courses (9 credits, two at 3000-level or above). Not counted in total_required_credits.",
       "courses": [
         {
           "code": "HUMA4520",
           "name": "History of US-China Relations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1155,7 +1155,7 @@
         {
           "code": "SOSC1190",
           "name": "China and the World: China's Development in Historical and Comparative Perspectives",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1165,7 +1165,7 @@
         {
           "code": "SOSC1270",
           "name": "International Law",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1175,7 +1175,7 @@
         {
           "code": "SOSC1300",
           "name": "The World of Politics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1185,7 +1185,7 @@
         {
           "code": "SOSC1840",
           "name": "Government, Law and Society in China",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1195,7 +1195,7 @@
         {
           "code": "SOSC2290",
           "name": "Understanding Globalization",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1205,7 +1205,7 @@
         {
           "code": "SOSC3520",
           "name": "Understanding Comparative Politics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1215,7 +1215,7 @@
         {
           "code": "SOSC3630",
           "name": "Democracy and Democratization around the World",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1225,7 +1225,7 @@
         {
           "code": "SOSC4280",
           "name": "China in the Global Political Economy",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1235,7 +1235,7 @@
         {
           "code": "SOSC4600",
           "name": "Understanding Chinese Politics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1253,14 +1253,14 @@
     },
     {
       "name": "Sociology Research Option Elective(s)",
-      "required_credits": 9.0,
+      "required_credits": 9,
       "required_credits_raw": "9",
       "note": "OPTIONAL (Integrated Track, CGA 3.3+). 3 courses (9 credits, two at 3000-level or above). Not counted in total_required_credits.",
       "courses": [
         {
           "code": "SOSC1662",
           "name": "Contemporary Hong Kong Society",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1270,7 +1270,7 @@
         {
           "code": "SOSC1780",
           "name": "Population and Development in China",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1280,7 +1280,7 @@
         {
           "code": "SOSC1850",
           "name": "Understanding Society",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1290,7 +1290,7 @@
         {
           "code": "SOSC2740",
           "name": "Gender and Society",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1300,7 +1300,7 @@
         {
           "code": "SOSC3130",
           "name": "Hong Kong Culture",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1310,7 +1310,7 @@
         {
           "code": "SOSC3880",
           "name": "Social Inequality and Social Mobility",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1328,14 +1328,14 @@
     },
     {
       "name": "History Research Option Elective(s)",
-      "required_credits": 9.0,
+      "required_credits": 9,
       "required_credits_raw": "9",
       "note": "",
       "courses": [
         {
           "code": "HUMA1430",
           "name": "History of P. R. China's Diplomacy, 1949-1989",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1345,7 +1345,7 @@
         {
           "code": "HUMA1520",
           "name": "Modern East Asia",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1355,7 +1355,7 @@
         {
           "code": "HUMA2420",
           "name": "Late Imperial China",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1365,7 +1365,7 @@
         {
           "code": "HUMA2470",
           "name": "From Fung Shui to Mao's Villages: City Plans, Urban Politics & the Unseen World of Chinese Villages",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1375,7 +1375,7 @@
         {
           "code": "HUMA2640",
           "name": "Unofficial China: Social History 1800s-1930s",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1385,7 +1385,7 @@
         {
           "code": "HUMA3430",
           "name": "Reading Modern Chinese History Historically",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [

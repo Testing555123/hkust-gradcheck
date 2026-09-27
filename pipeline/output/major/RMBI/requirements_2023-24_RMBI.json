@@ -2,18 +2,18 @@
   "year": "2023-24",
   "code": "RMBI",
   "title": "BSc in Risk Management and Business Intelligence",
-  "total_required_credits": 92.0,
+  "total_required_credits": 92,
   "groups": [
     {
       "name": "Required Course(s)",
-      "required_credits": 17.0,
+      "required_credits": 17,
       "required_credits_raw": "17",
       "note": "",
       "courses": [
         {
           "code": "RMBI2001",
           "name": "Academic and Professional Development in Risk Management and Business Intelligence",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "RMBI3110",
           "name": "Introduction to Risk Management and Business Intelligence",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "RMBI4310",
           "name": "Advanced Data Mining for Risk Management and Business Intelligence",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -43,7 +43,7 @@
         {
           "code": "RMBI4980",
           "name": "Risk Management and Business Intelligence Capstone Project I",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -53,7 +53,7 @@
         {
           "code": "RMBI4990",
           "name": "Risk Management and Business Intelligence Capstone Project II",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -63,7 +63,7 @@
         {
           "code": "ACCT2010",
           "name": "Principles of Accounting I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -77,14 +77,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: ECON 2103 OR ECON 2113",
       "courses": [
         {
           "code": "ECON2103",
           "name": "Principles of Microeconomics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -94,7 +94,7 @@
         {
           "code": "ECON2113",
           "name": "Microeconomics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -108,14 +108,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 12.0,
+      "required_credits": 12,
       "required_credits_raw": "12",
       "note": "",
       "courses": [
         {
           "code": "ECON2123",
           "name": "Macroeconomics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -125,7 +125,7 @@
         {
           "code": "FINA2303",
           "name": "Financial Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -135,7 +135,7 @@
         {
           "code": "ISOM2010",
           "name": "Introduction to Information Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -145,7 +145,7 @@
         {
           "code": "ISOM2700",
           "name": "Operations Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -159,14 +159,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: ISOM 3360 OR COMP 4331",
       "courses": [
         {
           "code": "ISOM3360",
           "name": "Data Mining for Business Analytics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -176,7 +176,7 @@
         {
           "code": "COMP4331",
           "name": "Data Mining",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -190,14 +190,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: ISOM 3370 OR COMP 4651",
       "courses": [
         {
           "code": "ISOM3370",
           "name": "Big Data Technologies",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -207,7 +207,7 @@
         {
           "code": "COMP4651",
           "name": "Cloud Computing and Big Data Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -221,14 +221,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-4",
       "note": "Note: ISOM 3540 OR MATH 2421",
       "courses": [
         {
           "code": "ISOM3540",
           "name": "Introduction to Probability Models",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -238,7 +238,7 @@
         {
           "code": "MATH2421",
           "name": "Probability",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -252,14 +252,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 8.0,
+      "required_credits": 8,
       "required_credits_raw": "8",
       "note": "",
       "courses": [
         {
           "code": "ISOM3710",
           "name": "Business Modeling and Optimization",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -269,7 +269,7 @@
         {
           "code": "ISOM4520",
           "name": "Statistics for Financial Risk Management",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -283,14 +283,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 4.0,
+      "required_credits": 4,
       "required_credits_raw": "4",
       "note": "",
       "courses": [
         {
           "code": "MGMT2010",
           "name": "Business Ethics and the Individual",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "2",
           "areas": [],
           "source_pages": [
@@ -300,7 +300,7 @@
         {
           "code": "MGMT2130",
           "name": "Business Ethics and Social Responsibility",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "2",
           "areas": [],
           "source_pages": [
@@ -314,14 +314,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: COMP 1021 OR COMP 1022P",
       "courses": [
         {
           "code": "COMP1021",
           "name": "Introduction to Computer Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -331,7 +331,7 @@
         {
           "code": "COMP1022P",
           "name": "Introduction to Computing with Java",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -345,14 +345,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 4.0,
+      "required_credits": 4,
       "required_credits_raw": "4",
       "note": "",
       "courses": [
         {
           "code": "LABU2051",
           "name": "Business Case Analyses I",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "2",
           "areas": [],
           "source_pages": [
@@ -362,7 +362,7 @@
         {
           "code": "LABU2052",
           "name": "Business Case Analyses II",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "2",
           "areas": [],
           "source_pages": [
@@ -376,14 +376,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 4.0,
+      "required_credits": 4,
       "required_credits_raw": "4-7",
       "note": "Note: [(MATH 1012 OR MATH 1013 OR MATH 1023) AND (MATH 1014 OR MATH 1024)] OR [MATH 1020]",
       "courses": [
         {
           "code": "MATH1012",
           "name": "Calculus IA",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -393,7 +393,7 @@
         {
           "code": "MATH1013",
           "name": "Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -403,7 +403,7 @@
         {
           "code": "MATH1014",
           "name": "Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -413,7 +413,7 @@
         {
           "code": "MATH1020",
           "name": "Accelerated Calculus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -423,7 +423,7 @@
         {
           "code": "MATH1023",
           "name": "Honors Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -433,7 +433,7 @@
         {
           "code": "MATH1024",
           "name": "Honors Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -447,14 +447,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-4",
       "note": "Note: MATH 2011 OR MATH 2023",
       "courses": [
         {
           "code": "MATH2011",
           "name": "Introduction to Multivariable Calculus",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -464,7 +464,7 @@
         {
           "code": "MATH2023",
           "name": "Multivariable Calculus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -478,14 +478,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-4",
       "note": "Note: MATH 2111 OR MATH 2121",
       "courses": [
         {
           "code": "MATH2111",
           "name": "Matrix Algebra and Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -495,7 +495,7 @@
         {
           "code": "MATH2121",
           "name": "Linear Algebra",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -509,14 +509,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 4.0,
+      "required_credits": 4,
       "required_credits_raw": "4",
       "note": "",
       "courses": [
         {
           "code": "MATH2411",
           "name": "Applied Statistics",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -530,14 +530,14 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 9.0,
+      "required_credits": 9,
       "required_credits_raw": "9",
       "note": "Risk Management and Business Intelligence Electives (Courses from the specified electives list, of which at least 1 course should be taken from each area and at least 6 credits at 3000-level or above). Area 1: Risk Management; Area 2: Business Intelligence.",
       "courses": [
         {
           "code": "RMBI3000",
           "name": "Special Topics in Risk Management",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0-4",
           "areas": [],
           "source_pages": [
@@ -547,7 +547,7 @@
         {
           "code": "RMBI3020",
           "name": "Practicing Risk Management using Case Studies",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -557,7 +557,7 @@
         {
           "code": "RMBI4220",
           "name": "Life Contingencies Models and Insurance Risk",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -567,7 +567,7 @@
         {
           "code": "FINA3103",
           "name": "Intermediate Investments",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -577,7 +577,7 @@
         {
           "code": "FINA3203",
           "name": "Derivative Securities",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -587,7 +587,7 @@
         {
           "code": "FINA4103",
           "name": "Financial Markets Trading and Structure",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -597,7 +597,7 @@
         {
           "code": "FINA4513",
           "name": "Risk Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -607,7 +607,7 @@
         {
           "code": "ISOM3780",
           "name": "Sustainable Supply Chain Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -617,7 +617,7 @@
         {
           "code": "ISOM4200",
           "name": "Information and Cyber Security Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -627,7 +627,7 @@
         {
           "code": "ISOM4540",
           "name": "Time Series Analysis and Forecasting",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -637,7 +637,7 @@
         {
           "code": "ISOM4840",
           "name": "Financial Service Operations Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -647,7 +647,7 @@
         {
           "code": "IEDA4331",
           "name": "Quantitative Methods in Financial Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -657,7 +657,7 @@
         {
           "code": "IEDA4420",
           "name": "Dynamic Pricing and Revenue Optimization",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -667,7 +667,7 @@
         {
           "code": "IEDA4510",
           "name": "Systems Risk Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -677,7 +677,7 @@
         {
           "code": "IEDA4520",
           "name": "Numerical Methods for Financial Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -687,7 +687,7 @@
         {
           "code": "MATH4427",
           "name": "Loss Models and their Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -697,7 +697,7 @@
         {
           "code": "MATH4428",
           "name": "Bayesian Analysis and Credibility Theory",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -707,7 +707,7 @@
         {
           "code": "MATH4511",
           "name": "Quantitative Methods for Fixed Income Derivatives",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -717,7 +717,7 @@
         {
           "code": "MATH4512",
           "name": "Fundamentals of Mathematical Finance",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -727,7 +727,7 @@
         {
           "code": "MATH4514",
           "name": "Financial Economics in Actuarial Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -737,7 +737,7 @@
         {
           "code": "RMBI3010",
           "name": "Data Analytics with R",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "2",
           "areas": [],
           "source_pages": [
@@ -747,7 +747,7 @@
         {
           "code": "FINA4713",
           "name": "Introduction to Artificial Intelligence and Big Data in Finance",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -757,7 +757,7 @@
         {
           "code": "ISOM2600",
           "name": "Introduction to Business Analytics",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -767,7 +767,7 @@
         {
           "code": "ISOM3260",
           "name": "Database Design and Administration",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -777,7 +777,7 @@
         {
           "code": "ISOM3270",
           "name": "Blockchain Programming in Business Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -787,7 +787,7 @@
         {
           "code": "ISOM3310",
           "name": "e-Business Management and Web Analytics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -797,7 +797,7 @@
         {
           "code": "ISOM3330",
           "name": "Data Visualization and Visual Analytics",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -807,7 +807,7 @@
         {
           "code": "ISOM3340",
           "name": "Developing AI Applications",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -817,7 +817,7 @@
         {
           "code": "ISOM3900",
           "name": "Decision Analytics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -827,7 +827,7 @@
         {
           "code": "ISOM4010",
           "name": "Digital Business Strategy: Harnessing Platform, Crowd, and Machine",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -837,7 +837,7 @@
         {
           "code": "ISOM4030",
           "name": "Deep Learning for Business Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -847,7 +847,7 @@
         {
           "code": "ISOM4040",
           "name": "Digital Strategy and Transformation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -857,7 +857,7 @@
         {
           "code": "ISOM4530",
           "name": "Statistical Analysis of Financial Data in R/S-plus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -867,7 +867,7 @@
         {
           "code": "ISOM4720",
           "name": "Simulation in Business and Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -877,7 +877,7 @@
         {
           "code": "ISOM4830",
           "name": "Analytics for Service Operations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -887,7 +887,7 @@
         {
           "code": "ISOM4860",
           "name": "Decision and Data Analytics in Financial Markets",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -897,7 +897,7 @@
         {
           "code": "COMP2011",
           "name": "Programming with C++",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -907,7 +907,7 @@
         {
           "code": "COMP2012",
           "name": "Object-Oriented Programming and Data Structures",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -917,7 +917,7 @@
         {
           "code": "COMP2711",
           "name": "Discrete Mathematical Tools for Computer Science",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -927,7 +927,7 @@
         {
           "code": "COMP3211",
           "name": "Learning, Reasoning, and Decision Making in AI",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -937,7 +937,7 @@
         {
           "code": "COMP3311",
           "name": "Database Management Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -947,7 +947,7 @@
         {
           "code": "COMP3631",
           "name": "Cryptography",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -957,7 +957,7 @@
         {
           "code": "COMP4221",
           "name": "Introduction to Natural Language Processing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -967,7 +967,7 @@
         {
           "code": "COMP4321",
           "name": "Search Engines for Web and Enterprise Data",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -977,7 +977,7 @@
         {
           "code": "COMP4462",
           "name": "Data Visualization",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -987,7 +987,7 @@
         {
           "code": "COMP4641",
           "name": "Social Information Network Analysis and Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -997,7 +997,7 @@
         {
           "code": "MATH4432",
           "name": "Statistical Machine Learning",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1012,14 +1012,14 @@
     },
     {
       "name": "Financial Technology Option Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: ISOM 3350 OR IEDA 4500. Students who take an option MUST complete all requirements specified in addition to the major requirements.",
       "courses": [
         {
           "code": "ISOM3350",
           "name": "FinTech and Cryptoventures",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1029,7 +1029,7 @@
         {
           "code": "IEDA4500",
           "name": "Engineering Foundations of FinTech",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1047,14 +1047,14 @@
     },
     {
       "name": "Financial Technology Option Elective Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "Financial Technology Electives (Courses from the specified elective list. Courses taken as Major Electives may not be counted toward this requirement). Prefixes in the PDF: RMBI/FINA/ISOM/COMP/MATH.",
       "courses": [
         {
           "code": "RMBI4220",
           "name": "Life Contingencies Models and Insurance Risk",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1064,7 +1064,7 @@
         {
           "code": "FINA4713",
           "name": "Introduction to Artificial Intelligence and Big Data in Finance",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1074,7 +1074,7 @@
         {
           "code": "ISOM3000B",
           "name": "Blockchain Entrepreneurship for Social Impact",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1084,7 +1084,7 @@
         {
           "code": "ISOM3270",
           "name": "Blockchain Programming in Business Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1094,7 +1094,7 @@
         {
           "code": "ISOM3340",
           "name": "Developing AI Applications",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -1104,7 +1104,7 @@
         {
           "code": "ISOM3350",
           "name": "FinTech and Cryptoventures",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1114,7 +1114,7 @@
         {
           "code": "ISOM4020",
           "name": "Innovation Management and Technology Entrepreneurship",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1124,7 +1124,7 @@
         {
           "code": "ISOM4200",
           "name": "Information and Cyber Security Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1134,7 +1134,7 @@
         {
           "code": "ISOM4530",
           "name": "Statistical Analysis of Financial Data in R/S-plus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -1144,7 +1144,7 @@
         {
           "code": "ISOM4860",
           "name": "Decision and Data Analytics in Financial Markets",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1154,7 +1154,7 @@
         {
           "code": "COMP2711",
           "name": "Discrete Mathematical Tools for Computer Science",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -1164,7 +1164,7 @@
         {
           "code": "COMP3211",
           "name": "Learning, Reasoning, and Decision Making in AI",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1174,7 +1174,7 @@
         {
           "code": "COMP3631",
           "name": "Cryptography",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1184,7 +1184,7 @@
         {
           "code": "COMP4221",
           "name": "Introduction to Natural Language Processing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1194,7 +1194,7 @@
         {
           "code": "COMP4632",
           "name": "Practicing Cybersecurity: Attacks and Counter-measures",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1204,7 +1204,7 @@
         {
           "code": "COMP4634",
           "name": "Cybersecurity",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1214,7 +1214,7 @@
         {
           "code": "COMP4911",
           "name": "IT Entrepreneurship",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1224,7 +1224,7 @@
         {
           "code": "MATH4514",
           "name": "Financial Economics in Actuarial Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [

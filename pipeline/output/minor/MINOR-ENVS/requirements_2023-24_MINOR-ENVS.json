@@ -2,18 +2,18 @@
   "year": "2023-24",
   "code": "MINOR-ENVS",
   "title": "Minor Program in Environmental Science",
-  "total_required_credits": 18.0,
+  "total_required_credits": 18,
   "groups": [
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: LIFS 1030 OR OCES 1010 OR ENVR 2010",
       "courses": [
         {
           "code": "LIFS1030",
           "name": "Environmental Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3**",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "OCES1010",
           "name": "Principles and Applications of Environmental Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "ENVR2010",
           "name": "Environmental Science Fundamentals",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -47,14 +47,14 @@
     },
     {
       "name": "Elective(s) - Environmental Science Depth Electives",
-      "required_credits": 9.0,
+      "required_credits": 9,
       "required_credits_raw": "9",
       "note": "Environmental Science Depth Electives: 3 courses from the specified elective list. Students may use either CHEM 2310 or CHEM 2311, but not both, to count towards this elective requirement.",
       "courses": [
         {
           "code": "ENVS4012",
           "name": "Special Topics in Environmental Science",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1-3 Credit(s)",
           "areas": [],
           "source_pages": [
@@ -64,7 +64,7 @@
         {
           "code": "ENVS4905",
           "name": "Marine Molecular Biology and Ecology (deleted)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3**",
           "areas": [],
           "source_pages": [
@@ -74,7 +74,7 @@
         {
           "code": "LIFS3130",
           "name": "Marine Biology (deleted)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3**",
           "areas": [],
           "source_pages": [
@@ -84,7 +84,7 @@
         {
           "code": "LIFS3160",
           "name": "Ecology (deleted)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3**",
           "areas": [],
           "source_pages": [
@@ -94,7 +94,7 @@
         {
           "code": "CHEM2310",
           "name": "Fundamentals of Analytical Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -104,7 +104,7 @@
         {
           "code": "CHEM2311",
           "name": "Analytical Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -114,7 +114,7 @@
         {
           "code": "CHEM4310",
           "name": "Environmental Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -124,7 +124,7 @@
         {
           "code": "CHEM4320",
           "name": "Environmental Analytical Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -134,7 +134,7 @@
         {
           "code": "OCES2130",
           "name": "Marine Biology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -144,7 +144,7 @@
         {
           "code": "OCES3160",
           "name": "Ecology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -154,7 +154,7 @@
         {
           "code": "OCES4001",
           "name": "Ocean and Climate Change",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -164,7 +164,7 @@
         {
           "code": "OCES4201",
           "name": "Environmental Microbiology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -174,7 +174,7 @@
         {
           "code": "OCES4203",
           "name": "Environmental Impact and Risk Assessment",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -184,7 +184,7 @@
         {
           "code": "OCES4301",
           "name": "Environmental Conservation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -194,7 +194,7 @@
         {
           "code": "ENVR3110",
           "name": "Life Cycle Assessment for Sustainable Development",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -209,14 +209,14 @@
     },
     {
       "name": "Elective(s) - Environmental Science Foundation Electives",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "Environmental Science Foundation Electives: 2 courses from the specified elective list. Students may only use one course out of LIFS 1901, LIFS 1902 and CHEM 1011 to count towards this elective requirement.",
       "courses": [
         {
           "code": "LIFS1901",
           "name": "General Biology I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -226,7 +226,7 @@
         {
           "code": "LIFS1902",
           "name": "General Biology II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -236,7 +236,7 @@
         {
           "code": "LIFS2060",
           "name": "Biodiversity",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -246,7 +246,7 @@
         {
           "code": "CHEM1011",
           "name": "General Chemistry A: Reactions, Thermodynamics, and Reaction Kinetics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -256,7 +256,7 @@
         {
           "code": "OCES2001",
           "name": "Survey of Ocean Science (deleted)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3**",
           "areas": [],
           "source_pages": [
@@ -266,7 +266,7 @@
         {
           "code": "PHYS1003",
           "name": "Energy and Related Environmental Issues",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -276,7 +276,7 @@
         {
           "code": "ENVR2020",
           "name": "Urban Air Pollution",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [

@@ -2,18 +2,18 @@
   "year": "2025-26",
   "code": "MINOR-SOSC",
   "title": "Minor Program in Social Science",
-  "total_required_credits": 18.0,
+  "total_required_credits": 18,
   "groups": [
     {
       "name": "Elective(s)",
-      "required_credits": 18.0,
+      "required_credits": 18,
       "required_credits_raw": "18",
       "note": "Social Science Elective: 18 credits from the specified elective list, of which at least 9 credits must be at the 2000-/3000-/4000- level. Courses are grouped into three areas (given in 'areas'): (1) Economic and Political Development, (2) Social Relations, (3) Sustainability and Society. Courses marked ** were deleted (see 'uncertain').",
       "courses": [
         {
           "code": "SOSC1000G",
           "name": "Introduction to International Relations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -25,7 +25,7 @@
         {
           "code": "SOSC1270",
           "name": "International Law",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -37,7 +37,7 @@
         {
           "code": "SOSC1300",
           "name": "The World of Politics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -49,7 +49,7 @@
         {
           "code": "SOSC1309",
           "name": "Making Sense of Government and Politics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -61,7 +61,7 @@
         {
           "code": "SOSC1350",
           "name": "Contemporary China: Continuity and Change",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -73,7 +73,7 @@
         {
           "code": "SOSC1359",
           "name": "China: Development and Transformations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -85,7 +85,7 @@
         {
           "code": "SOSC1420",
           "name": "Poverty",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -97,7 +97,7 @@
         {
           "code": "SOSC1440",
           "name": "Introduction to Economics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -109,7 +109,7 @@
         {
           "code": "SOSC1449",
           "name": "Understanding Our Economy",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -121,7 +121,7 @@
         {
           "code": "SOSC1450",
           "name": "Introduction to Comparative Politics (deleted)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3**",
           "areas": [
             "1-Economic,Political"
@@ -133,7 +133,7 @@
         {
           "code": "SOSC1470",
           "name": "The Economic and Political Development of Modern Japan",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -145,7 +145,7 @@
         {
           "code": "SOSC1510",
           "name": "Politics Through Film",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -157,7 +157,7 @@
         {
           "code": "SOSC1661",
           "name": "Contemporary Hong Kong: Government & Politics (deleted)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3**",
           "areas": [
             "1-Economic,Political"
@@ -169,7 +169,7 @@
         {
           "code": "SOSC1700",
           "name": "What Is Democracy?",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -181,7 +181,7 @@
         {
           "code": "SOSC1780",
           "name": "Population and Development in China",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -193,7 +193,7 @@
         {
           "code": "SOSC1840",
           "name": "Government, Law and Society in China",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -205,7 +205,7 @@
         {
           "code": "SOSC2000C",
           "name": "Comparative Public Policy",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -217,7 +217,7 @@
         {
           "code": "SOSC2000F",
           "name": "Political Sociology: Concepts, Theories and Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -229,7 +229,7 @@
         {
           "code": "SOSC2000G",
           "name": "Social, Economic, and Political Elites: Past and Present",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -241,7 +241,7 @@
         {
           "code": "SOSC2140",
           "name": "Research Methods in the Social Sciences",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -253,7 +253,7 @@
         {
           "code": "SOSC2310",
           "name": "Introductory Environmental and Health Economics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -265,7 +265,7 @@
         {
           "code": "SOSC2330",
           "name": "Environmental Politics and Policy",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -277,7 +277,7 @@
         {
           "code": "SOSC3000A",
           "name": "Economic History of Europe and the West: A Global Perspective",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -289,7 +289,7 @@
         {
           "code": "SOSC3000E",
           "name": "Food Policy for Developing Countries",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -301,7 +301,7 @@
         {
           "code": "SOSC3000K",
           "name": "Understanding Society, Economy, and Governance in the Digital Era",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -313,7 +313,7 @@
         {
           "code": "SOSC3120",
           "name": "Economic Development",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -325,7 +325,7 @@
         {
           "code": "SOSC3180",
           "name": "Political Issues in Hong Kong from a Comparative Perspective (deleted)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3**",
           "areas": [
             "1-Economic,Political"
@@ -337,7 +337,7 @@
         {
           "code": "SOSC3300",
           "name": "American Politics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -349,7 +349,7 @@
         {
           "code": "SOSC3410",
           "name": "East Asian Economic Development (deleted)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3**",
           "areas": [
             "1-Economic,Political"
@@ -361,7 +361,7 @@
         {
           "code": "SOSC3520",
           "name": "Understanding Comparative Politics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -373,7 +373,7 @@
         {
           "code": "SOSC3530",
           "name": "Social Movements and Contentious Politics (deleted)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3**",
           "areas": [
             "1-Economic,Political"
@@ -385,7 +385,7 @@
         {
           "code": "SOSC3600",
           "name": "Public Policy Analysis (deleted)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3**",
           "areas": [
             "1-Economic,Political"
@@ -397,7 +397,7 @@
         {
           "code": "SOSC3630",
           "name": "Democracy and Democratization around the World",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -409,7 +409,7 @@
         {
           "code": "SOSC3800",
           "name": "Ethics, Emerging Technologies and Public Policy",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -421,7 +421,7 @@
         {
           "code": "SOSC3850",
           "name": "Ethics and Public Affairs",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -433,7 +433,7 @@
         {
           "code": "SOSC4000A",
           "name": "China in Comparative Perspective",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -445,7 +445,7 @@
         {
           "code": "SOSC4000B",
           "name": "The Supreme Court in American History",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -457,7 +457,7 @@
         {
           "code": "SOSC4000E",
           "name": "Introduction to Society, Politics and Culture in Israel",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -469,7 +469,7 @@
         {
           "code": "SOSC4000F",
           "name": "Jerusalem through the Ages: Historical Geography of the Holy City",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -481,7 +481,7 @@
         {
           "code": "SOSC4000G",
           "name": "Hong Kong in the World",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "2",
           "areas": [
             "1-Economic,Political"
@@ -493,7 +493,7 @@
         {
           "code": "SOSC4000H",
           "name": "Max Weber, China, and the West",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -505,7 +505,7 @@
         {
           "code": "SOSC4000I",
           "name": "China's Belt and Road Initiative",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -517,7 +517,7 @@
         {
           "code": "SOSC4000J",
           "name": "The New Silk Route: Social Science Perspectives",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -529,7 +529,7 @@
         {
           "code": "SOSC4250",
           "name": "Experiments and Quasi-experiments in the Social Sciences",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -541,7 +541,7 @@
         {
           "code": "SOSC4260",
           "name": "China's Economic Transformation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -553,7 +553,7 @@
         {
           "code": "SOSC4280",
           "name": "China in the Global Political Economy",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -565,7 +565,7 @@
         {
           "code": "SOSC4310",
           "name": "Chinese Capitalism: Historical and Comparative Perspectives",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -577,7 +577,7 @@
         {
           "code": "SOSC4500",
           "name": "The Politics of the State",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -589,7 +589,7 @@
         {
           "code": "SOSC4600",
           "name": "Understanding Chinese Politics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "1-Economic,Political"
@@ -601,7 +601,7 @@
         {
           "code": "SOSC1000A",
           "name": "Behavioral Games",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -613,7 +613,7 @@
         {
           "code": "SOSC1000F",
           "name": "Globalization in Everyday Life",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -625,7 +625,7 @@
         {
           "code": "SOSC1190",
           "name": "China and the World: China's Development in Historical and Comparative Perspectives",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -637,7 +637,7 @@
         {
           "code": "SOSC1662",
           "name": "Contemporary Hong Kong Society",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -649,7 +649,7 @@
         {
           "code": "SOSC1850",
           "name": "Understanding Society",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -661,7 +661,7 @@
         {
           "code": "SOSC1859",
           "name": "Exploring Society",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -673,7 +673,7 @@
         {
           "code": "SOSC1860",
           "name": "Population and Society",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -685,7 +685,7 @@
         {
           "code": "SOSC1960",
           "name": "Introduction to Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -697,7 +697,7 @@
         {
           "code": "SOSC1969",
           "name": "Discovering Mind and Behavior",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -709,7 +709,7 @@
         {
           "code": "SOSC1980",
           "name": "Psychology of Personal Growth",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -721,7 +721,7 @@
         {
           "code": "SOSC1990",
           "name": "Research Methods in Psychological Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -733,7 +733,7 @@
         {
           "code": "SOSC2000E",
           "name": "Community/Social Service Project",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -745,7 +745,7 @@
         {
           "code": "SOSC2130",
           "name": "Education and Society",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -757,7 +757,7 @@
         {
           "code": "SOSC2210",
           "name": "Social Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -769,7 +769,7 @@
         {
           "code": "SOSC2240",
           "name": "Biological Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -781,7 +781,7 @@
         {
           "code": "SOSC2250",
           "name": "Cognitive Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -793,7 +793,7 @@
         {
           "code": "SOSC2260",
           "name": "Counselling Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -805,7 +805,7 @@
         {
           "code": "SOSC2290",
           "name": "Understanding Globalization",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -817,7 +817,7 @@
         {
           "code": "SOSC2299",
           "name": "The Rise and Fall of Globalization",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -829,7 +829,7 @@
         {
           "code": "SOSC2400",
           "name": "Quantitative Data Analysis for Social Research II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -841,7 +841,7 @@
         {
           "code": "SOSC2740",
           "name": "Gender and Society",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -853,7 +853,7 @@
         {
           "code": "SOSC2780",
           "name": "Modernization and Social Change (deleted)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3**",
           "areas": [
             "2-Social Relations"
@@ -865,7 +865,7 @@
         {
           "code": "SOSC2800",
           "name": "Cognitive Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -877,7 +877,7 @@
         {
           "code": "SOSC2888",
           "name": "Special Topics in Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "1-4",
           "areas": [
             "2-Social Relations"
@@ -889,7 +889,7 @@
         {
           "code": "SOSC2980",
           "name": "Personality Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -901,7 +901,7 @@
         {
           "code": "SOSC2990",
           "name": "Developmental Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -913,7 +913,7 @@
         {
           "code": "SOSC3000C",
           "name": "Social Theory and Modernity",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -925,7 +925,7 @@
         {
           "code": "SOSC3001",
           "name": "Understanding China, 1700-2000: A Data Analytic Approach",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -937,7 +937,7 @@
         {
           "code": "SOSC3130",
           "name": "Hong Kong Culture",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -949,7 +949,7 @@
         {
           "code": "SOSC3250",
           "name": "Gender and Development",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -961,7 +961,7 @@
         {
           "code": "SOSC3550",
           "name": "Educational Psychology (deleted)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3**",
           "areas": [
             "2-Social Relations"
@@ -973,7 +973,7 @@
         {
           "code": "SOSC3720",
           "name": "Introduction to Social Network Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -985,7 +985,7 @@
         {
           "code": "SOSC3730",
           "name": "Survey Design and Methods",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -997,7 +997,7 @@
         {
           "code": "SOSC3880",
           "name": "Social Inequality and Social Mobility",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -1009,7 +1009,7 @@
         {
           "code": "SOSC3888",
           "name": "Special Topics in Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "1-4",
           "areas": [
             "2-Social Relations"
@@ -1021,7 +1021,7 @@
         {
           "code": "SOSC3900",
           "name": "Abnormal Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -1033,7 +1033,7 @@
         {
           "code": "SOSC3990",
           "name": "Health Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -1045,7 +1045,7 @@
         {
           "code": "SOSC4000C",
           "name": "City and Modernity",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "2-Social Relations"
@@ -1057,7 +1057,7 @@
         {
           "code": "SOSC4270",
           "name": "Social Change in Contemporary China (deleted)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3**",
           "areas": [
             "2-Social Relations"
@@ -1069,7 +1069,7 @@
         {
           "code": "SOSC4330",
           "name": "Quantitative Data Analysis for Social Research III",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "2-Social Relations"
@@ -1081,7 +1081,7 @@
         {
           "code": "SOSC1100",
           "name": "Quantitative Data Analysis for Social Research I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "3-Sustainability"
@@ -1093,7 +1093,7 @@
         {
           "code": "SOSC1130",
           "name": "Science, Technology and Business (deleted)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3**",
           "areas": [
             "3-Sustainability"
@@ -1105,7 +1105,7 @@
         {
           "code": "SOSC1150",
           "name": "Science, Technology and Work (deleted)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3**",
           "areas": [
             "3-Sustainability"
@@ -1117,7 +1117,7 @@
         {
           "code": "SOSC1400",
           "name": "Hong Kong and the Greater Bay Area",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "3-Sustainability"
@@ -1129,7 +1129,7 @@
         {
           "code": "SOSC2310",
           "name": "Introductory Environmental and Health Economics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "3-Sustainability"
@@ -1141,7 +1141,7 @@
         {
           "code": "SOSC3000J",
           "name": "AI Governance and Regulation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "3-Sustainability"
@@ -1153,7 +1153,7 @@
         {
           "code": "SOSC3180",
           "name": "Political Issues in Hong Kong from a Comparative Perspective (deleted)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3**",
           "areas": [
             "3-Sustainability"
@@ -1165,7 +1165,7 @@
         {
           "code": "SOSC3240",
           "name": "Application of Geographical Information Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "3-Sustainability"
@@ -1177,7 +1177,7 @@
         {
           "code": "SOSC3260",
           "name": "Sustainability Science: Policy Problems and Perspectives (deleted)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3**",
           "areas": [
             "3-Sustainability"
@@ -1189,7 +1189,7 @@
         {
           "code": "SOSC3400",
           "name": "Population Health",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "3-Sustainability"
@@ -1201,7 +1201,7 @@
         {
           "code": "SOSC3540",
           "name": "Environmental Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "3-Sustainability"
@@ -1213,7 +1213,7 @@
         {
           "code": "SOSC3610",
           "name": "Adversity and Biological Social Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "3-Sustainability"
@@ -1225,7 +1225,7 @@
         {
           "code": "SOSC4290",
           "name": "China's Sustainable Development (deleted)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3**",
           "areas": [
             "3-Sustainability"
@@ -1237,7 +1237,7 @@
         {
           "code": "SOSC4300",
           "name": "Computational Social Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "3-Sustainability"

@@ -2,18 +2,18 @@
   "year": "2026-27",
   "code": "EVMT",
   "title": "BSc in Environmental Management and Technology",
-  "total_required_credits": 75.0,
+  "total_required_credits": 75,
   "groups": [
     {
       "name": "Fundamental Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: COMP 1021 OR COMP 1022P OR ISOM 2010",
       "courses": [
         {
           "code": "COMP1021",
           "name": "Introduction to Computer Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "COMP1022P",
           "name": "Introduction to Computing with Java",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "ISOM2010",
           "name": "Introduction to Information Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -47,14 +47,14 @@
     },
     {
       "name": "Fundamental Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-4",
       "note": "Note: MATH 1003 OR MATH 1005 OR MATH 1006 OR MATH 1013 OR MATH 1020 OR MATH 1023",
       "courses": [
         {
           "code": "MATH1003",
           "name": "Calculus and Linear Algebra",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -64,7 +64,7 @@
         {
           "code": "MATH1005",
           "name": "Calculus and Statistics",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -74,7 +74,7 @@
         {
           "code": "MATH1006",
           "name": "Calculus, Vectors, and Matrices",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -84,7 +84,7 @@
         {
           "code": "MATH1013",
           "name": "Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -94,7 +94,7 @@
         {
           "code": "MATH1020",
           "name": "Accelerated Calculus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -104,7 +104,7 @@
         {
           "code": "MATH1023",
           "name": "Honors Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -118,14 +118,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 57.0,
+      "required_credits": 57,
       "required_credits_raw": "57",
       "note": "",
       "courses": [
         {
           "code": "ENVR1170",
           "name": "Science, Environment and Society - From Big Bang to Big Data",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -135,7 +135,7 @@
         {
           "code": "ENVR2001",
           "name": "Academic and Professional Development I",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -145,7 +145,7 @@
         {
           "code": "ENVR2010",
           "name": "Environmental Science Fundamentals",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -155,7 +155,7 @@
         {
           "code": "ENVR2030",
           "name": "Material and Energy Balance for Environmental Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -165,7 +165,7 @@
         {
           "code": "ENVR2090",
           "name": "Environmental Laboratory",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -175,7 +175,7 @@
         {
           "code": "ENVR3001",
           "name": "Academic and Professional Development II",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -185,7 +185,7 @@
         {
           "code": "ENVR3110",
           "name": "Life Cycle Assessment for Sustainable Development",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -195,7 +195,7 @@
         {
           "code": "ENVR3210",
           "name": "Environmental Technology for Impact Assessment",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -205,7 +205,7 @@
         {
           "code": "ENVR3220",
           "name": "Energy Sources and Usage",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -215,7 +215,7 @@
         {
           "code": "ENVR3310",
           "name": "Green Business Strategy",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -225,7 +225,7 @@
         {
           "code": "ENVR3410",
           "name": "Economics for Environmental Policy and Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -235,7 +235,7 @@
         {
           "code": "ENVR3420",
           "name": "Environmental Law and Regulations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -245,7 +245,7 @@
         {
           "code": "ENVR4001",
           "name": "Academic and Professional Development III",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -255,7 +255,7 @@
         {
           "code": "ENVR4320",
           "name": "ESG Management and Reporting",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -265,7 +265,7 @@
         {
           "code": "ENVR4980",
           "name": "Environmental Management and Technology Capstone Project I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -275,7 +275,7 @@
         {
           "code": "ENVR4990",
           "name": "Environmental Management and Technology Capstone Project",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -285,7 +285,7 @@
         {
           "code": "SUST1000",
           "name": "Sustainability Fundamentals",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -295,7 +295,7 @@
         {
           "code": "ECON2103",
           "name": "Principles of Microeconomics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -305,7 +305,7 @@
         {
           "code": "ECON2113",
           "name": "Microeconomics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -315,7 +315,7 @@
         {
           "code": "FINA2203",
           "name": "Fundamentals of Business Finance",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -325,7 +325,7 @@
         {
           "code": "ISOM2500",
           "name": "Business Statistics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -335,7 +335,7 @@
         {
           "code": "MGMT2110",
           "name": "Organizational Behavior",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -350,14 +350,14 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 12.0,
+      "required_credits": 12,
       "required_credits_raw": "12",
       "note": "EVMT Environmental Management and Technology Electives: 12 credits from the specified elective list, of which at least 9 credits must be at 3000-level or above. Categories: ENVR Courses (all ENVR elective courses), Environmental Science Courses, Environmental Control Courses, Environmental Business Courses, Social Science Courses. Remarks: COMP 1022P and SOSC 4290 were last offered in earlier years and deleted; they are not in this elective list (only SOSC 4290 appears as a Social Science elective).",
       "courses": [
         {
           "code": "CHEM1008",
           "name": "Introductory Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -367,7 +367,7 @@
         {
           "code": "CHEM1011",
           "name": "General Chemistry A: Reactions, Thermodynamics, and Reaction Kinetics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -377,7 +377,7 @@
         {
           "code": "CHEM1012",
           "name": "General Chemistry B: Atomic Structure, Molecules, and Bonding Theories",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -387,7 +387,7 @@
         {
           "code": "LIFS1010",
           "name": "Introduction to Biological Sciences",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -397,7 +397,7 @@
         {
           "code": "LIFS2060",
           "name": "Biodiversity",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -407,7 +407,7 @@
         {
           "code": "OCES3160",
           "name": "Ecology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -417,7 +417,7 @@
         {
           "code": "CENG4720",
           "name": "Environmental Impact Assessment and Management Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -427,7 +427,7 @@
         {
           "code": "CIVL4310",
           "name": "Energy System Modeling for Buildings and Cities",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -437,7 +437,7 @@
         {
           "code": "CIVL4430",
           "name": "Environmental Impact Assessment",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -447,7 +447,7 @@
         {
           "code": "CIVL4450",
           "name": "Carbon Footprint Analysis and Reduction",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -457,7 +457,7 @@
         {
           "code": "CIVL4640",
           "name": "Introduction to Smart City Economics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -467,7 +467,7 @@
         {
           "code": "MECH4350",
           "name": "Indoor Air Quality in Buildings",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -477,7 +477,7 @@
         {
           "code": "ECON2123",
           "name": "Macroeconomics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -487,7 +487,7 @@
         {
           "code": "ISOM2700",
           "name": "Operations Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -497,7 +497,7 @@
         {
           "code": "ISOM4750",
           "name": "Business Project Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -507,7 +507,7 @@
         {
           "code": "MGMT3120",
           "name": "Managerial Leadership",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -517,7 +517,7 @@
         {
           "code": "MGMT3140",
           "name": "Negotiation",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -527,7 +527,7 @@
         {
           "code": "MGMT4220",
           "name": "Entrepreneurship and Innovation",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -537,7 +537,7 @@
         {
           "code": "SOSC1850",
           "name": "Understanding Society",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -547,7 +547,7 @@
         {
           "code": "SOSC2250",
           "name": "Cognitive Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -557,7 +557,7 @@
         {
           "code": "SOSC2980",
           "name": "Personality Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -567,7 +567,7 @@
         {
           "code": "SOSC3250",
           "name": "Gender and Development",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -577,7 +577,7 @@
         {
           "code": "SOSC3540",
           "name": "Environmental Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -587,7 +587,7 @@
         {
           "code": "SOSC3880",
           "name": "Social Inequality and Social Mobility",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -597,7 +597,7 @@
         {
           "code": "SOSC4290",
           "name": "China's Sustainable Development",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [

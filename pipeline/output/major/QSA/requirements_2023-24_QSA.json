@@ -2,18 +2,18 @@
   "year": "2023-24",
   "code": "QSA",
   "title": "BSc in Quantitative Social Analysis",
-  "total_required_credits": 69.0,
+  "total_required_credits": 69,
   "groups": [
     {
       "name": "Required Course(s)",
-      "required_credits": 16.0,
+      "required_credits": 16,
       "required_credits_raw": "16",
       "note": "",
       "courses": [
         {
           "code": "SOSC1050",
           "name": "Introduction to Social Science Research",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "SOSC1110",
           "name": "Data Analysis for Quantitative Social Research",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "SOSC2400",
           "name": "Quantitative Data Analysis for Social Research II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -43,7 +43,7 @@
         {
           "code": "SOSC3200",
           "name": "Quantitative Social Analysis Colloquium",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -53,7 +53,7 @@
         {
           "code": "SOSC4110",
           "name": "Capstone Project",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -63,7 +63,7 @@
         {
           "code": "SOSC4330",
           "name": "Quantitative Data Analysis for Social Research III",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -77,14 +77,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 4.0,
+      "required_credits": 4,
       "required_credits_raw": "4-7",
       "note": "Note: [(MATH 1012 OR MATH 1013 OR MATH 1023) AND (MATH 1014 OR MATH 1024)] OR [MATH 1020]",
       "courses": [
         {
           "code": "MATH1012",
           "name": "Calculus IA",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -94,7 +94,7 @@
         {
           "code": "MATH1013",
           "name": "Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -104,7 +104,7 @@
         {
           "code": "MATH1014",
           "name": "Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -114,7 +114,7 @@
         {
           "code": "MATH1020",
           "name": "Accelerated Calculus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -124,7 +124,7 @@
         {
           "code": "MATH1023",
           "name": "Honors Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -134,7 +134,7 @@
         {
           "code": "MATH1024",
           "name": "Honors Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -148,14 +148,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 4.0,
+      "required_credits": 4,
       "required_credits_raw": "4",
       "note": "",
       "courses": [
         {
           "code": "MATH2411",
           "name": "Applied Statistics",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -169,14 +169,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: LANG 2061 OR LANG 2062 OR LANG 3070",
       "courses": [
         {
           "code": "LANG2061",
           "name": "Professional Writing for the Workplace",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -186,7 +186,7 @@
         {
           "code": "LANG2062",
           "name": "Professional Speaking for the Workplace",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -196,7 +196,7 @@
         {
           "code": "LANG3070",
           "name": "English Communication for Humanities and Social Science Studies II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -210,14 +210,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "",
       "courses": [
         {
           "code": "LANG2070",
           "name": "English Communication for Humanities and Social Science Studies I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -231,14 +231,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: COMP 1021 OR COMP 1022P",
       "courses": [
         {
           "code": "COMP1021",
           "name": "Introduction to Computer Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -248,7 +248,7 @@
         {
           "code": "COMP1022P",
           "name": "Introduction to Computing with Java",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -262,14 +262,14 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 24.0,
+      "required_credits": 24,
       "required_credits_raw": "24",
       "note": "Social Science Electives (8 courses from the specified elective list. Students should take at least 2 Foundation courses, EACH of which should be from a different discipline [Foundation 1 to Foundation 5], and out of the 24 credits, at least 6 credits must be at 3000-/4000-level. Courses on the list of QSA Methodological Electives may not be counted towards this elective requirement) Foundation 1: Geography/Demography; Foundation 2: Economics; Foundation 3: Political Science; Foundation 4: Psychology; Foundation 5: Sociology; Others: any SOSC courses except those listed as Foundation course in this requirement and those listed under QSA Methodological Electives.",
       "courses": [
         {
           "code": "SOSC1780",
           "name": "Population and Development in China",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -279,7 +279,7 @@
         {
           "code": "SOSC1860",
           "name": "Population and Society",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -289,7 +289,7 @@
         {
           "code": "SOSC1440",
           "name": "Introduction to Economics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -299,7 +299,7 @@
         {
           "code": "SOSC1300",
           "name": "The World of Politics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -309,7 +309,7 @@
         {
           "code": "SOSC1450",
           "name": "Introduction to Comparative Politics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -319,7 +319,7 @@
         {
           "code": "SOSC1960",
           "name": "Introduction to Psychology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -329,7 +329,7 @@
         {
           "code": "SOSC1980",
           "name": "Psychology of Personal Growth",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -339,7 +339,7 @@
         {
           "code": "SOSC1850",
           "name": "Understanding Society",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -353,14 +353,14 @@
     },
     {
       "name": "QSA Methodological Electives",
-      "required_credits": 12.0,
+      "required_credits": 12,
       "required_credits_raw": "12",
       "note": "QSA Methodological Electives (4 courses from the specified elective list, of which 6 credits must be taken in SOSC). Prefixes in the PDF: SOSC/MATH/COMP/ISOM/MARK.",
       "courses": [
         {
           "code": "SOSC3240",
           "name": "Application of Geographical Information Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -370,7 +370,7 @@
         {
           "code": "SOSC3260",
           "name": "Sustainability Science: Policy Problems and Perspectives",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -380,7 +380,7 @@
         {
           "code": "SOSC3600",
           "name": "Public Policy Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -390,7 +390,7 @@
         {
           "code": "SOSC3720",
           "name": "Introduction to Social Network Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -400,7 +400,7 @@
         {
           "code": "SOSC3730",
           "name": "Survey Design and Methods",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -410,7 +410,7 @@
         {
           "code": "SOSC4250",
           "name": "Experiments and Quasi-experiments in the Social Sciences",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -420,7 +420,7 @@
         {
           "code": "SOSC4300",
           "name": "Computational Social Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -430,7 +430,7 @@
         {
           "code": "MATH2421",
           "name": "Probability",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -440,7 +440,7 @@
         {
           "code": "MATH2431",
           "name": "Honors Probability",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -450,7 +450,7 @@
         {
           "code": "MATH3423",
           "name": "Statistical Inference",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -460,7 +460,7 @@
         {
           "code": "MATH3424",
           "name": "Regression Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -470,7 +470,7 @@
         {
           "code": "MATH3426",
           "name": "Sampling",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -480,7 +480,7 @@
         {
           "code": "MATH4423",
           "name": "Nonparametric Statistics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -490,7 +490,7 @@
         {
           "code": "MATH4424",
           "name": "Multivariate Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -500,7 +500,7 @@
         {
           "code": "MATH4425",
           "name": "Introductory Time Series",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -510,7 +510,7 @@
         {
           "code": "COMP2011",
           "name": "Programming with C++",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -520,7 +520,7 @@
         {
           "code": "ISOM3360",
           "name": "Data Mining for Business Analytics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -530,7 +530,7 @@
         {
           "code": "MARK3220",
           "name": "Marketing Research",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [

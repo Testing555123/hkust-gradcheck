@@ -2,18 +2,18 @@
   "year": "2023-24",
   "code": "CHEM",
   "title": "BSc in Chemistry",
-  "total_required_credits": 0.0,
+  "total_required_credits": 0,
   "groups": [
     {
       "name": "Major Pre-requisite course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "",
       "courses": [
         {
           "code": "CHEM1011",
           "name": "General Chemistry A: Reactions, Thermodynamics, and Reaction Kinetics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "CHEM1012",
           "name": "General Chemistry B: Atomic Structure, Molecules, and Bonding Theories",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -37,14 +37,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 48.0,
+      "required_credits": 48,
       "required_credits_raw": "48",
       "note": "Note: CHEM 4689 OR CHEM 4691 OR (SCIE 3500 AND SCIE 4500). Note: MATH 1012 OR MATH 1013 OR MATH 1020 OR MATH 1023. Note: LANG 3022 OR LANG 3027",
       "courses": [
         {
           "code": "CHEM1051",
           "name": "Laboratory for General Chemistry A",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -54,7 +54,7 @@
         {
           "code": "CHEM1052",
           "name": "Laboratory for General Chemistry B",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -64,7 +64,7 @@
         {
           "code": "CHEM2110",
           "name": "Organic Chemistry I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -74,7 +74,7 @@
         {
           "code": "CHEM2210",
           "name": "Inorganic Chemistry I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -84,7 +84,7 @@
         {
           "code": "CHEM2310",
           "name": "Fundamentals of Analytical Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -94,7 +94,7 @@
         {
           "code": "CHEM2409",
           "name": "Mathematical Methods for Physical Chemistry",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -104,7 +104,7 @@
         {
           "code": "CHEM2410",
           "name": "Physical Chemistry I: Equilibrium Thermodynamics and Statistical Mechanics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -114,7 +114,7 @@
         {
           "code": "CHEM2550",
           "name": "Synthetic Chemistry Laboratory I",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "2",
           "areas": [],
           "source_pages": [
@@ -124,7 +124,7 @@
         {
           "code": "CHEM2555",
           "name": "Molecular Characterization Chemistry Laboratory I",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "2",
           "areas": [],
           "source_pages": [
@@ -134,7 +134,7 @@
         {
           "code": "CHEM3120",
           "name": "Organic Chemistry II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -144,7 +144,7 @@
         {
           "code": "CHEM3220",
           "name": "Inorganic Chemistry II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -154,7 +154,7 @@
         {
           "code": "CHEM3320",
           "name": "Instrumental Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -164,7 +164,7 @@
         {
           "code": "CHEM3420",
           "name": "Physical Chemistry II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -174,7 +174,7 @@
         {
           "code": "CHEM3550",
           "name": "Synthetic Chemistry Laboratory II",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "2",
           "areas": [],
           "source_pages": [
@@ -184,7 +184,7 @@
         {
           "code": "CHEM3555",
           "name": "Molecular Characterization Chemistry Laboratory II",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "2",
           "areas": [],
           "source_pages": [
@@ -194,7 +194,7 @@
         {
           "code": "CHEM4689",
           "name": "Capstone Project",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -204,7 +204,7 @@
         {
           "code": "CHEM4691",
           "name": "Capstone Research I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -214,7 +214,7 @@
         {
           "code": "SCIE3500",
           "name": "IRE Research Project I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -224,7 +224,7 @@
         {
           "code": "SCIE4500",
           "name": "IRE Research Project II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -234,7 +234,7 @@
         {
           "code": "MATH1012",
           "name": "Calculus IA",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -244,7 +244,7 @@
         {
           "code": "MATH1013",
           "name": "Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -254,7 +254,7 @@
         {
           "code": "MATH1020",
           "name": "Accelerated Calculus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -264,7 +264,7 @@
         {
           "code": "MATH1023",
           "name": "Honors Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -274,7 +274,7 @@
         {
           "code": "LANG3022",
           "name": "Science Communication in English (Chemistry)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -284,7 +284,7 @@
         {
           "code": "LANG3027",
           "name": "Science Communication in English for Research Students",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -299,14 +299,14 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 5.0,
+      "required_credits": 5,
       "required_credits_raw": "5",
       "note": "",
       "courses": [
         {
           "code": "CHEM0-3",
           "name": "CHEM 3000-level or above Elective (Any 1 course (3 credits) of the subject and level specified.  Students to graduate with a Chemistry Option or IRE Track are exempted from this requirement.)",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0-3",
           "areas": [],
           "source_pages": [
@@ -316,7 +316,7 @@
         {
           "code": "SSCI2",
           "name": "Science 2000-level or above Elective (Any science course offered under the School of Science of the level as specified)",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "2",
           "areas": [],
           "source_pages": [
@@ -330,7 +330,7 @@
     },
     {
       "name": "Track Study",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "",
       "note": "",
       "courses": [],
@@ -340,14 +340,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "",
       "courses": [
         {
           "code": "CHEM4430",
           "name": "Symmetry in Chemistry and Spectroscopy",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -361,7 +361,7 @@
     },
     {
       "name": "Option(s)",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "",
       "note": "",
       "courses": [],
@@ -371,7 +371,7 @@
     },
     {
       "name": "Biomolecular Chemistry Option",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "",
       "note": "",
       "courses": [],
@@ -381,14 +381,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 2.0,
+      "required_credits": 2,
       "required_credits_raw": "2",
       "note": "",
       "courses": [
         {
           "code": "CHEM4150",
           "name": "Biomolecular Synthesis Laboratory",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -398,7 +398,7 @@
         {
           "code": "CHEM4155",
           "name": "Biomolecular Characterization Laboratory",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -412,14 +412,14 @@
     },
     {
       "name": "Elective Course(s)",
-      "required_credits": 12.0,
+      "required_credits": 12,
       "required_credits_raw": "12",
       "note": "Chemistry Electives [Course(s) from the specified elective list, of which at least 2 courses must be taken from the Core Area.   Courses taken as Required/Elective Courses of another Chemistry Option may not be counted towards this elective  requirement.]",
       "courses": [
         {
           "code": "CHEM4110",
           "name": "Structural Elucidation in Organic Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Core Area"
@@ -433,7 +433,7 @@
         {
           "code": "CHEM4120",
           "name": "Biomolecular Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Core Area"
@@ -447,7 +447,7 @@
         {
           "code": "CHEM4130",
           "name": "Medicinal Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Core Area"
@@ -461,7 +461,7 @@
         {
           "code": "CHEM4140",
           "name": "Intermediate Organic Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Core Area"
@@ -475,7 +475,7 @@
         {
           "code": "CHEM4340",
           "name": "Bioanalytical Techniques",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Core Area"
@@ -489,7 +489,7 @@
         {
           "code": "CHEM4410",
           "name": "Physical Chemistry in Biological Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Core Area"
@@ -503,7 +503,7 @@
         {
           "code": "CHEM3010",
           "name": "Great Ideas in Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -515,7 +515,7 @@
         {
           "code": "CHEM3020",
           "name": "Chemistry in the Mass Media",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -531,7 +531,7 @@
     },
     {
       "name": "Environmental and Analytical Chemistry Option",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "",
       "note": "",
       "courses": [],
@@ -541,14 +541,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 2.0,
+      "required_credits": 2,
       "required_credits_raw": "2",
       "note": "",
       "courses": [
         {
           "code": "CHEM4350",
           "name": "Environmental Chemistry Laboratory",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -558,7 +558,7 @@
         {
           "code": "CHEM4355",
           "name": "Instrumental Analytical Chemistry Laboratory",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -572,14 +572,14 @@
     },
     {
       "name": "Elective Course(s)",
-      "required_credits": 12.0,
+      "required_credits": 12,
       "required_credits_raw": "12",
       "note": "Chemistry Electives [Course(s) from the specified elective list, of which at least 2 courses must be taken from the Core Area.   Courses taken as Required/Elective Courses of another Chemistry Option may not be counted towards this elective  requirement.]",
       "courses": [
         {
           "code": "CHEM4110",
           "name": "Structural Elucidation in Organic Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Core Area"
@@ -591,7 +591,7 @@
         {
           "code": "CHEM4310",
           "name": "Environmental Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Core Area"
@@ -603,7 +603,7 @@
         {
           "code": "CHEM4320",
           "name": "Environmental Analytical Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Core Area"
@@ -615,7 +615,7 @@
         {
           "code": "CHEM4330",
           "name": "Separation Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Core Area"
@@ -627,7 +627,7 @@
         {
           "code": "CHEM4340",
           "name": "Bioanalytical Techniques",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Core Area"
@@ -639,7 +639,7 @@
         {
           "code": "CHEM4420",
           "name": "Statistical Machine Learning Methods for Chemical Data Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Core Area"
@@ -651,7 +651,7 @@
         {
           "code": "CHEM3010",
           "name": "Great Ideas in Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -661,7 +661,7 @@
         {
           "code": "CHEM3020",
           "name": "Chemistry in the Mass Media",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -671,7 +671,7 @@
         {
           "code": "CHEM3030",
           "name": "Introduction to AI for Chemistry",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -681,7 +681,7 @@
         {
           "code": "CHEM3610",
           "name": "Chemistry Internship",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "2-3",
           "areas": [],
           "source_pages": [
@@ -691,7 +691,7 @@
         {
           "code": "CHEM4120",
           "name": "Biomolecular Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -701,7 +701,7 @@
         {
           "code": "CHEM4130",
           "name": "Medicinal Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -711,7 +711,7 @@
         {
           "code": "CHEM4140",
           "name": "Intermediate Organic Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -725,7 +725,7 @@
     },
     {
       "name": "Materials Chemistry Option",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "",
       "note": "",
       "courses": [],
@@ -735,14 +735,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 2.0,
+      "required_credits": 2,
       "required_credits_raw": "2",
       "note": "",
       "courses": [
         {
           "code": "CHEM4250",
           "name": "Materials Preparation Laboratory",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -752,7 +752,7 @@
         {
           "code": "CHEM4255",
           "name": "Materials Characterization Laboratory",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -766,14 +766,14 @@
     },
     {
       "name": "Elective Course(s)",
-      "required_credits": 12.0,
+      "required_credits": 12,
       "required_credits_raw": "12",
       "note": "Chemistry Electives [Course(s) from the specified elective list, of which at least 2 courses must be taken from the Core Area.   Courses taken as Required/Elective Courses of another Chemistry Option may not be counted towards this elective  requirement.]",
       "courses": [
         {
           "code": "CHEM4110",
           "name": "Structural Elucidation in Organic Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Core Area"
@@ -785,7 +785,7 @@
         {
           "code": "CHEM4210",
           "name": "Solid State Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Core Area"
@@ -797,7 +797,7 @@
         {
           "code": "CHEM4220",
           "name": "Materials Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Core Area"
@@ -809,7 +809,7 @@
         {
           "code": "CHEM4230",
           "name": "Materials Characterization Method",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Core Area"
@@ -821,7 +821,7 @@
         {
           "code": "CHEM4240",
           "name": "Intermediate Inorganic Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Core Area"
@@ -833,7 +833,7 @@
         {
           "code": "CHEM4640",
           "name": "Chemistry for Advanced Solar Cell Technologies",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Core Area"
@@ -845,7 +845,7 @@
         {
           "code": "CHEM3010",
           "name": "Great Ideas in Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -855,7 +855,7 @@
         {
           "code": "CHEM3020",
           "name": "Chemistry in the Mass Media",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -865,7 +865,7 @@
         {
           "code": "CHEM3030",
           "name": "Introduction to AI for Chemistry",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -875,7 +875,7 @@
         {
           "code": "CHEM3610",
           "name": "Chemistry Internship",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "2-3",
           "areas": [],
           "source_pages": [
@@ -885,7 +885,7 @@
         {
           "code": "CHEM4120",
           "name": "Biomolecular Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -895,7 +895,7 @@
         {
           "code": "CHEM4130",
           "name": "Medicinal Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -905,7 +905,7 @@
         {
           "code": "CHEM4140",
           "name": "Intermediate Organic Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -915,7 +915,7 @@
         {
           "code": "CHEM4310",
           "name": "Environmental Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -925,7 +925,7 @@
         {
           "code": "CHEM4320",
           "name": "Environmental Analytical Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -935,7 +935,7 @@
         {
           "code": "CHEM4330",
           "name": "Separation Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -945,7 +945,7 @@
         {
           "code": "CHEM4340",
           "name": "Bioanalytical Techniques",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -955,7 +955,7 @@
         {
           "code": "CHEM4410",
           "name": "Physical Chemistry in Biological Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -969,7 +969,7 @@
     },
     {
       "name": "Pure Chemistry Option",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "",
       "note": "",
       "courses": [],
@@ -979,14 +979,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 2.0,
+      "required_credits": 2,
       "required_credits_raw": "2",
       "note": "",
       "courses": [
         {
           "code": "CHEM4550",
           "name": "Advanced Synthetic Laboratory",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -996,7 +996,7 @@
         {
           "code": "CHEM4555",
           "name": "Advanced Molecular Characterization Laboratory",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -1010,14 +1010,14 @@
     },
     {
       "name": "Elective Course(s)",
-      "required_credits": 12.0,
+      "required_credits": 12,
       "required_credits_raw": "12",
       "note": "Chemistry Electives [Course(s) from the specified elective list, of which at least 1 course must be taken from the Core Area.  Courses taken as Required/Elective Courses of another Chemistry Option may not be counted towards this elective  requirement.]",
       "courses": [
         {
           "code": "CHEM4140",
           "name": "Intermediate Organic Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Core Area"
@@ -1029,7 +1029,7 @@
         {
           "code": "CHEM4240",
           "name": "Intermediate Inorganic Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Core Area"
@@ -1041,7 +1041,7 @@
         {
           "code": "CHEM4430",
           "name": "Symmetry in Chemistry and Spectroscopy",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Core Area"
@@ -1053,7 +1053,7 @@
         {
           "code": "CHEM3010",
           "name": "Great Ideas in Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1063,7 +1063,7 @@
         {
           "code": "CHEM3020",
           "name": "Chemistry in the Mass Media",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1073,7 +1073,7 @@
         {
           "code": "CHEM3030",
           "name": "Introduction to AI for Chemistry",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -1083,7 +1083,7 @@
         {
           "code": "CHEM3610",
           "name": "Chemistry Internship",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "2-3",
           "areas": [],
           "source_pages": [
@@ -1093,7 +1093,7 @@
         {
           "code": "CHEM4110",
           "name": "Structural Elucidation in Organic Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1103,7 +1103,7 @@
         {
           "code": "CHEM4120",
           "name": "Biomolecular Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1113,7 +1113,7 @@
         {
           "code": "CHEM4130",
           "name": "Medicinal Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1123,7 +1123,7 @@
         {
           "code": "CHEM4210",
           "name": "Solid State Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1133,7 +1133,7 @@
         {
           "code": "CHEM4220",
           "name": "Materials Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1143,7 +1143,7 @@
         {
           "code": "CHEM4230",
           "name": "Materials Characterization Method",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1153,7 +1153,7 @@
         {
           "code": "CHEM4310",
           "name": "Environmental Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1163,7 +1163,7 @@
         {
           "code": "CHEM4320",
           "name": "Environmental Analytical Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1173,7 +1173,7 @@
         {
           "code": "CHEM4330",
           "name": "Separation Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1183,7 +1183,7 @@
         {
           "code": "CHEM4340",
           "name": "Bioanalytical Techniques",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1193,7 +1193,7 @@
         {
           "code": "CHEM4410",
           "name": "Physical Chemistry in Biological Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1203,7 +1203,7 @@
         {
           "code": "CHEM4420",
           "name": "Statistical Machine Learning Methods for Chemical Data Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1213,7 +1213,7 @@
         {
           "code": "CHEM4620",
           "name": "Organometallic Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1223,7 +1223,7 @@
         {
           "code": "CHEM4640",
           "name": "Chemistry for Advanced Solar Cell Technologies",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1233,7 +1233,7 @@
         {
           "code": "CHEM4680",
           "name": "Undergraduate Research",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1243,7 +1243,7 @@
         {
           "code": "CHEM4692",
           "name": "Capstone Research II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1257,7 +1257,7 @@
     },
     {
       "name": "Remarks on course(s):",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "",
       "note": "MATH 1012: The course was last offered in 2024-25 and was deleted subsequently.",
       "courses": [],

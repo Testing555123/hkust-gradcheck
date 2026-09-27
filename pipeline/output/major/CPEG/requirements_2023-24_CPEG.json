@@ -2,18 +2,18 @@
   "year": "2023-24",
   "code": "CPEG",
   "title": "BEng in Computer Engineering",
-  "total_required_credits": 87.0,
+  "total_required_credits": 87,
   "groups": [
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: COMP 1021 OR COMP 1022P",
       "courses": [
         {
           "code": "COMP1021",
           "name": "Introduction to Computer Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "COMP1022P",
           "name": "Introduction to Computing with Java",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -37,14 +37,14 @@
     },
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "",
       "courses": [
         {
           "code": "LANG2030",
           "name": "Technical Communication I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -58,14 +58,14 @@
     },
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 4.0,
+      "required_credits": 4,
       "required_credits_raw": "4-7",
       "note": "Note: [(MATH 1012 OR MATH 1013 OR MATH 1023) AND (MATH 1014 OR MATH 1024)] OR [MATH 1020]",
       "courses": [
         {
           "code": "MATH1012",
           "name": "Calculus IA",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -75,7 +75,7 @@
         {
           "code": "MATH1013",
           "name": "Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -85,7 +85,7 @@
         {
           "code": "MATH1014",
           "name": "Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -95,7 +95,7 @@
         {
           "code": "MATH1020",
           "name": "Accelerated Calculus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -105,7 +105,7 @@
         {
           "code": "MATH1023",
           "name": "Honors Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -115,7 +115,7 @@
         {
           "code": "MATH1024",
           "name": "Honors Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -129,14 +129,14 @@
     },
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "",
       "courses": [
         {
           "code": "MATH2011",
           "name": "Introduction to Multivariable Calculus",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -146,7 +146,7 @@
         {
           "code": "MATH2111",
           "name": "Matrix Algebra and Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -160,14 +160,14 @@
     },
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: PHYS 1112 OR PHYS 1312",
       "courses": [
         {
           "code": "PHYS1112",
           "name": "General Physics I with Calculus",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -177,7 +177,7 @@
         {
           "code": "PHYS1312",
           "name": "Honors General Physics I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -191,14 +191,14 @@
     },
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: PHYS 1114 OR PHYS 1314",
       "courses": [
         {
           "code": "PHYS1114",
           "name": "General Physics II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -208,7 +208,7 @@
         {
           "code": "PHYS1314",
           "name": "Honors General Physics II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -222,14 +222,14 @@
     },
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-4",
       "note": "SENG Engineering Introduction course (If the students take an introduction course included in their major, this course can be counted towards their major requirement.)",
       "courses": [
         {
           "code": "COMP1021",
           "name": "Introduction to Computer Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -239,7 +239,7 @@
         {
           "code": "ELEC1100",
           "name": "Introduction to Electro-Robot Design",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -249,7 +249,7 @@
         {
           "code": "ELEC1200",
           "name": "A System View of Communications: from Signals to Packets",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -259,7 +259,7 @@
         {
           "code": "BIEN1010",
           "name": "Introduction to Biomedical Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -269,7 +269,7 @@
         {
           "code": "CENG1000",
           "name": "Foundations of Chemical and Biological Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -279,7 +279,7 @@
         {
           "code": "CENG1500",
           "name": "A First Course on Materials Science and Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -289,7 +289,7 @@
         {
           "code": "CENG1700",
           "name": "Introduction to Environmental Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -299,7 +299,7 @@
         {
           "code": "CIVL1100",
           "name": "Discovering Civil and Environmental Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -309,7 +309,7 @@
         {
           "code": "CIVL1210",
           "name": "Fundamental of Green Buildings",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -319,7 +319,7 @@
         {
           "code": "ENGG1100",
           "name": "First Year Cornerstone Engineering Design Project Course",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -329,7 +329,7 @@
         {
           "code": "IEDA2010",
           "name": "Introduction of Industrial Engineering and Decision Analytics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -339,7 +339,7 @@
         {
           "code": "ISDN1001",
           "name": "Introduction to Integrative Systems and Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -349,7 +349,7 @@
         {
           "code": "ISDN1002",
           "name": "Redefining Problems for the Real Needs",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -359,7 +359,7 @@
         {
           "code": "ISDN1006",
           "name": "Human-centered Innovation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -369,7 +369,7 @@
         {
           "code": "MECH1902",
           "name": "Energy Systems in a Sustainable World",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -379,7 +379,7 @@
         {
           "code": "MECH1906",
           "name": "Mechanical Engineering for Modern Life",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -389,7 +389,7 @@
         {
           "code": "MECH1907",
           "name": "Introduction to Aerospace Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -403,14 +403,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "Note: [CPEG 1971 AND (CPEG 4901 OR CPEG 4902 OR CPEG 4911 OR CPEG 4912)] OR [CPEG 4910] (Students taking the Research Option must take either CPEG 4902 or CPEG 4912)",
       "courses": [
         {
           "code": "CPEG1971",
           "name": "Industrial Experience",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -420,7 +420,7 @@
         {
           "code": "CPEG4901",
           "name": "Computer Engineering Final Year Project in COMP",
-          "credits": 6.0,
+          "credits": 6,
           "credits_raw": "6",
           "areas": [],
           "source_pages": [
@@ -430,7 +430,7 @@
         {
           "code": "CPEG4902",
           "name": "Computer Engineering Final Year Thesis in COMP",
-          "credits": 6.0,
+          "credits": 6,
           "credits_raw": "6",
           "areas": [],
           "source_pages": [
@@ -440,7 +440,7 @@
         {
           "code": "CPEG4910",
           "name": "Co-op Program",
-          "credits": 6.0,
+          "credits": 6,
           "credits_raw": "6",
           "areas": [],
           "source_pages": [
@@ -450,7 +450,7 @@
         {
           "code": "CPEG4911",
           "name": "Computer Engineering Final Year Project in ELEC",
-          "credits": 6.0,
+          "credits": 6,
           "credits_raw": "6",
           "areas": [],
           "source_pages": [
@@ -460,7 +460,7 @@
         {
           "code": "CPEG4912",
           "name": "Computer Engineering Final Year Thesis in ELEC",
-          "credits": 6.0,
+          "credits": 6,
           "credits_raw": "6",
           "areas": [],
           "source_pages": [
@@ -474,14 +474,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "0",
       "note": "",
       "courses": [
         {
           "code": "CPEG2930",
           "name": "Academic and Professional Development II",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -491,7 +491,7 @@
         {
           "code": "CPEG3930",
           "name": "Academic and Professional Development III",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -505,14 +505,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 5.0,
+      "required_credits": 5,
       "required_credits_raw": "5-8",
       "note": "Note: (COMP 2011 AND COMP 2012) OR COMP 2012H",
       "courses": [
         {
           "code": "COMP2011",
           "name": "Programming with C++",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -522,7 +522,7 @@
         {
           "code": "COMP2012",
           "name": "Object-Oriented Programming and Data Structures",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -532,7 +532,7 @@
         {
           "code": "COMP2012H",
           "name": "Honors Object-Oriented Programming and Data Structures",
-          "credits": 5.0,
+          "credits": 5,
           "credits_raw": "5",
           "areas": [],
           "source_pages": [
@@ -546,14 +546,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 4.0,
+      "required_credits": 4,
       "required_credits_raw": "4",
       "note": "Note: COMP 2611 OR ELEC 2350",
       "courses": [
         {
           "code": "COMP2611",
           "name": "Computer Organization",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -563,7 +563,7 @@
         {
           "code": "ELEC2350",
           "name": "Introduction to Computer Organization and Design",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -577,14 +577,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 4.0,
+      "required_credits": 4,
       "required_credits_raw": "4",
       "note": "Note: COMP 2711 OR COMP 2711H",
       "courses": [
         {
           "code": "COMP2711",
           "name": "Discrete Mathematical Tools for Computer Science",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -594,7 +594,7 @@
         {
           "code": "COMP2711H",
           "name": "Honors Discrete Mathematical Tools for Computer Science",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -608,14 +608,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "",
       "courses": [
         {
           "code": "COMP3511",
           "name": "Operating Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -629,14 +629,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 20.0,
+      "required_credits": 20,
       "required_credits_raw": "20",
       "note": "",
       "courses": [
         {
           "code": "ELEC1100",
           "name": "Introduction to Electro-Robot Design",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -646,7 +646,7 @@
         {
           "code": "ELEC2100",
           "name": "Signals and Systems",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -656,7 +656,7 @@
         {
           "code": "ELEC2400",
           "name": "Electronic Circuits",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -666,7 +666,7 @@
         {
           "code": "ELEC2600",
           "name": "Probability and Random Processes in Engineering",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -676,7 +676,7 @@
         {
           "code": "ELEC3300",
           "name": "Introduction to Embedded Systems",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -690,14 +690,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "0",
       "note": "",
       "courses": [
         {
           "code": "ENGG2010",
           "name": "Engineering Seminar Series",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -711,14 +711,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: LANG 4030 OR LANG 4031",
       "courses": [
         {
           "code": "LANG4030",
           "name": "Technical Communication II for CSE, CPEG & DSCT",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -728,7 +728,7 @@
         {
           "code": "LANG4031",
           "name": "Technical Communication II for ECE & CPEG",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -742,7 +742,7 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "COMP/ELEC 2000-level or above Elective (Any course(s) of the subject and level as specified)",
       "courses": [],
@@ -752,14 +752,14 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 12.0,
+      "required_credits": 12,
       "required_credits_raw": "12",
       "note": "Area Courses [At least 2 courses should be taken from one area and at least 1 course outside that area (including course(s) in the Courses without Associated Area)]. Areas: Artificial Intelligence / Theory; Communications; Embedded System / Robotics; Graphic / Multimedia; Semiconductor / VLSI; Signal Processing; Software / Database; Systems / Networking; Courses Without Associated Area. Duplicate courses appearing in multiple areas are listed once.",
       "courses": [
         {
           "code": "COMP3211",
           "name": "Learning, Reasoning, and Decision Making in AI",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -769,7 +769,7 @@
         {
           "code": "COMP3711",
           "name": "Design and Analysis of Algorithms",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -779,7 +779,7 @@
         {
           "code": "COMP3711H",
           "name": "Honors Design and Analysis of Algorithms",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -789,7 +789,7 @@
         {
           "code": "COMP3721",
           "name": "Theory of Computation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -799,7 +799,7 @@
         {
           "code": "COMP4211",
           "name": "Machine Learning",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -809,7 +809,7 @@
         {
           "code": "COMP4221",
           "name": "Introduction to Natural Language Processing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -819,7 +819,7 @@
         {
           "code": "COMP4222",
           "name": "Machine Learning with Structured Data",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -829,7 +829,7 @@
         {
           "code": "COMP4331",
           "name": "Data Mining",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -839,7 +839,7 @@
         {
           "code": "COMP4332",
           "name": "Big Data Mining and Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -849,7 +849,7 @@
         {
           "code": "COMP4421",
           "name": "Image Processing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -859,7 +859,7 @@
         {
           "code": "COMP4471",
           "name": "Deep Learning in Computer Vision",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -869,7 +869,7 @@
         {
           "code": "COMP4541",
           "name": "Blockchain, Cryptocurrencies and Smart Contracts",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -879,7 +879,7 @@
         {
           "code": "COMP4551",
           "name": "Large-Scale Machine Learning System for Foundation Models",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -889,7 +889,7 @@
         {
           "code": "COMP5211",
           "name": "Advanced Artificial Intelligence",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -899,7 +899,7 @@
         {
           "code": "COMP5212",
           "name": "Machine Learning",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -909,7 +909,7 @@
         {
           "code": "COMP5213",
           "name": "Introduction to Bayesian Networks",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -919,7 +919,7 @@
         {
           "code": "COMP5214",
           "name": "Advanced Deep Learning Architectures",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -929,7 +929,7 @@
         {
           "code": "COMP5215",
           "name": "Perception and Information Processing for Robotics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -939,7 +939,7 @@
         {
           "code": "COMP5221",
           "name": "Natural Language Processing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -949,7 +949,7 @@
         {
           "code": "COMP5331",
           "name": "Knowledge Discovery in Databases",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -959,7 +959,7 @@
         {
           "code": "COMP5421",
           "name": "Computer Vision",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -969,7 +969,7 @@
         {
           "code": "COMP5711",
           "name": "Introduction to Advanced Algorithmic Techniques",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -979,7 +979,7 @@
         {
           "code": "COMP5712",
           "name": "Introduction to Combinatorial Optimization",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -989,7 +989,7 @@
         {
           "code": "COMP5713",
           "name": "Computational Geometry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -999,7 +999,7 @@
         {
           "code": "ELEC3180",
           "name": "Data-Driven Portfolio Optimization",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1009,7 +1009,7 @@
         {
           "code": "ELEC3210",
           "name": "Signals and Systems II",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -1019,7 +1019,7 @@
         {
           "code": "ELEC3350",
           "name": "Principles of Machine Learning",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1029,7 +1029,7 @@
         {
           "code": "ELEC4240",
           "name": "Deep Learning in Computer Vision",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1039,7 +1039,7 @@
         {
           "code": "ELEC4840",
           "name": "Artificial Intelligence for Medical Image Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1049,7 +1049,7 @@
         {
           "code": "ELEC3100",
           "name": "Signal Processing and Communications",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -1059,7 +1059,7 @@
         {
           "code": "ELEC3600",
           "name": "Electromagnetics: From Wireless to Photonic Applications",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -1069,7 +1069,7 @@
         {
           "code": "ELEC4110",
           "name": "Digital Communications and Wireless Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1079,7 +1079,7 @@
         {
           "code": "ELEC4610",
           "name": "Engineering Optics",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -1089,7 +1089,7 @@
         {
           "code": "ELEC4620",
           "name": "Photonics and Optical Communications",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -1099,7 +1099,7 @@
         {
           "code": "COMP4521",
           "name": "Mobile Application Development",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1109,7 +1109,7 @@
         {
           "code": "COMP4531",
           "name": "IoT and Smart Sensing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1119,7 +1119,7 @@
         {
           "code": "COMP4611",
           "name": "Design and Analysis of Computer Architectures",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1129,7 +1129,7 @@
         {
           "code": "ELEC3200",
           "name": "System Modeling, Analysis and Control",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -1139,7 +1139,7 @@
         {
           "code": "ELEC3310",
           "name": "Digital Fundamentals and System Design",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -1149,7 +1149,7 @@
         {
           "code": "ELEC4210",
           "name": "Control System Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1159,7 +1159,7 @@
         {
           "code": "ELEC4220",
           "name": "Robotics: Modeling, Control and Planning",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1169,7 +1169,7 @@
         {
           "code": "ELEC4260",
           "name": "Intelligent Robots and Embodied AI",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1179,7 +1179,7 @@
         {
           "code": "ELEC4320",
           "name": "FPGA-based Design: From Theory to Practice",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1189,7 +1189,7 @@
         {
           "code": "ENGG3960",
           "name": "Robotics Special Project",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1-4",
           "areas": [],
           "source_pages": [
@@ -1199,7 +1199,7 @@
         {
           "code": "ENGG4950",
           "name": "Engineering Special Project",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1-4",
           "areas": [],
           "source_pages": [
@@ -1209,7 +1209,7 @@
         {
           "code": "COMP4411",
           "name": "Computer Graphics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1219,7 +1219,7 @@
         {
           "code": "COMP4431",
           "name": "Multimedia Computing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1229,7 +1229,7 @@
         {
           "code": "COMP4441",
           "name": "Music Video Creation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1239,7 +1239,7 @@
         {
           "code": "COMP4451",
           "name": "Game Programming",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1249,7 +1249,7 @@
         {
           "code": "COMP4461",
           "name": "Human-Computer Interaction",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1259,7 +1259,7 @@
         {
           "code": "COMP4462",
           "name": "Data Visualization",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1269,7 +1269,7 @@
         {
           "code": "COMP5411",
           "name": "Advanced Computer Graphics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1279,7 +1279,7 @@
         {
           "code": "ELEC3400",
           "name": "Introduction to Integrated Circuits and Systems",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -1289,7 +1289,7 @@
         {
           "code": "ELEC3410",
           "name": "CMOS VLSI Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1299,7 +1299,7 @@
         {
           "code": "ELEC3500",
           "name": "Integrated Circuit Devices",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -1309,7 +1309,7 @@
         {
           "code": "ELEC3610",
           "name": "Quantum Mechanics for Electronic Engineers",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1319,7 +1319,7 @@
         {
           "code": "ELEC4420",
           "name": "Analogue Integrated Circuits Design and Analysis",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -1329,7 +1329,7 @@
         {
           "code": "ELEC4430",
           "name": "Integrated Power Electronics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1339,7 +1339,7 @@
         {
           "code": "ELEC4450",
           "name": "Practical Considerations of Analog Integrated Circuit Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1349,7 +1349,7 @@
         {
           "code": "ELEC4510",
           "name": "Semiconductor Physics for Solid-State Electronics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1359,7 +1359,7 @@
         {
           "code": "ELEC4520",
           "name": "Integrated Circuit Fabrication Technology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1369,7 +1369,7 @@
         {
           "code": "ELEC4530",
           "name": "Fundamentals of Photovoltaic and Renewable Energy",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1379,7 +1379,7 @@
         {
           "code": "ELEC3130",
           "name": "Digital Image Processing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1389,7 +1389,7 @@
         {
           "code": "ELEC4810",
           "name": "Introduction to Biosensors and Bioinstrumentation",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -1399,7 +1399,7 @@
         {
           "code": "ELEC4820",
           "name": "Medical Imaging",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1409,7 +1409,7 @@
         {
           "code": "ELEC4830",
           "name": "Statistical Signal Analysis and Applications in Neural Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1419,7 +1419,7 @@
         {
           "code": "COMP3021",
           "name": "Java Programming",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1429,7 +1429,7 @@
         {
           "code": "COMP3031",
           "name": "Principles of Programming Languages",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1439,7 +1439,7 @@
         {
           "code": "COMP3111",
           "name": "Software Engineering",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -1449,7 +1449,7 @@
         {
           "code": "COMP3111H",
           "name": "Honors Software Engineering",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -1459,7 +1459,7 @@
         {
           "code": "COMP3311",
           "name": "Database Management Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1469,7 +1469,7 @@
         {
           "code": "COMP4021",
           "name": "Internet Computing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1479,7 +1479,7 @@
         {
           "code": "COMP4111",
           "name": "Software Engineering Practices",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1489,7 +1489,7 @@
         {
           "code": "COMP4121",
           "name": "Modern Compiler Construction",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1499,7 +1499,7 @@
         {
           "code": "COMP4321",
           "name": "Search Engines for Web and Enterprise Data",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1509,7 +1509,7 @@
         {
           "code": "COMP4651",
           "name": "Cloud Computing and Big Data Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1519,7 +1519,7 @@
         {
           "code": "COMP5111",
           "name": "Fundamentals of Software Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1529,7 +1529,7 @@
         {
           "code": "COMP5112",
           "name": "Parallel Programming",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1539,7 +1539,7 @@
         {
           "code": "COMP5311",
           "name": "Database Architecture and Implementation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1549,7 +1549,7 @@
         {
           "code": "ELEC3810",
           "name": "Data Science for Neural Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1559,7 +1559,7 @@
         {
           "code": "COMP3631",
           "name": "Cryptography",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1569,7 +1569,7 @@
         {
           "code": "COMP4621",
           "name": "Computer and Communication Networks",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1579,7 +1579,7 @@
         {
           "code": "COMP4632",
           "name": "Practicing Cybersecurity: Attacks and Counter-measures",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1589,7 +1589,7 @@
         {
           "code": "COMP4634",
           "name": "Cybersecurity",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1599,7 +1599,7 @@
         {
           "code": "COMP4635",
           "name": "Practical Cloud Computing Security",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1609,7 +1609,7 @@
         {
           "code": "COMP4641",
           "name": "Social Information Network Analysis and Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1619,7 +1619,7 @@
         {
           "code": "COMP5621",
           "name": "Computer Networks",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1629,7 +1629,7 @@
         {
           "code": "COMP5622",
           "name": "Advanced Computer Communications and Networking",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1639,7 +1639,7 @@
         {
           "code": "COMP5631",
           "name": "Cryptography and Security",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1649,7 +1649,7 @@
         {
           "code": "ELEC3120",
           "name": "Computer Communication Networks",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1659,7 +1659,7 @@
         {
           "code": "ELEC4350",
           "name": "AI Processor Architecture",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1669,7 +1669,7 @@
         {
           "code": "COMP4911",
           "name": "IT Entrepreneurship",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1686,14 +1686,14 @@
     },
     {
       "name": "Research Option Elective Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-4",
       "note": "Research Electives [Students should take either (ELEC 5900 AND UROP 1100) or a 3-credit COMP 5000-level course to fulfill this requirement.] Any COMP course at 5000-level, or ELEC 5900, or UROP 1100. Students in the Research Option should also take either CPEG 4902 or CPEG 4912 as specified in the major requirements. Students who take an option MUST complete all requirements specified in addition to the major requirements.",
       "courses": [
         {
           "code": "ELEC5900",
           "name": "Modern Engineering Research Methodologies",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1703,7 +1703,7 @@
         {
           "code": "UROP1100",
           "name": "Undergraduate Research Opportunities Series 1",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -1721,7 +1721,7 @@
     },
     {
       "name": "CPEG Electives",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "CPEG Electives (1 PG-level course as approved by advisor)",
       "courses": [],

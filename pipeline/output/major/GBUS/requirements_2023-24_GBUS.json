@@ -2,18 +2,18 @@
   "year": "2023-24",
   "code": "GBUS",
   "title": "BBA in Global Business",
-  "total_required_credits": 15.0,
+  "total_required_credits": 15,
   "groups": [
     {
       "name": "Required Course(s)",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "attained 0",
       "note": "",
       "courses": [
         {
           "code": "GBUS1000",
           "name": "Global Leadership Development",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "attained 0",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "GBUS2010",
           "name": "Global Business Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "GBUS2040",
           "name": "Environmental, Social, and Governance (ESG) Corporate Project",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -43,7 +43,7 @@
         {
           "code": "SBMT2100-2110",
           "name": "Community Services Project",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1-4",
           "areas": [],
           "source_pages": [
@@ -53,7 +53,7 @@
         {
           "code": "GBUS3030",
           "name": "Global Business Case Studies",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -63,7 +63,7 @@
         {
           "code": "ISOM4780",
           "name": "Integrated Planning and Execution",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -73,7 +73,7 @@
         {
           "code": "GBUS4910",
           "name": "Capstone Project",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -87,14 +87,14 @@
     },
     {
       "name": "GBUS Global Business Electives (Courses from the specified elective list, of which at least 6 credits from each area and at least 2 courses must be offered by GBUS.)",
-      "required_credits": 15.0,
+      "required_credits": 15,
       "required_credits_raw": "required 15",
       "note": "",
       "courses": [
         {
           "code": "GBUS3010",
           "name": "Global Perspectives on Contemporary Issues",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Global and Societal Perspective"
@@ -106,7 +106,7 @@
         {
           "code": "GBUS3040",
           "name": "Business and ESG Management for Asia and Emerging Markets",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Global and Societal Perspective"
@@ -118,7 +118,7 @@
         {
           "code": "GBUS3060",
           "name": "Value Investing in Global Markets",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Global and Societal Perspective"
@@ -130,7 +130,7 @@
         {
           "code": "ACCT3610",
           "name": "Business Law",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Global and Societal Perspective"
@@ -142,7 +142,7 @@
         {
           "code": "ECON4364",
           "name": "International Trade and Investment",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Global and Societal Perspective"
@@ -154,7 +154,7 @@
         {
           "code": "ECON4474",
           "name": "Hong Kong's Economy",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Global and Societal Perspective"
@@ -166,7 +166,7 @@
         {
           "code": "MARK3430",
           "name": "Global Marketing",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Global and Societal Perspective"
@@ -178,7 +178,7 @@
         {
           "code": "MARK4290F",
           "name": "Brand Activism in Strategic Marketing",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Global and Societal Perspective"
@@ -190,7 +190,7 @@
         {
           "code": "MGMT3120",
           "name": "Managerial Leadership",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Global and Societal Perspective"
@@ -202,7 +202,7 @@
         {
           "code": "MGMT3170",
           "name": "Managing CSR (Corporate Social Responsibility)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Global and Societal Perspective"
@@ -214,7 +214,7 @@
         {
           "code": "MGMT4230",
           "name": "International Management",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Global and Societal Perspective"
@@ -226,7 +226,7 @@
         {
           "code": "MGMT4240",
           "name": "Strategic Management in China",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Global and Societal Perspective"
@@ -238,7 +238,7 @@
         {
           "code": "MGMT4250",
           "name": "Management Consulting",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Global and Societal Perspective"
@@ -250,7 +250,7 @@
         {
           "code": "ISDN2200",
           "name": "Systems Thinking and Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Global and Societal Perspective"
@@ -262,7 +262,7 @@
         {
           "code": "PPOL3210",
           "name": "Energy Policy",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Global and Societal Perspective"
@@ -274,7 +274,7 @@
         {
           "code": "SOSC4260",
           "name": "China's Economic Transformation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Global and Societal Perspective"
@@ -286,7 +286,7 @@
         {
           "code": "GBUS2030",
           "name": "From Zero to Exit – Journey of A Start-up",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "2",
           "areas": [
             "Business Strategy and Innovation"
@@ -298,7 +298,7 @@
         {
           "code": "GBUS2050",
           "name": "Blue Ocean Strategy Innovation and Execution",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "2",
           "areas": [
             "Business Strategy and Innovation"
@@ -310,7 +310,7 @@
         {
           "code": "GBUS3050",
           "name": "Deal Making in Asia and Emerging Markets",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Business Strategy and Innovation"
@@ -322,7 +322,7 @@
         {
           "code": "ECON4264",
           "name": "Economics of Innovation and Entrepreneurship",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Business Strategy and Innovation"
@@ -334,7 +334,7 @@
         {
           "code": "ISOM3900",
           "name": "Decision Analytics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Business Strategy and Innovation"
@@ -346,7 +346,7 @@
         {
           "code": "ISOM4020",
           "name": "Innovation Management and Technology Entrepreneurship",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Business Strategy and Innovation"
@@ -358,7 +358,7 @@
         {
           "code": "ISOM4040",
           "name": "Digital Strategy and Transformation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Business Strategy and Innovation"
@@ -370,7 +370,7 @@
         {
           "code": "ISOM4750",
           "name": "Business Project Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Business Strategy and Innovation"
@@ -382,7 +382,7 @@
         {
           "code": "ISOM4780",
           "name": "Integrated Planning and Execution",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Business Strategy and Innovation"
@@ -394,7 +394,7 @@
         {
           "code": "MARK3220",
           "name": "Marketing Research",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Business Strategy and Innovation"
@@ -406,7 +406,7 @@
         {
           "code": "MARK3480",
           "name": "Pricing Strategy",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Business Strategy and Innovation"
@@ -418,7 +418,7 @@
         {
           "code": "MARK3610",
           "name": "Digital Marketing",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Business Strategy and Innovation"
@@ -430,7 +430,7 @@
         {
           "code": "MARK4450",
           "name": "Brand Management",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Business Strategy and Innovation"
@@ -442,7 +442,7 @@
         {
           "code": "MGMT3140",
           "name": "Negotiation",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Business Strategy and Innovation"
@@ -454,7 +454,7 @@
         {
           "code": "MGMT3160",
           "name": "Environmental Business Strategies",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Business Strategy and Innovation"
@@ -466,7 +466,7 @@
         {
           "code": "MGMT4210",
           "name": "Corporate Strategy",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Business Strategy and Innovation"
@@ -478,7 +478,7 @@
         {
           "code": "MGMT4220",
           "name": "Entrepreneurship and Innovation",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Business Strategy and Innovation"
@@ -490,7 +490,7 @@
         {
           "code": "ENTR3030",
           "name": "Social Innovations and Entrepreneurship",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Business Strategy and Innovation"
@@ -502,7 +502,7 @@
         {
           "code": "ENTR3360",
           "name": "From Product Innovations to Successful Technology Startups",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -512,7 +512,7 @@
         {
           "code": "ENVR3310",
           "name": "Green Business Strategy",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -522,7 +522,7 @@
         {
           "code": "ISDN4200",
           "name": "Product Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -532,7 +532,7 @@
         {
           "code": "TEMG4950",
           "name": "T&M Corporate Consulting Project",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3-5",
           "areas": [],
           "source_pages": [

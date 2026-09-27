@@ -2,18 +2,18 @@
   "year": "2025-26",
   "code": "BIOT",
   "title": "BSc in Biotechnology",
-  "total_required_credits": 109.0,
+  "total_required_credits": 109,
   "groups": [
     {
       "name": "Major Pre-requisite course(s)",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "0-3",
       "note": "Note: Students with level 3 or above in HKDSE 1x Biology are exempted from taking LIFS 1901. Students MUST take the following courses prior to enrollment into the major.",
       "courses": [
         {
           "code": "LIFS1901",
           "name": "General Biology I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "LIFS1902",
           "name": "General Biology II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -37,14 +37,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "0-1",
       "note": "Note: Students with level 3 or above in HKDSE 1x Biology are exempted from taking LIFS 1903",
       "courses": [
         {
           "code": "LIFS1903",
           "name": "Laboratory for General Biology I",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -54,7 +54,7 @@
         {
           "code": "LIFS1904",
           "name": "Laboratory for General Biology II",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -68,14 +68,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 18.0,
+      "required_credits": 18,
       "required_credits_raw": "18",
       "note": "",
       "courses": [
         {
           "code": "LIFS2040",
           "name": "Cell Biology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -85,7 +85,7 @@
         {
           "code": "LIFS2070",
           "name": "Introduction to Biotechnology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -95,7 +95,7 @@
         {
           "code": "LIFS2080",
           "name": "Plant Biology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -105,7 +105,7 @@
         {
           "code": "LIFS2210",
           "name": "Biochemistry I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -115,7 +115,7 @@
         {
           "code": "LIFS2220",
           "name": "Biochemistry II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -125,7 +125,7 @@
         {
           "code": "LIFS3150",
           "name": "Biostatistics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -139,14 +139,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-7",
       "note": "Note: LIFS 4963 OR (LIFS 4973 AND LIFS 4983) OR (SCIE 4500 AND LIFS 4983) (Students following IRE Track can only use (SCIE 4500 AND LIFS 4983) to fulfill the requirement.)",
       "courses": [
         {
           "code": "LIFS4963",
           "name": "Biotechnology Capstone Project",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -156,7 +156,7 @@
         {
           "code": "LIFS4973",
           "name": "Biotechnology Project Research I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -166,7 +166,7 @@
         {
           "code": "LIFS4983",
           "name": "Biotechnology Project Research II",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -176,7 +176,7 @@
         {
           "code": "SCIE4500",
           "name": "IRE Research Project II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -190,14 +190,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 8.0,
+      "required_credits": 8,
       "required_credits_raw": "8",
       "note": "",
       "courses": [
         {
           "code": "CHEM1011",
           "name": "General Chemistry A: Reactions, Thermodynamics, and Reaction Kinetics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -207,7 +207,7 @@
         {
           "code": "CHEM1012",
           "name": "General Chemistry B: Atomic Structure, Molecules, and Bonding Theories",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -217,7 +217,7 @@
         {
           "code": "CHEM1051",
           "name": "Laboratory for General Chemistry A",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -227,7 +227,7 @@
         {
           "code": "CHEM1052",
           "name": "Laboratory for General Chemistry B",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -241,14 +241,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Note: CHEM 2111 OR CHEM 2311",
       "courses": [
         {
           "code": "CHEM2111",
           "name": "Fundamentals of Organic Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -258,7 +258,7 @@
         {
           "code": "CHEM2311",
           "name": "Analytical Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -272,14 +272,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 1.0,
+      "required_credits": 1,
       "required_credits_raw": "1",
       "note": "Note: CHEM 2155 OR CHEM 2355",
       "courses": [
         {
           "code": "CHEM2155",
           "name": "Fundamental Organic Chemistry Laboratory",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -289,7 +289,7 @@
         {
           "code": "CHEM2355",
           "name": "Fundamental Analytical Chemistry Laboratory",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -303,14 +303,14 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 15.0,
+      "required_credits": 15,
       "required_credits_raw": "15-18",
       "note": "Biotechnology Electives (Courses from the specified elective list; Students following IRE Track are required to take a minimum of 15 credits; while others a minimum of 18 credits. Courses taken as Major/Track Required Courses may not be counted towards the elective requirement.) Includes any LIFS courses at 3000/4000-level. Prefixes in the PDF: LIFS/BTEC/OCES/PHYS/BIEN/CENG.",
       "courses": [
         {
           "code": "LIFS2010",
           "name": "Modern Approaches to Biochemical and Cell Biological Research",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -320,7 +320,7 @@
         {
           "code": "LIFS2060",
           "name": "Biodiversity",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -330,7 +330,7 @@
         {
           "code": "LIFS2240",
           "name": "Cell Biology Laboratory",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -340,7 +340,7 @@
         {
           "code": "LIFS2720",
           "name": "Biochemistry Laboratory",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "2",
           "areas": [],
           "source_pages": [
@@ -350,7 +350,7 @@
         {
           "code": "LIFS2820",
           "name": "Biochemical Laboratory Techniques",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -360,7 +360,7 @@
         {
           "code": "LIFS2888",
           "name": "Introduction to Bioindustries",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -370,7 +370,7 @@
         {
           "code": "BTEC5210",
           "name": "Principles and Application in Biotechnology",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -380,7 +380,7 @@
         {
           "code": "BTEC5340",
           "name": "Biomarkers and Medical Devices",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -390,7 +390,7 @@
         {
           "code": "OCES1010",
           "name": "Principles and Applications of Environmental Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -400,7 +400,7 @@
         {
           "code": "PHYS2010",
           "name": "Introductory Biological Physics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -410,7 +410,7 @@
         {
           "code": "BIEN5050",
           "name": "Global Health Ethics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -420,7 +420,7 @@
         {
           "code": "CENG1110",
           "name": "Introduction to Chemical Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -430,7 +430,7 @@
         {
           "code": "CENG4620",
           "name": "Bioproducts and Processing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -440,7 +440,7 @@
         {
           "code": "CENG4670",
           "name": "Pharmaceutical Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -454,14 +454,14 @@
     },
     {
       "name": "Applied Bioscience Track Required Course(s)",
-      "required_credits": 9.0,
+      "required_credits": 9,
       "required_credits_raw": "9",
       "note": "Track Study: students should follow one of the tracks and complete all requirements as specified.",
       "courses": [
         {
           "code": "LIFS3040",
           "name": "Animal Physiology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -471,7 +471,7 @@
         {
           "code": "LIFS3060",
           "name": "Microbiology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -481,7 +481,7 @@
         {
           "code": "LIFS4370",
           "name": "Human Genetics and Personalized Medicine",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -499,14 +499,14 @@
     },
     {
       "name": "Applied Bioscience Track Elective Course(s)",
-      "required_credits": 9.0,
+      "required_credits": 9,
       "required_credits_raw": "9",
       "note": "Applied Bioscience Elective (3 courses from the specified list)",
       "courses": [
         {
           "code": "LIFS2011",
           "name": "A Practicum on Wetland Conservation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -516,7 +516,7 @@
         {
           "code": "LIFS3220",
           "name": "Animal Physiology Laboratory",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -526,7 +526,7 @@
         {
           "code": "LIFS3260",
           "name": "Microbiology Laboratory",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -536,7 +536,7 @@
         {
           "code": "LIFS3370",
           "name": "Human Genetics in Practice",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -546,7 +546,7 @@
         {
           "code": "LIFS4882",
           "name": "Investigative Pharmacology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -556,7 +556,7 @@
         {
           "code": "LIFS4884",
           "name": "Application of RNA Technology to Human Diseases",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -574,14 +574,14 @@
     },
     {
       "name": "Entrepreneurship Track Required Course(s)",
-      "required_credits": 19.0,
+      "required_credits": 19,
       "required_credits_raw": "19",
       "note": "",
       "courses": [
         {
           "code": "LIFS2888",
           "name": "Introduction to Bioindustries",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -591,7 +591,7 @@
         {
           "code": "LIFS3110",
           "name": "Biotechnological Application of Recombinant DNA Techniques",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -601,7 +601,7 @@
         {
           "code": "LIFS3140",
           "name": "General Genetics",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -611,7 +611,7 @@
         {
           "code": "LIFS4200",
           "name": "Concepts and Issues in Contemporary Biotechnology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -621,7 +621,7 @@
         {
           "code": "LIFS4630",
           "name": "Advanced Topics in Biotechnology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -631,7 +631,7 @@
         {
           "code": "BIBU4820",
           "name": "Biotechnology Entrepreneurship and Business Operations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -649,14 +649,14 @@
     },
     {
       "name": "International Research Enrichment Track Required Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "Students in the IRE Track should also take SCIE 4500 and LIFS 4983 as specified in the major requirements.",
       "courses": [
         {
           "code": "LIFS3070",
           "name": "Introduction to Biophysical Instrumentation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -666,7 +666,7 @@
         {
           "code": "SCIE3500",
           "name": "IRE Research Project I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -684,7 +684,7 @@
     },
     {
       "name": "International Research Enrichment Track Other(s)",
-      "required_credits": 18.0,
+      "required_credits": 18,
       "required_credits_raw": "18",
       "note": "Note: With approval by the program office, students should follow the curriculum of the Applied Bioscience Track, and complete all of its requirements.",
       "courses": [],

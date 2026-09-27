@@ -2,18 +2,18 @@
   "year": "2025-26",
   "code": "ECOF",
   "title": "BSc in Economics and Finance",
-  "total_required_credits": 40.0,
+  "total_required_credits": 40,
   "groups": [
     {
       "name": "Required Course(s)",
-      "required_credits": 4.0,
+      "required_credits": 4,
       "required_credits_raw": "4",
       "note": "Note: ECON 2174 OR MATH 2023",
       "courses": [
         {
           "code": "ECON2174",
           "name": "Mathematics for Economists",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "MATH2023",
           "name": "Multivariable Calculus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -37,14 +37,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 19.0,
+      "required_credits": 19,
       "required_credits_raw": "19",
       "note": "",
       "courses": [
         {
           "code": "ECON3113",
           "name": "Microeconomic Theory I",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -54,7 +54,7 @@
         {
           "code": "ECON3133",
           "name": "Microeconomic Theory II",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -64,7 +64,7 @@
         {
           "code": "ECON3143",
           "name": "Macroeconomic Theory II",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -74,7 +74,7 @@
         {
           "code": "ECON3334",
           "name": "Introduction to Econometrics",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -84,7 +84,7 @@
         {
           "code": "FINA3103",
           "name": "Intermediate Investments",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -98,7 +98,7 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 11.0,
+      "required_credits": 11,
       "required_credits_raw": "11",
       "note": "ECON 4000-level Electives (Any 3 courses of the subject and level as specified). No specific course list is printed in the PDF.",
       "courses": [],
@@ -108,7 +108,7 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "FINA 3000-level or above Electives (Any 2 courses of the subject and level as specified). No specific course list is printed in the PDF.",
       "courses": [],

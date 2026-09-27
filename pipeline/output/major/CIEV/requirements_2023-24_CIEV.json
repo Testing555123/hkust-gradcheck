@@ -2,18 +2,18 @@
   "year": "2023-24",
   "code": "CIEV",
   "title": "BEng in Civil and Environmental Engineering",
-  "total_required_credits": 13.0,
+  "total_required_credits": 13,
   "groups": [
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-5",
       "note": "COMP 1021 OR COMP 1022P OR COMP 2011 OR COMP 2012H",
       "courses": [
         {
           "code": "COMP1021",
           "name": "Introduction to Computer Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "COMP1022P",
           "name": "Introduction to Computing with Java",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "COMP2011",
           "name": "Programming with C++",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -43,7 +43,7 @@
         {
           "code": "COMP2012H",
           "name": "Honors Object-Oriented Programming and Data Structures",
-          "credits": 5.0,
+          "credits": 5,
           "credits_raw": "5",
           "areas": [],
           "source_pages": [
@@ -53,7 +53,7 @@
         {
           "code": "CHEM1012",
           "name": "General Chemistry B: Atomic Structure, Molecules, and Bonding Theories",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -63,7 +63,7 @@
         {
           "code": "LANG2030",
           "name": "Technical Communication I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -73,7 +73,7 @@
         {
           "code": "MATH1012",
           "name": "Calculus IA",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -83,7 +83,7 @@
         {
           "code": "MATH1013",
           "name": "Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -93,7 +93,7 @@
         {
           "code": "MATH1014",
           "name": "Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -103,7 +103,7 @@
         {
           "code": "MATH1020",
           "name": "Accelerated Calculus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -113,7 +113,7 @@
         {
           "code": "MATH1023",
           "name": "Honors Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -123,7 +123,7 @@
         {
           "code": "MATH1024",
           "name": "Honors Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -133,7 +133,7 @@
         {
           "code": "MATH2011",
           "name": "Introduction to Multivariable Calculus",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -143,7 +143,7 @@
         {
           "code": "MATH2350",
           "name": "Applied Linear Algebra and Differential Equations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -153,7 +153,7 @@
         {
           "code": "PHYS1112",
           "name": "General Physics I with Calculus",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -163,7 +163,7 @@
         {
           "code": "PHYS1312",
           "name": "Honors General Physics I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -177,14 +177,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "0",
       "note": "",
       "courses": [
         {
           "code": "CIVL1010",
           "name": "Academic and Professional Development I",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -194,7 +194,7 @@
         {
           "code": "CIVL1100",
           "name": "Discovering Civil and Environmental Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -204,7 +204,7 @@
         {
           "code": "CIVL2010",
           "name": "Academic and Professional Development II",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -214,7 +214,7 @@
         {
           "code": "CIVL2020",
           "name": "Industrial and BIM Training",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -224,7 +224,7 @@
         {
           "code": "CIVL2110",
           "name": "Statics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -234,7 +234,7 @@
         {
           "code": "CIVL2120",
           "name": "Mechanics of Materials",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -244,7 +244,7 @@
         {
           "code": "CIVL2160",
           "name": "Modeling Systems with Uncertainties",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -254,7 +254,7 @@
         {
           "code": "CIVL2170",
           "name": "Infrastructure Systems Engineering and Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -264,7 +264,7 @@
         {
           "code": "CIVL2410",
           "name": "Environmental Assessment and Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -274,7 +274,7 @@
         {
           "code": "CIVL2510",
           "name": "Fluid Mechanics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -284,7 +284,7 @@
         {
           "code": "CIVL2810",
           "name": "Construction Materials",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -294,7 +294,7 @@
         {
           "code": "CIVL3010",
           "name": "Academic and Professional Development III",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -304,7 +304,7 @@
         {
           "code": "CIVL3020",
           "name": "Internship Training",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -314,7 +314,7 @@
         {
           "code": "CIVL3210",
           "name": "Introduction to Construction Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -324,7 +324,7 @@
         {
           "code": "CIVL3610",
           "name": "Traffic and Transportation Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -334,7 +334,7 @@
         {
           "code": "CIVL3310",
           "name": "Structural Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -344,7 +344,7 @@
         {
           "code": "CIVL3320",
           "name": "Reinforced Concrete Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -354,7 +354,7 @@
         {
           "code": "CIVL3420",
           "name": "Water and Wastewater Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -364,7 +364,7 @@
         {
           "code": "CIVL3510",
           "name": "Hydrosystems Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -374,7 +374,7 @@
         {
           "code": "CIVL3730",
           "name": "Fundamentals of Geotechnics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -384,7 +384,7 @@
         {
           "code": "CIVL3740",
           "name": "Geotechnical Analysis and Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -394,7 +394,7 @@
         {
           "code": "CIVL4910",
           "name": "Civil and Environmental Engineering Final Year Project",
-          "credits": 6.0,
+          "credits": 6,
           "credits_raw": "6",
           "areas": [],
           "source_pages": [
@@ -404,7 +404,7 @@
         {
           "code": "CIVL4920",
           "name": "Civil and Environmental Engineering Final Year Thesis",
-          "credits": 6.0,
+          "credits": 6,
           "credits_raw": "6",
           "areas": [],
           "source_pages": [
@@ -414,7 +414,7 @@
         {
           "code": "CIVL4950",
           "name": "Civil Engineering Capstone Design Project",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -424,7 +424,7 @@
         {
           "code": "ENGG2010",
           "name": "Engineering Seminar Series",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -434,7 +434,7 @@
         {
           "code": "LANG4033",
           "name": "Technical Communication Il for Civil and Environmental Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -448,14 +448,14 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 9.0,
+      "required_credits": 9,
       "required_credits_raw": "9",
       "note": "CIVL (Environmental) Electives [3 courses from the specified elective list. At least 2 courses (6 credits) should be selected",
       "courses": [
         {
           "code": "CIVL4430",
           "name": "Environmental Impact Assessment",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "CIVL (Environmental) Electives"
@@ -467,7 +467,7 @@
         {
           "code": "CIVL4450",
           "name": "Carbon Footprint Analysis and Reduction",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "CIVL (Environmental) Electives"
@@ -479,7 +479,7 @@
         {
           "code": "CIVL4460",
           "name": "Process Design of Environmental Engineering Facilities",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "CIVL (Environmental) Electives"
@@ -491,7 +491,7 @@
         {
           "code": "CIVL4520",
           "name": "Municipal Hydrosystems Engineering and Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "CIVL (Environmental) Electives"
@@ -503,7 +503,7 @@
         {
           "code": "CIVL5410",
           "name": "Physical-Chemical Water/Wastewater Treatment",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "CIVL (Environmental) Electives"
@@ -515,7 +515,7 @@
         {
           "code": "CIVL5420",
           "name": "Biological Waste Treatment",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "CIVL (Environmental) Electives"
@@ -527,7 +527,7 @@
         {
           "code": "CIVL5430",
           "name": "Aquatic Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "CIVL (Environmental) Electives"
@@ -539,7 +539,7 @@
         {
           "code": "CIVL5450",
           "name": "Hazardous Waste Treatment and Site Remediation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "CIVL (Environmental) Electives"
@@ -551,7 +551,7 @@
         {
           "code": "CIVL5460",
           "name": "Landfill Engineering and Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "CIVL (Environmental) Electives"
@@ -563,7 +563,7 @@
         {
           "code": "CIVL5470",
           "name": "Industrial Wastewater Treatment",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "CIVL (Environmental) Electives"
@@ -575,7 +575,7 @@
         {
           "code": "CENG4710",
           "name": "Environmental Control",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "CIVL (Environmental) Electives"
@@ -587,7 +587,7 @@
         {
           "code": "CENG4720",
           "name": "Environmental Impact Assessment and Management Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "CIVL (Environmental) Electives"
@@ -603,14 +603,14 @@
     },
     {
       "name": "Research Option",
-      "required_credits": 1.0,
+      "required_credits": 1,
       "required_credits_raw": "1-4",
       "note": "CIVL 4900 OR UROP 1100",
       "courses": [
         {
           "code": "CIVL4900",
           "name": "Directed Studies",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1-4",
           "areas": [],
           "source_pages": [
@@ -620,7 +620,7 @@
         {
           "code": "UROP1100",
           "name": "Undergraduate Research Opportunities Series 1",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [

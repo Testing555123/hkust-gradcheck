@@ -2,18 +2,18 @@
   "year": "2026-27",
   "code": "AI",
   "title": "BEng in Artificial Intelligence",
-  "total_required_credits": 18.0,
+  "total_required_credits": 18,
   "groups": [
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "",
       "note": "",
       "courses": [
         {
           "code": "COMP1023",
           "name": "Introduction to Python Programming",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "MATH1013",
           "name": "Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "MATH1014",
           "name": "Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -43,7 +43,7 @@
         {
           "code": "MATH1020",
           "name": "Accelerated Calculus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -53,7 +53,7 @@
         {
           "code": "MATH1023",
           "name": "Honors Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -63,7 +63,7 @@
         {
           "code": "MATH1024",
           "name": "Honors Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -73,7 +73,7 @@
         {
           "code": "MATH2121",
           "name": "Linear Algebra",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -83,7 +83,7 @@
         {
           "code": "MATH2131",
           "name": "Honors in Linear and Abstract Algebra I",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -97,14 +97,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "",
       "note": "",
       "courses": [
         {
           "code": "COMP1944",
           "name": "Artificial Intelligence Ethics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "attained 3",
           "areas": [],
           "source_pages": [
@@ -114,7 +114,7 @@
         {
           "code": "COMP1991",
           "name": "Industrial Experience",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -124,7 +124,7 @@
         {
           "code": "COMP4910",
           "name": "Co-op Program",
-          "credits": 6.0,
+          "credits": 6,
           "credits_raw": "6",
           "areas": [],
           "source_pages": [
@@ -134,7 +134,7 @@
         {
           "code": "COMP4981",
           "name": "Final Year Project",
-          "credits": 6.0,
+          "credits": 6,
           "credits_raw": "6",
           "areas": [],
           "source_pages": [
@@ -144,7 +144,7 @@
         {
           "code": "COMP4981H",
           "name": "Final Year Thesis",
-          "credits": 6.0,
+          "credits": 6,
           "credits_raw": "6",
           "areas": [],
           "source_pages": [
@@ -154,7 +154,7 @@
         {
           "code": "COMP2011",
           "name": "Programming with C++",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -164,7 +164,7 @@
         {
           "code": "COMP2012",
           "name": "Object-Oriented Programming and Data Structures",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -174,7 +174,7 @@
         {
           "code": "COMP2012H",
           "name": "Honors Object-Oriented Programming and Data Structures",
-          "credits": 5.0,
+          "credits": 5,
           "credits_raw": "5",
           "areas": [],
           "source_pages": [
@@ -184,7 +184,7 @@
         {
           "code": "COMP2211",
           "name": "Introduction to Artificial Intelligence",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -194,7 +194,7 @@
         {
           "code": "COMP2611",
           "name": "Computer Organization",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -204,7 +204,7 @@
         {
           "code": "COMP2711",
           "name": "Discrete Mathematical Tools for Computer Science",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -214,7 +214,7 @@
         {
           "code": "COMP2711H",
           "name": "Honors Discrete Mathematical Tools for Computer Science",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -224,7 +224,7 @@
         {
           "code": "COMP3211",
           "name": "Learning, Reasoning, and Decision Making in Al",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -234,7 +234,7 @@
         {
           "code": "COMP3711",
           "name": "Design and Analysis of Algorithms",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -244,7 +244,7 @@
         {
           "code": "COMP3711H",
           "name": "Honors Design and Analysis of Algorithms",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -254,7 +254,7 @@
         {
           "code": "COMP4211",
           "name": "Machine Learning",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -264,7 +264,7 @@
         {
           "code": "COMP4221",
           "name": "Introduction to Natural Language Processing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -274,7 +274,7 @@
         {
           "code": "COMP4471",
           "name": "Deep Learning in Computer Vision",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -284,7 +284,7 @@
         {
           "code": "COMP4900",
           "name": "Academic and Professional Development",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -294,7 +294,7 @@
         {
           "code": "MATH2411",
           "name": "Applied Statistics",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -308,14 +308,14 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 18.0,
+      "required_credits": 18,
       "required_credits_raw": "credit( require 18",
       "note": "COMP Electives (6 courses from the specified elective list, of which at least 4 courses should be taken from Artificial Intelligence area and at least 2 courses from Other COMP area.)",
       "courses": [
         {
           "code": "COMP3212",
           "name": "Intelligent Software Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Artificial Intelligence"
@@ -328,7 +328,7 @@
         {
           "code": "COMP3213",
           "name": "Introduction to Generative Artificial Intelligence",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Artificial Intelligence"
@@ -340,7 +340,7 @@
         {
           "code": "COMP3214",
           "name": "Introduction to Automated Machine Learning",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Artificial Intelligence"
@@ -353,7 +353,7 @@
         {
           "code": "COMP3231",
           "name": "Artificial Intelligence for Healthcare",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Artificial Intelligence"
@@ -366,7 +366,7 @@
         {
           "code": "COMP4222",
           "name": "Machine Learning with Structured Data",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Artificial Intelligence"
@@ -378,7 +378,7 @@
         {
           "code": "COMP4321",
           "name": "Search Engines for Web and Enterprise Data",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Artificial Intelligence"
@@ -390,7 +390,7 @@
         {
           "code": "COMP4331",
           "name": "Data Mining",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Artificial Intelligence"
@@ -402,7 +402,7 @@
         {
           "code": "COMP4332",
           "name": "Big Data Mining and Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Artificial Intelligence"
@@ -414,7 +414,7 @@
         {
           "code": "COMP4421",
           "name": "Image Processing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Artificial Intelligence"
@@ -426,7 +426,7 @@
         {
           "code": "COMP4441",
           "name": "Music Video Creation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Artificial Intelligence"
@@ -438,7 +438,7 @@
         {
           "code": "COMP4451",
           "name": "Game Programming",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Artificial Intelligence"
@@ -450,7 +450,7 @@
         {
           "code": "COMP4461",
           "name": "Human-Computer Interaction",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Artificial Intelligence"
@@ -462,7 +462,7 @@
         {
           "code": "COMP4462",
           "name": "Data Visualization",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"
@@ -474,7 +474,7 @@
         {
           "code": "COMP4531",
           "name": "loT and Smart Sensing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"
@@ -486,7 +486,7 @@
         {
           "code": "COMP4551",
           "name": "Large-Scale Machine Learning System for Foundation Models",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"
@@ -498,7 +498,7 @@
         {
           "code": "COMP4641",
           "name": "Social Information Network Analysis and Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"
@@ -510,7 +510,7 @@
         {
           "code": "COMP4651",
           "name": "Cloud Computing and Big Data Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"
@@ -522,7 +522,7 @@
         {
           "code": "COMP4901B",
           "name": "Large Language Models",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"
@@ -534,7 +534,7 @@
         {
           "code": "COMP4901D",
           "name": "Embedded Al Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"
@@ -546,7 +546,7 @@
         {
           "code": "COMP5211",
           "name": "Advanced Artificial Intelligence",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"
@@ -558,7 +558,7 @@
         {
           "code": "COMP5214",
           "name": "Advanced Deep Learning Architectures",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"
@@ -570,7 +570,7 @@
         {
           "code": "COMP3021",
           "name": "Java Programming",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"
@@ -582,7 +582,7 @@
         {
           "code": "COMP3031",
           "name": "Principles of Programming Languages",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"
@@ -594,7 +594,7 @@
         {
           "code": "COMP3111",
           "name": "Software Engineering",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Other COMP"
@@ -606,7 +606,7 @@
         {
           "code": "COMP3111H",
           "name": "Honors Software Engineering",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Other COMP"
@@ -618,7 +618,7 @@
         {
           "code": "COMP3311",
           "name": "Database Management Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"
@@ -630,7 +630,7 @@
         {
           "code": "COMP3511",
           "name": "Operating Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"
@@ -642,7 +642,7 @@
         {
           "code": "COMP3631",
           "name": "Cryptography",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"
@@ -654,7 +654,7 @@
         {
           "code": "COMP3633",
           "name": "Competitive Programming in Cybersecurity II",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "2",
           "areas": [
             "Other COMP"
@@ -666,7 +666,7 @@
         {
           "code": "COMP3721",
           "name": "Theory of Computation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"
@@ -678,7 +678,7 @@
         {
           "code": "COMP4021",
           "name": "Internet Computing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"
@@ -690,7 +690,7 @@
         {
           "code": "COMP4411",
           "name": "Computer Graphics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"
@@ -702,7 +702,7 @@
         {
           "code": "COMP4521",
           "name": "Mobile Application Development",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"
@@ -714,7 +714,7 @@
         {
           "code": "COMP4611",
           "name": "Design and Analysis of Computer Architectures",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"
@@ -726,7 +726,7 @@
         {
           "code": "COMP4621",
           "name": "Computer and Communication Networks",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"
@@ -738,7 +738,7 @@
         {
           "code": "COMP4632",
           "name": "Practicing Cybersecurity: Attacks and Counter-measures",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"
@@ -750,7 +750,7 @@
         {
           "code": "COMP4633",
           "name": "Competitive Programming in Cybersecurity III",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "2",
           "areas": [
             "Other COMP"
@@ -762,7 +762,7 @@
         {
           "code": "COMP4634",
           "name": "Cybersecurity",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"
@@ -774,7 +774,7 @@
         {
           "code": "COMP4911",
           "name": "IT Entrepreneurship",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"
@@ -786,7 +786,7 @@
         {
           "code": "COMP5111",
           "name": "Fundamentals of Software Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"
@@ -798,7 +798,7 @@
         {
           "code": "COMP5711",
           "name": "Introduction to Advanced Algorithmic Techniques",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Other COMP"

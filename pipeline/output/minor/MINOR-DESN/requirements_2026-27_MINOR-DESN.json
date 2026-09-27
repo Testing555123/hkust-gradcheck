@@ -2,18 +2,18 @@
   "year": "2026-27",
   "code": "MINOR-DESN",
   "title": "Minor Program in Design",
-  "total_required_credits": 18.0,
+  "total_required_credits": 18,
   "groups": [
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Design Fundamentals: ISDN 1001 OR ISDN 1002 OR ISDN 1006 OR ISDN 1007 OR ENGG 1300",
       "courses": [
         {
           "code": "ISDN1001",
           "name": "Introduction to Integrative Systems and Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "ISDN1002",
           "name": "Redefining Problems for the Real Needs",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "ISDN1006",
           "name": "Human-centered Innovation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -43,7 +43,7 @@
         {
           "code": "ISDN1007",
           "name": "From Design Thinking to Design Action: Defining Problems for Better Solutions",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -53,7 +53,7 @@
         {
           "code": "ENGG1300",
           "name": "Design Thinking for Health Innovation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -67,14 +67,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "Design: ISDN 2000 OR ISDN 2200 OR ISDN 2300 OR ISDN 2400 (any 2 courses)",
       "courses": [
         {
           "code": "ISDN2000",
           "name": "What is Design and Why Design?",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -84,7 +84,7 @@
         {
           "code": "ISDN2200",
           "name": "Systems Thinking and Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -94,7 +94,7 @@
         {
           "code": "ISDN2300",
           "name": "Introduction to 3D Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -104,7 +104,7 @@
         {
           "code": "ISDN2400",
           "name": "Physical Prototyping",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -118,14 +118,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Design Project Experience: ISDN 3350 OR ISDN 3360 OR ISDN 4910 OR ENTR 3030 OR ENTR 3100",
       "courses": [
         {
           "code": "ISDN3350",
           "name": "Global Product Development",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -135,7 +135,7 @@
         {
           "code": "ISDN3360",
           "name": "From Product Innovations to Successful Technology Startups",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -145,7 +145,7 @@
         {
           "code": "ISDN4910",
           "name": "Independent Project for Minor in Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -155,7 +155,7 @@
         {
           "code": "ENTR3030",
           "name": "Social Innovations and Entrepreneurship",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -165,7 +165,7 @@
         {
           "code": "ENTR3100",
           "name": "Industrial Landscape: Understanding the Elements to Start a Business",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -179,14 +179,14 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "Design Electives: courses from the specified list. Students are required to take a minimum total of 6 credits. At least 3 credits must be at 3000-level or above and no more than 3 credits can be taken at 1000-level. Courses taken as Required courses may not be counted toward the elective requirement. The offering school for each course is given in 'areas'.",
       "courses": [
         {
           "code": "ISDN1002",
           "name": "Redefining Problems for the Real Needs",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "AIS"
@@ -198,7 +198,7 @@
         {
           "code": "ISDN1006",
           "name": "Human-centered Innovation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "AIS"
@@ -210,7 +210,7 @@
         {
           "code": "ISDN1007",
           "name": "From Design Thinking to Design Action: Defining Problems for Better Solutions",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "AIS"
@@ -222,7 +222,7 @@
         {
           "code": "ISDN1130",
           "name": "Introduction to Eco-Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "AIS"
@@ -234,7 +234,7 @@
         {
           "code": "ISDN2000",
           "name": "What is Design and Why Design?",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "AIS"
@@ -246,7 +246,7 @@
         {
           "code": "ISDN2110",
           "name": "From Ideas to Assets: Practice of the Creative Economy System",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "AIS"
@@ -258,7 +258,7 @@
         {
           "code": "ISDN2200",
           "name": "Systems Thinking and Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "AIS"
@@ -270,7 +270,7 @@
         {
           "code": "ISDN2210",
           "name": "Introduction to Brand Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "AIS"
@@ -282,7 +282,7 @@
         {
           "code": "ISDN2300",
           "name": "Introduction to 3D Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "AIS"
@@ -294,7 +294,7 @@
         {
           "code": "ISDN2400",
           "name": "Physical Prototyping",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "AIS"
@@ -306,7 +306,7 @@
         {
           "code": "ISDN3000D",
           "name": "Maker",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "AIS"
@@ -318,7 +318,7 @@
         {
           "code": "ISDN3004",
           "name": "Advanced Sketching",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "2",
           "areas": [
             "AIS"
@@ -330,7 +330,7 @@
         {
           "code": "ISDN3150",
           "name": "AI for Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "AIS"
@@ -342,7 +342,7 @@
         {
           "code": "ISDN3200",
           "name": "Graphic Communication",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "2",
           "areas": [
             "AIS"
@@ -354,7 +354,7 @@
         {
           "code": "ISDN3300",
           "name": "Interaction Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "AIS"
@@ -366,7 +366,7 @@
         {
           "code": "ISDN3350",
           "name": "Global Product Development",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "AIS"
@@ -378,7 +378,7 @@
         {
           "code": "ISDN3360",
           "name": "From Product Innovations to Successful Technology Startups",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "AIS"
@@ -390,7 +390,7 @@
         {
           "code": "ISDN4200",
           "name": "Product Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "AIS"
@@ -402,7 +402,7 @@
         {
           "code": "ENVR1080",
           "name": "The Smart Consumer - Uncovering the Hidden Story behind the Product Label",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "AIS"
@@ -414,7 +414,7 @@
         {
           "code": "ENVR3004",
           "name": "Life Cycle Assessment",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "AIS"
@@ -426,7 +426,7 @@
         {
           "code": "ENVR3110",
           "name": "Life Cycle Assessment for Sustainable Development",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "AIS"
@@ -438,7 +438,7 @@
         {
           "code": "ENVR3210",
           "name": "Environmental Technology for Impact Assessment",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "AIS"
@@ -450,7 +450,7 @@
         {
           "code": "CHEM1002",
           "name": "Introduction to Chemistry of Cosmetics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Science"
@@ -462,7 +462,7 @@
         {
           "code": "PHYS1003",
           "name": "Energy and Related Environmental Issues",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Science"
@@ -474,7 +474,7 @@
         {
           "code": "CENG1110",
           "name": "Introduction to Chemical Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Engineering"
@@ -486,7 +486,7 @@
         {
           "code": "CENG1600",
           "name": "Biotechnology and Its Business Opportunities",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Engineering"
@@ -498,7 +498,7 @@
         {
           "code": "COMP1943",
           "name": "Creative Sound and Video Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Engineering"
@@ -510,7 +510,7 @@
         {
           "code": "COMP3711",
           "name": "Design and Analysis of Algorithms",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Engineering"
@@ -522,7 +522,7 @@
         {
           "code": "COMP4451",
           "name": "Game Programming",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Engineering"
@@ -534,7 +534,7 @@
         {
           "code": "COMP4461",
           "name": "Human-Computer Interaction",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Engineering"
@@ -546,7 +546,7 @@
         {
           "code": "COMP4521",
           "name": "Mobile Application Development",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Engineering"
@@ -558,7 +558,7 @@
         {
           "code": "ELEC1100",
           "name": "Introduction to Electro-Robot Design",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Engineering"
@@ -570,7 +570,7 @@
         {
           "code": "ELEC3300",
           "name": "Introduction to Embedded Systems",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Engineering"
@@ -582,7 +582,7 @@
         {
           "code": "ELEC3500",
           "name": "Integrated Circuit Devices",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Engineering"
@@ -594,7 +594,7 @@
         {
           "code": "ENGG1300",
           "name": "Design Thinking for Health Innovation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Engineering"
@@ -606,7 +606,7 @@
         {
           "code": "IEDA2100",
           "name": "Computing in Industrial Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Engineering"
@@ -618,7 +618,7 @@
         {
           "code": "IEDA3130",
           "name": "Ergonomics and Safety Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Engineering"
@@ -630,7 +630,7 @@
         {
           "code": "MECH2520",
           "name": "Design and Manufacturing I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Engineering"
@@ -642,7 +642,7 @@
         {
           "code": "MECH3510",
           "name": "Computer-Aided Design and Manufacturing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Engineering"
@@ -654,7 +654,7 @@
         {
           "code": "MECH3620",
           "name": "Aircraft Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Engineering"
@@ -666,7 +666,7 @@
         {
           "code": "MECH3907",
           "name": "Mechatronic Design and Prototyping",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Engineering"
@@ -678,7 +678,7 @@
         {
           "code": "ISOM1380",
           "name": "Technology and Innovation: Social and Business Perspectives",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Business"
@@ -690,7 +690,7 @@
         {
           "code": "ISOM2030",
           "name": "Business Protections for Innovations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Business"
@@ -702,7 +702,7 @@
         {
           "code": "ISOM2700",
           "name": "Operations Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Business"
@@ -714,7 +714,7 @@
         {
           "code": "ISOM3210",
           "name": "Information Systems Analysis and Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Business"
@@ -726,7 +726,7 @@
         {
           "code": "MARK2120",
           "name": "Marketing Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Business"
@@ -738,7 +738,7 @@
         {
           "code": "MARK3220",
           "name": "Marketing Research",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Business"
@@ -750,7 +750,7 @@
         {
           "code": "MARK3420",
           "name": "Consumer Behavior",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Business"
@@ -762,7 +762,7 @@
         {
           "code": "HUMA2680",
           "name": "Understanding Western Architecture",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "HUMA"
@@ -774,7 +774,7 @@
         {
           "code": "HUMA3201",
           "name": "Animation: A Global Perspective",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "HUMA"

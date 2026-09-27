@@ -2,18 +2,18 @@
   "year": "2023-24",
   "code": "BIEN",
   "title": "BEng in Bioengineering",
-  "total_required_credits": 0.0,
+  "total_required_credits": 0,
   "groups": [
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "",
       "note": "",
       "courses": [
         {
           "code": "COMP1021",
           "name": "Introduction to Computer Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "COMP1022P",
           "name": "Introduction to Computing with Java",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "COMP1029P",
           "name": "Python Programming Bridging Course",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -43,7 +43,7 @@
         {
           "code": "COMP2011",
           "name": "Programming with C++",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -53,7 +53,7 @@
         {
           "code": "COMP2012H",
           "name": "Honors Object-Oriented Programming and Data Structures",
-          "credits": 5.0,
+          "credits": 5,
           "credits_raw": "5",
           "areas": [],
           "source_pages": [
@@ -63,7 +63,7 @@
         {
           "code": "CHEM1012",
           "name": "General Chemistry B: Atomic Structure, Molecules, and Bonding Theories",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -73,7 +73,7 @@
         {
           "code": "CHEM1052",
           "name": "Laboratory for General Chemistry B",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -83,7 +83,7 @@
         {
           "code": "LANG2030",
           "name": "Technical Communication I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -93,7 +93,7 @@
         {
           "code": "LIFS1901",
           "name": "General Biology I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -103,7 +103,7 @@
         {
           "code": "MATH1012",
           "name": "Calculus IA",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -113,7 +113,7 @@
         {
           "code": "MATH1013",
           "name": "Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -123,7 +123,7 @@
         {
           "code": "MATH1014",
           "name": "Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -133,7 +133,7 @@
         {
           "code": "MATH1020",
           "name": "Accelerated Calculus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -143,7 +143,7 @@
         {
           "code": "MATH1023",
           "name": "Honors Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -153,7 +153,7 @@
         {
           "code": "MATH1024",
           "name": "Honors Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -163,7 +163,7 @@
         {
           "code": "PHYS1112",
           "name": "General Physics I with Calculus",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -173,7 +173,7 @@
         {
           "code": "PHYS1312",
           "name": "Honors General Physics I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -188,14 +188,14 @@
     },
     {
       "name": "School of Engineering Common Requirements",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "0",
       "note": "Engineering department introductory courses (select from other departments).",
       "courses": [
         {
           "code": "CENG1500",
           "name": "A First Course on Materials Science and Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -205,7 +205,7 @@
         {
           "code": "CENG1700",
           "name": "Introduction to Environmental Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -215,7 +215,7 @@
         {
           "code": "CIVL1100",
           "name": "Discovering Civil and Environmental Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -225,7 +225,7 @@
         {
           "code": "CIVL1210",
           "name": "Fundamental of Green Buildings",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -235,7 +235,7 @@
         {
           "code": "ELEC1100",
           "name": "Introduction to Electro-Robot Design",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -245,7 +245,7 @@
         {
           "code": "ELEC1200",
           "name": "A System View of Communications: from Signals to Packets",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -255,7 +255,7 @@
         {
           "code": "ENGG1100",
           "name": "First Year Cornerstone Engineering Design Project Course",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -265,7 +265,7 @@
         {
           "code": "IEDA2010",
           "name": "Introduction of Industrial Engineering and Decision Analytics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -275,7 +275,7 @@
         {
           "code": "ISDN1001",
           "name": "Introduction to Integrative Systems and Design",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -285,7 +285,7 @@
         {
           "code": "ISDN1002",
           "name": "Redefining Problems for the Real Needs",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -295,7 +295,7 @@
         {
           "code": "ISDN1006",
           "name": "Human-centered Innovation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -305,7 +305,7 @@
         {
           "code": "MECH1902",
           "name": "Energy Systems in a Sustainable World",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -315,7 +315,7 @@
         {
           "code": "MECH1906",
           "name": "Mechanical Engineering for Modern Life",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -325,7 +325,7 @@
         {
           "code": "MECH1907",
           "name": "Introduction to Aerospace Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -339,14 +339,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "",
       "note": "",
       "courses": [
         {
           "code": "BIEN1010",
           "name": "Introduction to Biomedical Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -356,7 +356,7 @@
         {
           "code": "BIEN1600",
           "name": "Introduction to Bioengineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -366,7 +366,7 @@
         {
           "code": "CENG1000",
           "name": "Foundations of Chemical and Biological Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -376,7 +376,7 @@
         {
           "code": "BIEN2310",
           "name": "Modeling for Chemical and Biological Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -386,7 +386,7 @@
         {
           "code": "BIEN2410",
           "name": "Cellular and Systems Physiology for Engineers",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -396,7 +396,7 @@
         {
           "code": "BIEN2610",
           "name": "Chemical Biology for Engineers",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -406,7 +406,7 @@
         {
           "code": "BIEN2990",
           "name": "Academic and Professional Development I",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -416,7 +416,7 @@
         {
           "code": "BIEN3250",
           "name": "Rate and Transport Processes in Biological Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -426,7 +426,7 @@
         {
           "code": "CENG2220",
           "name": "Transport Phenomena I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -436,7 +436,7 @@
         {
           "code": "BIEN3300",
           "name": "Data Science for Molecular Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -446,7 +446,7 @@
         {
           "code": "BIEN3310",
           "name": "Data Science for Neural Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -457,7 +457,7 @@
         {
           "code": "BIEN3320",
           "name": "Data Science for Biology and Medicine",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -467,7 +467,7 @@
         {
           "code": "BIEN3410",
           "name": "Bioimaging and Image Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -477,7 +477,7 @@
         {
           "code": "BIEN3420",
           "name": "Biosensors and Bioinstrumentation for Healthcare",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -487,7 +487,7 @@
         {
           "code": "CENG3230",
           "name": "Chemical and Biological Reaction Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -497,7 +497,7 @@
         {
           "code": "BIEN3910",
           "name": "Bioengineering Laboratory",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -507,7 +507,7 @@
         {
           "code": "BIEN4920",
           "name": "Bioengineering Capstone Design",
-          "credits": 6.0,
+          "credits": 6,
           "credits_raw": "6",
           "areas": [],
           "source_pages": [
@@ -517,7 +517,7 @@
         {
           "code": "BIEN4930",
           "name": "Bioengineering Thesis Research",
-          "credits": 6.0,
+          "credits": 6,
           "credits_raw": "6",
           "areas": [],
           "source_pages": [
@@ -527,7 +527,7 @@
         {
           "code": "BIEN4940",
           "name": "Bioengineering Industrial Project",
-          "credits": 6.0,
+          "credits": 6,
           "credits_raw": "6",
           "areas": [],
           "source_pages": [
@@ -537,7 +537,7 @@
         {
           "code": "BIEN4990",
           "name": "Academic and Professional Development II",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -547,7 +547,7 @@
         {
           "code": "CENG2210",
           "name": "Chemical and Biological Engineering Thermodynamics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -557,7 +557,7 @@
         {
           "code": "ENGG2010",
           "name": "Engineering Seminar Series",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -567,7 +567,7 @@
         {
           "code": "LANG4035",
           "name": "Technical Communication II for Chemical and Biological Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -582,14 +582,14 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 15.0,
+      "required_credits": 15,
       "required_credits_raw": "15",
       "note": "Bioengineering Electives (5 courses from the specified elective list, of which at least 9 credits should be taken from a single specialty area (Area 1 or Area 2). Out of the 15 credits taken, at least 9 credits should be at 4000-level or above). Courses taken as Major Required Courses may not be counted towards this elective requirement.",
       "courses": [
         {
           "code": "BIEN3310",
           "name": "Data Science for Neural Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Biomedical Data Acquisition and Analytics"
@@ -601,7 +601,7 @@
         {
           "code": "BIEN4310",
           "name": "Statistical Signal Analysis and Applications in Neural Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Biomedical Data Acquisition and Analytics"
@@ -613,7 +613,7 @@
         {
           "code": "BIEN5040",
           "name": "Introduction to Neural Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Biomedical Data Acquisition and Analytics"
@@ -625,7 +625,7 @@
         {
           "code": "BIEN5060",
           "name": "Fundamentals and Applications of Sensing Technologies in Healthcare",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Biomedical Data Acquisition and Analytics"
@@ -637,7 +637,7 @@
         {
           "code": "CENG5240",
           "name": "Deep Learning for Chemical and Biological Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Biomedical Data Acquisition and Analytics"
@@ -649,7 +649,7 @@
         {
           "code": "COMP2012",
           "name": "Object-Oriented Programming and Data Structures",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Biomedical Data Acquisition and Analytics"
@@ -661,7 +661,7 @@
         {
           "code": "COMP2012H",
           "name": "Honors Object-Oriented Programming and Data Structures",
-          "credits": 5.0,
+          "credits": 5,
           "credits_raw": "5",
           "areas": [
             "Biomedical Data Acquisition and Analytics"
@@ -673,7 +673,7 @@
         {
           "code": "COMP2211",
           "name": "Introduction to Artificial Intelligence",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Biomedical Data Acquisition and Analytics"
@@ -685,7 +685,7 @@
         {
           "code": "COMP4211",
           "name": "Machine Learning",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Biomedical Data Acquisition and Analytics"
@@ -697,7 +697,7 @@
         {
           "code": "COMP4331",
           "name": "Data Mining",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Biomedical Data Acquisition and Analytics"
@@ -709,7 +709,7 @@
         {
           "code": "COMP4421",
           "name": "Image Processing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Biomedical Data Acquisition and Analytics"
@@ -721,7 +721,7 @@
         {
           "code": "COMP5423",
           "name": "Deep Learning in Medical Image Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Biomedical Data Acquisition and Analytics"
@@ -733,7 +733,7 @@
         {
           "code": "ELEC2100",
           "name": "Signals and Systems",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [
             "Biomedical Data Acquisition and Analytics"
@@ -745,7 +745,7 @@
         {
           "code": "ELEC2420",
           "name": "Basic Electronics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Biomedical Data Acquisition and Analytics"
@@ -757,7 +757,7 @@
         {
           "code": "ELEC4820",
           "name": "Medical Imaging",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Biomedical Data Acquisition and Analytics"
@@ -769,7 +769,7 @@
         {
           "code": "EMIA4110",
           "name": "Practical Machine Learning",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Biomedical Data Acquisition and Analytics"
@@ -781,7 +781,7 @@
         {
           "code": "LIFS3070",
           "name": "Introduction to Biophysical Instrumentation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Biomedical Data Acquisition and Analytics"
@@ -793,7 +793,7 @@
         {
           "code": "BIEN4110",
           "name": "Regulatory Affairs in the Healthcare Industry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Bioprocesses, Biomaterials and Bioanalysis"
@@ -805,7 +805,7 @@
         {
           "code": "BIEN5070",
           "name": "Synthetic Biology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Bioprocesses, Biomaterials and Bioanalysis"
@@ -817,7 +817,7 @@
         {
           "code": "CENG3150",
           "name": "Integrated Chemical Process and Product Design",
-          "credits": 5.0,
+          "credits": 5,
           "credits_raw": "5",
           "areas": [
             "Bioprocesses, Biomaterials and Bioanalysis"
@@ -829,7 +829,7 @@
         {
           "code": "CENG4510",
           "name": "Nature Engineering and DNA Nanotechnology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Bioprocesses, Biomaterials and Bioanalysis"
@@ -841,7 +841,7 @@
         {
           "code": "CENG4620",
           "name": "Bioproducts and Processing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Bioprocesses, Biomaterials and Bioanalysis"
@@ -853,7 +853,7 @@
         {
           "code": "CENG4630",
           "name": "Food Processing Technology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Bioprocesses, Biomaterials and Bioanalysis"
@@ -865,7 +865,7 @@
         {
           "code": "CENG4640",
           "name": "Biomolecular Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Bioprocesses, Biomaterials and Bioanalysis"
@@ -877,7 +877,7 @@
         {
           "code": "CENG4650",
           "name": "Biomaterials and Drug Delivery",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Bioprocesses, Biomaterials and Bioanalysis"
@@ -889,7 +889,7 @@
         {
           "code": "CENG4670",
           "name": "Pharmaceutical Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Bioprocesses, Biomaterials and Bioanalysis"
@@ -901,7 +901,7 @@
         {
           "code": "CENG5610",
           "name": "Protein Engineering",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Bioprocesses, Biomaterials and Bioanalysis"
@@ -913,7 +913,7 @@
         {
           "code": "CHEM2111",
           "name": "Fundamentals of Organic Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Bioprocesses, Biomaterials and Bioanalysis"
@@ -925,7 +925,7 @@
         {
           "code": "CHEM2311",
           "name": "Analytical Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Bioprocesses, Biomaterials and Bioanalysis"
@@ -937,7 +937,7 @@
         {
           "code": "LIFS3060",
           "name": "Microbiology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Bioprocesses, Biomaterials and Bioanalysis"
@@ -949,7 +949,7 @@
         {
           "code": "LIFS4888",
           "name": "Development and Registration of Pharmaceutical Products",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Bioprocesses, Biomaterials and Bioanalysis"
@@ -961,7 +961,7 @@
         {
           "code": "BIEN4000",
           "name": "Special Topics in Bioengineering",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1-4",
           "areas": [],
           "source_pages": [
@@ -971,7 +971,7 @@
         {
           "code": "CENG4160",
           "name": "Prototype Development for Chemical Processes and Products",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -981,7 +981,7 @@
         {
           "code": "UCOP3200",
           "name": "Design for Global Health",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -991,7 +991,7 @@
         {
           "code": "LIFS3240",
           "name": "Introduction to Neurobiology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1001,7 +1001,7 @@
         {
           "code": "LIFS4370",
           "name": "Human Genetics and Personalized Medicine",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -1011,7 +1011,7 @@
         {
           "code": "LIFS4760",
           "name": "Biochemistry of Diseases",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [

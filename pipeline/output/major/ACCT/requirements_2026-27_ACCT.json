@@ -2,18 +2,18 @@
   "year": "2026-27",
   "code": "ACCT",
   "title": "BBA in Professional Accounting",
-  "total_required_credits": 28.0,
+  "total_required_credits": 28,
   "groups": [
     {
       "name": "Required Course(s)",
-      "required_credits": 19.0,
+      "required_credits": 19,
       "required_credits_raw": "19",
       "note": "",
       "courses": [
         {
           "code": "ACCT3010",
           "name": "Financial Accounting I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "ACCT3020",
           "name": "Financial Accounting II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "ACCT3210",
           "name": "Advanced Management Accounting",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -43,7 +43,7 @@
         {
           "code": "ACCT3610",
           "name": "Business Law",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -53,7 +53,7 @@
         {
           "code": "ACCT3880",
           "name": "Professional Excellence Program",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -63,7 +63,7 @@
         {
           "code": "ACCT4010",
           "name": "Advanced Financial Accounting",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -73,7 +73,7 @@
         {
           "code": "ACCT4510",
           "name": "Auditing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -87,14 +87,14 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "Accounting Electives (1 course from the specified elective list. Courses taken to fulfili the Option Requirements may not be reused to count towards this elective requirement) Any ACCT course at 3000-level or above",
       "courses": [
         {
           "code": "ISOM3400",
           "name": "Business Applications Development in Python",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -104,7 +104,7 @@
         {
           "code": "MGMT4210",
           "name": "Corporate Strategy",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -114,7 +114,7 @@
         {
           "code": "ENVR4320",
           "name": "ESG Management and Reporting",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -128,14 +128,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "6",
       "note": "",
       "courses": [
         {
           "code": "ACCT4710",
           "name": "Accounting Analytics for Professional Accountants",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -145,7 +145,7 @@
         {
           "code": "ISOM3400",
           "name": "Business Applications Development in Python",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -155,7 +155,7 @@
         {
           "code": "ACCT4801",
           "name": "Cryptocurrency, blockchain and their business applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -165,7 +165,7 @@
         {
           "code": "ACCT4803",
           "name": "Artificial Intelligence for Accounting Practice and Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [

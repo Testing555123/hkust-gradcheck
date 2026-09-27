@@ -2,18 +2,18 @@
   "year": "2026-27",
   "code": "BIBU",
   "title": "BSc in Biotechnology and Business",
-  "total_required_credits": 31.0,
+  "total_required_credits": 31,
   "groups": [
     {
       "name": "Required Course(s)",
-      "required_credits": 22.0,
+      "required_credits": 22,
       "required_credits_raw": "22",
       "note": "",
       "courses": [
         {
           "code": "BIBU1010",
           "name": "Biotechnology and Business Seminar",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "BIBU4820",
           "name": "Biotechnology Entrepreneurship and Business Operations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "BIBU4830",
           "name": "Biotechnology Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -43,7 +43,7 @@
         {
           "code": "BIBU4840",
           "name": "Biotechnology and Business Capstone Project",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -53,7 +53,7 @@
         {
           "code": "BIBU4850",
           "name": "Biotechnology and Business Project Research",
-          "credits": 6.0,
+          "credits": 6,
           "credits_raw": "6",
           "areas": [],
           "source_pages": [
@@ -63,7 +63,7 @@
         {
           "code": "LIFS1901",
           "name": "General Biology I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -73,7 +73,7 @@
         {
           "code": "LIFS1902",
           "name": "General Biology II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -83,7 +83,7 @@
         {
           "code": "LIFS1904",
           "name": "Laboratory for General Biology II",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -93,7 +93,7 @@
         {
           "code": "LIFS2040",
           "name": "Cell Biology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -103,7 +103,7 @@
         {
           "code": "LIFS2070",
           "name": "Introduction to Biotechnology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -113,7 +113,7 @@
         {
           "code": "LIFS2210",
           "name": "Biochemistry I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -123,7 +123,7 @@
         {
           "code": "LIFS3110",
           "name": "Biotechnological Application of Recombinant DNA Techniques",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -133,7 +133,7 @@
         {
           "code": "LIFS4200",
           "name": "Concepts and Issues in Contemporary Biotechnology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -143,7 +143,7 @@
         {
           "code": "LIFS4630",
           "name": "Advanced Topics in Biotechnology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -153,7 +153,7 @@
         {
           "code": "ACCT2200",
           "name": "Principles of Accounting II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -163,7 +163,7 @@
         {
           "code": "CHEM1011",
           "name": "General Chemistry A: Reactions, Thermodynamics, and Reaction Kinetics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -173,7 +173,7 @@
         {
           "code": "CHEM1012",
           "name": "General Chemistry B: Atomic Structure, Molecules, and Bonding Theories",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -183,7 +183,7 @@
         {
           "code": "ECON2103",
           "name": "Principles of Microeconomics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -193,7 +193,7 @@
         {
           "code": "ECON2113",
           "name": "Microeconomics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -203,7 +203,7 @@
         {
           "code": "ECON2123",
           "name": "Macroeconomics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -213,7 +213,7 @@
         {
           "code": "FINA2203",
           "name": "Fundamentals of Business Finance",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -223,7 +223,7 @@
         {
           "code": "ISOM2010",
           "name": "Introduction to Information Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -233,7 +233,7 @@
         {
           "code": "ISOM2500",
           "name": "Business Statistics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -243,7 +243,7 @@
         {
           "code": "ISOM2700",
           "name": "Operations Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -253,7 +253,7 @@
         {
           "code": "MARK2120",
           "name": "Marketing Management",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -263,7 +263,7 @@
         {
           "code": "MATH1003",
           "name": "Calculus and Linear Algebra",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -273,7 +273,7 @@
         {
           "code": "MATH1005",
           "name": "Calculus and Statistics",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -283,7 +283,7 @@
         {
           "code": "MATH1006",
           "name": "Calculus, Vectors, and Matrices",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -293,7 +293,7 @@
         {
           "code": "MATH1013",
           "name": "Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -303,7 +303,7 @@
         {
           "code": "MATH1020",
           "name": "Accelerated Calculus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -313,7 +313,7 @@
         {
           "code": "MATH1023",
           "name": "Honors Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -323,7 +323,7 @@
         {
           "code": "MGMT2110",
           "name": "Organizational Behavior",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -333,7 +333,7 @@
         {
           "code": "MGMT2130",
           "name": "Business Ethics and Social Responsibility",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "2",
           "areas": [],
           "source_pages": [
@@ -343,7 +343,7 @@
         {
           "code": "PHYS1101",
           "name": "Introductory Physics",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -353,7 +353,7 @@
         {
           "code": "PHYS1111",
           "name": "General Physics I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -363,7 +363,7 @@
         {
           "code": "PHYS1112",
           "name": "General Physics I with Calculus",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -373,7 +373,7 @@
         {
           "code": "PHYS1312",
           "name": "Honors General Physics I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -387,14 +387,14 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 9.0,
+      "required_credits": 9,
       "required_credits_raw": "9",
       "note": "Biotechnology and Business Electives (Courses from the specified elective list, of which at least 3 credits from each area in Biotechnology / Business. Courses taken as Major Required Courses may not be counted towards this elective requirement.)",
       "courses": [
         {
           "code": "LIFS3000",
           "name": "Any LIFS courses at 3000/4000-level",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "",
           "areas": [
             "Biotechnology"
@@ -406,7 +406,7 @@
         {
           "code": "BTEC5340",
           "name": "Biomarkers and Medical Devices",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Biotechnology"
@@ -418,7 +418,7 @@
         {
           "code": "BTEC5380",
           "name": "Drug Discovery and Development",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Biotechnology"
@@ -430,7 +430,7 @@
         {
           "code": "CHEM2111",
           "name": "Fundamentals of Organic Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Biotechnology"
@@ -442,7 +442,7 @@
         {
           "code": "CHEM2155",
           "name": "Fundamental Organic Chemistry Laboratory",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [
             "Biotechnology"
@@ -454,7 +454,7 @@
         {
           "code": "CHEM2311",
           "name": "Analytical Chemistry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [
             "Biotechnology"
@@ -466,7 +466,7 @@
         {
           "code": "CHEM2355",
           "name": "Fundamental Analytical Chemistry Laboratory",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [
             "Biotechnology"
@@ -478,7 +478,7 @@
         {
           "code": "ECON3000",
           "name": "Any ECON/FINA/ISOM/MARK/MGMT courses at 3000/4000-level",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "",
           "areas": [
             "Business SB&M"
@@ -490,7 +490,7 @@
         {
           "code": "FINA3000",
           "name": "Any ECON/FINA/ISOM/MARK/MGMT courses at 3000/4000-level",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "",
           "areas": [
             "Business SB&M"
@@ -502,7 +502,7 @@
         {
           "code": "ISOM3000",
           "name": "Any ECON/FINA/ISOM/MARK/MGMT courses at 3000/4000-level",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "",
           "areas": [
             "Business SB&M"
@@ -514,7 +514,7 @@
         {
           "code": "MARK3000",
           "name": "Any ECON/FINA/ISOM/MARK/MGMT courses at 3000/4000-level",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "",
           "areas": [
             "Business SB&M"
@@ -526,7 +526,7 @@
         {
           "code": "MGMT3000",
           "name": "Any ECON/FINA/ISOM/MARK/MGMT courses at 3000/4000-level",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "",
           "areas": [
             "Business SB&M"

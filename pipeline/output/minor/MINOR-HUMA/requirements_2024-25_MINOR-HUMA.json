@@ -2,171 +2,1882 @@
   "year": "2024-25",
   "code": "MINOR-HUMA",
   "title": "Minor Program in Humanities",
-  "total_required_credits": 18.0,
+  "total_required_credits": 18,
   "groups": [
     {
       "name": "Elective(s)",
-      "required_credits": 18.0,
+      "required_credits": 18,
       "required_credits_raw": "18",
       "note": "Humanities Elective: 18 credits from the specified elective list, of which at least 9 credits must be at the 2000-/3000-/4000- level. Courses are grouped into six areas (given in 'areas'): (1) Multidisciplinary, (2) Linguistics, (3) Literature, Film and Media Studies, (4) History and Anthropology, (5) Philosophy and Religion, (6) Music and Arts. Courses marked ** were deleted (see 'uncertain').",
       "courses": [
-        { "code": "HUMA1000", "name": "Cultures and Values", "credits": 3.0, "credits_raw": "3", "areas": ["1-Multidisciplinary"], "source_pages": [1] },
-        { "code": "HUMA1001", "name": "Foundational Texts in the Humanities", "credits": 3.0, "credits_raw": "3", "areas": ["1-Multidisciplinary"], "source_pages": [1] },
-        { "code": "HUMA2400", "name": "Approaches to Humanities in China Studies", "credits": 3.0, "credits_raw": "3", "areas": ["1-Multidisciplinary"], "source_pages": [1] },
-        { "code": "HUMA1010", "name": "Introduction to Language", "credits": 3.0, "credits_raw": "3", "areas": ["2-Linguistics"], "source_pages": [2] },
-        { "code": "HUMA1020", "name": "Chinese Writing and Culture (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["2-Linguistics"], "source_pages": [2] },
-        { "code": "HUMA1030", "name": "Structure of the Chinese Language", "credits": 3.0, "credits_raw": "3", "areas": ["2-Linguistics"], "source_pages": [2] },
-        { "code": "HUMA1060", "name": "Introduction to Mandarin Chinese Grammar", "credits": 3.0, "credits_raw": "3", "areas": ["2-Linguistics"], "source_pages": [2] },
-        { "code": "HUMA2010", "name": "Metaphors in English and Chinese", "credits": 3.0, "credits_raw": "3", "areas": ["2-Linguistics"], "source_pages": [2] },
-        { "code": "HUMA2031", "name": "The Cantonese Language", "credits": 3.0, "credits_raw": "3", "areas": ["2-Linguistics"], "source_pages": [2] },
-        { "code": "HUMA2032", "name": "Language, Power and Identity", "credits": 3.0, "credits_raw": "3", "areas": ["2-Linguistics"], "source_pages": [2] },
-        { "code": "HUMA2033", "name": "Language and Intercultural Communication", "credits": 3.0, "credits_raw": "3", "areas": ["2-Linguistics"], "source_pages": [2] },
-        { "code": "HUMA2034", "name": "Language Planning and Policy in Asian Contexts", "credits": 3.0, "credits_raw": "3", "areas": ["2-Linguistics"], "source_pages": [2] },
-        { "code": "HUMA2035", "name": "Language in Action: Doing Discourse Analysis", "credits": 3.0, "credits_raw": "3", "areas": ["2-Linguistics"], "source_pages": [2] },
-        { "code": "HUMA2050", "name": "Classical Chinese", "credits": 3.0, "credits_raw": "3", "areas": ["2-Linguistics"], "source_pages": [2] },
-        { "code": "HUMA3030", "name": "Language, Communication and Culture", "credits": 3.0, "credits_raw": "3", "areas": ["2-Linguistics"], "source_pages": [2] },
-        { "code": "HUMA3050", "name": "Psychology of Language", "credits": 3.0, "credits_raw": "3", "areas": ["2-Linguistics"], "source_pages": [2] },
-        { "code": "HUMA3060", "name": "Language and Migration", "credits": 3.0, "credits_raw": "3", "areas": ["2-Linguistics"], "source_pages": [2] },
-        { "code": "HUMA4020", "name": "Language and Literature in Modern China", "credits": 3.0, "credits_raw": "3", "areas": ["2-Linguistics"], "source_pages": [2] },
-        { "code": "HUMA1210", "name": "Chinese Women on Screen", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA1221", "name": "Introduction to Game Studies", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA1231", "name": "Popular Culture of East Asia", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA1300", "name": "Introduction to Western Literature (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA1301", "name": "World Literature and Film", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA2202", "name": "The Japanese Novel", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA2203", "name": "Japanese Cinema", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA2205", "name": "Asian Cinema, Global Cinema", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA2240", "name": "Reading Chinese Literature: Dreams of the Red Chamber", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA2250", "name": "Modern Chinese Fiction (1917-1949)", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA2260", "name": "Contemporary Chinese Fiction (1949-present)", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA2280", "name": "Identity Goes Global: From Border Crossing to Boundary Remaking (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA2300", "name": "Traditional Chinese Poetry: Early Chinese Poetry", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA2310", "name": "Traditional Chinese Fiction", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA2320", "name": "Chinese Drama", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA2330", "name": "Anime", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA2331", "name": "Japanese Animation: Technology, Gender, and History", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA2340", "name": "Between Old and New: Chinese Stories and Their Reinventions", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA3000C", "name": "Entering the World of Art Films, Independent Films, and Documentary Films", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA3200", "name": "Questions of Humanity in World Literature (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA3201", "name": "Animation: A Global Perspective", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA3202", "name": "Chinese Creative Writing: Reading Literary Classics and Writing Essays", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA3203", "name": "Chinese Creative Writing: Reading Literary Classics and Writing Novels", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA3204", "name": "Chinese Creative Writing-Reading Literary Classics and Writing", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA3205", "name": "Technologies of Passion: Self and Love in Chinese Literature (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA3210", "name": "Traditional Chinese Poetry: Tang and Song Poetry", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA3220", "name": "Modern Chinese Poetry", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA3250", "name": "Independent Cinema in Contemporary China", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA4000D", "name": "Hollywood Goes to Asia: Transnational Asian Media", "credits": 4.0, "credits_raw": "4", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA4000E", "name": "The Foreigners' Look at China", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA4000G", "name": "Global Hong Kong in Literature and Film", "credits": 4.0, "credits_raw": "4", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA4000J", "name": "The Search for Identity: On Self and Community", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA4220", "name": "Verbal and Visual Representation of China", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA4250", "name": "Masterpieces of Modern Literature", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA4351", "name": "Critical Film and Media Theory", "credits": 3.0, "credits_raw": "3", "areas": ["3-Literature,Film,Media"], "source_pages": [2] },
-        { "code": "HUMA1411", "name": "Inside Chinese Documents and Archives: Methods and Perspectives", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA1412", "name": "China Through Time and Space: Chinese Historical Geography", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA1420", "name": "Late Imperial China from Yuan to Qing (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA1430", "name": "History of P. R. China's Diplomacy, 1949-1989", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA1440", "name": "Modern China", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA1520", "name": "Modern East Asia", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA1620", "name": "Human Culture and Society (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA1622", "name": "Science, Technology and Society: Historical and Cultural Approaches", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA1630", "name": "Popular Religion in South China (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA1632", "name": "Community Heritage and Food Technology (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA1639", "name": "Marriage, Family and Kinship in Cross-cultural Perspectives", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA1650", "name": "Appreciation of Western Art", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA1660", "name": "Introduction to Chinese Art", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA1671", "name": "Cantonese Opera in Hong Kong Culture", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA1677", "name": "East Asia and the West: From the Silk Road to The Belt and Road", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA1678", "name": "Introduction to Digital Humanities & AI", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA1679", "name": "Central and Eastern Europe from 1917 to the Present", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA1681", "name": "Cold War in Europe 1945-1989", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA2412", "name": "Exploring Text at Scale: Natural Language Processing and Digital Humanities", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA2420", "name": "Late Imperial China", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA2440", "name": "20th-Century China in Documentary Films", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA2470", "name": "From Fung Shui to Mao's Villages: City Plans, Urban Politics & the Unseen World of Chinese Villages", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA2520", "name": "History of Tea in East Asia", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA2588", "name": "Nazism and German Society, 1914-1945", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA2590", "name": "The Making of the Modern World: Renaissance to the Present", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA2595", "name": "Science, Technology and Modern Life (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA2596", "name": "History of Biology and Medicine (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA2597", "name": "Environmental History (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA2621", "name": "Culture and Environment", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA2623", "name": "Cultural Sustainability in South China", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA2632", "name": "Chinese Culture and Society in Anthropological Perspectives", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA2635", "name": "Cultural Diversity in China", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA2636", "name": "Medical Anthropology", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA2638", "name": "Peoples and Cultures in Southeast Asia", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA2639", "name": "Death, Dead Bodies, and Culture (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA2640", "name": "Unofficial China: Social History 1800s-1930s", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA2660", "name": "Introduction to Chinese Painting", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA2661", "name": "Chinese Oil Painting", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA2670", "name": "Understanding Western Painting", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA2680", "name": "Understanding Western Architecture", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [3] },
-        { "code": "HUMA3430", "name": "Reading Modern Chinese History Historically", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [4] },
-        { "code": "HUMA3630", "name": "Community and Cultural Identity", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [4] },
-        { "code": "HUMA3660", "name": "Tradition & Modernity: Chinese Ink Painting in 20th Century", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [4] },
-        { "code": "HUMA3680", "name": "Contemporary Architecture: The Pritzker Prize Winners", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [4] },
-        { "code": "HUMA4000A", "name": "Max Weber, the West, and the World", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [4] },
-        { "code": "HUMA4000F", "name": "The Nexus of Power: Warfare, Trade and the State in Chinese History", "credits": 4.0, "credits_raw": "4", "areas": ["4-History,Anthropology"], "source_pages": [4] },
-        { "code": "HUMA4000H", "name": "Picturing History: Photographers and the Making of Modern China", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [4] },
-        { "code": "HUMA4000I", "name": "Ecology and Society", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [4] },
-        { "code": "HUMA4000K", "name": "New Perspectives on Suicide Terrorism: Global View with Emphasis on the Israeli-Palestinian Conflict", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [4] },
-        { "code": "HUMA4000O", "name": "Jews of Islam (in Building of Two Close People) 7th-14th Centuries", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [4] },
-        { "code": "HUMA4520", "name": "History of US-China Relations", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [4] },
-        { "code": "HUMA4530", "name": "History and the Future", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [4] },
-        { "code": "HUMA4531", "name": "Eichmann and Evil", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [4] },
-        { "code": "HUMA4610", "name": "Heritage in Cross-cultural Perspective", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [4] },
-        { "code": "HUMA4620", "name": "Geopolitics (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["4-History,Anthropology"], "source_pages": [4] },
-        { "code": "HUMA4650", "name": "Western Painting: From Renaissance to Impressionism", "credits": 3.0, "credits_raw": "3", "areas": ["4-History,Anthropology"], "source_pages": [4] },
-        { "code": "HUMA1710", "name": "The Art of Thinking in the Hong Kong Context", "credits": 3.0, "credits_raw": "3", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA1720", "name": "Logic", "credits": 3.0, "credits_raw": "3", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA1810", "name": "Introduction to Chinese Philosophy (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA1811", "name": "History of Chinese Philosophy", "credits": 3.0, "credits_raw": "3", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA1910", "name": "World Religions (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA1920", "name": "Introduction to Moral Philosophy", "credits": 3.0, "credits_raw": "3", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA1921", "name": "Philosophy of Science", "credits": 3.0, "credits_raw": "3", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA1922", "name": "Introduction to Analytic Philosophy", "credits": 3.0, "credits_raw": "3", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA1930", "name": "Introduction to the Ethics of Artificial Intelligence and Data Science", "credits": 3.0, "credits_raw": "3", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA2831", "name": "Metaphysics: Study of Reality and Existence", "credits": 3.0, "credits_raw": "3", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA2832", "name": "Philosophy of Mind", "credits": 3.0, "credits_raw": "3", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA2840", "name": "Buddhism and the Chinese Intellectual Tradition", "credits": 3.0, "credits_raw": "3", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA2911", "name": "Buddhism: Origin and Growth", "credits": 3.0, "credits_raw": "3", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA2921", "name": "Ethical Theories and Contemporary Issues", "credits": 3.0, "credits_raw": "3", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA2930", "name": "What am I? Personal Identity and the Self from a Philosophical Perspective", "credits": 3.0, "credits_raw": "3", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA3000B", "name": "The Bible in Film", "credits": 3.0, "credits_raw": "3", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA3800", "name": "Guided Studies in Chinese Philosophical Classics", "credits": 3.0, "credits_raw": "3", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA3810", "name": "Taoism and the Chinese Tradition", "credits": 3.0, "credits_raw": "3", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA3900", "name": "Philosophical Inquiry into the Modern World", "credits": 3.0, "credits_raw": "3", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA4000B", "name": "Political Islam: Medieval Theology, Modern Ideology", "credits": 3.0, "credits_raw": "3", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA4000C", "name": "Global Islam", "credits": 4.0, "credits_raw": "4", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA4000L", "name": "Philosophy of History and Society", "credits": 3.0, "credits_raw": "3", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA4700", "name": "Confucianism in a Global Context", "credits": 3.0, "credits_raw": "3", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA4801", "name": "Classical Chinese Philosophy", "credits": 3.0, "credits_raw": "3", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA4840", "name": "Selected Readings of Religious Taoism (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["5-Philosophy,Religion"], "source_pages": [4] },
-        { "code": "HUMA1100", "name": "Music of the World", "credits": 3.0, "credits_raw": "3", "areas": ["6-Music,Arts"], "source_pages": [4] },
-        { "code": "HUMA1102", "name": "Enjoyment of Classical Music", "credits": 3.0, "credits_raw": "3", "areas": ["6-Music,Arts"], "source_pages": [5] },
-        { "code": "HUMA1107", "name": "Music and Film", "credits": 3.0, "credits_raw": "3", "areas": ["6-Music,Arts"], "source_pages": [5] },
-        { "code": "HUMA1108", "name": "Expressive Sounds", "credits": 3.0, "credits_raw": "3", "areas": ["6-Music,Arts"], "source_pages": [5] },
-        { "code": "HUMA1150", "name": "Exploration of Drawing", "credits": 3.0, "credits_raw": "3", "areas": ["6-Music,Arts"], "source_pages": [5] },
-        { "code": "HUMA1154", "name": "Photography", "credits": 3.0, "credits_raw": "3", "areas": ["6-Music,Arts"], "source_pages": [5] },
-        { "code": "HUMA1155", "name": "Video Art", "credits": 3.0, "credits_raw": "3", "areas": ["6-Music,Arts"], "source_pages": [5] },
-        { "code": "HUMA1156", "name": "Exploration of Chinese Calligraphy", "credits": 3.0, "credits_raw": "3", "areas": ["6-Music,Arts"], "source_pages": [5] },
-        { "code": "HUMA2000B", "name": "Art of Singing", "credits": 3.0, "credits_raw": "3", "areas": ["6-Music,Arts"], "source_pages": [5] },
-        { "code": "HUMA2101", "name": "Enjoyment of Western Opera", "credits": 3.0, "credits_raw": "3", "areas": ["6-Music,Arts"], "source_pages": [5] },
-        { "code": "HUMA2103", "name": "Introduction to Music Composition", "credits": 3.0, "credits_raw": "3", "areas": ["6-Music,Arts"], "source_pages": [5] },
-        { "code": "HUMA2104", "name": "Music Theory I: Introduction to Tonal Music", "credits": 3.0, "credits_raw": "3", "areas": ["6-Music,Arts"], "source_pages": [5] },
-        { "code": "HUMA2105", "name": "Music, Drama, and Theatre", "credits": 3.0, "credits_raw": "3", "areas": ["6-Music,Arts"], "source_pages": [5] },
-        { "code": "HUMA2106", "name": "A New Approach to Music Making (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["6-Music,Arts"], "source_pages": [5] },
-        { "code": "HUMA2107", "name": "Introduction to Electronic Music Composition", "credits": 3.0, "credits_raw": "3", "areas": ["6-Music,Arts"], "source_pages": [5] },
-        { "code": "HUMA2108", "name": "Music of China", "credits": 3.0, "credits_raw": "3", "areas": ["6-Music,Arts"], "source_pages": [5] },
-        { "code": "HUMA2109", "name": "East Asian Popular Music", "credits": 3.0, "credits_raw": "3", "areas": ["6-Music,Arts"], "source_pages": [5] },
-        { "code": "HUMA3104", "name": "Music Theory IIA - Fundamentals of Harmony and Counterpoint", "credits": 3.0, "credits_raw": "3", "areas": ["6-Music,Arts"], "source_pages": [5] },
-        { "code": "HUMA3105", "name": "Making Choral Music (deleted)", "credits": 3.0, "credits_raw": "3**", "areas": ["6-Music,Arts"], "source_pages": [5] },
-        { "code": "HUMA3106", "name": "Music Theory IIB - Tonal and Post-Tonal Music Analysis", "credits": 3.0, "credits_raw": "3", "areas": ["6-Music,Arts"], "source_pages": [5] },
-        { "code": "HUMA3107", "name": "Electronic Music Composition II", "credits": 3.0, "credits_raw": "3", "areas": ["6-Music,Arts"], "source_pages": [5] }
+        {
+          "code": "HUMA1000",
+          "name": "Cultures and Values",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "1-Multidisciplinary"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "HUMA1001",
+          "name": "Foundational Texts in the Humanities",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "1-Multidisciplinary"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "HUMA2400",
+          "name": "Approaches to Humanities in China Studies",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "1-Multidisciplinary"
+          ],
+          "source_pages": [
+            1
+          ]
+        },
+        {
+          "code": "HUMA1010",
+          "name": "Introduction to Language",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Linguistics"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA1020",
+          "name": "Chinese Writing and Culture (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [
+            "2-Linguistics"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA1030",
+          "name": "Structure of the Chinese Language",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Linguistics"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA1060",
+          "name": "Introduction to Mandarin Chinese Grammar",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Linguistics"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA2010",
+          "name": "Metaphors in English and Chinese",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Linguistics"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA2031",
+          "name": "The Cantonese Language",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Linguistics"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA2032",
+          "name": "Language, Power and Identity",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Linguistics"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA2033",
+          "name": "Language and Intercultural Communication",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Linguistics"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA2034",
+          "name": "Language Planning and Policy in Asian Contexts",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Linguistics"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA2035",
+          "name": "Language in Action: Doing Discourse Analysis",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Linguistics"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA2050",
+          "name": "Classical Chinese",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Linguistics"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA3030",
+          "name": "Language, Communication and Culture",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Linguistics"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA3050",
+          "name": "Psychology of Language",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Linguistics"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA3060",
+          "name": "Language and Migration",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Linguistics"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA4020",
+          "name": "Language and Literature in Modern China",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "2-Linguistics"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA1210",
+          "name": "Chinese Women on Screen",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA1221",
+          "name": "Introduction to Game Studies",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA1231",
+          "name": "Popular Culture of East Asia",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA1300",
+          "name": "Introduction to Western Literature (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA1301",
+          "name": "World Literature and Film",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA2202",
+          "name": "The Japanese Novel",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA2203",
+          "name": "Japanese Cinema",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA2205",
+          "name": "Asian Cinema, Global Cinema",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA2240",
+          "name": "Reading Chinese Literature: Dreams of the Red Chamber",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA2250",
+          "name": "Modern Chinese Fiction (1917-1949)",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA2260",
+          "name": "Contemporary Chinese Fiction (1949-present)",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA2280",
+          "name": "Identity Goes Global: From Border Crossing to Boundary Remaking (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA2300",
+          "name": "Traditional Chinese Poetry: Early Chinese Poetry",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA2310",
+          "name": "Traditional Chinese Fiction",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA2320",
+          "name": "Chinese Drama",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA2330",
+          "name": "Anime",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA2331",
+          "name": "Japanese Animation: Technology, Gender, and History",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA2340",
+          "name": "Between Old and New: Chinese Stories and Their Reinventions",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA3000C",
+          "name": "Entering the World of Art Films, Independent Films, and Documentary Films",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA3200",
+          "name": "Questions of Humanity in World Literature (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA3201",
+          "name": "Animation: A Global Perspective",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA3202",
+          "name": "Chinese Creative Writing: Reading Literary Classics and Writing Essays",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA3203",
+          "name": "Chinese Creative Writing: Reading Literary Classics and Writing Novels",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA3204",
+          "name": "Chinese Creative Writing-Reading Literary Classics and Writing",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA3205",
+          "name": "Technologies of Passion: Self and Love in Chinese Literature (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA3210",
+          "name": "Traditional Chinese Poetry: Tang and Song Poetry",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA3220",
+          "name": "Modern Chinese Poetry",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA3250",
+          "name": "Independent Cinema in Contemporary China",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA4000D",
+          "name": "Hollywood Goes to Asia: Transnational Asian Media",
+          "credits": 4,
+          "credits_raw": "4",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA4000E",
+          "name": "The Foreigners' Look at China",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA4000G",
+          "name": "Global Hong Kong in Literature and Film",
+          "credits": 4,
+          "credits_raw": "4",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA4000J",
+          "name": "The Search for Identity: On Self and Community",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA4220",
+          "name": "Verbal and Visual Representation of China",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA4250",
+          "name": "Masterpieces of Modern Literature",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA4351",
+          "name": "Critical Film and Media Theory",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "3-Literature,Film,Media"
+          ],
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "code": "HUMA1411",
+          "name": "Inside Chinese Documents and Archives: Methods and Perspectives",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA1412",
+          "name": "China Through Time and Space: Chinese Historical Geography",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA1420",
+          "name": "Late Imperial China from Yuan to Qing (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA1430",
+          "name": "History of P. R. China's Diplomacy, 1949-1989",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA1440",
+          "name": "Modern China",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA1520",
+          "name": "Modern East Asia",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA1620",
+          "name": "Human Culture and Society (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA1622",
+          "name": "Science, Technology and Society: Historical and Cultural Approaches",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA1630",
+          "name": "Popular Religion in South China (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA1632",
+          "name": "Community Heritage and Food Technology (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA1639",
+          "name": "Marriage, Family and Kinship in Cross-cultural Perspectives",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA1650",
+          "name": "Appreciation of Western Art",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA1660",
+          "name": "Introduction to Chinese Art",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA1671",
+          "name": "Cantonese Opera in Hong Kong Culture",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA1677",
+          "name": "East Asia and the West: From the Silk Road to The Belt and Road",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA1678",
+          "name": "Introduction to Digital Humanities & AI",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA1679",
+          "name": "Central and Eastern Europe from 1917 to the Present",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA1681",
+          "name": "Cold War in Europe 1945-1989",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2412",
+          "name": "Exploring Text at Scale: Natural Language Processing and Digital Humanities",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2420",
+          "name": "Late Imperial China",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2440",
+          "name": "20th-Century China in Documentary Films",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2470",
+          "name": "From Fung Shui to Mao's Villages: City Plans, Urban Politics & the Unseen World of Chinese Villages",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2520",
+          "name": "History of Tea in East Asia",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2588",
+          "name": "Nazism and German Society, 1914-1945",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2590",
+          "name": "The Making of the Modern World: Renaissance to the Present",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2595",
+          "name": "Science, Technology and Modern Life (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2596",
+          "name": "History of Biology and Medicine (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2597",
+          "name": "Environmental History (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2621",
+          "name": "Culture and Environment",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2623",
+          "name": "Cultural Sustainability in South China",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2632",
+          "name": "Chinese Culture and Society in Anthropological Perspectives",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2635",
+          "name": "Cultural Diversity in China",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2636",
+          "name": "Medical Anthropology",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2638",
+          "name": "Peoples and Cultures in Southeast Asia",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2639",
+          "name": "Death, Dead Bodies, and Culture (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2640",
+          "name": "Unofficial China: Social History 1800s-1930s",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2660",
+          "name": "Introduction to Chinese Painting",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2661",
+          "name": "Chinese Oil Painting",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2670",
+          "name": "Understanding Western Painting",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA2680",
+          "name": "Understanding Western Architecture",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "code": "HUMA3430",
+          "name": "Reading Modern Chinese History Historically",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA3630",
+          "name": "Community and Cultural Identity",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA3660",
+          "name": "Tradition & Modernity: Chinese Ink Painting in 20th Century",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA3680",
+          "name": "Contemporary Architecture: The Pritzker Prize Winners",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA4000A",
+          "name": "Max Weber, the West, and the World",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA4000F",
+          "name": "The Nexus of Power: Warfare, Trade and the State in Chinese History",
+          "credits": 4,
+          "credits_raw": "4",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA4000H",
+          "name": "Picturing History: Photographers and the Making of Modern China",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA4000I",
+          "name": "Ecology and Society",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA4000K",
+          "name": "New Perspectives on Suicide Terrorism: Global View with Emphasis on the Israeli-Palestinian Conflict",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA4000O",
+          "name": "Jews of Islam (in Building of Two Close People) 7th-14th Centuries",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA4520",
+          "name": "History of US-China Relations",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA4530",
+          "name": "History and the Future",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA4531",
+          "name": "Eichmann and Evil",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA4610",
+          "name": "Heritage in Cross-cultural Perspective",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA4620",
+          "name": "Geopolitics (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA4650",
+          "name": "Western Painting: From Renaissance to Impressionism",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "4-History,Anthropology"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA1710",
+          "name": "The Art of Thinking in the Hong Kong Context",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA1720",
+          "name": "Logic",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA1810",
+          "name": "Introduction to Chinese Philosophy (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA1811",
+          "name": "History of Chinese Philosophy",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA1910",
+          "name": "World Religions (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA1920",
+          "name": "Introduction to Moral Philosophy",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA1921",
+          "name": "Philosophy of Science",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA1922",
+          "name": "Introduction to Analytic Philosophy",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA1930",
+          "name": "Introduction to the Ethics of Artificial Intelligence and Data Science",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA2831",
+          "name": "Metaphysics: Study of Reality and Existence",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA2832",
+          "name": "Philosophy of Mind",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA2840",
+          "name": "Buddhism and the Chinese Intellectual Tradition",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA2911",
+          "name": "Buddhism: Origin and Growth",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA2921",
+          "name": "Ethical Theories and Contemporary Issues",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA2930",
+          "name": "What am I? Personal Identity and the Self from a Philosophical Perspective",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA3000B",
+          "name": "The Bible in Film",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA3800",
+          "name": "Guided Studies in Chinese Philosophical Classics",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA3810",
+          "name": "Taoism and the Chinese Tradition",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA3900",
+          "name": "Philosophical Inquiry into the Modern World",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA4000B",
+          "name": "Political Islam: Medieval Theology, Modern Ideology",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA4000C",
+          "name": "Global Islam",
+          "credits": 4,
+          "credits_raw": "4",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA4000L",
+          "name": "Philosophy of History and Society",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA4700",
+          "name": "Confucianism in a Global Context",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA4801",
+          "name": "Classical Chinese Philosophy",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA4840",
+          "name": "Selected Readings of Religious Taoism (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [
+            "5-Philosophy,Religion"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA1100",
+          "name": "Music of the World",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "6-Music,Arts"
+          ],
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "code": "HUMA1102",
+          "name": "Enjoyment of Classical Music",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "6-Music,Arts"
+          ],
+          "source_pages": [
+            5
+          ]
+        },
+        {
+          "code": "HUMA1107",
+          "name": "Music and Film",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "6-Music,Arts"
+          ],
+          "source_pages": [
+            5
+          ]
+        },
+        {
+          "code": "HUMA1108",
+          "name": "Expressive Sounds",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "6-Music,Arts"
+          ],
+          "source_pages": [
+            5
+          ]
+        },
+        {
+          "code": "HUMA1150",
+          "name": "Exploration of Drawing",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "6-Music,Arts"
+          ],
+          "source_pages": [
+            5
+          ]
+        },
+        {
+          "code": "HUMA1154",
+          "name": "Photography",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "6-Music,Arts"
+          ],
+          "source_pages": [
+            5
+          ]
+        },
+        {
+          "code": "HUMA1155",
+          "name": "Video Art",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "6-Music,Arts"
+          ],
+          "source_pages": [
+            5
+          ]
+        },
+        {
+          "code": "HUMA1156",
+          "name": "Exploration of Chinese Calligraphy",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "6-Music,Arts"
+          ],
+          "source_pages": [
+            5
+          ]
+        },
+        {
+          "code": "HUMA2000B",
+          "name": "Art of Singing",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "6-Music,Arts"
+          ],
+          "source_pages": [
+            5
+          ]
+        },
+        {
+          "code": "HUMA2101",
+          "name": "Enjoyment of Western Opera",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "6-Music,Arts"
+          ],
+          "source_pages": [
+            5
+          ]
+        },
+        {
+          "code": "HUMA2103",
+          "name": "Introduction to Music Composition",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "6-Music,Arts"
+          ],
+          "source_pages": [
+            5
+          ]
+        },
+        {
+          "code": "HUMA2104",
+          "name": "Music Theory I: Introduction to Tonal Music",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "6-Music,Arts"
+          ],
+          "source_pages": [
+            5
+          ]
+        },
+        {
+          "code": "HUMA2105",
+          "name": "Music, Drama, and Theatre",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "6-Music,Arts"
+          ],
+          "source_pages": [
+            5
+          ]
+        },
+        {
+          "code": "HUMA2106",
+          "name": "A New Approach to Music Making (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [
+            "6-Music,Arts"
+          ],
+          "source_pages": [
+            5
+          ]
+        },
+        {
+          "code": "HUMA2107",
+          "name": "Introduction to Electronic Music Composition",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "6-Music,Arts"
+          ],
+          "source_pages": [
+            5
+          ]
+        },
+        {
+          "code": "HUMA2108",
+          "name": "Music of China",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "6-Music,Arts"
+          ],
+          "source_pages": [
+            5
+          ]
+        },
+        {
+          "code": "HUMA2109",
+          "name": "East Asian Popular Music",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "6-Music,Arts"
+          ],
+          "source_pages": [
+            5
+          ]
+        },
+        {
+          "code": "HUMA3104",
+          "name": "Music Theory IIA - Fundamentals of Harmony and Counterpoint",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "6-Music,Arts"
+          ],
+          "source_pages": [
+            5
+          ]
+        },
+        {
+          "code": "HUMA3105",
+          "name": "Making Choral Music (deleted)",
+          "credits": 3,
+          "credits_raw": "3**",
+          "areas": [
+            "6-Music,Arts"
+          ],
+          "source_pages": [
+            5
+          ]
+        },
+        {
+          "code": "HUMA3106",
+          "name": "Music Theory IIB - Tonal and Post-Tonal Music Analysis",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "6-Music,Arts"
+          ],
+          "source_pages": [
+            5
+          ]
+        },
+        {
+          "code": "HUMA3107",
+          "name": "Electronic Music Composition II",
+          "credits": 3,
+          "credits_raw": "3",
+          "areas": [
+            "6-Music,Arts"
+          ],
+          "source_pages": [
+            5
+          ]
+        }
       ],
-      "source_pages": [1, 2, 3, 4, 5]
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
     }
   ],
   "uncertain": [

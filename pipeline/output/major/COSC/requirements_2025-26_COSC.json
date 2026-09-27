@@ -2,18 +2,18 @@
   "year": "2025-26",
   "code": "COSC",
   "title": "BSc in Computer Science",
-  "total_required_credits": 54.0,
+  "total_required_credits": 54,
   "groups": [
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "",
       "courses": [
         {
           "code": "COMP1023",
           "name": "Introduction to Python Programming",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -27,14 +27,14 @@
     },
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 4.0,
+      "required_credits": 4,
       "required_credits_raw": "4-6",
       "note": "Note: [(MATH 1013 OR MATH 1023) AND (MATH 1014 OR MATH 1024)] OR [MATH 1020]",
       "courses": [
         {
           "code": "MATH1013",
           "name": "Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -44,7 +44,7 @@
         {
           "code": "MATH1014",
           "name": "Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -54,7 +54,7 @@
         {
           "code": "MATH1020",
           "name": "Accelerated Calculus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -64,7 +64,7 @@
         {
           "code": "MATH1023",
           "name": "Honors Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -74,7 +74,7 @@
         {
           "code": "MATH1024",
           "name": "Honors Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -88,14 +88,14 @@
     },
     {
       "name": "Engineering Fundamental Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-4",
       "note": "Note: MATH 2111 OR MATH 2121 OR MATH 2131",
       "courses": [
         {
           "code": "MATH2111",
           "name": "Matrix Algebra and Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -105,7 +105,7 @@
         {
           "code": "MATH2121",
           "name": "Linear Algebra",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -115,7 +115,7 @@
         {
           "code": "MATH2131",
           "name": "Honors in Linear and Abstract Algebra I",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -129,14 +129,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 5.0,
+      "required_credits": 5,
       "required_credits_raw": "5-8",
       "note": "Note: (COMP 2011 AND COMP 2012) OR COMP 2012H",
       "courses": [
         {
           "code": "COMP2011",
           "name": "Programming with C++",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -146,7 +146,7 @@
         {
           "code": "COMP2012",
           "name": "Object-Oriented Programming and Data Structures",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -156,7 +156,7 @@
         {
           "code": "COMP2012H",
           "name": "Honors Object-Oriented Programming and Data Structures",
-          "credits": 5.0,
+          "credits": 5,
           "credits_raw": "5",
           "areas": [],
           "source_pages": [
@@ -170,14 +170,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 4.0,
+      "required_credits": 4,
       "required_credits_raw": "4",
       "note": "",
       "courses": [
         {
           "code": "COMP2611",
           "name": "Computer Organization",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -191,14 +191,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 4.0,
+      "required_credits": 4,
       "required_credits_raw": "4",
       "note": "Note: COMP 2711 OR COMP 2711H",
       "courses": [
         {
           "code": "COMP2711",
           "name": "Discrete Mathematical Tools for Computer Science",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -208,7 +208,7 @@
         {
           "code": "COMP2711H",
           "name": "Honors Discrete Mathematical Tools for Computer Science",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -222,14 +222,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 4.0,
+      "required_credits": 4,
       "required_credits_raw": "4",
       "note": "Note: COMP 3111 OR COMP 3111H",
       "courses": [
         {
           "code": "COMP3111",
           "name": "Software Engineering",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -239,7 +239,7 @@
         {
           "code": "COMP3111H",
           "name": "Honors Software Engineering",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -253,14 +253,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3",
       "note": "",
       "courses": [
         {
           "code": "COMP3511",
           "name": "Operating Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -274,14 +274,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-4",
       "note": "Note: COMP 3711 OR COMP 3711H",
       "courses": [
         {
           "code": "COMP3711",
           "name": "Design and Analysis of Algorithms",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -291,7 +291,7 @@
         {
           "code": "COMP3711H",
           "name": "Honors Design and Analysis of Algorithms",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -305,14 +305,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "0",
       "note": "Note: Students are required to take COMP 4900 for every regular term in which they are in residency at HKUST with major in COSC",
       "courses": [
         {
           "code": "COMP4900",
           "name": "Academic and Professional Development",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -326,14 +326,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "3-4",
       "note": "Note: ELEC 2600 OR ELEC 2600H OR IEDA 2520 OR IEDA 2540 OR ISOM 2500 OR MATH 2411 OR MATH 2421 OR MATH 2431",
       "courses": [
         {
           "code": "ELEC2600",
           "name": "Probability and Random Processes in Engineering",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -343,7 +343,7 @@
         {
           "code": "ELEC2600H",
           "name": "Honors Probability and Random Processes in Engineering",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -353,7 +353,7 @@
         {
           "code": "IEDA2520",
           "name": "Probability for Engineers",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -363,7 +363,7 @@
         {
           "code": "IEDA2540",
           "name": "Statistics for Engineers",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -373,7 +373,7 @@
         {
           "code": "ISOM2500",
           "name": "Business Statistics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -383,7 +383,7 @@
         {
           "code": "MATH2411",
           "name": "Applied Statistics",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -393,7 +393,7 @@
         {
           "code": "MATH2421",
           "name": "Probability",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -403,7 +403,7 @@
         {
           "code": "MATH2431",
           "name": "Honors Probability",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "4",
           "areas": [],
           "source_pages": [
@@ -417,7 +417,7 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 18.0,
+      "required_credits": 18,
       "required_credits_raw": "18",
       "note": "COMP 2000-level or above Electives [Any 6 courses of the subject and level as specified. For students who have taken the 6-credit course COMP 4981 or COMP 4981H to fulfill this elective requirement, the minimum number of courses required to satisfy this requirement may be reduced by one. With approval by the Dean or the Dean's designate, students may use up to 3 computer science related courses (9 credits) offered by non-CSE department(s) to count towards this requirement.]",
       "courses": [],

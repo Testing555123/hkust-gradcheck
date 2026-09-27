@@ -2,20 +2,20 @@
   "year": "2024-25",
   "code": "MATH",
   "title": "BSc in Mathematics",
-  "total_required_credits": 295.0,
+  "total_required_credits": 295,
   "parser": "mineru_api",
   "source_pdf": "C:\\Users\\User\\CodeBuddy\\20260906005404\\unpress_pdf\\major\\2024-25\\MATH_BSc_in_Mathematics.pdf",
   "groups": [
     {
       "name": "Major Pre-requisite course(s)",
-      "required_credits": 4.0,
+      "required_credits": 4,
       "required_credits_raw": "",
       "note": "Note: [(MATH 1012 OR MATH 1013 OR MATH 1023) AND (MATH 1014 OR MATH 1024)] OR [MATH 1020] (Students following IRE track can only use MATH 1023 and MATH 1024 to fulfill the requirement)",
       "courses": [
         {
           "code": "MATH1012",
           "name": "Calculus IA",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -23,7 +23,7 @@
         {
           "code": "MATH1013",
           "name": "Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -31,7 +31,7 @@
         {
           "code": "MATH1014",
           "name": "Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -39,7 +39,7 @@
         {
           "code": "MATH1020",
           "name": "Accelerated Calculus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -47,7 +47,7 @@
         {
           "code": "MATH1023",
           "name": "Honors Calculus I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -55,7 +55,7 @@
         {
           "code": "MATH1024",
           "name": "Honors Calculus II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -67,14 +67,14 @@
     },
     {
       "name": "Required Course(s)",
-      "required_credits": 26.0,
+      "required_credits": 26,
       "required_credits_raw": "",
       "note": "Note: MATH 2121 OR MATH 2131 [Students following IRE Track or Pure Mathematics (Advanced) Track can only use MATH 2131 to fulfill the requirement.]\nNote: MATH 3033 OR MATH 3043 [Students following IRE Track or Pure Mathematics (Advanced) Track can only use MATH 3043 to fulfill the requirement.]",
       "courses": [
         {
           "code": "MATH2023",
           "name": "Multivariable Calculus",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -82,7 +82,7 @@
         {
           "code": "MATH2033",
           "name": "Mathematical Analysis",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -90,7 +90,7 @@
         {
           "code": "MATH2043",
           "name": "Honors Mathematical Analysis",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -98,7 +98,7 @@
         {
           "code": "MATH2121",
           "name": "Linear Algebra",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -106,7 +106,7 @@
         {
           "code": "MATH2131",
           "name": "Honors in Linear and Abstract Algebra I",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -114,7 +114,7 @@
         {
           "code": "MATH3033",
           "name": "Real Analysis",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -122,7 +122,7 @@
         {
           "code": "MATH3043",
           "name": "Honors Real Analysis",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -130,7 +130,7 @@
         {
           "code": "LANG3021",
           "name": "Science Communication in English (Mathematics)",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -138,7 +138,7 @@
         {
           "code": "LANG3027",
           "name": "Science Communication in English for Research Students",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -150,14 +150,14 @@
     },
     {
       "name": "Applied Mathematics Track Required Course(s)",
-      "required_credits": 20.0,
+      "required_credits": 20,
       "required_credits_raw": "",
       "note": "Note: MATH 4992 OR MATH 4999",
       "courses": [
         {
           "code": "MATH2352",
           "name": "Differential Equations",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -165,7 +165,7 @@
         {
           "code": "MATH2411",
           "name": "Applied Statistics",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -173,7 +173,7 @@
         {
           "code": "MATH3312",
           "name": "Numerical Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -181,7 +181,7 @@
         {
           "code": "MATH4052",
           "name": "Partial Differential Equations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -189,7 +189,7 @@
         {
           "code": "MATH4360",
           "name": "Mathematical Modeling",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -197,7 +197,7 @@
         {
           "code": "MATH4992",
           "name": "Capstone Project in Applied Mathematics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -205,7 +205,7 @@
         {
           "code": "MATH4999",
           "name": "Independent Capstone Project",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -222,14 +222,14 @@
     },
     {
       "name": "Applied Mathematics Track Elective Course(s)",
-      "required_credits": 12.0,
+      "required_credits": 12,
       "required_credits_raw": "",
       "note": "MATH Depth Electives (4 courses from the specified elective list)",
       "courses": [
         {
           "code": "MATH2001",
           "name": "Foundation of Mathematics",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -237,7 +237,7 @@
         {
           "code": "MATH2421",
           "name": "Probability",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -245,7 +245,7 @@
         {
           "code": "MATH2431",
           "name": "Honors Probability",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -253,7 +253,7 @@
         {
           "code": "MATH3322",
           "name": "Matrix Computation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -261,7 +261,7 @@
         {
           "code": "MATH3332",
           "name": "Data Analytic Tools",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -269,7 +269,7 @@
         {
           "code": "MATH3425",
           "name": "Stochastic Modeling",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -277,7 +277,7 @@
         {
           "code": "MATH4023",
           "name": "Complex Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -285,7 +285,7 @@
         {
           "code": "MATH4051",
           "name": "Theory of Ordinary Differential Equations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -293,7 +293,7 @@
         {
           "code": "MATH4321",
           "name": "Game Theory",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -301,7 +301,7 @@
         {
           "code": "MATH4326",
           "name": "Introduction to Fluid Dynamics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -309,7 +309,7 @@
         {
           "code": "MATH4333",
           "name": "Mathematical Biology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -317,7 +317,7 @@
         {
           "code": "MATH4335",
           "name": "Introduction to Optimization",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -325,7 +325,7 @@
         {
           "code": "MATH4336",
           "name": "Introduction to Mathematics of Image Processing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -333,7 +333,7 @@
         {
           "code": "MATH4343",
           "name": "Introduction to Graph Theory",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -341,7 +341,7 @@
         {
           "code": "MATH4351",
           "name": "Numerical Solutions of Partial Differential Equations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -349,7 +349,7 @@
         {
           "code": "MATH4511",
           "name": "Quantitative Methods for Fixed Income Derivatives",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -357,7 +357,7 @@
         {
           "code": "MATH4512",
           "name": "Fundamentals of Mathematical Finance",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -365,7 +365,7 @@
         {
           "code": "MATH4823",
           "name": "Special Topics in Applied Mathematics",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -382,14 +382,14 @@
     },
     {
       "name": "Computer Science Track Required Course(s)",
-      "required_credits": 22.0,
+      "required_credits": 22,
       "required_credits_raw": "",
       "note": "Note: MATH 2343 OR COMP 2711 OR COMP 2711H\nNote: MATH 4991 OR MATH 4992 OR MATH 4999\nNote: (COMP 2011 AND COMP 2012) OR COMP 2012H\nNote: COMP 3711 OR COMP 3711H",
       "courses": [
         {
           "code": "MATH2343",
           "name": "Discrete Structures",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -397,7 +397,7 @@
         {
           "code": "COMP2711",
           "name": "Discrete Mathematical Tools for Computer Science",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -405,7 +405,7 @@
         {
           "code": "COMP2711H",
           "name": "Honors Discrete Mathematical Tools for Computer Science",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -413,7 +413,7 @@
         {
           "code": "MATH3121",
           "name": "Abstract Algebra",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -421,7 +421,7 @@
         {
           "code": "MATH4991",
           "name": "Capstone Project in Pure Mathematics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -429,7 +429,7 @@
         {
           "code": "MATH4992",
           "name": "Capstone Project in Applied Mathematics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -437,7 +437,7 @@
         {
           "code": "MATH4999",
           "name": "Independent Capstone Project",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -445,7 +445,7 @@
         {
           "code": "COMP2011",
           "name": "Programming with C++",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -453,7 +453,7 @@
         {
           "code": "COMP2012",
           "name": "Object-Oriented Programming and Data Structures",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -461,7 +461,7 @@
         {
           "code": "COMP2012H",
           "name": "Honors Object-Oriented Programming and Data Structures",
-          "credits": 5.0,
+          "credits": 5,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -469,7 +469,7 @@
         {
           "code": "COMP2611",
           "name": "Computer Organization",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -477,7 +477,7 @@
         {
           "code": "COMP3711",
           "name": "Design and Analysis of Algorithms",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -485,7 +485,7 @@
         {
           "code": "COMP3711H",
           "name": "Honors Design and Analysis of Algorithms",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -502,7 +502,7 @@
     },
     {
       "name": "Computer Science Track Elective Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "",
       "note": "MATH 3000-level or above Elective (Any 1 course of the subject and level as specified)",
       "courses": [],
@@ -516,14 +516,14 @@
     },
     {
       "name": "Computer Science Track Elective Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "",
       "note": "MATH Electives (2 courses from the specified elective list)",
       "courses": [
         {
           "code": "MATH2001",
           "name": "Foundation of Mathematics",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -531,7 +531,7 @@
         {
           "code": "MATH2411",
           "name": "Applied Statistics",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -539,7 +539,7 @@
         {
           "code": "MATH2421",
           "name": "Probability",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -547,7 +547,7 @@
         {
           "code": "MATH2431",
           "name": "Honors Probability",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -555,7 +555,7 @@
         {
           "code": "MATH3312",
           "name": "Numerical Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -563,7 +563,7 @@
         {
           "code": "MATH3322",
           "name": "Matrix Computation",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -571,7 +571,7 @@
         {
           "code": "MATH3332",
           "name": "Data Analytic Tools",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -579,7 +579,7 @@
         {
           "code": "MATH3343",
           "name": "Combinatorial Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -587,7 +587,7 @@
         {
           "code": "MATH4023",
           "name": "Complex Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -595,7 +595,7 @@
         {
           "code": "MATH4141",
           "name": "Number Theory and Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -603,7 +603,7 @@
         {
           "code": "MATH4223",
           "name": "Differential Geometry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -611,7 +611,7 @@
         {
           "code": "MATH4321",
           "name": "Game Theory",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -619,7 +619,7 @@
         {
           "code": "MATH4343",
           "name": "Introduction to Graph Theory",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -635,7 +635,7 @@
     },
     {
       "name": "Computer Science Track Elective Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "",
       "note": "COMP 4000-level or above Elective (Any 1 course of the subject and level as specified)",
       "courses": [],
@@ -649,7 +649,7 @@
     },
     {
       "name": "Computer Science Track Elective Course(s)",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "",
       "note": "COMP 2000-level or above Elective (Any 1 course of the subject and level as specified). For students opting COMP 2012H only. Students opting COMP 2011 AND COMP 2012 do not need to fulfill this requirement.",
       "courses": [],
@@ -663,14 +663,14 @@
     },
     {
       "name": "Computer Science Track Elective Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "",
       "note": "COMP Elective (1 course from the specified elective list)",
       "courses": [
         {
           "code": "COMP3031",
           "name": "Principles of Programming Languages",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -678,7 +678,7 @@
         {
           "code": "COMP3111",
           "name": "Software Engineering",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -686,7 +686,7 @@
         {
           "code": "COMP3111H",
           "name": "Honors Software Engineering",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -694,7 +694,7 @@
         {
           "code": "COMP3211",
           "name": "Learning, Reasoning, and Decision Making in AI",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -702,7 +702,7 @@
         {
           "code": "COMP3311",
           "name": "Database Management Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -710,7 +710,7 @@
         {
           "code": "COMP3511",
           "name": "Operating Systems",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -726,14 +726,14 @@
     },
     {
       "name": "Financial and Actuarial Mathematics Track Required Course(s)",
-      "required_credits": 35.0,
+      "required_credits": 35,
       "required_credits_raw": "",
       "note": "Note: MATH 2421 OR MATH 2431\nNote: MATH 4996 OR MATH 4999",
       "courses": [
         {
           "code": "MATH2411",
           "name": "Applied Statistics",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -741,7 +741,7 @@
         {
           "code": "MATH2421",
           "name": "Probability",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -749,7 +749,7 @@
         {
           "code": "MATH2431",
           "name": "Honors Probability",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -757,7 +757,7 @@
         {
           "code": "MATH2511",
           "name": "Fundamentals of Actuarial Mathematics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -765,7 +765,7 @@
         {
           "code": "MATH3423",
           "name": "Statistical Inference",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -773,7 +773,7 @@
         {
           "code": "MATH4427",
           "name": "Loss Models and their Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -781,7 +781,7 @@
         {
           "code": "MATH4511",
           "name": "Quantitative Methods for Fixed Income Derivatives",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -789,7 +789,7 @@
         {
           "code": "MATH4512",
           "name": "Fundamentals of Mathematical Finance",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -797,7 +797,7 @@
         {
           "code": "MATH4513",
           "name": "Life Contingencies Models and Insurance Risk",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -805,7 +805,7 @@
         {
           "code": "MATH4514",
           "name": "Financial Economics in Actuarial Science",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -813,7 +813,7 @@
         {
           "code": "MATH4515",
           "name": "Statistical and Computational Methods in Financial Mathematics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -821,7 +821,7 @@
         {
           "code": "MATH4996",
           "name": "Capstone Project in Financial and Actuarial Mathematics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -829,7 +829,7 @@
         {
           "code": "MATH4999",
           "name": "Independent Capstone Project",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -846,14 +846,14 @@
     },
     {
       "name": "Financial and Actuarial Mathematics Track Elective Course(s)",
-      "required_credits": 2.0,
+      "required_credits": 2,
       "required_credits_raw": "",
       "note": "Pure or Applied Mathematics Elective (1 course from the specified elective list)",
       "courses": [
         {
           "code": "MATH2001",
           "name": "Foundation of Mathematics",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -861,7 +861,7 @@
         {
           "code": "MATH2352",
           "name": "Differential Equations",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -869,7 +869,7 @@
         {
           "code": "MATH3312",
           "name": "Numerical Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -877,7 +877,7 @@
         {
           "code": "MATH3343",
           "name": "Combinatorial Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -885,7 +885,7 @@
         {
           "code": "MATH4023",
           "name": "Complex Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -893,7 +893,7 @@
         {
           "code": "MATH4052",
           "name": "Partial Differential Equations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -909,14 +909,14 @@
     },
     {
       "name": "Financial and Actuarial Mathematics Track Elective Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "",
       "note": "MATH Depth Electives (2 courses from the specified elective list. Courses taken as Required Courses may not be reused to count towards this elective requirement.)",
       "courses": [
         {
           "code": "MATH3424",
           "name": "Regression Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -924,7 +924,7 @@
         {
           "code": "MATH3425",
           "name": "Stochastic Modeling",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -932,7 +932,7 @@
         {
           "code": "MATH3426",
           "name": "Sampling",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -940,7 +940,7 @@
         {
           "code": "MATH3427",
           "name": "Bayesian Statistics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -948,7 +948,7 @@
         {
           "code": "MATH3428",
           "name": "Statistical Computing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -956,7 +956,7 @@
         {
           "code": "MATH4423",
           "name": "Nonparametric Statistics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -964,7 +964,7 @@
         {
           "code": "MATH4424",
           "name": "Multivariate Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -972,7 +972,7 @@
         {
           "code": "MATH4425",
           "name": "Introductory Time Series",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -980,7 +980,7 @@
         {
           "code": "MATH4426",
           "name": "Survival Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -988,7 +988,7 @@
         {
           "code": "MATH4429",
           "name": "Credibility Theory and its Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -996,7 +996,7 @@
         {
           "code": "MATH4432",
           "name": "Statistical Machine Learning",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1004,7 +1004,7 @@
         {
           "code": "MATH4433",
           "name": "Spatial Data Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1020,14 +1020,14 @@
     },
     {
       "name": "General Mathematics Track Required Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "",
       "note": "Note: MATH 4991 OR MATH 4992 OR MATH 4993 OR MATH 4999",
       "courses": [
         {
           "code": "MATH4991",
           "name": "Capstone Project in Pure Mathematics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1035,7 +1035,7 @@
         {
           "code": "MATH4992",
           "name": "Capstone Project in Applied Mathematics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1043,7 +1043,7 @@
         {
           "code": "MATH4993",
           "name": "Capstone Project in Statistics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1051,7 +1051,7 @@
         {
           "code": "MATH4999",
           "name": "Independent Capstone Project",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1067,7 +1067,7 @@
     },
     {
       "name": "General Mathematics Track Elective Course(s)",
-      "required_credits": 9.0,
+      "required_credits": 9,
       "required_credits_raw": "",
       "note": "MATH 2000-level or above Electives (Any 3 courses of the subject and level as specified)",
       "courses": [],
@@ -1081,7 +1081,7 @@
     },
     {
       "name": "General Mathematics Track Elective Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "",
       "note": "MATH 3000-level or above Electives (Any 2 courses of the subject and level as specified)",
       "courses": [],
@@ -1095,7 +1095,7 @@
     },
     {
       "name": "General Mathematics Track Elective Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "",
       "note": "MATH 4000-level or above Electives (Any 2 courses of the subject and level as specified)",
       "courses": [],
@@ -1109,14 +1109,14 @@
     },
     {
       "name": "International Research Enrichment Track Required Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "",
       "note": "Students in the IRE Track should also take MATH 1023, MATH 1024, MATH 2001, MATH 2043, MATH 2131 and MATH 3043 as specified in the major requirements.",
       "courses": [
         {
           "code": "SCIE3500",
           "name": "IRE Research Project I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1124,7 +1124,7 @@
         {
           "code": "SCIE4500",
           "name": "IRE Research Project II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1141,7 +1141,7 @@
     },
     {
       "name": "International Research Enrichment Track Other(s)",
-      "required_credits": 27.0,
+      "required_credits": 27,
       "required_credits_raw": "",
       "note": "With approval by the program office, students should follow the curriculum of one of the following Mathematics Tracks: Pure Mathematics (Advanced) Track, Applied Mathematics Track, Statistics Track and complete all of its requirements excluding the capstone project requirement, which should be fulfilled by both SCIE 3500 and SCIE 4500 only. For students approved to follow the Applied Mathematics Track and Statistics Track, they must choose MATH 2431 which is listed in the Track Requirements; while for those who follow the Pure Mathematics (Advanced) Track, they should take MATH 2431 as an additional required course.",
       "courses": [],
@@ -1155,14 +1155,14 @@
     },
     {
       "name": "Pure Mathematics (Advanced) Track Required Course(s)",
-      "required_credits": 12.0,
+      "required_credits": 12,
       "required_credits_raw": "",
       "note": "Students in the Pure Mathematics (Advanced) Track should also take MATH 2043, MATH 2131, and MATH 3043 as specified in the major requirements.\nNote: MATH 4991 OR MATH 4999",
       "courses": [
         {
           "code": "MATH2001",
           "name": "Foundation of Mathematics",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1170,7 +1170,7 @@
         {
           "code": "MATH3131",
           "name": "Honors in Linear and Abstract Algebra II",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1178,7 +1178,7 @@
         {
           "code": "MATH4225",
           "name": "Topology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1186,7 +1186,7 @@
         {
           "code": "MATH4991",
           "name": "Capstone Project in Pure Mathematics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1194,7 +1194,7 @@
         {
           "code": "MATH4999",
           "name": "Independent Capstone Project",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1211,14 +1211,14 @@
     },
     {
       "name": "Pure Mathematics (Advanced) Track Elective Course(s)",
-      "required_credits": 12.0,
+      "required_credits": 12,
       "required_credits_raw": "",
       "note": "MATH Depth Electives (4 courses from the specified elective list, of which at least 1 course from each area in Algebra / Analysis / Geometry)\nAlgebra: MATH 4141, MATH 4151\nAnalysis: MATH 4023, MATH 4051, MATH 4052, MATH 4063\nGeometry: MATH 4033, MATH 4221, MATH 4223",
       "courses": [
         {
           "code": "MATH4141",
           "name": "Number Theory and Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1226,7 +1226,7 @@
         {
           "code": "MATH4151",
           "name": "Introduction to Lie Groups",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1234,7 +1234,7 @@
         {
           "code": "MATH4023",
           "name": "Complex Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1242,7 +1242,7 @@
         {
           "code": "MATH4051",
           "name": "Theory of Ordinary Differential Equations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1250,7 +1250,7 @@
         {
           "code": "MATH4052",
           "name": "Partial Differential Equations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1258,7 +1258,7 @@
         {
           "code": "MATH4063",
           "name": "Functional Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1266,7 +1266,7 @@
         {
           "code": "MATH4033",
           "name": "Calculus on Manifolds",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1274,7 +1274,7 @@
         {
           "code": "MATH4221",
           "name": "Euclidean and Non-Euclidean Geometries",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1282,7 +1282,7 @@
         {
           "code": "MATH4223",
           "name": "Differential Geometry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1299,7 +1299,7 @@
     },
     {
       "name": "Pure Mathematics (Advanced) Track Elective Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "",
       "note": "MATH 3000-level or above Elective (Any 1 course of the subject and level as specified)",
       "courses": [],
@@ -1313,14 +1313,14 @@
     },
     {
       "name": "Pure Mathematics (Advanced) Track Elective Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "",
       "note": "Applied Mathematics or Statistics Elective (1 course from the specified elective list)",
       "courses": [
         {
           "code": "MATH2343",
           "name": "Discrete Structures",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1328,7 +1328,7 @@
         {
           "code": "MATH2352",
           "name": "Differential Equations",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1336,7 +1336,7 @@
         {
           "code": "MATH2411",
           "name": "Applied Statistics",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1344,7 +1344,7 @@
         {
           "code": "MATH3312",
           "name": "Numerical Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1352,7 +1352,7 @@
         {
           "code": "MATH3343",
           "name": "Combinatorial Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1360,7 +1360,7 @@
         {
           "code": "MATH4321",
           "name": "Game Theory",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1368,7 +1368,7 @@
         {
           "code": "MATH4326",
           "name": "Introduction to Fluid Dynamics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1376,7 +1376,7 @@
         {
           "code": "MATH4343",
           "name": "Introduction to Graph Theory",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1392,14 +1392,14 @@
     },
     {
       "name": "Pure Mathematics Track Required Course(s)",
-      "required_credits": 11.0,
+      "required_credits": 11,
       "required_credits_raw": "",
       "note": "Note: MATH 4991 OR MATH 4999",
       "courses": [
         {
           "code": "MATH2001",
           "name": "Foundation of Mathematics",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1407,7 +1407,7 @@
         {
           "code": "MATH3121",
           "name": "Abstract Algebra",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1415,7 +1415,7 @@
         {
           "code": "MATH4225",
           "name": "Topology",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1423,7 +1423,7 @@
         {
           "code": "MATH4991",
           "name": "Capstone Project in Pure Mathematics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1431,7 +1431,7 @@
         {
           "code": "MATH4999",
           "name": "Independent Capstone Project",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1448,7 +1448,7 @@
     },
     {
       "name": "Pure Mathematics Track Elective Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "",
       "note": "MATH 2000-level or above Electives (Any 2 courses of the subject and level as specified)",
       "courses": [],
@@ -1463,14 +1463,14 @@
     },
     {
       "name": "Pure Mathematics Track Elective Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "",
       "note": "Applied Mathematics or Statistics Elective (1 course from the specified elective list)",
       "courses": [
         {
           "code": "MATH2343",
           "name": "Discrete Structures",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1478,7 +1478,7 @@
         {
           "code": "MATH2352",
           "name": "Differential Equations",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1486,7 +1486,7 @@
         {
           "code": "MATH2411",
           "name": "Applied Statistics",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1494,7 +1494,7 @@
         {
           "code": "MATH3312",
           "name": "Numerical Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1502,7 +1502,7 @@
         {
           "code": "MATH3343",
           "name": "Combinatorial Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1510,7 +1510,7 @@
         {
           "code": "MATH4321",
           "name": "Game Theory",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1518,7 +1518,7 @@
         {
           "code": "MATH4326",
           "name": "Introduction to Fluid Dynamics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1526,7 +1526,7 @@
         {
           "code": "MATH4343",
           "name": "Introduction to Graph Theory",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1543,14 +1543,14 @@
     },
     {
       "name": "Pure Mathematics Track Elective Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "",
       "note": "Analysis Depth Elective (1 course from the specified elective list)\nAnalysis: MATH 4023, MATH 4051, MATH 4052, MATH 4063, MATH 4 (Functional Analysis)",
       "courses": [
         {
           "code": "MATH4023",
           "name": "Complex Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1558,7 +1558,7 @@
         {
           "code": "MATH4051",
           "name": "Theory of Ordinary Differential Equations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1566,7 +1566,7 @@
         {
           "code": "MATH4052",
           "name": "Partial Differential Equations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1574,7 +1574,7 @@
         {
           "code": "MATH4063",
           "name": "Functional Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1590,14 +1590,14 @@
     },
     {
       "name": "Pure Mathematics Track Elective Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "",
       "note": "Geometry Depth Elective (1 course from the specified elective list)\nGeometry: MATH 4033, MATH 4221, MATH 4223",
       "courses": [
         {
           "code": "MATH4033",
           "name": "Calculus on Manifolds",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1605,7 +1605,7 @@
         {
           "code": "MATH4221",
           "name": "Euclidean and Non-Euclidean Geometries",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1613,7 +1613,7 @@
         {
           "code": "MATH4223",
           "name": "Differential Geometry",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1629,14 +1629,14 @@
     },
     {
       "name": "Pure Mathematics Track Elective Course(s)",
-      "required_credits": 3.0,
+      "required_credits": 3,
       "required_credits_raw": "",
       "note": "Algebra Depth Elective (1 course from the specified elective list)\nAlgebra: MATH 4141, MATH 4151",
       "courses": [
         {
           "code": "MATH4141",
           "name": "Number Theory and Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1644,7 +1644,7 @@
         {
           "code": "MATH4151",
           "name": "Introduction to Lie Groups",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1660,14 +1660,14 @@
     },
     {
       "name": "Statistics Track Required Course(s)",
-      "required_credits": 29.0,
+      "required_credits": 29,
       "required_credits_raw": "",
       "note": "Note: MATH 2421 OR MATH 2431\nNote: MATH 4424 OR MATH 4425\nNote: MATH 4993 OR MATH 4999",
       "courses": [
         {
           "code": "MATH2411",
           "name": "Applied Statistics",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1675,7 +1675,7 @@
         {
           "code": "MATH2421",
           "name": "Probability",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1683,7 +1683,7 @@
         {
           "code": "MATH2431",
           "name": "Honors Probability",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1691,7 +1691,7 @@
         {
           "code": "MATH3423",
           "name": "Statistical Inference",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1699,7 +1699,7 @@
         {
           "code": "MATH3424",
           "name": "Regression Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1707,7 +1707,7 @@
         {
           "code": "MATH3426",
           "name": "Sampling",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1715,7 +1715,7 @@
         {
           "code": "MATH3427",
           "name": "Bayesian Statistics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1723,7 +1723,7 @@
         {
           "code": "MATH3428",
           "name": "Statistical Computing",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1731,7 +1731,7 @@
         {
           "code": "MATH4424",
           "name": "Multivariate Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1739,7 +1739,7 @@
         {
           "code": "MATH4425",
           "name": "Introductory Time Series",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1747,7 +1747,7 @@
         {
           "code": "MATH4993",
           "name": "Capstone Project in Statistics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1755,7 +1755,7 @@
         {
           "code": "MATH4999",
           "name": "Independent Capstone Project",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1772,14 +1772,14 @@
     },
     {
       "name": "Statistics Track Elective Course(s)",
-      "required_credits": 2.0,
+      "required_credits": 2,
       "required_credits_raw": "",
       "note": "Pure or Applied Mathematics Elective (1 course from the specified elective list)",
       "courses": [
         {
           "code": "MATH2001",
           "name": "Foundation of Mathematics",
-          "credits": 2.0,
+          "credits": 2,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1787,7 +1787,7 @@
         {
           "code": "MATH2352",
           "name": "Differential Equations",
-          "credits": 4.0,
+          "credits": 4,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1795,7 +1795,7 @@
         {
           "code": "MATH3312",
           "name": "Numerical Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1803,7 +1803,7 @@
         {
           "code": "MATH3343",
           "name": "Combinatorial Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1811,7 +1811,7 @@
         {
           "code": "MATH4023",
           "name": "Complex Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1819,7 +1819,7 @@
         {
           "code": "MATH4052",
           "name": "Partial Differential Equations",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1835,14 +1835,14 @@
     },
     {
       "name": "Statistics Track Elective Course(s)",
-      "required_credits": 6.0,
+      "required_credits": 6,
       "required_credits_raw": "",
       "note": "MATH Depth Electives (2 courses from the specified elective list. Courses taken as Required Courses may not be reused to count towards this elective requirement.)",
       "courses": [
         {
           "code": "MATH3425",
           "name": "Stochastic Modeling",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1850,7 +1850,7 @@
         {
           "code": "MATH4423",
           "name": "Nonparametric Statistics",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1858,7 +1858,7 @@
         {
           "code": "MATH4424",
           "name": "Multivariate Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1866,7 +1866,7 @@
         {
           "code": "MATH4425",
           "name": "Introductory Time Series",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1874,7 +1874,7 @@
         {
           "code": "MATH4426",
           "name": "Survival Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1882,7 +1882,7 @@
         {
           "code": "MATH4429",
           "name": "Credibility Theory and its Applications",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1890,7 +1890,7 @@
         {
           "code": "MATH4432",
           "name": "Statistical Machine Learning",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1898,7 +1898,7 @@
         {
           "code": "MATH4433",
           "name": "Spatial Data Analysis",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1906,7 +1906,7 @@
         {
           "code": "MATH4434",
           "name": "Deep Learning",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1914,7 +1914,7 @@
         {
           "code": "MATH4511",
           "name": "Quantitative Methods for Fixed Income Derivatives",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []
@@ -1922,7 +1922,7 @@
         {
           "code": "MATH4512",
           "name": "Fundamentals of Mathematical Finance",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "",
           "areas": [],
           "source_pages": []

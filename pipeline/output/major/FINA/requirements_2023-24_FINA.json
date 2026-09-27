@@ -2,18 +2,18 @@
   "year": "2023-24",
   "code": "FINA",
   "title": "BBA in Finance",
-  "total_required_credits": 1.0,
+  "total_required_credits": 1,
   "groups": [
     {
       "name": "Required Course(s)",
-      "required_credits": 1.0,
+      "required_credits": 1,
       "required_credits_raw": "1",
       "note": "",
       "courses": [
         {
           "code": "FINA3001",
           "name": "Key Skills for Finance Professionals (A)",
-          "credits": 1.0,
+          "credits": 1,
           "credits_raw": "1",
           "areas": [],
           "source_pages": [
@@ -23,7 +23,7 @@
         {
           "code": "FINA3103",
           "name": "Intermediate Investments",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -33,7 +33,7 @@
         {
           "code": "FINA3203",
           "name": "Derivative Securities",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -43,7 +43,7 @@
         {
           "code": "FINA3303",
           "name": "Intermediate Corporate Finance",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -53,7 +53,7 @@
         {
           "code": "FINA3810",
           "name": "Bloomberg Market Concepts Certification",
-          "credits": 0.0,
+          "credits": 0,
           "credits_raw": "0",
           "areas": [],
           "source_pages": [
@@ -63,7 +63,7 @@
         {
           "code": "ACCT3010",
           "name": "Financial Accounting I",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -73,7 +73,7 @@
         {
           "code": "ACCT3020",
           "name": "Financial Accounting II",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -83,7 +83,7 @@
         {
           "code": "ACCT3030",
           "name": "Intermediate Financial Accounting for Non-Accounting Majors",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -93,7 +93,7 @@
         {
           "code": "ISOM3230",
           "name": "Business Programming in VBA",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -103,7 +103,7 @@
         {
           "code": "ISOM3320",
           "name": "Business Applications Development in Java",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -113,7 +113,7 @@
         {
           "code": "ISOM3400",
           "name": "Business Applications Development in Python",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -123,7 +123,7 @@
         {
           "code": "COMP1022P",
           "name": "Introduction to Computing with Java",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -133,7 +133,7 @@
         {
           "code": "COMP1023",
           "name": "Introduction to Python Programming",
-          "credits": 3.0,
+          "credits": 3,
           "credits_raw": "3",
           "areas": [],
           "source_pages": [
@@ -147,7 +147,7 @@
     },
     {
       "name": "Elective(s)",
-      "required_credits": 0.0,
+      "required_credits": 0,
       "required_credits_raw": "",
       "note": "",
       "courses": [],
