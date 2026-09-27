@@ -1,0 +1,21 @@
+# 构建镜像不需要、且会拖慢或污染构建的东西
+.git
+.github
+node_modules
+**/node_modules
+.next
+**/.next
+dist
+frontend/dist
+coverage
+*.tsbuildinfo
+.env
+**/.env
+**/.env.local
+
+# 原始 PDF 与管线中间产物：镜像用不到（seed 是单独的命令，不在容器启动路径上）
+unpress_pdf
+pipeline/reports
+pipeline/__pycache__
+**/__pycache__
+.codebuddy

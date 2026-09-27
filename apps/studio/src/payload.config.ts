@@ -10,7 +10,6 @@ import { Users } from './collections/Users'
 const dirname = path.dirname(fileURLToPath(import.meta.url))
 
 export default buildConfig({
-  binPath: 'npm exec payload',
   admin: {
     user: Users.slug,
     importMap: { baseDir: path.resolve(dirname) },

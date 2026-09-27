@@ -15,6 +15,8 @@
     "test": "npm -w frontend run test",
     "test:domain": "npm -w @newone/domain run test",
     "build": "npm -w frontend run build",
+    "build:studio": "npm -w @newone/studio run build",
+    "gates:selftest": "npm -w @newone/studio run gates:selftest",
     "lint": "npm -w frontend run lint",
     "typecheck:domain": "npm -w @newone/domain run typecheck",
     "baseline": "python scripts/baseline_manifest.py gen",
@@ -24,6 +26,6 @@
     "fidelity:check": "python scripts/check_port_fidelity.py",
     "probe:audit": "tsx scripts/probe_domain_audit.ts",
     "data:check": "python scripts/export_static_data.py --check",
-    "verify": "npm run baseline:check && npm run fidelity:check && npm run normalize:check && npm run data:check && npm run typecheck:domain && npm test && npm run build"
+    "verify": "npm run baseline:check && npm run fidelity:check && npm run normalize:check && npm run data:check && npm run typecheck:domain && npm test && npm run build && npm run build:studio"
   }
 }

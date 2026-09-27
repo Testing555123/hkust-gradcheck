@@ -8,6 +8,7 @@ import 'dotenv/config'
 import { getPayload } from 'payload'
 
 import config from './payload.config'
+import type { Program } from './payload-types'
 
 const payload = await getPayload({ config })
 const one = await payload.find({ collection: 'programs', limit: 1, depth: 0 })
@@ -18,7 +19,7 @@ const base = one.docs[0] as unknown as Record<string, unknown>
 // 2026-27 SREQ-SSCI 的 title 改成了「自测-...」并被评审抓到。）
 const scratch = await payload.create({
   collection: 'programs',
-  data: { year: '0000-00', code: 'ZZZ-SELFTEST', category: 'major', source: base.source },
+  data: { year: '0000-00', code: 'ZZZ-SELFTEST', category: 'major', source: base.source as Program["source"] },
 })
 const docId = scratch.id as string
 
@@ -73,8 +74,10 @@ let failed = 0
 for (const c of CASES) {
   let caught: string | null = null
   try {
-    if (c.mode === 'create') await payload.create({ collection: 'programs', data: c.data })
-    else await payload.update({ collection: 'programs', id: docId, data: c.data })
+    // 这里的断言式 cast 是故意的：用例的本体就是「喂非法数据」，
+    // 若让 TS 提前拦住，闸门自检反而测不到东西。
+    if (c.mode === 'create') await payload.create({ collection: 'programs', data: c.data as unknown as Program })
+    else await payload.update({ collection: 'programs', id: docId, data: c.data as unknown as Partial<Program> })
   } catch (err) {
     caught = (err as Error).message
   }

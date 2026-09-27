@@ -17,6 +17,7 @@ import { getPayload, type Payload } from 'payload'
 import config from './payload.config'
 import { isAbsoluteLocalPath } from './gates'
 import { normalizeSourcePdf } from './source-pdf'
+import type { Program } from './payload-types'
 
 const REPO = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..')
 const SOURCE_ROOT = path.join(REPO, 'pipeline', 'output')
@@ -25,7 +26,10 @@ type SourceDoc = {
   year?: string
   code?: string
   title?: string
-  total_required_credits?: number | string
+  /** 实测 255/255 份都是整数，故这里不收 string：
+   *  §3 的「取第一个数字 / 范围取下限」属于课程学分与烘焙器的口径，
+   *  在 seed 里偷偷 Number("4-6") 反而会把坏数据洗白。 */
+  total_required_credits?: number
   source_pdf?: string
   uncertain?: unknown[]
   groups?: { name?: string; required_credits?: number | string; source_pages?: number[]; branch_kind?: string; courses?: { code?: string }[] }[]
@@ -61,12 +65,12 @@ async function upsert(payload: Payload, category: string, file: string) {
   const data = {
     year: doc.year,
     code: doc.code,
-    category,
+    category: category as Program["category"],
     title: doc.title,
     totalRequiredCredits: doc.total_required_credits,
     // 按用户裁决在 ingest 侧归一化；beforeValidate 仍拒绝对对路径，
     // 所以归一化一旦失效，后果是「写入被拒」而不是「泄漏上线」。
-    source: { ...doc, source_pdf: normalizeSourcePdf(doc.source_pdf) },
+    source: { ...doc, source_pdf: normalizeSourcePdf(doc.source_pdf) } as Program["source"],
     dataVersion,
     provenance: { origin: 'pipeline/output', file: path.relative(REPO, file).replace(/\\/g, '/') },
   }

@@ -7,6 +7,7 @@ const __filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(__filename)
 
 const nextConfig: NextConfig = {
+  output: 'standalone',
   // 实测坑：Next 16 dev 默认拒绝跨源 dev 资源。用 http://127.0.0.1:3200 访问时
   // HTML 返回 200 但 JS/CSS chunk 全 403 → 后台一片空白，只报 WebSocket 失败。
   allowedDevOrigins: ['127.0.0.1', 'localhost'],
