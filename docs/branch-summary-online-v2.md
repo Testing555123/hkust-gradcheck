@@ -1,16 +1,16 @@
 # 分支摘要 · `feat/online-v2`
 
-基线 `67effce` → HEAD `5e40880`，共 **9 个提交，全部未 push**。
-本轮范围 = 设计 v2 的 **T0–T3 + T4a/T5/T4b + T2b + ADR-12**。
+基线 `67effce` → HEAD（本提交），共 **13 个提交，全部未 push**。
+本轮范围 = 设计 v2 的 **T0–T3 + T4a/T5/T4b + T2b + ADR-12 + 单镜像构建 + T7 + T11 + 双写者分库闸门**。
 
 ## 一屏结论
 
 | 问题 | 答案 |
 |---|---|
-| 学生端行为变了吗 | **没有**。前端 9,173 行 UI 一行未动，`npm test` 前后都是 112 passed |
-| 那这个分支到底提升了什么 | 三件事：① 领域引擎**第一次可以在浏览器之外跑**；② 有了**四道会真咬人的数据闸门**；③ 多出一个能浏览/校对 255 份方案的**在线数据服务**（试用，未接线） |
-| 现在能上线吗 | **不能**。双写回环（T9）未实现，DB 与 git 之间还没有闭环；学生端仍读静态 JSON |
-| 最该先看的 | `npm run probe:audit`（30 秒看懂引擎在算什么）→ 后台 `http://localhost:3200/admin` → `npm run verify` |
+| 学生端行为变了吗 | **默认没变**。9,173 行 UI 与数据读取默认路径一行未动，`npm test` 前后都是 112 passed；新增一个 `VITE_DATA_SOURCE` 开关，不设 = 今天的静态站 |
+| 那这个分支到底提升了什么 | 四件事：① 领域引擎**第一次可以在浏览器之外跑**；② 有了**四道会真咬人的数据闸门**；③ 多出一个能浏览/校对 255 份方案的**在线数据服务**；④ 该服务**已能给学生端供数**（258/258 逐份对拍一致），并且整站**能装进一个镜像构建** |
+| 现在能上线吗 | **不能**。后台改 `source` 不会重算 `derived`（T9 未做），`git push` 即上线也未验证；且免费托管下「自动部署」与「重启不丢」两条尚未同时成立 |
+| 最该先看的 | `npm run probe:audit`（30 秒看懂引擎在算什么）→ 后台 `http://localhost:3200/admin` → `npm run site:parity` → `npm run verify` |
 
 ## 提交逐条（含「你现在去哪看」）
 
@@ -23,6 +23,9 @@
 | `04778e2` `dbf4354` | **T2b**：成绩单 PDF 的浏览器 IO 适配器（`File` API + Vite 专有 `?url`）移出领域层；`packages/domain` 摘掉 `pdfjs-dist`、`vite` 两个 devDep | `npm -w @newone/domain test` 独立跑通即证明 | **255/255 份方案在 Node 里跑完，0 崩溃** |
 | `4ac9399` | **ADR-12**：255 份源一次性规范为统一格式（`indent=2` + `ensure_ascii=False` + 整数值不写 `22.0`）；新增 `normalize:check` 进 CI | `npm run normalize:check` | 归一后重烘焙，成品侧**仅 `meta.json` 1 行时间戳**变动 |
 | `3ba8c36` `5e40880` | 重钉黄金基准；把「数据基线」与「平移基准」拆成两个字段（manifest schema 2） | 看 `baseline/manifest.json` 的 `baseline_commit` vs `port_baseline_commit` | verify 全链 exit 0 |
+| `7daf68e` `b3f8f40` | 两份摘要文档（本文件与 `docs/project-summary.md`）+ `probe:audit` 检视工具 | 直接读 | — |
+| `67900b5` | **单镜像**：`Dockerfile`（两阶段 + `output: 'standalone'` + HEALTHCHECK）；修 5 个类型错误；把 `build:studio` 补进 `verify` | `docker build -t newone-studio . && docker run -p 3300:8000 newone-studio` | 镜像内 `/admin` 200；`verify` 从 6 道门变 8 道门 |
+| 本提交 | **T7（复用路线）**：`ingest-baked.ts` 把烘焙成品整份搬进 `derived` 并补齐 5 个 collection。**T11**：`/api/site/*` 四类只读端点 + `VITE_DATA_SOURCE` 换源。**闸门分库**：`sync_to_atlas.py` 写库前探测 Payload 标记集合 | `npm run site:parity`；`python scripts/sync_to_atlas.py --uri mongodb://127.0.0.1:27019 --db <Payload库>` 应 exit 1 | **258/258 项语义一致**（4.5 秒）；DB 计数 255/1144/1344/3/1；分库闸门在真实 mongo 上 exit 1 且**零写入**，空库不误伤（255+1144 正常写入） |
 
 ## 三条口径规则，现在能被你亲手验（这是 `probe:audit` 的全部意义）
 
@@ -52,11 +55,17 @@
 
 ## 这个分支**没有**提升的部分（避免你误判）
 
-1. **学生端零改动** —— 仍读 `frontend/public/data/*.json`，Payload 与学生端之间**没有任何连线**。
+1. **「改数据可见」只对一半成立** —— 学生端已可改读 `/api/site/*`（`npm run site:parity` 258/258 一致），
+   但它读的是 `derived`，而后台改的是 `source`：**改 `source` 不会重算 `derived`**。
+   实测：直接改 `derived.required_credits` 4→11，API 立刻返回 11 ✅；改回 4 也立刻生效 ✅；
+   但改 `source.required_credits` 后 `derived` 纹丝不动 —— 必须再跑一次烘焙器 + ingest。
 2. **双写回环未实现** —— 后台改数据不会写回 git，`restoreVersion` 只回滚 DB。设计 §5 的核心机制仍是纸面的。
 3. **首屏列表形态从未被真实测量** —— `select[year]=1` 实测只返回 `{id}`，我先前那组「255 条 9 KB / 0.060s」是空壳，已作废。
-4. **6 个 collection 里只有 1 个有数据** —— `courses` / `course-refs` / `common-core-maps` / `metas` / `validation-issues` 全是 0 条。
+4. **6 个 collection 现在 5 个有数据**：programs 255 · courses 1,144 · course-refs 1,344 · metas 3 · common-core-maps 1；
+   只有 `validation-issues` 仍为 0（闸门是直接拒绝写入，不落成记录）。
+   代价也实测了：版本表 `_programs_versions` 从 1,026 涨到 **1,793** 条（ADR-13 的写放大）。
 5. **F3 的结论是「一半」** —— 后台表头是真表单，但改要求树 = 在 **1,718 行的 Monaco 编辑器**里改 JSON，与今天用 VS Code 无实质差别。**选 Payload 的代价已付（790 MB / 双 React / 上游发布节奏），收益尚未证明。**
+6. **`git push` 即上线仍未验证** —— 镜像能构建、容器里 `/admin` 200，但托管平台的自动部署、冷启动与持久磁盘三条没在真机上跑过。
 
 ## 服务与清理
 
@@ -66,12 +75,23 @@
 | Payload 校对后台 | `http://localhost:3200/admin`（`dev@newone.local` / `newone-trial-2026`，一次性本地值） | 同上，端口 3200 |
 | 试用 MongoDB | 容器 `newone-payload-trial`，`127.0.0.1:27019`，库 `newone_studio` | `docker rm -fv newone-payload-trial` |
 
+**让学生端改读新后台**（T11 的两条命令，默认不设 = 今天）：
+
+```bash
+npm -w @newone/studio run ingest                                  # 把烘焙成品搬进 DB（幂等）
+VITE_DATA_SOURCE=api STUDIO_ORIGIN=http://127.0.0.1:3200 npm -w frontend run dev
+npm run site:parity                                               # 258 项逐份对拍，4.5 秒
+```
+
+`STUDIO_ORIGIN` 只影响 dev 代理，默认仍是既有的 `127.0.0.1:8000`；生产同容器部署时 `/api/site/*` 与应用同源，不需要它。
+
 ⚠️ **`stash@{0}` 里有他人 58 个未提交改动**（GitHub Desktop 切分支时 autostash）。其中 35 个源文件会与本分支 `4ac9399`（格式规范化）**冲突**。因为规范形式实测是不动点，`git stash pop` 之后再跑一次 `npm run normalize:apply` 即可，不必手工重排。
 
 ## 下一步（依赖顺序，不可乱）
 
-1. **T7** `derived` 重算（combos/pool/order_index）—— 顺带补齐那 5 个空 collection
+1. **`source → derived` 重算**：两条路二选一 —— (a) T9 双写回环 + CI 重烘焙（复用 Python，口径唯一，设计推荐）；(b) 把 1,300 行派生逻辑移植成 TS 并用 255 份产物做黄金对拍（昂贵）。在此之前 ingest 只能手跑。
 2. **ADR-10** 归一化规则两份实现收敛（`source-pdf.ts` vs 烘焙器）—— T9 的前置
 3. **T9** 双写回环 —— 此时才谈得上「DB 为编辑权威」
-4. **ADR-8/9/11/13** 四个收口决策
-5. 决定 F3：若后台编辑体验不值 790 MB，按设计 §2.4 的回退条款转 PocketBase
+4. **托管验证**：`git push` 自动部署 + 冷启动 + 持久盘三件事必须在真机上量过，才算满足「四条验收」
+5. **ADR-8/9/11/13** 四个收口决策（ADR-13 现在有第二个实测数字：1,793 条版本记录）
+6. 决定 F3：若后台编辑体验不值 790 MB，按设计 §2.4 的回退条款转 PocketBase

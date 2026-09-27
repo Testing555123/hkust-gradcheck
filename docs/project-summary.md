@@ -51,12 +51,19 @@
 | # | 是什么 | 状态 | 在哪 |
 |---|---|---|---|
 | A | **线上旧系统** | 正常运行，**未被本次任何改动触碰** | `origin/main` = `67effce`，Cloudflare Pages 部署静态站 |
-| B | **分支上的结构改造** | 10 个提交，**未 push** | `feat/online-v2`：领域层移进 `packages/domain`、根 npm workspaces、四道数据闸门、源格式规范化 |
-| C | **分支上的新后台（试用）** | 能跑、能浏览 255 份方案，但**与 A/B 都没有数据连线** | `apps/studio`（Payload 3.90.2 + Next 16 + MongoDB 适配器）+ 试用容器 `newone-payload-trial` |
+| B | **分支上的结构改造** | 13 个提交，**未 push** | `feat/online-v2`：领域层移进 `packages/domain`、根 npm workspaces、四道数据闸门、源格式规范化、单镜像构建 |
+| C | **分支上的新后台（试用）** | 能跑、能浏览 255 份方案，**且学生端已可改读它**（不再是孤岛，见下） | `apps/studio`（Payload 3.90.2 + Next 16 + MongoDB 适配器）+ 试用容器 `newone-payload-trial` |
 | D | **两份设计文档** | v1 已部分作废，v2 是当前依据 | `docs/superpowers/specs/2026-09-15-arch-refactor-design.md`（v1）、工作区 `online-graduation-check-design-v2.md`（v2） |
 
+**C 与学生的连线（2026-09-27 起）**：`apps/studio` 加了 `/api/site/*` 四类只读端点，
+`frontend` 用 `VITE_DATA_SOURCE=api` 一键换源；对拍实测 **258/258 项语义一致**
+（`index.json` + `courses.json` + `course_index.json` + **全部 255 份**方案树，`npm run site:parity`，4.5 秒）。
+默认值仍是 `static`，所以不设环境变量时行为与今天完全相同。
+**但连线只到一半**：后台改 `source` 不会重算 `derived`，而学生端读的是 `derived` ——
+要「保存即生效」还差 T9 双写回环（或把 1,300 行 Python 派生逻辑移植成 TS 并用 255 份产物做黄金对拍）。
+
 **所以对你的问题的完整回答**：是「旧服务照样 + 增加新后台」，但要点是
-① 新后台目前是个**孤岛**，它改了数据不会流到任何用户面前；
+① 新后台**已经能**把数据送到学生端（换源即得，且已逐份对拍证明数据没被换坏），但**改了还不算**（见上）；
 ② 旧服务的**行为**没变，但**代码布局**变了（领域引擎换了位置，靠别名重定向，79 个消费方一行未改）；
 ③ 权威源文件的**格式**被统一过一次（255 份全改），但实测重烘焙后成品只有 `meta.json` 一行时间戳变化 —— 即语义零变化。
 
@@ -71,6 +78,9 @@
 | 同上 | **撤回 v1 三条** | D1 全量重写、D6 管线改 TS、D9 用 Nuxt —— 分别改为并行对拍、管线保持 Python、学生端沿用现有 React SPA |
 | 2026-09-27 | **T2b** | 成绩单 PDF 的浏览器 IO 适配器（含 Vite 专有 `?url`）拆出领域层，否则后端一 import 就炸 |
 | 2026-09-27 | **ADR-12** | 「谁是格式权威」定案：255 份源统一为 `indent=2 + ensure_ascii=False + 整数值不写 22.0`，实测该形式是不动点 |
+| 2026-09-27 | **T7 走「复用」而非「移植」** | 派生逻辑实测 1,300 行 Python（combo 429 + 烘焙 740 + 分支 131），属领域文档 §8.4 排到最后、§8.1 要求原样带走的高风险动作 → 改为把烘焙成品整份搬进 `derived`，口径唯一留在 Python 侧 |
+| 2026-09-27 | **T11 换源用环境变量、默认不变** | `VITE_DATA_SOURCE` 不设时读静态文件，与今天逐字节相同；设 `api` 才走 `/api/site/*`。并行对拍的要求落到这里 |
+| 2026-09-27 | **两套写库者必须分库** | `sync_to_atlas.py` 与 Payload 都写名为 `programs`/`courses` 的集合，但字段形状与 `_id` 型别不同；单一 Atlas 免费库很容易把两者指到同处 → 在写库前探测 Payload 的标记集合并直接失败 |
 
 ## 6. 已知的坑与坏数据（不要当测试基准）
 
@@ -83,20 +93,26 @@
 
 ## 7. 还没做的事（按依赖顺序）
 
-1. **T7** `derived` 重算（combos / pool / order_index / source_ref）—— 顺带补齐 Payload 那 5 个空 collection
+1. **`source → derived` 自动重算**：T7 已把 255 份 `derived` 与 5 个空 collection 补齐（1,144 courses / 1,344 course-refs / 3 metas / 通识映射），
+   但后台改 `source` 后 `derived` 不会跟着变 —— 学生端读的是 `derived`，所以「改数据可见」目前只在改 `derived` 时成立。
 2. **ADR-10** 归一化规则目前有两份实现（Python 烘焙器 / TS `source-pdf.ts`）—— T9 前必须收敛
-3. **T9** 双写回环 —— 做完才谈得上「后台改数据能上线」
+3. **T9** 双写回环 —— 做完才谈得上「后台改数据能上线」；它同时也是上面第 1 条的两条解路之一（另一条是移植 1,300 行 Python，昂贵）
 4. **F3 的裁决**：后台改一棵 1,718 行的 JSON 树，体验与今天用 VS Code 改文件**无实质差别**。
    为 Payload 付出的代价是已量的：`node_modules` 790 MB、双 React（19 与 18 共存）、上游 1,948 个版本 / 2026 年已发 344 次。
    **收益尚未证明** —— 这是当前最大的开放问题。
-5. 其余收口：ADR-8 双 lockfile、ADR-9 `packages/domain` 不在 eslint 覆盖内、ADR-11 匿名读一刀切、ADR-13 seed 写放大版本表。
+5. **自动部署**：单镜像已能构建并跑起（`Dockerfile` + `/admin` 200），但 `git push` 即上线还没验过；
+   且免费托管要么不给持久磁盘（重启丢数据），要么不给常驻（冷启动），四条验收里「重启不丢」与「自动部署」尚未同时成立。
+6. 其余收口：ADR-8 双 lockfile、ADR-9 `packages/domain` 不在 eslint 覆盖内、ADR-11 匿名读一刀切、ADR-13 seed 写放大版本表（实测版本表 1,026 条）。
 
 ## 8. 一分钟自检（任何人在任何机器上都能跑）
 
 ```bash
-npm run verify        # 六道门：数据基线 · 平移忠诚度 · 源格式 · 数据断言 · 112 单测 · 构建
+npm run verify        # 八道门：数据基线 · 平移忠诚度 · 源格式 · 数据断言 · 领域层类型 · 112 单测 · 前端构建 · 后台构建
 npm run probe:audit   # 在 Node 里跑领域引擎，看 §4.1/§4.2/§4.4 三条口径的真实数字
+npm run site:parity   # 需要 studio 在跑：258 项逐份对拍 API 数据源 vs 静态文件（4.5 秒）
 ```
 
 `verify` 里的「平移忠诚度」门会拿 `67effce`（引擎搬家之前）逐字比对现在的 21 个领域文件，
 这是「换栈没换口径」这句话的可证伪版本。
+
+`site:parity` 不在 `verify` 里：它要一个在跑的 studio 加已入库的数据，而 `verify` 必须能在空库里跑通。

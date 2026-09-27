@@ -50,6 +50,14 @@ _CREDIT_RE = re.compile(r"(\d+(?:\.\d+)?)")
 PROGRAM_KEY_FIELDS = ("year", "code")
 COURSE_KEY_FIELDS = ("code",)
 
+# Payload（@payloadcms/db-mongodb）在自己的資料庫裡必然建立這些集合。
+# 本腳本寫的 programs/courses 與 Payload 的同名集合**欄位形狀不同**（本腳本把
+# groups 攤平在頂層、無 source/derived；_id 也是 ObjectId 而非 Payload 的字串 id），
+# 同一個資料庫並存時 $set 會互相覆寫頂層欄位。單一 Atlas 免費庫很容易把兩邊指到同處，
+# 故寫入前先設閘直接失敗。
+PAYLOAD_MARKERS = frozenset(
+    {"_programs_versions", "payload-migrations", "payload-locked-documents"}
+)
 
 # ── 衍生欄位（與新倉庫 packages/shared 的 kindOf 規則必須一致）──────────────
 def kind_of(program_code: str) -> str:
@@ -370,6 +378,14 @@ def sync_to_mongo(uri: str, db_name: str, payload: dict, prune: bool) -> dict:
     client = MongoClient(uri, serverSelectionTimeoutMS=15_000, appname="grad-check-sync")
     try:
         database = client[db_name]
+        owned = sorted(PAYLOAD_MARKERS.intersection(database.list_collection_names()))
+        if owned:
+            raise RuntimeError(
+                f"資料庫 {db_name!r} 已由 Payload 占有（偵測到 {owned}），拒絕寫入。"
+                "兩者同名集合的欄位形狀不同、_id 型別也不同，同庫會互相覆寫。"
+                f"請把本腳本的目標庫（MONGODB_DB，預設 {DEFAULT_DB}）"
+                "與 Payload 的 DATABASE_URL 指到不同資料庫。"
+            )
         programs = database["programs"]
         courses = database["courses"]
         meta = database["meta"]
@@ -475,7 +491,12 @@ def main(argv: Sequence[str] | None = None) -> int:
         return 0
 
     print(f"[info] 同步至資料庫 {args.db}（prune={args.prune}）")
-    stats = sync_to_mongo(args.uri, args.db, payload, args.prune)
+    try:
+        stats = sync_to_mongo(args.uri, args.db, payload, args.prune)
+    except RuntimeError as error:
+        # 目前唯一來源是「目標庫歸 Payload 所有」這道閘：寧可紅，不可把兩種欄位形狀混進同一集合
+        print(f"[error] {error}", file=sys.stderr)
+        return 1
     print(
         "[ok] 寫入完成："
         f"方案 新增 {stats['programs_upgraded']} / 更新 {stats['programs_modified']}，"

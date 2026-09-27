@@ -13,6 +13,7 @@
     "generate:types": "cross-env NODE_OPTIONS=--no-deprecation payload generate:types",
     "migrate:create": "cross-env NODE_OPTIONS=--no-deprecation payload migrate:create",
     "seed": "cross-env NODE_OPTIONS=--no-deprecation tsx src/seed.ts",
+    "ingest": "cross-env NODE_OPTIONS=--no-deprecation tsx src/ingest-baked.ts",
     "gates:selftest": "cross-env NODE_OPTIONS=--no-deprecation tsx src/gate-selftest.ts"
   },
   "dependencies": {

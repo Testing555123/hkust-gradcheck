@@ -25,7 +25,9 @@ export default defineConfig({
     host: '0.0.0.0',
     allowedHosts: true,
     proxy: {
-      '/api': 'http://127.0.0.1:8000',
+      // 默认仍指向原有本地后端（8000），不改变既有开发习惯；
+      // 用 API 数据源时 `STUDIO_ORIGIN=http://127.0.0.1:3200 npm run dev` 指向 Payload。
+      '/api': process.env.STUDIO_ORIGIN || 'http://127.0.0.1:8000',
     },
   },
   test: {

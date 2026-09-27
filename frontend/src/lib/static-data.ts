@@ -1,8 +1,12 @@
 /**
- * 静态数据源：所有数据由 scripts/export_static_data.py 在构建前预生成到 public/data/。
+ * 数据源：两种形态，形状完全一致，因此上层 queries.ts 与所有核算逻辑无需改动。
  *
- * 生产（Cloudflare Pages）与本地 dev（Vite 直接托管 public/）读的是同一份文件，
- * 因此不存在「本地能跑、线上缺数据」的漂移。
+ * - `static`（默认）：读 scripts/export_static_data.py 预生成的 public/data/。
+ *   生产（Cloudflare Pages）与本地 dev 读同一份文件，不存在「本地能跑、线上缺数据」的漂移。
+ * - `api`：读同一容器里的 /api/site/*（Payload + DB）。
+ *
+ * 两者并存是刻意的：并行对拍（裁决 C3）要求旧路径随时可用，
+ * 新链路出问题时把 VITE_DATA_SOURCE 改回 static 即可回退，不必回滚代码。
  */
 
 import type {
@@ -17,8 +21,17 @@ const BASE = import.meta.env.BASE_URL.endsWith("/")
   ? import.meta.env.BASE_URL
   : `${import.meta.env.BASE_URL}/`;
 
+const SOURCE = import.meta.env.VITE_DATA_SOURCE ?? "static";
+
 export function dataUrl(path: string): string {
-  return `${BASE}data/${path}`;
+  if (SOURCE !== "api") return `${BASE}data/${path}`;
+  // API 形态：静态文件名 -> 端点。program 树需要拆出 year/code。
+  if (path === "index.json") return `${BASE}api/site/index`;
+  if (path === "courses.json") return `${BASE}api/site/courses`;
+  if (path === "course_index.json") return `${BASE}api/site/course-index`;
+  const tree = path.match(/^programs\/(.+)_(.+)\.json$/);
+  if (tree) return `${BASE}api/site/program/${tree[1]}/${tree[2]}`;
+  throw new Error(`未知的数据路径形态：${path}`);
 }
 
 async function fetchJson<T>(path: string): Promise<T> {
