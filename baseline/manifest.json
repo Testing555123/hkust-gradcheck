@@ -1,5 +1,5 @@
 {
-  "baseline_commit": "4ac9399c391f62816256921bb68c55a2d64cc1df",
+  "baseline_commit": "3ba8c36d6e9dfc5029c15af66844b50ed53c99b6",
   "file_count": 515,
   "files": {
     "courses.db": "6617495b8520fcbf4b5e73bd333050551e6e371e",
@@ -519,5 +519,6 @@
     "pipeline/output/school/SREQ-SSCI/requirements_2026-27_SREQ-SSCI.json": "977684a7b0dab2bf69d811e731efe959ef71bca2"
   },
   "note": "blob SHA 取自 git HEAD；刻意不含时间戳以保证可复现",
-  "schema_version": 1
+  "port_baseline_commit": "67effce",
+  "schema_version": 2
 }

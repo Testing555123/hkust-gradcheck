@@ -76,7 +76,10 @@ def baseline_ref() -> str:
               "平移一旦提交，HEAD 里已无 frontend/src/lib/*，本闸门会因比对数不足而失败", file=sys.stderr)
         return git("rev-parse", "HEAD").strip()
     try:
-        return str(json.loads(manifest.read_text(encoding="utf-8"))["baseline_commit"])
+        doc = json.loads(manifest.read_text(encoding="utf-8"))
+        # 平移基准必须用 port_baseline_commit（钉死在"移动之前"），
+        # 不能用 baseline_commit —— 后者会随数据提交有意前移，把本闸门推到错误的树上。
+        return str(doc.get("port_baseline_commit") or doc["baseline_commit"])
     except Exception as err:  # noqa: BLE001
         # 绝不静默降级：上一版这里用 bare except 吞掉了 NameError，
         # 结果比对基准悄悄变成 HEAD，闸门假绿了一整轮。

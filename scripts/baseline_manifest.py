@@ -27,6 +27,13 @@ def git(*args):
                           capture_output=True, text=True).stdout
 
 
+# 两个语义必须分开，不能共用一个字段（实测踩过：数据基线因 ADR-12 规范化而前移，
+# 结果把"平移忠诚度"的比对基准也一起推到了移动之后的提交，闸门当场失效）。
+#   baseline_commit      —— 数据 blob 的基准，可随数据提交有意重钉
+#   port_baseline_commit —— 领域层平移的比对基准，钉死在"移动之前"的那个提交，不随 gen 移动
+PORT_BASELINE = "67effce"
+
+
 def build():
     files = {}
     for line in git("ls-tree", "-r", "--format=%(path)\t%(objectname)", "HEAD").splitlines():
@@ -34,7 +41,8 @@ def build():
         if (path.startswith(SCOPE) or path == "courses.db") and path != EXCLUDE:
             files[path] = sha
     head = git("rev-parse", "HEAD").strip()
-    doc = {"schema_version": 1, "baseline_commit": head, "file_count": len(files),
+    doc = {"schema_version": 2, "baseline_commit": head, "port_baseline_commit": PORT_BASELINE,
+           "file_count": len(files),
            "note": "blob SHA 取自 git HEAD；刻意不含时间戳以保证可复现", "files": files}
     return head, files, json.dumps(doc, indent=2, sort_keys=True, ensure_ascii=False) + "\n"
 
