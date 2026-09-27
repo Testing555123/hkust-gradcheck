@@ -2,7 +2,7 @@
   "name": "@newone/studio",
   "version": "0.0.0",
   "private": true,
-  "description": "资料服务与校对后台（Payload 3 + Next.js + MongoDB 适配器）。源自 payloadcms/payload v3.90.2 官方 blank 模板（MIT），已裁掉本仓库未用的 e2e/Media/sharp。",
+  "description": "资料服务与校对后台（Payload 3 + Next.js + PostgreSQL 适配器）。源自 payloadcms/payload v3.90.2 官方 blank 模板（MIT），已裁掉本仓库未用的 e2e/Media/sharp。",
   "license": "MIT",
   "type": "module",
   "scripts": {
@@ -11,13 +11,15 @@
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
     "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
     "generate:types": "cross-env NODE_OPTIONS=--no-deprecation payload generate:types",
+    "migrate": "cross-env NODE_OPTIONS=--no-deprecation payload migrate",
+    "migrate:status": "cross-env NODE_OPTIONS=--no-deprecation payload migrate:status",
     "migrate:create": "cross-env NODE_OPTIONS=--no-deprecation payload migrate:create",
     "seed": "cross-env NODE_OPTIONS=--no-deprecation tsx src/seed.ts",
     "ingest": "cross-env NODE_OPTIONS=--no-deprecation tsx src/ingest-baked.ts",
     "gates:selftest": "cross-env NODE_OPTIONS=--no-deprecation tsx src/gate-selftest.ts"
   },
   "dependencies": {
-    "@payloadcms/db-mongodb": "3.90.2",
+    "@payloadcms/db-postgres": "3.90.2",
     "@payloadcms/next": "3.90.2",
     "@payloadcms/richtext-lexical": "3.90.2",
     "@payloadcms/ui": "3.90.2",

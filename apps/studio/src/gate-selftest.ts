@@ -21,7 +21,7 @@ const scratch = await payload.create({
   collection: 'programs',
   data: { year: '0000-00', code: 'ZZZ-SELFTEST', category: 'major', source: base.source as Program["source"] },
 })
-const docId = scratch.id as string
+const docId = scratch.id
 
 type Case = { name: string; mode: 'create' | 'update'; data: Record<string, unknown>; expect: string | null }
 const CASES: Case[] = [

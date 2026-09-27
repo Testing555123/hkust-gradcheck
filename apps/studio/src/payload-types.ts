@@ -94,7 +94,7 @@ export interface Config {
     'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
   };
   db: {
-    defaultIDType: string;
+    defaultIDType: number;
   };
   fallbackLocale: null;
   globals: {};
@@ -132,7 +132,7 @@ export interface UserAuthOperations {
  * via the `definition` "users".
  */
 export interface User {
-  id: string;
+  id: number;
   updatedAt: string;
   createdAt: string;
   email: string;
@@ -158,7 +158,7 @@ export interface User {
  * via the `definition` "programs".
  */
 export interface Program {
-  id: string;
+  id: number;
   year: string;
   code: string;
   category: 'major' | 'minor' | 'extended' | 'school';
@@ -209,7 +209,7 @@ export interface Program {
  * via the `definition` "courses".
  */
 export interface Course {
-  id: string;
+  id: number;
   code: string;
   title?: string | null;
   /**
@@ -228,7 +228,7 @@ export interface Course {
  * via the `definition` "course-refs".
  */
 export interface CourseRef {
-  id: string;
+  id: number;
   courseCode: string;
   refs?:
     | {
@@ -251,7 +251,7 @@ export interface CourseRef {
  * via the `definition` "common-core-maps".
  */
 export interface CommonCoreMap {
-  id: string;
+  id: number;
   admissionYear: string;
   map?:
     | {
@@ -270,7 +270,7 @@ export interface CommonCoreMap {
  * via the `definition` "validation-issues".
  */
 export interface ValidationIssue {
-  id: string;
+  id: number;
   year?: string | null;
   code?: string | null;
   type: 'credits_mismatch' | 'missing_in_courses_db' | 'combo_unresolved' | 'pipeline_conflict' | 'invariant_failed';
@@ -292,7 +292,7 @@ export interface ValidationIssue {
  * via the `definition` "metas".
  */
 export interface Meta {
-  id: string;
+  id: number;
   key: string;
   generatedAt?: string | null;
   counts?:
@@ -312,7 +312,7 @@ export interface Meta {
  * via the `definition` "payload-kv".
  */
 export interface PayloadKv {
-  id: string;
+  id: number;
   key: string;
   data:
     | {
@@ -329,40 +329,40 @@ export interface PayloadKv {
  * via the `definition` "payload-locked-documents".
  */
 export interface PayloadLockedDocument {
-  id: string;
+  id: number;
   document?:
     | ({
         relationTo: 'users';
-        value: string | User;
+        value: number | User;
       } | null)
     | ({
         relationTo: 'programs';
-        value: string | Program;
+        value: number | Program;
       } | null)
     | ({
         relationTo: 'courses';
-        value: string | Course;
+        value: number | Course;
       } | null)
     | ({
         relationTo: 'course-refs';
-        value: string | CourseRef;
+        value: number | CourseRef;
       } | null)
     | ({
         relationTo: 'common-core-maps';
-        value: string | CommonCoreMap;
+        value: number | CommonCoreMap;
       } | null)
     | ({
         relationTo: 'validation-issues';
-        value: string | ValidationIssue;
+        value: number | ValidationIssue;
       } | null)
     | ({
         relationTo: 'metas';
-        value: string | Meta;
+        value: number | Meta;
       } | null);
   globalSlug?: string | null;
   user: {
     relationTo: 'users';
-    value: string | User;
+    value: number | User;
   };
   updatedAt: string;
   createdAt: string;
@@ -372,10 +372,10 @@ export interface PayloadLockedDocument {
  * via the `definition` "payload-preferences".
  */
 export interface PayloadPreference {
-  id: string;
+  id: number;
   user: {
     relationTo: 'users';
-    value: string | User;
+    value: number | User;
   };
   key?: string | null;
   value?:
@@ -395,7 +395,7 @@ export interface PayloadPreference {
  * via the `definition` "payload-migrations".
  */
 export interface PayloadMigration {
-  id: string;
+  id: number;
   name?: string | null;
   batch?: number | null;
   updatedAt: string;

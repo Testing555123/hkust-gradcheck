@@ -75,7 +75,7 @@ async function upsert(payload: Payload, category: string, file: string) {
     provenance: { origin: 'pipeline/output', file: path.relative(REPO, file).replace(/\\/g, '/') },
   }
   if (existing.docs.length) {
-    await payload.update({ collection: 'programs', id: existing.docs[0].id as string, data })
+    await payload.update({ collection: 'programs', id: existing.docs[0].id, data })
     return 'updated' as const
   }
   await payload.create({ collection: 'programs', data })
