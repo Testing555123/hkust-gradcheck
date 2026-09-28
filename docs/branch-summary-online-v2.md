@@ -17,7 +17,7 @@
 | 提交 | 内容 | 你如何检视 | 实测证据 |
 |---|---|---|---|
 | `4348220` | T0–T3：领域层从 `frontend/src/lib` 移到 `packages/domain`；根 npm workspaces；黄金基准 + 平移忠诚度两道闸门；CI 改到仓库根跑 | `git show --stat 4348220`（22 个文件被 git 识别为 **rename，相似度 92–100%**） | 515 个数据文件 blob 一致；21 个文件逻辑行与 `67effce` 逐字一致 |
-| `5065933` | T4a/T5/T4b：`apps/studio`（Payload 3.90.2 + Next 16 + Mongo 适配器，官方 blank 模板改写）；seed 灌 255 份；§5 隐私与结构闸门落到 DB 写入口 | `http://localhost:3200/admin` → Collections → Programs | seed 255 建档 0 失败；`source_pages` 1753/1753；分支方案 76/76 |
+| `5065933` | T4a/T5/T4b：`apps/studio`（Payload 3.90.2 + Next 16 + Postgres 适配器，连 Neon，官方 blank 模板改写）；seed 灌 255 份；§5 隐私与结构闸门落到 DB 写入口 | `http://localhost:3200/admin` → Collections → Programs | seed 255 建档 0 失败；`source_pages` 1753/1753；分支方案 76/76 |
 | `542f362` | 修两处**会让闸门空转**的缺陷（比对基准用 HEAD 导致平移提交后比 0 个文件仍报 ok；gen 会把脏数据升格为基线） | `python scripts/check_port_fidelity.py` 藏文件试试 | 「应比对 21、实到 N 即 FAIL」防线生效 |
 | `227f999` | 独立评审推翻我 4 条 ✅ 后逐条复核并修 5 处（覆盖率造假、自指下限、自测污染真实数据等） | 见设计 v2 §14 表格 | 篡改被搬到前端的代码块仍报红并点名 |
 | `04778e2` `dbf4354` | **T2b**：成绩单 PDF 的浏览器 IO 适配器（`File` API + Vite 专有 `?url`）移出领域层；`packages/domain` 摘掉 `pdfjs-dist`、`vite` 两个 devDep | `npm -w @newone/domain test` 独立跑通即证明 | **255/255 份方案在 Node 里跑完，0 崩溃** |
@@ -25,7 +25,7 @@
 | `3ba8c36` `5e40880` | 重钉黄金基准；把「数据基线」与「平移基准」拆成两个字段（manifest schema 2） | 看 `baseline/manifest.json` 的 `baseline_commit` vs `port_baseline_commit` | verify 全链 exit 0 |
 | `7daf68e` `b3f8f40` | 两份摘要文档（本文件与 `docs/project-summary.md`）+ `probe:audit` 检视工具 | 直接读 | — |
 | `67900b5` | **单镜像**：`Dockerfile`（两阶段 + `output: 'standalone'` + HEALTHCHECK）；修 5 个类型错误；把 `build:studio` 补进 `verify` | `docker build -t newone-studio . && docker run -p 3300:8000 newone-studio` | 镜像内 `/admin` 200；`verify` 从 6 道门变 8 道门 |
-| 本提交 | **T7（复用路线）**：`ingest-baked.ts` 把烘焙成品整份搬进 `derived` 并补齐 5 个 collection。**T11**：`/api/site/*` 四类只读端点 + `VITE_DATA_SOURCE` 换源。**闸门分库**：`sync_to_atlas.py` 写库前探测 Payload 标记集合 | `npm run site:parity`；`python scripts/sync_to_atlas.py --uri mongodb://127.0.0.1:27019 --db <Payload库>` 应 exit 1 | **258/258 项语义一致**（4.5 秒）；DB 计数 255/1144/1344/3/1；分库闸门在真实 mongo 上 exit 1 且**零写入**，空库不误伤（255+1144 正常写入） |
+| 本提交 | **T7（复用路线）**：`ingest-baked.ts` 把烘焙成品整份搬进 `derived` 并补齐 5 个 collection。**T11**：`/api/site/*` 四类只读端点 + `VITE_DATA_SOURCE` 换源。**闸门分库**（sync_to_atlas.py 已随 grad-check-web 方案撤回而移除）：原设计在写库前探测 Payload 标记集合以避免同库冲突 | `npm run site:parity` | **258/258 项语义一致**（4.5 秒）；DB 计数 255/1144/1344/3/1 |
 
 ## 三条口径规则，现在能被你亲手验（这是 `probe:audit` 的全部意义）
 
@@ -73,7 +73,7 @@
 |---|---|---|
 | 学生端 SPA | `http://localhost:5173/` | `netstat -ano \| findstr :5173` → `taskkill /F /PID <pid>` |
 | Payload 校对后台 | `http://localhost:3200/admin`（`dev@newone.local` / `newone-trial-2026`，一次性本地值） | 同上，端口 3200 |
-| 试用 MongoDB | 容器 `newone-payload-trial`，`127.0.0.1:27019`，库 `newone_studio` | `docker rm -fv newone-payload-trial` |
+| 试用 Postgres / Neon | 本机容器或 Neon 项目，库 `newone_studio` | 停容器：`docker rm -fv newone-payload-trial` |
 
 **让学生端改读新后台**（T11 的两条命令，默认不设 = 今天）：
 

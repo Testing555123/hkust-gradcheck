@@ -50,9 +50,9 @@
 
 | # | 是什么 | 状态 | 在哪 |
 |---|---|---|---|
-| A | **线上旧系统** | 正常运行，**未被本次任何改动触碰** | `origin/main` = `67effce`，Cloudflare Pages 部署静态站 |
+| A | **线上系统** | 正常运行，学生端已由 Cloudflare Pages 迁至 Vercel（`newone-web`） | 早期 `origin/main` = `67effce` 为 Cloudflare Pages；现统一走 Vercel |
 | B | **分支上的结构改造** | 13 个提交，**未 push** | `feat/online-v2`：领域层移进 `packages/domain`、根 npm workspaces、四道数据闸门、源格式规范化、单镜像构建 |
-| C | **分支上的新后台（试用）** | 能跑、能浏览 255 份方案，**且学生端已可改读它**（不再是孤岛，见下） | `apps/studio`（Payload 3.90.2 + Next 16 + MongoDB 适配器）+ 试用容器 `newone-payload-trial` |
+| C | **分支上的新后台（试用）** | 能跑、能浏览 255 份方案，**且学生端已可改读它**（不再是孤岛，见下） | `apps/studio`（Payload 3.90.2 + Next 16 + Postgres 适配器，连 Neon）+ 试用库 |
 | D | **两份设计文档** | v1 已部分作废，v2 是当前依据 | `docs/superpowers/specs/2026-09-15-arch-refactor-design.md`（v1）、工作区 `online-graduation-check-design-v2.md`（v2） |
 
 **C 与学生的连线（2026-09-27 起）**：`apps/studio` 加了 `/api/site/*` 四类只读端点，
@@ -80,7 +80,7 @@
 | 2026-09-27 | **ADR-12** | 「谁是格式权威」定案：255 份源统一为 `indent=2 + ensure_ascii=False + 整数值不写 22.0`，实测该形式是不动点 |
 | 2026-09-27 | **T7 走「复用」而非「移植」** | 派生逻辑实测 1,300 行 Python（combo 429 + 烘焙 740 + 分支 131），属领域文档 §8.4 排到最后、§8.1 要求原样带走的高风险动作 → 改为把烘焙成品整份搬进 `derived`，口径唯一留在 Python 侧 |
 | 2026-09-27 | **T11 换源用环境变量、默认不变** | `VITE_DATA_SOURCE` 不设时读静态文件，与今天逐字节相同；设 `api` 才走 `/api/site/*`。并行对拍的要求落到这里 |
-| 2026-09-27 | **两套写库者必须分库** | `sync_to_atlas.py` 与 Payload 都写名为 `programs`/`courses` 的集合，但字段形状与 `_id` 型别不同；单一 Atlas 免费库很容易把两者指到同处 → 在写库前探测 Payload 的标记集合并直接失败 |
+| 2026-09-27 | **两套写库者必须分库**（注：`sync_to_atlas.py` 已随 grad-check-web 方案撤回而移除，本决策当时针对该链路） | `sync_to_atlas.py` 与 Payload 都写名为 `programs`/`courses` 的集合，但字段形状与 `_id` 型别不同；单一 Atlas 免费库很容易把两者指到同处 → 在写库前探测 Payload 的标记集合并直接失败 |
 
 ## 6. 已知的坑与坏数据（不要当测试基准）
 

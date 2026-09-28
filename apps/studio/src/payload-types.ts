@@ -74,6 +74,7 @@ export interface Config {
     'common-core-maps': CommonCoreMap;
     'validation-issues': ValidationIssue;
     metas: Meta;
+    'source-chunks': SourceChunk;
     'payload-kv': PayloadKv;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
@@ -88,6 +89,7 @@ export interface Config {
     'common-core-maps': CommonCoreMapsSelect<false> | CommonCoreMapsSelect<true>;
     'validation-issues': ValidationIssuesSelect<false> | ValidationIssuesSelect<true>;
     metas: MetasSelect<false> | MetasSelect<true>;
+    'source-chunks': SourceChunksSelect<false> | SourceChunksSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
@@ -309,6 +311,26 @@ export interface Meta {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "source-chunks".
+ */
+export interface SourceChunk {
+  id: number;
+  programKey: string;
+  chunkId: string;
+  page: number;
+  ordinal: number;
+  charStart?: number | null;
+  charEnd?: number | null;
+  sourcePdf?: string | null;
+  /**
+   * 切片原文，用于人工复核时与抽取结论左右对照
+   */
+  text?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-kv".
  */
 export interface PayloadKv {
@@ -358,6 +380,10 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'metas';
         value: number | Meta;
+      } | null)
+    | ({
+        relationTo: 'source-chunks';
+        value: number | SourceChunk;
       } | null);
   globalSlug?: string | null;
   user: {
@@ -501,6 +527,22 @@ export interface MetasSelect<T extends boolean = true> {
   key?: T;
   generatedAt?: T;
   counts?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "source-chunks_select".
+ */
+export interface SourceChunksSelect<T extends boolean = true> {
+  programKey?: T;
+  chunkId?: T;
+  page?: T;
+  ordinal?: T;
+  charStart?: T;
+  charEnd?: T;
+  sourcePdf?: T;
+  text?: T;
   updatedAt?: T;
   createdAt?: T;
 }

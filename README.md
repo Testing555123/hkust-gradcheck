@@ -33,7 +33,7 @@ flowchart LR
     PG --> FE
     CS --> FE
     FE <--> LS[(localStorage 已修/计划选择)]
-    FE --> PAGES[Cloudflare Pages 静态托管]
+    FE --> PAGES[Vercel 静态托管]
 ```
 
 **核心设计**：LLM 只在离线管线中出现。管线产物在**构建前**被固化成静态 JSON，网站运行时直接 `fetch`——响应毫秒级、零 LLM 成本、零后端、结果稳定可测试。
@@ -49,7 +49,7 @@ flowchart LR
 | 数据 | 静态 JSON（`scripts/export_static_data.py` 从 `pipeline/output/` + `courses.db` 生成） |
 | 管线 | Python 3.12 + Pydantic Schema + 可插拔 parser（MinerU API / MinerU 本地 / pymupdf）+ OpenAI 兼容 LLM |
 | 测试 | vitest（前端 112 例 / 9 文件）· pytest（管线 5 例 + 导出脚本 28 例）· `export_static_data.py --check`（数据断言） |
-| CI / 部署 | GitHub Actions（lint / 单测 / 构建 / 数据一致性 / 管线与导出脚本单测）+ Cloudflare Pages（Git 集成） |
+| CI / 部署 | GitHub Actions（lint / 单测 / 构建 / 数据一致性 / 管线与导出脚本单测）+ Vercel（Git 集成） |
 
 ---
 
@@ -200,7 +200,7 @@ cd pipeline
 
 ## 6. CI（`.github/workflows/ci.yml`）
 
-**职责**：质量门禁。部署由 Cloudflare Pages 的 Git 集成负责，CI 只负责拦住坏提交。
+**职责**：质量门禁。部署由 Vercel 的 Git 集成负责，CI 只负责拦住坏提交。
 
 **实现原理**：三个并行 job。
 
@@ -210,47 +210,76 @@ cd pipeline
 | `pipeline` | Python 3.12 + 装管线依赖 → `pytest tests -q`（在 `pipeline/` 下）→ `pytest scripts/tests -q`（OR 组合解析规则） |
 | `data` | `export_static_data.py --check`（255/1144/四学年断言）→ 重新导出后 `git diff --quiet` 断言 `frontend/public/data` 与 `pipeline/output` 一致；忘记导出会在 PR 上直接报红 |
 
-## 7. 部署（Cloudflare Pages）
+# 7. 端口与接口使用说明
 
-**职责**：全站纯静态托管，push 即上线，无服务器、无冷启动、无需任何 Token/Secret。
+技术向速查：本系统对外暴露的全部端口/端点，逐一说明用途、访问方式与返回结构。内容均依据实际代码（`apps/studio/src/app/api/site/[...path]/route.ts`、`apps/studio/src/collections/audit-data.ts`、`frontend/src/lib/static-data.ts` 等）与部署手册（`docs/deploy-manual-cli.md`），未做推测。
 
-**实现原理**：预生成的 JSON + Vite 构建产物一起发布。
+> 注：本节按本分支（`feat/deploy-vercel-neon`）实际的 **Vercel + Neon** 部署撰写。学生端由 Vercel（`newone-web`）静态托管，后台与 API 由 Vercel（`newone-studio`）+ Neon Postgres 提供。
 
-| 构建配置项 | 值 |
-|-----------|-----|
-| Framework preset | `None`（或 Vite） |
-| Root directory | `frontend` |
-| Build command | `npm ci && npm run build` |
-| Build output directory | `dist` |
+## 7.1 学生端读取 API（`/api/site/*`）
 
-`frontend/public/_headers` 为 `/assets/*` 配置 immutable 长缓存。免费档额度：无限请求、每月 500 次构建、单文件上限 20 MB（本项目最大产物约 1 MB）。
+四个免登录只读端点，由 `apps/studio/src/app/api/site/[...path]/route.ts` 的 catch-all 路由实现；返回结构与 `frontend/public/data/*.json` 完全一致，因此前端只需换 URL、不必换形状。
 
-## 8. MongoDB Atlas 同步（`scripts/sync_to_atlas.py`）
+| 端点 | 用途 | 返回 |
+|------|------|------|
+| `GET /api/site/index` | 255 份方案元信息（program-index） | `metas` 集合中 `key=program-index` 的 `counts` |
+| `GET /api/site/course-index` | 课号 → 被引用方案的反向索引 | `metas` 集合中 `key=course-index` 的 `counts` |
+| `GET /api/site/courses` | 全部 1144 门课详情 | 数组，每项含 `code` / `title` / `credits`（官方原文串，如 `"3 Credit(s)"`、`"4-6"`）/ `prerequisites` / `offered_semesters` |
+| `GET /api/site/program/<year>/<code>` | 单份方案的要求树（派生形态） | 该方案的 `derived` 字段（含 `combos` / `pool` / `order_index` / `source_ref`） |
 
-**职责**：把 `frontend/public/data/` 的导出产物（255 份方案 + 1144 门课程 + 资料版本）幂等同步进 MongoDB，供新前端（Nuxt + NestJS）读取。本仓库自此的角色是「管线与数据源」。
+**错误码**（均返回 JSON `{ error: ... }`）：
+- `/api/site/index`、`/api/site/course-index` 对应 meta 尚未导入 → `503`（错误体 `program-index 未导入` / `course-index 未导入`）
+- `/api/site/program/<year>/<code>` 缺 `year` 或 `code` → `400`；找到方案但无 `derived` → `404`（错误体 `无 <year> <code> 的派生数据`）
+- 处理过程中异常 → `500`（错误体为异常 message）
+- 其它未知路径 → `404`
 
-**实现原理**：
+**前端如何切换数据源**（`frontend/src/lib/static-data.ts`）：
+- 默认 `VITE_DATA_SOURCE` 未设置或 `= "static"` → 读取 `public/data/*.json`（静态快照，始终可用）。
+- `VITE_DATA_SOURCE=api` → 把 `data/*` 路径映射到同源 `/api/site/*`（生产由 `vercel.json` 反代到 studio）。
+- 两种模式并存是刻意设计：API 出问题时改回 `static` 即可回退，不必回滚代码。
 
-1. **读导出产物而非 `pipeline/output/`**：`public/data/` 才是完成组合规则（`combos`）、层级池（`pool`）、分支（`branch`）后处理的成品，同步层因此**零领域逻辑**。
-2. **无损搬运**：`combos` / `pool` / `branch` / `note` / `source_ref` 原样入库，不在数据库端重算 —— 未来任何规则要启用都不需要重新抽取（抽取有真实 API 费用）。
-3. **幂等**：以 `(year, code)` 与 `code` 为键 `bulk_write` upsert，可安全重跑；`--prune` 才删除已下线方案/课程（默认关闭）。
-4. **不变量即闸门**：写入前先跑 `check_invariants`（数量、组数、`meta.years` 总和、组合结构）与共用 JSON Schema（`../grad-check-web/packages/shared/schema/`，存在时才校验），任一失败即退出且**不写入任何数据**。
-5. **无 Secret 即跳过**：未设置 `MONGODB_URI` 时输出 `::notice::` 并以 0 退出，Atlas 尚未建好不会让 CI 变红。
+## 7.2 后台与管理端（Payload）
 
-```powershell
-# 只建構與校验，不连数据库
-python scripts/sync_to_atlas.py --dry-run
+基于 Payload 3.90.2 + Next.js 16，由 `apps/studio` 提供。
 
-# 实际同步（本机 Mongo 容器或 Atlas）
-$env:MONGODB_URI = "mongodb://localhost:27017"; python scripts/sync_to_atlas.py
+| 端口 / 端点 | 用途 | 访问方式 |
+|-------------|------|----------|
+| `/admin` | 管理后台，浏览 / 编辑 6 个集合 | 浏览器打开，登录后使用 |
+| `/api/[...slug]` | Payload REST API | 读：依集合 `access`（学生端数据集合均为 `read: () => true`，免登录）；写：需已登录 |
+| `/api/graphql` | GraphQL 端点 | 同 REST 权限模型 |
 
-# 同步并清理已下线资料
-python scripts/sync_to_atlas.py --prune
-```
+**六个集合**（`apps/studio/src/collections/audit-data.ts`）：`programs` / `courses` / `course-refs` / `common-core-maps` / `validation-issues` / `metas`。其中 `programs` 的 `beforeValidate` 钩子跑 §5 校验闸门，不符合规范的数据会被拒绝写入（不落成记录）。
 
-`data_version` 取「排序后（档名 + 内容哈希）的聚合哈希」前 16 位，供前端标记资料新鲜度与快取失效。
+**已知限制（务必知晓）**：来源 → 派生重算（T9）未实现。在后台改 `source` 字段**不会**自动重算 `derived`，API 返回的仍是旧 `derived`。要更新线上数据，必须回到管线重跑烘焙 + `npm run db:ingest`（见 7.3）。后台编辑体验等价于在 Monaco 编辑器里改 JSON，并非表单化。
 
-**关键文件**：`scripts/sync_to_atlas.py`（同步主脚本）、`scripts/requirements-sync.txt`（仅 `pymongo` + `jsonschema`，不与管线依赖混用）、`.github/workflows/sync-atlas.yml`（定时 + 产物变更自动触发）
+## 7.3 开发 / 运维端口
+
+**本地开发：**
+
+| 服务 | 地址 | 启动命令 | 依赖 |
+|------|------|----------|------|
+| 学生端 SPA | `http://localhost:5173/` | `npm -w frontend run dev` | 无（读静态数据） |
+| Studio 后台 | `http://localhost:3200/admin` | `npm -w @newone/studio run dev` | `DATABASE_URL`（本地或 Neon） |
+
+**生产（Vercel + Neon，详见 `docs/deploy-manual-cli.md`）：**
+- 学生端 `newone-web`：Vercel 项目，Root Directory = 仓库根，`buildCommand=npm run build`，`outputDirectory=frontend/dist`。`/api/site/*` 由仓库根同源 Serverless 函数 `api/site.js` 反代到 studio（外部 rewrite 在 Vercel 实测不生效，已弃用），浏览器视作同源，免 CORS。
+- Studio `newone-studio`：Vercel 项目，Root Directory = `apps/studio`，Build Command = `npm run migrate && npm run build`。
+- 数据库：Neon Postgres，连接串写入 `DATABASE_URL`。
+
+**数据流与灌数：**
+- 迁移：`npm run db:migrate`（`payload migrate --yes`）。需先确保 Neon 库为空库，否则会因 dev 模式标记弹交互提示而挂死。
+- 一键入库：`npm run db:init` = `db:migrate` + `db:seed`（灌 255 份方案）+ `db:ingest`（把烘焙成品搬进 `derived`）。三个脚本均幂等，可安全重跑。
+- 期望计数：programs=255 / courses=1144 / course_refs=1344 / metas=3 / derived=255。
+
+**环境变量：**
+
+| 变量 | 用途 | 必填 |
+|------|------|------|
+| `DATABASE_URL` | Neon Postgres 连接串（自带 `sslmode=require`） | studio 必需 |
+| `PAYLOAD_SECRET` | Payload 会话 / 加密密钥 | studio 必需 |
+| `VITE_DATA_SOURCE` | `api` 走实时接口，`static`（默认）走静态快照 | 学生端可选 |
+
+> 本机用 `vercel env pull` 取得的 `.env` 值会被双引号包裹，注入 Node 子进程前需去掉首尾引号，否则 pg 会把 host 解析成 `base` 而连不上。
 
 ---
 
@@ -291,15 +320,12 @@ npm run dev    # http://localhost:5173
 # 前端（112 例 / 9 文件）
 cd frontend; npm test; npm run lint
 
-# 管线 + 脚本（5 例 + 47 例：组合解析 28 + Atlas 同步 19）
+# 管线 + 脚本（5 例 + 28 例：组合解析 28）
 cd pipeline; ..\.venv\Scripts\python.exe -m pytest tests -q
 ..\.venv\Scripts\python.exe -m pytest scripts/tests -q
 
 # 静态数据完整性断言
 python scripts/export_static_data.py --check
-
-# 同步前的完整校验（不连数据库）
-python scripts/sync_to_atlas.py --dry-run
 ```
 
 # 故障排查
@@ -341,19 +367,11 @@ pipeline/          离线管线：parsers（可插拔解析）/ llm_extract / cr
                    reports/  学分差异与分支审核报告（gitignore）
 scripts/           export_static_data.py —— 管线产物 + courses.db → 前端静态数据
                    combo_rules.py —— 官方 Note 的 OR 组合确定性解析（纯函数）
-                   sync_to_atlas.py —— 导出产物 → MongoDB（幂等 upsert + 不变量闸门）
-                   requirements-sync.txt —— 同步用途的 Python 依赖
-                   tests/ —— 解析规则与同步逻辑单测
+                   tests/ —— 解析规则单测
 courses.db         官方课程库 1144 门课（只读原始数据）
 unpress_pdf/       官方培养方案 PDF 与爬虫索引（本地独有，已 gitignore）
 .github/workflows/ CI：frontend / pipeline / data 三个门禁
-                   sync-atlas.yml：产物 → MongoDB Atlas 同步（定时 / 产物变更触发）
 ```
-
-> **与主站的关系**：前后端分离的新站（Nuxt + NestJS + MongoDB）位于同级目录 `../grad-check-web/`，
-> 它只透过 MongoDB 与共用的 JSON Schema 与本仓库耦合。本仓库的产物是唯一事实来源，
-> 新站不含任何管线代码。跨语言契约（`program/course/meta.schema.json`）定义在新仓库的
-> `packages/shared/schema/`，由本仓库的同步脚本在校验时消费。
 
 # 已知约束
 
@@ -364,6 +382,3 @@ unpress_pdf/       官方培养方案 PDF 与爬虫索引（本地独有，已 g
 - **组合解析的边界**：散文体（`... level 3 or above ... exempted`、`Courses from the specified list, of which at least 2 courses ...`）一律降级为官方说明原文，当前 `combos_unparsed.md` 已清零；但符号族（`+` `/` `one of` / 相邻小写 `or`）覆盖面更广、误判风险也更高，**26 条识别结果列在 `pipeline/reports/combos_parsed.md` 供抽查**（两份报告均需在本机跑一次导出生成，`pipeline/reports/` 未入库）。误判成组合会直接算错学分，比漏识别严重——新增句式请先补 `scripts/tests/test_combo_rules.py` 的用例再改规则。
 - **符号族解析会在一行中部截断**：表达式中间遇到英文单词（如 `... + capstone EMIA 4990 (0) or EMIA 4991 (3) + ...` 里的 `capstone`）即停止，只取前半段（这是刻意的保守设计）。因此 EXTM 系的「核心要求」行目前只解析到第一个散文词为止，后续 `one of` 段仍按平铺展示。
 - **总览页与附加要求卡的「门数」仍是平铺口径**：只有要求明细页改用有效门数（组合按 1 门计），`OverviewPage` / `AttachedAuditCard` 的门数暂按 `group.courses.length` 显示，后续可统一为 `effectiveCourseCount`。
-- **同步脚本不建索引**：MongoDB 索引由 API 端（Mongoose `autoIndex`）建立，避免索引定义分散两处产生漂移。若日後改为在资料库端建索引，请同时移除 API 的 `autoIndex`。
-- **`jsonschema` 校验是可选加强项**：新仓库不在预期路径时（例如本仓库单独 checkout 的 CI）会自动略过，不视为失败；不变量校验（数量/组数/组合结构）则永远执行。
-- **官方课程库存在范围课号**（`ENGG2991-2993`、`SBMT2100-2110`、`HUMA2000-2001` 等 6 个）：同步时取其起首课号的学科与级别（`ENGG2991-2993` → `ENGG` / 2991），否则这些课会从学科与级别筛选中消失。

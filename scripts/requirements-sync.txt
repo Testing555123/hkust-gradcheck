@@ -1,6 +1,0 @@
-# Sync-only dependencies (kept separate from pipeline extraction deps).
-# NOTE: keep this file ASCII-only -- pip reads requirement files using the
-# system locale encoding, and non-ASCII comments break on Windows (cp950).
-# Install: pip install -r scripts/requirements-sync.txt
-pymongo>=4.9,<5
-jsonschema>=4.23,<5

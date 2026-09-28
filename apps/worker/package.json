@@ -1,0 +1,31 @@
+{
+  "name": "@newone/worker",
+  "version": "0.0.0",
+  "private": true,
+  "description": "毕业要求 PDF agent bot：目录扫描 + pg-boss 队列 + 调用 Python 双 pass 核对管线 + 写回 Payload",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "agent": "./src/index.ts"
+  },
+  "scripts": {
+    "scan": "tsx src/index.ts scan",
+    "run": "tsx src/index.ts run",
+    "status": "tsx src/index.ts status",
+    "review": "tsx src/index.ts review",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "pg-boss": "^12.35.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.9",
+    "tsx": "4.22.4",
+    "typescript": "5.7.3",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

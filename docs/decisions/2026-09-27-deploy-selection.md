@@ -9,7 +9,7 @@
 
 | 层 | 选型 | 备注 |
 |---|---|---|
-| 学生端 SPA | Cloudflare Pages（`frontend/`） | 已在运行，git 集成现成，本次不动 |
+| 学生端 SPA | Vercel（`newone-web`，构建 `frontend/dist`） | 2026-09-28 修订：由 Cloudflare Pages 迁至 Vercel；`/api/site/*` 经仓库根同源 Serverless 函数 `api/site.js` 反代到 newone-studio（外部 rewrite 在 Vercel 实测不生效已弃用；方括号 catch-all 也不会被注册成路由，故用扁平函数 + rewrite 传参） |
 | 后台 | Vercel Hobby（`apps/studio`） | Payload 3.90.2 + Next 16.3.3 |
 | 数据库 | Neon Postgres 免费档 | 经 Vercel Storage 集成，同一项目内管理 |
 
@@ -29,9 +29,9 @@
 
 ### 代价已实测
 
-- 全仓 MongoDB 耦合只有 **3 处**（`payload.config.ts:1,21`、`package.json` 依赖、`.env.example`）。
+- 决策时全仓 MongoDB 耦合只有 **3 处**（`payload.config.ts:1,21`、`package.json` 依赖、`.env.example`），后续已切到 Postgres 适配器，不再有 Mongo 耦合。
   `ingest-baked.ts` / `gates.ts` / `seed.ts` 全走 Payload Local API，与适配器无关。
-- `scripts/sync_to_atlas.py` **不用动**：它是服务 `../grad-check-web`（Nuxt + NestJS + Mongo）的另一条独立链路，与 Payload 无关。
+- `scripts/sync_to_atlas.py` 已随 `../grad-check-web`（Nuxt + NestJS + Mongo）方案撤回而**整体移除**（脚本、`requirements-sync.txt`、`scripts/tests/test_sync_to_atlas.py`、`.github/workflows/sync-atlas.yml` 一并删除）。
 - 新增工作量：**必须生成 migration**（Mongo 自动建集合，Postgres 必须建表），且部署时得跑 `payload migrate`。
 
 ---

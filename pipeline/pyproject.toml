@@ -8,6 +8,7 @@ dependencies = [
     "httpx>=0.27",
     "openai>=1.55",
     "pydantic>=2.9",
+    "langextract>=1.7",
 ]
 
 [project.optional-dependencies]

@@ -104,6 +104,20 @@ def _next_model() -> str:
     return models[next(_model_cycle) % len(models)]
 
 
+def get_client():
+    """公开入口：构造 OpenAI 兼容客户端（缺 GRAD_LLM_API_KEY 时抛 RuntimeError）。"""
+    return _client()
+
+
+def next_model() -> str:
+    """公开入口：轮换模型池中的下一个模型。
+
+    与 llm_extract 共用同一个轮换计数器——第二 pass（extract_b）也走这里，
+    两 pass 交替消耗模型池，避免同一个模型被连续打满限流。
+    """
+    return _next_model()
+
+
 def extract_requirements(doc: ParsedDocument, year: str, code: str) -> ExtractionResult:
     """调用 LLM 抽取毕业要求树；429 时轮换模型池中的下一个模型，Schema 校验失败自动修复重试。"""
     client = _client()

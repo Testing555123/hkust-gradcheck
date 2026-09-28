@@ -1,5 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
+import SourceChunks from './source-chunks'
 import { programBeforeValidate } from '../gates'
 
 /**
@@ -152,4 +153,5 @@ export const dataCollections: CollectionConfig[] = [
   CommonCoreMaps,
   ValidationIssues,
   Metas,
+  SourceChunks,
 ]

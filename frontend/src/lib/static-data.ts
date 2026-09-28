@@ -2,7 +2,7 @@
  * 数据源：两种形态，形状完全一致，因此上层 queries.ts 与所有核算逻辑无需改动。
  *
  * - `static`（默认）：读 scripts/export_static_data.py 预生成的 public/data/。
- *   生产（Cloudflare Pages）与本地 dev 读同一份文件，不存在「本地能跑、线上缺数据」的漂移。
+ *   生产（Vercel）与本地 dev 读同一份文件，不存在「本地能跑、线上缺数据」的漂移。
  * - `api`：读同一容器里的 /api/site/*（Payload + DB）。
  *
  * 两者并存是刻意的：并行对拍（裁决 C3）要求旧路径随时可用，
