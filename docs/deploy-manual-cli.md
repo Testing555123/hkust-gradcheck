@@ -99,4 +99,48 @@ env[key] = val.replace(/^["']|["']$/g, '')
 
 - 生产域名：`https://newone-studio.vercel.app`（别名，亦为 `newone-studio-<hash>-studying5.vercel.app`）
 - Neon：`ep-dry-rain-aze1ha8k...ap-southeast-1.aws.neon.tech`，已灌满上述数据。
-- 学生端仍读静态 JSON（Cloudflare Pages），后台改 `source` 不会重算 `derived`（T9 未做，非本次范围）。
+- 学生端（`newone-web` 项目）已迁到 Vercel 静态托管，生产默认 `VITE_DATA_SOURCE=api` 直连 Payload 实时接口（经同域 rewrite 反代 `newone-studio` 的 `/api/site/*`），后台改 `source` 立即反映；259 个 `public/data/*.json` 保留作 `VITE_DATA_SOURCE=static` 一键回退。
+
+## 七、学生端前端（Vercel 静态托管 + Payload 实时 API）
+
+把 `frontend/` 这份 Vite SPA 原样迁到 Vercel 作为独立极小项目 `newone-web`，运行期直连已上线的 Payload 接口（`newone-studio` 的 `/api/site/*`，读 Neon），**不重写任何学生端代码**。259 个 `public/data/*.json` 保留作 `VITE_DATA_SOURCE=static` 回退。
+
+### 关键决策
+- **Root Directory = 仓库根（不是 frontend）**。原因：SPA 的 `tsconfig.app.json` 与 `vite.config.ts` 把 `@/lib/*`、`@/types` 重定向到 `../packages/domain/src`（领域逻辑唯一来源）。若 Root=frontend，云端构建上下文不含仓库根兄弟目录 `packages/`，会 `TS2307: Cannot find module '@/lib/audit'`。把 Root 设为仓库根让整个仓库进构建上下文，`../packages/domain` 自然可用，零前端改动。
+- **不设 `framework` 字段**（等价控制台 Other）。Vercel 的 framework 取值不含字面量 `"other"`，写了会 `Invalid request: projectSettings.framework should be equal to one of the allowed values...`。只用显式 `buildCommand` + `outputDirectory` 即可。
+- **rewrite 反代而非 CORS**：studio 的 `/api/site/*` 无 CORS 头，跨域直连必失败；同域 rewrite 后浏览器视作同源，无需任何后端改动。
+
+### 文件
+- `vercel.json`（仓库根，新增）：
+  ```json
+  {
+    "buildCommand": "npm run build",
+    "outputDirectory": "frontend/dist",
+    "rewrites": [
+      { "source": "/api/site/(.*)", "destination": "https://newone-studio.vercel.app/api/site/$1" }
+    ]
+  }
+  ```
+  其中 `npm run build` 是根脚本 `npm -w frontend run build`（即 `tsc -b && vite build`），产物落到 `frontend/dist`。缓存头沿用 `frontend/public/_headers`（vite 构建时拷入 dist）。
+
+### 部署步骤
+1. 建项目并连到仓库根（命令在仓库根目录执行）：
+   ```powershell
+   vercel project add newone-web --team studying5
+   vercel link --yes --project newone-web --scope studying5
+   ```
+2. 注入数据源开关（production 走实时接口）：
+   ```powershell
+   echo "api" | vercel env add VITE_DATA_SOURCE production
+   ```
+3. 手动部署（在仓库根，项目已 link）：
+   ```powershell
+   vercel deploy --prod --yes
+   ```
+4. **git push 自动双部署**（可选，需 Dashboard 授权）：在 Vercel Dashboard 把 `newone-web` 连到 GitHub 仓库 `Testing555123/newone`（GitHub App 授权）。连上后同一 push 会同时构建 studio（Root=`apps/studio`）与 web（Root=仓库根）。CLI/API 连同一仓库时若报 `repo_not_found`，是 GitHub App 对该仓的访问授权问题，需到 Dashboard 处理（无法用 CLI/API 绕过）。
+
+### 验证
+- 根路由 `/` 应返回 200（SPA 首屏）。
+- 经同域反代的 `/api/site/index` 应返回 200 且为实时数据（如 `{"code":"ACCT","year":"2023-24",...}`）。
+- pdfjs 资源随 `dist/assets` 静态分发，无需额外配置。
+- 数据层未变（同一条 `/api/site/*`），原有 258 项对拍不受影响；如需回归，仍跑 `node scripts/check_site_parity.mjs https://newone-studio.vercel.app`。

@@ -1,0 +1,10 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "frontend/dist",
+  "rewrites": [
+    {
+      "source": "/api/site/(.*)",
+      "destination": "https://newone-studio.vercel.app/api/site/$1"
+    }
+  ]
+}
