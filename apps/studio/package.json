@@ -11,7 +11,7 @@
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
     "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
     "generate:types": "cross-env NODE_OPTIONS=--no-deprecation payload generate:types",
-    "migrate": "cross-env NODE_OPTIONS=--no-deprecation payload migrate",
+    "migrate": "cross-env NODE_OPTIONS=--no-deprecation payload migrate --yes",
     "migrate:status": "cross-env NODE_OPTIONS=--no-deprecation payload migrate:status",
     "migrate:create": "cross-env NODE_OPTIONS=--no-deprecation payload migrate:create",
     "seed": "cross-env NODE_OPTIONS=--no-deprecation tsx src/seed.ts",
